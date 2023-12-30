@@ -4,7 +4,7 @@ Love Garden is a **plant dating simulator** that was crafted within 48 hours in 
 
 The prototype secured a remarkable 2nd place in a regional competition, missing 1st place by a slim margin!
 
-This repository hosts the game's prototype **only**! For the upcoming Version 1.0, which is currently in development, [click here](#).
+This repository hosts the game's alpha version **only**! For the old prototype, [click here](https://github.com/CosmicFoxStudio/LoveGardenProto).
 
 ## Features
     🌵 Engaging plant characters with unique personalities
