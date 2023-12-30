@@ -1,0 +1,13 @@
+IMPORTANT!
+Everytime we update Chatterbox or Scribble's lib version, we need to replace these values
+
+-------------- Chaterbox --------------
+#macro CHATTERBOX_FUNCTION_ARRAY_ARGUMENTS				false	(original: true)
+#macro CHATTERBOX_LOCALIZATION_ACKNOWLEDGE_WARNING		true	(original: false)
+#macro CHATTERBOX_SPEAKER_DELIMITER						"::"	(original: ":")
+
+Didn't change this but it's a nice touch that we can change the root folder:
+#macro CHATTERBOX_INCLUDED_FILES_SUBDIRECTORY  ""
+#macro CHATTERBOX_REPLACE_ALIAS_BACKSLASHES     true (useful too, will look into that later)
+
+-------------- Scribble --------------

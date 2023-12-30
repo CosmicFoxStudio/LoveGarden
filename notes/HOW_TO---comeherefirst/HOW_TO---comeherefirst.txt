@@ -1,0 +1,41 @@
+
+--- Editing YARN files
+
+	1) Our Custom Chatterbox Functions 
+
+	<<bg()>>							
+	----------> Function to change background
+		Parameter: Index of the sprite set on the Background layer.
+		Example: <<bg(2)>>
+		
+	<<nextRoom()>>						
+	---------->	Function to change scenes
+		Parameter: Room asset name or alias.
+		Example: <<nextRoom("title")>>
+		
+	<<chara()>>							
+	----------> Function to draw a character on the screen
+		Parameter: Character as defined in CharacterOnScreen().	
+		Example: <<chara("void")>>
+		
+	<<emotion()>>						
+	----------> Function to change character expression
+	Parameter: Index of subimage as defined in CharacterExpressionOnScreen().
+	
+	<<wilting()>>							
+	----------> Get function. Returns current wilting status points.
+	
+	<<growth()>>
+	----------> Get function. Returns current growth status points.
+	
+	<<blossom()>>
+	----------> Get function. Returns current blossom status points.
+	
+	<<favePlace()>>
+	----------> Set function. Sets the favePlace flag to true.
+	<<love()>>
+	----------> Set function. Sets the love flag to true.
+		
+	<<bad()>>
+	----------> Set function. Sets the bad flag to true.
+	

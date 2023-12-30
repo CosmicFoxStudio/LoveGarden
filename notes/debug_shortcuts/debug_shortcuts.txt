@@ -1,0 +1,12 @@
+# Check DEBUG_DRAWER object
+#            ^--- (middle click)
+# DEBUG SHORTCUT	------------------------------------------> PRESS 0
+# DISPLAY FPS		------------------------------------------> PRESS F
+# RESTART ROOM		------------------------------------------> PRESS HOME
+# NEXT ROOM			------------------------------------------> PRESS PAGEUP
+# PREVIOUS ROOM		------------------------------------------> PRESS PAGEDOWN
+# END GAME			------------------------------------------> PRESS END
+
+# Global Game Variables				------------------------->	PRESS 1
+# Language Variables				------------------------->	PRESS 2
+# Character Variables				------------------------->	PRESS 3

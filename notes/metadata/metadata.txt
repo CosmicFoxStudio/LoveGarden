@@ -1,0 +1,7 @@
+[0] character expression
+[1] wilting
+[2] growth
+[3] blossom
+[4] sound
+[5] flags
+[6] humor (TO-DO)

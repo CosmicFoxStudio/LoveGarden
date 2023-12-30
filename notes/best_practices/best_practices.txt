@@ -1,0 +1,19 @@
+
+--------------------- GLOBAL SCOPE --------------------- 
+
+Global variables and enumerators should all be declared inside obj_game.
+
+--------------------- ROOMS & LAYERS -------------------
+
+All rooms should have this order of layers:
+
+Controllers (instances layer)
+UI_Above	(assets layer)
+Status		(instances layer)
+UI_Mid		(assets layer)
+Instances	(instances layer)
+UI_Below	(assets layer)
+Background	(background layer)
+
+For convenience, when making a new room, create a child room from rm_template.
+
