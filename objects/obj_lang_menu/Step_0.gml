@@ -128,6 +128,9 @@ if (selectedButton == "CONFIRM") {
 	phase = "SELECT";
 	selectedButton = "NONE";
 	
-	// (Should probably call a screen transition in here)
-	room_goto_next();
+	// Call a screen transition
+	if (!global.midTransition) {
+		var target = room_next(room);
+		TransitionStart(target, sq_out_trans_fade_black, sq_in_trans_fade_black);
+	}
 }

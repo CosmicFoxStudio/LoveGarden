@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_nametag",
-  "bbox_bottom": 335,
+  "bbox_bottom": 336,
   "bbox_left": 40,
-  "bbox_right": 137,
+  "bbox_right": 138,
   "bbox_top": 306,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6701e1f4-a63f-4188-916d-e773388348d3",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4d1b8f97-5f09-4f54-97b4-e948796b3563",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 360,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ffc799d1-fc9f-44ef-bd9c-2c1bea3206bb","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"3d8bf4b4-4f0d-4108-b493-2708fb37ff2b","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"6701e1f4-a63f-4188-916d-e773388348d3","path":"sprites/spr_nametag/spr_nametag.yy",},},},"Disabled":false,"id":"26154124-e717-432f-bd5d-ceee7d459f0b","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"4d1b8f97-5f09-4f54-97b4-e948796b3563","path":"sprites/spr_nametag/spr_nametag.yy",},},},"Disabled":false,"id":"8cf989ed-d3c7-4b8e-941c-df7d6fd82a26","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

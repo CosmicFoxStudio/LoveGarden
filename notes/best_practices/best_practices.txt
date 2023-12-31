@@ -1,7 +1,8 @@
 
 --------------------- GLOBAL SCOPE --------------------- 
 
-Global variables and enumerators should all be declared inside obj_game.
+Global variables should all be declared inside obj_game.
+Enumerators should be declared inside the Enums() script.
 
 --------------------- ROOMS & LAYERS -------------------
 
@@ -15,5 +16,12 @@ Instances	(instances layer)
 UI_Below	(assets layer)
 Background	(background layer)
 
+Runtime Layers
+These layers are created at runtime (by code).
+
+textbox			----> Where dialog boxes are placed when they are created.
+sequences		----> Where sequences are placed when they are created.
+
+IMPORTANT!
 For convenience, when making a new room, create a child room from rm_template.
 

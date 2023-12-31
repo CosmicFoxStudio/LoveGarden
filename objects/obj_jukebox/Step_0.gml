@@ -7,7 +7,7 @@ switch (roomName) {
         JukeboxPlayMusic(snd_title);
         break;
 
-    case "rm_dormroom_morning":
+    case "rm_dormroom":
         JukeboxPlayMusic(snd_dormroom);
         break;
 		

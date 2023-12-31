@@ -14,6 +14,12 @@ function Enums() {
 	}
 }
 
+enum e_roomTypes {
+	SPECIAL,
+	SCENES,
+	WORLD_MAP
+}
+
 enum e_daytime {
 	MORNING,
 	AFTERNOON,
