@@ -13,3 +13,9 @@ function Enums() {
 		CANCEL
 	}
 }
+
+enum e_daytime {
+	MORNING,
+	AFTERNOON,
+	EVENING
+}

@@ -2,21 +2,20 @@ Enums();
 global.debug = false;
 global.lang = "en"; // "en", "pt"
 SetLanguage();
-
+global.roomTarget = -1;
+global.midTransition = false;
 global.status = {
 	wilting: 0,
 	growth: 0,
 	blossom: 0,
 	humor: 0
 }
-
 global.flags = {
 	bad: false,
 	love: false,
 	favePlace: false,
 	dormroom: false,	
 }
-
 // Input
 global.MOUSE_CONFIRM = false;
 global.SPACE_CONFIRM = false;
@@ -27,7 +26,6 @@ global.PRESSED_LEFT = false;
 global.PRESSED_RIGHT = false;
 
 #region Chatterbox Load Files
-
 global.dialogueList = [];
 	
 if os_browser == browser_not_a_browser {

@@ -45,27 +45,26 @@ if (global.debug) {
 	#region MISC DEBUG
 	
 		// Press End - Exit game
-		if (keyboard_check_pressed(vk_end)) { // && !global.midTransition
+		if (keyboard_check_pressed(vk_end) && !global.midTransition) {
 			game_end();
 		}
 	
 		// PRESS Home - Restart current room
-		if (keyboard_check_pressed(vk_home)) { // && !global.midTransition
+		if (keyboard_check_pressed(vk_home) && !global.midTransition) { 
 			var target = room;
-			//transitionStart(target, sq_out_trans_fade, sq_in_trans_fade);
-			//room_restart();
+			TransitionStart(target, sq_out_trans_fade_black, sq_in_trans_fade_black);
 		}
 	
 		// PRESS PageUp - Going to next room
-		if (keyboard_check_pressed(vk_pageup)) { // && !global.midTransition
+		if (keyboard_check_pressed(vk_pageup) && !global.midTransition) { 
 			var target = room_next(room);
-			//transitionStart(target, sq_out_trans_fade, sq_in_trans_fade);
+			TransitionStart(target, sq_out_trans_fade_black, sq_in_trans_fade_black);
 		}
 	
 		// PRESS PageDown - Going to previous room
-		if (keyboard_check_pressed(vk_pagedown)) { // && !global.midTransition
+		if (keyboard_check_pressed(vk_pagedown) && !global.midTransition) {
 			var target = room_previous(room);
-			//transitionStart(target, sq_out_trans_fade, sq_in_trans_fade);
+			TransitionStart(target, sq_out_trans_fade_black, sq_in_trans_fade_black);
 		}
 	
 	#endregion MISC DEBUG
