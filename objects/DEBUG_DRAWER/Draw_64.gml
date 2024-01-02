@@ -62,6 +62,29 @@ if (global.debug) {
 	}
 	#endregion CHARACTERS
 	
+	#region ROOM SELECTOR
+	draw_set_font(fnt_dialogue);
+	DrawSet(c_white, 1);
+	draw_set_alpha(menu_transition);
+	if (active) {
+	    var _y = 40;
+		var start = clamp(selected - 5, 0, ds_list_size(global.rm_name_sorted) - 6);
+	    for (var i = start; i < start + 6; i++) {
+	        var room_name = ds_list_find_value(global.rm_name_sorted, i);
+	        if (i == selected) {
+				draw_set_color(c_fuchsia);
+				//draw_text(10, 40 + selected * 20, "> " + ds_list_find_value(global.rm_name_sorted, selected));
+	            draw_text(10, _y, "> " + room_name);
+	        } else {
+				draw_set_color(c_white);
+	            draw_text(10, _y, room_name);
+	        }
+	        _y += 20;
+	    }
+	}
+	DrawReset();
+	#endregion ROOM SELECTOR
+	
 	// Reset
 	DrawReset();
 }

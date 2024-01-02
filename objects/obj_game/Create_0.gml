@@ -28,16 +28,18 @@ global.PRESSED_RIGHT = false;
 global.roomType = e_roomTypes.SCENES;
 //global.roomMusic = "";
 // These globals are used as DS Lists in obj_room_setup (for debug room list)
-//global.roomCurrent = room_get_name(room);
-//global.location = global.roomCurrent;
-//global.roomName = noone;				// Index sorted, values are strings
-//global.roomNameSorted = noone;		// Alphabetically sorted, values are strings
+global.rm_current = room_get_name(room);
+global.location = global.rm_current;
+global.rm_name = noone;
+global.rm_name_sorted = noone;
 // Room Transitions
 global.roomTarget = -1;
 global.midTransition = false;
 #endregion ROOMS & NAVIGATION
 
-#region Chatterbox Load Files
+
+
+#region CHATTERBOX LOAD FILES
 global.dialogueList = [];
 	
 if os_browser == browser_not_a_browser {
@@ -49,7 +51,7 @@ else {
 	ChatterboxLoadFromFile("scenes/main_scene0_test.yarn");
 }
 
-#endregion Chatterbox Load Files
+#endregion CHATTERBOX LOAD FILES
 
 //  ---------------- Data structure to get node based on room  ------------------  //
 

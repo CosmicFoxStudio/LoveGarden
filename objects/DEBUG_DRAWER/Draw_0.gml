@@ -2,7 +2,7 @@
 
 if (global.debug) {
 // -------------------- Grid ----------------------- //
-	var _string = "Show Grid: G\nGame Debug: 1\nLanguage Debug: 2\nCharacter Debug: 3\nShow FPS: F";
+	var _string = "Show Grid: G\nGame Debug: 1\nLanguage Debug: 2\nCharacter Debug: 3\nShow FPS: F\nRoom Selector: R";
 	draw_text(475, 10, _string);
 	
 	if (keyboard_check_pressed(ord("G"))) debugShowGrid = !debugShowGrid;
