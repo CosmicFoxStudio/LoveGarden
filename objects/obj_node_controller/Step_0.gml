@@ -1,4 +1,6 @@
-/// @description 
+/// @description Chatterbox
+
+if (global.pause) exit;
 
 // Number of options
 var count = ChatterboxGetOptionCount(chatterbox);

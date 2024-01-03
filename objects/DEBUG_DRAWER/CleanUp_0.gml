@@ -1,2 +1,3 @@
-ds_list_destroy(global.rm_name);
-ds_list_destroy(global.rm_name_sorted);
+// Free data structure from memory
+ds_list_destroy(global.rmName);
+ds_list_destroy(global.rmNameSorted);

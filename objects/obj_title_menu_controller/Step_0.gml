@@ -1,5 +1,7 @@
 /// @description Controller for button input
 
+if (global.pause) exit;
+
 // Re-check array length
 //option_length = array_length(buttonArray);
 

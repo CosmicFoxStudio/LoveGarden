@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "game_functions",
+  "name": "scr_resolution",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

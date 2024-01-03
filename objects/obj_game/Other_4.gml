@@ -1,3 +1,6 @@
+global.rmCurrent = room_get_name(room);
+show_debug_message("New Room");
+
 // Reset status & flags
 if (room = rm_title) {
 	global.status.wilting = 0;
@@ -8,7 +11,11 @@ if (room = rm_title) {
 	global.flags.bad = false;
 	global.flags.love = false;
 	global.flags.favePlace = false;
-	global.flags.dormroom = false;
+}
+
+// Set location
+if global.roomType == e_roomTypes.SCENES {
+	global.location = global.rmCurrent;	
 }
 
 // Dialogue Files

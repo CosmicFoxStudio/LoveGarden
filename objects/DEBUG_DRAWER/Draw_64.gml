@@ -1,10 +1,24 @@
-if (DEBUGGING && global.debug == false) {
+if (Debug() && global.debug == false) {
 	draw_text(10, 10, "Debug Mode: Press 0");
 }
 
 if (global.debug) {
 	DrawSet();
 	draw_set_font(fnt_dialogue);
+	
+	#region INFO
+	if (debugShowInfo && displayInfo) {
+		var info_debug_strings = [
+			"Show Grid: G",
+			"Game Debug: 1",
+			"Language Debug: 2",
+			"Character Debug: 3", 
+			"Show FPS: F",
+			"Room Selector: R"
+		];
+		DebugDrawBox(10, 10, "INFO", info_debug_strings);
+	}
+	#endregion INFO
 	
 	#region FPS
 	if (debugShowFPS) {
@@ -25,7 +39,7 @@ if (global.debug) {
 		draw_text(20, 20, "Last click (y): " + string(clickY));
 		draw_text(20, 30, "mouse pos: " + "(" + string(mouse_x) + " / " + string(mouse_y) + ")");
 		draw_text(20, 40, "mouse GUI pos: " + "(" + string(clickGuiX) + " / " + string(clickGuiY) + ")");
-		draw_text(20, 50, "Directory: " + filename_dir(GM_project_filename));	
+		//draw_text(20, 50, "Directory: " + filename_dir(GM_project_filename));	
 	}
 	#endregion GAME
 	
@@ -65,19 +79,19 @@ if (global.debug) {
 	#region ROOM SELECTOR
 	draw_set_font(fnt_dialogue);
 	DrawSet(c_white, 1);
-	draw_set_alpha(menu_transition);
-	if (active) {
+	draw_set_alpha(menuTransition);
+	if (debugRmSelectorActive) {
 	    var _y = 40;
-		var start = clamp(selected - 5, 0, ds_list_size(global.rm_name_sorted) - 6);
+		var start = clamp(selected - 5, 0, ds_list_size(global.rmNameSorted) - 6);
 	    for (var i = start; i < start + 6; i++) {
-	        var room_name = ds_list_find_value(global.rm_name_sorted, i);
+	        roomName = ds_list_find_value(global.rmNameSorted, i);
 	        if (i == selected) {
 				draw_set_color(c_fuchsia);
 				//draw_text(10, 40 + selected * 20, "> " + ds_list_find_value(global.rm_name_sorted, selected));
-	            draw_text(10, _y, "> " + room_name);
+	            draw_text(10, _y, "> " + roomName);
 	        } else {
 				draw_set_color(c_white);
-	            draw_text(10, _y, room_name);
+	            draw_text(10, _y, roomName);
 	        }
 	        _y += 20;
 	    }

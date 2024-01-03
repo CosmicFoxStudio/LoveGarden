@@ -1,5 +1,6 @@
 Enums();
 global.debug = false;
+global.pause = false;
 global.lang = "en"; // "en", "pt"
 SetLanguage();
 global.currentDaytime = e_daytime.MORNING;
@@ -13,8 +14,11 @@ global.flags = {
 	bad: false,
 	love: false,
 	favePlace: false,
-	dormroom: false,	
 }
+// Player Info
+global.playerName = ""; // Used in obj_player_creator
+global.progress = [];
+Progress();
 // Input
 global.MOUSE_CONFIRM = false;
 global.SPACE_CONFIRM = false;
@@ -28,16 +32,31 @@ global.PRESSED_RIGHT = false;
 global.roomType = e_roomTypes.SCENES;
 //global.roomMusic = "";
 // These globals are used as DS Lists in obj_room_setup (for debug room list)
-global.rm_current = room_get_name(room);
-global.location = global.rm_current;
-global.rm_name = noone;
-global.rm_name_sorted = noone;
+global.rmCurrent = room_get_name(room);
+global.location = global.rmCurrent;
+global.rmName = noone;
+global.rmNameSorted = noone;
 // Room Transitions
 global.roomTarget = -1;
 global.midTransition = false;
 #endregion ROOMS & NAVIGATION
 
-
+#region CAMERA
+global.resize = false;
+global.is_fullscreen = false;
+global.camera_id = -1;
+// Resolution struct
+global.res = { // See menu_functions script
+	xx: 0,
+	yy: 0,
+	width: 640,
+	height: 360,
+	scale: 1 //1 ---> 640x360 | 2 ---> 1280x720
+}
+global.view_width = global.res.width * global.res.scale;
+global.view_height = global.res.height * global.res.scale;
+SetResolution();
+#endregion CAMERA
 
 #region CHATTERBOX LOAD FILES
 global.dialogueList = [];
@@ -68,6 +87,7 @@ global.roomYarnMap[? "rm_dormroom"	]		= "scenes/main_day0_test.yarn";
 // OBS: LoadLocalization() is set at rm_title's creation code
 
 // ------------------------------ TESTING ZONE ------------------------------ //
+if (Debug()) instance_create_layer(0, 0, "Controllers", DEBUG_DRAWER);
 // Add first room here
 //room_goto(rm_title);
 room_goto(rm_lang);
