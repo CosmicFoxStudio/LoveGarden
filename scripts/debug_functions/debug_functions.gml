@@ -17,33 +17,29 @@ function Debug() {
 // - [textColor]: the text color of the box (optional)
 // - [BUFFER]: the padding around the text (optional)
 // - [alpha]: the alpha (transparency) of the box (optional, default 0.5)
-function DebugDrawBox(
-	_xx, _yy, _title, _lines, _font = fnt_dialogue, _bg_color = c_black, 
-	_text_color = c_white, _BUFFER = 10, _alpha = 0.5
-	) {
-
+function DebugDrawBox(_xx, _yy, _title, _lines, _font = fnt_dialogue, _bgColor = c_black, _textColor = c_white, _BUFFER = 10, _alpha = 0.5) {
     // Set up drawing settings
     draw_set_font(_font);
     draw_set_halign(fa_left);
     draw_set_valign(fa_top);
 
     // Determine the maximum width of the text
-    var max_width = 0;
+    var maxWidth = 0;
     for (var i = 0; i < array_length(_lines); i++) {
-        var _string_width = string_width(string(_lines[i]));
-        if (_string_width > max_width) {
-            max_width = _string_width;
+        var stringWidth = string_width(string(_lines[i]));
+        if (stringWidth > maxWidth) {
+            maxWidth = stringWidth;
         }
     }
 
     // Set the width and height of the box
-    var box_width = max_width + _BUFFER * 2;
-    var box_height = array_length(_lines) * 10 + _BUFFER * 2;
+    var boxWidth = maxWidth + _BUFFER * 2;
+    var boxHeight = array_length(_lines) * 10 + _BUFFER * 2;
 
     // Draw the box
     draw_set_alpha(_alpha);
-    draw_set_color(_bg_color);
-    draw_roundrect(_xx - _BUFFER, _yy - _BUFFER, box_width + _BUFFER * 2, box_height + _BUFFER * 2, false);
+    draw_set_color(_bgColor);
+    draw_roundrect(_xx - _BUFFER, _yy - _BUFFER, boxWidth + _BUFFER * 2, boxHeight + _BUFFER * 2, false);
 
     // Draw the title
 	draw_set_alpha(1); 	// RESET ALPHA
@@ -51,10 +47,15 @@ function DebugDrawBox(
     draw_text(_xx, _yy - _BUFFER/2, _title);
 
     // Draw the lines of text
-    draw_set_color(_text_color);
-    var line_y = _yy + 10;
+    draw_set_color(_textColor);
+    var lineY = _yy + 10;
     for (var i = 0; i < array_length(_lines); i++) {
-        draw_text(_xx + _BUFFER, line_y, _lines[i]);
-        line_y += 10;
+        draw_text(_xx + _BUFFER, lineY, _lines[i]);
+        lineY += 10;
     }
+}
+
+// Check if the room is restricted and cannot be teleported to
+function IsRoomRestricted(_roomName) {
+    return (_roomName == "rm_init" || _roomName == "rm_template");
 }

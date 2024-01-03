@@ -17,11 +17,17 @@ function SetLanguage() {
 	show_debug_message("Game Language: " + global.lang);
 }
 
-// Localization
+#region LOCALIZATION
 function LoadLocalization() {
 	// If "English" was selected, load new dialogue lines
-	if (global.lang == "en") {
+	if (global.lang != "en") {
 		ChatterboxLocalizationLoad("lang/" + global.lang + "_dialogues.csv"); 
-		show_debug_message("English translation loaded!");
+		show_debug_message("Portuguese translation loaded.");
 	}
 }
+
+function UnloadLocalization() {
+	ChatterboxLocalizationClear();
+	show_debug_message("Current translation disposed.");
+}
+#endregion LOCALIZATION

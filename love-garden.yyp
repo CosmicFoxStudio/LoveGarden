@@ -60,7 +60,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Lang","folderPath":"folders/Sprites/UI/Lang.yy",},
   ],
   "IncludedFiles": [
-    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"en_dialogues.csv","CopyToMask":-1,"filePath":"datafiles/lang",},
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"pt_dialogues.csv","CopyToMask":-1,"filePath":"datafiles/lang",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"main_day0_test.yarn","CopyToMask":-1,"filePath":"datafiles/scenes",},
   ],
   "isEcma": false,

@@ -30,10 +30,9 @@ global.PRESSED_RIGHT = false;
 
 #region ROOMS & NAVIGATION
 global.roomType = e_roomTypes.SCENES;
-//global.roomMusic = "";
-// These globals are used as DS Lists in obj_room_setup (for debug room list)
+// These globals are used as DS Lists for the debug room list
 global.rmCurrent = room_get_name(room);
-global.location = global.rmCurrent;
+global.location = "";
 global.rmName = noone;
 global.rmNameSorted = noone;
 // Room Transitions
@@ -43,8 +42,8 @@ global.midTransition = false;
 
 #region CAMERA
 global.resize = false;
-global.is_fullscreen = false;
-global.camera_id = -1;
+global.fullscreen = false;
+global.cameraID = -1;
 // Resolution struct
 global.res = { // See menu_functions script
 	xx: 0,
@@ -53,8 +52,8 @@ global.res = { // See menu_functions script
 	height: 360,
 	scale: 1 //1 ---> 640x360 | 2 ---> 1280x720
 }
-global.view_width = global.res.width * global.res.scale;
-global.view_height = global.res.height * global.res.scale;
+global.viewWidth = global.res.width * global.res.scale;
+global.viewHeight = global.res.height * global.res.scale;
 SetResolution();
 #endregion CAMERA
 

@@ -13,7 +13,7 @@ if IsChatterbox(chatterbox) and text != undefined {
 	var yy = room_height - (marginText/2) - 22;
 	
 	// Textbox (In case we need one made by code only)
-	//draw_rectangle_center(room_width/2, yy, room_width - 190, marginText,  false, c_black, 0.5);
+	// DrawRectangleCenter(room_width/2, yy, room_width - 190, marginText,  false, c_black, 0.5);
 	
 	DrawAlign(fa_center);
 	var xx = room_width/2 + 22;
@@ -37,7 +37,7 @@ if IsChatterbox(chatterbox) and text != undefined {
 				xx = room_width/2;
 				yy = (room_height/6) * (i+2) - 30;
 				
-				draw_rectangle_center(xx, yy, width, height, false, c_black, 0.5);
+				DrawRectangleCenter(xx, yy, width, height, false, c_black, 0.5);
 				
 				var icon = "";
 				if (optionIndex == i) icon = "> ";

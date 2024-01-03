@@ -31,12 +31,13 @@ debugChara				= false;
  #region ROOM SELECTOR
 // Creating Room Lists
 global.rmName = ds_list_create();			// Index sorted, values are strings
-global.rmNameSorted = ds_list_create();	// Alphabetically sorted, values are strings
+global.rmNameSorted = ds_list_create();		// Alphabetically sorted, values are strings
 
 #region Pushing the rooms to the DS List
 // It'll look like this:
-// global.rm_name[0] = "rm_init" (order: 0)
-// global.rm_name[1] = "rm_their_room"; (order: 1)
+// global.rmName[0] = "rm_init" (order: 0)
+// global.rmName[1] = "rm_lang"; (order: 1)
+// global.rmName[2] = "rm_title"; (order: 2)
 // and so on...
 roomIndex = 0;
 roomName = "";

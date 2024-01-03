@@ -1,3 +1,5 @@
+if (global.pause) exit;
+
 // Select Phase
 if (phase == "SELECT") {
 	// Keyboard Input - Move inside menu

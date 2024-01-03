@@ -81,19 +81,30 @@ if (global.debug) {
 	DrawSet(c_white, 1);
 	draw_set_alpha(menuTransition);
 	if (debugRmSelectorActive) {
-	    var _y = 40;
-		var start = clamp(selected - 5, 0, ds_list_size(global.rmNameSorted) - 6);
-	    for (var i = start; i < start + 6; i++) {
-	        roomName = ds_list_find_value(global.rmNameSorted, i);
-	        if (i == selected) {
-				draw_set_color(c_fuchsia);
-				//draw_text(10, 40 + selected * 20, "> " + ds_list_find_value(global.rm_name_sorted, selected));
-	            draw_text(10, _y, "> " + roomName);
-	        } else {
-				draw_set_color(c_white);
-	            draw_text(10, _y, roomName);
-	        }
-	        _y += 20;
+	    var yy = 40;
+		var maxLines = 6;
+		var start = clamp(selected - (maxLines - 1), 0, ds_list_size(global.rmNameSorted) - maxLines);
+	    for (var i = start; i < start + maxLines; i++) {
+			// Check if i is a valid index for the sorted list before drawing
+			if (i >= 0 && i < ds_list_size(global.rmNameSorted)) {
+		        roomName = ds_list_find_value(global.rmNameSorted, i);
+		        if (i == selected) {
+					draw_set_color(c_fuchsia);
+					// Unselectable rooms
+					if (IsRoomRestricted(roomName)) {
+	                    draw_set_color(c_gray);
+	                }
+		            draw_text(10, yy, "> " + roomName);
+		        } else {
+					draw_set_color(c_white);
+					// Unselectable rooms
+	                if (IsRoomRestricted(roomName)) {
+	                    draw_set_color(c_gray);
+	                }
+		            draw_text(10, yy, roomName);
+		        }
+		        yy += 20;
+			}
 	    }
 	}
 	DrawReset();

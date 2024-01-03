@@ -106,18 +106,23 @@ if (global.debug) {
 			    roomIndex = ds_list_find_index(global.rmName, roomName);
 				show_debug_message(roomIndex);
 				
-				var target;
-				if (room != roomIndex){
-					target = roomIndex; 
-					TransitionStart(target, sq_out_trans_fade_black, sq_in_trans_fade_black);
-					// The diagonal transition is looking weird, idk why yet
-					//TransitionStart(target, sq_out_trans_diag_slide, sq_in_trans_diag_slide);
-					show_debug_message(global.roomTarget);
+				if (!IsRoomRestricted(roomName)) {
+					var target;
+					if (room != roomIndex){
+						target = roomIndex; 
+						TransitionStart(target, sq_out_trans_fade_black, sq_in_trans_fade_black);
+						// The diagonal transition is looking weird, idk why yet
+						//TransitionStart(target, sq_out_trans_diag_slide, sq_in_trans_diag_slide);
+						show_debug_message(global.roomTarget);
+					}
+					else {
+						// Prohibit access to the same room
+						MakeAnnouncement("You're already here.");
+					}
 				}
 				else {
-					if instance_exists(obj_announcement) instance_destroy(obj_announcement);
-					var announcement = instance_create_layer(0, 0, "Special", obj_announcement);
-					announcement.text = "You're already here.";
+					// Prohibit access to restricted rooms
+					MakeAnnouncement("Trying to teleport to restricted room.");
 				}
 	        }  
 	    }
