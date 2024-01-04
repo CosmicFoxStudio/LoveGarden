@@ -5,7 +5,7 @@ function DrawSet(_color = c_white, _alpha = 1){
 }
 
 // Set alignment
-function DrawAlign(halign = fa_left, valign = fa_middle) {
+function DrawAlign(halign = fa_left, valign = fa_top) {
 	draw_set_halign(halign);
 	draw_set_valign(valign);
 }
@@ -14,6 +14,4 @@ function DrawAlign(halign = fa_left, valign = fa_middle) {
 function DrawReset() {
 	DrawSet();
 	DrawAlign();
-	draw_set_halign(-1);
-	draw_set_valign(-1);
 }

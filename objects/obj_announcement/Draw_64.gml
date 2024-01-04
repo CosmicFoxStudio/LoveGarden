@@ -4,6 +4,8 @@
 
 	announcement = instance_create_layer(0, 0, "Special", obj_announcement);
 	announcement.text = "Your text...";
+	
+	Update: Just use MakeAnnouncement()
 */
 
 DrawAlign(fa_center, fa_bottom);

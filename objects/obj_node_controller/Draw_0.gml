@@ -2,8 +2,8 @@
 
 draw_set_font(fnt_dialogue);
 
-// Set valign to the middle
-DrawAlign(fa_left, fa_middle); 
+// Set halign to center and valign to the middle (center the text in the textbox)
+DrawAlign(fa_center, fa_middle); 
 
 // Horizontal text margin
 var marginText = 64;     
@@ -15,7 +15,6 @@ if IsChatterbox(chatterbox) and text != undefined {
 	// Textbox (In case we need one made by code only)
 	// DrawRectangleCenter(room_width/2, yy, room_width - 190, marginText,  false, c_black, 0.5);
 	
-	DrawAlign(fa_center);
 	var xx = room_width/2 + 22;
 	
 	// Draw dialogue text
@@ -24,10 +23,8 @@ if IsChatterbox(chatterbox) and text != undefined {
 	// Draw nametag
 	draw_text(room_width/2 - 230, room_height - (marginText/2) - 8, ChatterboxGetContentSpeaker(chatterbox, 0));
 	
-	// If there are options to choose, put them in the middle of the screen
+	// Adding options to the screen
 	if ChatterboxGetOptionCount(chatterbox) {
-		DrawAlign(fa_center);
-		
 		var width = 450;
 		var height = 32;
 		

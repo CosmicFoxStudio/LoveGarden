@@ -107,7 +107,6 @@ if (global.debug) {
 			}
 	    }
 	}
-	DrawReset();
 	#endregion ROOM SELECTOR
 	
 	// Reset

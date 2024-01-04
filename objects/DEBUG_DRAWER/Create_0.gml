@@ -48,7 +48,6 @@ roomName = "";
 roomIndex = room_first;
 while(roomIndex != -1) {
 	// We could also use room_index = room_first + 1 to not include the rm_init in the list
-	// And also use room_index < room_last to not include rm_game_over in the list
     roomName = room_get_name(roomIndex);
     // show_debug_message(roomName);
 	ds_list_add(global.rmNameSorted, roomName);
@@ -63,9 +62,9 @@ ds_list_sort(global.rmNameSorted, true);
 
 debugRmSelectorActive = false;
 selected = 0; // Initial selection cursor position
-startIndex = 0; // The index of the first visible room
+//startIndex = 0; // The index of the first visible room
 // The index of the last visible room (assuming a maximum of 6 rooms on the screen)
-endIndex = min(startIndex + 5, ds_list_size(global.rmNameSorted) - 1); 
+//endIndex = min(startIndex + 5, ds_list_size(global.rmNameSorted) - 1); 
 menuTransition = 0;
 
-#endregion ROOMS SELECTOR
+#endregion ROOM SELECTOR

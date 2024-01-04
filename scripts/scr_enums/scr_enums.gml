@@ -1,4 +1,5 @@
 // Initialize global enumerators
+// Enumerators make code more readable, better than only using numbers
 function Enums() {
 	enum e_language {
 		EN,	// ---> 0
