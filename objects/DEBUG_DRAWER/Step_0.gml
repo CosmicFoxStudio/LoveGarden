@@ -18,36 +18,33 @@ if (global.debug) {
 	clickGuiX = device_mouse_x_to_gui(0);
 	clickGuiY = device_mouse_y_to_gui(0);
 
-	#region BOOLEANS
-		debugShowInfo = displayInfo;
-		
-		// PRESS F
-		if keyboard_check_pressed(ord("F")){
-			debugShowFPS = !debugShowFPS;
-		}
+	// PRESS F
+	if keyboard_check_pressed(ord("F")){
+		debugShowFPS = !debugShowFPS;
+	}
 
-		// PRESS 1 - Global Game Debug
-		else if keyboard_check_pressed(ord("1")){
-			debugGlobalGame = !debugGlobalGame;
-		}
+	#region BOOLEANS
 	
-		// PRESS 2 - Language Debug
-		else if keyboard_check_pressed(ord("2")){
-			debugLang = !debugLang;
-		}
-		
-		// PRESS 3 - Character Debug
-		else if keyboard_check_pressed(ord("3")){
-			debugChara = !debugChara;
-		}
-		
-		if (debugShowFPS || debugGlobalGame || debugLang || debugChara || debugRmSelectorActive) {
-			displayInfo = false;
-		}
-		else {
-			displayInfo = true;	
-		}
-		
+	//debugShowInfo = displayInfo;
+	
+	for (var i = 0; i < array_length(debugBooleans); i++) {
+	    if (keyboard_check_pressed(ord(string(i + 1)))) {
+		/*
+			PRESS 1 - Game Debug
+			PRESS 2 - Language Debug
+			PRESS 3 - Character Debug
+			PRESS 4 - Cutscene Debug
+		*/
+	        debugBooleans[i] = !debugBooleans[i];
+	    }
+	}
+
+	// Custom function to check if any element in the array is true
+	if (array_any(debugBooleans, function (val) { return val; })) {
+	    displayInfo = false;
+	} else {
+	    displayInfo = true;
+	}
 	#endregion BOOLEANS
 
 	#region MISC DEBUG
@@ -148,7 +145,8 @@ else {
 	// Reset debug configs
 	show_debug_overlay(false);
 	debugShowFPS			= false;
-	debugGlobalGame			= false;
+	debugGlobalGame			= true;
 	debugLang				= false;
 	debugChara				= false;
+	debugCutscene			= false;
 }

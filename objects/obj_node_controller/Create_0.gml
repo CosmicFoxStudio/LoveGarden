@@ -10,10 +10,14 @@ ChatterboxAddFunction("favePlace", FlagGetFavePlace);				// Returns favePlace fl
 ChatterboxAddFunction("love", FlagGetLove);							// Returns love ending flag
 ChatterboxAddFunction("bad", FlagGetBad);							// Returns bad ending flag
 
+// Initialize variables
 node = undefined;
+chatterbox = noone;
 text = "";
 nodeName = "Start";
 roomName = "";
 optionIndex = 0;                                
 optionHovered = -1; 
+
+// Object depth
 depth = -100;

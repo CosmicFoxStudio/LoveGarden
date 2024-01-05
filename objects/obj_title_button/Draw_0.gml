@@ -2,8 +2,8 @@
 
 draw_self();
 
-// Draw with font
-draw_set_font(fnt_menu);
+// Draw with other font
+DrawFont(fnt_menu);
 
 // Set alignment to middle center
 draw_set_halign(fa_center);
@@ -36,3 +36,4 @@ draw_set_valign(fa_middle);
 
 // Reset
 DrawReset();
+DrawFont(fnt_dialogue);

@@ -6,15 +6,17 @@ Enumerators should be declared inside the Enums() script.
 
 --------------------- ROOMS & LAYERS -------------------
 
-All rooms should have this order of layers:
+All rooms should have this order of layers, even if you don't use them all.
 
-Controllers (instances layer)
-UI_Above	(assets layer)
-Status		(instances layer)
-UI_Mid		(assets layer)
-Instances	(instances layer)
-UI_Below	(assets layer)
-Background	(background layer)
+Controllers			(instances layer)	-----> For controllers.
+Special				(instances layer)	-----> For specific objects, such as obj_announcement.
+UI_Above			(assets layer)		-----> Highest depth for assets.
+Status				(instances layer)	-----> For placing the status bar.
+UI_Mid				(assets layer)
+Instances_Above		(instances layer)
+Instances			(instances layer)
+UI_Below			(assets layer)
+Background			(background layer)
 
 Runtime Layers
 These layers are created at runtime (by code).

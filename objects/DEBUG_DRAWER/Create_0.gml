@@ -15,19 +15,10 @@ numHorizontalLines = room_height div gridSpacing;
 numVerticalLines = room_width div gridSpacing;
 
 //------------------- BOOLEANS ---------------------//
-displayInfo				= false;
-debugShowInfo			= false;
-debugShowFPS			= false;
-debugGlobalGame			= true;
-debugLang				= false;
-debugChara				= false;
-//debugDialogue			= false;
-//debugPlayer			= false;
-//debugMenu				= false;
-//debugAudioMusic		= false;
-//debugFlag				= false;
-//debugRoom				= false;
-
+debugShowFPS = false;
+debugBooleans = array_create(e_DebugOptions.LAST, false);
+displayInfo = false;
+//--------------------------------------------------//
  #region ROOM SELECTOR
 // Creating Room Lists
 global.rmName = ds_list_create();			// Index sorted, values are strings
@@ -68,3 +59,4 @@ selected = 0; // Initial selection cursor position
 menuTransition = 0;
 
 #endregion ROOM SELECTOR
+ 

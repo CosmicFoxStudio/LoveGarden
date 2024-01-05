@@ -12,7 +12,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Lang Menu",
-    "path": "folders/Objects/Lang Menu.yy",
+    "path": "folders/Lang Menu.yy",
   },
   "parentObjectId": null,
   "persistent": false,

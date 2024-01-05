@@ -10,7 +10,7 @@
 
 DrawAlign(fa_center, fa_bottom);
 
-draw_set_font(fnt_dialogue);
+DrawFont(fnt_dialogue);
 
 x1 = xx - (string_width(text) / 2);
 y1 = yy - (font_get_size(fnt_dialogue) * 1.5);

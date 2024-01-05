@@ -1,7 +1,5 @@
 ///@description Draw Grid
 
-
-	
 // -------------------- Grid ----------------------- //
 if (keyboard_check_pressed(ord("G"))) debugShowGrid = !debugShowGrid;
 if (debugShowGrid) {

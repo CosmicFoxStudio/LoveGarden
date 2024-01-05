@@ -12,8 +12,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Managers",
-    "path": "folders/Managers.yy",
+    "name": "General Objects",
+    "path": "folders/General Objects.yy",
   },
   "parentObjectId": null,
   "persistent": true,

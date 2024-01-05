@@ -1,7 +1,5 @@
 /// @description Draw text and options
 
-draw_set_font(fnt_dialogue);
-
 // Set halign to center and valign to the middle (center the text in the textbox)
 DrawAlign(fa_center, fa_middle); 
 
@@ -18,9 +16,11 @@ if IsChatterbox(chatterbox) and text != undefined {
 	var xx = room_width/2 + 22;
 	
 	// Draw dialogue text
+	DrawFont(fnt_dialogue);
 	draw_text(xx, yy, ChatterboxGetContentSpeech(chatterbox, 0));
 	
 	// Draw nametag
+	DrawFont(fnt_dialogue);
 	draw_text(room_width/2 - 230, room_height - (marginText/2) - 8, ChatterboxGetContentSpeaker(chatterbox, 0));
 	
 	// Adding options to the screen

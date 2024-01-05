@@ -1,6 +1,10 @@
+/// @description Persistent Game Manager
+// Initializes globals & enumerators
 Enums();
 global.debug = false;
 global.pause = false;
+global.lastFontUsed = -1;
+DrawFont(fnt_dialogue); // Run the first time
 global.lang = "en"; // "en", "pt"
 SetLanguage();
 global.currentDaytime = e_daytime.MORNING;
@@ -27,7 +31,8 @@ global.PRESSED_UP = false;
 global.PRESSED_DOWN = false;
 global.PRESSED_LEFT = false;
 global.PRESSED_RIGHT = false;
-
+global.HELD_START = false;
+global.PRESSED_START = false;
 #region ROOMS & NAVIGATION
 global.roomType = e_roomTypes.SCENES;
 // These globals are used as DS Lists for the debug room list
@@ -41,8 +46,8 @@ global.midTransition = false;
 #endregion ROOMS & NAVIGATION
 
 #region CAMERA
-global.resize = false;
-global.fullscreen = false;
+//global.resize = false;
+//global.fullscreen = false;
 global.cameraID = -1;
 // Resolution struct
 global.res = { // See menu_functions script
@@ -89,4 +94,5 @@ global.roomYarnMap[? "rm_dormroom"	]		= "scenes/main_day0_test.yarn";
 if (Debug()) instance_create_layer(0, 0, "Controllers", DEBUG_DRAWER);
 // Add first room here
 //room_goto(rm_title);
+//room_goto(rm_dream);
 room_goto(rm_lang);

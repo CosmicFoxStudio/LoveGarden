@@ -19,7 +19,7 @@ function Debug() {
 // - [alpha]: the alpha (transparency) of the box (optional, default 0.5)
 function DebugDrawBox(_xx, _yy, _title, _lines, _font = fnt_dialogue, _bgColor = c_black, _textColor = c_white, _BUFFER = 10, _alpha = 0.5) {
     // Set up drawing settings
-    draw_set_font(_font);
+    DrawFont(_font);
     draw_set_halign(fa_left);
     draw_set_valign(fa_top);
 

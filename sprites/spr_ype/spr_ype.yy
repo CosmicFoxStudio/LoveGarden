@@ -27,8 +27,8 @@
   "nineSlice": null,
   "origin": 7,
   "parent": {
-    "name": "Characters",
-    "path": "folders/Sprites/Characters.yy",
+    "name": "Ype",
+    "path": "folders/Sprites/Characters/Ype.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

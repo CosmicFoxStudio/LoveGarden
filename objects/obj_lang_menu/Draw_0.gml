@@ -1,6 +1,6 @@
 /// @description Draw the menu
 
-draw_set_font(fnt_menu);
+DrawFont(fnt_menu);
 DrawAlign(fa_center, fa_middle);
 
 // Calculate menu height dynamically based on number of options
@@ -53,7 +53,7 @@ draw_text(descriptionX, descriptionY, descriptionText);
 
 #endregion DESCRIPTION
 
-draw_set_font(fnt_dialogue);
+DrawFont(fnt_dialogue);
 
 // Draw language options
 for (var i = 0; i < optionLength; i++) {

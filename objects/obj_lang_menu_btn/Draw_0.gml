@@ -1,7 +1,7 @@
 /// @description Change button appearance
 draw_self();
 
-draw_set_font(fnt_dialogue);
+DrawFont(fnt_dialogue);
 DrawAlign(fa_center, fa_middle);
 
 var textColor = c_white; 

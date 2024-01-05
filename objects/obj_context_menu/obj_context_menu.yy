@@ -9,7 +9,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Context Menu",
-    "path": "folders/Objects/Context Menu.yy",
+    "path": "folders/Context Menu.yy",
   },
   "parentObjectId": null,
   "persistent": false,

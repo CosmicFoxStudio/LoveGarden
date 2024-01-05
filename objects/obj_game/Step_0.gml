@@ -1,7 +1,7 @@
-#region CONFIRM
-
+/// @description Checks for input (and more)
 // TIP: Keyboard and mouse functions only register for 1 frame
 
+#region CONFIRM
 // Mouse
 if	(mouse_check_button_pressed(mb_left)) {
 		global.MOUSE_CONFIRM = true;
@@ -72,3 +72,20 @@ if	(gamepad_button_check_pressed(0, gp_padr)) ||
 }
 
 #endregion LEFT / RIGHT
+
+#region START
+// held
+if (keyboard_check(vk_enter)) {
+	global.HELD_START = true;
+}else{
+	global.HELD_START = false;
+}
+
+//pressed
+if	(keyboard_check_pressed(vk_enter)) {
+		global.PRESSED_START = true;
+}else{
+	global.PRESSED_START = false;
+}
+
+#endregion START

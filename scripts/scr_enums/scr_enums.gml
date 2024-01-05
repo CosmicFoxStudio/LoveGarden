@@ -26,3 +26,17 @@ enum e_daytime {
 	AFTERNOON,
 	EVENING
 }
+
+enum e_DebugOptions {
+    GAME,
+    LANG,
+    CHARA,
+    CUTSCENE,
+	// DIALOGUE
+	// PLAYER
+	// MENU
+	// AUDIO
+	// FLAG
+	// ROOM
+	LAST
+}

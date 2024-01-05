@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Player Creator",
+    "path": "folders/Cutscenes/Dream/Player Creator.yy",
   },
   "parentObjectId": null,
   "persistent": false,

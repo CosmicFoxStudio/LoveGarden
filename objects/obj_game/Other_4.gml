@@ -1,3 +1,4 @@
+/// @description Reset stuff when new room
 global.rmCurrent = room_get_name(room);
 show_debug_message("Room: " + global.rmCurrent);
 
