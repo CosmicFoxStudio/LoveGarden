@@ -15,6 +15,13 @@ function Enums() {
 	}
 }
 
+// Used in obj_intro
+enum e_fadeoutState {
+	IDLE,
+	FADING_OUT,
+	FINISHED
+}
+
 enum e_roomTypes {
 	SPECIAL,
 	SCENES,

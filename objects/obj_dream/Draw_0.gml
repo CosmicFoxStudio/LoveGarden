@@ -19,14 +19,14 @@ else {
 draw_sprite_ext(spr_px, 0, 0, 0, 1280, 720, 0, c_black, a);
 
 // Create intro
-if (a == end_alpha && !created_intro) {
+if (a == end_alpha && !createdIntro) {
 	instance_create_layer(0, 0, "Instances_Above", obj_intro);	
-	created_intro = true;
+	createdIntro = true;
 }
 
 // Create player
 /*
-if (finished_intro && !created_player) {
+if (finishedIntro && !created_player) {
 	instance_create_layer(0, 0, "Instances_Above", obj_player_creator);	
 	created_player = true;
 }

@@ -21,3 +21,19 @@ optionHovered = -1;
 
 // Object depth
 depth = -100;
+
+// ----------------------------- SCRIBBLE ----------------------------- //
+// Setup font
+scribble_font_set_default(font_get_name(fnt_dialogue));
+
+// Typist
+textSpd = 0.5;
+typist = scribble_typist();
+typist.in(textSpd, 0.8);
+skipCounter = 0;
+
+// Delays in punctuation
+typist.character_delay_add(".", 20);
+typist.character_delay_add("!", 500);
+typist.character_delay_add("?", 500);
+typist.character_delay_add(",", 500);

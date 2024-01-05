@@ -142,11 +142,6 @@ if (global.debug) {
 
 }
 else {
-	// Reset debug configs
+	// Reset debug overlay
 	show_debug_overlay(false);
-	debugShowFPS			= false;
-	debugGlobalGame			= true;
-	debugLang				= false;
-	debugChara				= false;
-	debugCutscene			= false;
 }
