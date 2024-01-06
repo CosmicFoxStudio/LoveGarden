@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "snd_menu_beep",
   "audioGroupId": {
-    "name": "audiogroup_default",
-    "path": "audiogroups/audiogroup_default",
+    "name": "audiogroup_sfx",
+    "path": "audiogroups/audiogroup_sfx",
   },
   "bitDepth": 1,
   "bitRate": 128,

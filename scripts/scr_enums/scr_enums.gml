@@ -47,3 +47,21 @@ enum e_DebugOptions {
 	// ROOM
 	LAST
 }
+
+enum e_MenuPage {
+	MAIN, 		
+	SETTINGS, 		
+	AUDIO, 		
+	GRAPHICS,		
+	//CONTROLS,		
+	LAST
+}
+
+enum e_menuElementType {
+	SCRIPT_RUNNER,
+	PAGE_CHANGE,	
+	SLIDER,		
+	SHIFT,	
+	TOGGLE,
+	// INPUT
+}

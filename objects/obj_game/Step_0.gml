@@ -1,5 +1,13 @@
-/// @description Checks for input (and more)
+/// @description Input checks, menu activation, etc
 // TIP: Keyboard and mouse functions only register for 1 frame
+
+// Context Config Menu
+if (global.PRESSED_START) {
+	global.config_menu = !global.config_menu;
+}
+
+// Pausing when Config Menu is active
+global.pause = global.config_menu;
 
 #region CONFIRM
 // Mouse
@@ -51,27 +59,50 @@ if	(gamepad_button_check_pressed(0, gp_padd)) ||
 
 #endregion UP / DOWN
 
-#region LEFT / RIGHT
-
+#region LEFT
+// pressed
 if	(gamepad_button_check_pressed(0, gp_padl)) ||
 	(keyboard_check_pressed(vk_left)) ||
-	(keyboard_check_pressed(ord("A"))){
+	(keyboard_check_pressed(ord("A"))) {
 
 	global.PRESSED_LEFT = true;
 }else{ 
 	global.PRESSED_LEFT = false;
 }
 
+// held
+if	(gamepad_button_check(0, gp_padl)) ||
+	(keyboard_check(vk_left)) ||
+	(keyboard_check(ord("A"))) {
+
+	global.HELD_LEFT = true;
+}else{ 
+	global.HELD_LEFT = false;
+}
+
+#endregion LEFT
+
+#region RIGHT
+// pressed
 if	(gamepad_button_check_pressed(0, gp_padr)) ||
 	(keyboard_check_pressed(vk_right)) ||
-	(keyboard_check_pressed(ord("D"))){
+	(keyboard_check_pressed(ord("D"))) {
 
 	global.PRESSED_RIGHT = true;
 }else{
 	global.PRESSED_RIGHT = false;
 }
 
-#endregion LEFT / RIGHT
+// held
+if	(gamepad_button_check(0, gp_padr)) ||
+	(keyboard_check(vk_right)) ||
+	(keyboard_check(ord("D"))) {
+	global.HELD_RIGHT = true;
+}else{
+	global.HELD_RIGHT = false;
+}
+
+#endregion right
 
 #region START
 // held

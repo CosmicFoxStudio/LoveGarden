@@ -5,6 +5,7 @@ global.debug = false;
 global.pause = false;
 global.lastFontUsed = -1;
 DrawFont(fnt_dialogue); // Run the first time
+global.config_menu = false;
 global.lang = "en"; // "en", "pt"
 SetLanguage();
 global.currentDaytime = e_daytime.MORNING;
@@ -23,16 +24,19 @@ global.flags = {
 global.playerName = ""; // Used in obj_player_creator
 global.progress = [];
 Progress();
-// Input
-global.MOUSE_CONFIRM = false;
-global.SPACE_CONFIRM = false;
+#region INPUT
+global.MOUSE_CONFIRM	= false;
+global.SPACE_CONFIRM	= false;
 global.BACKSPACE_CANCEL = false;
-global.PRESSED_UP = false;
-global.PRESSED_DOWN = false;
-global.PRESSED_LEFT = false;
-global.PRESSED_RIGHT = false;
-global.HELD_START = false;
-global.PRESSED_START = false;
+global.PRESSED_UP		= false;
+global.PRESSED_DOWN		= false;
+global.PRESSED_LEFT		= false;
+global.PRESSED_RIGHT	= false;
+global.PRESSED_START	= false;
+global.HELD_START		= false;
+global.HELD_LEFT		= false;
+global.HELD_RIGHT		= false;
+#endregion INPUT
 #region ROOMS & NAVIGATION
 global.roomType = e_roomTypes.SCENES;
 // These globals are used as DS Lists for the debug room list
@@ -46,8 +50,8 @@ global.midTransition = false;
 #endregion ROOMS & NAVIGATION
 
 #region CAMERA
-//global.resize = false;
-//global.fullscreen = false;
+global.isResizing = false;
+global.fullscreen = false;
 global.cameraID = -1;
 // Resolution struct
 global.res = { // See menu_functions script

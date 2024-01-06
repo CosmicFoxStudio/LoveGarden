@@ -1,6 +1,12 @@
 /// @description Initialization
-currentMusic = -1;
 
+// Initialize audiogroups
+audio_group_load(audiogroup_music);
+audio_group_load(audiogroup_sfx);
+// audiogroup_default is the master
+
+// ----------------------------------------------------- //
+currentMusic = -1;
 // ---------------------- Methods ---------------------- //
 JukeboxStopMusic = function() {
     // Check if there is currently playing music
