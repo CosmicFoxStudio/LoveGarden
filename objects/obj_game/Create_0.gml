@@ -24,19 +24,59 @@ global.flags = {
 global.playerName = ""; // Used in obj_player_creator
 global.progress = [];
 Progress();
-#region INPUT
-global.MOUSE_CONFIRM	= false;
-global.SPACE_CONFIRM	= false;
-global.BACKSPACE_CANCEL = false;
-global.PRESSED_UP		= false;
-global.PRESSED_DOWN		= false;
-global.PRESSED_LEFT		= false;
-global.PRESSED_RIGHT	= false;
-global.PRESSED_START	= false;
-global.HELD_START		= false;
-global.HELD_LEFT		= false;
-global.HELD_RIGHT		= false;
-#endregion INPUT
+#region GAME CONTROLS
+/*
+---------------- CONFIRM ----------------
+Master Race _______________ Z, SPACE BAR, MOUSE LEFT
+Consoles	_______________ Top button 1 (A on Xbox 360, cross on PS) 
+---------------- CANCEL -----------------
+Master Race _______________ X, BACKSPACE, MOUSE RIGHT
+Consoles	_______________ Top button 2 (B on Xbox 360, circle on PS) 
+---------------- START ------------------
+Master Race _______________ C, ENTER, MOUSE MIDDLE
+Consoles	_______________ The start button (The "options" button on a PS4)
+------------- DIRECTIONAL ---------------
+Master Race _______________ ARROW KEYS, (W, A, S, D)
+Consoles	_______________  D-PAD
+-----------------------------------------
+*/
+// Gamepad
+global.current_gamepad = 0; // The device
+// Mouse
+global.HELD_MOUSE_LEFT = false;
+global.RELEASED_MOUSE_LEFT = false;
+global.PRESSED_MOUSE_LEFT = false;
+global.HELD_MOUSE_RIGHT	= false;
+global.RELEASED_MOUSE_RIGHT = false;
+global.PRESSED_MOUSE_RIGHT = false;
+global.PRESSED_MOUSE_MIDDLE = false;
+// Held
+global.HELD_ARROWS = false;
+global.HELD_UP = false; 
+global.HELD_DOWN = false;
+global.HELD_LEFT = false;
+global.HELD_RIGHT = false;
+global.HELD_CANCEL = false;
+global.HELD_CONFIRM = false;
+// Pressed
+global.PRESSED_UP = false;
+global.PRESSED_DOWN = false;
+global.PRESSED_LEFT = false;
+global.PRESSED_RIGHT = false;
+global.PRESSED_CONFIRM = false;	
+global.PRESSED_CANCEL = false;	
+global.PRESSED_START = false;
+// Released
+global.RELEASED_UP = false;
+global.RELEASED_DOWN = false;
+global.RELEASED_LEFT = false;
+global.RELEASED_RIGHT = false;
+global.RELEASED_CONFIRM = false;
+global.RELEASED_CANCEL = false;
+// Shoulder
+//global.SHOULDER_LEFT = false;
+//global.SHOULDER_RIGHT = false;
+#endregion GAME CONTROLS
 #region ROOMS & NAVIGATION
 global.roomType = e_roomTypes.SCENES;
 // These globals are used as DS Lists for the debug room list

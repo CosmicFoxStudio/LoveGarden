@@ -57,19 +57,19 @@ if (global.debug) {
 		// PRESS Home - Restart current room
 		if (keyboard_check_pressed(vk_home) && !global.midTransition) { 
 			var target = room;
-			TransitionStart(target, sq_out_trans_fade_black, sq_in_trans_fade_black);
+			TransitionStart(sq_out_trans_fade_black, sq_in_trans_fade_black, target);
 		}
 	
 		// PRESS PageUp - Going to next room
 		if (keyboard_check_pressed(vk_pageup) && !global.midTransition) { 
 			var target = room_next(room);
-			TransitionStart(target, sq_out_trans_fade_black, sq_in_trans_fade_black);
+			TransitionStart(sq_out_trans_fade_black, sq_in_trans_fade_black, target);
 		}
 	
 		// PRESS PageDown - Going to previous room
 		if (keyboard_check_pressed(vk_pagedown) && !global.midTransition) {
 			var target = room_previous(room);
-			TransitionStart(target, sq_out_trans_fade_black, sq_in_trans_fade_black);
+			TransitionStart(sq_out_trans_fade_black, sq_in_trans_fade_black, target);
 		}
 	
 	#endregion MISC DEBUG
@@ -97,7 +97,7 @@ if (global.debug) {
             }
         }
         
-	        if (global.SPACE_CONFIRM) {
+	        if (global.PRESSED_CONFIRM) {
 			    roomName = ds_list_find_value(global.rmNameSorted, selected);
 				show_debug_message(roomName);
 			    roomIndex = ds_list_find_index(global.rmName, roomName);
@@ -107,9 +107,9 @@ if (global.debug) {
 					var target;
 					if (room != roomIndex){
 						target = roomIndex; 
-						TransitionStart(target, sq_out_trans_fade_black, sq_in_trans_fade_black);
+						TransitionStart(sq_out_trans_fade_black, sq_in_trans_fade_black, target);
 						// The diagonal transition is looking weird, idk why yet
-						//TransitionStart(target, sq_out_trans_diag_slide, sq_in_trans_diag_slide);
+						//TransitionStart(sq_out_trans_diag_slide, sq_in_trans_diag_slide, target);
 						show_debug_message(global.roomTarget);
 					}
 					else {
@@ -125,7 +125,7 @@ if (global.debug) {
 	    }
 		
 		// Deactivate Room Selector
-		if (global.BACKSPACE_CANCEL) {
+		if (global.PRESSED_CANCEL || global.PRESSED_MOUSE_RIGHT) {
 			debugRmSelectorActive = false;
 			menuTransition = 1;
 			global.pause = false;

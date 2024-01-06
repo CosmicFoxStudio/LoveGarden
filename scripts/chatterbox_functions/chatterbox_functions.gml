@@ -18,7 +18,7 @@ function BackgroundSetIndex(_arr) {
 function NextRoom(_room) {
 	//show_debug_message(_room);
 	switch (_room) {
-		case "title": room_goto(rm_title); break;
+		case "title": TransitionStart(sq_out_trans_fade_black, sq_in_trans_fade_black, rm_title); break;
 		default: break;
 	}
 }

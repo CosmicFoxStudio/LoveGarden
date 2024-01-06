@@ -24,6 +24,22 @@ if (a == end_alpha && !createdIntro) {
 	createdIntro = true;
 }
 
+if (finishedIntro) {
+// ------------- /UNFINISHED
+	#region (TO-DO)
+/*
+	// Fade to white screen
+	fadeout = 1;
+
+	if (abs(a - 1) < 0.01 && fadeout == 1) {
+		room_goto_next();
+	}
+*/
+	#endregion (TO-DO)
+	
+	TransitionStart(sq_out_trans_fade_white, sq_in_trans_fade_white, rm_dormroom);
+}
+
 // Create player
 /*
 if (finishedIntro && !created_player) {

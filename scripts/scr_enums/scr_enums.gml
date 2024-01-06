@@ -45,6 +45,7 @@ enum e_DebugOptions {
 	// AUDIO
 	// FLAG
 	// ROOM
+	// INPUT
 	LAST
 }
 

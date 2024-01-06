@@ -20,7 +20,7 @@ if (pos >= optionLength) pos = 0; // goes back to the first pos
 if (pos < 0) pos = optionLength - 1; // goes to the last pos
 
 // Keyboard Input
-if (global.SPACE_CONFIRM) {
+if (global.PRESSED_CONFIRM) {
     ExecuteButtonAction(pos);
 }
 
@@ -30,7 +30,7 @@ for (var i = 0; i < optionLength; i++) {
 
     // Check if the mouse is hovering over the current button
     if (instance_position(mouse_x, mouse_y, currentButton)) {
-        if (global.MOUSE_CONFIRM && currentButton.hovering) {
+        if (global.PRESSED_MOUSE_LEFT && currentButton.hovering) {
             ExecuteButtonAction(currentButton.btnType);
         }
     }

@@ -35,7 +35,6 @@ var leftTextY;
 var optionXOffset; // x offset for when the option is selected
 
 // Draw the options' text
-
 	for (var i = 0; i < array_length(currentPage); i++) {
 		leftTextY = startY + (i*yBUFFER);
 		c = c_white;
@@ -48,7 +47,6 @@ var optionXOffset; // x offset for when the option is selected
 			optionXOffset = -(xBUFFER/2); 	
 		}
 
-		//the string is the [0,0], [0,1], [0,2] etc...
 		draw_text_transformed_color(
 			leftTextX + optionXOffset, 
 			leftTextY, 

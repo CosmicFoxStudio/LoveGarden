@@ -15,10 +15,9 @@ var currentPage = menuPages[page];
 // Can be 1 (moves down) or -1 (moves up) or 0 (not moving)
 var verticalInput = global.PRESSED_DOWN - global.PRESSED_UP;
 
-// Prevents moving to other elements when selecting 
+// Prevents moving to other elements when inputting in subpages
 if (inputting) { 
-	// MAYBE PLACE THIS HERE?
-	//var currentOption = menuOption[page];
+	//var currentOption = menuOption[page]; // MAYBE PLACE THIS HERE?
 	
 	// REGISTERING ALTERNATIVE INPUTS AND AUDIO RESPONSE
 	// (Usually when on a subpage and the element type is one of the following)
@@ -37,11 +36,16 @@ if (inputting) {
 			if(horizontalInput != 0) {
 				// Play audio
 				audio_play_sound(snd_menu_beep, 1, false);
-				// Changes index4 of difficulty page according to player input. index4 = "EASY"/"NORMAL"/"HARD"
+
 				currentPage[menuOption[page]].param1 += horizontalInput;
+				
 				// To clamp the value between the lenght of the options property 
 				// The -1 at the end is to make it equal to the resulting value of var horizontalInput
-				currentPage[menuOption[page]].param1 = clamp(currentPage[menuOption[page]].param1, 0, array_length(currentPage[menuOption[page]].param2) - 1);
+				currentPage[menuOption[page]].param1 = clamp(
+					currentPage[menuOption[page]].param1, 
+					0, 
+					array_length(currentPage[menuOption[page]].param2) - 1
+				);
 			}
 		break;
 		
@@ -55,12 +59,13 @@ if (inputting) {
 			// Held input instead of pressed here for smooth gameplay
 			var horizontalInput = global.HELD_RIGHT - global.HELD_LEFT;
 			if(horizontalInput != 0) {
-				currentPage[menuOption[page]].param1 += horizontalInput*0.01; // To make it a floating value between 0-1 (same as 0% to 100%)
+				// Makes the value a floating value between 0-1 (same as 0% to 100%)
+				currentPage[menuOption[page]].param1 += horizontalInput*0.01; 
 				
-				//to check whether the value is between index0, index1 and index2.
+				// Clamping the value between 0 and 1
 				currentPage[menuOption[page]].param1 = clamp(currentPage[menuOption[page]].param1, 0, 1);
 				
-				// Executes the ChangeVolume script - Audio plays whenever input is happening for the slider
+				// Executes the ChangeVolume() script - Audio plays whenever input is happening for the slider
 				script_execute(currentPage[menuOption[page]].action, currentPage[menuOption[page]].param1); 
 			}
 		break;
@@ -71,10 +76,10 @@ if (inputting) {
 				// Play audio
 				audio_play_sound(snd_menu_beep, 1, false);
 				
-				// Changes param1 of ds_menu_difficulty according to player input. index4 = "EASY"/"NORMAL"/"HARD"
 				currentPage[menuOption[page]].param1 += horizontalInput;
 				
-				// To check whether the value is between index0, index1 and index2. And the "-1" at the end is to make it equal to the resulting value of var horizontalInput
+				// To check whether the value is between index0, index1 and index2
+				// And the "-1" at the end is to make it equal to the resulting value of var horizontalInput
 				currentPage[menuOption[page]].param1 = clamp(
 					currentPage[menuOption[page]].param1, 
 					0, 
@@ -108,7 +113,7 @@ if (inputting) {
 // --------------------------------------------------------------------------------- //
 // MAKE THINGS HAPPEN (EXECUTING SCRIPTS)
 // Setting up scripts so they run and impact/change variables in the game 
-if(global.SPACE_CONFIRM) {
+if(global.PRESSED_CONFIRM) {
 	// Checks for the type
 	switch(currentPage[menuOption[page]].type) { 
 		

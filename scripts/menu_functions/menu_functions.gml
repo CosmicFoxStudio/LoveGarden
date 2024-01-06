@@ -2,8 +2,6 @@
 
 function ResumeGame() {
 	global.config_menu = false;
-	global.pause = false;
-	//instance_destroy(obj_game.config_menu_instance);	
 }
 
 function ExitGame() {

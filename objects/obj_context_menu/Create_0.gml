@@ -1,10 +1,10 @@
 /// @description Create Config Submenu
 
 // Constructor to create a menu element struct.
-/// @function						create_menu_element(_text, _type, _action, _parameter1, _parameter2, _options)
+/// @function						MenuElementDefinition(_text, _type, _action, _param1 = -1, _param2 = -1)
 /// @description					Function to create a menu element
 /// @arg {string}	_text			The title of the option
-/// @arg {real}		_type			The type of script to run (check enumerator)
+/// @arg {real}		_type			The type of script to run (check enumerator e_menuElementType)
 /// @arg {function}	_action			The action (function) that should be performed
 /// @arg {any}		[_param1]		1st parameter of the action to perform. Usually a value
 /// @arg {any}		[_param2]		2nd parameter of the action to perform. Usually an array of options
@@ -17,11 +17,10 @@ function MenuElementDefinition(_text, _type, _action, _param1 = -1, _param2 = -1
 };
 
 #region CREATE MENU ELEMENTS
-
 // MAIN PAGE [0]
-menu_page_main_elements[0]		= new MenuElementDefinition("RESUME",		e_menuElementType.SCRIPT_RUNNER,		ResumeGame);
+menu_page_main_elements[0]		= new MenuElementDefinition("RESUME",		e_menuElementType.SCRIPT_RUNNER,	ResumeGame);
 menu_page_main_elements[1]		= new MenuElementDefinition("SETTINGS",		e_menuElementType.PAGE_CHANGE,		e_MenuPage.SETTINGS);
-menu_page_main_elements[2]		= new MenuElementDefinition("EXIT",			e_menuElementType.SCRIPT_RUNNER,		ExitGame);
+menu_page_main_elements[2]		= new MenuElementDefinition("EXIT",			e_menuElementType.SCRIPT_RUNNER,	ExitGame);
 
 //SETTINGS PAGE [1]
 menu_page_settings_elements[0]	= new MenuElementDefinition("AUDIO",		e_menuElementType.PAGE_CHANGE,		e_MenuPage.AUDIO);
@@ -43,7 +42,8 @@ menu_page_graphics_elements[2]	= new MenuElementDefinition("BACK",			e_menuEleme
 #endregion CREATE MENU ELEMENTS
 
 // Variable used to access different pages
-page = 0; // 0 means the default page is the main page
+page = 0; // Starting at 0 so the default page is the main page
+
 // Menu pages array
 menuPages = [
 	menu_page_main_elements,		// 0
@@ -52,6 +52,7 @@ menuPages = [
 	menu_page_graphics_elements,	// 3
 //	menu_page_controls_elements		// 4 (for changing input between mouse and keyboard)
 ];
+
 /*
 How to access
 menuPages[0]		// MAIN PAGE ELEMENTS
@@ -67,7 +68,7 @@ menuOption = [];
 // Loop through the number of pages we have in menuPages and update it depending on how many options there are in each page
 var i = 0, array_len = array_length(menuPages); 
 repeat(array_len) {
-	// Selected option will always be the first on creation
+	// Selection will always be the first option on creation
 	menuOption[i] = 0;
 	i++;
 }

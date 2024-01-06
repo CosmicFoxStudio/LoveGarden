@@ -50,16 +50,14 @@ if (global.debug) {
 		if (instance_exists(obj_lang_menu) && instance_exists(obj_lang_selection)) {
 			draw_text(20, 30, "Menu pos: " + "(" + string(obj_lang_menu.x) + " / " + string(obj_lang_menu.y) + ")");
 			draw_text(20, 40, "Phase: " + string(obj_lang_menu.phase));
-			draw_text(20, 50, "Pressed Space: " + string(global.SPACE_CONFIRM));
-			draw_text(20, 60, "Pressed Cancel: " + string(global.BACKSPACE_CANCEL));
-			draw_text(20, 70,"Button Position: " + string(obj_lang_menu.posButtons));
-			draw_text(20, 80, "Button Selected: " + string(obj_lang_menu.selectedButton));
-			draw_text(20, 90, "Hovering over CancelBTN: " + string(obj_lang_menu.cancelButtonIsHovering));
-			draw_text(20, 100, "Hovering over ConfirmBTN: " + string(obj_lang_menu.confirmButtonIsHovering));
-			draw_text(20, 110, "Selection box pos: " + "(" + string(obj_lang_selection.x) + " / " + string(obj_lang_selection.y) + ")");
-			draw_text(20, 120, "target_y: " + string(obj_lang_selection.targetY));
-			draw_text(20, 130, "Cancel Button selected? " + string(obj_lang_menu.cancelButton.selected));
-			draw_text(20, 140, "Confirm Button selected? " + string(obj_lang_menu.confirmButton.selected));
+			draw_text(20, 50,"Button Position: " + string(obj_lang_menu.posButtons));
+			draw_text(20, 60, "Button Selected: " + string(obj_lang_menu.selectedButton));
+			draw_text(20, 70, "Hovering over CancelBTN: " + string(obj_lang_menu.cancelButtonIsHovering));
+			draw_text(20, 80, "Hovering over ConfirmBTN: " + string(obj_lang_menu.confirmButtonIsHovering));
+			draw_text(20, 90, "Selection box pos: " + "(" + string(obj_lang_selection.x) + " / " + string(obj_lang_selection.y) + ")");
+			draw_text(20, 100, "target_y: " + string(obj_lang_selection.targetY));
+			draw_text(20, 110, "Cancel Button selected? " + string(obj_lang_menu.cancelButton.selected));
+			draw_text(20, 120, "Confirm Button selected? " + string(obj_lang_menu.confirmButton.selected));
 			
 			// Checking boundaries for the lang menu based on variables
 			draw_rectangle(obj_lang_menu.x, obj_lang_menu.y, obj_lang_menu.x + obj_lang_menu.width, obj_lang_menu.y + obj_lang_menu.height, true);

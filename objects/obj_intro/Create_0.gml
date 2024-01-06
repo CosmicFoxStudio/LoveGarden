@@ -35,3 +35,6 @@ typist.character_delay_add("?", 800);
 typist.character_delay_add(",", 800);
 
 twFadeOutState = e_fadeoutState.IDLE;
+
+// Adding events
+scribble_typists_add_event("rumble", scribble_event_rumble);

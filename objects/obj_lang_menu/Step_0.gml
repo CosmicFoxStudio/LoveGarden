@@ -27,7 +27,7 @@ if (phase == "SELECT") {
 	}
 
 	// Choose a language
-	if ( (isMouseHoveringMenu && global.MOUSE_CONFIRM) || global.SPACE_CONFIRM) {
+	if ( (isMouseHoveringMenu && global.PRESSED_MOUSE_LEFT) || global.PRESSED_CONFIRM) {
 		switch(pos) {
 			case 0: 
 				phase = "CONFIRM";
@@ -62,7 +62,7 @@ if (phase == "CONFIRM") {
 		posButtons = 0;
 		
 	    // Player cancelled the selection
-	    if (global.MOUSE_CONFIRM) {
+	    if (global.PRESSED_MOUSE_LEFT) {
 			selectedButton = "CANCEL";
 			
 		}
@@ -72,7 +72,7 @@ if (phase == "CONFIRM") {
 		posButtons = 1;
 	    
 		// Player confirmed the selection
-		if (global.MOUSE_CONFIRM) {
+		if (global.PRESSED_MOUSE_LEFT) {
 			selectedButton = "CONFIRM";
 		}
 	}
@@ -99,7 +99,7 @@ if (phase == "CONFIRM") {
 	if (posButtons < 0) posButtons = numberOfButtons - 1; // goes to last pos
 	
 	// ------------------------- Confirm Input ------------------------- //
-	if (global.SPACE_CONFIRM) {
+	if (global.PRESSED_CONFIRM) {
 		// Player cancelled the selection
 		if (posButtons == 0) {
 			selectedButton = "CANCEL";
@@ -111,7 +111,7 @@ if (phase == "CONFIRM") {
 	}
 	
 	// ------------------------- Cancel Input ------------------------- //
-	if (global.BACKSPACE_CANCEL) {
+	if (global.PRESSED_CANCEL) {
 		selectedButton = "CANCEL";
 	}
 }
@@ -133,6 +133,6 @@ if (selectedButton == "CONFIRM") {
 	// Call a screen transition
 	if (!global.midTransition) {
 		var target = room_next(room);
-		TransitionStart(target, sq_out_trans_fade_black, sq_in_trans_fade_black);
+		TransitionStart(sq_out_trans_fade_black, sq_in_trans_fade_black, target);
 	}
 }

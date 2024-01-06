@@ -10,7 +10,7 @@ For this reason, string_length() wouldn't work here.
 textLength = scribble(text[page]).get_glyph_count();
 
 // Checking input
-if ( (global.SPACE_CONFIRM || global.MOUSE_CONFIRM) && twFadeOutState != e_fadeoutState.FADING_OUT ) {
+if ( (global.PRESSED_CONFIRM || global.PRESSED_MOUSE_LEFT) && twFadeOutState != e_fadeoutState.FADING_OUT ) {
 	// Means the page is fully typed out
 	if ((typist.get_position() - 1) == textLength) {
 		
@@ -63,22 +63,10 @@ else {
 
 if (twFadeOutState = e_fadeoutState.FINISHED && ended) {
 	obj_dream.finishedIntro = true;
-	#region (TO-DO)
-/*
-	// Fade to white screen
-	fadeout = 1;
-
-	if (abs(a - 1) < 0.01 && fadeout == 1) {
-		room_goto_next();
-	}
-*/
-	// Temporary
-	TransitionStart(rm_dormroom, sq_out_trans_fade_white, sq_in_trans_fade_white);
-	
-	#endregion (TO-DO)
 	
 	// Job done
-	// instance_destroy();
+	TransitionStart(sq_out_trans_fade_black, sq_in_trans_fade_black);
+	instance_destroy();
 }
 
 // Reset

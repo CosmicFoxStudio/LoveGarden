@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "Status",
-    "path": "folders/Sprites/Status.yy",
+    "path": "folders/Sprites/UI/Status.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
