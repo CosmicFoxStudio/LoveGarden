@@ -33,6 +33,7 @@
 	
 	<<favePlace()>>
 	----------> Set function. Sets the favePlace flag to true.
+	
 	<<love()>>
 	----------> Set function. Sets the love flag to true.
 		

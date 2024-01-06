@@ -18,19 +18,19 @@ draw_set_valign(fa_middle);
 	
 	if (btnType == e_btnTypes.PLAY) {
 		if (global.lang == "en") {
-			draw_text_ext_color(x, y, btnText[e_btnTypes.PLAY][e_language.EN], 0, sprite_width, _c, _c, _c, _c, 1);
+			draw_text_ext_color(x, y-10, btnText[e_btnTypes.PLAY][e_language.EN], 0, sprite_width, _c, _c, _c, _c, 1);
 		}
 		else if (global.lang == "pt") {
-			draw_text_ext_color(x, y, btnText[e_btnTypes.PLAY][e_language.PT], 0, sprite_width, _c, _c, _c, _c, 1);
+			draw_text_ext_color(x, y-10, btnText[e_btnTypes.PLAY][e_language.PT], 0, sprite_width, _c, _c, _c, _c, 1);
 		}
 	}
 
 	if (btnType == e_btnTypes.QUIT) {
 		if (global.lang == "en") {
-			draw_text_ext_color(x, y, btnText[e_btnTypes.QUIT][e_language.EN], 0, sprite_width, _c, _c, _c, _c, 1);
+			draw_text_ext_color(x, y-10, btnText[e_btnTypes.QUIT][e_language.EN], 0, sprite_width, _c, _c, _c, _c, 1);
 		}
 		else if (global.lang == "pt") {
-			draw_text_ext_color(x, y, btnText[e_btnTypes.QUIT][e_language.PT], 0, sprite_width, _c, _c, _c, _c, 1);
+			draw_text_ext_color(x, y-10, btnText[e_btnTypes.QUIT][e_language.PT], 0, sprite_width, _c, _c, _c, _c, 1);
 		}
 	}
 

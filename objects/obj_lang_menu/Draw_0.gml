@@ -35,6 +35,8 @@ else if (global.lang == "pt") {
 // Get the dimensions of the text
 var textWidth = string_width(descriptionText);
 var textHeight = string_height(descriptionText);
+var textWidthPT = string_width(titleText[e_language.PT]);
+var textHeightPT = string_height(titleText[e_language.PT]);
 
 // Set the box dimensions based on text dimensions
 var boxWidth = textWidth + 2 * descriptionPaddingH;
@@ -45,7 +47,9 @@ draw_sprite_ext(
 		sprite_index, image_index, 
 		descriptionX - boxWidth/2, 
 		descriptionY - boxHeight/2,
-		4, 1, 0, c_white, 1
+		4*(textWidth/textWidthPT),
+		1*(textHeight/textHeightPT),
+		0, c_white, 1
 	);
 
 // Draw the description text inside the box
