@@ -1,3 +1,5 @@
+if (global.pause) exit;
+
 // Prepare for drawing
 draw_set_color(c_white);
 DrawAlign(fa_center, fa_top);

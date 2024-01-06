@@ -1,12 +1,10 @@
 {
   "FolderOrderSettings": [
-    {"name":"Context Menu","order":2,"path":"folders/UI/Context Menu.yy",},
     {"name":"Cutscenes","order":3,"path":"folders/Cutscenes.yy",},
     {"name":"Dream","order":1,"path":"folders/Cutscenes/Dream.yy",},
     {"name":"Player Creator","order":2,"path":"folders/Cutscenes/Dream/Player Creator.yy",},
     {"name":"Dialogue System","order":2,"path":"folders/Dialogue System.yy",},
     {"name":"Fonts","order":6,"path":"folders/Fonts.yy",},
-    {"name":"Lang Menu","order":1,"path":"folders/UI/Lang Menu.yy",},
     {"name":"Libraries","order":11,"path":"folders/Libraries.yy",},
     {"name":"(System) (Don't look in here)","order":1,"path":"folders/Libraries/Chatterbox/(System) (Don't look in here).yy",},
     {"name":"omg i can't believe you looked in here","order":1,"path":"folders/Libraries/Chatterbox/(System) (Don't look in here)/omg i can't believe you looked in here.yy",},
@@ -49,6 +47,8 @@
     {"name":"Lang","order":1,"path":"folders/Sprites/UI/Lang.yy",},
     {"name":"Status","order":1,"path":"folders/Status.yy",},
     {"name":"UI","order":5,"path":"folders/UI.yy",},
+    {"name":"Context Menu","order":2,"path":"folders/UI/Context Menu.yy",},
+    {"name":"Lang Menu","order":1,"path":"folders/UI/Lang Menu.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"obj_intro","order":1,"path":"objects/obj_intro/obj_intro.yy",},

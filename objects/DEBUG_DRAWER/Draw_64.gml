@@ -39,6 +39,8 @@ if (global.debug) {
 		draw_text(20, 30, "mouse pos: " + "(" + string(mouse_x) + " / " + string(mouse_y) + ")");
 		draw_text(20, 40, "mouse GUI pos: " + "(" + string(clickGuiX) + " / " + string(clickGuiY) + ")");
 		draw_text(20, 50, "Last Font: " + string(global.lastFontUsed));	
+		draw_text(20, 60, "Pause State: " + string(global.pause));
+		draw_text(20, 70, "debugRmSelectorActive: " + string(debugRmSelectorActive));
 	}
 	#endregion GAME
 	
@@ -82,9 +84,7 @@ if (global.debug) {
 			with(obj_intro) {
 				draw_text(20, 20, "INTRO SCENE");
 				draw_text(20, 30, "Typist position: " + string(typist.get_position()));
-				draw_text(20, 40, "Text length: " + string(text_length));
-				draw_text(20, 50, "Fade Out State: " + string(tw_fade_out_state));
-				draw_text(20, 60, "Current page: " + string(page));
+				draw_text(20, 40, "Current page: " + string(page));
 			}
 		}
 	}

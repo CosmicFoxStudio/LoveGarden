@@ -40,7 +40,7 @@ if (global.debug) {
 	}
 
 	// Custom function to check if any element in the array is true
-	if (array_any(debugBooleans, function (val) { return val; })) {
+	if (debugRmSelectorActive || array_any(debugBooleans, function (val) { return val; })) {
 	    displayInfo = false;
 	} else {
 	    displayInfo = true;
@@ -78,11 +78,13 @@ if (global.debug) {
 
 	if keyboard_check_pressed(ord("R")) {
 	    debugRmSelectorActive = !debugRmSelectorActive;
-	    global.pause = debugRmSelectorActive;
 	}
+	
+	// Pause other input if Room Selector is active
+	global.pause = debugRmSelectorActive;
     
 	if (debugRmSelectorActive) {
-			
+					
         if (global.PRESSED_DOWN) {
             selected += 1;
             if (selected >= ds_list_size(global.rmNameSorted)) {
@@ -128,7 +130,6 @@ if (global.debug) {
 		if (global.PRESSED_CANCEL || global.PRESSED_MOUSE_RIGHT) {
 			debugRmSelectorActive = false;
 			menuTransition = 1;
-			global.pause = false;
 		}
 		
 		// Fading
