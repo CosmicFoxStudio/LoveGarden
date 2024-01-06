@@ -40,7 +40,8 @@ if (global.debug) {
 		draw_text(20, 40, "mouse GUI pos: " + "(" + string(clickGuiX) + " / " + string(clickGuiY) + ")");
 		draw_text(20, 50, "Last Font: " + string(global.lastFontUsed));	
 		draw_text(20, 60, "Pause State: " + string(global.pause));
-		draw_text(20, 70, "debugRmSelectorActive: " + string(debugRmSelectorActive));
+		draw_text(20, 70, "Keyboard Pressed Confirm: " + string(global.PRESSED_CONFIRM));
+		draw_text(20, 80, "Mouse Pressed Confirm: " + string(global.PRESSED_MOUSE_LEFT));
 	}
 	#endregion GAME
 	

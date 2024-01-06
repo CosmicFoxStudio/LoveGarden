@@ -230,14 +230,14 @@ global.pause = global.config_menu;
 	}
 	
 	// Released
-	if (mouse_check_button(mb_left)) {
+	if (mouse_check_button_released(mb_left)) {
 		global.RELEASED_MOUSE_LEFT = true;
 	} else {
 		global.RELEASED_MOUSE_LEFT = false;	
 	}
 	
 	// Pressed
-	if (mouse_check_button(mb_left)) {
+	if (mouse_check_button_pressed(mb_left)) {
 		global.PRESSED_MOUSE_LEFT = true;
 	} else {
 		global.PRESSED_MOUSE_LEFT = false;
@@ -253,14 +253,14 @@ global.pause = global.config_menu;
 	}
 	
 	// Released
-	if (mouse_check_button(mb_right)) {
+	if (mouse_check_button_released(mb_right)) {
 		global.RELEASED_MOUSE_RIGHT = true;
 	} else {
 		global.RELEASED_MOUSE_RIGHT = false;	
 	}
 	
 	// Pressed
-	if (mouse_check_button(mb_right)) {
+	if (mouse_check_button_pressed(mb_right)) {
 		global.PRESSED_MOUSE_RIGHT = true;
 	} else {
 		global.PRESSED_MOUSE_RIGHT = false;
@@ -269,7 +269,7 @@ global.pause = global.config_menu;
 	
 	#region MOUSE MIDDLE (START)
 	// Pressed
-	if (mouse_check_button(mb_middle)) {
+	if (mouse_check_button_pressed(mb_middle)) {
 		global.PRESSED_MOUSE_MIDDLE = true;
 	} else {
 		global.PRESSED_MOUSE_MIDDLE = false;
