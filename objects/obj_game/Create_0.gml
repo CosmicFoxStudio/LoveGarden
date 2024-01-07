@@ -7,7 +7,10 @@ DrawFont(fnt_dialogue); // Run the first time
 global.config_menu = false;
 global.lang = "en"; // "en", "pt"
 SetLanguage();
+global.day = 1;
 global.currentDaytime = e_daytime.MORNING;
+global.date = date_current_datetime();
+global.saveSlot = 0;
 global.status = {
 	wilting: 0,
 	growth: 0,
@@ -22,7 +25,7 @@ global.flags = {
 global.state = e_gameStates.TITLE_SCREEN;
 global.statePrevious = global.state;
 // Player Info
-global.playerName = ""; // Used in obj_player_creator
+global.playerName = "PLAYER"; // Used in obj_player_creator
 global.progress = [];
 Progress();
 #region GAME CONTROLS
@@ -140,4 +143,5 @@ if (Debug()) instance_create_layer(0, 0, "Controllers", DEBUG_DRAWER);
 // Add first room here
 //room_goto(rm_lang);
 //room_goto(rm_dream);
-room_goto(rm_title);
+//room_goto(rm_title);
+room_goto(rm_file_selection);

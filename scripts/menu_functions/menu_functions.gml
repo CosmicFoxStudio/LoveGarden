@@ -1,21 +1,25 @@
 // Title menu config submenu and context menu functions 
 
-function ToggleContextMenu() {
-	// Context Config Menu Toggle Activation / Deactivation
-	if ( (global.PRESSED_START || global.PRESSED_MOUSE_MIDDLE) && global.state == e_gameStates.CONTINUE_GAME) {
+// Context Config Menu Toggle Activation / Deactivation
+function ToggleContextMenu(_condition = true) {
+	if (_condition) {
+		// ACTIVATION
 		if (global.config_menu == false) {
-				global.config_menu = true;
-				GameChangeState(e_gameStates.MENU);
+			global.config_menu = true;
+			GameChangeState(e_gameStates.MENU);
+			return "Activated";
 		}
+		// DEACTIVATION
 		else if (global.config_menu == true) {
 			global.config_menu = false;
 			GameChangeState(e_gameStates.CONTINUE_GAME);
+			return "Deactivated";
 		}
 	}
 }
 
 function ResumeGame() {
-	global.config_menu = false;
+	ToggleContextMenu();
 }
 
 function ExitGame() {

@@ -2,7 +2,10 @@
 // TIP: Keyboard and mouse functions only register for 1 frame
 
 // Context Config Menu Toggle Activation / Deactivation
-ToggleContextMenu();
+if ( (global.PRESSED_START || global.PRESSED_MOUSE_MIDDLE) ) {
+	//	Can only be activated/deactivated if game state is CONTINUE_GAME or MENU
+	ToggleContextMenu(global.state == e_gameStates.CONTINUE_GAME || global.state == e_gameStates.MENU);
+}
 
 #region SETUP INPUTS & CONTROLS
 

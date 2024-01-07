@@ -7,14 +7,14 @@ if (debugShowGrid) {
 
 	// Draw horizontal lines
 	for (var i = 0; i <= numHorizontalLines; i++) {
-		var _yy = i * gridSpacing;
-		draw_line(0, _yy, room_width, _yy);
+		var yy = i * gridSpacing;
+		draw_line(0, yy, room_width, yy);
 	}
 
 	// Draw vertical lines
 	for (var j = 0; j <= numVerticalLines; j++) {
-		var _xx = j * gridSpacing;
-		draw_line(_xx, 0, _xx, room_height);
+		var xx = j * gridSpacing;
+		draw_line(xx, 0, xx, room_height);
 	}
 }
 #endregion GRID
