@@ -25,8 +25,20 @@ if (global.debug) {
 
 	#region BOOLEANS
 	
-	//debugShowInfo = displayInfo;
-	
+	// Debug Pause State
+	if (keyboard_check_pressed(ord("P"))) {
+		if (togglePause == false) {
+			togglePause = true;
+			GameChangeState(e_gameStates.PAUSED);
+			show_debug_message("Game was paused.");
+		}
+		else if (togglePause == true) {
+			togglePause = false;
+			GameChangeState(global.statePrevious);
+			show_debug_message("Game was resumed.");
+		}
+	}
+
 	for (var i = 0; i < array_length(debugBooleans); i++) {
 	    if (keyboard_check_pressed(ord(string(i + 1)))) {
 		/*
@@ -76,15 +88,20 @@ if (global.debug) {
 	
 	#region ROOM SELECTOR
 
-	if keyboard_check_pressed(ord("R")) {
-	    debugRmSelectorActive = !debugRmSelectorActive;
+	if (keyboard_check_pressed(ord("R"))) {
+		if (debugRmSelectorActive == false) {
+			debugRmSelectorActive = true;
+			GameChangeState(e_gameStates.PAUSED);
+		}
+		else if (debugRmSelectorActive == true) {
+			debugRmSelectorActive = false;
+			GameChangeState(global.statePrevious);
+		}
 	}
 	
 	// Pause other input if Room Selector is active
-	global.pause = debugRmSelectorActive;
-    
 	if (debugRmSelectorActive) {
-					
+
         if (global.PRESSED_DOWN) {
             selected += 1;
             if (selected >= ds_list_size(global.rmNameSorted)) {
@@ -124,13 +141,15 @@ if (global.debug) {
 					MakeAnnouncement("Trying to teleport to restricted room.");
 				}
 	        }  
+			
+			// Deactivate Room Selector
+			if (global.PRESSED_CANCEL || global.PRESSED_MOUSE_RIGHT) {
+				// Goes back to last game state
+				GameChangeState(global.statePrevious);
+				debugRmSelectorActive = false;
+				menuTransition = 1;
+			}
 	    }
-		
-		// Deactivate Room Selector
-		if (global.PRESSED_CANCEL || global.PRESSED_MOUSE_RIGHT) {
-			debugRmSelectorActive = false;
-			menuTransition = 1;
-		}
 		
 		// Fading
 		if (debugRmSelectorActive && menuTransition < 1) {

@@ -1,13 +1,8 @@
 /// @description Input checks, menu activation, etc
 // TIP: Keyboard and mouse functions only register for 1 frame
 
-// Context Config Menu
-if (global.PRESSED_START || global.PRESSED_MOUSE_MIDDLE) {
-	global.config_menu = !global.config_menu;
-}
-
-// Pausing when Config Menu is active
-global.pause = global.config_menu;
+// Context Config Menu Toggle Activation / Deactivation
+ToggleContextMenu();
 
 #region SETUP INPUTS & CONTROLS
 

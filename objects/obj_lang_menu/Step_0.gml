@@ -1,4 +1,4 @@
-if (global.pause) exit;
+if (global.state == e_gameStates.PAUSED) exit;
 
 // Select Phase
 if (phase == "SELECT") {

@@ -39,9 +39,13 @@ if (global.debug) {
 		draw_text(20, 30, "mouse pos: " + "(" + string(mouse_x) + " / " + string(mouse_y) + ")");
 		draw_text(20, 40, "mouse GUI pos: " + "(" + string(clickGuiX) + " / " + string(clickGuiY) + ")");
 		draw_text(20, 50, "Last Font: " + string(global.lastFontUsed));	
-		draw_text(20, 60, "Pause State: " + string(global.pause));
-		draw_text(20, 70, "Keyboard Pressed Confirm: " + string(global.PRESSED_CONFIRM));
-		draw_text(20, 80, "Mouse Pressed Confirm: " + string(global.PRESSED_MOUSE_LEFT));
+		draw_text(20, 60, "Toggle Pause: " + string(togglePause));
+		draw_text(20, 70, "Game State: " + string(global.state));
+		draw_text(20, 80, "Previous State: " + string(global.statePrevious));
+		draw_text(20, 90, "Keyboard Pressed Confirm: " + string(global.PRESSED_CONFIRM));
+		draw_text(20, 100, "Mouse Pressed Confirm: " + string(global.PRESSED_MOUSE_LEFT));
+		draw_text(20, 110, "Room Selector Active? " + string(debugRmSelectorActive));
+		
 	}
 	#endregion GAME
 	

@@ -1,5 +1,4 @@
 /// @description Draw the menu
-//if (global.pause) exit;
 
 DrawFont(fnt_menu);
 DrawAlign(fa_center, fa_middle);

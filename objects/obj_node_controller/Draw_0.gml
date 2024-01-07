@@ -18,7 +18,7 @@ if IsChatterbox(chatterbox) and text != undefined {
 	// Draw dialogue text
 	DrawFont(fnt_dialogue);
 	//draw_text(xx, yy, ChatterboxGetContentSpeech(chatterbox, 0));
-	scribble(ChatterboxGetContentSpeech(chatterbox, 0)).wrap(370).draw(xx, yy, typist);
+	scribble(ChatterboxGetContentSpeech(chatterbox, 0)).wrap(TEXT_WIDTH).draw(xx, yy, typist);
 	
 	// Draw nametag
 	DrawFont(fnt_dialogue);

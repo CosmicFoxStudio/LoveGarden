@@ -2,7 +2,6 @@
 // Initializes globals & enumerators
 Enums();
 global.debug = false;
-global.pause = false;
 global.lastFontUsed = -1;
 DrawFont(fnt_dialogue); // Run the first time
 global.config_menu = false;
@@ -20,6 +19,8 @@ global.flags = {
 	love: false,
 	favePlace: false,
 }
+global.state = e_gameStates.TITLE_SCREEN;
+global.statePrevious = global.state;
 // Player Info
 global.playerName = ""; // Used in obj_player_creator
 global.progress = [];
@@ -137,6 +138,6 @@ global.roomYarnMap[? "rm_dormroom"	]		= "scenes/main_day0_test.yarn";
 // ------------------------------ TESTING ZONE ------------------------------ //
 if (Debug()) instance_create_layer(0, 0, "Controllers", DEBUG_DRAWER);
 // Add first room here
-//room_goto(rm_title);
+//room_goto(rm_lang);
 //room_goto(rm_dream);
-room_goto(rm_lang);
+room_goto(rm_title);

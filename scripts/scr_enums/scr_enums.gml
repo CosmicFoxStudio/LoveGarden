@@ -6,6 +6,18 @@ function Enums() {
 		PT	// ---> 1
 	}
 
+	// GAME STATES
+	enum e_gameStates {
+		INTRO, // Studio logo
+		TITLE_SCREEN,
+		FILE_SELECTION,
+		NEW_GAME, // First access
+		CONTINUE_GAME, // If not first access (continue game)
+		PAUSED,
+		MENU,
+		LEAVE // Returns to title
+	}
+
 	enum e_btnTypes {
 		PLAY,
 		QUIT,
@@ -24,8 +36,7 @@ enum e_fadeoutState {
 
 enum e_roomTypes {
 	SPECIAL,
-	SCENES,
-	WORLD_MAP
+	SCENES
 }
 
 enum e_daytime {

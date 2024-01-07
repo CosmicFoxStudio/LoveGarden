@@ -1,8 +1,11 @@
-if (global.pause) exit;
+//if (global.state == e_gameStates.PAUSED) exit;
 
 // Prepare for drawing
 draw_set_color(c_white);
 DrawAlign(fa_center, fa_top);
+
+// Typist flow control
+TypistCheckPause();
 
 /* 
 Find how many characters are on each page and store that number in the "textLength" variable.

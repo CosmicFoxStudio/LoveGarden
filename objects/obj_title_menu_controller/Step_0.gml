@@ -1,6 +1,6 @@
 /// @description Controller for button input
 
-if (global.pause) exit;
+if (global.state == e_gameStates.PAUSED) exit;
 
 // Re-check array length
 //option_length = array_length(buttonArray);

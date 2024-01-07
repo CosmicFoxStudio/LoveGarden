@@ -22,7 +22,7 @@ This repository hosts the game's alpha version **only**! For the old prototype, 
 ## How to Play
 1. **Download:**
     - If the file is compressed (.zip), unzip it and start playing.
-    - For .exe files, follow the installer instructions and then execute the game.
+    - For executable files (.exe, .dmg), follow the installer instructions and then execute the game.
     - Mobile version users, click on the downloaded file to install.
 
 2. **Important Notice:**

@@ -1,5 +1,6 @@
 /// @description Initialization
 
+togglePause = false;
 //------------------- MOUSE ---------------------//
 clickX = 0;
 clickY = 0;
