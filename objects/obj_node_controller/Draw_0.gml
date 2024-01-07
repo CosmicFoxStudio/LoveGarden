@@ -8,7 +8,7 @@ var marginText = 64;
 
 if IsChatterbox(chatterbox) and text != undefined {
 	// Draw text
-	var yy = room_height - (marginText/2) - 50;
+	var yy = room_height - (marginText/2) - 40;
 	
 	// Textbox (In case we need one made by code only)
 	// DrawRectangleCenter(room_width/2, yy, room_width - 190, marginText,  false, c_black, 0.5);
@@ -18,7 +18,7 @@ if IsChatterbox(chatterbox) and text != undefined {
 	// Draw dialogue text
 	DrawFont(fnt_dialogue);
 	//draw_text(xx, yy, ChatterboxGetContentSpeech(chatterbox, 0));
-	scribble(ChatterboxGetContentSpeech(chatterbox, 0)).wrap(380).draw(xx, yy, typist);
+	scribble(ChatterboxGetContentSpeech(chatterbox, 0)).wrap(370).draw(xx, yy, typist);
 	
 	// Draw nametag
 	DrawFont(fnt_dialogue);

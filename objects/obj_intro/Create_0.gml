@@ -19,15 +19,15 @@ switch (global.lang) {
 		break;
 	case "pt":
 		text[0]	= ". . .";
-		text[1]	= "Existe algo novo aqui.";
-		text[2]	= "Você tem uma visão maravilhosa dos campos,\ndos aquedutos e das curvas dos rios.";
+		text[1]	= "Tem algo novo aqui.";
+		text[2]	= "Você tem uma ótima visão dos campos,\ndos aquedutos e das curvas dos rios.";
 		text[3]	= "A brisa de verão é reconfortante."
 		text[4]	= "É tempo de novos recomeços.[delay,200]\nDe novas reflexões.";
 		text[5]	= "Mas também é tempo de relaxar.";
 		text[6]	= "Bem, se você pudesse viver tudo de novo, mas já sabendo como tudo deve acontecer,";
 		text[7]	= ". . . e com o poder de evitar tudo de ruim,";
 		text[8]	= ". . . Você faria?";
-		text[9]	= "Mesmo se suas memórias fossem apagadas e tudo tivesse que ser reconstruído...[delay]?";
+		text[9]	= "Mesmo que signifique apagar todas as memórias e refazer tudo do início...[delay]?";
 		text[10] = "Você faria[delay] tudo de novo?";
 		text[11] = "";
 		break;

@@ -33,7 +33,7 @@ typist.in(textSpd, 0.8);
 skipCounter = 0;
 
 // Delays in punctuation
-typist.character_delay_add(".", 20);
-typist.character_delay_add("!", 500);
-typist.character_delay_add("?", 500);
-typist.character_delay_add(",", 500);
+typist.character_delay_add(".", 50);
+typist.character_delay_add("!", 400);
+typist.character_delay_add("?", 400);
+typist.character_delay_add(",", 400);

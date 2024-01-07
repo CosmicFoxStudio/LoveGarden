@@ -25,7 +25,7 @@ draw_rectangle_color(0, 0, gwidth, gheight, c, c, c, c, false);
 draw_set_alpha(1);
 
 // Draw Config Menu BG
-draw_sprite(spr_box, 0, 0, 0,);
+draw_sprite(spr_ui_box_config, 0, 0, 0,);
 
 // --------------------------- Draw Elements on the Left Side --------------------------- //
 DrawAlign(fa_right, fa_middle);

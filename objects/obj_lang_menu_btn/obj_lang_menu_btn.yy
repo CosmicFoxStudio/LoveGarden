@@ -33,8 +33,8 @@
   ],
   "solid": false,
   "spriteId": {
-    "name": "spr_button_small",
-    "path": "sprites/spr_button_small/spr_button_small.yy",
+    "name": "spr_button_small_old",
+    "path": "sprites/spr_button_small_old/spr_button_small_old.yy",
   },
   "spriteMaskId": null,
   "visible": true,
