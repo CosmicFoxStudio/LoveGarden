@@ -37,7 +37,7 @@ menu_page_audio_elements[3]		= new MenuElementDefinition("BACK",			e_menuElement
 
 // GRAPHICS PAGE [3]
 menu_page_graphics_elements[0]	= new MenuElementDefinition("RESOLUTION",	e_menuElementType.SHIFT,			ChangeResolution,			0,		["640 x 480", "1280 x 720"]);
-menu_page_graphics_elements[1]	= new MenuElementDefinition("FULLSCREEN",	e_menuElementType.TOGGLE,			Fullscreen,					1,		["FULLSCREEN", "WINDOWED"]);
+menu_page_graphics_elements[1]	= new MenuElementDefinition("FULLSCREEN",	e_menuElementType.TOGGLE,			Fullscreen,					0,		["FULLSCREEN", "WINDOWED"]);
 menu_page_graphics_elements[2]	= new MenuElementDefinition("BACK",			e_menuElementType.PAGE_CHANGE,		e_MenuPage.SETTINGS);
 #endregion CREATE MENU ELEMENTS
 

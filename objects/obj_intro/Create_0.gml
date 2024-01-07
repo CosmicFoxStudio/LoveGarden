@@ -2,18 +2,40 @@
 ended = false;
 textSpd = 0.25;
 page = 0;
-text[0]	= ". . .";
-text[1]	= "There is something new here.";
-text[2]	= "You can see a wonderful view of the fields,\nthe aqueducts and the river lines.";
-text[3]	= "There's a comforting summer breeze."
-text[4]	= "It's time for new beginnings.[delay,200]\nFor new reflections.";
-text[5]	= "But it's also time for relaxing.";
-text[6]	= "Hey, if you could live it all over again, but already knowing how everything should happen,";
-text[7]	= ". . . and with the power to avoid everything bad.";
-text[8]	= "Would you do it?";
-text[9]	= "Even if it means erasing all memories and rebuilding from scratch...[delay]?";
-text[10] = "Would you do it[delay] all over again?";
-text[11] = "";
+switch (global.lang) {
+	case "en":
+		text[0]	= ". . .";
+		text[1]	= "There is something new here.";
+		text[2]	= "You can see a wonderful view of the fields,\nthe aqueducts and the river lines.";
+		text[3]	= "There's a comforting summer breeze."
+		text[4]	= "It's time for new beginnings.[delay,200]\nFor new reflections.";
+		text[5]	= "But it's also time for relaxing.";
+		text[6]	= "Hey, if you could live it all over again, but already knowing how everything should happen,";
+		text[7]	= ". . . and with the power to avoid everything bad,";
+		text[8]	= ". . . Would you do it?";
+		text[9]	= "Even if it means erasing all memories and rebuilding from scratch...[delay]?";
+		text[10] = "Would you do it[delay] all over again?";
+		text[11] = "";
+		break;
+	case "pt":
+		text[0]	= ". . .";
+		text[1]	= "Existe algo novo aqui.";
+		text[2]	= "Você tem uma visão maravilhosa dos campos,\ndos aquedutos e das curvas dos rios.";
+		text[3]	= "A brisa de verão é reconfortante."
+		text[4]	= "É tempo de novos recomeços.[delay,200]\nDe novas reflexões.";
+		text[5]	= "Mas também é tempo de relaxar.";
+		text[6]	= "Bem, se você pudesse viver tudo de novo, mas já sabendo como tudo deve acontecer,";
+		text[7]	= ". . . e com o poder de evitar tudo de ruim,";
+		text[8]	= ". . . Você faria?";
+		text[9]	= "Mesmo se suas memórias fossem apagadas e tudo tivesse que ser reconstruído...[delay]?";
+		text[10] = "Você faria[delay] tudo de novo?";
+		text[11] = "";
+		break;
+	default:
+		text[0]	= "NO LANGUAGE SELECTED";
+		break;
+}
+
 textLength = scribble(text[page]).get_glyph_count();
 
 // ----------------------------- SCRIBBLE ----------------------------- //

@@ -54,12 +54,12 @@ if (page >= array_length(text) - 1) {
 if (twFadeOutState == e_fadeoutState.FADING_OUT) {
 	// This fade out is not working :'(
 	draw_set_alpha(Wave(0.3,0.8,1,0));
-	scribble(text[page]).wrap(300).draw(190, 140, typist);
+	scribble(text[page]).wrap(300).align(fa_center, fa_middle).draw(320, 180, typist);
 	draw_set_alpha(1);
 	twFadeOutState = e_fadeoutState.FINISHED;
 }
 else {
-	scribble(text[page]).wrap(300).draw(190, 140, typist);	
+	scribble(text[page]).wrap(300).align(fa_center, fa_middle).draw(320, 180, typist);	
 }
 
 
@@ -67,7 +67,7 @@ if (twFadeOutState = e_fadeoutState.FINISHED && ended) {
 	obj_dream.finishedIntro = true;
 	
 	// Job done
-	TransitionStart(sq_out_trans_fade_black, sq_in_trans_fade_black);
+	// TransitionStart(sq_out_trans_fade_black, sq_in_trans_fade_black);
 	instance_destroy();
 }
 
