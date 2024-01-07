@@ -12,9 +12,16 @@ if (global.debug) {
 			"Game Debug: 1",
 			"Language Debug: 2",
 			"Character Debug: 3", 
+			"Cutscene Debug: 4",
 			"Show FPS: F",
-			"Room Selector: R"
+			"Room Selector: R",
+			"Pause Game: P",
+			"Restart Room: Home",
+			"Next Room: PageUp",
+			"Previous Room: PageDown",
+			"End Game: End"
 		];
+		
 		DebugDrawBox(10, 10, "INFO", info_debug_strings);
 	}
 	#endregion INFO
@@ -34,64 +41,78 @@ if (global.debug) {
 	
 	#region GAME --- Press 1
 	if (debugBooleans[e_DebugOptions.GAME]) {
-		draw_text(20, 10, "Last click (x): " + string(clickX));
-		draw_text(20, 20, "Last click (y): " + string(clickY));
-		draw_text(20, 30, "mouse pos: " + "(" + string(mouse_x) + " / " + string(mouse_y) + ")");
-		draw_text(20, 40, "mouse GUI pos: " + "(" + string(clickGuiX) + " / " + string(clickGuiY) + ")");
-		draw_text(20, 50, "Last Font: " + string(global.lastFontUsed));	
-		draw_text(20, 60, "Toggle Pause: " + string(togglePause));
-		draw_text(20, 70, "Game State: " + string(global.state));
-		draw_text(20, 80, "Previous State: " + string(global.statePrevious));
-		draw_text(20, 90, "Keyboard Pressed Confirm: " + string(global.PRESSED_CONFIRM));
-		draw_text(20, 100, "Mouse Pressed Confirm: " + string(global.PRESSED_MOUSE_LEFT));
-		draw_text(20, 110, "Room Selector Active? " + string(debugRmSelectorActive));
+		var gameDebugStrings = [
+			"Last click (x): " + string(clickX),
+			"Last click (y): " + string(clickY),
+			"mouse pos: " + "(" + string(mouse_x) + " / " + string(mouse_y) + ")",
+			"mouse GUI pos: " + "(" + string(clickGuiX) + " / " + string(clickGuiY) + ")",
+			"Last Font: " + string(global.lastFontUsed),
+			"Toggle Pause: " + string(togglePause),
+			"Game State: " + string(global.state),
+			"Previous State: " + string(global.statePrevious),
+			"Keyboard Pressed Confirm: " + string(global.PRESSED_CONFIRM),
+			"Mouse Pressed Confirm: " + string(global.PRESSED_MOUSE_LEFT),
+		];
 		
+		DebugDrawBox(10, 10, "GAME DEBUG", gameDebugStrings);
 	}
 	#endregion GAME
 	
 	#region LANGUAGE --- Press 2
 	if (debugBooleans[e_DebugOptions.LANG]) {
-		draw_text(20, 10, "LOCALIZATION DEBUG");
-		draw_text(20, 20, "LANG: " + global.lang); 	
+		var langDebugStrings = ["Language: " + global.lang];
+		
 		// Language Menu
 		if (instance_exists(obj_lang_menu) && instance_exists(obj_lang_selection)) {
-			draw_text(20, 30, "Menu pos: " + "(" + string(obj_lang_menu.x) + " / " + string(obj_lang_menu.y) + ")");
-			draw_text(20, 40, "Phase: " + string(obj_lang_menu.phase));
-			draw_text(20, 50,"Button Position: " + string(obj_lang_menu.posButtons));
-			draw_text(20, 60, "Button Selected: " + string(obj_lang_menu.selectedButton));
-			draw_text(20, 70, "Hovering over CancelBTN: " + string(obj_lang_menu.cancelButtonIsHovering));
-			draw_text(20, 80, "Hovering over ConfirmBTN: " + string(obj_lang_menu.confirmButtonIsHovering));
-			draw_text(20, 90, "Selection box pos: " + "(" + string(obj_lang_selection.x) + " / " + string(obj_lang_selection.y) + ")");
-			draw_text(20, 100, "target_y: " + string(obj_lang_selection.targetY));
-			draw_text(20, 110, "Cancel Button selected? " + string(obj_lang_menu.cancelButton.selected));
-			draw_text(20, 120, "Confirm Button selected? " + string(obj_lang_menu.confirmButton.selected));
-			
+			array_push(langDebugStrings,
+			"Menu pos: " + "(" + string(obj_lang_menu.x) + " / " + string(obj_lang_menu.y) + ")",
+			"Phase: " + string(obj_lang_menu.phase),
+			"Button Position: " + string(obj_lang_menu.posButtons),
+			"Button Selected: " + string(obj_lang_menu.selectedButton),
+			"Hovering over CancelBTN: " + string(obj_lang_menu.cancelButtonIsHovering),
+			"Hovering over ConfirmBTN: " + string(obj_lang_menu.confirmButtonIsHovering),
+			"Selection box pos: " + "(" + string(obj_lang_selection.x) + " / " + string(obj_lang_selection.y) + ")",
+			"Tween end y pos: " + string(obj_lang_selection.targetY),
+			"Cancel Button selected? " + string(obj_lang_menu.cancelButton.selected),
+			"Confirm Button selected? " + string(obj_lang_menu.confirmButton.selected)
+			);	
+		
 			// Checking boundaries for the lang menu based on variables
-			draw_rectangle(obj_lang_menu.x, obj_lang_menu.y, obj_lang_menu.x + obj_lang_menu.width, obj_lang_menu.y + obj_lang_menu.height, true);
+			with(obj_lang_menu) draw_rectangle(x, y, x + width, y + height, true);
 		}
+		
+		DebugDrawBox(10, 10, "LANGUAGE DEBUG", langDebugStrings);
 	}
 	#endregion LANGUAGE
 	
 	#region CHARACTERS --- Press 3
 	if (debugBooleans[e_DebugOptions.CHARA]) {
-			draw_text(20, 10, "CHARACTER DEBUG");
+		var charaDebugStrings = [];
+		
 		if (instance_exists(obj_characters)) {
-			draw_text(20, 20, "Current sprite: " + sprite_get_name(obj_characters.chara));
-			draw_text(20, 30, "Current subimg: " + string(obj_characters.characterExpression));
+			array_push(charaDebugStrings, 
+				"Current sprite: " + sprite_get_name(obj_characters.chara),
+				"Current expression: " + string(obj_characters.characterExpression)
+			);
 		}
+		
+		DebugDrawBox(10, 10, "CHARACTERS DEBUG", charaDebugStrings);
 	}
 	#endregion CHARACTERS
 	
 	#region CUTSCENES --- Press 4
 	if (debugBooleans[e_DebugOptions.CUTSCENE]) {
+		var cutsceneDebugStrings = [];
+		
 		if (instance_exists(obj_intro)) {
-			draw_text(20, 10, "CUTSCENE DEBUG");
-			with(obj_intro) {
-				draw_text(20, 20, "INTRO SCENE");
-				draw_text(20, 30, "Typist position: " + string(typist.get_position()));
-				draw_text(20, 40, "Current page: " + string(page));
-			}
+			array_push(cutsceneDebugStrings, 
+				"INTRO SCENE",
+				"Typist position: " + string(obj_intro.typist.get_position()),
+				"Current page: " + string(obj_intro.page)
+			);
 		}
+		
+		DebugDrawBox(10, 10, "CUTSCENE DEBUG", cutsceneDebugStrings);
 	}
 	#endregion CUTSCENES
 	

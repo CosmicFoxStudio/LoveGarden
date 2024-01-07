@@ -1,6 +1,6 @@
 ///@description Draw Grid
 
-// -------------------- Grid ----------------------- //
+#region GRID
 if (keyboard_check_pressed(ord("G"))) debugShowGrid = !debugShowGrid;
 if (debugShowGrid) {
 	DrawSet(c_blue, 0.3);
@@ -17,6 +17,7 @@ if (debugShowGrid) {
 		draw_line(_xx, 0, _xx, room_height);
 	}
 }
-	
+#endregion GRID
+
 // Reset
 DrawReset();
