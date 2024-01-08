@@ -1,2 +1,2 @@
 /// @description Initialization
-fillBar = global.status.blossom; // Has a value from 0 to 10
+fillBar = global.playerStats.blossom; // Has a value from 0 to 10

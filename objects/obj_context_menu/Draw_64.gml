@@ -1,6 +1,6 @@
 /// @description Draw the menu
 
-if(!global.config_menu) exit;
+if(!global.configMenu) exit;
 
 DrawFont(fnt_menu);
 

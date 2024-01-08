@@ -30,4 +30,15 @@ function UnloadLocalization() {
 	ChatterboxLocalizationClear();
 	show_debug_message("Current translation disposed.");
 }
+
+function ManageLocalization() {
+    // If game language is English, get rid of any translations
+    if (global.lang == "en") {
+        UnloadLocalization();
+    } else {
+        // If game language is not English, load translation
+        LoadLocalization();
+    }
+}
+
 #endregion LOCALIZATION

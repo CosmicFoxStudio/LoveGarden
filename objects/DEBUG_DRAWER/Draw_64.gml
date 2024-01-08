@@ -23,6 +23,7 @@ if (global.debug) {
 		];
 		
 		DebugDrawBox(10, 10, "INFO", info_debug_strings);
+		DrawReset();
 	}
 	#endregion INFO
 	
@@ -52,6 +53,8 @@ if (global.debug) {
 			"Previous State: " + string(global.statePrevious),
 			"Keyboard Pressed Confirm: " + string(global.PRESSED_CONFIRM),
 			"Mouse Pressed Confirm: " + string(global.PRESSED_MOUSE_LEFT),
+			"Current Room: " + global.rmCurrent,
+			"Location string: " + global.location
 		];
 		
 		DebugDrawBox(10, 10, "GAME DEBUG", gameDebugStrings);

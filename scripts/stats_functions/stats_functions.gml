@@ -12,23 +12,22 @@ function WrapInside(_val, _min, _max) {
 	else return _val;
 }
 
-function StatusGetWilting() {
-	return global.status.wilting;
+function StatsGetWilting() {
+	return global.playerStats.wilting;
 }
 
-function StatusGetGrowth() {
-	return global.status.growth;
+function StatsGetGrowth() {
+	return global.playerStats.growth;
 }
 
-function StatusGetBlossom() {
-	return global.status.blossom;
+function StatsGetBlossom() {
+	return global.playerStats.blossom;
 }
 
 // Set specified flag to true
 function FlagSet(_nome) {
 	switch (_nome) {
 		case "favePlace": global.flags.favePlace = true; break;
-		case "dormroom": global.flags.dormroom = true; break;
 		case "love": global.flags.love = true; break;
 		case "bad": global.flags.bad = true; break;
 	}

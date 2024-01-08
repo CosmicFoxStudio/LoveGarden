@@ -11,7 +11,7 @@ All rooms should have this order of layers, even if you don't use them all.
 Controllers			(instances layer)	-----> For controllers.
 Special				(instances layer)	-----> For specific objects, such as obj_announcement.
 UI_Above			(assets layer)		-----> Highest depth for assets.
-Status				(instances layer)	-----> For placing the status bar.
+Stats				(instances layer)	-----> For placing the stats bars.
 UI_Mid				(assets layer)
 Instances_Above		(instances layer)
 Instances			(instances layer)

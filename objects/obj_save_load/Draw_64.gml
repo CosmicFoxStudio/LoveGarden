@@ -1,22 +1,21 @@
 /// @description Draw save slots
 // Lots of hardcoded stuff here x-x Will improve that later!!
 
-// Save directory path - should be inside %localappdata%\love-garden
 if (global.state == e_gameStates.FILE_SELECTION) {
 	
 	// To center on the screen	
 	startX = (SCREEN_WIDTH/ 2);
-	startY = (SCREEN_HEIGHT / 2) - (sprite_get_height(spr_saveslot_box) * 1.2);
+	startY = (SCREEN_HEIGHT / 2) - (sprite_get_height(sprite_index) * 1.2);
 	
 	// Drawing the three save slot boxes
 	for (var saveSlots = 0; saveSlots < maxSlots; saveSlots++) {
-		yy = startY + (saveSlots * (sprite_get_height(spr_saveslot_box) * 1.2));
+		yy = startY + (saveSlots * (sprite_get_height(sprite_index) * 1.2));
 		
 		// Checking if the slot is highlighted
 		if (selectedOption == saveSlots) subimage = 1;
 		else subimage = 0;
 		
-		draw_sprite(spr_saveslot_box, subimage, startX, yy);
+		draw_sprite(sprite_index, subimage, startX, yy);
 		
 		// Checking if a save file exists for the selected slot
 		if !file_exists("file_" + string(saveSlots) + ".sav") {
@@ -25,8 +24,9 @@ if (global.state == e_gameStates.FILE_SELECTION) {
 				"file_1.sav"
 				"file_2.sav"
 			*/
-			draw_set_font(fnt_menu); // draw_set_font(fnt_dialogue);
-			draw_set_color(c_white);
+			
+			// Drawing the text data
+			DrawSet(c_white);
 			DrawAlign(fa_center, fa_middle);
 			
 			draw_text(startX, yy, saveText[0]);
@@ -47,38 +47,34 @@ if (global.state == e_gameStates.FILE_SELECTION) {
 			
 			// NAME
 			draw_set_halign(fa_center);
+			DrawFont(fnt_menu);
 			draw_text(startX - 20, yy - 20, saveSlotInfo[saveSlots, e_saveSlotStats.NAME]);
-
+			DrawFont(fnt_dialogue);
+			
 			// DATE
-			placeX = startX + 20;
-			placeY = yy;
+			dateX = startX + 20;
+			dateY = yy - 15;
 			
-			draw_set_halign(fa_right);
-			draw_text(placeX, placeY, saveSlotInfo[saveSlots, e_saveSlotStats.DATE]);
+			draw_set_halign(fa_left);
+			draw_set_font(fnt_dialogue);
+			draw_text(dateX, dateY, saveSlotInfo[saveSlots, e_saveSlotStats.DATE]);
 			
-			/*
+			
 			// LOCATION
 			draw_set_halign(fa_right);
-			dateX = startX - 38;
-			dateY = yy + 5;
+			placeX = startX - 38;
+			placeY = yy + 5;
 			
 			draw_set_halign(fa_left);
-			draw_text(dateX, dateY, saveSlotInfo[saveSlots, e_saveSlotStats.PLACE]);
-			*/
+			draw_text(placeX, placeY, saveSlotInfo[saveSlots, e_saveSlotStats.PLACE]);
 			
-			// DAY
-			draw_set_halign(fa_right);
-			dayX = startX + 77;
-			dayY = yy - 20;
-			
-			draw_set_halign(fa_left);
-			draw_text(dayX, dayY, saveSlotInfo[saveSlots, e_saveSlotStats.DAY]);
 			
 			// DAYTIME
 			daytimeX = startX + 140;
 			daytimeY = yy;
 			
 			draw_set_halign(fa_right);
+			DrawFont(fnt_dialogue);
 			
 			switch (saveSlotInfo[saveSlots, e_saveSlotStats.DAYTIME]) {
 				case e_daytime.MORNING:
@@ -93,15 +89,20 @@ if (global.state == e_gameStates.FILE_SELECTION) {
 				default:
 					draw_text(daytimeX, daytimeY, saveText[4]);
 				break;
-				
 			}
 			
+			// DAY
+			dayX = startX + 140;
+			dayY = yy - 20;
 			
+			draw_set_halign(fa_right);
+			DrawFont(fnt_menu);
+			draw_text(dayX, dayY, saveText[5] + " " + string(saveSlotInfo[saveSlots, e_saveSlotStats.DAY]));
+			DrawFont(fnt_dialogue);
 			#endregion DRAW STATS
 		}
 	}
 }
-
 
 // Reset
 DrawReset();

@@ -1,6 +1,9 @@
 /// @description Input checks, menu activation, etc
 // TIP: Keyboard and mouse functions only register for 1 frame
 
+// Check for fullscreen
+if (window_get_fullscreen) global.fullscreen = true;
+
 // Context Config Menu Toggle Activation / Deactivation
 if ( (global.PRESSED_START || global.PRESSED_MOUSE_MIDDLE) ) {
 	//	Can only be activated/deactivated if game state is CONTINUE_GAME or MENU

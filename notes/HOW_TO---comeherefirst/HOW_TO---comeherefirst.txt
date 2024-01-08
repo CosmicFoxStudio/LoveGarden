@@ -23,13 +23,13 @@
 	Parameter: Index of subimage as defined in CharacterExpressionOnScreen().
 	
 	<<wilting()>>							
-	----------> Get function. Returns current wilting status points.
+	----------> Get function. Returns current wilting stats points.
 	
 	<<growth()>>
-	----------> Get function. Returns current growth status points.
+	----------> Get function. Returns current growth stats points.
 	
 	<<blossom()>>
-	----------> Get function. Returns current blossom status points.
+	----------> Get function. Returns current blossom stats points.
 	
 	<<favePlace()>>
 	----------> Set function. Sets the favePlace flag to true.

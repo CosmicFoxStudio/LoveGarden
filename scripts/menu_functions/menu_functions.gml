@@ -4,14 +4,14 @@
 function ToggleContextMenu(_condition = true) {
 	if (_condition) {
 		// ACTIVATION
-		if (global.config_menu == false) {
-			global.config_menu = true;
+		if (global.configMenu == false) {
+			global.configMenu = true;
 			GameChangeState(e_gameStates.MENU);
 			return "Activated";
 		}
 		// DEACTIVATION
-		else if (global.config_menu == true) {
-			global.config_menu = false;
+		else if (global.configMenu == true) {
+			global.configMenu = false;
 			GameChangeState(e_gameStates.CONTINUE_GAME);
 			return "Deactivated";
 		}

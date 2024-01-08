@@ -2,12 +2,12 @@
 global.rmCurrent = room_get_name(room);
 show_debug_message("Room: " + global.rmCurrent);
 
-// Reset status & flags
+// Reset stats & flags
 if (room = rm_title) {
-	global.status.wilting = 0;
-	global.status.growth = 0;
-	global.status.blossom = 0;
-	global.status.humor = 0;
+	global.playerStats.wilting = 0;
+	global.playerStats.growth = 0;
+	global.playerStats.blossom = 0;
+	global.playerStats.humor = 0;
 	
 	global.flags.bad = false;
 	global.flags.love = false;

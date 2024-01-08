@@ -4,28 +4,32 @@ Enums();
 global.debug = false;
 global.lastFontUsed = -1;
 DrawFont(fnt_dialogue); // Run the first time
-global.config_menu = false;
+global.configMenu = false;
 global.lang = "en"; // "en", "pt"
 SetLanguage();
-global.day = 1;
+// Manages the loading of translated files based on the game language
+ManageLocalization();
+global.day = 4;
 global.currentDaytime = e_daytime.MORNING;
-global.date = date_current_datetime();
+global.date = ConvertDate(date_current_datetime());
 global.saveSlot = 0;
-global.status = {
-	wilting: 0,
-	growth: 0,
-	blossom: 0,
-	humor: 0
-}
+global.playerStats = new StatsDefinition();
 global.flags = {
 	bad: false,
 	love: false,
-	favePlace: false,
+	favePlace: false
 }
 global.state = e_gameStates.TITLE_SCREEN;
 global.statePrevious = global.state;
 // Player Info
-global.playerName = "PLAYER"; // Used in obj_player_creator
+global.playerName = "PLAYER";
+global.pronouns = e_pronouns.ELU;
+global.NPCs = [];
+global.NPCs[e_SO.YPE] = new StatsDefinition();
+global.NPCs[e_SO.CARU] = new StatsDefinition();
+global.NPCs[e_SO.CRAVO] = new StatsDefinition();
+global.NPCs[e_SO.ROSA] = new StatsDefinition();
+global.NPCs[e_SO.HYDRA] = new StatsDefinition();
 global.progress = [];
 Progress();
 #region GAME CONTROLS
@@ -103,7 +107,7 @@ global.res = { // See menu_functions script
 	yy: 0,
 	width: 640,
 	height: 360,
-	scale: 1 //1 ---> 640x360 | 2 ---> 1280x720
+	scale: 2 //1 ---> 640x360 | 2 ---> 1280x720
 }
 global.viewWidth = global.res.width * global.res.scale;
 global.viewHeight = global.res.height * global.res.scale;
@@ -141,7 +145,7 @@ global.roomYarnMap[? "rm_dormroom"	]		= "scenes/main_day0_test.yarn";
 // ------------------------------ TESTING ZONE ------------------------------ //
 if (Debug()) instance_create_layer(0, 0, "Controllers", DEBUG_DRAWER);
 // Add first room here
-room_goto(rm_lang);
+//room_goto(rm_lang);
 //room_goto(rm_dream);
 //room_goto(rm_title);
-//room_goto(rm_file_selection);
+room_goto(rm_file_selection);

@@ -1,4 +1,4 @@
-/// @description Room Management
+/// @description Room Management & Camera
 
 #region camera setup for each room
 

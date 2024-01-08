@@ -1,5 +1,5 @@
 /// @description Execute Actions
-if(!global.config_menu) exit;
+if(!global.configMenu) exit;
 
 /*
 How to access each property:

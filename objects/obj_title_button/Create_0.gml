@@ -7,5 +7,5 @@ hovering = false;
 // ENUMS USED: e_language & e_btnTypes
 
 // Translatable text
-btnText[e_btnTypes.PLAY] = ["PLAY", "JOGAR"];
+btnText[e_btnTypes.PLAY] = ["START", "INICIAR"];
 btnText[e_btnTypes.QUIT] = ["QUIT", "SAIR"];

@@ -13,7 +13,7 @@
   "option_linux_interpolate_pixels": true,
   "option_linux_long_desc": "",
   "option_linux_maintainer_email": "orph.project@gmail.com",
-  "option_linux_resize_window": true,
+  "option_linux_resize_window": false,
   "option_linux_scale": 0,
   "option_linux_short_desc": "A dating simulator where you can flourish relationships with plant people.",
   "option_linux_splash_screen": "splash/splash.png",

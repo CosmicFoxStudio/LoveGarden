@@ -3,9 +3,9 @@ ChatterboxAddFunction("bg", BackgroundSetIndex);					// Function to change backg
 ChatterboxAddFunction("nextRoom", NextRoom);						// Function to change scene
 ChatterboxAddFunction("chara", CharacterOnScreen);					// Function to draw character
 ChatterboxAddFunction("emotion", CharacterExpressionOnScreen);		// Function to change character expression
-ChatterboxAddFunction("wilting", StatusGetWilting);					// Returns wilting status
-ChatterboxAddFunction("growth", StatusGetGrowth);					// Returns growth status
-ChatterboxAddFunction("blossom", StatusGetBlossom);					// Returns blossom status
+ChatterboxAddFunction("wilting", StatsGetWilting);					// Returns wilting stats
+ChatterboxAddFunction("growth", StatsGetGrowth);					// Returns growth stats
+ChatterboxAddFunction("blossom", StatsGetBlossom);					// Returns blossom stats
 ChatterboxAddFunction("favePlace", FlagGetFavePlace);				// Returns favePlace flag
 ChatterboxAddFunction("love", FlagGetLove);							// Returns love ending flag
 ChatterboxAddFunction("bad", FlagGetBad);							// Returns bad ending flag

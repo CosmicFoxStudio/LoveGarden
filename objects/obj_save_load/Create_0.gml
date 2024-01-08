@@ -7,8 +7,8 @@ selectedOption = 0;
 maxSlots = 3;
 subimage = 0;
 spriteImage = 0;
-//dateX = 0;
-//dateY = 0;
+dateX = 0;
+dateY = 0;
 placeX = 0;
 placeY = 0;
 daytimeX = 0;
@@ -21,11 +21,12 @@ entryString = "";
 // Adding translation to save and load buttons
 switch (global.lang) {
 	case "en":
-		saveText[0] = "NO DATA";
+		saveText[0] = "EMPTY";
 		saveText[1] = "Morning";
 		saveText[2] = "Afternoon";
 		saveText[3] = "Evening";
 		saveText[4] = "Dawn";
+		saveText[5] = "DAY";
 		break;
 	case "pt":
 		saveText[0] = "VAZIO";
@@ -33,6 +34,7 @@ switch (global.lang) {
 		saveText[2] = "Tarde";
 		saveText[3] = "Noite";
 		saveText[4] = "Alvorada";
+		saveText[5] = "DIA";
 		break;
 }
 
@@ -43,7 +45,7 @@ for (var i = 0; i < 3; i++) {
 	saveSlotInfo[i, e_saveSlotStats.DATE] = "XX/XX/XX";
 	//saveSlotInfo[i, e_saveSlotStats.PLACE] = "Nowhere";
 	saveSlotInfo[i, e_saveSlotStats.DAYTIME] = "Dawn";
-	saveSlotInfo[i, e_saveSlotStats.DAY] = "DAY XX";
+	saveSlotInfo[i, e_saveSlotStats.DAY] = "DAY 0";
 }
 
 // Grab player info for save slots, if applicable
@@ -54,7 +56,7 @@ for (var slot = 0; slot < 3; slot++) {
 		
 		file_text_close(file);
 		
-		// Add info to save_slot array
+		// Add info to saveSlot array
 		startChar = 1;
 		endChar = string_length(saveStatString);
 		entryString = "";
@@ -68,13 +70,14 @@ for (var slot = 0; slot < 3; slot++) {
 			
 			// Reached an underscore
 			else {
-				// Save string to the save_slot_info array
+				// Save string to the saveSlotInfo array
 				saveSlotInfo[slot, currentEntryForSaveSlot] = entryString;
 				currentEntryForSaveSlot++;
 				entryString = "";
 				
 				// Check to see if we've filled all the entries for this save slot
-				if (currentEntryForSaveSlot > 2) currentEntryForSaveSlot = 0;
+				// If so, reset this counter variable
+				if (currentEntryForSaveSlot >= e_saveSlotStats.LAST) currentEntryForSaveSlot = 0;
 			}
 		}
 	}

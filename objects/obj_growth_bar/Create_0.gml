@@ -1,2 +1,2 @@
 /// @description Initialization
-fillBar = global.status.growth; // Has a value from 0 to 10
+fillBar = global.playerStats.growth; // Has a value from 0 to 10

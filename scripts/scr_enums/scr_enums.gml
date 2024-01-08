@@ -5,6 +5,12 @@ function Enums() {
 		EN,	// ---> 0
 		PT	// ---> 1
 	}
+	
+	enum e_pronouns {
+		ELU,	// ---> 0
+		ELA,	// ---> 1
+		ELE		// ---> 2
+	}
 
 	// GAME STATES
 	enum e_gameStates {
@@ -17,6 +23,14 @@ function Enums() {
 		MENU,
 		LEAVE // Returns to title
 	}
+	
+	enum e_SO {
+		YPE,	// 0
+		CARU,	// 1
+		CRAVO,	// 2
+		ROSA,	// 3
+		HYDRA	// 4
+	}
 
 	enum e_btnTypes {
 		PLAY,
@@ -25,63 +39,64 @@ function Enums() {
 		CONFIRM,
 		CANCEL
 	}
-}
 
-// Used in obj_intro
-enum e_fadeoutState {
-	IDLE,
-	FADING_OUT,
-	FINISHED
-}
+	// Used in obj_intro
+	enum e_fadeoutState {
+		IDLE,
+		FADING_OUT,
+		FINISHED
+	}
 
-enum e_roomTypes {
-	SPECIAL,
-	SCENES
-}
+	enum e_roomTypes {
+		SPECIAL,
+		SCENES
+	}
 
-enum e_daytime {
-	MORNING,
-	AFTERNOON,
-	EVENING
-}
+	enum e_daytime {
+		MORNING,
+		AFTERNOON,
+		EVENING
+	}
 
-enum e_DebugOptions {
-    GAME,
-    LANG,
-    CHARA,
-    CUTSCENE,
-	// DIALOGUE
-	// PLAYER
-	// MENU
-	// AUDIO
-	// FLAG
-	// ROOM
-	// INPUT
-	LAST
-}
+	enum e_DebugOptions {
+	    GAME,
+	    LANG,
+	    CHARA,
+	    CUTSCENE,
+		// DIALOGUE
+		// PLAYER
+		// MENU
+		// AUDIO
+		// FLAG
+		// ROOM
+		// INPUT
+		LAST
+	}
 
-enum e_MenuPage {
-	MAIN, 		
-	SETTINGS, 		
-	AUDIO, 		
-	GRAPHICS,		
-	//CONTROLS,		
-	LAST
-}
+	enum e_MenuPage {
+		MAIN, 		
+		SETTINGS, 		
+		AUDIO, 		
+		GRAPHICS,		
+		//CONTROLS,		
+		LAST
+	}
 
-enum e_menuElementType {
-	SCRIPT_RUNNER,
-	PAGE_CHANGE,	
-	SLIDER,		
-	SHIFT,	
-	TOGGLE,
-	// INPUT
-}
+	enum e_menuElementType {
+		SCRIPT_RUNNER,
+		PAGE_CHANGE,	
+		SLIDER,		
+		SHIFT,	
+		TOGGLE,
+		// INPUT
+	}
 
-enum e_saveSlotStats {
-	NAME,
-	DATE,
-	//PLACE,
-	DAYTIME,
-	DAY
+	enum e_saveSlotStats {
+		NAME,
+		DATE,
+		PLACE,
+		DAYTIME,
+		DAY,
+		LAST
+	}
 }
