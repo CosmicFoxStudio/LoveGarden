@@ -77,3 +77,11 @@ enum e_menuElementType {
 	TOGGLE,
 	// INPUT
 }
+
+enum e_saveSlotStats {
+	NAME,
+	DATE,
+	//PLACE,
+	DAYTIME,
+	DAY
+}

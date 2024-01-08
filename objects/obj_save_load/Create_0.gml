@@ -18,12 +18,22 @@ dayY = 0;
 saveStatString = "";
 entryString = "";
 
-enum e_saveSlotStats {
-	NAME,
-	DATE,
-	//PLACE,
-	DAYTIME,
-	DAY
+// Adding translation to save and load buttons
+switch (global.lang) {
+	case "en":
+		saveText[0] = "NO DATA";
+		saveText[1] = "Morning";
+		saveText[2] = "Afternoon";
+		saveText[3] = "Evening";
+		saveText[4] = "Dawn";
+		break;
+	case "pt":
+		saveText[0] = "VAZIO";
+		saveText[1] = "Manhã";
+		saveText[2] = "Tarde";
+		saveText[3] = "Noite";
+		saveText[4] = "Alvorada";
+		break;
 }
 
 // 3 slots

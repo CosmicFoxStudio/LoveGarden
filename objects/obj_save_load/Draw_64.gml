@@ -29,7 +29,7 @@ if (global.state == e_gameStates.FILE_SELECTION) {
 			draw_set_color(c_white);
 			DrawAlign(fa_center, fa_middle);
 			
-			draw_text(startX, yy, "NO DATA");
+			draw_text(startX, yy, saveText[0]);
 		}
 		// The file exists
 		else {
@@ -68,7 +68,7 @@ if (global.state == e_gameStates.FILE_SELECTION) {
 			
 			// DAY
 			draw_set_halign(fa_right);
-			dayX = startX + 70;
+			dayX = startX + 77;
 			dayY = yy - 20;
 			
 			draw_set_halign(fa_left);
@@ -82,16 +82,16 @@ if (global.state == e_gameStates.FILE_SELECTION) {
 			
 			switch (saveSlotInfo[saveSlots, e_saveSlotStats.DAYTIME]) {
 				case e_daytime.MORNING:
-					draw_text(daytimeX, daytimeY, "Morning");
+					draw_text(daytimeX, daytimeY, saveText[1]);
 				break;
 				case e_daytime.AFTERNOON:
-					draw_text(daytimeX, daytimeY, "Afternoon");
+					draw_text(daytimeX, daytimeY, saveText[2]);
 				break;
 				case e_daytime.EVENING:
-					draw_text(daytimeX, daytimeY, "Evening");
+					draw_text(daytimeX, daytimeY, saveText[3]);
 				break;
 				default:
-					draw_text(daytimeX, daytimeY, "Dawn");
+					draw_text(daytimeX, daytimeY, saveText[4]);
 				break;
 				
 			}
