@@ -3,8 +3,8 @@
 #region camera setup for each room
 
 // Create camera
-var _x = global.res.xx;
-var _y = global.res.yy;
+var _x = ORIGIN_X;
+var _y = ORIGIN_Y;
 var _w = global.res.width;
 var _h = global.res.height;
 camera = camera_create_view(_x, _y, _w, _h, 0, noone, -1, -1, _w/2, _h/2);

@@ -2,3 +2,5 @@
 #macro SCREEN_WIDTH 640
 #macro SCREEN_HEIGHT 360
 #macro TEXT_WIDTH 370
+#macro ORIGIN_X 0
+#macro ORIGIN_Y 0

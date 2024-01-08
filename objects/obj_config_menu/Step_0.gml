@@ -1,5 +1,4 @@
 /// @description Execute Actions
-if(!global.configMenu) exit;
 
 /*
 How to access each property:
@@ -52,9 +51,21 @@ if (inputting) {
 		case e_menuElementType.SLIDER : // ( <------o---> )
 			// Sound test
 			switch(menuOption[page]) {
-				case 0: if(!audio_is_playing(snd_title))	{ audio_play_sound(snd_title, 1, false);	} break; 
-				case 1: if(!audio_is_playing(snd_door))		{ audio_play_sound(snd_door, 1, false);		} break;
-				case 2: if(!audio_is_playing(snd_title))	{ audio_play_sound(snd_title, 1, false);	} break;
+				case 0: 
+					if (!audio_is_playing(snd_config_test_master)) { 
+						audio_play_sound(snd_config_test_master, 1, false);	
+					} 
+				break; 
+				case 1: 
+					if(!audio_is_playing(snd_config_test_sfx))	{ 
+						audio_play_sound(snd_config_test_sfx, 1, false);		
+					} 
+				break;
+				case 2: 
+					if(!audio_is_playing(snd_config_test_music)) { 
+						audio_play_sound(snd_config_test_music, 1, false);	
+					}
+				break;
 			}
 			// Held input instead of pressed here for smooth gameplay
 			var horizontalInput = global.HELD_RIGHT - global.HELD_LEFT;
@@ -90,8 +101,10 @@ if (inputting) {
 	}
 // If not currently inputting...
 } else { 	
-	audio_stop_all(); //to stop misplaced music (sliders)
-	//audio_group_stop_all(audiogroup_sfx);
+	//to stop misplaced music (sliders)
+	if audio_is_playing(snd_config_test_master) audio_stop_sound(snd_config_test_master);
+	if audio_is_playing(snd_config_test_sfx) audio_stop_sound(snd_config_test_sfx);
+	if audio_is_playing(snd_config_test_music) audio_stop_sound(snd_config_test_music);
 	
 	// Wrapping menu
 	if(verticalInput != 0) {

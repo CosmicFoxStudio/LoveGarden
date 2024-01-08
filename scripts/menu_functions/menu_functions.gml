@@ -1,20 +1,25 @@
 // Title menu config submenu and context menu functions 
 
-// Context Config Menu Toggle Activation / Deactivation
+// Config Menu Toggle Activation / Deactivation
 function ToggleContextMenu(_condition = true) {
 	if (_condition) {
-		// ACTIVATION
-		if (global.configMenu == false) {
-			global.configMenu = true;
+		// ACTIVATION - Menu doesn't exist, create it
+		if ((!instance_exists(global.configMenu))) {
+			global.configMenu = instance_create_layer(0, 0, "Special", obj_config_menu);
 			GameChangeState(e_gameStates.MENU);
-			return "Activated";
+			return show_debug_message("Config menu activated.");
 		}
-		// DEACTIVATION
-		else if (global.configMenu == true) {
-			global.configMenu = false;
+		// DEACTIVATION - Menu already exists, destroy it
+		else if (instance_exists(global.configMenu)) {
+			// Destroy the instance stored in the global. Menu is ready to be called again
+			instance_destroy(global.configMenu);
+			
 			GameChangeState(e_gameStates.CONTINUE_GAME);
-			return "Deactivated";
+			return show_debug_message("Config menu deactivated.");
 		}
+	}
+	else {
+		// Menu doesn't activate
 	}
 }
 
@@ -38,56 +43,62 @@ function ChangeVolume(_new_volume){
 show_debug_message("changed volume to " + string(_new_volume));
 }
 
-function ChangeResolution(_scale) {
-	switch(_scale) {
-		case 0: // 640x360
-			global.isResizing = true;
-			global.res.scale = 1;
-			
-			global.view_width = global.res.width * global.res.scale;
-			global.view_height = global.res.height * global.res.scale;
+function DecideResolutionBasedOnOption(_option) {
+	var resolution;
+	switch (_option) {
+		case 0: resolution = 1; break;
+		case 1: resolution = 2; break;
+		case 2: resolution = 3; break;
+		default: resolution = 1; break;
+	}	
+	
+	return resolution;
+}
 
-			window_set_size(global.view_width, global.view_height);
-			surface_resize(application_surface, global.view_width, global.view_height);
-			
-			//display_set_gui_size(global.view_width, global.view_height);
-			//camera_set_view_size(view_camera[0], global.view_width, global.view_height);
-			
-			//Center window
-			var _display_width = display_get_width();
-			var _display_height = display_get_height();
+// Just used to initialize the shifter at the right option in config menu
+function DecideOptionBasedOnResolution(_resolution) {
+	var option;
+	switch (_resolution) {
+		case 1: option = 0; break;
+		case 2: option = 1; break;
+		case 3: option = 2; break;
+		default: option = 0; break;
+	}	
+	
+	return option;
+}
 
-			window_set_position(
-				_display_width 	/ 2 - global.view_width		/ 2,
-				_display_height	/ 2 - global.view_height	/ 2
-			);
-			global.isResizing = false;
-		break;
-		
-		case 1: // 1280x720
-			global.isResizing = true;
-			global.res.scale = 2;
-			
-			global.view_width = global.res.width * global.res.scale;
-			global.view_height = global.res.height * global.res.scale;
-			
-			window_set_size(global.view_width, global.view_height);
-			surface_resize(application_surface, global.view_width, global.view_height);
-			
-			//display_set_gui_size(global.view_width, global.view_height);
-			//camera_set_view_size(view_camera[0], global.view_width, global.view_height);
-			
-			//Center window
-			var _display_width = display_get_width();
-			var _display_height = display_get_height();
+function ChangeResolution(_option) {
+	global.isResizing = true;
 
-			window_set_position(
-				_display_width 	/ 2 - global.view_width		/ 2,
-				_display_height	/ 2 - global.view_height	/ 2
-			);
-			global.isResizing = false;
-		break;
-	}
+	// Will return the desired new resolution struct
+	/*
+		So, if the resolution scale was initially set to 1 (640x360)
+		And the new resolution chosen is scale 2 (1280x720),
+		global.res.scale is now 2, global.res width is now 1280
+	*/
+	
+	// Set new scale
+	var newResolution = DecideResolutionBasedOnOption(_option);
+	global.res.scale = newResolution;
+	
+	// Resizing
+    global.viewWidth = global.res.width * global.res.scale;
+    global.viewHeight = global.res.height * global.res.scale;
+	
+    window_set_size(global.viewWidth, global.viewHeight);
+    surface_resize(application_surface, global.viewWidth, global.viewHeight);
+	
+	//display_set_gui_size(global.viewWidth, global.viewHeight);
+	//camera_set_view_size(view_camera[0], global.viewWidth, global.viewHeight);
+			
+    // Center window
+    var _display_width = display_get_width();
+    var _display_height = display_get_height();
+	
+    window_set_position(_display_width/2 - global.viewWidth/2, _display_height/2 - global.viewHeight/2);
+    
+    global.isResizing = false;
 }
 
 function Fullscreen(_fullscreen) {

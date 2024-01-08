@@ -54,7 +54,9 @@ if (global.debug) {
 			"Keyboard Pressed Confirm: " + string(global.PRESSED_CONFIRM),
 			"Mouse Pressed Confirm: " + string(global.PRESSED_MOUSE_LEFT),
 			"Current Room: " + global.rmCurrent,
-			"Location string: " + global.location
+			"Location string: " + global.location,
+			"Resolution scale: " + string(global.res.scale),
+			"Fullscreen?: " + string(global.fullscreen)
 		];
 		
 		DebugDrawBox(10, 10, "GAME DEBUG", gameDebugStrings);

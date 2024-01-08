@@ -6,7 +6,7 @@
 # NEXT ROOM			------------------------------------------> PRESS PAGEUP
 # PREVIOUS ROOM		------------------------------------------> PRESS PAGEDOWN
 # END GAME			------------------------------------------> PRESS END
-# FULLSCREEN		------------------------------------------> PRESS ALT + ENTER
+# FULLSCREEN		------------------------------------------> PRESS ESC
 
 # Global Game Variables				------------------------->	PRESS 1
 # Language Variables				------------------------->	PRESS 2

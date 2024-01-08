@@ -4,7 +4,7 @@ Enums();
 global.debug = false;
 global.lastFontUsed = -1;
 DrawFont(fnt_dialogue); // Run the first time
-global.configMenu = false;
+global.configMenu = noone;
 global.lang = "en"; // "en", "pt"
 SetLanguage();
 // Manages the loading of translated files based on the game language
@@ -99,15 +99,14 @@ global.midTransition = false;
 
 #region CAMERA
 global.isResizing = false;
-global.fullscreen = false;
+global.fullscreen = window_get_fullscreen();
 global.cameraID = -1;
-// Resolution struct
-global.res = { // See menu_functions script
-	xx: 0,
-	yy: 0,
+// Initialize resolution struct
+global.res = {
+	// Never change the width or the height!! Just the scale
 	width: 640,
 	height: 360,
-	scale: 2 //1 ---> 640x360 | 2 ---> 1280x720
+	scale: 2 //1 ---> 640x360 | 2 ---> 1280x720 | 3 ---> 1920x1080
 }
 global.viewWidth = global.res.width * global.res.scale;
 global.viewHeight = global.res.height * global.res.scale;

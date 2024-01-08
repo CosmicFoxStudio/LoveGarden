@@ -1,7 +1,5 @@
 /// @description Draw the menu
 
-if(!global.configMenu) exit;
-
 DrawFont(fnt_menu);
 
 var gwidth = SCREEN_WIDTH;			

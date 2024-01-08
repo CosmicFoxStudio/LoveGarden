@@ -1,8 +1,15 @@
 /// @description Input checks, menu activation, etc
 // TIP: Keyboard and mouse functions only register for 1 frame
 
-// Check for fullscreen
-if (window_get_fullscreen) global.fullscreen = true;
+// Toggle fullscreen when Escape key is released
+if (global.state != e_gameStates.MENU) {
+	if (keyboard_check_released(vk_escape)) {
+	    window_set_fullscreen(!global.fullscreen);
+	    window_center();
+	    // Update global.fullscreen after toggling
+	    global.fullscreen = window_get_fullscreen();
+	}
+}
 
 // Context Config Menu Toggle Activation / Deactivation
 if ( (global.PRESSED_START || global.PRESSED_MOUSE_MIDDLE) ) {
@@ -14,11 +21,7 @@ if ( (global.PRESSED_START || global.PRESSED_MOUSE_MIDDLE) ) {
 
 	#region ARROWS HELD
 	// Any
-	if (global.HELD_UP || global.HELD_DOWN || global.HELD_LEFT || global.HELD_RIGHT) {
-		global.HELD_ARROWS = true;
-	} else {
-		global.HELD_ARROWS = false;
-	}
+	global.HELD_ARROWS = global.HELD_UP || global.HELD_DOWN || global.HELD_LEFT || global.HELD_RIGHT;
 
 	// Up
 	if	(gamepad_button_check(0, gp_padu)) ||

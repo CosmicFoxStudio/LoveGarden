@@ -30,14 +30,15 @@ menu_page_settings_elements[2]	= new MenuElementDefinition("BACK",			e_menuEleme
 
 
 // AUDIO PAGE [2]
-menu_page_audio_elements[0]		= new MenuElementDefinition("MASTER",		e_menuElementType.SLIDER,			ChangeVolume,				1,		[0,1]);
-menu_page_audio_elements[1]		= new MenuElementDefinition("SOUNDS",		e_menuElementType.SLIDER,			ChangeVolume,				1,		[0,1]);
-menu_page_audio_elements[2]		= new MenuElementDefinition("MUSIC",		e_menuElementType.SLIDER,			ChangeVolume,				1,		[0,1]);
+menu_page_audio_elements[0]		= new MenuElementDefinition("MASTER",		e_menuElementType.SLIDER,			ChangeVolume,				1,	[0,1]);
+menu_page_audio_elements[1]		= new MenuElementDefinition("SOUNDS",		e_menuElementType.SLIDER,			ChangeVolume,				1,	[0,1]);
+menu_page_audio_elements[2]		= new MenuElementDefinition("MUSIC",		e_menuElementType.SLIDER,			ChangeVolume,				1,	[0,1]);
 menu_page_audio_elements[3]		= new MenuElementDefinition("BACK",			e_menuElementType.PAGE_CHANGE,		e_MenuPage.SETTINGS);
 
 // GRAPHICS PAGE [3]
-menu_page_graphics_elements[0]	= new MenuElementDefinition("RESOLUTION",	e_menuElementType.SHIFT,			ChangeResolution,			0,		["640 x 480", "1280 x 720"]);
-menu_page_graphics_elements[1]	= new MenuElementDefinition("FULLSCREEN",	e_menuElementType.TOGGLE,			Fullscreen,					0,		["FULLSCREEN", "WINDOWED"]);
+var resolutionValue = DecideOptionBasedOnResolution(global.res.scale);
+menu_page_graphics_elements[0]	= new MenuElementDefinition("RESOLUTION",	e_menuElementType.SHIFT,			ChangeResolution,			resolutionValue, ["640 x 480", "1280 x 720", "1920 x 1080"]);
+menu_page_graphics_elements[1]	= new MenuElementDefinition("FULLSCREEN",	e_menuElementType.TOGGLE,			Fullscreen,					global.fullscreen, ["FULLSCREEN", "WINDOWED"]);
 menu_page_graphics_elements[2]	= new MenuElementDefinition("BACK",			e_menuElementType.PAGE_CHANGE,		e_MenuPage.SETTINGS);
 #endregion CREATE MENU ELEMENTS
 
