@@ -88,8 +88,8 @@ global.RELEASED_CANCEL = false;
 #region ROOMS & NAVIGATION
 global.roomType = e_roomTypes.SCENES;
 // These globals are used as DS Lists for the debug room list
-global.rmCurrent = room_get_name(room);
-global.location = "";
+global.rmCurrent = room_get_name(rm_dormroom);
+global.location = "Dormroom";
 global.rmName = noone;
 global.rmNameSorted = noone;
 // Room Transitions
@@ -145,6 +145,6 @@ global.roomYarnMap[? "rm_dormroom"	]		= "scenes/main_day0_test.yarn";
 if (Debug()) instance_create_layer(0, 0, "Controllers", DEBUG_DRAWER);
 // Add first room here
 //room_goto(rm_lang);
-//room_goto(rm_dream);
-//room_goto(rm_title);
-room_goto(rm_file_selection);
+// room_goto(rm_dream);
+// room_goto(rm_file_selection);
+room_goto(rm_title);

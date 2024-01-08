@@ -2,6 +2,7 @@
 
 if (global.state == e_gameStates.FILE_SELECTION) {
 
+if (!global.midTransition) {
 	// Logic for navigating the save slots
 	if (global.PRESSED_DOWN) {
 		if (selectedOption + 1) < maxSlots selectedOption++;
@@ -20,7 +21,7 @@ if (global.state == e_gameStates.FILE_SELECTION) {
 			LoadGame();	
 			global.state = e_gameStates.CONTINUE_GAME;
 			
-			// The room_goto() function only runs after the step event has finished
+			// Go to last saved room
 			TransitionStart(sq_out_trans_fade_white, sq_in_trans_fade_white, rm_dormroom);
 		}	
 		else {
@@ -28,8 +29,9 @@ if (global.state == e_gameStates.FILE_SELECTION) {
 			// Create save slot (by saving to it) [This is done inside End Step]
 			global.state = e_gameStates.NEW_GAME;
 			
-			// The room_goto() function only runs after the step event has finished
-			TransitionStart(sq_out_trans_fade_white, sq_in_trans_fade_white, rm_dormroom);
+			// Go to first cutscene
+			TransitionStart(sq_out_trans_fade_white, sq_in_trans_fade_white, rm_dream);
+			// OBS: The room_goto() function only runs after the step event has finished
 		}
 	}
 	// ---------------------------- DELETE SAVE FILE --------------------------- //
@@ -47,6 +49,7 @@ if (global.state == e_gameStates.FILE_SELECTION) {
 			file_delete("save_stats_" + string(global.saveSlot) + ".sav"); 	
 		}
 	}
+} // End of: if (!global.midTransition) 
 	
 	// Update sprite image index (for save slots that have a save file)
 	spriteImage += 0.1;

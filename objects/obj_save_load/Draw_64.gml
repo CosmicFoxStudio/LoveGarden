@@ -37,7 +37,7 @@ if (global.state == e_gameStates.FILE_SELECTION) {
 			
 			var plantY = yy + (sprite_get_height(spr_sprout) / 2);
 			if (selectedOption == saveSlots) {
-				draw_sprite_ext(spr_sprout, -1, plantX, plantY, 1, 1, 0, c_white, 1);
+				draw_sprite_ext(spr_sprout, spriteImage, plantX, plantY, 1, 1, 0, c_white, 1);
 			}
 			else {
 				draw_sprite_ext(spr_sprout, 0, plantX, plantY, 1, 1, 0, c_grey, 1);

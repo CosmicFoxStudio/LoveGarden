@@ -36,6 +36,7 @@
     {"name":"Scripts","order":4,"path":"folders/Scripts.yy",},
     {"name":"Sequences","order":9,"path":"folders/Sequences.yy",},
     {"name":"Sounds","order":7,"path":"folders/Sounds.yy",},
+    {"name":"Config Test","order":4,"path":"folders/Sounds/Config Test.yy",},
     {"name":"SFX","order":2,"path":"folders/Sounds/SFX.yy",},
     {"name":"Themes","order":3,"path":"folders/Sounds/Themes.yy",},
     {"name":"Sprites","order":8,"path":"folders/Sprites.yy",},
@@ -52,7 +53,6 @@
     {"name":"UI","order":5,"path":"folders/UI.yy",},
     {"name":"Context Menu","order":2,"path":"folders/UI/Context Menu.yy",},
     {"name":"Lang Menu","order":1,"path":"folders/UI/Lang Menu.yy",},
-    {"name":"Config Test","order":4,"path":"folders/Sounds/Config Test.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"obj_intro","order":1,"path":"objects/obj_intro/obj_intro.yy",},

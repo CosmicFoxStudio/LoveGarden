@@ -9,6 +9,7 @@ ChatterboxAddFunction("blossom", StatsGetBlossom);					// Returns blossom stats
 ChatterboxAddFunction("favePlace", FlagGetFavePlace);				// Returns favePlace flag
 ChatterboxAddFunction("love", FlagGetLove);							// Returns love ending flag
 ChatterboxAddFunction("bad", FlagGetBad);							// Returns bad ending flag
+ChatterboxAddFunction("save", SaveGame);							// Calls the save script from inside a yarn file
 
 // Initialize variables
 node = undefined;

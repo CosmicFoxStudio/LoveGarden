@@ -101,7 +101,7 @@ if (inputting) {
 	}
 // If not currently inputting...
 } else { 	
-	//to stop misplaced music (sliders)
+	// To stop misplaced music (sliders)
 	if audio_is_playing(snd_config_test_master) audio_stop_sound(snd_config_test_master);
 	if audio_is_playing(snd_config_test_sfx) audio_stop_sound(snd_config_test_sfx);
 	if audio_is_playing(snd_config_test_music) audio_stop_sound(snd_config_test_music);

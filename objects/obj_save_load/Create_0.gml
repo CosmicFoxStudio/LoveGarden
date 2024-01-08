@@ -2,7 +2,7 @@
 startX = 0;
 startY = 0;
 yy = 0;
-image_speed = 0.2;
+//image_speed = 0.5;
 selectedOption = 0;
 maxSlots = 3;
 subimage = 0;

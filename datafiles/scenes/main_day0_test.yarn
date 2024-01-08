@@ -31,4 +31,5 @@ You feel dizzy. #0 #0 #0 #0 #0 #0 #line:3c677a
 You have no idea where you are, or who the hell is Maple... #0 #0 #0 #0 #0 #0 #line:12b01e
 I guess instead of questioning the absurdity of it all you just roll with that... #0 #0 #0 #0 #0 #0 #line:2a38ed
 <<nextRoom("title")>>
+<<save()>>
 ===

@@ -37,6 +37,8 @@ if (finishedIntro) {
 */
 	#endregion (TO-DO)
 	
+	global.state = e_gameStates.CONTINUE_GAME;
+	SaveGame();
 	TransitionStart(sq_out_trans_fade_white, sq_in_trans_fade_white, rm_dormroom);
 }
 
