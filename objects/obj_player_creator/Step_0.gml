@@ -25,7 +25,7 @@ pos += CheckVerticalInput();
 if (pos >= optionLength) pos = 0; // goes back to first pos
 if (pos < 0) pos = optionLength - 1; // goes to last pos
 
-// Check for keyboard input in PHASE 1
+//  PHASE 1 & PHASE 3
 if (phase == e_phases.PHASE_1 || phase == e_phases.PHASE_3) {
 	letterCount = string_length(currentString);
 	
@@ -36,8 +36,8 @@ if (phase == e_phases.PHASE_1 || phase == e_phases.PHASE_3) {
 		maxLettersReached = false;
 	}
 	
+	// Keyboard input
 	if (pos == 0 && !maxLettersReached) {
-		// Add keyboard input
 		if (keyboard_lastkey != -1) {
 		    var pressedChar = keyboard_lastchar;
     
@@ -54,48 +54,75 @@ if (phase == e_phases.PHASE_1 || phase == e_phases.PHASE_3) {
 			keyboard_lastchar = "";
 		}
 	}
-		
-	// Erase
-	if (pos == 1 && global.PRESSED_CONFIRM) {
-		//show_debug_message("Erased");
-		// Check there's at least 1 letter in the name, and if so, delete it
-		if (letterCount >= 1) {
-			currentString = string_delete(currentString, letterCount, 1);
-			audio_play_sound(snd_cant, 1, false);
+	
+	if (global.PRESSED_CONFIRM) {	
+		// Delete
+		if (pos == 1) {
+			//show_debug_message("Erased");
+			// Check there's at least 1 letter in the name, and if so, delete it
+			if (letterCount >= 1) {
+				currentString = string_delete(currentString, letterCount, 1);
+				audio_play_sound(snd_cant, 1, false);
+			}
+		}
+	
+		// Confirm
+		if (pos == 2) {
+			if (phase == e_phases.PHASE_1) {
+				// Assign to global
+				global.playerName = string_upper(currentString);
+			
+				// Reset position
+				pos = 0;
+				
+				// End of phase flag
+				endPhase1 = true;
+			}		
+			// It's PHASE 3, job is done
+			else {
+				// Assign to global
+				global.favePlace = currentString;
+				
+				// End cutscene, advance to the next room
+				obj_dream.finishedPlayer = true;
+				instance_destroy();	
+			}
 		}
 	}
 }
 
+// PHASE 2
+if (phase == e_phases.PHASE_2) {
+	if (global.PRESSED_CONFIRM) {
+		switch(phase2Options[pos]) {
+			case "They" :
+				currentPronouns = e_pronouns.ELU;
+			break;
+			case "She" :
+				currentPronouns = e_pronouns.ELA;
+			break;
+			case "He" :
+				currentPronouns = e_pronouns.ELE;
+			break;
+		}	
+		
+		// Assign to global
+		global.pronouns = currentPronouns;
+		
+		// Reset position
+		pos = 0;
+		
+		// End of phase flag
+		endPhase2 = true;
+	}
+}
 
-// Advance through phases / Switch to the next input field 
-if (global.PRESSED_CONFIRM) {
-    // Add input to globals
-	switch (phase) {
-        case e_phases.PHASE_1 :
-			if (pos == 2) { // Selecting "Confirm"
-				// Reset position
-				pos = 0;
-				global.playerName = string_upper(currentString);
-				phase = e_phases.PHASE_2;
-			}
-            break;
-        case e_phases.PHASE_2 : 
-			if (pos == 3) {
-				// Reset position
-				pos = 0;
-				global.pronouns = phase2Options[pos];
-				phase = e_phases.PHASE_3;
-			}
-            break;
-        case e_phases.PHASE_3 : 
-			if (pos == 2) {
-				// Reset position
-				pos = 0;
-				// End cutscene, advance to the next room
-				obj_dream.finishedPlayer = true;
-			}
-            // Job done
-            instance_destroy();
-            break;
+// The phase transitions should be at the bottom to avoid conflicts
+if (global.PRESSED_CONFIRM && (phase == e_phases.PHASE_1 || phase == e_phases.PHASE_2)) {
+    // Transition to the next phase based on the current phase
+    if (phase == e_phases.PHASE_1 && endPhase1) {
+        phase = e_phases.PHASE_2;
+    } else if (phase == e_phases.PHASE_2 && endPhase2) {
+        phase = e_phases.PHASE_3;
     }
 }

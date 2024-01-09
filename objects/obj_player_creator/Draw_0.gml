@@ -10,9 +10,7 @@ var optionText = "";
 draw_text(startX, startY, "Choose your " + currentInputField + ":");
 
 // Display input field or options
-switch (phase) {
-    case e_phases.PHASE_1 :
-	case e_phases.PHASE_3 :
+if (phase == e_phases.PHASE_1 || phase == e_phases.PHASE_3) {
 		var textVersusLineOffset = 5;
 		var cursorLeftOffset = 15;
 		// Draw name letters (we should make this block of code a function tbh)
@@ -47,19 +45,17 @@ switch (phase) {
 			}
 			draw_text(startX, startY + 60 + i * 30, optionText);	
 		}
-
-    break;
+}
 	
-    case e_phases.PHASE_2 :
-		// Display pronoun options 
-		optionLength = array_length(phase2Options)
-		    for (var i = 0; i < optionLength; i++) {
-				optionText = phase2Options[i];
-		        if (pos == i) {
-					// Draw cursor
-		            optionText = "> " + optionText;
-		        }
-				draw_text(startX, startY + 60 + i * 30, optionText);
-		    }
-    break;
+if (phase == e_phases.PHASE_2) {
+	// Display pronoun options 
+	optionLength = array_length(phase2Options)
+	    for (var i = 0; i < optionLength; i++) {
+			optionText = phase2Options[i];
+			if (pos == i) {
+				// Draw cursor
+		        optionText = "> " + optionText;
+			}
+	draw_text(startX, startY + 60 + i * 30, optionText);	
+	}
 }

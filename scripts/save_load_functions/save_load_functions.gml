@@ -26,7 +26,8 @@ function SaveGame() {
 		story: global.progress,
 		day: global.day,
 		gameFlags: global.flags, 
-		npcs: global.NPCs
+		npcs: global.NPCs,
+		favePlace: global.favePlace
 	}
 	var json = json_stringify(saveStruct); // 2nd argument 'true' to prettify
 	var file = file_text_open_write("file_" + string(global.saveSlot) + ".sav");
@@ -68,6 +69,7 @@ function LoadGame() {
 		global.day = struct.day;
 		global.flags = struct.gameFlags;
 		global.NPCs = struct.npcs;
+		global.favePlace = struct.favePlace;
 		
 		file_text_close(file);
 	}
