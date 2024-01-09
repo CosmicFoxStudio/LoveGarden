@@ -27,8 +27,8 @@ function Enums() {
 	enum e_SO {
 		YPE,	// 0
 		CARU,	// 1
-		CRAVO,	// 2
-		ROSA,	// 3
+		ROSE,	// 2
+		CLOVE,	// 3
 		HYDRA	// 4
 	}
 

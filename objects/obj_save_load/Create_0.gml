@@ -45,7 +45,7 @@ for (var i = 0; i < 3; i++) {
 	saveSlotInfo[i, e_saveSlotStats.DATE] = "XX/XX/XX";
 	//saveSlotInfo[i, e_saveSlotStats.PLACE] = "Nowhere";
 	saveSlotInfo[i, e_saveSlotStats.DAYTIME] = "Dawn";
-	saveSlotInfo[i, e_saveSlotStats.DAY] = "0";
+	saveSlotInfo[i, e_saveSlotStats.DAY] = 0;
 }
 
 // Grab player info for save slots, if applicable

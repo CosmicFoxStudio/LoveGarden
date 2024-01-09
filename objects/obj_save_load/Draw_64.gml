@@ -33,7 +33,8 @@ if (global.state == e_gameStates.FILE_SELECTION) {
 		}
 		// The file exists
 		else {
-			var plantX = (startX - (sprite_get_width(spr_saveslot_box) / 2) ) + (sprite_get_width(spr_sprout));
+			var plantX = (startX - (sprite_get_width(spr_saveslot_box) / 2) ) + 
+			(sprite_get_width(spr_sprout) + 20);
 			
 			var plantY = yy + (sprite_get_height(spr_sprout) / 2);
 			if (selectedOption == saveSlots) {

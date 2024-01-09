@@ -37,18 +37,22 @@ if (finishedIntro) {
 */
 	#endregion (TO-DO)
 	
-	global.state = e_gameStates.CONTINUE_GAME;
-	SaveGame();
-	TransitionStart(sq_out_trans_fade_white, sq_in_trans_fade_white, rm_dormroom);
+	// TransitionStart(sq_out_trans_fade_white, sq_in_trans_fade_white, rm_dormroom);
 }
 
 // Create player
-/*
-if (finishedIntro && !created_player) {
+
+if (finishedIntro && !createdPlayer) {
+	TransitionStart(sq_out_trans_fade_white, sq_in_trans_fade_white);
 	instance_create_layer(0, 0, "Instances_Above", obj_player_creator);	
-	created_player = true;
+	createdPlayer = true;
 }
-*/
+
+if (finishedPlayer) {
+	TransitionStart(sq_out_trans_fade_white, sq_in_trans_fade_white, rm_dormroom);
+	global.state = e_gameStates.CONTINUE_GAME;
+	SaveGame();
+}
 
 // Reset
 DrawReset();

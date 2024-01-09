@@ -24,15 +24,17 @@ global.statePrevious = global.state;
 // Player Info
 global.playerName = "PLAYER";
 global.pronouns = e_pronouns.ELU;
+global.favePlace = "";
 global.NPCs = [];
 global.NPCs[e_SO.YPE] = new StatsDefinition();
 global.NPCs[e_SO.CARU] = new StatsDefinition();
-global.NPCs[e_SO.CRAVO] = new StatsDefinition();
-global.NPCs[e_SO.ROSA] = new StatsDefinition();
+global.NPCs[e_SO.ROSE] = new StatsDefinition();
+global.NPCs[e_SO.CLOVE] = new StatsDefinition();
 global.NPCs[e_SO.HYDRA] = new StatsDefinition();
 global.progress = [];
 Progress();
 #region GAME CONTROLS
+global.inputMode = 0; // 0 ---> Mouse, 1 ---> Keyboard
 /*
 ---------------- CONFIRM ----------------
 Master Race _______________ Z, SPACE BAR, MOUSE LEFT
@@ -144,7 +146,7 @@ global.roomYarnMap[? "rm_dormroom"	]		= "scenes/main_day0_test.yarn";
 // ------------------------------ TESTING ZONE ------------------------------ //
 if (Debug()) instance_create_layer(0, 0, "Controllers", DEBUG_DRAWER);
 // Add first room here
-room_goto(rm_lang);
+//room_goto(rm_lang);
 // room_goto(rm_dream);
 // room_goto(rm_file_selection);
-// room_goto(rm_title);
+room_goto(rm_title);

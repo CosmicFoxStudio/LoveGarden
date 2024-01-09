@@ -1,9 +1,6 @@
 /// @description Controller for button input
 
-if (global.state == e_gameStates.PAUSED) exit;
-
-// Re-check array length
-//option_length = array_length(buttonArray);
+if (global.state == e_gameStates.PAUSED || global.midTransition) exit;
 
 // Previous position to check for changes
 var prevPos = pos;

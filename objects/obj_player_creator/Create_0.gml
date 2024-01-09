@@ -1,1 +1,21 @@
-/// @description Player Creator logic here
+/// @description Initialization
+currentInputField = "name";
+phase1Options = ["Input", "Delete", "Confirm"];
+phase2Options = ["They", "She", "He", "Confirm"];
+startX = room_width / 2 - 180;
+startY =  75;
+maxLetters = 10;
+maxLettersReached = false;
+scale = 1;
+blink = 0;
+flash = false;
+currentString = "";
+letterCount = string_length(currentString);
+enum e_phases {
+	PHASE_1,
+	PHASE_2,
+	PHASE_3
+}
+phase = e_phases.PHASE_1;
+pos = 0;
+optionLength = array_length(phase2Options);

@@ -25,8 +25,7 @@ if ( (global.PRESSED_START || global.PRESSED_MOUSE_MIDDLE) ) {
 
 	// Up
 	if	(gamepad_button_check(0, gp_padu)) ||
-		(keyboard_check(vk_up)) ||
-		(keyboard_check(ord("W"))) {
+		(keyboard_check(vk_up)) {
 		global.HELD_UP = true;
 	} else {
 		global.HELD_UP = false;
@@ -34,8 +33,7 @@ if ( (global.PRESSED_START || global.PRESSED_MOUSE_MIDDLE) ) {
 	
 	// Down
 	if	(gamepad_button_check(0, gp_padd)) ||
-		(keyboard_check(vk_down)) ||
-		(keyboard_check(ord("S"))) {
+		(keyboard_check(vk_down)) {
 		global.HELD_DOWN = true;
 	} else {
 		global.HELD_DOWN = false;
@@ -43,8 +41,7 @@ if ( (global.PRESSED_START || global.PRESSED_MOUSE_MIDDLE) ) {
 
 	// Left
 	if	(gamepad_button_check(0, gp_padl)) ||
-		(keyboard_check(vk_left)) ||
-		(keyboard_check(ord("A"))) {
+		(keyboard_check(vk_left)) {
 		global.HELD_LEFT = true;
 	} else {
 		global.HELD_LEFT = false;
@@ -52,8 +49,7 @@ if ( (global.PRESSED_START || global.PRESSED_MOUSE_MIDDLE) ) {
 
 	// Right
 	if	(gamepad_button_check(0, gp_padr)) ||
-		(keyboard_check(vk_right)) ||
-		(keyboard_check(ord("D"))) {
+		(keyboard_check(vk_right)) {
 		global.HELD_RIGHT = true;
 	} else {
 		global.HELD_RIGHT = false;
@@ -63,8 +59,7 @@ if ( (global.PRESSED_START || global.PRESSED_MOUSE_MIDDLE) ) {
 	#region ARROWS RELEASED 
 	 // Up
 	if	(gamepad_button_check_released(0, gp_padu)) ||
-		(keyboard_check_released(vk_up)) ||
-		(keyboard_check_released(ord("W"))) {
+		(keyboard_check_released(vk_up)) {
 		global.RELEASED_UP = true;
 	} else { 
 		global.RELEASED_UP = false;
@@ -72,8 +67,7 @@ if ( (global.PRESSED_START || global.PRESSED_MOUSE_MIDDLE) ) {
 
 	// Down
 	if	(gamepad_button_check_released(0, gp_padd)) ||
-		(keyboard_check_released(vk_down)) ||
-		(keyboard_check_released(ord("S"))) {
+		(keyboard_check_released(vk_down)) {
 		global.RELEASED_DOWN = true;
 	} else {
 		global.RELEASED_DOWN = false;
@@ -81,17 +75,15 @@ if ( (global.PRESSED_START || global.PRESSED_MOUSE_MIDDLE) ) {
 
 	// Left
 	if	(gamepad_button_check_released(0, gp_padl)) ||
-		(keyboard_check_released(vk_left)) ||
-		(keyboard_check_released(ord("A"))) {
+		(keyboard_check_released(vk_left)) {
 		global.RELEASED_LEFT = true;
 	} else {
 		global.RELEASED_LEFT = false;
 	}
 
 	// Right
-	if (gamepad_button_check_released(0, gp_padr)) ||
-		(keyboard_check_released(vk_right)) ||
-		(keyboard_check_released(ord("D"))) {
+	if	(gamepad_button_check_released(0, gp_padr)) ||
+		(keyboard_check_released(vk_right)) {
 		global.RELEASED_RIGHT = true;
 	} else {
 		global.RELEASED_RIGHT = false;
@@ -100,32 +92,28 @@ if ( (global.PRESSED_START || global.PRESSED_MOUSE_MIDDLE) ) {
 
 	#region ARROWS PRESSED
 	if	(gamepad_button_check_pressed(0, gp_padu)) ||
-		(keyboard_check_pressed(vk_up)) ||
-		(keyboard_check_pressed(ord("W"))) {
+		(keyboard_check_pressed(vk_up)) {
 		global.PRESSED_UP = true;
 	} else { 
 		global.PRESSED_UP = false;
 	}
 
 	if	(gamepad_button_check_pressed(0, gp_padd)) ||
-		(keyboard_check_pressed(vk_down)) ||
-		(keyboard_check_pressed(ord("S"))) {
+		(keyboard_check_pressed(vk_down)) {
 		global.PRESSED_DOWN = true;
 	} else {
 		global.PRESSED_DOWN = false;
 	}
 
 	if	(gamepad_button_check_pressed(0, gp_padl)) ||
-		(keyboard_check_pressed(vk_left)) ||
-		(keyboard_check_pressed(ord("A"))) {
+		(keyboard_check_pressed(vk_left)) {
 		global.PRESSED_LEFT = true;
 	} else {
 		global.PRESSED_LEFT = false;
 	}
 
-	if (gamepad_button_check_pressed(0, gp_padr)) ||
-		(keyboard_check_pressed(vk_right)) ||
-		(keyboard_check_pressed(ord("D"))) {
+	if	(gamepad_button_check_pressed(0, gp_padr)) ||
+		(keyboard_check_pressed(vk_right)) {
 		global.PRESSED_RIGHT = true;
 	} else {
 		global.PRESSED_RIGHT = false;
@@ -134,8 +122,7 @@ if ( (global.PRESSED_START || global.PRESSED_MOUSE_MIDDLE) ) {
 
 	#region CONFIRM
 	// Held
-	if (keyboard_check(ord("Z"))) ||
-		(keyboard_check(vk_space)) ||
+	if		(keyboard_check(vk_space)) ||
 		(gamepad_button_check(0, gp_face1)) {
 		global.HELD_CONFIRM = true;
 	}else{
@@ -143,8 +130,7 @@ if ( (global.PRESSED_START || global.PRESSED_MOUSE_MIDDLE) ) {
 	}
 
 	// Pressed
-	if	(keyboard_check_pressed(ord("Z"))) ||
-		(keyboard_check_pressed(vk_space)) ||
+	if	(keyboard_check_pressed(vk_space)) ||
 		(gamepad_button_check_pressed(0, gp_face1)) {
 			global.PRESSED_CONFIRM = true;
 	} else {
@@ -152,8 +138,7 @@ if ( (global.PRESSED_START || global.PRESSED_MOUSE_MIDDLE) ) {
 	}
 
 	// Released
-	if	(keyboard_check_released(ord("Z"))) ||
-		(keyboard_check_released(vk_space)) ||
+	if	(keyboard_check_released(vk_space)) ||
 		(gamepad_button_check_released(0, gp_face1)) {
 			global.RELEASED_CONFIRM = true;
 	} else {
@@ -166,8 +151,7 @@ if ( (global.PRESSED_START || global.PRESSED_MOUSE_MIDDLE) ) {
 	// Held
 	if	(gamepad_button_check(0, gp_face2)) ||
 		(gamepad_button_check(0, gp_face3)) ||
-		(keyboard_check(vk_backspace)) ||
-		(keyboard_check(ord("X"))) {
+		(keyboard_check(vk_backspace)) {
 		global.HELD_CANCEL = true;
 	} else {
 		global.HELD_CANCEL = false;
@@ -176,8 +160,7 @@ if ( (global.PRESSED_START || global.PRESSED_MOUSE_MIDDLE) ) {
 	// Pressed
 	if	(gamepad_button_check_pressed(0, gp_face2))	||
 		(gamepad_button_check_pressed(0, gp_face3)) ||
-		(keyboard_check_pressed(vk_backspace)) ||
-		(keyboard_check_pressed(ord("X"))) {
+		(keyboard_check_pressed(vk_backspace)) {
 		global.PRESSED_CANCEL = true;
 	} else {
 		global.PRESSED_CANCEL = false;
@@ -185,7 +168,6 @@ if ( (global.PRESSED_START || global.PRESSED_MOUSE_MIDDLE) ) {
 
 	// Released
 	if	(keyboard_check_released(vk_backspace))	||
-		(keyboard_check_released(ord("X")))	||
 		(gamepad_button_check_released(0, gp_face2)) ||
 		(gamepad_button_check_released(0, gp_face3)) {
 		global.RELEASED_CANCEL = true;
@@ -198,8 +180,7 @@ if ( (global.PRESSED_START || global.PRESSED_MOUSE_MIDDLE) ) {
 	#region START
 	// Held
 	if	(gamepad_button_check(0, gp_start)) ||
-		(keyboard_check(vk_enter)) ||
-		(keyboard_check(ord("C"))) {
+		(keyboard_check(vk_enter)) {
 		global.HELD_START = true;
 	} else {
 		global.HELD_START = false;
@@ -207,7 +188,6 @@ if ( (global.PRESSED_START || global.PRESSED_MOUSE_MIDDLE) ) {
 
 	// Pressed
 	if	(keyboard_check_pressed(vk_enter)) ||
-		(keyboard_check_pressed(ord("C"))) ||
 		(gamepad_button_check_pressed(0, gp_start))	{
 		global.PRESSED_START = true;
 	} else {
@@ -215,8 +195,7 @@ if ( (global.PRESSED_START || global.PRESSED_MOUSE_MIDDLE) ) {
 	}
 
 	// Released
-	if	(keyboard_check_released(vk_enter))	||
-		(keyboard_check_released(ord("C"))) ||
+	if	(keyboard_check_released(vk_enter)) ||
 		(gamepad_button_check_pressed(0, gp_start)) {
 		global.RELEASED_START = true;
 	} else {
