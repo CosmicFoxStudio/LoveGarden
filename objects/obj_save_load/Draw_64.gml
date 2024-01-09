@@ -48,30 +48,30 @@ if (global.state == e_gameStates.FILE_SELECTION) {
 			// NAME
 			draw_set_halign(fa_center);
 			DrawFont(fnt_menu);
-			draw_text(startX - 20, yy - 20, saveSlotInfo[saveSlots, e_saveSlotStats.NAME]);
+			draw_text(startX - 5, yy - 17, saveSlotInfo[saveSlots, e_saveSlotStats.NAME]);
 			DrawFont(fnt_dialogue);
 			
 			// DATE
-			dateX = startX + 20;
-			dateY = yy - 15;
+			dateX = startX - 5;
+			dateY = yy + 7;
 			
-			draw_set_halign(fa_left);
+			draw_set_halign(fa_center);
 			draw_set_font(fnt_dialogue);
-			draw_text(dateX, dateY, saveSlotInfo[saveSlots, e_saveSlotStats.DATE]);
+			draw_text(dateX, dateY, DateLocalization(saveSlotInfo[saveSlots, e_saveSlotStats.DATE]));
 			
 			
 			// LOCATION
 			draw_set_halign(fa_right);
-			placeX = startX - 38;
-			placeY = yy + 5;
+			placeX = startX + 140;
+			placeY = yy + 11;
 			
-			draw_set_halign(fa_left);
-			draw_text(placeX, placeY, saveSlotInfo[saveSlots, e_saveSlotStats.PLACE]);
+			draw_set_halign(fa_right);
+			draw_text(placeX, placeY, PlaceLocalization(saveSlotInfo[saveSlots, e_saveSlotStats.PLACE]));
 			
 			
 			// DAYTIME
 			daytimeX = startX + 140;
-			daytimeY = yy;
+			daytimeY = yy - 3;
 			
 			draw_set_halign(fa_right);
 			DrawFont(fnt_dialogue);
@@ -93,7 +93,7 @@ if (global.state == e_gameStates.FILE_SELECTION) {
 			
 			// DAY
 			dayX = startX + 140;
-			dayY = yy - 20;
+			dayY = yy - 23;
 			
 			draw_set_halign(fa_right);
 			DrawFont(fnt_menu);

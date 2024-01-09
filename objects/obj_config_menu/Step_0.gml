@@ -50,23 +50,23 @@ if (inputting) {
 		
 		case e_menuElementType.SLIDER : // ( <------o---> )
 			// Sound test
-			switch(menuOption[page]) {
-				case 0: 
-					if (!audio_is_playing(snd_config_test_master)) { 
-						audio_play_sound(snd_config_test_master, 1, false);	
-					} 
-				break; 
-				case 1: 
-					if(!audio_is_playing(snd_config_test_sfx))	{ 
-						audio_play_sound(snd_config_test_sfx, 1, false);		
-					} 
-				break;
-				case 2: 
-					if(!audio_is_playing(snd_config_test_music)) { 
-						audio_play_sound(snd_config_test_music, 1, false);	
-					}
-				break;
-			}
+		//	switch(menuOption[page]) {
+		//		case 0: 
+		//			if (!audio_is_playing(snd_config_test_master)) { 
+		//				audio_play_sound(snd_config_test_master, 1, false);	
+		//			} 
+		//		break; 
+		//		case 1: 
+		//			if(!audio_is_playing(snd_config_test_sfx))	{ 
+		//				audio_play_sound(snd_config_test_sfx, 1, false);		
+		//			} 
+		//		break;
+		//		case 2: 
+		//			if(!audio_is_playing(snd_config_test_music)) { 
+		//				audio_play_sound(snd_config_test_music, 1, false);	
+		//			}
+		//		break;
+		//	}
 			// Held input instead of pressed here for smooth gameplay
 			var horizontalInput = global.HELD_RIGHT - global.HELD_LEFT;
 			if(horizontalInput != 0) {
@@ -102,9 +102,9 @@ if (inputting) {
 // If not currently inputting...
 } else { 	
 	// To stop misplaced music (sliders)
-	if audio_is_playing(snd_config_test_master) audio_stop_sound(snd_config_test_master);
-	if audio_is_playing(snd_config_test_sfx) audio_stop_sound(snd_config_test_sfx);
-	if audio_is_playing(snd_config_test_music) audio_stop_sound(snd_config_test_music);
+//	if audio_is_playing(snd_config_test_master) audio_stop_sound(snd_config_test_master);
+//	if audio_is_playing(snd_config_test_sfx) audio_stop_sound(snd_config_test_sfx);
+//	if audio_is_playing(snd_config_test_music) audio_stop_sound(snd_config_test_music);
 	
 	// Wrapping menu
 	if(verticalInput != 0) {

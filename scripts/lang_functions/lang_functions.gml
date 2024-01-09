@@ -41,4 +41,34 @@ function ManageLocalization() {
     }
 }
 
+// Switch place name on save based on language
+function PlaceLocalization(savePlace) {
+	switch (global.lang) {
+	case "en":
+		return savePlace;
+		break;
+	case "pt":
+		switch (savePlace) {
+			case "Dormroom": return "Dormitório"; break;
+			default: return "Nenhum Lugar"; break;
+		}
+		break;
+	default:
+		return savePlace;
+	}
+}
+
+// Switch date order on save based on language
+function DateLocalization(saveDate) {
+	switch (global.lang) {
+	case "en":
+		var splitDate = string_split(saveDate, "/");
+		saveNewDate = splitDate[1] + "/" + splitDate[0] + "/" + splitDate[2];
+		return saveNewDate;
+		break;
+	default:
+		return saveDate;
+	}
+}
+
 #endregion LOCALIZATION
