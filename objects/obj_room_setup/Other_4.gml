@@ -1,2 +1,2 @@
 /// @description Rename global.location
-DefineRoomName();
+DecideRoomName();

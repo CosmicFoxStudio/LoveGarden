@@ -1,14 +1,14 @@
 /// @description Create Config Submenu
 
 // Constructor to create a menu element struct.
-/// @function						MenuElementDefinition(_text, _type, _action, _param1 = -1, _param2 = -1)
+/// @function						DefineMenuElement(_text, _type, _action, _param1 = -1, _param2 = -1)
 /// @description					Function to create a menu element
 /// @arg {string}	_text			The title of the option
 /// @arg {real}		_type			The type of script to run (check enumerator e_menuElementType)
 /// @arg {function}	_action			The action (function) that should be performed
 /// @arg {any}		[_param1]		1st parameter of the action to perform. Usually a value
 /// @arg {any}		[_param2]		2nd parameter of the action to perform. Usually an array of options
-function MenuElementDefinition(_text, _type, _action, _param1 = -1, _param2 = -1) constructor { 
+function DefineMenuElement(_text, _type, _action, _param1 = -1, _param2 = -1) constructor { 
     text = _text;
     type = _type;
     action = _action;
@@ -18,28 +18,28 @@ function MenuElementDefinition(_text, _type, _action, _param1 = -1, _param2 = -1
 
 #region CREATE MENU ELEMENTS
 // MAIN PAGE [0]
-menu_page_main_elements[0]		= new MenuElementDefinition("RESUME",		e_menuElementType.SCRIPT_RUNNER,	ResumeGame);
-menu_page_main_elements[1]		= new MenuElementDefinition("SETTINGS",		e_menuElementType.PAGE_CHANGE,		e_MenuPage.SETTINGS);
-menu_page_main_elements[2]		= new MenuElementDefinition("EXIT",			e_menuElementType.SCRIPT_RUNNER,	ExitGame);
+menu_page_main_elements[0]		= new DefineMenuElement("RESUME",		e_menuElementType.SCRIPT_RUNNER,	ResumeGame);
+menu_page_main_elements[1]		= new DefineMenuElement("SETTINGS",		e_menuElementType.PAGE_CHANGE,		e_MenuPage.SETTINGS);
+menu_page_main_elements[2]		= new DefineMenuElement("EXIT",			e_menuElementType.SCRIPT_RUNNER,	ExitGame);
 
 //SETTINGS PAGE [1]
-menu_page_settings_elements[0]	= new MenuElementDefinition("AUDIO",		e_menuElementType.PAGE_CHANGE,		e_MenuPage.AUDIO);
-menu_page_settings_elements[1]	= new MenuElementDefinition("GRAPHICS",		e_menuElementType.PAGE_CHANGE,		e_MenuPage.GRAPHICS);
-menu_page_settings_elements[2]	= new MenuElementDefinition("BACK",			e_menuElementType.PAGE_CHANGE,		e_MenuPage.MAIN);
-//menu_page_settings_elements[3]	= new MenuElementDefinition("CONTROLS",		e_menuElementType.PAGE_CHANGE,		e_MenuPage.CONTROLS);
+menu_page_settings_elements[0]	= new DefineMenuElement("AUDIO",		e_menuElementType.PAGE_CHANGE,		e_MenuPage.AUDIO);
+menu_page_settings_elements[1]	= new DefineMenuElement("GRAPHICS",		e_menuElementType.PAGE_CHANGE,		e_MenuPage.GRAPHICS);
+menu_page_settings_elements[2]	= new DefineMenuElement("BACK",			e_menuElementType.PAGE_CHANGE,		e_MenuPage.MAIN);
+//menu_page_settings_elements[3]	= new DefineMenuElement("CONTROLS",		e_menuElementType.PAGE_CHANGE,		e_MenuPage.CONTROLS);
 
 
 // AUDIO PAGE [2]
-menu_page_audio_elements[0]		= new MenuElementDefinition("MASTER",		e_menuElementType.SLIDER,			ChangeVolume,				1,	[0,1]);
-menu_page_audio_elements[1]		= new MenuElementDefinition("SOUNDS",		e_menuElementType.SLIDER,			ChangeVolume,				1,	[0,1]);
-menu_page_audio_elements[2]		= new MenuElementDefinition("MUSIC",		e_menuElementType.SLIDER,			ChangeVolume,				1,	[0,1]);
-menu_page_audio_elements[3]		= new MenuElementDefinition("BACK",			e_menuElementType.PAGE_CHANGE,		e_MenuPage.SETTINGS);
+menu_page_audio_elements[0]		= new DefineMenuElement("MASTER",		e_menuElementType.SLIDER,			ChangeVolume,				1,	[0,1]);
+menu_page_audio_elements[1]		= new DefineMenuElement("SOUNDS",		e_menuElementType.SLIDER,			ChangeVolume,				1,	[0,1]);
+menu_page_audio_elements[2]		= new DefineMenuElement("MUSIC",		e_menuElementType.SLIDER,			ChangeVolume,				1,	[0,1]);
+menu_page_audio_elements[3]		= new DefineMenuElement("BACK",			e_menuElementType.PAGE_CHANGE,		e_MenuPage.SETTINGS);
 
 // GRAPHICS PAGE [3]
 var resolutionValue = DecideOptionBasedOnResolution(global.res.scale);
-menu_page_graphics_elements[0]	= new MenuElementDefinition("RESOLUTION",	e_menuElementType.SHIFT,			ChangeResolution,			resolutionValue, ["640 x 480", "1280 x 720", "1920 x 1080"]);
-menu_page_graphics_elements[1]	= new MenuElementDefinition("FULLSCREEN",	e_menuElementType.TOGGLE,			Fullscreen,					global.fullscreen, ["FULLSCREEN", "WINDOWED"]);
-menu_page_graphics_elements[2]	= new MenuElementDefinition("BACK",			e_menuElementType.PAGE_CHANGE,		e_MenuPage.SETTINGS);
+menu_page_graphics_elements[0]	= new DefineMenuElement("RESOLUTION",	e_menuElementType.SHIFT,			ChangeResolution,			resolutionValue, ["640 x 480", "1280 x 720", "1920 x 1080"]);
+menu_page_graphics_elements[1]	= new DefineMenuElement("FULLSCREEN",	e_menuElementType.TOGGLE,			Fullscreen,					global.fullscreen, ["FULLSCREEN", "WINDOWED"]);
+menu_page_graphics_elements[2]	= new DefineMenuElement("BACK",			e_menuElementType.PAGE_CHANGE,		e_MenuPage.SETTINGS);
 #endregion CREATE MENU ELEMENTS
 
 // Variable used to access different pages

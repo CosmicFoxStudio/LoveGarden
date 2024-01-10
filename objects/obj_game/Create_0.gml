@@ -13,7 +13,7 @@ global.day = 4;
 global.currentDaytime = e_daytime.MORNING;
 global.date = ConvertDate(date_current_datetime());
 global.saveSlot = 0;
-global.playerStats = new StatsDefinition();
+global.playerStats = new DefineStats();
 global.flags = {
 	bad: false,
 	love: false,
@@ -26,67 +26,63 @@ global.playerName = "PLAYER";
 global.pronouns = e_pronouns.ELU;
 global.favePlace = "";
 global.NPCs = [];
-global.NPCs[e_SO.YPE] = new StatsDefinition();
-global.NPCs[e_SO.CARU] = new StatsDefinition();
-global.NPCs[e_SO.ROSE] = new StatsDefinition();
-global.NPCs[e_SO.CLOVE] = new StatsDefinition();
-global.NPCs[e_SO.HYDRA] = new StatsDefinition();
+global.NPCs[e_SO.YPE] = new DefineStats();
+global.NPCs[e_SO.CARU] = new DefineStats();
+global.NPCs[e_SO.ROSE] = new DefineStats();
+global.NPCs[e_SO.CLOVE] = new DefineStats();
+global.NPCs[e_SO.HYDRA] = new DefineStats();
 global.progress = [];
 Progress();
 #region GAME CONTROLS
-global.inputMode = 0; // 0 ---> Mouse, 1 ---> Keyboard
 /*
 ---------------- CONFIRM ----------------
-Master Race _______________ Z, SPACE BAR, MOUSE LEFT
+Master Race _______________ SPACE BAR, MOUSE LEFT
 Consoles	_______________ Top button 1 (A on Xbox 360, cross on PS) 
 ---------------- CANCEL -----------------
-Master Race _______________ X, BACKSPACE, MOUSE RIGHT
+Master Race _______________ BACKSPACE, MOUSE RIGHT
 Consoles	_______________ Top button 2 (B on Xbox 360, circle on PS) 
 ---------------- START ------------------
-Master Race _______________ C, ENTER, MOUSE MIDDLE
+Master Race _______________ ENTER, MOUSE MIDDLE
 Consoles	_______________ The start button (The "options" button on a PS4)
 ------------- DIRECTIONAL ---------------
-Master Race _______________ ARROW KEYS, (W, A, S, D)
+Master Race _______________ ARROW KEYS
 Consoles	_______________  D-PAD
 -----------------------------------------
 */
-// Gamepad
-global.current_gamepad = 0; // The device
-// Mouse
-global.HELD_MOUSE_LEFT = false;
-global.RELEASED_MOUSE_LEFT = false;
-global.PRESSED_MOUSE_LEFT = false;
-global.HELD_MOUSE_RIGHT	= false;
-global.RELEASED_MOUSE_RIGHT = false;
-global.PRESSED_MOUSE_RIGHT = false;
-global.PRESSED_MOUSE_MIDDLE = false;
-// Held
-global.HELD_ARROWS = false;
-global.HELD_UP = false; 
-global.HELD_DOWN = false;
-global.HELD_LEFT = false;
-global.HELD_RIGHT = false;
-global.HELD_CANCEL = false;
-global.HELD_CONFIRM = false;
-// Pressed
-global.PRESSED_UP = false;
-global.PRESSED_DOWN = false;
-global.PRESSED_LEFT = false;
-global.PRESSED_RIGHT = false;
-global.PRESSED_CONFIRM = false;	
-global.PRESSED_CANCEL = false;	
-global.PRESSED_START = false;
-// Released
-global.RELEASED_UP = false;
-global.RELEASED_DOWN = false;
-global.RELEASED_LEFT = false;
-global.RELEASED_RIGHT = false;
-global.RELEASED_CONFIRM = false;
-global.RELEASED_CANCEL = false;
-// Shoulder
-//global.SHOULDER_LEFT = false;
-//global.SHOULDER_RIGHT = false;
+// The gamepad device (player 1)
+global.GAMEPAD = 0;  
+
+function KeybindingDefinition(_confirm=-1, _cancel=-1, _start=-1, _up=-1, _down=-1, _left=-1, _right=-1) constructor {
+	confirm = _confirm;
+	cancel = _cancel;
+	start = _start;
+	up = _up;
+	down = _down;
+	left = _left;
+	right = _right;
+}
+
+// Config keybindings
+function KeybindingCreate(_inputMode) {
+	if (global.inputMode == e_input.MOUSE) {
+		return new KeybindingDefinition(mb_left, mb_right, mb_middle);
+	}	
+	
+	if (global.inputMode == e_input.KEYBOARD) {
+		return new KeybindingDefinition(vk_space, vk_backspace, vk_enter, vk_up, vk_down, vk_left, vk_right);
+	}
+	
+	if (global.inputMode == e_input.GAMEPAD) {
+		return new KeybindingDefinition(gp_face1, gp_face2, gp_start, gp_padu, gp_padd, gp_padl, gp_padr);
+	}
+}
+
+global.inputMode = e_input.MOUSE; 
+global.keybind = KeybindingCreate(global.inputMode);
+// To reference: global.keybind.confirm
+
 #endregion GAME CONTROLS
+
 #region ROOMS & NAVIGATION
 global.roomType = e_roomTypes.SCENES;
 // These globals are used as DS Lists for the debug room list
@@ -145,8 +141,9 @@ global.roomYarnMap[? "rm_dormroom"	]		= "scenes/main_day0_test.yarn";
 
 // ------------------------------ TESTING ZONE ------------------------------ //
 if (Debug()) instance_create_layer(0, 0, "Controllers", DEBUG_DRAWER);
+
 // Add first room here
-//room_goto(rm_lang);
+// room_goto(rm_lang);
 // room_goto(rm_dream);
 // room_goto(rm_file_selection);
 room_goto(rm_title);

@@ -1,4 +1,15 @@
 /// @description Initialization
+/*	------------------- PHASE 1 ------------------- 
+					Choose a name.
+
+	------------------- PHASE 2 ------------------- 
+				  Choose the pronouns.
+				  
+	------------------- PHASE 3 ------------------- 
+	Choose a favorite place (might change later).
+	
+	------------------- --------------------------- 
+*/
 currentInputField = "name";
 phase1Options = ["Input", "Delete", "Confirm"];
 phase2Options = ["They", "She", "He"];

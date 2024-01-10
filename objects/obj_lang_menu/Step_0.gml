@@ -2,32 +2,40 @@ if (global.state == e_gameStates.PAUSED) exit;
 
 // Select Phase
 if (phase == "SELECT") {
-	// Keyboard Input - Move inside menu
+	// ----------------------------- KEYBOARD INPUT ----------------------------- //
 	pos += CheckVerticalInput();
 
 	// Wrap menu
 	if (pos >= optionLength) pos = 0; // goes back to first pos
 	if (pos < 0) pos = optionLength - 1; // goes to last pos
+	
+	// ----------------------------- MOUSE INPUT ----------------------------- //
+
 
 	// Mouse Input - Handle mouse hover
-	var isMouseHoveringMenu = false;
-	for (var i = 0; i < optionLength; i++) {
-	    var button_y = y + optionMargin * i;
+	if (global.inputMode == e_input.MOUSE) {
+		var isMouseHoveringMenu = false;
+		for (var i = 0; i < optionLength; i++) {
+		    var button_y = y + optionMargin * i;
 
-		// Checking if mouse cursor is inside boundaries of lang menu
-	    if (mouse_x >= x && mouse_x <= x + width &&
-	        mouse_y >= button_y && mouse_y <= button_y + optionMargin) {
-			isMouseHoveringMenu = true;
-	        pos = i;
-			break; // Exit the loop once it finds a hovered option
-	    }
-		else {
-			isMouseHoveringMenu = false;
-		}	
+			// Checking if mouse cursor is inside boundaries of lang menu
+		    if (mouse_x >= x && mouse_x <= x + width &&
+		        mouse_y >= button_y && mouse_y <= button_y + optionMargin) {
+				isMouseHoveringMenu = true;
+		        pos = i;
+				break; // Exit the loop once it finds a hovered option
+		    }
+			else {
+				isMouseHoveringMenu = false;
+			}	
+		}
 	}
+	
+	// ------------------------------------------------------------------------ //
 
 	// Choose a language
-	if ( (isMouseHoveringMenu && global.PRESSED_MOUSE_LEFT) || global.PRESSED_CONFIRM) {
+	if	( InputCheck(e_input.MOUSE, "confirm") && isMouseHoveringMenu ) || 
+		(InputCheck(e_input.KEYBOARD, "confirm") ) {
 		switch(pos) {
 			case 0: 
 				phase = "CONFIRM";
@@ -62,7 +70,7 @@ if (phase == "CONFIRM") {
 		posButtons = 0;
 		
 	    // Player cancelled the selection
-	    if (global.PRESSED_MOUSE_LEFT) {
+	    if ( InputCheck("mouse", "confirm") ) {
 			selectedButton = "CANCEL";
 			
 		}
@@ -72,25 +80,12 @@ if (phase == "CONFIRM") {
 		posButtons = 1;
 	    
 		// Player confirmed the selection
-		if (global.PRESSED_MOUSE_LEFT) {
+		if ( InputCheck("mouse", "confirm") ) {
 			selectedButton = "CONFIRM";
 		}
 	}
-
-	// MOUSE LEAVE LOGIC
-	/*
-	if (!cancelButtonIsHovering) {  
-		// Mouse left the left button - Button goes back to unselected appearance
-		cancelButton.selected = false;
-	}
 	
-	if (!confirmButtonIsHovering) { 
-		//  Mouse left the right button - Button goes back to unselected appearance
-		confirmButton.selected = false;
-	}
-	*/
-	
-	// Keyboard Input
+	// ----------------------------- KEYBOARD INPUT ----------------------------- //
 	posButtons += CheckHorizontalInput();
 	
 	// Wrap buttons
@@ -98,8 +93,8 @@ if (phase == "CONFIRM") {
 	if (posButtons >= numberOfButtons) posButtons = 0; // goes back to first pos
 	if (posButtons < 0) posButtons = numberOfButtons - 1; // goes to last pos
 	
-	// ------------------------- Confirm Input ------------------------- //
-	if (global.PRESSED_CONFIRM) {
+	// Confirm
+	if ( InputCheck(e_input.KEYBOARD, "confirm") ) {
 		// Player cancelled the selection
 		if (posButtons == 0) {
 			selectedButton = "CANCEL";
@@ -110,22 +105,19 @@ if (phase == "CONFIRM") {
 	    }
 	}
 	
-	// ------------------------- Cancel Input ------------------------- //
-	if (global.PRESSED_CANCEL) {
+	// Cancel
+	if ( InputCheck(e_input.KEYBOARD, "cancel")) {
 		selectedButton = "CANCEL";
 	}
 }
 
-// Goes back to Select Phase
+// ------------------------ BACK TO SELECT PHASE ------------------------ //
 if (selectedButton == "CANCEL") {
 	phase = "SELECT";
 	selectedButton = "NONE";
-			
-	// Reset Button State
-	// confirmButton.unavailable = true;	
 }
 
-// Goes to next room
+//  ------------------------ NEXT ROOM  ------------------------ //
 if (selectedButton == "CONFIRM") {
 	phase = "SELECT";
 	selectedButton = "NONE";

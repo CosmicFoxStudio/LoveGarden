@@ -55,7 +55,7 @@ if (phase == e_phases.PHASE_1 || phase == e_phases.PHASE_3) {
 		}
 	}
 	
-	if (global.PRESSED_CONFIRM) {	
+	if ( InputCheck(e_input.KEYBOARD, "confirm") ) {	
 		// Delete
 		if (pos == 1) {
 			//show_debug_message("Erased");
@@ -93,7 +93,7 @@ if (phase == e_phases.PHASE_1 || phase == e_phases.PHASE_3) {
 
 // PHASE 2
 if (phase == e_phases.PHASE_2) {
-	if (global.PRESSED_CONFIRM) {
+	if ( InputCheck(e_input.KEYBOARD, "confirm") ) {
 		switch(phase2Options[pos]) {
 			case "They" :
 				currentPronouns = e_pronouns.ELU;
@@ -118,7 +118,8 @@ if (phase == e_phases.PHASE_2) {
 }
 
 // The phase transitions should be at the bottom to avoid conflicts
-if (global.PRESSED_CONFIRM && (phase == e_phases.PHASE_1 || phase == e_phases.PHASE_2)) {
+if ( InputCheck(e_input.KEYBOARD, "confirm") && 
+(phase == e_phases.PHASE_1 || phase == e_phases.PHASE_2) ) {
     // Transition to the next phase based on the current phase
     if (phase == e_phases.PHASE_1 && endPhase1) {
         phase = e_phases.PHASE_2;

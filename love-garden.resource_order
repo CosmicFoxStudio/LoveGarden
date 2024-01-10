@@ -92,6 +92,7 @@
     {"name":"spr_ui_icon_map","order":14,"path":"sprites/spr_ui_icon_map/spr_ui_icon_map.yy",},
     {"name":"__ChatterboxClassBodySubstring","order":1,"path":"scripts/__ChatterboxClassBodySubstring/__ChatterboxClassBodySubstring.yy",},
     {"name":"spr_dormroom","order":10,"path":"sprites/spr_dormroom/spr_dormroom.yy",},
+    {"name":"obj_save_slot","order":1,"path":"objects/obj_save_slot/obj_save_slot.yy",},
     {"name":"__ChatterboxMetadataStringIsLineHash","order":12,"path":"scripts/__ChatterboxMetadataStringIsLineHash/__ChatterboxMetadataStringIsLineHash.yy",},
     {"name":"spr_status_bar_filling","order":4,"path":"sprites/spr_status_bar_filling/spr_status_bar_filling.yy",},
     {"name":"ChatterboxWait","order":9,"path":"scripts/ChatterboxWait/ChatterboxWait.yy",},

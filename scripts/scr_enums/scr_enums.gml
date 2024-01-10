@@ -6,6 +6,12 @@ function Enums() {
 		PT	// ---> 1
 	}
 	
+	enum e_input {
+		MOUSE,		// 0
+		KEYBOARD,	// 1
+		GAMEPAD		// 2
+	}
+	
 	enum e_pronouns {
 		ELU,	// ---> 0
 		ELA,	// ---> 1

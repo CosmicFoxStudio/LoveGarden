@@ -9,7 +9,7 @@ TypistCheckPause();
 if (global.state != e_gameStates.PAUSED && global.state != e_gameStates.MENU) {
 	// Waiting for user input or waiting for the user to choose an option
 	if ChatterboxIsWaiting(chatterbox) {
-	    if (global.PRESSED_CONFIRM || global.PRESSED_MOUSE_LEFT) {
+	    if ( InputCheck(e_input.KEYBOARD, "confirm") ) {
 			#region METADATA 
 			var once = false;
 		    var metadata = ChatterboxGetContentMetadata(chatterbox, 0);
@@ -90,7 +90,8 @@ if (global.state != e_gameStates.PAUSED && global.state != e_gameStates.MENU) {
 		}
 	
 	    // Option confirmation
-	    if  (global.PRESSED_CONFIRM || (global.PRESSED_MOUSE_LEFT && optionHovered != -1)) {
+	    if  (InputIsMouse() && optionHovered != -1) ||
+			( (InputIsKeyboard() || InputIsGamepad() ) && InputCheck(e_input.KEYBOARD, "confirm") ) {
 	        ChatterboxSelect(chatterbox, optionIndex);
 	        audio_play_sound(snd_option_beep, 0, false, 1, 0, random_range(0.8, 1.2));
 		

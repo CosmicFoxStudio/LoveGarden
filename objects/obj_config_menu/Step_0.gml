@@ -12,7 +12,7 @@ How to access each property:
 var currentPage = menuPages[page];
 
 // Can be 1 (moves down) or -1 (moves up) or 0 (not moving)
-var verticalInput = global.PRESSED_DOWN - global.PRESSED_UP;
+var verticalInput = CheckVerticalInput();
 
 // Prevents moving to other elements when inputting in subpages
 if (inputting) { 
@@ -31,7 +31,7 @@ if (inputting) {
 		break;
 		
 		case e_menuElementType.SHIFT : // ( << >> )
-			var horizontalInput = global.PRESSED_RIGHT - global.PRESSED_LEFT;
+			var horizontalInput = CheckHorizontalInput();
 			if(horizontalInput != 0) {
 				// Play audio
 				audio_play_sound(snd_menu_beep, 1, false);
@@ -68,7 +68,7 @@ if (inputting) {
 		//		break;
 		//	}
 			// Held input instead of pressed here for smooth gameplay
-			var horizontalInput = global.HELD_RIGHT - global.HELD_LEFT;
+			var horizontalInput = InputCheck(e_input.KEYBOARD, "confirm", "held") - InputCheck(e_input.KEYBOARD, "confirm", "held");
 			if(horizontalInput != 0) {
 				// Makes the value a floating value between 0-1 (same as 0% to 100%)
 				currentPage[menuOption[page]].param1 += horizontalInput*0.01; 
@@ -82,7 +82,7 @@ if (inputting) {
 		break;
 
 		case e_menuElementType.TOGGLE :
-			var horizontalInput = global.PRESSED_RIGHT - global.PRESSED_LEFT;
+			var horizontalInput = CheckHorizontalInput();
 			if(horizontalInput != 0) {
 				// Play audio
 				audio_play_sound(snd_menu_beep, 1, false);
@@ -126,7 +126,7 @@ if (inputting) {
 // --------------------------------------------------------------------------------- //
 // MAKE THINGS HAPPEN (EXECUTING SCRIPTS)
 // Setting up scripts so they run and impact/change variables in the game 
-if(global.PRESSED_CONFIRM) {
+if ( InputCheck(e_input.KEYBOARD, "confirm") ) {
 	// Checks for the type
 	switch(currentPage[menuOption[page]].type) { 
 		

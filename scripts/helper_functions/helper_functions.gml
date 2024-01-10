@@ -6,7 +6,7 @@
 	0 if both or neither are pressed.
 */
 function CheckVerticalInput() {	
-	return global.PRESSED_DOWN - global.PRESSED_UP;
+	return InputCheck(e_input.KEYBOARD, "down") - InputCheck(e_input.KEYBOARD, "up");
 }
 
 /*	Returns:
@@ -15,7 +15,7 @@ function CheckVerticalInput() {
 	0 if both or neither are pressed.
 */
 function CheckHorizontalInput() {
-	return global.PRESSED_RIGHT - global.PRESSED_LEFT;	
+	return InputCheck(e_input.KEYBOARD, "right") - InputCheck(e_input.KEYBOARD, "left");	
 }
 
 // Draws a rectangle starting from center, colors are changed and then reset

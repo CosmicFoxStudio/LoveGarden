@@ -126,6 +126,7 @@
     {"id":{"name":"__ChatterboxClassBodySubstring","path":"scripts/__ChatterboxClassBodySubstring/__ChatterboxClassBodySubstring.yy",},},
     {"id":{"name":"ChatterboxAddFindReplace","path":"scripts/ChatterboxAddFindReplace/ChatterboxAddFindReplace.yy",},},
     {"id":{"name":"spr_dormroom","path":"sprites/spr_dormroom/spr_dormroom.yy",},},
+    {"id":{"name":"obj_save_slot","path":"objects/obj_save_slot/obj_save_slot.yy",},},
     {"id":{"name":"__ChatterboxMetadataStringIsLineHash","path":"scripts/__ChatterboxMetadataStringIsLineHash/__ChatterboxMetadataStringIsLineHash.yy",},},
     {"id":{"name":"spr_status_bar_filling","path":"sprites/spr_status_bar_filling/spr_status_bar_filling.yy",},},
     {"id":{"name":"ChatterboxWait","path":"scripts/ChatterboxWait/ChatterboxWait.yy",},},

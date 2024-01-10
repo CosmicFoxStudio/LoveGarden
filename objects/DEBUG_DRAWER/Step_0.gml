@@ -102,21 +102,21 @@ if (global.debug) {
 	// Pause other input if Room Selector is active
 	if (debugRmSelectorActive) {
 
-        if (global.PRESSED_DOWN) {
+        if ( keyboard_check_pressed(vk_up) ) {
             selected += 1;
             if (selected >= ds_list_size(global.rmNameSorted)) {
                 selected = 0;
             }
         }
         
-        if (global.PRESSED_UP) {
+        if ( keyboard_check_pressed(vk_down) ) {
             selected -= 1;
             if (selected < 0) {
                 selected = ds_list_size(global.rmNameSorted) - 1;
             }
         }
         
-	        if (global.PRESSED_CONFIRM) {
+	        if ( keyboard_check_pressed(vk_space) ) {
 			    roomName = ds_list_find_value(global.rmNameSorted, selected);
 				show_debug_message(roomName);
 			    roomIndex = ds_list_find_index(global.rmName, roomName);
@@ -143,7 +143,7 @@ if (global.debug) {
 	        }  
 			
 			// Deactivate Room Selector
-			if (global.PRESSED_CANCEL || global.PRESSED_MOUSE_RIGHT) {
+			if ( keyboard_check_pressed(vk_backspace) ) {
 				// Goes back to last game state
 				GameChangeState(global.statePrevious);
 				debugRmSelectorActive = false;

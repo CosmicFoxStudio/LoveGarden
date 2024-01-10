@@ -1,22 +1,17 @@
 /// @description Initialization
-startX = 0;
-startY = 0;
-yy = 0;
-//image_speed = 0.5;
+
+// Change game state as soon as this object is created
+GameChangeState(e_gameStates.FILE_SELECTION);
 selectedOption = 0;
 maxSlots = 3;
 subimage = 0;
 spriteImage = 0;
-dateX = 0;
-dateY = 0;
-placeX = 0;
-placeY = 0;
-daytimeX = 0;
-daytimeY = 0;
-dayX = 0;
-dayY = 0;
+mouseSelected = false;
+
 saveStatString = "";
 entryString = "";
+saveSlotArray = [];
+saveSlotAmount = 0; // Don't think we need this? Since we already have the maxSlots variable
 
 // Adding translation to save and load buttons
 switch (global.lang) {
@@ -82,4 +77,32 @@ for (var slot = 0; slot < 3; slot++) {
 		}
 	}
 	 // else show_debug_message("No file found - " + string(slot));	
+}
+
+// -------------------------------- CREATE SLOTS -------------------------------- //
+
+// To center on the screen	
+var startX = (SCREEN_WIDTH/ 2);
+var startY = (SCREEN_HEIGHT / 2) - (sprite_get_height(spr_saveslot_box) * 1.2);
+	
+// Create the three save slot boxes
+for (var slot = 0; slot < maxSlots; slot++) {
+	var yy = startY + (slot * (sprite_get_height(spr_saveslot_box) * 1.2));
+		
+	// Checking if the slot is highlighted
+	if (selectedOption == slot) subimage = 1;
+	else subimage = 0;
+		
+	// Create save slot box object
+	var currentSlot = instance_create_layer(startX, yy, "Instances_Above", obj_save_slot);
+	currentSlot.slotIndex = slot;
+		
+	// Add to array of instances
+		if (currentSlot != noone) {
+		    array_push(saveSlotArray, currentSlot);
+		}
+
+	saveSlotAmount = array_length(saveSlotArray);
+
+	currentSlot.image_index = subimage;
 }
