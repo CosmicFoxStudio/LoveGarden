@@ -9,7 +9,7 @@ TypistCheckPause();
 if (global.state != e_gameStates.PAUSED && global.state != e_gameStates.MENU) {
 	// Waiting for user input or waiting for the user to choose an option
 	if ChatterboxIsWaiting(chatterbox) {
-	    if ( InputCheck(e_input.KEYBOARD, "confirm") ) {
+	    if ( InputCheck(e_input.KEYBOARD, "confirm") || InputCheck(e_input.MOUSE, "confirm") ) {
 			#region METADATA 
 			var once = false;
 		    var metadata = ChatterboxGetContentMetadata(chatterbox, 0);
@@ -55,8 +55,19 @@ if (global.state != e_gameStates.PAUSED && global.state != e_gameStates.MENU) {
 			}
 			#endregion METADATA 
 
-	        ChatterboxContinue(chatterbox);
-	        UpdateChatterbox();
+			//  ------------------- SKIP TEXT ------------------- //
+			// Means the page is fully typed out
+			if ((typist.get_position() - 1) == textLength) {
+				ChatterboxContinue(chatterbox);
+				// Advance to next dialogue line
+				UpdateChatterbox();
+			}
+			else {
+				// Typist auto-complete
+				if (typist.get_position() < textLength) {
+					typist.skip();
+				}				
+			}
 	    }
 	
 	// If there are options to choose
@@ -90,8 +101,8 @@ if (global.state != e_gameStates.PAUSED && global.state != e_gameStates.MENU) {
 		}
 	
 	    // Option confirmation
-	    if  (InputIsMouse() && optionHovered != -1) ||
-			( (InputIsKeyboard() || InputIsGamepad() ) && InputCheck(e_input.KEYBOARD, "confirm") ) {
+	    if  (InputCheck(e_input.MOUSE, "confirm") && optionHovered != -1) ||
+			( InputCheck(e_input.KEYBOARD, "confirm") ) {
 	        ChatterboxSelect(chatterbox, optionIndex);
 	        audio_play_sound(snd_option_beep, 0, false, 1, 0, random_range(0.8, 1.2));
 		

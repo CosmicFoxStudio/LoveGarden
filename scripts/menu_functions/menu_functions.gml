@@ -6,6 +6,7 @@ function ToggleContextMenu(_condition = true) {
 		// ACTIVATION - Menu doesn't exist, create it
 		if ((!instance_exists(global.configMenu))) {
 			global.configMenu = instance_create_layer(0, 0, "Special", obj_config_menu);
+			TransitionStart(sq_out_trans_fade_black, sq_in_trans_fade_black);
 			GameChangeState(e_gameStates.MENU);
 			return show_debug_message("Config menu activated.");
 		}
@@ -13,6 +14,7 @@ function ToggleContextMenu(_condition = true) {
 		else if (instance_exists(global.configMenu)) {
 			// Destroy the instance stored in the global. Menu is ready to be called again
 			instance_destroy(global.configMenu);
+			TransitionStart(sq_out_trans_fade_black, sq_in_trans_fade_black);
 			
 			GameChangeState(e_gameStates.CONTINUE_GAME);
 			return show_debug_message("Config menu deactivated.");

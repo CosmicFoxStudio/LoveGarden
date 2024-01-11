@@ -21,7 +21,7 @@ optionIndex = 0;
 optionHovered = -1; 
 
 // Object depth
-depth = -100;
+//depth = -100;
 
 // ----------------------------- SCRIBBLE ----------------------------- //
 // Setup font
@@ -32,6 +32,7 @@ textSpd = 0.5;
 typist = scribble_typist();
 typist.in(textSpd, 0.8);
 skipCounter = 0;
+textLength = 0;
 
 // Delays in punctuation
 typist.character_delay_add(".", 50);

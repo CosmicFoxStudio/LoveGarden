@@ -102,14 +102,14 @@ if (global.debug) {
 	// Pause other input if Room Selector is active
 	if (debugRmSelectorActive) {
 
-        if ( keyboard_check_pressed(vk_up) ) {
+        if ( keyboard_check_pressed(vk_down) ) {
             selected += 1;
             if (selected >= ds_list_size(global.rmNameSorted)) {
                 selected = 0;
             }
         }
         
-        if ( keyboard_check_pressed(vk_down) ) {
+        if ( keyboard_check_pressed(vk_up) ) {
             selected -= 1;
             if (selected < 0) {
                 selected = ds_list_size(global.rmNameSorted) - 1;

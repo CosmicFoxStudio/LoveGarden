@@ -23,9 +23,53 @@ draw_rectangle_color(0, 0, gwidth, gheight, c, c, c, c, false);
 draw_set_alpha(1);
 
 // Draw Config Menu BG
-draw_sprite(spr_ui_box_config, 0, 0, 0,);
+draw_sprite(spr_diamonds, 0, 0, 0,);
+draw_sprite(spr_config_title, 0, 0, 0);
 
-// --------------------------- Draw Elements on the Left Side --------------------------- //
+// --------------------------- Draw cursor and sprites ------------------------------ //
+// Cursor
+var cursorX = (page == 0) ? startX - xBUFFER - 50 : startX + xBUFFER + 50;
+var cursorY = startY + (menuOption[page] * yBUFFER);
+draw_sprite(spr_cursor_keyboard, 0, cursorX, cursorY);
+
+// Draw additional buttons
+var buttonX, buttonY;
+
+// "X" button (Resume) on the top right
+buttonX = gwidth - 50;
+buttonY = 20;
+draw_sprite(spr_config_btn_resume, 0, buttonX, buttonY + 10);
+
+// "Back to title" button on the bottom left
+buttonX = 200;
+buttonY = gheight;
+draw_sprite(spr_config_btn_exit, 0, buttonX, buttonY);
+
+// -------------------- Draw buttons in the middle -------------------- //
+var middleButtonX = gwidth / 2;
+var middleButtonY = gheight / 2;
+
+//Audio
+buttonX = middleButtonX - 120;
+buttonY = middleButtonY - 60;
+draw_sprite(spr_config_btn_audio, 0, buttonX, buttonY);
+
+// Lang
+buttonX = middleButtonX + 120;
+buttonY = middleButtonY - 60;
+draw_sprite(spr_config_btn_lang, 0, buttonX, buttonY);
+
+// Controls
+buttonX = middleButtonX - 120;
+buttonY = middleButtonY + 50;
+draw_sprite(spr_config_btn_controls, 0, buttonX, buttonY);
+
+// Graphics
+buttonX = middleButtonX + 120;
+buttonY = middleButtonY + 50;
+draw_sprite(spr_config_btn_graphics, 0, buttonX, buttonY);
+
+// --------------------------- Draw Text on the Left Side --------------------------- //
 DrawAlign(fa_right, fa_middle);
 
 var leftTextX = startX - xBUFFER;

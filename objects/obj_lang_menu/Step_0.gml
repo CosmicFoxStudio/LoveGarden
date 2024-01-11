@@ -70,7 +70,7 @@ if (phase == "CONFIRM") {
 		posButtons = 0;
 		
 	    // Player cancelled the selection
-	    if ( InputCheck("mouse", "confirm") ) {
+	    if ( InputCheck(e_input.MOUSE, "confirm") ) {
 			selectedButton = "CANCEL";
 			
 		}
@@ -80,7 +80,7 @@ if (phase == "CONFIRM") {
 		posButtons = 1;
 	    
 		// Player confirmed the selection
-		if ( InputCheck("mouse", "confirm") ) {
+		if ( InputCheck(e_input.MOUSE, "confirm") ) {
 			selectedButton = "CONFIRM";
 		}
 	}
