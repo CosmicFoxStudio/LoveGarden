@@ -37,7 +37,7 @@ if (finishedIntro) {
 */
 	#endregion (TO-DO)
 	
-	// TransitionStart(sq_out_trans_fade_white, sq_in_trans_fade_white, rm_dormroom);
+	// TransitionStart(sq_out_trans_fade_white, sq_in_trans_fade_white, rm_test);
 }
 
 // Create player
@@ -49,7 +49,7 @@ if (finishedIntro && !createdPlayer) {
 }
 
 if (finishedPlayer) {
-	TransitionStart(sq_out_trans_fade_white, sq_in_trans_fade_white, rm_dormroom);
+	TransitionStart(sq_out_trans_fade_white, sq_in_trans_fade_white, rm_test);
 	global.state = e_gameStates.CONTINUE_GAME;
 	GameCreateUI();
 	SaveGame();

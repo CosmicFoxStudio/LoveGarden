@@ -69,7 +69,7 @@ function Enums() {
 	    LANG,
 	    CHARA,
 	    CUTSCENE,
-		// DIALOGUE
+		DIALOGUE,
 		// PLAYER
 		// MENU
 		// AUDIO

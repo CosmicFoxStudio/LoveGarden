@@ -26,7 +26,10 @@ function NextRoom(_room) {
 // Function to choose character on screen
 function CharacterOnScreen(_name) {
 	var sprite = noone;
-	if (_name) == "ype" {
+	if (_name) == "maple" {
+		sprite = spr_maple;
+	}
+	else if (_name) == "ype" {
 		sprite = spr_ype;
 	}
 	else if (_name) == "caru" {

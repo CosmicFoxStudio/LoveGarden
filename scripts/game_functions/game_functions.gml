@@ -16,7 +16,7 @@ function GameCreateUI() {
 			instance_destroy(obj_ui_controller);	
 		}
 		else {
-			instance_create_layer(0, 0, "Isntances_Above", obj_ui_controller);	
+			instance_create_layer(0, 0, "Instances_Above", obj_ui_controller);	
 		}
 	}
 }
@@ -46,10 +46,16 @@ function DecideRoomName() {
 	    case "rm_dormroom":
 			global.location = "Dormroom";
 	    break;
-		
+		case "rm_dormitory":
+			global.location = "Dormitory Orange";
+	    break;
+		case "rm_test":
+			global.location = "Test Zone";
+	    break;
 		case "rm_init":
 		case "rm_lang":
 		case "rm_template":
+		case "rm_test":
 		case "rm_title":
 		case "rm_dream":
 		case "rm_file_selection":

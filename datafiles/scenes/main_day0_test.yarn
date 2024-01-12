@@ -16,7 +16,7 @@ PLAYER: Ugh... #0 #0 #0 #0 #0 #0 #line:ce807b
 You wake up in the middle of a bizarre dream about talking mushrooms. #0 #0 #0 #0 #0 #0 #line:d7b82c
 It seems your dream alarm didn't go off... #0 #0 #0 #0 #0 #0 #line:6e4123
 Your roommate, Maple, wakes you up. #0 #0 #0 #0 #0 #0 #line:3009e7
-<<chara("ype")>>
+<<chara("maple")>>
 MAPLE: Wow, finally! How can you sleep so much?! #0 #0 #0 #0 #0 #0 #line:79ceda
 MAPLE: Not that I'm one to speak... #0 #0 #0 #0 #0 #0 #line:c31ed1 
 MAPLE: Aren't you supposed to be in class? It's already 8:40... #0 #0 #0 #0 #0 #0 #line:966273

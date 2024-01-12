@@ -3,8 +3,6 @@
 // Set halign to center and valign to the middle (center the text in the textbox)
 DrawAlign(fa_center, fa_middle); 
 
-draw_text(325, 15, "Typist position: " + string(typist.get_position()));
-draw_text(325, 30, "Text Length: " + string(textLength));
 // Horizontal text margin
 var marginText = 64;     
 textLength = scribble(ChatterboxGetContentSpeech(chatterbox, 0)).get_glyph_count();

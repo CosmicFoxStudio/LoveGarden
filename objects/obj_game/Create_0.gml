@@ -86,7 +86,7 @@ global.keybind = KeybindingCreate(global.inputMode);
 #region ROOMS & NAVIGATION
 global.roomType = e_roomTypes.SCENES;
 // These globals are used as DS Lists for the debug room list
-global.rmCurrent = room_get_name(rm_dormroom);
+global.rmCurrent = room_get_name(rm_test);
 global.location = "Dormroom";
 global.rmName = noone;
 global.rmNameSorted = noone;
@@ -129,7 +129,9 @@ else {
 
 // Room-to-yarn map
 global.roomYarnMap = ds_map_create();
-global.roomYarnMap[? "rm_dormroom"	]		= "scenes/main_day0_test.yarn";
+global.roomYarnMap[? "rm_test"	]			= "scenes/main_day0_test.yarn";
+global.roomYarnMap[? "rm_dormroom"	]		= "scenes/main_day1_dormroom_morning.yarn";
+global.roomYarnMap[? "rm_dormitory"	]		= "scenes/main_day1_dormitory_morning.yarn";
 // And so on...
 
 // ----------------------- Chatterbox Localization Build -----------------------  //

@@ -1,0 +1,18 @@
+#__PrivCrochet_version:1
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 938,-8
+__PrivCrochet_tags: 
+title: Start
+---
+<<chara("void")>>
+Day 1 - Dormitory Orange #0 #0 #0 #0 #0 #0
+???: Lorem ipsum dolor sit amet, consectetur adipiscing elit. #0 #0 #0 #0 #0 #0
+???: Lorem ipsum dolor sit amet. #0 #0 #0 #0 #0 #0
+???: Lorem ipsum dolor sit amet, consectetur adipiscing elit. #0 #0 #0 #0 #0 #0
+???: ... #0 #0 #0 #0 #0 #0
+???: Lorem ipsum! #0 #0 #0 #0 #0 #0
+PLAYER: Lorem ipsum dolor sit amet, consectetur adipiscing elit. #0 #0 #0 #0 #0 #0
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. #0 #0 #0 #0 #0 #0
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. #0 #0 #0 #0 #0 #0
+<<save()>>
+===

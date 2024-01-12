@@ -13,6 +13,7 @@ if (global.debug) {
 			"Language Debug: 2",
 			"Character Debug: 3", 
 			"Cutscene Debug: 4",
+			"Dialogue Debug: 5",
 			"Show FPS: F",
 			"Room Selector: R",
 			"Pause Game: P",
@@ -121,6 +122,20 @@ if (global.debug) {
 		DebugDrawBox(10, 10, "CUTSCENE DEBUG", cutsceneDebugStrings);
 	}
 	#endregion CUTSCENES
+	
+	#region DIALOGUE --- Press 5
+	if (debugBooleans[e_DebugOptions.DIALOGUE]) {
+		var dialogueDebugStrings = [];
+		if (instance_exists(obj_node_controller)) {
+			array_push(dialogueDebugStrings, 
+				"Typist position: " + string(obj_node_controller.typist.get_position()),
+				"Text Length: " + string(obj_node_controller.textLength)
+			);
+		}
+		DebugDrawBox(10, 10, "DIALOGUE DEBUG", dialogueDebugStrings);
+	}
+	
+	#endregion DIALOGUE
 	
 	#region ROOM SELECTOR
 	DrawSet(c_white, 1);
