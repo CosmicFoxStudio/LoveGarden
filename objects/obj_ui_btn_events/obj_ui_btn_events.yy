@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_ui_btn_phone",
+  "name": "obj_ui_btn_events",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
@@ -28,7 +28,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_ui_light_btn_events",
+    "path": "sprites/spr_ui_light_btn_events/spr_ui_light_btn_events.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

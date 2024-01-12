@@ -12,6 +12,7 @@ draw_text(startX, startY, "Choose your " + currentInputField + ":");
 
 // Display input field or options
 if (phase == e_phases.PHASE_1 || phase == e_phases.PHASE_3) {
+	
 		optionLength = array_length(phase1Options);
 		var textVersusLineOffset = 5;
 		// Draw name letters (we should make this block of code a function tbh)
@@ -38,7 +39,8 @@ if (phase == e_phases.PHASE_1 || phase == e_phases.PHASE_3) {
 			draw_text(startX + 23*xx + 6 - 110, startY + 40, optionText);
 			xx++;
 		}	
-		// Confirm
+		
+		// Confirm (Text + Rectangle)
 		optionLength = array_length(phase1Options);
 		for (var i = 0; i < optionLength; i++) {
 			optionText = phase1Options[i];
@@ -47,6 +49,11 @@ if (phase == e_phases.PHASE_1 || phase == e_phases.PHASE_3) {
 				optionText = "> " + optionText;
 			}
 			draw_set_halign(fa_center);
+			
+			// Draw rectangle
+			draw_sprite(spr_rect, 0, startX, startY + 90 + i * 30);
+			
+			// Draw text
 			draw_text(startX, startY + 90 + i * 30, optionText);	
 		}
 }

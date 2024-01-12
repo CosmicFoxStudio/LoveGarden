@@ -28,7 +28,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_ui_light_btn_map",
+    "path": "sprites/spr_ui_light_btn_map/spr_ui_light_btn_map.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

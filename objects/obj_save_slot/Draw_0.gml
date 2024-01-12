@@ -43,7 +43,7 @@ else {
 	dateY = yy + 7;
 			
 	draw_set_halign(fa_center);
-	draw_set_font(fnt_dialogue);
+	DrawFont(fnt_dialogue);
 	draw_text(dateX, dateY, DateLocalization(obj_save_load.saveSlotInfo[slotIndex, e_saveSlotStats.DATE]));
 			
 			
@@ -67,14 +67,20 @@ else {
 		case e_daytime.MORNING:
 			draw_text(daytimeX, daytimeY, obj_save_load.saveText[1]);
 		break;
-		case e_daytime.AFTERNOON:
+		case e_daytime.NOON:
 			draw_text(daytimeX, daytimeY, obj_save_load.saveText[2]);
 		break;
-		case e_daytime.EVENING:
+		case e_daytime.AFTERNOON:
 			draw_text(daytimeX, daytimeY, obj_save_load.saveText[3]);
 		break;
-		default:
+		case e_daytime.NIGHT:
 			draw_text(daytimeX, daytimeY, obj_save_load.saveText[4]);
+		break;
+		case e_daytime.DAWN:
+			draw_text(daytimeX, daytimeY, obj_save_load.saveText[5]);
+		break;
+		default:
+			draw_text(daytimeX, daytimeY, obj_save_load.saveText[6]);
 		break;
 	}
 			

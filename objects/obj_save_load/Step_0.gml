@@ -49,8 +49,8 @@ if (global.state == e_gameStates.FILE_SELECTION) {
 			// NO existing save slot found
 			else {
 				
-				// Create save slot (by saving to it) [This is done inside End Step]
-				global.state = e_gameStates.NEW_GAME;
+				// Change Game State
+				GameChangeState(e_gameStates.NEW_GAME);
 			
 				// Go to first cutscene
 				TransitionStart(sq_out_trans_fade_white, sq_in_trans_fade_white, rm_dream);

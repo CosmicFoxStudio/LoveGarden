@@ -130,8 +130,8 @@ else {
 // Room-to-yarn map
 global.roomYarnMap = ds_map_create();
 global.roomYarnMap[? "rm_test"	]			= "scenes/main_day0_test.yarn";
-global.roomYarnMap[? "rm_dormroom"	]		= "scenes/main_day1_dormroom_morning.yarn";
-global.roomYarnMap[? "rm_dormitory"	]		= "scenes/main_day1_dormitory_morning.yarn";
+global.roomYarnMap[? "rm_dormroom"	]		= "scenes/main_day1_dormroom.yarn";
+global.roomYarnMap[? "rm_dormitory"	]		= "scenes/main_day1_dormitory.yarn";
 // And so on...
 
 // ----------------------- Chatterbox Localization Build -----------------------  //

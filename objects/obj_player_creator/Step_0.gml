@@ -55,19 +55,19 @@ if (phase == e_phases.PHASE_1 || phase == e_phases.PHASE_3) {
 		}
 	}
 	
-	if ( InputCheck(e_input.KEYBOARD, "confirm") ) {	
-		// Delete
-		if (pos == 0) {
-			//show_debug_message("Erased");
-			// Make string empty again
-			if (letterCount >= 1) {
-				currentString = "";
-				audio_play_sound(snd_cant, 1, false);
-			}
+	// Delete
+	if  ( InputCheck(e_input.KEYBOARD, "cancel") || 
+		( InputCheck(e_input.KEYBOARD, "confirm") && pos == 0 ) ) {
+		if (letterCount >= 1) {
+			currentString = string_delete(currentString, letterCount, 1);
+			audio_play_sound(snd_cant, 1, false);
 		}
+	}
 	
-		// Confirm
-		if (pos == 1 && string_length(currentString) > 0) {
+	// Confirm
+	if (pos == 1) {		
+		
+		if ( InputCheck(e_input.KEYBOARD, "confirm") && string_length(currentString) > 0) {
 			if (phase == e_phases.PHASE_1) {
 				// Assign to global
 				global.playerName = string_upper(currentString);

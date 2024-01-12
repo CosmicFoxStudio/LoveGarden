@@ -60,8 +60,10 @@ function Enums() {
 
 	enum e_daytime {
 		MORNING,
+		NOON,
 		AFTERNOON,
-		EVENING
+		NIGHT,
+		DAWN // ---> Only for testing purposes
 	}
 
 	enum e_DebugOptions {
@@ -105,4 +107,11 @@ function Enums() {
 		DAY,
 		LAST
 	}
+}
+
+enum e_plantStage {
+	BLOOM,	// 0
+	BUD,	// 1
+	WITHER,	// 2
+	DEAD	// 3 ---> Only for testing purposes
 }

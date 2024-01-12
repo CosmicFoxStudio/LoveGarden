@@ -28,7 +28,7 @@ maxLettersReached = false;
 scale = 1;
 blink = 0;
 flash = false;
-currentString = "";
+currentString = "MAPLE";
 currentPronouns = 0;
 letterCount = string_length(currentString);
 enum e_phases {
@@ -41,3 +41,7 @@ endPhase1 = false;
 endPhase2 = false;
 pos = 0;
 optionLength = array_length(phase1Options);
+
+// Mouse Input
+//mouseHover = false;
+//mouseClick = false;

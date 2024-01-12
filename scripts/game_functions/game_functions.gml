@@ -12,10 +12,7 @@ function GameChangeState(_newState) {
 function GameCreateUI() {
 	if (global.state == e_gameStates.CONTINUE_GAME) {
 		// Create the obj_ui_controller if it doesn't already exist
-		if (instance_exists(obj_ui_controller)) {
-			instance_destroy(obj_ui_controller);	
-		}
-		else {
+		if (!instance_exists(obj_ui_controller)) {
 			instance_create_layer(0, 0, "Instances_Above", obj_ui_controller);	
 		}
 	}
@@ -55,7 +52,6 @@ function DecideRoomName() {
 		case "rm_init":
 		case "rm_lang":
 		case "rm_template":
-		case "rm_test":
 		case "rm_title":
 		case "rm_dream":
 		case "rm_file_selection":

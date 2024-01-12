@@ -54,6 +54,7 @@ if (page >= array_length(text) - 1) {
 		ended = true;
 }
 
+DrawFont(fnt_dialogue);
 // Draw the text
 if (twFadeOutState == e_fadeoutState.FADING_OUT) {
 	// This fade out is not working :'(
