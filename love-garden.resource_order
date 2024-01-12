@@ -47,6 +47,7 @@
     {"name":"Icons","order":5,"path":"folders/Sprites/Icons.yy",},
     {"name":"Screen Transitions","order":4,"path":"folders/Sprites/Screen Transitions.yy",},
     {"name":"UI","order":1,"path":"folders/Sprites/UI.yy",},
+    {"name":"Config Menu","order":4,"path":"folders/Sprites/UI/Config Menu.yy",},
     {"name":"File Selection","order":3,"path":"folders/Sprites/UI/File Selection.yy",},
     {"name":"Lang","order":1,"path":"folders/Sprites/UI/Lang.yy",},
     {"name":"Oldies","order":2,"path":"folders/Sprites/UI/Oldies.yy",},
@@ -54,7 +55,6 @@
     {"name":"UI","order":5,"path":"folders/UI.yy",},
     {"name":"Config Menu","order":2,"path":"folders/UI/Config Menu.yy",},
     {"name":"Lang Menu","order":1,"path":"folders/UI/Lang Menu.yy",},
-    {"name":"Config Menu","order":4,"path":"folders/Sprites/UI/Config Menu.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"obj_intro","order":1,"path":"objects/obj_intro/obj_intro.yy",},

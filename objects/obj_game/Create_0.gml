@@ -143,7 +143,7 @@ global.roomYarnMap[? "rm_dormroom"	]		= "scenes/main_day0_test.yarn";
 if (Debug()) instance_create_layer(0, 0, "Controllers", DEBUG_DRAWER);
 
 // Add first room here
-// room_goto(rm_lang);
+room_goto(rm_lang);
 // room_goto(rm_dream);
 // room_goto(rm_file_selection);
-room_goto(rm_title);
+// room_goto(rm_title);

@@ -64,6 +64,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Icons","folderPath":"folders/Sprites/Icons.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Screen Transitions","folderPath":"folders/Sprites/Screen Transitions.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"UI","folderPath":"folders/Sprites/UI.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Config Menu","folderPath":"folders/Sprites/UI/Config Menu.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"File Selection","folderPath":"folders/Sprites/UI/File Selection.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Lang","folderPath":"folders/Sprites/UI/Lang.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Oldies","folderPath":"folders/Sprites/UI/Oldies.yy",},
@@ -73,7 +74,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Config Menu","folderPath":"folders/UI/Config Menu.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Lang Menu","folderPath":"folders/UI/Lang Menu.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Title Menu","folderPath":"folders/UI/Title Menu.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Config Menu","folderPath":"folders/Sprites/UI/Config Menu.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"pt_dialogues.csv","CopyToMask":-1,"filePath":"datafiles/lang",},
