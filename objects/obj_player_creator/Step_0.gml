@@ -37,7 +37,7 @@ if (phase == e_phases.PHASE_1 || phase == e_phases.PHASE_3) {
 	}
 	
 	// Keyboard input
-	if (pos == 0 && !maxLettersReached) {
+	if (!maxLettersReached) {
 		if (keyboard_lastkey != -1) {
 		    var pressedChar = keyboard_lastchar;
     
@@ -57,17 +57,17 @@ if (phase == e_phases.PHASE_1 || phase == e_phases.PHASE_3) {
 	
 	if ( InputCheck(e_input.KEYBOARD, "confirm") ) {	
 		// Delete
-		if (pos == 1) {
+		if (pos == 0) {
 			//show_debug_message("Erased");
-			// Check there's at least 1 letter in the name, and if so, delete it
+			// Make string empty again
 			if (letterCount >= 1) {
-				currentString = string_delete(currentString, letterCount, 1);
+				currentString = "";
 				audio_play_sound(snd_cant, 1, false);
 			}
 		}
 	
 		// Confirm
-		if (pos == 2) {
+		if (pos == 1 && string_length(currentString) > 0) {
 			if (phase == e_phases.PHASE_1) {
 				// Assign to global
 				global.playerName = string_upper(currentString);
@@ -77,6 +77,7 @@ if (phase == e_phases.PHASE_1 || phase == e_phases.PHASE_3) {
 				
 				// End of phase flag
 				endPhase1 = true;
+				currentString = "";
 			}		
 			// It's PHASE 3, job is done
 			else {
@@ -93,6 +94,8 @@ if (phase == e_phases.PHASE_1 || phase == e_phases.PHASE_3) {
 
 // PHASE 2
 if (phase == e_phases.PHASE_2) {
+	optionLength = array_length(phase2Options);
+	
 	if ( InputCheck(e_input.KEYBOARD, "confirm") ) {
 		switch(phase2Options[pos]) {
 			case "They" :

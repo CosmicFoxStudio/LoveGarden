@@ -40,7 +40,6 @@ function DecideRoomName() {
 		case "rm_template":
 		case "rm_title":
 		case "rm_dream":
-		case "rm_test":
 		case "rm_file_selection":
 	    default:
 			global.location = "Nowhere";

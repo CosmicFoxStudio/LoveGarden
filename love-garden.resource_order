@@ -135,7 +135,6 @@
     {"name":"snd_ecopark","order":3,"path":"sounds/snd_ecopark/snd_ecopark.yy",},
     {"name":"scribble_font_add_from_sprite","order":2,"path":"scripts/scribble_font_add_from_sprite/scribble_font_add_from_sprite.yy",},
     {"name":"__ChatterboxEscapeForCSV","order":8,"path":"scripts/__ChatterboxEscapeForCSV/__ChatterboxEscapeForCSV.yy",},
-    {"name":"rm_test","order":7,"path":"rooms/rm_test/rm_test.yy",},
     {"name":"spr_config_btn_exit","order":2,"path":"sprites/spr_config_btn_exit/spr_config_btn_exit.yy",},
     {"name":"obj_growth_bar","order":1,"path":"objects/obj_growth_bar/obj_growth_bar.yy",},
     {"name":"__shd_scribble_bake_outline_8dir","order":2,"path":"shaders/__shd_scribble_bake_outline_8dir/__shd_scribble_bake_outline_8dir.yy",},

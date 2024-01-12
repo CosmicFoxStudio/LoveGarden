@@ -43,7 +43,7 @@ if (finishedIntro) {
 // Create player
 
 if (finishedIntro && !createdPlayer) {
-	TransitionStart(sq_out_trans_fade_white, sq_in_trans_fade_white);
+	// TransitionStart(sq_out_trans_fade_white, sq_in_trans_fade_white);
 	instance_create_layer(0, 0, "Instances_Above", obj_player_creator);	
 	createdPlayer = true;
 }

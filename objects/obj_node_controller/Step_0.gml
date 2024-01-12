@@ -25,20 +25,20 @@ if (global.state != e_gameStates.PAUSED && global.state != e_gameStates.MENU) {
 					}
 					// WILTING - Adds/removes points from the "wilting" stats
 			        if (metadata[1] != "") { 
-						global.playerStats.wilting = WrapInside(obj_wilting_bar.fillBar + real(metadata[1]), 0, 10); 
-						obj_wilting_bar.fillBar = global.playerStats.wilting; 
+						//global.playerStats.wilting = WrapInside(obj_wilting_bar.fillBar + real(metadata[1]), 0, 10); 
+						//obj_wilting_bar.fillBar = global.playerStats.wilting; 
 						once = true;
 					}
 					// GROWTH - Add/remove points from the "growth" stats
 			        if (metadata[2] != "") { 
-						global.playerStats.growth = WrapInside(obj_growth_bar.fillBar + real(metadata[2]), 0, 10); 
-						obj_growth_bar.fillBar = global.playerStats.growth; 
+						//global.playerStats.growth = WrapInside(obj_growth_bar.fillBar + real(metadata[2]), 0, 10); 
+						//obj_growth_bar.fillBar = global.playerStats.growth; 
 						once = true;
 					}
 					// BLOSSOM - Add/remove points from "blossom" stats
 			        if (metadata[3] != "") { 
-						global.playerStats.blossom = WrapInside(obj_blossom_bar.fillBar + real(metadata[3]), 0, 10); 
-						obj_blossom_bar.fillBar = global.playerStats.blossom; 
+						//global.playerStats.blossom = WrapInside(obj_blossom_bar.fillBar + real(metadata[3]), 0, 10); 
+						//obj_blossom_bar.fillBar = global.playerStats.blossom; 
 						once = true;
 					}
 					// SOM - Enter the name of the sound asset

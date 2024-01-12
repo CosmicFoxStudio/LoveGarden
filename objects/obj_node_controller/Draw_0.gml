@@ -3,8 +3,8 @@
 // Set halign to center and valign to the middle (center the text in the textbox)
 DrawAlign(fa_center, fa_middle); 
 
-draw_text(30, 30, "Typist position: " + string(typist.get_position()));
-draw_text(30, 40, "Text Length: " + string(textLength));
+draw_text(325, 15, "Typist position: " + string(typist.get_position()));
+draw_text(325, 30, "Text Length: " + string(textLength));
 // Horizontal text margin
 var marginText = 64;     
 textLength = scribble(ChatterboxGetContentSpeech(chatterbox, 0)).get_glyph_count();
@@ -13,12 +13,12 @@ if IsChatterbox(chatterbox) and text != undefined {
 
 	
 	// Draw text
-	var yy = room_height - (marginText/2) - 40;
+	var yy = room_height - (marginText/2) - 50;
 	
 	// Textbox (In case we need one made by code only)
 	// DrawRectangleCenter(room_width/2, yy, room_width - 190, marginText,  false, c_black, 0.5);
 	
-	var xx = room_width/2 - 155;
+	var xx = room_width/2 - 200;
 	
 	// Draw dialogue text
 	DrawFont(fnt_dialogue);
@@ -27,7 +27,13 @@ if IsChatterbox(chatterbox) and text != undefined {
 	
 	// Draw nametag
 	DrawFont(fnt_dialogue);
-	draw_text(room_width/2 - 230, room_height - (marginText/2) - 8, ChatterboxGetContentSpeaker(chatterbox, 0));
+	speakerName = ChatterboxGetContentSpeaker(chatterbox, 0);
+	draw_text(room_width/2 - 163, room_height - (marginText/2) - 73, speakerName);
+	
+	if (speakerName != "")
+		layer_set_visible(layer_get_id("UI_Above"), true);
+	else
+		layer_set_visible(layer_get_id("UI_Above"), false);
 	
 	// Adding options to the screen
 	if ChatterboxGetOptionCount(chatterbox) {

@@ -178,7 +178,6 @@
     {"id":{"name":"snd_ecopark","path":"sounds/snd_ecopark/snd_ecopark.yy",},},
     {"id":{"name":"scribble_font_add_from_sprite","path":"scripts/scribble_font_add_from_sprite/scribble_font_add_from_sprite.yy",},},
     {"id":{"name":"__ChatterboxEscapeForCSV","path":"scripts/__ChatterboxEscapeForCSV/__ChatterboxEscapeForCSV.yy",},},
-    {"id":{"name":"rm_test","path":"rooms/rm_test/rm_test.yy",},},
     {"id":{"name":"obj_config_menu","path":"objects/obj_config_menu/obj_config_menu.yy",},},
     {"id":{"name":"spr_config_btn_exit","path":"sprites/spr_config_btn_exit/spr_config_btn_exit.yy",},},
     {"id":{"name":"obj_growth_bar","path":"objects/obj_growth_bar/obj_growth_bar.yy",},},
@@ -424,7 +423,6 @@
     {"roomId":{"name":"rm_dream","path":"rooms/rm_dream/rm_dream.yy",},},
     {"roomId":{"name":"rm_dormroom","path":"rooms/rm_dormroom/rm_dormroom.yy",},},
     {"roomId":{"name":"rm_template","path":"rooms/rm_template/rm_template.yy",},},
-    {"roomId":{"name":"rm_test","path":"rooms/rm_test/rm_test.yy",},},
   ],
   "templateType": "game",
   "TextureGroups": [

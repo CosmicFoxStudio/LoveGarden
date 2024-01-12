@@ -20,9 +20,9 @@ if !file_exists("file_" + string(slotIndex) + ".sav") {
 // ----------------------------- FILE EXISTS ----------------------------- //
 else {
 	var plantX = (startX - (sprite_get_width(spr_saveslot_box) / 2) ) + 
-	(sprite_get_width(spr_sprout) + 20);
+	(sprite_get_width(spr_sprout) + 15);
 			
-	var plantY = yy + (sprite_get_height(spr_sprout) / 2);
+	var plantY = yy + (sprite_get_height(spr_sprout) / 2) - 5;
 	if (obj_save_load.selectedOption == slotIndex) {
 		draw_sprite_ext(spr_sprout, spriteImage, plantX, plantY, 1, 1, 0, c_white, 1);
 	}

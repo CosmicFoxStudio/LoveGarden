@@ -9,7 +9,7 @@ global.lang = "en"; // "en", "pt"
 SetLanguage();
 // Manages the loading of translated files based on the game language
 ManageLocalization();
-global.day = 4;
+global.day = 1;
 global.currentDaytime = e_daytime.MORNING;
 global.date = ConvertDate(date_current_datetime());
 global.saveSlot = 0;
@@ -77,7 +77,7 @@ function KeybindingCreate(_inputMode) {
 	}
 }
 
-global.inputMode = e_input.MOUSE; 
+global.inputMode = e_input.KEYBOARD; 
 global.keybind = KeybindingCreate(global.inputMode);
 // To reference: global.keybind.confirm
 
