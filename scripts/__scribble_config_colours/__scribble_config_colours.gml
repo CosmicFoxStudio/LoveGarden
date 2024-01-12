@@ -38,6 +38,10 @@ function __scribble_config_colours()
         // c_smaragdine: scribble_rgb_to_bgr(0x50c875),
         // c_xanadu:     scribble_rgb_to_bgr(0x738678),
         // c_amaranth:   scribble_rgb_to_bgr(0xe52b50),
+		
+		// Love Garden colors:
+		c_text_green : scribble_rgb_to_bgr(TEXT_GREEN),
+
     };
     
     return _colours;

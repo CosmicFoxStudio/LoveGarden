@@ -11,8 +11,8 @@ Test Day - Test Locality #0 #0 #0 #0 #0 #0 #line:1f1acc
 ???: Do you catch my drift? #0 #0 #0 #0 #0 #0 #line:e324cd
 ???: Can you please wake up. #0 #0 #0 #0 #0 #0 #line:d34bfa
 ???: ... #0 #0 #0 #0 #0 #0 #line:7fd5e4
-???: Rise and shine! #0 #0 #0 #0 #0 #0 #line:7cd864
-YOU: Ugh... #0 #0 #0 #0 #0 #0 #line:ce807b
+???: [wave]Rise and shine![/] #0 #0 #0 #0 #0 #0 #line:7cd864
+PLAYER: Ugh... #0 #0 #0 #0 #0 #0 #line:ce807b
 You wake up in the middle of a bizarre dream about talking mushrooms. #0 #0 #0 #0 #0 #0 #line:d7b82c
 It seems your dream alarm didn't go off... #0 #0 #0 #0 #0 #0 #line:6e4123
 Your roommate, Maple, wakes you up. #0 #0 #0 #0 #0 #0 #line:3009e7
@@ -20,7 +20,7 @@ Your roommate, Maple, wakes you up. #0 #0 #0 #0 #0 #0 #line:3009e7
 MAPLE: Wow, finally! How can you sleep so much?! #0 #0 #0 #0 #0 #0 #line:79ceda
 MAPLE: Not that I'm one to speak... #0 #0 #0 #0 #0 #0 #line:c31ed1 
 MAPLE: Aren't you supposed to be in class? It's already 8:40... #0 #0 #0 #0 #0 #0 #line:966273
-YOU: Ahh...! Maple... I'm late! #0 #0 #0 #0 #0 #0 #line:d82166
+PLAYER: Ahh...! Maple... I'm late! #0 #0 #0 #0 #0 #0 #line:d82166
 MAPLE: Well, it's your first day. Ouch. #0 #0 #0 #0 #0 #0 #line:38e002
 MAPLE: Not to be the devil on your ear but... #0 #0 #0 #0 #0 #0 #line:32479d
 MAPLE: You might as well just skip that class. #0 #0 #0 #0 #0 #0 #line:08cb14

@@ -9,6 +9,18 @@ function GameChangeState(_newState) {
 	global.state = _newState;
 }
 
+function GameCreateUI() {
+	if (global.state == e_gameStates.CONTINUE_GAME) {
+		// Create the obj_ui_controller if it doesn't already exist
+		if (instance_exists(obj_ui_controller)) {
+			instance_destroy(obj_ui_controller);	
+		}
+		else {
+			instance_create_layer(0, 0, "Isntances_Above", obj_ui_controller);	
+		}
+	}
+}
+
 function ConvertDate(_date) {
     var day = date_get_day(_date);
     var month = date_get_month(_date);

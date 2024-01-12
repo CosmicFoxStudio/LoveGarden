@@ -11,6 +11,9 @@ ChatterboxAddFunction("love", FlagGetLove);							// Returns love ending flag
 ChatterboxAddFunction("bad", FlagGetBad);							// Returns bad ending flag
 ChatterboxAddFunction("save", SaveGame);							// Calls the save script from inside a yarn file
 
+// Custom Chatterbox Variables
+// ChatterboxVariableDefault("player", global.playerName);			// (UNUSED) Variable to store the player's name
+
 // Initialize variables
 node = undefined;
 chatterbox = noone;
@@ -39,3 +42,6 @@ typist.character_delay_add(".", 50);
 typist.character_delay_add("!", 400);
 typist.character_delay_add("?", 400);
 typist.character_delay_add(",", 400);
+
+// Waving effect
+scribble_anim_wave(1, 0.2, 0.4);

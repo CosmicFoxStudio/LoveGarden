@@ -22,14 +22,23 @@ if IsChatterbox(chatterbox) and text != undefined {
 	
 	// Draw dialogue text
 	DrawFont(fnt_dialogue);
-	//draw_text(xx, yy, ChatterboxGetContentSpeech(chatterbox, 0));
-	scribble(ChatterboxGetContentSpeech(chatterbox, 0)).wrap(TEXT_WIDTH).draw(xx, yy, typist);
+	
+	scribble("[c_text_green]" + ChatterboxGetContentSpeech(chatterbox, 0)).wrap(TEXT_WIDTH).draw(xx, yy, typist);
 	
 	// Draw nametag
+	var speakerName;
+	if ( (ChatterboxGetContentSpeaker(chatterbox, 0) == "PLAYER") ) speakerName = global.playerName;
+	else speakerName = ChatterboxGetContentSpeaker(chatterbox, 0);
+
+		
 	DrawFont(fnt_dialogue);
-	speakerName = ChatterboxGetContentSpeaker(chatterbox, 0);
-	draw_text(room_width/2 - 163, room_height - (marginText/2) - 73, speakerName);
-	
+	draw_text_color(
+		room_width/2 - 163, 
+		room_height - (marginText/2) - 73, 
+		speakerName,
+		TEXT_GREEN, TEXT_GREEN, TEXT_GREEN, TEXT_GREEN, 1
+	);
+
 	if (speakerName != "")
 		layer_set_visible(layer_get_id("UI_Above"), true);
 	else

@@ -13,3 +13,6 @@ Didn't change this but it's a nice touch that we can change the root folder:
 -------------- Scribble --------------
 #macro SCRIBBLE_ALLOW_TEXT_GETTER						true	(original: false)
 #macro SCRIBBLE_ALLOW_GLYPH_DATA_GETTER					true	(original: false)
+
+	- Scribble Colors
+	c_text_green : scribble_rgb_to_bgr(TEXT_GREEN);
