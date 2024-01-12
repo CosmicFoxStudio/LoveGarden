@@ -118,6 +118,16 @@ if (global.debug) {
 				"Current page: " + string(obj_intro.page)
 			);
 		}
+		if (instance_exists(obj_player_creator)) {
+			array_push(cutsceneDebugStrings,
+				"PLAYER CREATOR",
+				"Is mouse hovering? " + string(obj_player_creator.mouseHovering),
+				"Position: " + string(obj_player_creator.pos),
+				"Hovered option: " + string(obj_player_creator.lastHoveredOption),
+				"Option length: " + string(obj_player_creator.optionLength),
+				"Current Phase: " + string(obj_player_creator.phase),
+			);
+		}
 		
 		DebugDrawBox(10, 10, "CUTSCENE DEBUG", cutsceneDebugStrings);
 	}

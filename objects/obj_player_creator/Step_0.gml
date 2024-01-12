@@ -1,6 +1,6 @@
 /// @description 
 
-// Little animation in the input lines
+#region Input lines animation
 if (!flash) {
 	blink += 0.05;
 	
@@ -13,120 +13,188 @@ if (!flash) {
 		flash = false;
 	}
 }
+#endregion Input lines animation
 
-if (phase == e_phases.PHASE_1) currentInputField = "name";
-if (phase == e_phases.PHASE_2) currentInputField = "pronouns";
-if (phase == e_phases.PHASE_3) currentInputField = "favorite place";
+// Store number of options in current phase
+optionLength = array_length(phaseOptions[phase]);
 
-// Keyboard Input - Move through options
-pos += CheckVerticalInput();
+// Store the previous phase
+var startPhase = phase;
 
-// Wrap menu
-if (pos >= optionLength) pos = 0; // goes back to first pos
-if (pos < 0) pos = optionLength - 1; // goes to last pos
-
-//  PHASE 1 & PHASE 3
-if (phase == e_phases.PHASE_1 || phase == e_phases.PHASE_3) {
+// Handle Player's Keyboard Input 
+if (phase == e_phases.PHASE_2) {
+	// Before performing anything else, get the current letter count of inputted string
 	letterCount = string_length(currentString);
 	
 	// Check for maximum letter count
-	if (letterCount >= 10) {
-		maxLettersReached = true;
-	} else {
-		maxLettersReached = false;
-	}
-	
-	// Keyboard input
+	if (letterCount >= 10) maxLettersReached = true else maxLettersReached = false;
+						
+	// Keyboard input (only if "Write" option is selected)
 	if (!maxLettersReached) {
-		if (keyboard_lastkey != -1) {
-		    var pressedChar = keyboard_lastchar;
-    
-		    // Check if the pressed key's character is a valid letter (A-Z, counting uppercase and lowercase)
-			//  string(ord()) returns the ASCII value of the char
-			// Allowed chars: "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
-			var charCode = string(ord(pressedChar));
-			if ((charCode >= 65 && charCode <= 90) || (charCode >= 97 && charCode <= 122)) {
-			        currentString += pressedChar;
-			}
-    
-			// Reset
-		    keyboard_lastkey = -1;
-			keyboard_lastchar = "";
+		if (pos == 0) {
+			currentString = ReceivePlayerInput(currentString);
 		}
+		// else currentString = ""; // Reset the buffer (sadly it erases the whole string)
+	}	
+}
+
+if (global.inputMode == e_input.KEYBOARD) {
+	// Keyboard Input - Move through options
+	pos += CheckHorizontalInput();
+
+	// Wrap menu
+	if (pos >= optionLength) pos = 0; // goes back to first pos
+	if (pos < 0) pos = optionLength - 1; // goes to last pos
+}
+
+// ---------------------------- MOUSE INPUT  ---------------------------- //
+if (global.inputMode == e_input.MOUSE) {
+	var arr;
+	// Checking the correct array
+	if (phase == e_phases.PHASE_1) {
+		arr = rectBtnInstArray[e_phases.PHASE_1];
+	}
+	else {
+		arr = rectBtnInstArray[e_phases.PHASE_2];
 	}
 	
-	// Delete
-	if  ( InputCheck(e_input.KEYBOARD, "cancel") || 
-		( InputCheck(e_input.KEYBOARD, "confirm") && pos == 0 ) ) {
+	// Update option length 
+	optionLength = array_length(phaseOptions[phase]);
+	
+	var inst;
+	// Loop to check if mouse is hovering any of the instances
+	for (var i = 0; i < optionLength; i++) {
+		inst = arr[i];
+		
+		// Check if mouse is hovering
+		mouseHovering = instance_position(mouse_x, mouse_y, inst);
+		
+		// Visual effect when hovering
+		inst.image_alpha = mouseHovering ? 0.5 : 0.3;
+
+		// ------------ CHECKING MOUSE HOVERING ------------ //
+		if (mouseHovering) {
+			// Assign position to mouse
+			lastHoveredOption = i;
+			pos = i;
+			
+			 // Confirm Input
+			if (InputCheck(e_input.MOUSE, "confirm")) {
+				
+				if (phase == e_phases.PHASE_1) {
+				    // Assign selected option to global
+				    global.pronouns = pos;
+
+				    // Reset position
+				    pos = 0;
+
+				    // Advance to next phase
+				    phase = e_phases.PHASE_2;
+				}
+				else if (phase == e_phases.PHASE_2 && pos == 2) {
+					// Assign to global
+					global.playerName = string_upper(currentString);
+			
+					// Reset
+					//pos = 0;
+					//currentString = "";
+				
+					// End cutscene, advance to the next room
+					obj_dream.finishedPlayer = true;
+					instance_destroy();	
+				}
+			}
+            
+			break;
+		}
+	} // End of: For loop
+}
+
+
+// Action Loop
+switch(phase) {
+			
+	// PHASE 1 - Pronouns
+	case e_phases.PHASE_1 :
+	
+		// Keyboard Input
+		if ( InputCheck(e_input.KEYBOARD, "confirm") ) {
+			// Assign selected option to global
+			global.pronouns = pos;
+			// Reset position
+			pos = 0;
+			// Advance to next phase
+			phase = e_phases.PHASE_2;
+		}			
+	break;
+			
+	// PHASE 2 - Name
+	case e_phases.PHASE_2 : 
+		
+		switch (pos) {		
+			// No case 0
+
+			// Delete
+			case 1 :
+				// Keyboard delete
+                if (InputCheck(e_input.KEYBOARD, "confirm")) {
+                    show_debug_message("Deleting");
+                    
+                    // Checking if there's at least one char
+                    if (letterCount >= 1) {
+                        currentString = string_delete(currentString, letterCount, 1);
+                        audio_play_sound(snd_cant, 1, false);
+                    }
+                }
+                
+                // Mouse delete
+                if (InputCheck(e_input.MOUSE, "confirm")) {
+                    show_debug_message("Deleting");
+                    
+                    // Checking if there's at least one char
+                    if (letterCount >= 1) {
+                        currentString = string_delete(currentString, letterCount, 1);
+                        audio_play_sound(snd_cant, 1, false);
+                    }
+                }
+                break;
+					
+			// Confirm
+			case 2: 		
+				if ( /*( InputCheck(e_input.MOUSE, "confirm") || */ InputCheck(e_input.KEYBOARD, "confirm") && string_length(currentString) > 0) {
+					// Assign to global
+					global.playerName = string_upper(currentString);
+			
+					// Reset
+					//pos = 0;
+					//currentString = "";
+				
+					// End cutscene, advance to the next room
+					obj_dream.finishedPlayer = true;
+					instance_destroy();	
+				}
+			break; 
+					
+		} // End of: switch(pos)
+						
+	break; // End of : case e_phases.PHASE_2 
+		
+} // End of : switch(phase)
+	
+// The phase transitions should be at the bottom to avoid conflicts
+// Reset after switching phase
+if (startPhase != phase) pos = 0;		
+// Correct option length
+optionLength = array_length(phaseOptions[phase]);
+	
+
+// Delete with cancel input (keyboard only)
+if  ( (phase == e_phases.PHASE_2 && pos == 0 ) ) {
+	if (InputCheck(e_input.KEYBOARD, "cancel") ) {
 		if (letterCount >= 1) {
 			currentString = string_delete(currentString, letterCount, 1);
 			audio_play_sound(snd_cant, 1, false);
 		}
 	}
-	
-	// Confirm
-	if (pos == 1) {		
-		
-		if ( InputCheck(e_input.KEYBOARD, "confirm") && string_length(currentString) > 0) {
-			if (phase == e_phases.PHASE_1) {
-				// Assign to global
-				global.playerName = string_upper(currentString);
-			
-				// Reset position
-				pos = 0;
-				
-				// End of phase flag
-				endPhase1 = true;
-				currentString = "";
-			}		
-			// It's PHASE 3, job is done
-			else {
-				// Assign to global
-				global.favePlace = currentString;
-				
-				// End cutscene, advance to the next room
-				obj_dream.finishedPlayer = true;
-				instance_destroy();	
-			}
-		}
-	}
 }
 
-// PHASE 2
-if (phase == e_phases.PHASE_2) {
-	optionLength = array_length(phase2Options);
-	
-	if ( InputCheck(e_input.KEYBOARD, "confirm") ) {
-		switch(phase2Options[pos]) {
-			case "They" :
-				currentPronouns = e_pronouns.ELU;
-			break;
-			case "She" :
-				currentPronouns = e_pronouns.ELA;
-			break;
-			case "He" :
-				currentPronouns = e_pronouns.ELE;
-			break;
-		}	
-		
-		// Assign to global
-		global.pronouns = currentPronouns;
-		
-		// Reset position
-		pos = 0;
-		
-		// End of phase flag
-		endPhase2 = true;
-	}
-}
-
-// The phase transitions should be at the bottom to avoid conflicts
-if ( InputCheck(e_input.KEYBOARD, "confirm") && 
-(phase == e_phases.PHASE_1 || phase == e_phases.PHASE_2) ) {
-    // Transition to the next phase based on the current phase
-    if (phase == e_phases.PHASE_1 && endPhase1) {
-        phase = e_phases.PHASE_2;
-    } else if (phase == e_phases.PHASE_2 && endPhase2) {
-        phase = e_phases.PHASE_3;
-    }
-}

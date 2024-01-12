@@ -10,7 +10,7 @@ ChatterboxAddFunction("favePlace", FlagGetFavePlace);				// Returns favePlace fl
 ChatterboxAddFunction("love", FlagGetLove);							// Returns love ending flag
 ChatterboxAddFunction("bad", FlagGetBad);							// Returns bad ending flag
 ChatterboxAddFunction("save", SaveGame);							// Calls the save script from inside a yarn file
-
+ChatterboxAddFunction("backTitle", GameBackToTitle);				// Goes back to the title screen and changes game state
 // Custom Chatterbox Variables
 // ChatterboxVariableDefault("player", global.playerName);			// (UNUSED) Variable to store the player's name
 

@@ -14,7 +14,8 @@ UI_Above			(assets layer)		-----> Highest depth for assets.
 Stats				(instances layer)	-----> For placing the stats bars.
 UI_Mid				(assets layer)
 Instances_Above		(instances layer)
-Instances			(instances layer)
+Instances_Mid		(instances layer)
+Instances_Below		(instances layer)
 UI_Below			(assets layer)
 Background			(background layer)
 

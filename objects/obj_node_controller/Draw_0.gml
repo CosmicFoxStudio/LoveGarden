@@ -59,7 +59,7 @@ if IsChatterbox(chatterbox) and text != undefined {
 				if (optionIndex == i) icon = "> ";
 				var option = ChatterboxGetOption(chatterbox, i);
 				
-				draw_text(xx, yy, icon + option);
+				draw_text(xx, yy + 5, icon + option);
 				//scribble(icon + option).wrap(300).draw(xx, yy, typist);
 			}
 		}

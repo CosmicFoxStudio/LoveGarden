@@ -4,70 +4,74 @@
 //global.playerName = "";
 //global.pronouns = 0;
 
+DrawSet();
 var optionText = "";
+var posX = room_width / 2;
 
-// Display the inquiry
-draw_set_halign(fa_center);
-draw_text(startX, startY, "Choose your " + currentInputField + ":");
-
-// Display input field or options
-if (phase == e_phases.PHASE_1 || phase == e_phases.PHASE_3) {
+switch (phase) {
+	// Draw Phase 1 options
+	case e_phases.PHASE_1 :
 	
-		optionLength = array_length(phase1Options);
+		DrawAlign(fa_center);
+		draw_text(posX, startY, "Which one do you prefer:");
+
+		// Display pronoun options 
+		for (var i = 0; i < optionLength; i++) {
+				optionText = phaseOptions[phase][i];
+				
+				if (global.inputMode == e_input.KEYBOARD || (global.inputMode == e_input.MOUSE && lastHoveredOption == i) ) {
+					// Draw cursor based on the last hovered option
+		            if (pos == i || (mouseHovering && i == lastHoveredOption)) {
+		                optionText = "> " + optionText;
+		            }
+		        }
+		        draw_text(startX + 16 + (i * (rectWidth + PLAYER_CREATOR_BTN_MARGIN_H)), startY + PLAYER_CREATOR_MARGIN_V + 2, optionText);
+		        DrawAlign();
+		}	
+	break;
+	
+	// Draw phase 2 options
+	case e_phases.PHASE_2 : 
+		
+		DrawAlign(fa_center);
+		draw_text(posX, startY, "Do you have a favorite plant?");
+		DrawAlign();
+		
+		// Display input field or options
 		var textVersusLineOffset = 5;
-		// Draw name letters (we should make this block of code a function tbh)
+		
+		// ------------------------- DRAW NAME STRING ------------------------- //
+		optionLength = array_length(phaseOptions[phase]);
 		var xx = 0;
 		for (var i = 0; i < maxLetters; i++) {
 			
 			// Draw the lines
 			if(xx == string_length(currentString)) {
 				draw_set_halign(fa_center);
-				draw_sprite_ext(spr_name_line, 0, startX + 23*xx - 110, startY + 40 + blink * 3 + textVersusLineOffset, scale, scale, 0, c_white, 1);
+				draw_sprite_ext(spr_name_line, 0, startX + 23*xx, startY + 40 + blink * 3 + textVersusLineOffset, scale, scale, 0, c_white, 1);
 			} else {
 				// Animated effect
 				draw_set_halign(fa_center);
-				draw_sprite_ext(spr_name_line, 0, startX + 23*xx - 110, startY + 40 + textVersusLineOffset, scale, scale, 0, c_white, 1);
+				draw_sprite_ext(spr_name_line, 0, startX + 23*xx, startY + 40 + textVersusLineOffset, scale, scale, 0, c_white, 1);
 			}
 			
-			// Draw the text
-			optionText = string_upper(string_char_at(currentString, xx+1));
-				// Draw cursor
-			if (pos == i) {
-				draw_set_halign(fa_center);
-				draw_text(startX + 23*xx + 6 - 110, startY + 40, optionText);
-			}
-			draw_text(startX + 23*xx + 6 - 110, startY + 40, optionText);
+			// --------------------------- Draw the text  --------------------------- //
+			var nameInputText = string_upper(string_char_at(currentString, xx+1));
+			
+			/* if (pos == i) */ draw_text(startX + 23*xx, startY + 40, nameInputText);
 			xx++;
-		}	
-		
-		// Confirm (Text + Rectangle)
-		optionLength = array_length(phase1Options);
-		for (var i = 0; i < optionLength; i++) {
-			optionText = phase1Options[i];
-			// Draw cursor
-			if (pos == i) {
-				optionText = "> " + optionText;
-			}
-			draw_set_halign(fa_center);
-			
-			// Draw rectangle
-			draw_sprite(spr_rect, 0, startX, startY + 90 + i * 30);
-			
-			// Draw text
-			draw_text(startX, startY + 90 + i * 30, optionText);	
 		}
-}
-	
-if (phase == e_phases.PHASE_2) {
-	// Display pronoun options 
-	optionLength = array_length(phase2Options)
-	    for (var i = 0; i < optionLength; i++) {
-			optionText = phase2Options[i];
-			if (pos == i) {
-				// Draw cursor
-		        optionText = "> " + optionText;
-			}
-	draw_set_halign(fa_center);
-	draw_text(startX, startY + 60 + i * 30, optionText);	
-	}
+		
+		// Display name options 
+		var nameString;
+		for (var i = 0; i < optionLength; i++) {
+				nameString = phaseOptions[phase][i];
+				
+	        // Draw cursor based on the last hovered option
+	        if (pos == i || (lastHoveredOption == i)) {
+	            nameString = "> " + nameString;
+	        }
+	        draw_text(startX + 32 + (i * (rectWidth + PLAYER_CREATOR_BTN_MARGIN_H)), startY + PLAYER_CREATOR_MARGIN_V + 2, nameString);
+	    }   
+	    break;
 }

@@ -19,9 +19,9 @@ descriptionPaddingV = 8;
 optionMargin = 48;
 
 // Create Buttons
-cancelButton = instance_create_layer(240, 280, "Instances", obj_lang_menu_btn); 
+cancelButton = instance_create_layer(240, 280, "Instances_Below", obj_lang_menu_btn); 
 cancelButton.btnType = "CANCEL";
-confirmButton = instance_create_layer(390, 280, "Instances", obj_lang_menu_btn);
+confirmButton = instance_create_layer(390, 280, "Instances_Below", obj_lang_menu_btn);
 confirmButton.btnType = "CONFIRM";
 
 // Option selection

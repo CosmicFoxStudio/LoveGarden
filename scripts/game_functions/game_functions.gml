@@ -18,6 +18,34 @@ function GameCreateUI() {
 	}
 }
 
+function GameBackToTitle() {
+	room_goto(rm_title);
+	GameChangeState(e_gameStates.LEAVE);
+}
+
+
+
+// Handles keyboard input for valid letters (A-Z, a-z)
+function ReceivePlayerInput(_stringToCheck) {
+	if (keyboard_lastkey != -1) {
+	    var pressedChar = keyboard_lastchar;
+
+	    // Check if the pressed key's character is a valid letter (A-Z, counting uppercase and lowercase)
+	    // string(ord()) returns the ASCII value of the char
+	    // Allowed chars: "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+	    var charCode = string(ord(pressedChar));
+	    if ((charCode >= 65 && charCode <= 90) || (charCode >= 97 && charCode <= 122)) {
+	        _stringToCheck += pressedChar;
+	    }
+
+	    // Reset
+	    keyboard_lastkey = -1;
+	    keyboard_lastchar = "";
+	}	
+	
+	return _stringToCheck;
+}
+
 function ConvertDate(_date) {
     var day = date_get_day(_date);
     var month = date_get_month(_date);

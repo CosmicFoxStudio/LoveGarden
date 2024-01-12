@@ -90,7 +90,7 @@ else {
 			
 	draw_set_halign(fa_right);
 	DrawFont(fnt_menu);
-	draw_text(dayX, dayY, obj_save_load.saveText[5] + " " + string(obj_save_load.saveSlotInfo[slotIndex, e_saveSlotStats.DAY]));
+	draw_text(dayX, dayY, obj_save_load.saveText[6] + " " + string(obj_save_load.saveSlotInfo[slotIndex, e_saveSlotStats.DAY]));
 	DrawFont(fnt_dialogue);
 	#endregion DRAW STATS
 }

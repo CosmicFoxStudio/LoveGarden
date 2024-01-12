@@ -1,47 +1,64 @@
 /// @description Initialization
 /*	------------------- PHASE 1 ------------------- 
-					Choose a name.
+				Choose the pronouns
 
 	------------------- PHASE 2 ------------------- 
-				  Choose the pronouns.
+				Favorite plant (name)
 				  
-	------------------- PHASE 3 ------------------- 
-	Choose a favorite place (might change later).
-	
-	------------------- --------------------------- 
+	----------------------------------------------- 
 */
 
-switch (global.lang) {
-	case "pt":
-		break;
-	default:
-		break;
-}
-	
-currentInputField = "name";
-phase1Options = ["Delete", "Confirm"];
-phase2Options = ["They", "She", "He"];
-startX = room_width / 2;
+// Drawing variables
+startX = room_width / 4;
 startY =  100;
+rectWidth = sprite_get_width(spr_rect);
+// Phase1
+phaseOptions[e_phases.PHASE_1, 0] = "They";
+phaseOptions[e_phases.PHASE_1, 1] = "She";
+phaseOptions[e_phases.PHASE_1, 2] = "He";
+// Phase2
+phaseOptions[e_phases.PHASE_2, 0] = "Write";
+phaseOptions[e_phases.PHASE_2, 1] = "Delete";
+phaseOptions[e_phases.PHASE_2, 2] = "Confirm";
+phase = e_phases.PHASE_1;
+optionLength = array_length(phaseOptions[phase]);
+
+// Represents current option position
+pos = 0;
+
+// String stuff
 maxLetters = 10;
 maxLettersReached = false;
+currentString = "MAPLE";
+letterCount = string_length(currentString);
+
+// VFX
 scale = 1;
 blink = 0;
 flash = false;
-currentString = "MAPLE";
-currentPronouns = 0;
-letterCount = string_length(currentString);
-enum e_phases {
-	PHASE_1,
-	PHASE_2,
-	PHASE_3
-}
-phase = e_phases.PHASE_1;
-endPhase1 = false;
-endPhase2 = false;
-pos = 0;
-optionLength = array_length(phase1Options);
 
-// Mouse Input
-//mouseHover = false;
-//mouseClick = false;
+// ---------------------------- MOUSE STUFF ----------------------------- //
+mouseHovering = false;
+lastHoveredOption = -1;
+mouseClicked = false;
+// Create rectangle hitboxes
+rectBtnInstArray[e_phases.PHASE_1] = [];
+rectBtnInstArray[e_phases.PHASE_2] = [];
+#macro PLAYER_CREATOR_MARGIN_V  70
+#macro PLAYER_CREATOR_BTN_MARGIN_H 32
+// Loop through all created instances and put them into an array depending on the phase
+// Phase1 Options
+
+for ( var i = 0; i < array_length(phaseOptions[e_phases.PHASE_1]); i++ ) {
+	var inst = instance_create_layer(startX + i * (rectWidth + PLAYER_CREATOR_BTN_MARGIN_H), startY + PLAYER_CREATOR_MARGIN_V, "Instances_Mid", obj_rect);
+	inst.image_blend = c_aqua;
+	inst.image_alpha = 0; // 0.3 for debug
+	array_push(rectBtnInstArray[e_phases.PHASE_1], inst);
+}
+
+// Phase2 Options
+for ( var j = 0; j < array_length(phaseOptions[e_phases.PHASE_2]); j++ ) {
+	var inst = instance_create_layer(startX + j * (rectWidth + PLAYER_CREATOR_BTN_MARGIN_H), startY + PLAYER_CREATOR_MARGIN_V, "Instances_Mid", obj_rect);
+	inst.image_alpha = 0;
+	array_push(rectBtnInstArray[e_phases.PHASE_2], inst);
+}

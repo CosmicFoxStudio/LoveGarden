@@ -77,7 +77,7 @@ function KeybindingCreate(_inputMode) {
 	}
 }
 
-global.inputMode = e_input.KEYBOARD; 
+global.inputMode = e_input.MOUSE; 
 global.keybind = KeybindingCreate(global.inputMode);
 // To reference: global.keybind.confirm
 
@@ -145,7 +145,7 @@ global.roomYarnMap[? "rm_dormitory"	]		= "scenes/main_day1_dormitory.yarn";
 if (Debug()) instance_create_layer(0, 0, "Controllers", DEBUG_DRAWER);
 
 // Add first room here
-room_goto(rm_lang);
+//room_goto(rm_lang);
 // room_goto(rm_dream);
 // room_goto(rm_file_selection);
-// room_goto(rm_title);
+room_goto(rm_title);

@@ -115,3 +115,10 @@ enum e_plantStage {
 	WITHER,	// 2
 	DEAD	// 3 ---> Only for testing purposes
 }
+
+// Used in obj_player_creator
+enum e_phases {
+	PHASE_1,
+	PHASE_2,
+	//PHASE_3
+}
