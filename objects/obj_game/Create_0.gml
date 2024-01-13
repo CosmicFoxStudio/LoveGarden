@@ -14,11 +14,7 @@ global.currentDaytime = e_daytime.MORNING;
 global.date = ConvertDate(date_current_datetime());
 global.saveSlot = 0;
 global.playerStats = new DefineStats();
-global.flags = {
-	bad: false,
-	love: false,
-	favePlace: false
-}
+global.flags = { met_solanum: 0};
 global.state = e_gameStates.TITLE_SCREEN;
 global.statePrevious = global.state;
 // Player Info

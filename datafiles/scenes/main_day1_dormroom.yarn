@@ -6,35 +6,35 @@ title: Start
 ---
 <<chara("void")>>
 
-???: Ei. #0 #0 #0 #0 #0 #0 
-???: Eii! #0 #0 #0 #0 #0 #0 
-???: Tá ouvindo? #0 #0 #0 #0 #0 #0
-???: ... #0 #0 #0 #0 #0 #0 
-???: Acorda! #0 #0 #0 #0 #0 #0  
-PLAYER: Ugh... #0 #0 #0 #0 #0 #0 
-???: Hora de levantar, <dorminhoco>! #0 #0 #0 #0 #0 #0 
-???: É um novo dia cheio de aventura e... Ah, pera lá, acho que você está <atrasado>! #0 #0 #0 #0 #0 #0 
-Você geme e esfrega os olhos, tentando entender a situação. #0 #0 #0 #0 #0 #0  
-Parece que seu despertador não tocou... #0 #0 #0 #0 #0 #0  
-Quem lhe acorda é seu colega de quarto, Mandacaru. Mas todos o chamam de Caru, seu apelido. #0 #0 #0 #0 #0 #0 
-PLAYER: Que horas são? #0 #0 #0 #0 #0 #0 
+???: Hey. #0 #0 #0 #0 #0 
+???: Heey! #0 #0 #0 #0 #0  
+???: Are you listening? #0 #0 #0 #0 #0 
+???: ... #0 #0 #0 #0 #0  
+???: Wake up! #0 #0 #0 #0 #0
+PLAYER: Ugh... #0 #0 #0 #0 #0 
+???: Time to get up, sleepyhead! #0 #0 #0 #0 #0
+???: It's a new day full of adventure and... Oh, wait a minute, I think you're late! #0 #0 #0 #0 #0
+You groan and rub your eyes, trying to understand the situation. #0 #0 #0 #0 #0
+It seems like your alarm didn't go off... #0 #0 #0 #0 #0 
+The one waking you up is your roommate, Mandacaru. But everyone calls him Caru, his nickname. #0 #0 #0 #0 #0
+PLAYER: What time is it? #0 #0 #0 #0 #0
 <<chara("caru")>>
-CARU: Vou te falar, você dormiu demais, <PLAYER>. #0 #0 #0 #0 #0 #0 
-CARU: O sol já está alto no céu, os pássaros estão zombando de você. #0 #0 #0 #0 #0 #0 
-CARU: E eu fui o enviado do universo para lhe repassar um memorando com sermões de pontualidade. #0 #0 #0 #0 #0 #0 
-PLAYER: Pera, o que?? O que isso significa? #0 #0 #0 #0 #0 #0 
-Você se apressa com a escolha de roupa, e de forma atrapalhada, tenta se vestir em tempo recorde. #0 #0 #0 #0 #0 #0 
-PLAYER: Tch. Obrigado pelo alerta, mestre dos magos. Eu só perguntei mesmo o horário! #0 #0 #0 #0 #0 #0 
-CARU: Estou exagerando, haha. São só 6h40... Seu despertador não tocou ainda. #0 #0 #0 #0 #0 #0  
-PLAYER: Ah! Seu sacana. #0 #0 #0 #0 #0 #0  
-Você estava realmente ficando <desesperado> aqui. Caru e sua zoeira sem limites... #0 #0 #0 #0 #0 #0 
-CARU: A vida é uma corrida e você já começou o dia a correr! Vai me agradecer mais tarde haha. #0 #0 #0 #0 #0 #0 
-CARU: Mas agora, falo sério. O primeiro dia não é um daqueles que você vai querer se atrasar. #0 #0 #0 #0 #0 #0  
-CARU: Quão mais cedo você sair, melhor! #0 #0 #0 #0 #0 #0 
-CARU: Alguns dos professores da Lótus podem ser uns carrascos. #0 #0 #0 #0 #0 #0 
-PLAYER: Eu bem que estou desde o início questionando o sadismo daqueles que decidiram o horário de 7h30 pras aulas matinais... #0 #0 #0 #0 #0 #0 
-<<chara("vazio")>>
-Estando <pronto> para sair, você se direciona para o andar de baixo do dormitório. #0 #0 #0 #0 #0 #0 
+CARU: Let me tell you, you overslept, PLAYER. #0 #0 #0 #0 #0
+CARU: The sun is already high in the sky, the birds are mocking you. #0 #0 #0 #0 #0
+CARU: And I was the universe's messenger sent to deliver you a memo with punctuality sermons. #0 #0 #0 #0 #0
+PLAYER: Wait, what?? What does that mean? #0 #0 #0 #0 #0
+You hurriedly choose your outfit, and in a clumsy manner, try to get dressed in record time. #0 #0 #0 #0 #0
+PLAYER: Tch. Thanks for the alert, wizard master. I just wanted to know the time! #0 #0 #0 #0 #0
+CARU: I'm exaggerating, haha. It's only 6:40... Your alarm hasn't gone off yet. #0 #0 #0 #0 #0 
+PLAYER: Ah! You scoundrel. #0 #0 #0 #0 #0 
+You were really getting desperate here. Caru and his limitless teasing... #0 #0 #0 #0 #0
+CARU: Life is a race, and you've already started the day running! You'll thank me later, haha. #0 #0 #0 #0 #0
+CARU: But now, I'm serious. The first day is not one of those days you want to be late. #0 #0 #0 #0 #0
+CARU: The earlier you leave, the better! #0 #0 #0 #0 #0
+CARU: Some of the Lotus teachers can be real taskmasters. #0 #0 #0 #0 #0
+PLAYER: I've been questioning the sadism of those who decided on a 7:30 am schedule for morning classes since day one... #0 #0 #0 #0 #0
+<<chara("void")>>
+Ready to go, you head downstairs from the dormitory. #0 #0 #0 #0 #0
 <<save()>>
-<<backTitle()>>
+<<nextRoom("rm_dormitory")>>
 ===

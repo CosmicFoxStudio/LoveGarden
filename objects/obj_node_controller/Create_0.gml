@@ -6,9 +6,8 @@ ChatterboxAddFunction("emotion", CharacterExpressionOnScreen);		// Function to c
 ChatterboxAddFunction("wilting", StatsGetWilting);					// Returns wilting stats
 ChatterboxAddFunction("growth", StatsGetGrowth);					// Returns growth stats
 ChatterboxAddFunction("blossom", StatsGetBlossom);					// Returns blossom stats
-ChatterboxAddFunction("favePlace", FlagGetFavePlace);				// Returns favePlace flag
-ChatterboxAddFunction("love", FlagGetLove);							// Returns love ending flag
-ChatterboxAddFunction("bad", FlagGetBad);							// Returns bad ending flag
+ChatterboxAddFunction("setFlag", FlagSet);							// Sets a value to a flag
+ChatterboxAddFunction("getFlag", FlagGet);							// Returns the value of a given flag
 ChatterboxAddFunction("save", SaveGame);							// Calls the save script from inside a yarn file
 ChatterboxAddFunction("backTitle", GameBackToTitle);				// Goes back to the title screen and changes game state
 // Custom Chatterbox Variables

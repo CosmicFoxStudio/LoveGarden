@@ -10,51 +10,12 @@ if (global.state != e_gameStates.PAUSED && global.state != e_gameStates.MENU) {
 	// Waiting for user input or waiting for the user to choose an option
 	if ChatterboxIsWaiting(chatterbox) {
 	    if ( InputCheck(e_input.KEYBOARD, "confirm") || InputCheck(e_input.MOUSE, "confirm") ) {
-			#region METADATA 
-			var once = false;
-		    var metadata = ChatterboxGetContentMetadata(chatterbox, 0);
+			// Metadata
+		    var metadataArr = ChatterboxGetContentMetadata(chatterbox, 0);
+			
 			// If current line has metadata
-			if (once == false) {
-			    if (array_length(metadata) > 0) {
-					// EXPRESSION - Index of the subimage (frame) of the character sprite
-					if (metadata[0] != "") {
-					
-						// There's some fixing to do regarding expressions (probably in here?)
-						CharacterExpressionOnScreen(real(metadata[0]));
-						once = true;
-					}
-					// WILTING - Adds/removes points from the "wilting" stats
-			        if (metadata[1] != "") { 
-						//global.playerStats.wilting = WrapInside(obj_wilting_bar.fillBar + real(metadata[1]), 0, 10); 
-						//obj_wilting_bar.fillBar = global.playerStats.wilting; 
-						once = true;
-					}
-					// GROWTH - Add/remove points from the "growth" stats
-			        if (metadata[2] != "") { 
-						//global.playerStats.growth = WrapInside(obj_growth_bar.fillBar + real(metadata[2]), 0, 10); 
-						//obj_growth_bar.fillBar = global.playerStats.growth; 
-						once = true;
-					}
-					// BLOSSOM - Add/remove points from "blossom" stats
-			        if (metadata[3] != "") { 
-						//global.playerStats.blossom = WrapInside(obj_blossom_bar.fillBar + real(metadata[3]), 0, 10); 
-						//obj_blossom_bar.fillBar = global.playerStats.blossom; 
-						once = true;
-					}
-					// SOM - Enter the name of the sound asset
-			        if (metadata[4] != "" && metadata[4] != "0") {
-						audio_play_sound(asset_get_index(metadata[4]), 10, false);
-						once = true;
-					}
-					// FLAG - Enter the name of the flag
-			        if (metadata[5] != "") {
-						FlagSet(metadata[5]);
-						once = true;
-					}
-			    }
-			}
-			#endregion METADATA 
-
+			processMetadata(metadataArr);
+			
 			//  ------------------- SKIP TEXT ------------------- //
 			// Means the page is fully typed out
 			if ((typist.get_position() - 1) == textLength) {

@@ -21,7 +21,18 @@ if IsChatterbox(chatterbox) and text != undefined {
 	// Draw dialogue text
 	DrawFont(fnt_dialogue);
 	
-	scribble("[c_text_green]" + ChatterboxGetContentSpeech(chatterbox, 0)).wrap(TEXT_WIDTH).draw(xx, yy, typist);
+	var speechText = ChatterboxGetContentSpeech(chatterbox, 0);
+	
+	// ------------------------- APPLY STRING SUBSTITUTIONS ------------------------- //
+	// Check if "PLAYER" exists in the string
+	if string_pos("PLAYER", speechText) > 0 { // > 0 means a string was found
+	    // Replace "PLAYER" with the value in global.playerName
+	    speechText = string_replace(speechText, "PLAYER", global.playerName);
+		textLength = scribble(speechText).get_glyph_count();
+	}
+	
+	// Use scribble light green color for the text (set in __scribble_config_colours)
+	scribble("[c_text_green]" + speechText).wrap(TEXT_WIDTH).draw(xx, yy, typist);
 	
 	// Draw nametag
 	var speakerName;
