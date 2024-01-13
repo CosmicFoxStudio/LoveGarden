@@ -49,6 +49,7 @@
     {"name":"Screen Transitions","order":6,"path":"folders/Sprites/Screen Transitions.yy",},
     {"name":"UI","order":2,"path":"folders/Sprites/UI.yy",},
     {"name":"Config Menu","order":8,"path":"folders/Sprites/UI/Config Menu.yy",},
+    {"name":"Dialogue","order":11,"path":"folders/Sprites/UI/Dialogue.yy",},
     {"name":"File Selection","order":7,"path":"folders/Sprites/UI/File Selection.yy",},
     {"name":"Game UI (old)","order":10,"path":"folders/Sprites/UI/Game UI (old).yy",},
     {"name":"Game UI","order":9,"path":"folders/Sprites/UI/Game UI.yy",},
@@ -61,7 +62,6 @@
     {"name":"Config Menu","order":2,"path":"folders/UI/Config Menu.yy",},
     {"name":"Game UI","order":3,"path":"folders/UI/Game UI.yy",},
     {"name":"Lang Menu","order":1,"path":"folders/UI/Lang Menu.yy",},
-    {"name":"Dialogue","order":11,"path":"folders/Sprites/UI/Dialogue.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"obj_intro","order":1,"path":"objects/obj_intro/obj_intro.yy",},

@@ -50,6 +50,7 @@ function PlaceLocalization(_savePlace) {
 	case "pt":
 		switch (_savePlace) {
 			case "Dormroom": return "Dormitório"; break;
+			case "Test Zone": return "Zona de Teste"; break;
 			default: return "Nenhum Lugar"; break;
 		}
 		break;
@@ -68,6 +69,29 @@ function DateLocalization(_saveDate) {
 		break;
 	default:
 		return _saveDate;
+	}
+}
+
+function PlayerCreatorLocalization(_playerCreatorWord) {
+	switch (global.lang) {
+	case "en":
+		return _playerCreatorWord;
+		break;
+	case "pt":
+		switch (_playerCreatorWord) {
+			case "Which one do you prefer?": return "Qual você prefere?"; break;
+			case "What is your favorite plant?": return "Qual é a sua planta favorita?"; break;
+			case "They": return "Elu"; break;
+			case "She": return "Ela"; break;
+			case "He": return "Ele"; break;
+			case "Delete": return "Deletar"; break;
+			case "Delete All": return "Deletar Tudo"; break;
+			case "Confirm": return "Confirmar"; break;
+			default: return _playerCreatorWord; break;
+		}
+		break;
+	default:
+		return _playerCreatorWord;
 	}
 }
 

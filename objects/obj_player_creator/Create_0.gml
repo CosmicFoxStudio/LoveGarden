@@ -10,15 +10,15 @@
 
 // Drawing variables
 startX = room_width / 4;
-startY =  100;
+startY =  120;
 rectWidth = sprite_get_width(spr_rect);
 // Phase1
 phaseOptions[e_phases.PHASE_1, 0] = "They";
 phaseOptions[e_phases.PHASE_1, 1] = "She";
 phaseOptions[e_phases.PHASE_1, 2] = "He";
 // Phase2
-phaseOptions[e_phases.PHASE_2, 0] = "Write";
-phaseOptions[e_phases.PHASE_2, 1] = "Delete";
+phaseOptions[e_phases.PHASE_2, 0] = "Delete";
+phaseOptions[e_phases.PHASE_2, 1] = "Delete All";
 phaseOptions[e_phases.PHASE_2, 2] = "Confirm";
 phase = e_phases.PHASE_1;
 optionLength = array_length(phaseOptions[phase]);
@@ -29,7 +29,10 @@ pos = 0;
 // String stuff
 maxLetters = 10;
 maxLettersReached = false;
-currentString = "MAPLE";
+switch (global.lang) {
+	case "pt": currentString = "TULIPA"; break;
+	default: currentString = "TULIP"; break;
+}
 letterCount = string_length(currentString);
 
 // VFX

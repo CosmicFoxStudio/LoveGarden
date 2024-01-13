@@ -31,10 +31,7 @@ if (phase == e_phases.PHASE_2) {
 						
 	// Keyboard input (only if "Write" option is selected)
 	if (!maxLettersReached) {
-		if (pos == 0) {
-			currentString = ReceivePlayerInput(currentString);
-		}
-		// else currentString = ""; // Reset the buffer (sadly it erases the whole string)
+		currentString = ReceivePlayerInput(currentString);
 	}	
 }
 
@@ -132,10 +129,8 @@ switch(phase) {
 	case e_phases.PHASE_2 : 
 		
 		switch (pos) {		
-			// No case 0
-
 			// Delete
-			case 1 :
+			case 0 :
 				// Keyboard delete
                 if (InputCheck(e_input.KEYBOARD, "confirm")) {
                     show_debug_message("Deleting");
@@ -154,6 +149,31 @@ switch(phase) {
                     // Checking if there's at least one char
                     if (letterCount >= 1) {
                         currentString = string_delete(currentString, letterCount, 1);
+                        audio_play_sound(snd_cant, 1, false);
+                    }
+                }
+                break;
+				
+			// Delete All
+			case 1 :
+				// Keyboard delete
+                if (InputCheck(e_input.KEYBOARD, "confirm")) {
+                    show_debug_message("Deleting All");
+                    
+                    // Checking if there's at least one char
+                    if (letterCount >= 1) {
+                        currentString = "";
+                        audio_play_sound(snd_cant, 1, false);
+                    }
+                }
+                
+                // Mouse delete
+                if (InputCheck(e_input.MOUSE, "confirm")) {
+                    show_debug_message("Deleting All");
+                    
+                    // Checking if there's at least one char
+                    if (letterCount >= 1) {
+                        currentString = "";
                         audio_play_sound(snd_cant, 1, false);
                     }
                 }
