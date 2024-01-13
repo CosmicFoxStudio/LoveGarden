@@ -83,12 +83,13 @@ if (global.inputMode == e_input.MOUSE) {
 				    global.pronouns = pos;
 
 				    // Reset position
-				    pos = 0;
+				    pos = -1;
+					lastHoveredOption = -1;
 
 				    // Advance to next phase
 				    phase = e_phases.PHASE_2;
 				}
-				else if (phase == e_phases.PHASE_2 && pos == 2) {
+				else if (phase == e_phases.PHASE_2 && pos == 2 && currentString != "") {
 					// Assign to global
 					global.playerName = string_upper(currentString);
 			

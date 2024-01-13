@@ -55,7 +55,8 @@ function Enums() {
 
 	enum e_roomTypes {
 		SPECIAL,
-		SCENES
+		SCENES,
+		MAP
 	}
 
 	enum e_daytime {

@@ -1,20 +1,19 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_ui_btn_map",
+  "name": "obj_place_parent",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":10,"eventType":6,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":11,"eventType":6,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Game UI",
-    "path": "folders/UI/Game UI.yy",
+    "name": "Map",
+    "path": "folders/Map.yy",
   },
-  "parentObjectId": {
-    "name": "obj_ui_btn_parent",
-    "path": "objects/obj_ui_btn_parent/obj_ui_btn_parent.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -30,10 +29,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_ui_light_btn_map",
-    "path": "sprites/spr_ui_light_btn_map/spr_ui_light_btn_map.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

@@ -51,6 +51,7 @@ if (finishedIntro && !createdPlayer) {
 if (finishedPlayer) {
 	global.state = e_gameStates.CONTINUE_GAME;
 	SaveGame();
+	GameCreateUI();
 	
 	//scribble("... What a weird dream.").wrap(300).align(fa_center, fa_top).draw(320, 150, typist);
 	

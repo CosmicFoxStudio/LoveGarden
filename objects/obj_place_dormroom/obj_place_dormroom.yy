@@ -1,19 +1,19 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_ui_btn_map",
+  "name": "obj_place_dormroom",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Game UI",
-    "path": "folders/UI/Game UI.yy",
+    "name": "Places",
+    "path": "folders/Map/Places.yy",
   },
   "parentObjectId": {
-    "name": "obj_ui_btn_parent",
-    "path": "objects/obj_ui_btn_parent/obj_ui_btn_parent.yy",
+    "name": "obj_place_parent",
+    "path": "objects/obj_place_parent/obj_place_parent.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_ui_light_btn_map",
-    "path": "sprites/spr_ui_light_btn_map/spr_ui_light_btn_map.yy",
+    "name": "spr_place_unknown",
+    "path": "sprites/spr_place_unknown/spr_place_unknown.yy",
   },
   "spriteMaskId": null,
   "visible": true,

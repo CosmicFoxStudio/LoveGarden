@@ -6,7 +6,7 @@ var count = ChatterboxGetOptionCount(chatterbox);
 // Typist flow control
 TypistCheckPause();
 
-if (global.state != e_gameStates.PAUSED && global.state != e_gameStates.MENU) {
+if (global.state != e_gameStates.PAUSED && global.state != e_gameStates.MENU && global.hoveringButton == false) {
 	// Waiting for user input or waiting for the user to choose an option
 	if ChatterboxIsWaiting(chatterbox) {
 	    if ( InputCheck(e_input.KEYBOARD, "confirm") || InputCheck(e_input.MOUSE, "confirm") ) {

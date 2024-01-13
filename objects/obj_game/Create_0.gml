@@ -2,6 +2,7 @@
 // Initializes globals & enumerators
 Enums();
 global.debug = false;
+global.hoveringButton = false;
 global.lastFontUsed = -1;
 DrawFont(fnt_dialogue); // Run the first time
 global.configMenu = noone;
@@ -73,7 +74,7 @@ function KeybindingCreate(_inputMode) {
 	}
 }
 
-global.inputMode = e_input.KEYBOARD; 
+global.inputMode = e_input.MOUSE; 
 global.keybind = KeybindingCreate(global.inputMode);
 // To reference: global.keybind.confirm
 
@@ -125,8 +126,8 @@ else {
 
 // Room-to-yarn map
 global.roomYarnMap = ds_map_create();
-global.roomYarnMap[? "rm_test"	]			= "scenes/main_day0_test.yarn";
-global.roomYarnMap[? "rm_dormroom"	]		= "scenes/main_day1_dormroom.yarn";
+global.roomYarnMap[? "rm_test"	]			= "scenes/main_day1_dormroom.yarn";
+global.roomYarnMap[? "rm_dormroom"	]		= "scenes/main_day0_test.yarn";
 global.roomYarnMap[? "rm_dormitory"	]		= "scenes/main_day1_dormitory.yarn";
 // And so on...
 

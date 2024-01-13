@@ -11,7 +11,7 @@ if IsChatterbox(chatterbox) and text != undefined {
 
 	
 	// Draw text
-	var yy = room_height - (marginText/2) - 50;
+	var yy = room_height - (marginText/2) - 45;
 	
 	// Textbox (In case we need one made by code only)
 	// DrawRectangleCenter(room_width/2, yy, room_width - 190, marginText,  false, c_black, 0.5);
@@ -42,8 +42,8 @@ if IsChatterbox(chatterbox) and text != undefined {
 		
 	DrawFont(fnt_dialogue);
 	draw_text_color(
-		room_width/2 - 163, 
-		room_height - (marginText/2) - 73, 
+		room_width/2 - 157, 
+		room_height - (marginText/2) - 71, 
 		speakerName,
 		TEXT_GREEN, TEXT_GREEN, TEXT_GREEN, TEXT_GREEN, 1
 	);

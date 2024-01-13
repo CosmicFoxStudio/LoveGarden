@@ -62,6 +62,7 @@
     {"name":"Config Menu","order":2,"path":"folders/UI/Config Menu.yy",},
     {"name":"Game UI","order":3,"path":"folders/UI/Game UI.yy",},
     {"name":"Lang Menu","order":1,"path":"folders/UI/Lang Menu.yy",},
+    {"name":"Places","order":3,"path":"folders/Map/Places.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"obj_intro","order":1,"path":"objects/obj_intro/obj_intro.yy",},
@@ -205,6 +206,7 @@
     {"name":"MACROS","order":1,"path":"scripts/MACROS/MACROS.yy",},
     {"name":"__scribble_class_event","order":1,"path":"scripts/__scribble_class_event/__scribble_class_event.yy",},
     {"name":"chatterbox_functions","order":3,"path":"scripts/chatterbox_functions/chatterbox_functions.yy",},
+    {"name":"obj_place_parent","order":2,"path":"objects/obj_place_parent/obj_place_parent.yy",},
     {"name":"ChatterboxSourceNodeExists","order":10,"path":"scripts/ChatterboxSourceNodeExists/ChatterboxSourceNodeExists.yy",},
     {"name":"snd_option_beep","order":2,"path":"sounds/snd_option_beep/snd_option_beep.yy",},
     {"name":"__ChatterboxClassNode","order":4,"path":"scripts/__ChatterboxClassNode/__ChatterboxClassNode.yy",},
@@ -259,6 +261,7 @@
     {"name":"scribble_external_sound_exists","order":1,"path":"scripts/scribble_external_sound_exists/scribble_external_sound_exists.yy",},
     {"name":"spr_saveslot_box","order":3,"path":"sprites/spr_saveslot_box/spr_saveslot_box.yy",},
     {"name":"__scribble_class_model","order":3,"path":"scripts/__scribble_class_model/__scribble_class_model.yy",},
+    {"name":"spr_place_unknown","order":8,"path":"sprites/spr_place_unknown/spr_place_unknown.yy",},
     {"name":"scribble_anim_jitter","order":2,"path":"scripts/scribble_anim_jitter/scribble_anim_jitter.yy",},
     {"name":"spr_textbox_old","order":3,"path":"sprites/spr_textbox_old/spr_textbox_old.yy",},
     {"name":"ChatterboxGetContentSpeech","order":7,"path":"scripts/ChatterboxGetContentSpeech/ChatterboxGetContentSpeech.yy",},
