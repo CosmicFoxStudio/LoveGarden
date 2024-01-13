@@ -49,7 +49,8 @@ function PlaceLocalization(_savePlace) {
 		break;
 	case "pt":
 		switch (_savePlace) {
-			case "Dormroom": return "Dormitório"; break;
+			case "Dormroom": return "Quarto"; break;
+			case "Dormitory": return "Dormitório"; break;
 			case "Test Zone": return "Zona de Teste"; break;
 			default: return "Nenhum Lugar"; break;
 		}

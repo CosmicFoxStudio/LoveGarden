@@ -13,7 +13,7 @@ switch (global.lang) {
 		text[6]	= "But it's also time to chill out.";
 		text[7]	= "Soon, you'll wake up into a new universe, a setting completely different from the usual.";
 		text[8]	= "Things could be either delightful or ruthless.";
-		text[9] = "The decision between blooming or withering, is in your hands."
+		text[9] = "The decision between blooming or withering is in your hands."
 		text[10] = "So, enjoy the journey, but with a sprinkle of wisdom.";
 		text[11] = "Now, onto the good stuff.";
 		text[12] = "";
@@ -26,9 +26,9 @@ switch (global.lang) {
 		text[4]	= "Nessa época, a brisa de verão é reconfortante."
 		text[5]	= "É temporada de novos recomeços.[delay,200]\nDe novas reflexões.";
 		text[6]	= "Mas também é tempo de descontrair.";
-		text[7]	= "Em breve você vai acordar em um novo universo, um cenário bem diferente do habitual.";
+		text[7]	= "Em breve, você vai acordar em um novo universo, um cenário bem diferente do habitual.";
 		text[8]	= "As coisas poderão ser prazerosas ou impiedosas.";
-		text[9] = "A decisão entre o florescer e o murchar, está em suas mãos.";
+		text[9] = "A decisão entre o florescer e o murchar está em suas mãos.";
 		text[10] = "Portanto, desfrute da jornada. Mas com sabedoria.";
 		text[11] = "Agora, ao que interessa.";
 		text[12] = "";

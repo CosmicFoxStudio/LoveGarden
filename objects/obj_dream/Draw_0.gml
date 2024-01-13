@@ -43,7 +43,7 @@ if (finishedIntro) {
 // Create player
 
 if (finishedIntro && !createdPlayer) {
-	TransitionStart(sq_out_trans_fade_black, sq_in_trans_fade_black);
+	//TransitionStart(sq_out_trans_fade_black, sq_in_trans_fade_black);
 	instance_create_layer(0, 0, "Instances_Above", obj_player_creator);	
 	createdPlayer = true;
 }
@@ -52,7 +52,7 @@ if (finishedPlayer) {
 	global.state = e_gameStates.CONTINUE_GAME;
 	SaveGame();
 	
-	scribble("... What a weird dream.").wrap(300).align(fa_center, fa_top).draw(320, 150, typist);
+	//scribble("... What a weird dream.").wrap(300).align(fa_center, fa_top).draw(320, 150, typist);
 	
 	// Reset
 	DrawReset();

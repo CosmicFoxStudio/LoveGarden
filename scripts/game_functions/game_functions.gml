@@ -70,19 +70,20 @@ function DecideRoomName() {
 	switch (global.rmCurrent) {
 	    case "rm_dormroom":
 			global.location = "Dormroom";
-	    break;
+			break;
 		case "rm_dormitory":
-			global.location = "Dormitory Orange";
-	    break;
+			global.location = "Dormitory";
+			break;
 		case "rm_test":
 			global.location = "Test Zone";
-	    break;
+			break;
 		case "rm_init":
 		case "rm_lang":
 		case "rm_template":
 		case "rm_title":
 		case "rm_dream":
 		case "rm_file_selection":
+		case "rm_campus_map":
 	    default:
 			global.location = "Nowhere";
 	    break;
