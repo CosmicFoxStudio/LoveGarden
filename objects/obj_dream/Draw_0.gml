@@ -43,19 +43,23 @@ if (finishedIntro) {
 // Create player
 
 if (finishedIntro && !createdPlayer) {
-	// TransitionStart(sq_out_trans_fade_white, sq_in_trans_fade_white);
+	TransitionStart(sq_out_trans_fade_black, sq_in_trans_fade_black);
 	instance_create_layer(0, 0, "Instances_Above", obj_player_creator);	
 	createdPlayer = true;
 }
 
 if (finishedPlayer) {
-	TransitionStart(sq_out_trans_fade_white, sq_in_trans_fade_white, rm_test);
 	global.state = e_gameStates.CONTINUE_GAME;
 	SaveGame();
+	
+	scribble("... What a weird dream.").wrap(300).align(fa_center, fa_top).draw(320, 150, typist);
 	
 	// Reset
 	DrawReset();
 	
+	// Transition to next scene
+	TransitionStart(sq_out_trans_fade_white, sq_in_trans_fade_white, rm_dormroom);
+		
 	// Job done
 	instance_destroy();
 }

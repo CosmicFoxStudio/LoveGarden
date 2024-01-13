@@ -5,34 +5,37 @@ page = 0;
 switch (global.lang) {
 	case "en":
 		text[0]	= ". . .";
-		text[1]	= "There is something new here.";
-		text[2]	= "You can see a wonderful view of the fields, the aqueducts\nand the river lines.";
-		text[3]	= "There's a comforting summer breeze."
-		text[4]	= "It's time for new beginnings.[delay,200]\nFor new reflections.";
-		text[5]	= "But it's also time for relaxing.";
-		text[6]	= "Hey, if you could live it all over again, but already knowing how everything goes,";
-		text[7]	= ". . . and with the power to avoid everything bad.";
-		text[8]	= ". . . Would you do it?";
-		text[9]	= "Even if it means erasing all memories and rebuilding from scratch...[delay]?";
-		text[10] = "Would you do it[delay] all over again?";
-		text[11] = "";
+		text[1]	= "Looks like it's the first time.";
+		text[2]	= "This is fantastic because everything is a novelty.";
+		text[3]	= "Being able to appreciate the view of the fields, the aqueducts and the river lines.";
+		text[4]	= "At this time, the summer breeze is downright comforting."
+		text[5]	= "It's the season for fresh starts.[delay,200]\nNew reflections await.";
+		text[6]	= "But it's also time to chill out.";
+		text[7]	= "Soon, you'll wake up into a new universe, a setting completely different from the usual.";
+		text[8]	= "Things could be either delightful or ruthless.";
+		text[9] = "The decision between blooming or withering, is in your hands."
+		text[10] = "So, enjoy the journey, but with a sprinkle of wisdom.";
+		text[11] = "Now, onto the good stuff.";
+		text[12] = "";
 		break;
 	case "pt":
 		text[0]	= ". . .";
-		text[1]	= "Tem algo novo aqui.";
-		text[2]	= "Você tem uma ótima visão dos campos, dos aquedutos\ne das curvas dos rios.";
-		text[3]	= "A brisa de verão é reconfortante."
-		text[4]	= "É tempo de novos recomeços.[delay,200]\nDe novas reflexões.";
-		text[5]	= "Mas também é tempo de relaxar.";
-		text[6]	= "Bem, se você pudesse viver tudo de novo, mas já sabendo como tudo deve acontecer,";
-		text[7]	= ". . . e com o poder de evitar tudo de ruim.";
-		text[8]	= ". . . Você faria?";
-		text[9]	= "Mesmo que signifique apagar todas as memórias e refazer tudo do início...[delay]?";
-		text[10] = "Você faria[delay] tudo de novo?";
-		text[11] = "";
+		text[1]	= "Parece que é a primeira vez.";
+		text[2]	= "Isso é fantástico, pois tudo é uma revelação.";
+		text[3]	= "Você pode apreciar a vista dos campos, dos aquedutos e das curvas dos rios.";
+		text[4]	= "Nessa época, a brisa de verão é reconfortante."
+		text[5]	= "É temporada de novos recomeços.[delay,200]\nDe novas reflexões.";
+		text[6]	= "Mas também é tempo de descontrair.";
+		text[7]	= "Em breve você vai acordar em um novo universo, um cenário bem diferente do habitual.";
+		text[8]	= "As coisas poderão ser prazerosas ou impiedosas.";
+		text[9] = "A decisão entre o florescer e o murchar, está em suas mãos.";
+		text[10] = "Portanto, desfrute da jornada. Mas com sabedoria.";
+		text[11] = "Agora, ao que interessa.";
+		text[12] = "";
 		break;
 	default:
-		text[0]	= "NO LANGUAGE SELECTED";
+		text[0]	= "NO LANGUAGE SELECTED.";
+		text[1] = "";
 		break;
 }
 

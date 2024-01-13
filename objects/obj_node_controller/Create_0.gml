@@ -39,9 +39,9 @@ textLength = 0;
 
 // Delays in punctuation
 typist.character_delay_add(".", 50);
-typist.character_delay_add("!", 400);
-typist.character_delay_add("?", 400);
-typist.character_delay_add(",", 400);
+typist.character_delay_add("!", 200);
+typist.character_delay_add("?", 200);
+typist.character_delay_add(",", 200);
 
 // Waving effect
 scribble_anim_wave(1, 0.2, 0.4);

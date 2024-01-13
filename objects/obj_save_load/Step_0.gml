@@ -43,7 +43,7 @@ if (global.state == e_gameStates.FILE_SELECTION) {
 				global.state = e_gameStates.CONTINUE_GAME;
 			
 				// Go to last saved room
-				TransitionStart(sq_out_trans_fade_white, sq_in_trans_fade_white, rm_test);
+				TransitionStart(sq_out_trans_fade_white, sq_in_trans_fade_white, rm_dormroom);
 			}	
 		
 			// NO existing save slot found

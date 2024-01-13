@@ -13,7 +13,7 @@ switch (phase) {
 	case e_phases.PHASE_1 :
 	
 		DrawAlign(fa_center);
-		draw_text(posX, startY, PlayerCreatorLocalization("Which one do you prefer?"));
+		draw_text(posX, startY, PlayerCreatorLocalization(text[0]));
 
 		// Display pronoun options 
 		for (var i = 0; i < optionLength; i++) {
@@ -34,7 +34,7 @@ switch (phase) {
 	case e_phases.PHASE_2 : 
 		
 		DrawAlign(fa_center);
-		draw_text(posX, startY, PlayerCreatorLocalization("What is your favorite plant?"));
+		draw_text(posX, startY, PlayerCreatorLocalization(text[1]));
 		DrawAlign();
 		
 		// Display input field or options

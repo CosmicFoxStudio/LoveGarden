@@ -5,14 +5,36 @@ __PrivCrochet_tags:
 title: Start
 ---
 <<chara("void")>>
-Day 1 - Dormitory Orange #0 #0 #0 #0 #0 #0
-???: Lorem ipsum dolor sit amet, consectetur adipiscing elit. #0 #0 #0 #0 #0 #0
-???: Lorem ipsum dolor sit amet. #0 #0 #0 #0 #0 #0
-???: Lorem ipsum dolor sit amet, consectetur adipiscing elit. #0 #0 #0 #0 #0 #0
-???: ... #0 #0 #0 #0 #0 #0
-???: Lorem ipsum! #0 #0 #0 #0 #0 #0
-PLAYER: Lorem ipsum dolor sit amet, consectetur adipiscing elit. #0 #0 #0 #0 #0 #0
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. #0 #0 #0 #0 #0 #0
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. #0 #0 #0 #0 #0 #0
+
+???: Ei. #0 #0 #0 #0 #0 #0 
+???: Eii! #0 #0 #0 #0 #0 #0 
+???: Tá ouvindo? #0 #0 #0 #0 #0 #0
+???: ... #0 #0 #0 #0 #0 #0 
+???: Acorda! #0 #0 #0 #0 #0 #0  
+PLAYER: Ugh... #0 #0 #0 #0 #0 #0 
+???: Hora de levantar, <dorminhoco>! #0 #0 #0 #0 #0 #0 
+???: É um novo dia cheio de aventura e... Ah, pera lá, acho que você está <atrasado>! #0 #0 #0 #0 #0 #0 
+Você geme e esfrega os olhos, tentando entender a situação. #0 #0 #0 #0 #0 #0  
+Parece que seu despertador não tocou... #0 #0 #0 #0 #0 #0  
+Quem lhe acorda é seu colega de quarto, Mandacaru. Mas todos o chamam de Caru, seu apelido. #0 #0 #0 #0 #0 #0 
+PLAYER: Que horas são? #0 #0 #0 #0 #0 #0 
+<<chara("caru")>>
+CARU: Vou te falar, você dormiu demais, <PLAYER>. #0 #0 #0 #0 #0 #0 
+CARU: O sol já está alto no céu, os pássaros estão zombando de você. #0 #0 #0 #0 #0 #0 
+CARU: E eu fui o enviado do universo para lhe repassar um memorando com sermões de pontualidade. #0 #0 #0 #0 #0 #0 
+PLAYER: Pera, o que?? O que isso significa? #0 #0 #0 #0 #0 #0 
+Você se apressa com a escolha de roupa, e de forma atrapalhada, tenta se vestir em tempo recorde. #0 #0 #0 #0 #0 #0 
+PLAYER: Tch. Obrigado pelo alerta, mestre dos magos. Eu só perguntei mesmo o horário! #0 #0 #0 #0 #0 #0 
+CARU: Estou exagerando, haha. São só 6h40... Seu despertador não tocou ainda. #0 #0 #0 #0 #0 #0  
+PLAYER: Ah! Seu sacana. #0 #0 #0 #0 #0 #0  
+Você estava realmente ficando <desesperado> aqui. Caru e sua zoeira sem limites... #0 #0 #0 #0 #0 #0 
+CARU: A vida é uma corrida e você já começou o dia a correr! Vai me agradecer mais tarde haha. #0 #0 #0 #0 #0 #0 
+CARU: Mas agora, falo sério. O primeiro dia não é um daqueles que você vai querer se atrasar. #0 #0 #0 #0 #0 #0  
+CARU: Quão mais cedo você sair, melhor! #0 #0 #0 #0 #0 #0 
+CARU: Alguns dos professores da Lótus podem ser uns carrascos. #0 #0 #0 #0 #0 #0 
+PLAYER: Eu bem que estou desde o início questionando o sadismo daqueles que decidiram o horário de 7h30 pras aulas matinais... #0 #0 #0 #0 #0 #0 
+<<chara("vazio")>>
+Estando <pronto> para sair, você se direciona para o andar de baixo do dormitório. #0 #0 #0 #0 #0 #0 
 <<save()>>
+<<backTitle()>>
 ===

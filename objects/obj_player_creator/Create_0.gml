@@ -8,6 +8,17 @@
 	----------------------------------------------- 
 */
 
+switch (global.lang) {
+	case "en":
+		text[0]	= "How would you rather be referred to?";
+		text[1]	= "What is your favorite plant?";
+	break;
+	case "pt":
+		text[0]	= "Como prefere que se refiram a você?";
+		text[1]	= "Qual a sua planta favorita?";
+	break;
+}
+
 // Drawing variables
 startX = room_width / 4;
 startY =  120;
