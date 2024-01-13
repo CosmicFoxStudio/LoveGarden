@@ -70,7 +70,7 @@ if (global.inputMode == e_input.MOUSE) {
 		mouseHovering = instance_position(mouse_x, mouse_y, inst);
 		
 		// Visual effect when hovering
-		inst.image_alpha = mouseHovering ? 0.5 : 0.3;
+		// inst.image_alpha = mouseHovering ? 0.5 : 0.3;
 
 		// ------------ CHECKING MOUSE HOVERING ------------ //
 		if (mouseHovering) {

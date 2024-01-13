@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_cursor_keyboard",
-  "bbox_bottom": 27,
+  "bbox_bottom": 13,
   "bbox_left": 0,
-  "bbox_right": 37,
+  "bbox_right": 18,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,20 +13,20 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7d73c708-e71b-480c-a0c1-ea3f125f24e9",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e9b01a4f-f751-4103-b0f9-fdd317a28cea",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 28,
+  "height": 14,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"5b6b6a42-d74a-4a94-8613-773c3b016aee","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"dad783d2-6221-4390-b2de-faf38f0e4472","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "UI",
+    "path": "folders/Sprites/UI.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"7d73c708-e71b-480c-a0c1-ea3f125f24e9","path":"sprites/spr_cursor_keyboard/spr_cursor_keyboard.yy",},},},"Disabled":false,"id":"6281803b-743a-44db-9abb-f1b4fb81a7db","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"e9b01a4f-f751-4103-b0f9-fdd317a28cea","path":"sprites/spr_cursor_keyboard/spr_cursor_keyboard.yy",},},},"Disabled":false,"id":"8d952109-6f21-423d-9122-081b78ff5017","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 38,
+  "width": 19,
 }

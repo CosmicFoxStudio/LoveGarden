@@ -40,7 +40,7 @@ flash = false;
 // ---------------------------- MOUSE STUFF ----------------------------- //
 mouseHovering = false;
 lastHoveredOption = -1;
-mouseClicked = false;
+//mouseClicked = false;
 // Create rectangle hitboxes
 rectBtnInstArray[e_phases.PHASE_1] = [];
 rectBtnInstArray[e_phases.PHASE_2] = [];

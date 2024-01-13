@@ -22,10 +22,10 @@ switch (phase) {
 				if (global.inputMode == e_input.KEYBOARD || (global.inputMode == e_input.MOUSE && lastHoveredOption == i) ) {
 					// Draw cursor based on the last hovered option
 		            if (pos == i || (mouseHovering && i == lastHoveredOption)) {
-		                optionText = "> " + optionText;
+		                optionText = "[spr_cursor_keyboard77] " + optionText;
 		            }
 		        }
-		        draw_text(startX + 16 + (i * (rectWidth + PLAYER_CREATOR_BTN_MARGIN_H)), startY + PLAYER_CREATOR_MARGIN_V + 2, optionText);
+		        draw_text_scribble(startX + 16 + (i * (rectWidth + PLAYER_CREATOR_BTN_MARGIN_H)), startY + PLAYER_CREATOR_MARGIN_V + 2, optionText);
 		        DrawAlign();
 		}	
 	break;
@@ -69,9 +69,9 @@ switch (phase) {
 				
 	        // Draw cursor based on the last hovered option
 	        if (pos == i || (lastHoveredOption == i)) {
-	            nameString = "> " + nameString;
+	            nameString = "[spr_cursor_keyboard77] " + nameString;
 	        }
-	        draw_text(startX + 32 + (i * (rectWidth + PLAYER_CREATOR_BTN_MARGIN_H)), startY + PLAYER_CREATOR_MARGIN_V + 2, nameString);
+	        draw_text_scribble(startX + 32 + (i * (rectWidth + PLAYER_CREATOR_BTN_MARGIN_H)), startY + PLAYER_CREATOR_MARGIN_V + 2, nameString);
 	    }   
 	    break;
 }
