@@ -52,6 +52,10 @@ function PlaceLocalization(_savePlace) {
 			case "Dormroom": return "Quarto"; break;
 			case "Dormitory": return "Dormitório"; break;
 			case "Test Zone": return "Zona de Teste"; break;
+			case "Park": return "Parque"; break;
+			case "Restaurant": return "Refeitório"; break;
+			case "School": return "Escola"; break;
+			case "Classroom": return "Sala de Aula"; break;
 			default: return "Nenhum Lugar"; break;
 		}
 		break;

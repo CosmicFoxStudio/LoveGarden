@@ -74,6 +74,18 @@ function DecideRoomName() {
 		case "rm_dormitory":
 			global.location = "Dormitory";
 			break;
+		case "rm_park":
+			global.location = "Park";
+			break;
+		case "rm_restaurant":
+			global.location = "Restaurant";
+			break;
+		case "rm_school":
+			global.location = "School";
+			break;
+		case "rm_classroom":
+			global.location = "Classroom";
+			break;
 		case "rm_test":
 			global.location = "Test Zone";
 			break;
