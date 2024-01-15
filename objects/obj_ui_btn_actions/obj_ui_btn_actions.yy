@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_ui_btn_calendar",
+  "name": "obj_ui_btn_actions",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
   ],
@@ -31,8 +31,8 @@
   ],
   "solid": false,
   "spriteId": {
-    "name": "spr_ui_calendar",
-    "path": "sprites/spr_ui_calendar/spr_ui_calendar.yy",
+    "name": "spr_ui_actions",
+    "path": "sprites/spr_ui_actions/spr_ui_actions.yy",
   },
   "spriteMaskId": null,
   "visible": true,

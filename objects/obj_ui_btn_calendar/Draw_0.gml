@@ -5,7 +5,7 @@ draw_self();
 // Day number
 draw_set_halign(fa_center);
 DrawFont(fnt_day_number);
-draw_text_color(47, 26, global.day, TEXT_BROWN, TEXT_BROWN, TEXT_BROWN, TEXT_BROWN, 1);
+draw_text_color(32+offsetX, 26+offsetY, global.day, TEXT_BROWN, TEXT_BROWN, TEXT_BROWN, TEXT_BROWN, 1);
 
 // Current daytime
 
@@ -32,7 +32,7 @@ switch (global.lang) {
 
 draw_set_halign(fa_center);
 DrawFont(fnt_menu);
-draw_text_color(120, 29, calendarDaytime, TEXT_GREEN, TEXT_GREEN, TEXT_GREEN, TEXT_GREEN, 1);
+draw_text_color(104+offsetX, 29+offsetY, calendarDaytime, TEXT_GREEN, TEXT_GREEN, TEXT_GREEN, TEXT_GREEN, 1);
 DrawFont(fnt_dialogue);
 
 DrawReset();
