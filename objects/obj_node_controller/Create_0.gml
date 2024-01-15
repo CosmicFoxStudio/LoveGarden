@@ -12,7 +12,9 @@ ChatterboxAddFunction("getFlag", FlagGet);							// Returns the value of a given
 ChatterboxAddFunction("save", SaveGame);							// Calls the save script from inside a yarn file
 ChatterboxAddFunction("backTitle", GameBackToTitle);				// Goes back to the title screen and changes game state
 ChatterboxAddFunction("addAction", GameAddAction);					// Increments by 1 global.action 
-ChatterboxAddFunction("assignRoute", RouteAssign);
+ChatterboxAddFunction("assignRoute", RouteAssign);					// Assign a character route
+ChatterboxAddFunction("nextDay", NextDay);							// Increments by 1 global.day. Set global.currentDaytime to morning
+ChatterboxAddFunction("nextDaytime", NextDaytime);					// Increments by 1 global.currentDaytime
 // Custom Chatterbox Variables
 // ChatterboxVariableDefault("player", global.playerName);			// (UNUSED) Variable to store the player's name
 
@@ -20,7 +22,7 @@ ChatterboxAddFunction("assignRoute", RouteAssign);
 node = undefined;
 chatterbox = noone;
 text = "";
-nodeName = "Start";
+nodeName = "Morning";
 roomName = "";
 optionIndex = 0;                                
 optionHovered = -1; 

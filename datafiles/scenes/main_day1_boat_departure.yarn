@@ -1,0 +1,40 @@
+title: Morning
+---
+(You sit on one of the benches of the boat and finally relax a bit.) # # #
+(Your mind goes back to the dream you had before Caru woke you up.) # # #
+PLAYER: (You know, I've been having these strange dreams since I got here.) # # #
+PLAYER: (It's like I...)
+PLAYER: (It's like I...)
+-> (... feel different.)
+-> (... am forgetting who I am.)
+PLAYER: (To tell the truth, I don't know why I came here.) # # #
+PLAYER: (Hmm, okay. Actually, I do know.) # # #
+PLAYER: (I was lost. Purposeless. Unwilling to accept that I need to choose something.) # # #
+PLAYER: (Adulthood has barely begun, and I already feel so tired.) # # #
+PLAYER: (But escaping from my routine was all I wanted.) # # #
+PLAYER: (To bet on something new, different.) # # #
+PLAYER: (That's what they say university means for some, right?) # # #
+PLAYER: (Rediscovery.) # # #
+PLAYER: (I'm here for that. Or at least, to try.) # # #
+PLAYER: (Not that school was bad for me, but it wasn't anything special either, you know?) # # #
+PLAYER: (...) # # #
+PLAYER: (Okay, that was quite emotional for it not to be even 7:10 in the morning.) # # #
+PLAYER: (This journey has just begun, let's try to think positive!) # # #
+<<save()>>
+<<nextRoom("rm_school")>>
+===
+
+title: Noon
+---
+Noon
+===
+
+title: Afternoon
+---
+Afternoon
+===
+
+title: Night
+---
+Night
+===

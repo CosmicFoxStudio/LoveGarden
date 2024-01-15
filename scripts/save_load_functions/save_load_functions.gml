@@ -27,7 +27,7 @@ function SaveGame() {
 		day: global.day,
 		gameFlags: global.flags, 
 		npcs: global.NPCs,
-		favePlace: global.favePlace
+		actions: global.actions
 	}
 	var json = json_stringify(saveStruct); // 2nd argument 'true' to prettify
 	var file = file_text_open_write("file_" + string(global.saveSlot) + ".sav");
@@ -69,7 +69,7 @@ function LoadGame() {
 		global.day = struct.day;
 		global.flags = struct.gameFlags;
 		global.NPCs = struct.npcs;
-		global.favePlace = struct.favePlace;
+		global.actions = struct.actions;
 		
 		file_text_close(file);
 	}
@@ -77,12 +77,13 @@ function LoadGame() {
 
 function SetRoom(_location) {
 	switch (_location) {
-	    case "Dormroom": return rm_dormroom; break;
-		case "Dormitory": return rm_dormitory; break;
-		case "Park": return rm_park; break;
-		case "Restaurant": return rm_restaurant; break;
-		case "School": return rm_school; break;
-		case "Classroom": return rm_classroom; break;
-	    default: return rm_test; break;
+	    case "Dormroom":	return rm_dormroom; break;
+		case "Boat":		return rm_boat; break;
+		case "Dormitory":	return rm_dormitory; break;
+		case "Courtyard":	return rm_courtyard; break;
+		case "Restaurant":	return rm_restaurant; break;
+		case "School":		return rm_school; break;
+		case "Classroom":	return rm_classroom; break;
+	    default:			return rm_test; break;
 	}
 }

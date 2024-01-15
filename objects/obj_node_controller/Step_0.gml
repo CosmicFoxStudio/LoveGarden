@@ -14,7 +14,7 @@ if (global.state != e_gameStates.PAUSED && global.state != e_gameStates.MENU && 
 		    var metadataArr = ChatterboxGetContentMetadata(chatterbox, 0);
 			
 			// If current line has metadata
-			processMetadata(metadataArr);
+			ProcessMetadata(metadataArr);
 			
 			//  ------------------- SKIP TEXT ------------------- //
 			// Means the page is fully typed out

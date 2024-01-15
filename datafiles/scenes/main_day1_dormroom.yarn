@@ -1,40 +1,52 @@
-#__PrivCrochet_version:1
-__PrivCrochet_colorID: 0
-__PrivCrochet_position: 938,-8
-__PrivCrochet_tags: 
-title: Start
+title: Morning
 ---
 <<chara("void")>>
-
-???: Hey. #0 #0 #0 #0
-???: Heey! #0 #0 #0 #0  
-???: Are you listening? #0 #0 #0 #0 
-???: ... #0 #0 #0 #0  
-???: Wake up! #0 #0 #0 #0
-PLAYER: Ugh... #0 #0 #0 #0 
-???: Time to get up, sleepyhead! #0 #0 #0 #0
-???: It's a new day full of adventure and... Oh, wait a minute, I think you're late! #0 #0 #0 #0
-You groan and rub your eyes, trying to understand the situation. #0 #0 #0 #0
-It seems like your alarm didn't go off... #0 #0 #0 #0 
-The one waking you up is your roommate, Mandacaru. But everyone calls him Caru, his nickname. #0 #0 #0 #0
-PLAYER: What time is it? #0 #0 #0 #0
+... # # #
+???: Hey. # # #
+???: Heeey! # # #
+???: Are you listening? # # #
+???: ... # # #
+???: Wake up! # # #
+PLAYER: Ugh... # # #
+???: Time to get up, sleepyhead! # # #
+???: It's a new day full of adventure, and... Oh, hold on, I think you're late! # # #
+You groan and rub your eyes, trying to understand the situation. # # #
+It seems like your alarm didn't go off... # # #
+The one waking you up is your roommate, Mandacaru. But everyone calls him Caru, his nickname. # # #
+PLAYER: What time is it? # # #
 <<chara("caru")>>
-CARU: Let me tell you, you overslept, PLAYER. #0 #0 #0 #0
-CARU: The sun is already high in the sky, the birds are mocking you. #0 #0 #0 #0
-CARU: And I was the universe's messenger sent to deliver you a memo with punctuality sermons. #0 #0 #0 #0
-PLAYER: Wait, what?? What does that mean? #0 #0 #0 #0
-You hurriedly choose your outfit, and in a clumsy manner, try to get dressed in record time. #0 #0 #0 #0
-PLAYER: Tch. Thanks for the alert, wizard master. I just wanted to know the time! #0 #0 #0 #0
-CARU: I'm exaggerating, haha. It's only 6:40... Your alarm hasn't gone off yet. #0 #0 #0 #0
-PLAYER: Ah! You scoundrel. #0 #0 #0 #0
-You were really getting desperate here. Caru and his limitless teasing... #0 #0 #0 #0
-CARU: Life is a race, and you've already started the day running! You'll thank me later, haha. #0 #0 #0 #0
-CARU: But now, I'm serious. The first day is not one of those days you want to be late. #0 #0 #0 #0
-CARU: The earlier you leave, the better! #0 #0 #0 #0
-CARU: Some of the Lotus teachers can be real taskmasters. #0 #0 #0 #0
-PLAYER: I've been questioning the sadism of those who decided on a 7:30 am schedule for morning classes since day one... #0 #0 #0 #0
+CARU: Let me tell you, you overslept, PLAYER. # # #
+CARU: The sun is already high in the sky, and the birds are mocking you. # # #
+CARU: And I was the universe's envoy to deliver you a memorandum with punctuality sermons. # # #
+PLAYER: Wait, what?? What does that mean? # # #
+You hurry with the choice of clothes, and in a clumsy manner, try to dress in record time. # # #
+PLAYER: Tch. Thanks for the heads up, master of wizards. I just asked for the time! # # #
+CARU: I'm exaggerating, haha. It's only 6:40... Your alarm hasn't gone off yet. # # #
+PLAYER: Ah! You rascal. # # #
+You were really getting desperate here. Caru and his limitless teasing... # # #
+CARU: Life is a race, and you've already started running! You'll thank me later, haha. # # #
+CARU: But now, I'm serious. The first day is not one of those you want to be late for. # # #
+CARU: The earlier you leave, the better! # # #
+CARU: Some of the Lotus professors can be real tyrants. # # #
+PLAYER: I've been questioning the sadism of those who decided on the 7:30 am schedule for morning classes from the start... # # #
 <<chara("void")>>
-Ready to go, you head downstairs from the dormitory. #0 #0 #0 #0
+Despite Mandacaru's warning, by the time you gather all the materials for classes, you see that time is still ticking away. # # #
+Part of you curses your last night's self, who confidently claimed there would be enough time to get organized in the morning. # # #
+Being ready to go, you head downstairs to the dormitory. # # #
 <<save()>>
 <<nextRoom("rm_dormitory")>>
+
+title: Noon
+---
+Noon
+===
+
+title: Afternoon
+---
+Afternoon
+===
+
+title: Night
+---
+Night
 ===

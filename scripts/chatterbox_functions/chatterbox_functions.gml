@@ -27,33 +27,37 @@ function NextRoom(_room) {
 }
 
 // Function to choose character on screen
-function CharacterOnScreen(_name) {
-	var sprite = noone;
-	if (_name) == "maple" {
-		sprite = spr_maple;
-	}
-	else if (_name) == "ype" {
-		sprite = spr_ype;
-	}
-	else if (_name) == "caru" {
-		sprite = spr_caru;
-	}
-	else if (_name) == "mamba" {
-		sprite = spr_fern;
-	}
-	else if (_name) == "void" {
-		sprite = spr_noone;
-	}
-	//else {
-	//	sprite = spr_noone;
-	//}
-	
-	obj_characters.chara = sprite;
+function CharacterOnScreen(_name1, _name2 = undefined) {
+    var chara = [];
+
+    var characterMap = {
+		"maple": spr_maple,
+		"ype": spr_ype,
+		"caru": spr_caru,
+		"rose": spr_rose,
+		"clove" : spr_clove,
+		"hydra": spr_hydra,
+        "fern": spr_fern,
+		"orange": spr_orange,
+		"nanne": spr_nanne,
+		"cali" : spr_cali,
+        "void": spr_noone
+	};
+
+    chara[0] = characterMap[$ _name1];
+
+    if (argument[1] != undefined) {
+        chara[1] = characterMap[$ _name2];
+    }
+
+    // Set the obj_characters.chara array
+    obj_characters.chara = chara;
+	obj_characters.amount = argument_count;
 }
 
 // Function to choose the character's expression to be displayed (needs improvements!!)
 function CharacterExpressionOnScreen(_num) {
-	obj_characters.characterExpression = _num;
+	array_push(obj_characters.characterExpression, _num);
 }
 
 // PLAYER STATS
@@ -164,36 +168,40 @@ function FlagGet(_name) {
     }
 }
 
-function processMetadata(_metadata) {
+function ProcessMetadata(_metadata) {
 	var once = false;
 	
 	if (once == false) {
 	    if (array_length(_metadata) > 0) {
 	        // WILTING - Adds/removes points from PLAYER'S "wilting" stats
 	        if (_metadata[0] != "") { 
-	            global.playerStats.wilting = WrapInside(obj_wilting_bar.fillBar + real(_metadata[0]), 0, 10); 
-	            obj_wilting_bar.fillBar = global.playerStats.wilting; 
+	            //global.playerStats.wilting = WrapInside(obj_wilting_bar.fillBar + real(_metadata[0]), 0, 10); 
+	            //obj_wilting_bar.fillBar = global.playerStats.wilting; 
 	            once = true;
 	        }
 	        // GROWTH - Add/remove points from PLAYER'S "growth" stats
 	        if (_metadata[1] != "") { 
-	            global.playerStats.growth = WrapInside(obj_growth_bar.fillBar + real(_metadata[1]), 0, 10); 
-	            obj_growth_bar.fillBar = global.playerStats.growth; 
-	            once = true;
-	        }
-	        // SOUND - Enter the name of the sound asset
-	        if (_metadata[2] != "" && _metadata[2] != "0") {
-	            audio_play_sound(asset_get_index(_metadata[2]), 10, false);
+	            //global.playerStats.growth = WrapInside(obj_growth_bar.fillBar + real(_metadata[1]), 0, 10); 
+	            //obj_growth_bar.fillBar = global.playerStats.growth; 
 	            once = true;
 	        }
 	        // FLAG - Enter the name of the flag
-	        if (_metadata[3] != "") {
+	        if (_metadata[2] != "") {
 				// Important: Flags are automatically set to true when used as metadata
-	            FlagSet(_metadata[3]);
+	            FlagSet(_metadata[2]);
 	            once = true;
 	        }
 	    }
 	}
+}
+
+function NextDay() {
+	global.day += 1;
+	global.currentDaytime = e_daytime.MORNING;
+}
+
+function NextDaytime() {
+	global.currentDaytime += 1;
 }
 
 // Get filename dynamically

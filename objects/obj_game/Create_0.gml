@@ -21,10 +21,11 @@ global.actions[1] = 4;	// DAY 1
 global.actions[2] = 4;	// DAY 2
 global.actions[3] = 4;	// DAY 3
 global.actions[4] = 4;	// DAY 4
-global.maxActions = [0, 4, 3, 5, 4];
+global.maxActions = [0, 4, 4, 4, 4];
 global.flags = { 
 	met_solanum: 0,
 	met_hydra: false,
+	finished_fern_intro: false,
 	sat_with_ype: false,
 	sat_with_hydra: false,
 	stood_ype_up: false
@@ -40,7 +41,6 @@ global.statePrevious = global.state;
 // Player Info
 global.playerName = "PLAYER";
 global.pronouns = e_pronouns.ELU;
-global.favePlace = "";
 global.NPCs = [];
 global.NPCs[e_SO.YPE] = new DefineStats();
 global.NPCs[e_SO.CARU] = new DefineStats();
@@ -137,6 +137,9 @@ if os_browser == browser_not_a_browser {
 else {
 	// In browser - load files manually
 	ChatterboxLoadFromFile("scenes/main_scene0_test.yarn");
+	ChatterboxLoadFromFile("scenes/main_day1_dormroom.yarn");
+	ChatterboxLoadFromFile("scenes/main_day1_dormitory.yarn");
+	ChatterboxLoadFromFile("scenes/main_day1_boat_departure.yarn");
 }
 
 #endregion CHATTERBOX LOAD FILES
@@ -148,6 +151,7 @@ global.roomYarnMap = ds_map_create();
 global.roomYarnMap[? "rm_test"	]			= "scenes/main_day0_test.yarn";
 global.roomYarnMap[? "rm_dormroom"	]		= "scenes/main_day1_dormroom.yarn";
 global.roomYarnMap[? "rm_dormitory"	]		= "scenes/main_day1_dormitory.yarn";
+global.roomYarnMap[? "rm_boat"	]			= "scenes/main_day1_boat_departure.yarn";
 // And so on...
 
 // ----------------------- Chatterbox Localization Build -----------------------  //

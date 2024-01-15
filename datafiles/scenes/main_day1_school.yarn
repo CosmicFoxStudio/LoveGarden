@@ -1,0 +1,123 @@
+title: Morning
+---
+<<if getFlag("finished_fern_intro")>>
+    <<jump AfterClass>>
+<<else>> 
+    <<jump IpeIntro>>
+===
+
+title: IpeIntro
+<<chara("void")>>
+Você chega no prédio de aulas sem mais problemas. # # #
+Agora você tem um novo desafio: Encontrar a sala de aula de Ecologia. # # #
+PLAYER: (Ainda bem que anotei, eu sou profissional em esquecer essas coisas.) # # #
+Você sabe que se não tivesse anotado estaria em maus lençóis. # # #
+Pois o único outro lugar para obter essa informação nesses tempos modernos seria pelo aplicativo super confuso da universidade. # # #
+A interface gráfica é terrível. Ô coisa difícil é achar qualquer coisa por lá... # # #
+... # # #
+<<chara("ype")>>
+Logo ali em frente parece ter uma pessoa ainda mais perdida que você. # # #
+Elu não parece perceber que alguém se aproxima. # # #
+???: Ahn... Qual será...? # # #
+PLAYER: Precisa de ajuda? # # #
+<<emotion(3)>>
+IPÊ: [shake]Ah!![/]# # #
+PLAYER: Desculpa! Eu não queria te assustar! # # #
+<<emotion(0)>>
+IPÊ: Ah..! Eu estou bem. Não se preocupe. # # #
+IPÊ: Só não esperava alguém falar comigo. # # #
+PLAYER:  Hum? Ok. Er... Então. Por acaso você tá procurando sua sala? # # #
+IPÊ: Sim... Mas esse lugar é gigante. # # #
+PLAYER: Né, também estou um pouco <perdide>. # # #
+PLAYER: Eu me chamo PLAYER! # # #
+PLAYER: E você? Qual o seu nome? # # #
+<<emotion(4)>>
+IPÊ: Ah, eu me chamo Ipê! Prazer te conhecer, PLAYER! # # #
+PLAYER: E que sala você tá procurando? # # #
+IPÊ: Introdução à Ecologia... # # #
+IPÊ: Mas eu não estou conseguindo entender o aplicativo... # # #
+PLAYER: Ele é péssimo mesmo. # # #
+PLAYER: Mas você deu sorte, eu também estou indo pra lá! # # #
+PLAYER: Qual seu curso mesmo? # # #
+IPÊ: Ah, eu estou fazendo Botânica... # # #
+PLAYER: Ah, bacana! Eu sou da Biologia. # # #
+Você ia propor que procurem a sala juntes, mas é <interrompide> por um senhor com uma extensa barba folheada. # # #
+<<chara("fern")>>
+???: Vocês vão ficar aí parados ou vão entrar na sala? # # #
+PLAYER: Ahn, a gente não sabe se essa é a nossa- # # #
+???: Vocês estão aqui para Introdução à Ecologia? # # #
+PLAYER: Si- # # #
+???: Então é bom que entrem logo. Já vou começar a aula. # # #
+<<chara("ype")>>
+<<emotion(2)>>
+Cada vez que você é <interrompide>, Ipê parece ficar mais envergonhade. # # #
+<<chara("fern")>>
+???: O que estão esperando? Podem entrar antes de mim. # # #
+<<chara("ype")>>
+<<emotion (5)>>
+Essa foi a deixa pra Ipê entrar na sala o mais rápido possível. # # #
+<<chara("void")>>
+E você vai logo atrás delu, não querendo mais ser vítima do mal humor do professor. # # #
+<<setFlag("finished_fern_intro", true)>>
+<<save()>>
+===
+
+title: AfterClass
+---
+<<chara("ype")>>
+PLAYER: Então, como você quer fazer o trabalho? # # #
+IPÊ: Eu ia te perguntar a mesma coisa, haha... # # #
+PLAYER: Vamos revisar o que é pra fazer primeiro... # # #
+PLAYER: Ele falou pra gente encontrar no campus pelo menos 2 espécies diferentes de animais plantae que estejam em algum tipo de relação ecológica... # # #
+IPÊ: Isso, e aí precisa analisar as interações entre esses organismos e o ambiente. # # #
+IPÊ: Ah! E precisamos fotografar também.
+PLAYER: Não parece ser muito complexo, se a gente pegar pra fazer, acho que a gente mata em um dia. # # #
+IPÊ: Talvez a parte de encontrar as espécies sim, mas isso de identificar parece difícil. # # #
+-> Confio no nosso potencial, vai ser tranquilo. # #1 # 
+-> Se você ficar falando assim, ai é que não vai dar certo mesmo. #1 # # 
+<<emotion(5)>>
+IPÊ: Se você diz... # # #
+PLAYER: Quando você acha que a gente vai conseguir se encontrar? # # #
+PLAYER: Sei que Botânica em geral é um curso mais pesado que Biologia, então se você me falar como estão seus horários... # # #
+IPÊ: Agora no começo do semestre acho que as matérias ainda estarão tranquilas. # # #
+IPÊ: Você estaria livre amanhã à tarde? # # #
+PLAYER: Tô sim! # # #
+PLAYER: Agora é só ter algum lugar no campus que a gente consiga achar algumas espécies fácil. # # #
+IPÊ: Provavelmente o pátio deve ser o melhor lugar. # # #
+PLAYER: Não tem um parque aqui perto do campus? # # #
+IPÊ: O professor disse que precisava ser do campus, não perto. # # #
+	-> Facilita a nossa vida. # # #
+	IPÊ: Exatamente! # # #
+	-> Poxa, queria tanto ir conhecer o parque. # # #
+	<<emotion(4)>>
+	IPÊ: É lindo, você deveria aproveitar quando puder ir! # # #
+PLAYER: Deve ser a forma dele forçar a gente a conhecer o campus, né? # # #
+IPÊ: Eu não tinha pensado nisso, mas talvez seja algo assim. # # #
+PLAYER: Você tem alguma outra ideia de lugar? # # #
+IPÊ: Bom, eu sei que tem uma área verde no pátio, a gente podia se encontrar lá.
+PLAYER: Por mim tá ótimo! # # #
+PLAYER: Me dei bem, você pelo visto até que conhece o campus, apesar de estar perdide mais cedo, haha. # # #
+<<emotion(2)>>
+IPÊ: Ah, tenho parentes aqui, então já visitei algumas vezes... # # #
+Ipê está evitando olhar pra você. # # #
+IPÊ: Eu preciso ir indo agora, minha segunda aula começa daqui a pouco! # # #
+Antes que você pudesse argumentar que o Professor Mamba liberou vocês uma hora mais cedo... # # #
+<<chara("void")>>
+Ipê já estava sumindo pelo corredor... # # #
+... # # #
+PLAYER: (Será que eu falei algo errado?) # # #
+<<save()>>
+<<nextRoom(rm_dormitory)>>
+===
+
+title: Noon
+---
+===
+
+title: Afternoon
+---
+===
+
+title: Night
+---
+===

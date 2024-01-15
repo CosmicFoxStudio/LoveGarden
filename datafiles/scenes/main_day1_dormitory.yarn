@@ -1,18 +1,81 @@
-#__PrivCrochet_version:1
-__PrivCrochet_colorID: 0
-__PrivCrochet_position: 938,-8
-__PrivCrochet_tags: 
-title: Start
+title: Morning
 ---
 <<chara("void")>>
-Day 1 - Dormroom #0 #0 #0 #0
-???: Lorem ipsum dolor sit amet, consectetur adipiscing elit. #0 #0 #0 #0
-???: Lorem ipsum dolor sit amet. #0 #0 #0 #0
-???: Lorem ipsum dolor sit amet, consectetur adipiscing elit. #0 #0 #0 #0
-???: ... #0 #0 #0 #0
-???: Lorem ipsum! #0 #0 #0 #0
-PLAYER: Lorem ipsum dolor sit amet, consectetur adipiscing elit. #0 #0 #0 #0
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. #0 #0 #0 #0
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. #0 #0 #0 #0
+... # # #
+The rule says you can't run in the hallways... # # #
+So you quicken your pace until you reach the entrance. # # #
+In the distance, you can see the boat that just left. # # #
+<<chara("orange")>>
+MR. ORANGE: Hey. Are you a morning student? # # #
+PLAYER: Yes, I am! # # #
+MR. ORANGE: The second boat has already left, but a third one is coming shortly. # # #
+PLAYER: Oh, thank goodness there's a third one. I thought I was lost! # # #
+MR. ORANGE: Haha! Don't worry, young one! # # #
+MR. ORANGE: In addition to the third, there's also a fourth, a fifth... and so on. # # #
+MR. ORANGE: The next one is coming in 5 minutes! # # #
+As he says this, some other students are arriving at the spot, realizing they also missed the boat. # # #
+PLAYER: At least I'm not the only one. # # #
+PLAYER: You saved me here, Mr...? # # #
+MR. ORANGE: They call me Orange, young one. # # #
+PLAYER: I'm PLAYER. # # #
+You only have to wait... What do you do now? # # #
+You only have to wait... What do you do now? # # #
+-> Talk to Mr. Orange. # # #
+    <<addAction()>>
+    (YOU JUST EARNED A BONUS ACTION![spr_action])[snd_click1]
+    You have to wait anyway; it's better to talk to someone to pass the time. # # #
+    PLAYER: Not to be <intrusive>, but it's quite a coincidence that your name is the same as the dormitory. # # #
+    MR. ORANGE: Haha! That's not a coincidence, young one! I've been the supervisor of this dormitory since it was built. # # #
+    PLAYER: But that was, like, a long time ago, right? # # #
+    PLAYER: (Oh my god, I called him old). # # #
+    MR. ORANGE: HAHA! It's only been 25 years! # # #
+    PLAYER: That means you've met all the famous plants, right? # # #
+    PLAYER: Even Tony Ramos, who graduated a few years ago? # # #
+    MR. ORANGE: Each one of them! I have a collection of photos with the students who became famous from the college. # # #
+    MR. ORANGE: I can show you the collection one day if you want! # # #
+    PLAYER: I'd love that! # # #
+    MR. ORANGE: I like your enthusiasm, young one! # # #
+    MR. ORANGE: But you better start going. The boat is arriving. # # #
+    Mr. Orange points to the boat approaching outside. # # #
+    PLAYER: See you later, Mr. Orange! # # #
+    You wave to him as you leave the dormitory, heading towards the boat. # # #
+-> Wait for the boat outside.
+    It's better to make sure you don't miss the third boat. # # #
+    You go outside the building, sitting on one of the waiting benches for the boat. # # #
+    There's a girl drawing on one of the other benches. # # #
+    <<chara(“hydra”)>>
+    <<setFlag("met_hydra", true)>>
+    You try to see what she's drawing and ends up impressed with the replica of the lake she was creating. # # #
+    -> Try to talk to her. # # #
+        PLAYER: Wow, your drawing is beautiful! # # #
+        ???: ... # # #
+        She doesn't even blink, continuing to focus on the notebook. # # #
+        It's as if she didn't hear you from being so concentrated... # # #
+        You decide to appreciate the lake alongside her, even if in silence. # # #
+    -> Just admire the drawing she's doing. # # #
+        <<addAction()>>
+        (YOU JUST EARNED A BONUS ACTION![spr_action])[snd_click1]
+        You can't take your eyes off the drawing. # # #
+        To the point that the girl gives you a quick look with raised eyebrows. # # #
+        You look away, feeling your face heat up for getting <caught>. # # #
+        Soon, the third boat starts to approach. # # #
+PLAYER: (Thank goodness everything worked out...) # # #
+You board the boat. # # #
 <<save()>>
+<<nextRoom("rm_boat")>>
+===
+
+title: Noon
+---
+Noon
+===
+
+title: Afternoon
+---
+LOREM IPSUM
+===
+
+title: Night
+LOREM IPSUM
+---
 ===
