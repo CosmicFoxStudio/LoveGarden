@@ -93,7 +93,7 @@ function KeybindingCreate(_inputMode) {
 	}
 }
 
-global.inputMode = e_input.KEYBOARD; 
+global.inputMode = e_input.MOUSE; 
 global.keybind = KeybindingCreate(global.inputMode);
 // To reference: global.keybind.confirm
 

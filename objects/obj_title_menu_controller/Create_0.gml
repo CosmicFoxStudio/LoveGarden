@@ -3,18 +3,18 @@
 //  -------------------- Create Buttons --------------------- //
 // If the platform isn't a browser, create the "Play" and "Quit" buttons
 if (os_browser == browser_not_a_browser) {
-	playButton = instance_create_layer(550, 180, "Instances_Below", obj_title_button);
+	playButton = instance_create_layer(500, 180, "Instances_Below", obj_title_button);
 	playButton.btnType = e_btnTypes.PLAY;
 	
-	helpButton = instance_create_layer(550, 240, "Instances_Below", obj_title_button);
+	helpButton = instance_create_layer(500, 240, "Instances_Below", obj_title_button);
 	helpButton.btnType = e_btnTypes.HELP;
 
-	quitButton = instance_create_layer(550, 300, "Instances_Below", obj_title_button);
+	quitButton = instance_create_layer(500, 300, "Instances_Below", obj_title_button);
 	quitButton.btnType = e_btnTypes.QUIT;
 }
 // Platform is a browser, create only the "Play" button
 else {
-	playButton = instance_create_layer(550, 180, "Instances_Below", obj_title_button);
+	playButton = instance_create_layer(500, 180, "Instances_Below", obj_title_button);
 	playButton.btnType = e_btnTypes.PLAY;
 }
 

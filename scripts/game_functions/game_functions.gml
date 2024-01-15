@@ -75,11 +75,11 @@ function DecideRoomName() {
 		case "rm_dormitory":
 			global.location = "Dormitory";
 			break;
-		case "rm_park":
-			global.location = "Park";
-			break;
 		case "rm_restaurant":
-			global.location = "Restaurant";
+			global.location = "Food Court";
+			break;
+		case "rm_courtyard":
+			global.location = "Courtyard";
 			break;
 		case "rm_school":
 			global.location = "School";
@@ -90,6 +90,7 @@ function DecideRoomName() {
 		case "rm_test":
 			global.location = "Test Zone";
 			break;
+		case "rm_boat":
 		case "rm_init":
 		case "rm_lang":
 		case "rm_template":
@@ -99,6 +100,6 @@ function DecideRoomName() {
 		case "rm_campus_map":
 	    default:
 			global.location = "Nowhere";
-	    break;
+			break;
 	}
 }

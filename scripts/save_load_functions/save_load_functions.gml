@@ -78,10 +78,9 @@ function LoadGame() {
 function SetRoom(_location) {
 	switch (_location) {
 	    case "Dormroom":	return rm_dormroom; break;
-		case "Boat":		return rm_boat; break;
 		case "Dormitory":	return rm_dormitory; break;
 		case "Courtyard":	return rm_courtyard; break;
-		case "Restaurant":	return rm_restaurant; break;
+		case "Food Court":	return rm_restaurant; break;
 		case "School":		return rm_school; break;
 		case "Classroom":	return rm_classroom; break;
 	    default:			return rm_test; break;
