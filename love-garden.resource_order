@@ -317,6 +317,7 @@
     {"name":"spr_leaf_bg","order":6,"path":"sprites/spr_leaf_bg/spr_leaf_bg.yy",},
     {"name":"spr_map_circles","order":4,"path":"sprites/spr_map_circles/spr_map_circles.yy",},
     {"name":"rm_dormroom","order":5,"path":"rooms/rm_dormroom/rm_dormroom.yy",},
+    {"name":"fnt_day_number","order":3,"path":"fonts/fnt_day_number/fnt_day_number.yy",},
     {"name":"spr_config_btn_reset","order":8,"path":"sprites/spr_config_btn_reset/spr_config_btn_reset.yy",},
     {"name":"obj_place_restaurant","order":3,"path":"objects/obj_place_restaurant/obj_place_restaurant.yy",},
     {"name":"ChatterboxVariablesResetAll","order":10,"path":"scripts/ChatterboxVariablesResetAll/ChatterboxVariablesResetAll.yy",},

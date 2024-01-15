@@ -392,6 +392,7 @@
     {"id":{"name":"spr_leaf_bg","path":"sprites/spr_leaf_bg/spr_leaf_bg.yy",},},
     {"id":{"name":"spr_map_circles","path":"sprites/spr_map_circles/spr_map_circles.yy",},},
     {"id":{"name":"rm_dormroom","path":"rooms/rm_dormroom/rm_dormroom.yy",},},
+    {"id":{"name":"fnt_day_number","path":"fonts/fnt_day_number/fnt_day_number.yy",},},
     {"id":{"name":"spr_config_btn_reset","path":"sprites/spr_config_btn_reset/spr_config_btn_reset.yy",},},
     {"id":{"name":"obj_place_restaurant","path":"objects/obj_place_restaurant/obj_place_restaurant.yy",},},
     {"id":{"name":"ChatterboxVariablesResetAll","path":"scripts/ChatterboxVariablesResetAll/ChatterboxVariablesResetAll.yy",},},

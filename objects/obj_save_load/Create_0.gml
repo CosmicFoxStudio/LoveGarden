@@ -27,7 +27,7 @@ switch (global.lang) {
 	case "pt":
 		saveText[0] = "VAZIO";
 		saveText[1] = "Manhã";
-		saveText[2] = "Meio-Dia";
+		saveText[2] = "Meio-dia";
 		saveText[3] = "Tarde";
 		saveText[4] = "Noite";
 		saveText[5] = "Alvorada";

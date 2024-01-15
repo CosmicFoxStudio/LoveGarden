@@ -13,3 +13,4 @@
 #macro LIGHT_GREEN	0xAFFF50	// light green color
 #macro CYAN			#00eaff		// cyan color
 #macro TEXT_GREEN	#b6db89		// light green color used in dialogue text
+#macro TEXT_BROWN   #5C4033
