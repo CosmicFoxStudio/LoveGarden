@@ -10,7 +10,7 @@ yy = startY + (slotIndex * (sprite_get_height(sprite_index) * 1.2));
 	// ----------------------------- FILE DOESN'T EXIST ----------------------------- //
 if !file_exists("file_" + string(slotIndex) + ".sav") {		
 	// Drawing the text data
-	DrawSet(c_white);
+	DrawSet(TEXT_GREEN);
 	DrawAlign(fa_center, fa_middle);
 			
 	// Draws only "EMPTY"

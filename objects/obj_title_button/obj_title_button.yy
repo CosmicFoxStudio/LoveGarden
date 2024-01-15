@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_button_old",
-    "path": "sprites/spr_button_old/spr_button_old.yy",
+    "name": "spr_title_btn",
+    "path": "sprites/spr_title_btn/spr_title_btn.yy",
   },
   "spriteMaskId": null,
   "visible": true,

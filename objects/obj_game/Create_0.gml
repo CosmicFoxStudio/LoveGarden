@@ -93,7 +93,7 @@ function KeybindingCreate(_inputMode) {
 	}
 }
 
-global.inputMode = e_input.MOUSE; 
+global.inputMode = e_input.KEYBOARD; 
 global.keybind = KeybindingCreate(global.inputMode);
 // To reference: global.keybind.confirm
 
@@ -133,13 +133,16 @@ global.dialogueList = [];
 if os_browser == browser_not_a_browser {
 	// Not in browser - Load the files dynamically
 	LoadDialogueFiles();
+	show_debug_message("TEST");
 }
 else {
 	// In browser - load files manually
-	ChatterboxLoadFromFile("scenes/main_scene0_test.yarn");
+	ChatterboxLoadFromFile("scenes/main_day0_test.yarn");
 	ChatterboxLoadFromFile("scenes/main_day1_dormroom.yarn");
 	ChatterboxLoadFromFile("scenes/main_day1_dormitory.yarn");
 	ChatterboxLoadFromFile("scenes/main_day1_boat_departure.yarn");
+	ChatterboxLoadFromFile("scenes/main_day1_school.yarn");
+	//ChatterboxLoadFromFile("scenes/main_day1_classroom.yarn");
 }
 
 #endregion CHATTERBOX LOAD FILES
@@ -152,6 +155,8 @@ global.roomYarnMap[? "rm_test"	]			= "scenes/main_day0_test.yarn";
 global.roomYarnMap[? "rm_dormroom"	]		= "scenes/main_day1_dormroom.yarn";
 global.roomYarnMap[? "rm_dormitory"	]		= "scenes/main_day1_dormitory.yarn";
 global.roomYarnMap[? "rm_boat"	]			= "scenes/main_day1_boat_departure.yarn";
+global.roomYarnMap[? "rm_school"]			= "scenes/main_day1_school.yarn";
+//global.roomYarnMap[? "rm_classroom"	]		= "scenes/main_day1_classroom.yarn";
 // And so on...
 
 // ----------------------- Chatterbox Localization Build -----------------------  //

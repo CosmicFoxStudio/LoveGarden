@@ -14,7 +14,7 @@
   "For3D": false,
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c3fa3f5e-3b6d-492c-a9f3-d4dbb1efaa0c",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4539e0d3-d57b-43c9-a9bb-8b5bf6f8bf86",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e7ff562e-7658-41d7-9dc7-9b0f8d2e40b6",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -56,7 +56,7 @@
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c3fa3f5e-3b6d-492c-a9f3-d4dbb1efaa0c","path":"sprites/spr_saveslot_box/spr_saveslot_box.yy",},},},"Disabled":false,"id":"7b94c21c-c268-442b-a909-34b30d74a8dc","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"4539e0d3-d57b-43c9-a9bb-8b5bf6f8bf86","path":"sprites/spr_saveslot_box/spr_saveslot_box.yy",},},},"Disabled":false,"id":"9ae724eb-129c-4938-8a85-629b1a80e22d","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"e7ff562e-7658-41d7-9dc7-9b0f8d2e40b6","path":"sprites/spr_saveslot_box/spr_saveslot_box.yy",},},},"Disabled":false,"id":"36b2f1d2-06f6-4602-b202-b7b3649a5c1a","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

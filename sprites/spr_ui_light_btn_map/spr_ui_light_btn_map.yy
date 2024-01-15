@@ -14,14 +14,14 @@
   "For3D": false,
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"eeba7ce1-6e24-428b-8495-2a8324898e54",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9c082192-2eb0-43d0-97e4-418e13ffcff0",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4bdee92e-42d2-45a9-b635-124776a34e2c",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 64,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"02af1be9-f30f-4594-80ea-f43f56130f88","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"60556556-dd17-417c-b607-3c1ce86c9d8f","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -56,7 +56,7 @@
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"eeba7ce1-6e24-428b-8495-2a8324898e54","path":"sprites/spr_ui_light_btn_map/spr_ui_light_btn_map.yy",},},},"Disabled":false,"id":"5bd6f4cf-d1ff-45cd-bd2f-669bc85619d8","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"9c082192-2eb0-43d0-97e4-418e13ffcff0","path":"sprites/spr_ui_light_btn_map/spr_ui_light_btn_map.yy",},},},"Disabled":false,"id":"b96cd721-f21c-430f-8c92-1805337a3fb8","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"4bdee92e-42d2-45a9-b635-124776a34e2c","path":"sprites/spr_ui_light_btn_map/spr_ui_light_btn_map.yy",},},},"Disabled":false,"id":"25cadca9-7cef-4cfd-901f-ad9454f5c366","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

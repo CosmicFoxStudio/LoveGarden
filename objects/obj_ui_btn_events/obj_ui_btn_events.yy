@@ -28,10 +28,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_ui_light_btn_events",
-    "path": "sprites/spr_ui_light_btn_events/spr_ui_light_btn_events.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

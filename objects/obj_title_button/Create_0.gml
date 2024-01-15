@@ -8,4 +8,5 @@ hovering = false;
 
 // Translatable text
 btnText[e_btnTypes.PLAY] = ["START", "INICIAR"];
+btnText[e_btnTypes.HELP] = ["HELP", "AJUDA"];
 btnText[e_btnTypes.QUIT] = ["QUIT", "SAIR"];

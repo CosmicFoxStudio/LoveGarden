@@ -4,7 +4,7 @@ draw_self();
 DrawFont(fnt_dialogue);
 DrawAlign(fa_center, fa_middle);
 
-var textColor = c_white; 
+var textColor = TEXT_GREEN; 
 
 if (!unavailable) {
     // Check if the button is hovering or selected to change the text color accordingly

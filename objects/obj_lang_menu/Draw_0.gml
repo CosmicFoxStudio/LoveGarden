@@ -53,7 +53,7 @@ draw_sprite_ext(
 	);
 
 // Draw the description text inside the box
-draw_text(descriptionX, descriptionY, descriptionText);
+draw_text_color(descriptionX, descriptionY, descriptionText, TEXT_GREEN, TEXT_GREEN, TEXT_GREEN, TEXT_GREEN, 1);
 
 #endregion DESCRIPTION
 
@@ -62,7 +62,7 @@ DrawFont(fnt_dialogue);
 // Draw language options
 for (var i = 0; i < optionLength; i++) {
 
-	var c = c_white;
+	var c = TEXT_GREEN;
 	
 	// Option was selected
 	if (pos == i && phase == "CONFIRM") {
