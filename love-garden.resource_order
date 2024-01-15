@@ -43,6 +43,8 @@
     {"name":"Themes","order":3,"path":"folders/Sounds/Themes.yy",},
     {"name":"Sprites","order":12,"path":"folders/Sprites.yy",},
     {"name":"BGs","order":4,"path":"folders/Sprites/BGs.yy",},
+    {"name":"New","order":13,"path":"folders/Sprites/BGs/New.yy",},
+    {"name":"Old","order":12,"path":"folders/Sprites/BGs/Old.yy",},
     {"name":"Characters","order":5,"path":"folders/Sprites/Characters.yy",},
     {"name":"Caru","order":1,"path":"folders/Sprites/Characters/Caru.yy",},
     {"name":"Professors","order":2,"path":"folders/Sprites/Characters/Professors.yy",},
@@ -63,8 +65,6 @@
     {"name":"Config Menu","order":2,"path":"folders/UI/Config Menu.yy",},
     {"name":"Game UI","order":3,"path":"folders/UI/Game UI.yy",},
     {"name":"Lang Menu","order":1,"path":"folders/UI/Lang Menu.yy",},
-    {"name":"Old","order":12,"path":"folders/Sprites/BGs/Old.yy",},
-    {"name":"New","order":13,"path":"folders/Sprites/BGs/New.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"obj_intro","order":1,"path":"objects/obj_intro/obj_intro.yy",},

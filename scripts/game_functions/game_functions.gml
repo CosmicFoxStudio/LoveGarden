@@ -23,7 +23,15 @@ function GameBackToTitle() {
 	GameChangeState(e_gameStates.LEAVE);
 }
 
+function GameAddAction() {
+    // Get the maximum actions for the current day
+    var maxActionsForDay = global.maxActions[global.day];
 
+    // Add a new action, except if the player has reached the maximum actions for the day
+    if (global.actions[global.day] < maxActionsForDay) {
+        global.actions[global.day] += 1;
+    }
+}
 
 // Handles keyboard input for valid letters (A-Z, a-z)
 function ReceivePlayerInput(_stringToCheck) {
@@ -57,13 +65,6 @@ function ConvertDate(_date) {
 			
 	// Alternative: 
 	// date_datetime_string(date_current_datetime()) returns datetime and hour based on user system
-}
-
-function DefineStats() constructor {
-	wilting = 0;
-	growth = 0;
-	blossom = 0;
-	humor = 0;
 }
 
 function DecideRoomName() {

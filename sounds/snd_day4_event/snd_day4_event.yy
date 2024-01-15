@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "snd_title_old",
+  "name": "snd_day4_event",
   "audioGroupId": {
     "name": "audiogroup_music",
     "path": "audiogroups/audiogroup_music",
@@ -17,7 +17,7 @@
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "snd_title_old.mp3",
+  "soundFile": "snd_day4_event.mp3",
   "type": 0,
   "volume": 0.11,
 }

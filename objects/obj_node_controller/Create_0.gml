@@ -5,11 +5,14 @@ ChatterboxAddFunction("chara", CharacterOnScreen);					// Function to draw chara
 ChatterboxAddFunction("emotion", CharacterExpressionOnScreen);		// Function to change character expression
 ChatterboxAddFunction("wilting", StatsGetWilting);					// Returns wilting stats
 ChatterboxAddFunction("growth", StatsGetGrowth);					// Returns growth stats
-ChatterboxAddFunction("blossom", StatsGetBlossom);					// Returns blossom stats
+ChatterboxAddFunction("getBlossom", StatsGetBlossom);				// Returns specified SO's blossom stats
+ChatterboxAddFunction("addBlossom", StatsAddBlossom);				// Increments specified SO's blossom stats
 ChatterboxAddFunction("setFlag", FlagSet);							// Sets a value to a flag
 ChatterboxAddFunction("getFlag", FlagGet);							// Returns the value of a given flag
 ChatterboxAddFunction("save", SaveGame);							// Calls the save script from inside a yarn file
 ChatterboxAddFunction("backTitle", GameBackToTitle);				// Goes back to the title screen and changes game state
+ChatterboxAddFunction("addAction", GameAddAction);					// Increments by 1 global.action 
+ChatterboxAddFunction("assignRoute", RouteAssign);
 // Custom Chatterbox Variables
 // ChatterboxVariableDefault("player", global.playerName);			// (UNUSED) Variable to store the player's name
 

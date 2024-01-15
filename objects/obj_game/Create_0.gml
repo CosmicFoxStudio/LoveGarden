@@ -15,7 +15,25 @@ global.currentDaytime = e_daytime.MORNING;
 global.date = ConvertDate(date_current_datetime());
 global.saveSlot = 0;
 global.playerStats = new DefineStats();
-global.flags = { met_solanum: 0};
+global.actions[0] = 4;	// DAY 0 (for debug)
+global.actions[1] = 4;	// DAY 1
+global.actions[2] = 4;	// DAY 2
+global.actions[3] = 4;	// DAY 3
+global.actions[4] = 4;	// DAY 4
+global.maxActions = [0, 4, 3, 5, 4];
+global.flags = { 
+	met_solanum: 0,
+	met_hydra: false,
+	sat_with_ype: false,
+	sat_with_hydra: false,
+	stood_ype_up: false
+};
+global.routes[e_SO.YPE] = false;
+global.routes[e_SO.CARU] = false 
+global.routes[e_SO.ROSE] = false; 
+global.routes[e_SO.CLOVE] = false; 
+global.routes[e_SO.HYDRA] = false; 
+
 global.state = e_gameStates.TITLE_SCREEN;
 global.statePrevious = global.state;
 // Player Info
@@ -74,7 +92,7 @@ function KeybindingCreate(_inputMode) {
 	}
 }
 
-global.inputMode = e_input.MOUSE; 
+global.inputMode = e_input.KEYBOARD; 
 global.keybind = KeybindingCreate(global.inputMode);
 // To reference: global.keybind.confirm
 

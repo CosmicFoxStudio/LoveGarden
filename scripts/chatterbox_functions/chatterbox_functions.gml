@@ -56,16 +56,91 @@ function CharacterExpressionOnScreen(_num) {
 	obj_characters.characterExpression = _num;
 }
 
+// PLAYER STATS
 function StatsGetWilting() {
 	return global.playerStats.wilting;
 }
 
+// PLAYER STATS
 function StatsGetGrowth() {
 	return global.playerStats.growth;
 }
 
-function StatsGetBlossom() {
-	return global.playerStats.blossom;
+// SO STATS
+function StatsGetBlossom(_SOName) {
+		switch (_SOName) {
+	    case "ype":
+			return global.NPCs[e_SO.YPE].blossom;
+	    break;
+	    case "caru":
+			return global.NPCs[e_SO.CARU].blossom;
+	    break;
+	    case "rose":
+			return global.NPCs[e_SO.ROSE].blossom;
+	    break;
+	    case "clove":
+			return global.NPCs[e_SO.CLOVE].blossom;
+	    break;
+	    case "hydra":
+			return global.NPCs[e_SO.HYDRA].blossom;
+	    break;
+	    default:
+			show_debug_message("(ERROR) Incorrect SO name.");
+	    break;
+	}
+	
+	return -1;
+}
+
+
+// SO STATS
+function StatsAddBlossom(_SOName, _value) {
+		switch (_SOName) {
+	    case "ype":
+			global.NPCs[e_SO.YPE].blossom += _value;
+	    break;
+	    case "caru":
+			global.NPCs[e_SO.CARU].blossom += _value;
+	    break;
+	    case "rose":
+			global.NPCs[e_SO.ROSE].blossom += _value;
+	    break;
+	    case "clove":
+			global.NPCs[e_SO.CLOVE].blossom += _value;
+	    break;
+	    case "hydra":
+			global.NPCs[e_SO.HYDRA].blossom += _value;
+	    break;
+	    default:
+			show_debug_message("(ERROR) Incorrect SO name.");
+	    break;
+	}
+	
+	return true;
+}
+
+function RouteAssign(_SOName) {
+	switch (_SOName) {
+	    case "ype":
+			global.routes[e_SO.YPE] = true;
+	    break;
+	    case "caru":
+			global.routes[e_SO.CARU] = true;
+	    break;
+	    case "rose":
+			global.routes[e_SO.ROSE] = true;
+	    break;
+	    case "clove":
+			global.routes[e_SO.CLOVE] = true;
+	    break;
+	    case "hydra":
+			global.routes[e_SO.HYDRA] = true;
+	    break;
+	    default:
+	       show_debug_message("(ERROR) Incorrect SO name.");
+	    break;
+	}
+	return true;
 }
 
 function FlagSet(_name, _value = true) {
@@ -94,41 +169,27 @@ function processMetadata(_metadata) {
 	
 	if (once == false) {
 	    if (array_length(_metadata) > 0) {
-			/*
-	        // EXPRESSION - Index of the subimage (frame) of the character sprite (UNUSED)
-	        if (_metadata[0] != "") {
-	            CharacterExpressionOnScreen(real(_metadata[0]));
-	            once = true;
-	        }
-			*/
-			
-	        // WILTING - Adds/removes points from the "wilting" stats
+	        // WILTING - Adds/removes points from PLAYER'S "wilting" stats
 	        if (_metadata[0] != "") { 
-	            //global.playerStats.wilting = WrapInside(obj_wilting_bar.fillBar + real(_metadata[1]), 0, 10); 
-	            //obj_wilting_bar.fillBar = global.playerStats.wilting; 
+	            global.playerStats.wilting = WrapInside(obj_wilting_bar.fillBar + real(_metadata[0]), 0, 10); 
+	            obj_wilting_bar.fillBar = global.playerStats.wilting; 
 	            once = true;
 	        }
-	        // GROWTH - Add/remove points from the "growth" stats
+	        // GROWTH - Add/remove points from PLAYER'S "growth" stats
 	        if (_metadata[1] != "") { 
-	            //global.playerStats.growth = WrapInside(obj_growth_bar.fillBar + real(_metadata[2]), 0, 10); 
-	            //obj_growth_bar.fillBar = global.playerStats.growth; 
-	            once = true;
-	        }
-	        // BLOSSOM - Add/remove points from "blossom" stats
-	        if (_metadata[2] != "") { 
-	            //global.playerStats.blossom = WrapInside(obj_blossom_bar.fillBar + real(_metadata[3]), 0, 10); 
-	            //obj_blossom_bar.fillBar = global.playerStats.blossom; 
+	            global.playerStats.growth = WrapInside(obj_growth_bar.fillBar + real(_metadata[1]), 0, 10); 
+	            obj_growth_bar.fillBar = global.playerStats.growth; 
 	            once = true;
 	        }
 	        // SOUND - Enter the name of the sound asset
-	        if (_metadata[3] != "" && _metadata[3] != "0") {
-	            audio_play_sound(asset_get_index(_metadata[3]), 10, false);
+	        if (_metadata[2] != "" && _metadata[2] != "0") {
+	            audio_play_sound(asset_get_index(_metadata[2]), 10, false);
 	            once = true;
 	        }
 	        // FLAG - Enter the name of the flag
-	        if (_metadata[4] != "") {
+	        if (_metadata[3] != "") {
 				// Important: Flags are automatically set to true when used as metadata
-	            FlagSet(_metadata[4]);
+	            FlagSet(_metadata[3]);
 	            once = true;
 	        }
 	    }

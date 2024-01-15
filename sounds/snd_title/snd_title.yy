@@ -12,12 +12,12 @@
   "conversionMode": 0,
   "duration": 153.53299,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Themes",
+    "path": "folders/Sounds/Themes.yy",
   },
   "preload": false,
   "sampleRate": 44100,
   "soundFile": "snd_title.wav",
   "type": 0,
-  "volume": 0.4,
+  "volume": 0.7,
 }
