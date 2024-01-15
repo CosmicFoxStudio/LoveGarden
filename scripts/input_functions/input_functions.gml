@@ -22,6 +22,15 @@ function InputVerb(_verb, _func) {
 		case "right" : 
 			return _func(global.keybind.right);
 		break;
+		case "confirm2" :
+			return _func(global.keybind.confirm2);
+		break;
+		case "cancel2" :
+			return _func(global.keybind.cancel2);
+		break;
+		case "start2" :
+			return _func(global.keybind.start2);
+		break;
 		default: 
 			show_debug_message("Invalid input verb.");
 			return false;

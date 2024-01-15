@@ -70,6 +70,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Ype","folderPath":"folders/Sprites/Characters/Ype.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Icons","folderPath":"folders/Sprites/Icons.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Map","folderPath":"folders/Sprites/Map.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Icons","folderPath":"folders/Sprites/Map/Icons.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Screen Transitions","folderPath":"folders/Sprites/Screen Transitions.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"UI","folderPath":"folders/Sprites/UI.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Config Menu","folderPath":"folders/Sprites/UI/Config Menu.yy",},
@@ -85,7 +86,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Game UI","folderPath":"folders/UI/Game UI.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Lang Menu","folderPath":"folders/UI/Lang Menu.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Title Menu","folderPath":"folders/UI/Title Menu.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Icons","folderPath":"folders/Sprites/Map/Icons.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"pt_dialogues.csv","CopyToMask":-1,"filePath":"datafiles/lang",},

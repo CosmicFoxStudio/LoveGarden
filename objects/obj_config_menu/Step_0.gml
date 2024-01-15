@@ -68,7 +68,7 @@ if (inputting) {
 		//		break;
 		//	}
 			// Held input instead of pressed here for smooth gameplay
-			var horizontalInput = InputCheck(e_input.KEYBOARD, "confirm", "held") - InputCheck(e_input.KEYBOARD, "confirm", "held");
+			var horizontalInput = InputCheck(e_input.KEYBOARD, "right", "held") - InputCheck(e_input.KEYBOARD, "left", "held");
 			if(horizontalInput != 0) {
 				// Makes the value a floating value between 0-1 (same as 0% to 100%)
 				currentPage[menuOption[page]].param1 += horizontalInput*0.01; 
@@ -126,7 +126,7 @@ if (inputting) {
 // --------------------------------------------------------------------------------- //
 // MAKE THINGS HAPPEN (EXECUTING SCRIPTS)
 // Setting up scripts so they run and impact/change variables in the game 
-if ( InputCheck(e_input.KEYBOARD, "confirm") ) {
+if ( InputCheck(e_input.KEYBOARD, "confirm2") ) {
 	// Checks for the type
 	switch(currentPage[menuOption[page]].type) { 
 		

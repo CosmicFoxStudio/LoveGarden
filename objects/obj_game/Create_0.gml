@@ -68,7 +68,7 @@ Consoles	_______________  D-PAD
 // The gamepad device (player 1)
 global.GAMEPAD = 0;  
 
-function KeybindingDefinition(_confirm=-1, _cancel=-1, _start=-1, _up=-1, _down=-1, _left=-1, _right=-1) constructor {
+function KeybindingDefinition(_confirm=-1, _cancel=-1, _start=-1, _up=-1, _down=-1, _left=-1, _right=-1, _confirm2=-1, _cancel2=-1, _start2=-1) constructor {
 	confirm = _confirm;
 	cancel = _cancel;
 	start = _start;
@@ -76,12 +76,16 @@ function KeybindingDefinition(_confirm=-1, _cancel=-1, _start=-1, _up=-1, _down=
 	down = _down;
 	left = _left;
 	right = _right;
+	confirm2 = _confirm2;
+	cancel2 = _cancel2;
+	start2 = _start2;
 }
 
 // Config keybindings
 function KeybindingCreate(_inputMode) {
 	if (global.inputMode == e_input.MOUSE) {
-		return new KeybindingDefinition(mb_left, mb_right, mb_middle);
+		//return new KeybindingDefinition(mb_left, mb_right, mb_middle);
+		return new KeybindingDefinition(mb_left, mb_right, mb_middle, vk_up, vk_down, vk_left, vk_right, vk_space, vk_backspace, vk_enter);
 	}	
 	
 	if (global.inputMode == e_input.KEYBOARD) {
