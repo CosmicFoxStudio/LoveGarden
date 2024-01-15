@@ -30,8 +30,9 @@ switch (global.lang) {
 		break;
 }
 
-DrawReset();
-
 draw_set_halign(fa_center);
 DrawFont(fnt_menu);
 draw_text_color(120, 29, calendarDaytime, TEXT_GREEN, TEXT_GREEN, TEXT_GREEN, TEXT_GREEN, 1);
+DrawFont(fnt_dialogue);
+
+DrawReset();
