@@ -163,7 +163,7 @@ global.roomYarnMap[? "rm_school"]			= "scenes/main_day1_school.yarn";
 
 // Only uncomment this next line when there are NEW dialogue lines to be generated!!
 // (You will also need do disable sandboxing temporarily)
-// ChatterboxLocalizationBuild(global.dialogueList, [("lang/" + "en_dialogues.csv")]);
+// ChatterboxLocalizationBuild(global.dialogueList, [("lang/" + global.lang + "_dialogues.csv")]);
 // OBS: LoadLocalization() is set at rm_title's creation code
 
 // ------------------------------ TESTING ZONE ------------------------------ //
