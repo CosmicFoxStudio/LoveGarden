@@ -45,6 +45,15 @@ function CharacterOnScreen(_name) {
 	else if (_name) == "mamba" {
 		sprite = spr_fern;
 	}
+	else if (_name) == "orange" {
+		sprite = spr_orange;
+	}
+	else if (_name) == "nanne" {
+		sprite = spr_nanne;
+	}
+	else if (_name) == "cali" {
+		sprite = spr_cali;
+	}
 	else if (_name) == "void" {
 		sprite = spr_noone;
 	}
@@ -72,7 +81,7 @@ function StatsGetGrowth() {
 
 // SO STATS
 function StatsGetBlossom(_SOName) {
-		switch (_SOName) {
+	switch (_SOName) {
 	    case "ype":
 			return global.NPCs[e_SO.YPE].blossom;
 	    break;
@@ -208,7 +217,7 @@ function NextDaytime() {
 function LoadDialogueFiles() {
 	show_debug_message("Looking " + working_directory + "scenes/" + "*.yarn");
 	var fileCounter = 0;
-	var fileName = file_find_first(working_directory + "scenes/" + "*.yarn", fa_archive);
+	var fileName = file_find_first(working_directory + "scenes/" + "*.yarn", fa_none);
 	show_debug_message("File found: " + string(fileName));
 	ChatterboxLoadFromFile("scenes/" + fileName);
 	array_push(global.dialogueList, "scenes/" + fileName);

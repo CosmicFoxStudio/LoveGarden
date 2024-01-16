@@ -1,4 +1,5 @@
 /// @description Draw the character
+DrawSet(c_white, 1);
 
 if (chara != noone) {
 	draw_sprite_ext(
@@ -9,3 +10,5 @@ if (chara != noone) {
 		c_white, 1
 	);
 }
+
+DrawReset();

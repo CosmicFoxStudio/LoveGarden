@@ -16,7 +16,7 @@ global.day = 1;
 global.currentDaytime = e_daytime.MORNING;
 global.date = ConvertDate(date_current_datetime());
 global.saveSlot = 0;
-global.playerStats = new DefineStats();
+global.playerStats = DefineStats(1);
 global.actions[0] = 4;	// DAY 0 (for debug)
 global.actions[1] = 4;	// DAY 1
 global.actions[2] = 4;	// DAY 2
@@ -43,11 +43,11 @@ global.statePrevious = global.state;
 global.playerName = "PLAYER";
 global.pronouns = e_pronouns.ELU;
 global.NPCs = [];
-global.NPCs[e_SO.YPE] = new DefineStats();
-global.NPCs[e_SO.CARU] = new DefineStats();
-global.NPCs[e_SO.ROSE] = new DefineStats();
-global.NPCs[e_SO.CLOVE] = new DefineStats();
-global.NPCs[e_SO.HYDRA] = new DefineStats();
+global.NPCs[e_SO.YPE] = DefineStats();
+global.NPCs[e_SO.CARU] = DefineStats();
+global.NPCs[e_SO.ROSE] = DefineStats();
+global.NPCs[e_SO.CLOVE] = DefineStats();
+global.NPCs[e_SO.HYDRA] = DefineStats();
 global.progress = [];
 Progress();
 #region GAME CONTROLS
@@ -161,7 +161,7 @@ global.roomYarnMap[? "rm_dormroom"	]		= "scenes/main_day1_dormroom.yarn";
 global.roomYarnMap[? "rm_dormitory"	]		= "scenes/main_day1_dormitory.yarn";
 global.roomYarnMap[? "rm_boat"	]			= "scenes/main_day1_boat_departure.yarn";
 global.roomYarnMap[? "rm_school"]			= "scenes/main_day1_school.yarn";
-//global.roomYarnMap[? "rm_classroom"	]		= "scenes/main_day1_classroom.yarn";
+global.roomYarnMap[? "rm_classroom"	]		= "scenes/main_day1_classroom.yarn";
 // And so on...
 
 // ----------------------- Chatterbox Localization Build -----------------------  //
