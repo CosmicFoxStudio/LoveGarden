@@ -25,7 +25,7 @@ draw_set_alpha(1);
 // Draw Config Menu BG
 draw_sprite(spr_leaf_bg, 0, 0, 0,);
 draw_sprite(spr_ui_box_config, 0, 0, 0,);
-draw_sprite(spr_config_title, 0, 0, 0);
+//draw_sprite(spr_config_title, 0, 0, 0);
 
 //// --------------------------- Draw cursor and sprites ------------------------------ //
 //// Cursor

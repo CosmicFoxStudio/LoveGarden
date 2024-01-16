@@ -64,6 +64,32 @@ function PlaceLocalization(_savePlace) {
 	}
 }
 
+function MenuLocalization(_menuWord) {
+	switch (global.lang) {
+	case "en":
+		return _menuWord;
+		break;
+	case "pt":
+		switch (_menuWord) {
+			case "RESUME": return "CONTINUAR"; break;
+			case "SETTINGS": return "CONFIGURAÇÕES"; break;
+			case "EXIT": return "SAIR"; break;
+			case "AUDIO": return "ÁUDIO"; break;
+			case "GRAPHICS": return "GRÁFICOS"; break;
+			case "BACK": return "VOLTAR"; break;
+			case "MASTER": return "GERAL"; break;
+			case "SOUNDS": return "EFEITOS"; break;
+			case "MUSIC": return "MÚSICA"; break;
+			case "RESOLUTION": return "RESOLUÇÃO"; break;
+			case "FULLSCREEN": return "TELA CHEIA"; break;
+			default: return ""; break;
+		}
+		break;
+	default:
+		return _menuWord;
+	}
+}
+
 // Switch date order on save based on language
 function DateLocalization(_saveDate) {
 	switch (global.lang) {

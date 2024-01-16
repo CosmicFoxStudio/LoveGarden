@@ -5,8 +5,7 @@ function ExecuteButtonAction(_btnType) {
 		break;
 		
 		case e_btnTypes.HELP : 
-		//Config Menu Activation
-			ToggleContextMenu(global.state == e_gameStates.TITLE_SCREEN);
+			//Add Tutorial
 		break;
 		
 		case e_btnTypes.QUIT : 
