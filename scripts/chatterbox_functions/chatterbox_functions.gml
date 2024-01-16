@@ -27,32 +27,28 @@ function NextRoom(_room) {
 }
 
 // Function to choose character on screen
-function CharacterOnScreen(_name1, _name2 = undefined) {
-    var chara = [];
+function CharacterOnScreen(_name) {
+	var sprite = noone;
+	if (_name) == "maple" {
+		sprite = spr_maple;
+	}
+	else if (_name) == "ype" {
+		sprite = spr_ype;
+	}
+	else if (_name) == "caru" {
+		sprite = spr_caru;
+	}
+	else if (_name) == "mamba" {
+		sprite = spr_fern;
+	}
+	else if (_name) == "void" {
+		sprite = spr_noone;
+	}
+	//else {
+	//	sprite = spr_noone;
+	//}
 
-    var characterMap = {
-		"maple": spr_maple,
-		"ype": spr_ype,
-		"caru": spr_caru,
-		"rose": spr_rose,
-		"clove" : spr_clove,
-		"hydra": spr_hydra,
-        "fern": spr_fern,
-		"orange": spr_orange,
-		"nanne": spr_nanne,
-		"cali" : spr_cali,
-        "void": spr_noone
-	};
-
-    chara[0] = characterMap[$ _name1];
-
-    if (argument[1] != undefined) {
-        chara[1] = characterMap[$ _name2];
-    }
-
-    // Set the obj_characters.chara array
-    obj_characters.chara = chara;
-	obj_characters.amount = argument_count;
+	obj_characters.chara = sprite;
 }
 
 // Function to choose the character's expression to be displayed (needs improvements!!)
