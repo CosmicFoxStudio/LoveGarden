@@ -4,6 +4,7 @@ Enums();
 global.debug = false;
 global.hoveringButton = false;
 global.hoveringPlace = "";
+global.isMapOn = false;
 global.lastFontUsed = -1;
 DrawFont(fnt_dialogue); // Run the first time
 global.configMenu = noone;

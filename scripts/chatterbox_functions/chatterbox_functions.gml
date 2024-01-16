@@ -26,6 +26,10 @@ function NextRoom(_room) {
 	}
 }
 
+function SetMap(_mapBool) {
+	global.isMapOn = _mapBool;
+}
+
 // Function to choose character on screen
 function CharacterOnScreen(_name) {
 	var sprite = noone;

@@ -295,6 +295,7 @@
     {"name":"ChatterboxSourceGetTags","order":8,"path":"scripts/ChatterboxSourceGetTags/ChatterboxSourceGetTags.yy",},
     {"name":"rm_campus_map","order":9,"path":"rooms/rm_campus_map/rm_campus_map.yy",},
     {"name":"scribble_font_get_default","order":9,"path":"scripts/scribble_font_get_default/scribble_font_get_default.yy",},
+    {"name":"spr_classroom3_recolored","order":14,"path":"sprites/spr_classroom3_recolored/spr_classroom3_recolored.yy",},
     {"name":"spr_dorm_corridor","order":2,"path":"sprites/spr_dorm_corridor/spr_dorm_corridor.yy",},
     {"name":"scribble_font_bake_outline","order":4,"path":"scripts/scribble_font_bake_outline/scribble_font_bake_outline.yy",},
     {"name":"__scribble_get_krutidev_matra_lookup_map","order":12,"path":"scripts/__scribble_get_krutidev_matra_lookup_map/__scribble_get_krutidev_matra_lookup_map.yy",},

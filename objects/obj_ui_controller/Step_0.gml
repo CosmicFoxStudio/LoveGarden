@@ -11,3 +11,7 @@ if (global.state == e_gameStates.LEAVE) {
 }				 
  // Maybe put them all in an array and destroy it dynamically?
  
+if (global.isMapOn && mapButtonOn == false) {
+	instance_create_layer(560, 0, "Instances_Above", obj_ui_btn_map);
+	mapButtonOn = true;
+}
