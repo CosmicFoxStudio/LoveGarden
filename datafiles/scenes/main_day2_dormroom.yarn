@@ -1,0 +1,56 @@
+title: Morning
+---
+===
+
+title: Noon
+---
+===
+
+title: Afternoon
+---
+===
+
+title: Night
+---
+<<chara(“void”)>>
+
+Depois de algumas boas horas se esforçando pra terminar o dever da Professora Ipê, você finalmente acaba. # # #
+Você começa a preparar as coisas para amanhã, organizando os materiais que você precisa levar no dia seguinte # # #
+Depois do trabalho que deu fazer esse dever, o pior que poderia acontecer seria não levar o dever amanhã. # # #
+<<chara(“caru”)>>
+Enquanto você termina essa organização, Caru entra no quarto. # # #
+PLAYER: Eita, voltou tarde! # # #
+CARU: Ah, sim, eu estava ocupado. # # #
+PLAYER: Sem problemas! Só estava achando estranho que não te via desde ontem de manhã.  # # #
+PLAYER: Você tá sumido. # # #
+CARU: Eu sei, foi mal… Eu sei que a gente falou de sermos bons colegas de quarto quando a gente tava se mudando. # # #
+CARU: Sei que eu não estou cumprindo muito isso.. # # #
+PLAYER: Tá tranquilo! Eu lido com os seus sumiços, você lida com a minha bagunça. # # #
+CARU: Haha, e que bagunça! # # #
+PLAYER: Eu juro que isso é um caos organizado, eu sei onde tudo está. # # #
+CARU: Então se eu pedisse uma tesoura pra você agora? # # #
+PLAYER: Ha! Está no meu estojo que está na minha mochila! # # #
+Você tira o estojo da mochila, querendo provar que a tesoura estava lá. # # #
+Mas não está. # # #
+CARU: HAHAHA! Você deveria ver a sua cara! # # #
+CARU: Eu pedi emprestado semana passada, lembra? # # #
+CARU: Toma, guarda aí. # # #
+Ele te entrega a tesoura e você guarda no estojo # # #
+PLAYER: Você adora me ver cair nessas brincadeiras, não é? # # #
+CARU: Não é minha culpa, suas reações sempre são hilárias. # # #
+Ele vai pro lado dele do quarto, começando a arrumar as coisas dele. # # #
+Você nota que ele está usando as mesmas roupas de ontem. # # #
+PLAYER: Mas e aí, o que você estava tão ocupado que não podia nem me agraciar com o ar da sua presença? # # #
+CARU: Ah, eu to fazendo um projetinho com uma professora, isso tá demandando bastante. # # #
+PLAYER: Ah é? Quem? # # #
+CARU: O nome dela é Caliandra… # # #
+CARU: Ela é literalmente a mulher mais foda que eu já conheci. # # #
+CARU: Tive muita sorte de ela ter me aceito como aluno. # # #
+PLAYER: Hey, a sorte é dela de te ter como aluno! # # #
+CARU: Valeu, PLAYER! Eu realmente precisava ouvir isso. # # #
+Ele começa a organizar as coisas dele e você vai dar uma olhada nas suas redes sociais. # # #
+
+<<save()>>
+
+
+===

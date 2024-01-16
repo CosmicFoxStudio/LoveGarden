@@ -1,0 +1,39 @@
+title: Morning
+---
+<<chara(“void”)>>
+Você estava saindo do seu quarto quando alguém esbarra em você com força, quase te derrubando. # # #
+<<chara(“hydra”)>>
+<<if flag("met_hydra"=true)>>
+	PLAYER: É a menina de antes…
+<<else>>
+	PLAYER: Eu nunca vi ela antes… 
+
+PLAYER: Opa- # # #
+Ela parece estar com pressa, quase correndo até o final do corredor. # # #
+PLAYER: ... Ei! # # #
+<<chara(“void”)>>
+Você até se questiona por um instante se você não estaria <atrasado>. # # #
+Na correria ela nem percebeu que deixou cair um papel. # # #
+Você se abaixa e pega o papel. # # #
+É um desenho muito bonito e detalhado da faceta do prédio principal da universidade. # # #
+Foi feito à lápis, então você toma cuidado para segurar sem borrar. # # #
+No canto da página tem a assinatura dela “Hortênsia”. # # #
+PLAYER: (Hortênsia… Acho que vou ter que te devolver o desenho…) # # #
+Você guarda o desenho com cuidado em uma das pastas na sua mochila. # # #
+Você ouve um barulho que parece ser o barco chegando e se apressa para descer as escadas e não perder a viagem de novo. # # #
+<<save()>>
+<<nextRoom("rm_dormitory")>>
+
+
+===
+
+title: Noon
+---
+===
+title: Afternoon
+---
+===
+
+title: Night
+---
+===
