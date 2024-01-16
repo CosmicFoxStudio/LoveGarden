@@ -56,6 +56,7 @@ function PlaceLocalization(_savePlace) {
 			case "Food Court": return "Restaurante"; break;
 			case "School": return "Escola"; break;
 			case "Classroom": return "Sala de Aula"; break;
+			case "Gazebo": return "Gazebo"; break;
 			default: return "Nenhum Lugar"; break;
 		}
 		break;

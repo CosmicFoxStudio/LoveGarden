@@ -83,6 +83,7 @@ function SetRoom(_location) {
 		case "Food Court":	return rm_restaurant; break;
 		case "School":		return rm_school; break;
 		case "Classroom":	return rm_classroom; break;
+		case "Gazebo":      return rm_gazebo; break;
 	    default:			return rm_test; break;
 	}
 }
