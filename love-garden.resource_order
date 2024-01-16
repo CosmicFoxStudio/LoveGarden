@@ -67,6 +67,7 @@
     {"name":"UI","order":9,"path":"folders/UI.yy",},
     {"name":"Config Menu","order":2,"path":"folders/UI/Config Menu.yy",},
     {"name":"Game UI","order":3,"path":"folders/UI/Game UI.yy",},
+    {"name":"HelpBox","order":4,"path":"folders/UI/HelpBox.yy",},
     {"name":"Lang Menu","order":1,"path":"folders/UI/Lang Menu.yy",},
   ],
   "ResourceOrderSettings": [
@@ -145,6 +146,7 @@
     {"name":"spr_school","order":9,"path":"sprites/spr_school/spr_school.yy",},
     {"name":"ChatterboxVariablesExport","order":7,"path":"scripts/ChatterboxVariablesExport/ChatterboxVariablesExport.yy",},
     {"name":"ChatterboxStop","order":8,"path":"scripts/ChatterboxStop/ChatterboxStop.yy",},
+    {"name":"spr_helpbox","order":9,"path":"sprites/spr_helpbox/spr_helpbox.yy",},
     {"name":"spr_noone","order":6,"path":"sprites/spr_noone/spr_noone.yy",},
     {"name":"spr_mystery","order":6,"path":"sprites/spr_mystery/spr_mystery.yy",},
     {"name":"spr_dream3","order":2,"path":"sprites/spr_dream3/spr_dream3.yy",},
