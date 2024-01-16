@@ -1,0 +1,134 @@
+title: Morning
+---
+===
+
+title: Noon
+---
+A fila no refeitório quando você chega está fluindo rapidamente. # # #
+Em pouco tempo você já se senta em uma das longas mesas de almoço. # # #
+À medida em que sacia sua fome, os pensamentos ganham clareza, permitindo-lhe captar as conversas ao seu redor. # # #
+???: Você viu a primeira edição do Plantão de Notícias? # # #
+???: Eu nem sei como eles conseguiram produzir tão rápido. # # #
+???: Mas aparentemente eles estão falando de uma teoria da conspiração de que a Rosa da Arquitetura tem um pacto. # # #
+???: Que é assim que ela conseguiu as posições de liderança em todos os eventos de extensão. # # #
+???: E tem mais. Você ouviu que estão deixando ela fazer a calourada no campus?  # # #
+???: Com certeza tem marmelada nisso. # # #
+Você tem um mal pressentimento sobre essas conversas que ouviu por acaso.  # # #
+Você decide investigar a fonte desses boatos e percebe que estão surgindo de todos os lados.  # # #
+A origem se revela: um jornal impresso, com poucas páginas.  # # #
+Em letras garrafais na capa: "[cycle, 255, 143, 43, 150]Plantão de Notícias: Jornal Independente dos Estudantes de Jornalismo[/cycle]". # # #
+Abaixo está o título “Rosa envolvida com Bruxaria?” e "escrito por Lobo Solanum". # # #
+Tem uma imagem muito mal editada da Rosa com símbolos místicos. # # #
+É até um tanto desrespeitoso. Parece com aqueles tabloides sensacionalistas. # # #
+???: Isso é um absurdo! # # #
+Uma voz conhecida ecoa da entrada do RU. # # #
+Você vai até lá, em parte por causa da curiosidade, mas outra parte por preocupação. # # #
+Mais a frente, avista Rosa furiosa. # # #
+<<chara(“rose”)>>
+ROSA: É sério isso? Primeira edição do semestre? Eu aluguei um triplex na cabeça de vocês, é isso? # # #
+ROSA: E é isso que vocês chamam de jornalismo?! # # #
+Ela pressiona uma edição do jornal na frente de outro estudante. # # #
+ROSA: Eu estou a três meses organizando um evento que é pra ser legal pra todo mundo, e é isso que vocês fazem? # # #
+Do lado dela, Cravo está desesperadamente tentando apaziguar a situação. # # #
+<<chara(“clove”)>>
+CRAVO: Rosa, por favor, se acalma. Tenho certeza que não era a intenção. # # #
+<<chara(“rose”)>>
+ROSA: Quem liga pra porra da intenção? A universidade inteira está falando merda sobre mim e eu preciso aguentar calada? # # #
+ROSA: Não, eu me recuso! # # #
+ROSA: Eu não sei o que é pior, o fato de que tudo aqui dentro é um absurdo. # # #
+ROSA: Ou que de todas as pessoas nessa faculdade vocês jogaram essas acusações pra mim. # # #
+ROSA: Sei que sou alvo fácil porque todo mundo me conhece...  # # #
+ROSA: Mas ser acusada de bruxaria antes de alguém como a Hortênsia é! # # #
+Ela aponta pra Hortênsia, que também estava sentada na mesa, quieta e comendo um broto noodles. # # #
+<<chara(“hydra”)>>
+HORTÊNSIA: ?? # # #
+<<chara(“clove”)>>
+CRAVO: Também não precisa falar de outras pessoas assim, né?! # # #
+<<chara(“rose”)>>
+ROSA: Você tá de brincadeira com a minha cara! # # #
+ROSA: É sério que quando você vai abrir a boca pra defender alguém vai ser ela? # # #
+<<chara(“clove”)>>
+CRAVO: Rosa, você está sendo irracional. # # #
+<<chara(“rose”)>>
+ROSA: É claro que eu estou, é eu sendo irracional... É eu sendo histérica... # # #
+<<chara(“clove”)>>
+CRAVO: Não é isso que eu quis dizer! # # #
+CRAVO: Você não ganha nada ofendendo minha amiga! # # #
+<<chara(“rose”)>>
+ROSA: É sério que você tá defendendo ela agora? # # #
+<<chara(“clove”)>>
+CRAVO: Eu não estou defendendo ela. # # #
+<<chara(“rose”)>>
+ROSA: Pois parece que está! # # #
+<<chara(“clove”)>>
+CRAVO: Ela nem tá envolvida nisso! # # #
+<<chara(“rose”)>>
+ROSA: Ela literalmente desenha pra eles! # # #
+<<chara(“clove”)>>
+CRAVO: Vamos por favor só conversar com calma. # # #
+<<chara(“rose”)>>
+ROSA: Não! Eu cansei de ter que ser calma e ter que ficar sempre ouvindo esse tipo de coisa. # # #
+ROSA: Eles podem falar o que quiserem, espalhar o que quiserem... # # #
+ROSA: Já eu tenho que ficar caladinha no meu canto como boa moça? # # #
+ROSA: E que tipo de namorado você é, que ao invés de me apoiar, fica tentando defender eles?? # # #
+ROSA: Você até deu uma declaração pra eles! # # #
+<<chara(“clove”)>>
+CRAVO: Você sabe que não foi aquilo que eu quis dizer! # # #
+<<chara(“rose”)>>
+ROSA: Ah é? Não fica mais óbvio que:  # # #
+ROSA: "Realmente só magia pra fazer tudo que ela faz. Eu acho que até já vi alguns itens aqui e ali no quarto dela." # # #
+... "compartilhou o namorado da Presidente da Atlética de Arquitetura.” # # #
+<<chara(“clove”)>>
+CRAVO: Ei, foi só uma brincadeira! # # #
+<<chara(“rose”)>>
+ROSA: Brincadeira? Só se for pra você, Cravo! # # #
+ROSA: Ou pro Solanum que escreveu essa baboseira... # # #
+ROSA: Ou pra toda essa galera que tá se divertindo com isso. # # #
+ROSA: Mas é a minha vida em jogo... # # #
+ROSA: Eu sei que você é muito filhinho de papai pra entender o tipo de repercussão que esse tipo de boato pode causar. # # #
+ROSA: Mas esse é o tipo de coisa que pode arruinar a minha vida! # # #
+<<chara(“clove”)>>
+CRAVO: Não é pra tanto! # # #
+<<chara(“rose”)>>
+ROSA: Claro que você acha isso, te mataria ter qualquer tipo de enfrentamento na vida. # # #
+<<chara(“clove”)>>
+CRAVO: Hã? Você está sendo injusta...! # # #
+<<chara(“rose”)>>
+ROSA: Ha! Eu estou sendo injusta?  # # #
+ROSA: Mas o que está acontecendo comigo é o epítome de justiça, né?! # # #
+<<chara(“clove”)>>
+CRAVO: Não foi isso que eu quis dizer... # # #
+<<chara(“rose”)>>
+ROSA: É muito bonito como todo mundo merece ter uma chance de “ah precisamos entender o que elu realmente quis dizer”, mas eu não. # # #
+ROSA: Comigo é “você está sendo injusta”, “você está exagerando”. Eu não tenho o benefício da dúvida? # # #
+<<chara(“clove”)>>
+CRAVO: É claro que tem eu só quis dizer- # # #
+<<chara(“rose”)>>
+ROSA: Eu tenho, exceto quando você não quer me ouvir. # # #
+<<chara(“clove”)>>
+CRAVO: Rosa! Você claramente não tá bem, eu não vou continuar discutindo com você em público!  # # #
+CRAVO: Tira um tempo pra você se acalmar e a gente conversa, ok? # # #
+Cravo se vira de costas para sua namorada, começando a se afastar e falando sozinho: # # #
+<<chara(“clove”)>>
+CRAVO: "Nossa, mas como é difícil..." # # #
+<<chara(“rose”)>>
+ROSA: Vai lá, foge, é tudo que você sabe fazer quando a coisa fica difícil! # # #
+<<chara(“void”)>>
+Cravo continua indo na direção da saída da cafeteria do RU, ignorando essa última fala. # # #
+Você também não quer mais ficar na cafeteria, não é legal ficar vendo esse tipo de cena tão pública. # # #
+Seria bom dar uma olhada no Cravo também. # # #
+Você só consegue ouvir a voz da Rosa enquanto sai do RU. # # #
+<<chara(“rose”)>>
+ROSA: Se algum de vocês publicar algum vídeo do que acabou de acontecer, vocês vão ser retirados à força da calourada! # # #
+<<save()>>
+
+===
+
+title: Afternoon
+---
+===
+
+
+title: Night
+---
+===

@@ -1,0 +1,135 @@
+title: Morning
+--- 
+<<chara(“void”)>>
+Terceiro dia sem chegar <atrasado>. É um recorde pessoal. # # #
+Olhando em volta na sala, você consegue ver alguns grupos de pessoas conversando. # # #
+<<chara(“clove”)>>
+Cravo acena em sua direção, indicando para sentar perto dele. # # #
+<<chara(“ype”)>>
+Ipê também acena pra mim, porém de forma mais tímida. # # #
+<<chara(“void”)>>
+Com quem você gostaria de se sentar? # # #
+Com quem você gostaria de se sentar?
+-> Ipê
+<<chara(“void”)>>
+	Enquanto você anda até Ipê você consegue ver algumas duplas discutindo, desesperadas em relação ao trabalho. # # #
+	Você não consegue evitar um sorriso surgir nos seus lábios. # # #
+	Vocês foram inteligentes de já lidar com a primeira parte por agora. # # #
+	<<chara(“ype”)>>
+	PLAYER: Bom dia, Ipê!  # # #
+	IPÊ: Bom dia, PLAYER! # # #
+	PLAYER: Você viu como tem um pessoal mega preocupado com a entrega da atividade? # # #
+	IPÊ: Sim! Foi muito bom a gente já ter resolvido isso logo, me deixou até mais livre pras outras matérias. # # #
+IPÊ: (Especialmente a matéria de anatomia...) # # #
+	PLAYER: A gente tem que continuar assim nos próximos deveres dele. # # #
+	PLAYER: Que outras matérias você tá fazendo além das que a gente tem junto? # # #
+	IPÊ: Biologia Molecular, Histologia e Imunologia. # # #
+	PLAYER: Isso é muita coisa, como você está aguentando? # # #
+	IPÊ: Não estou… # # #
+	PLAYER: Vixe!  # # #
+	PLAYER: Pelo menos o Mamba parece ser um cara tranquilo.  # # #
+	IPÊ: Por isso que eu tô feliz de estar começando o dia com ele. # # #
+PLAYER: Pelo menos uma matéria tranquila... Embora o Cravo não iria concordar haha. # # #
+-> Cravo
+	<<chara(“clove”)>>
+	CRAVO: Hey, PLAYER! # # #
+	PLAYER: Bom dia, Cravo! # # #
+	PLAYER: E aí, conseguiu falar com seu parceiro de trabalho no final das contas, ou nem? # # #
+	CRAVO: Eu encontrei o e-mail dele. Aparentemente ele só chega semana que vem da cidade natal dele. # # #
+	CRAVO: Então eu vou ter que fazer a primeira parte do trabalho sozinho. # # #
+	PLAYER: Putz, eu tava duvidando mas parece que você é amaldiçoado mesmo… # # #
+	CRAVO: Eu tenho certeza que o Mamba pegou a lista de presença, viu quais eram os alunos que não moram na cidade ou perto e escolheu um deles pra mim. # # #
+	PLAYER: Isso faz de você ainda mais azarado então… # # #
+	CRAVO: Por que? # # #
+	PLAYER: Porque poderia ter sido eu, e você só se deu mesmo. # # #
+	CRAVO: Haha, ta se achando, é, <calouro>? # # #
+	PLAYER: Eu? Eu to falando do quanto eu gostaria de ajudar, uma pena que não rolou. # # #
+<<chara(“void”)>>
+A conversa de vocês é interrompida pela chegada do Professor Mamba na sala. # # #
+Você abre o caderno, tentando copiar o que ele fala e coloca no quadro. # # #
+Mas a lógica que Mamba usa é uma coisa única que só ele entende. # # #
+Então o seu caderno parece uma bagunça no final da aula. # # #
+Você agora entende o porque Cravo falou que essa matéria é mais difícil do que parece. # # #
+Ainda assim, vocês são liberados quarenta minutos mais cedo. # # #
+Enquanto arruma suas coisas e olha em volta… # # #
+<<chara(“cravo”)>> 
+O Cravo não parece estar tão animado para sair quanto ele estava na primeira aula. # # #
+PLAYER: (Será que está tudo bem?) # # #
+Antes que você pudesse se aproximar pra tentar perguntar se está tudo bem, uma pessoa cutuca seu ombro. # # #
+<<chara(“ype”)>>
+IPÊ: Hey, eu esqueci de fazer isso antes, mas seria bom eu ter o seu número. # # #
+IPÊ: Assim a gente consegue se comunicar mais fácil sem precisar ficar caçando um ao outro pela faculdade! # # #
+PLAYER: Ah, sim, ótimo.  # # #
+Vocês trocam os números de telefone e você se apressa pra sair da sala. # # #
+Infelizmente não tem nem sinal do Cravo por perto. # # #
+<<save()>>
+
+===
+
+title: Noon
+---
+===
+
+title: Afternoon
+---
+
+<<chara(“void”)>>
+Depois da confusão que foi o horário de almoço, você só consegue se perguntar como que você vai conseguir aguentar a aula da Nanne Ipê. # # #
+Diferente do dia anterior, Hortênsia se encontra na frente da sala.# # #
+Existe um lugar vazio entre ela e Ipê.# # #
+Você se senta nessa cadeira, suspirando. # # #
+<<chara(“hydra”)>>
+HORTÊNSIA: Que que foi esse almoço, né? # # #
+<<chara(“ype)>>
+IPÊ: Que confusão… Fico feliz de não estar envolvide. # # #
+PLAYER: Queria poder dizer o mesmo, mas infelizmente eu vi de camarote. # # #
+<<chara(“hydra”)>>
+HORTÊNSIA: Você falou com o Cravo né? Como ele tá? # # #
+PLAYER: Bem ele não tá, mas acho que ele vai tirar o resto do dia pra ficar melhor. # # #
+HORTÊNSIA: Vou ter que ver se consigo falar com ele em algum momento… # # #
+HORTÊNSIA: Eu nunca ia me meter com a Rosa ali no meio, mas ele ainda é meu amigo, sabe? # # #
+<<chara(“ype)>>
+IPÊ: Deve ser difícil… # # #
+PLAYER: O que? # # #
+IPÊ: Ah… Eu acabei pensando em voz alta… # # #
+IPÊ: Mas a namorada do seu amigo não gostar de você. # # #
+<<chara(“hydra”)>>
+HORTÊNSIA: Não é pra tanto… # # #
+<<chara(“msipe”)>>
+Ela ia continuar falando, mas Nanne Ipê chega na sala.  # # #
+Mesmo com toda a imposição da professora, a conversa demora a sumir na sala, definitivamente o almoço continua fresco na mente de todos. # # #
+NANNE: A aula de hoje vai ser uma dinâmica um pouco diferente, eu vou passar na cadeira de cada um e instruir pontos certos e errados de como vocês conduziram a atividade. # # #
+NANNE: Enquanto isso, vocês farão uma atividade de estudo dirigido. # # #
+Ela está com uma pilha de folhas na mão. # # #
+NANNE: Respondam essas perguntas no caderno de vocês usando como base o livro da disciplina, ao final da aula, eu vou fazer perguntas associadas ao estudo dirigido e aqueles que responderem corretamente ganharão nota extra. # # #
+<<chara(“void”)>>
+Ela entrega o papel e você tenta ao máximo se concentrar na atividade. # # #
+Os minutos vão passando e você não consegue avançar muito nas perguntas. # # #
+<<chara(“msipe”)>>
+A Professora Nanne chega na sua mesa. # # #
+NANNE: PLAYER, certo? # # #
+PLAYER: AH, sim, aqui. # # #
+Você mostra o dever que você fez pra ela. # # #
+NANNE: Hm, aceitável. # # #
+Ela escreve algo na prancheta dela e segue em frente. # # #
+PLAYER: (Espero que tenha sido o bastante.) # # #
+<<chara(“ype”)>>
+Ela segue pra mesa de Ipê, que está claramente nervose. # # #
+PLAYER: (Espero que Ipê tenha conseguido fazer sei muito problema.) # # #
+<<chara(“void”)>>
+Você eventualmente chega no fim do roteiro. # # #
+<<chara(“msipe”)>>
+Bem a tempo da Nanne Ipê voltar para a frente da sala e começar a fazer perguntas. # # #
+Outras pessoas se voluntariam pra responder, as vezes ela chamava um nome de alguém específico. # # #
+Um sentimento de alívio percorre seu corpo quando ela acaba as perguntas e não chama o seu nome. # # #
+Graças a conferência da atividade, ela não precisa fazer chamada. # # #
+<<chara(“void”)>>
+Você se direciona pra sair da sala de aula. # # #
+
+<<save()>>
+
+===
+
+title: Night
+---
+===

@@ -1,0 +1,167 @@
+title: Morning
+---
+===
+
+title: Noon
+---
+
+<<chara(“void”)>>
+Enquanto você caminha pelo pátio para entrar no RU, você acaba vendo Hortênsia extremamente focada no caderno dela. # # #
+O que você quer fazer?  # # #
+O que você quer fazer?
+-> Eu to morrendo de fome e ela está concentrada, não vou incomodá-la
+	Você continua sua caminhada até o RU. # # #
+	Quando você se lembra do desenho dela na sua mochila que você tinha que entregar, já é tarde demais. # # #
+-> Não faz mal dar um oi, né?
+	Você se aproxima dela sem muita pressa, dando tempo de ela reparar sua presença. # # #
+	HORTÊNSIA: Ah, PLAYER, que coincidência te ver aqui! # # #
+	PLAYER: Você está no pátio na hora do almoço, eu dificilmente chamaria isso de coincidência. # # #
+	HORTÊNSIA: Bom, eu sempre acho que é importante pensar nos motivos de força maior que te levam a encontrar com as pessoas.  # # #
+	HORTÊNSIA: Seja coincidência ou destino, algo guia a gente. # # #
+	PLAYER: Hm, destino? Eu gosto de pensar que a gente pode fazer nossas próprias escolhas. # # #
+	HORTÊNSIA: Oh, mas nós podemos, os destinos são infinitos! # # #
+	HORTÊNSIA: Esse destino ditou que você viesse falar comigo, talvez em outro você não viesse. # # #
+	Você se senta ao lado dela e aponta para o desenho. # # #
+	PLAYER: Posso ver? # # #
+	HORTÊNSIA: Hm, eu não gosto muito de mostrar desenhos inacabados para outra pessoa. # # #
+	Essa conversa te lembra do desenho na sua pasta. # # #
+	PLAYER: Sinto muito, mas essa preferência já falhou comigo. # # #
+	HORTÊNSIA: Oi? # # #
+	Você começa a caçar sua pasta na sua mochila. # # #
+	Tirando ela lá de dentro e pegando o desenho. # # #
+	PLAYER: Ontem de manhã, quando a gente se esbarrou, você deixou cair! # # #
+	HORTÊNSIA: Meu deus eu tava procurando por isso desesperadamente! # # #
+	PLAYER: Toma, foi mal não ter devolvido antes. # # #
+	Você estende o desenho pra ela, mas ela não pega. # # #
+	HORTÊNSIA: Pode ficar. # # #
+	PLAYER: Oi? Porque? # # #
+	HORTÊNSIA: Você achou e cuidou do desenho e até tentou me devolver… # # #
+	HORTÊNSIA: Eu vejo a consideração que você tem pela minha arte. # # #
+	HORTÊNSIA: Pensa como se fosse um presente de começo de amizade. # # #
+	PLAYER: Não éramos amigos antes? # # #
+	HORTÊNSIA: Somos mais amigos agora. # # #
+	PLAYER: Okay, eu prometo guardar com carinho. # # #
+	O desenho volta para a segurança da pasta. # # #
+	Você e a Hortênsia ainda se falam mais um pouco. # # #
+	Mas sua fome se faz presente e você se despede dela, indo em direção ao RU. # # #
+
+Você entra no RU # # #
+<<save()>>
+
+===
+
+title: Afternoon
+---
+<<chara(“void”)>>
+Respirando um pouco de ar fresco, você consegue ver o Cravo correndo pra longe do RU. # # #
+O que você quer fazer? # # #
+O que você quer fazer?
+-> É melhor eu não me meter nesses assuntos de casal.
+	PLAYER: (É melhor dar espaço pra ele se recompor.) # # #
+	PLAYER: (Tenho certeza que ele não vai curtir se começarem a surgir pessoas querendo se intrometer) # # #
+	Você resolve utilizar o tempo até a próxima aula pra revisar um pouco da matéria. # # #
+
+-> Eu vou atrás do Cravo, meu amigo precisa de ajuda agora.
+	<<chara(“cravo”)>>
+Você continua indo atrás do Cravo, <preocupado> com o paradeiro dele após a confusão no RU. # # #
+Ele eventualmente para de correr.  # # #
+Você percebe o quanto ele está exposto no meio do pátio e se aproxima. # # #
+Ao tentar conduzir ele para uma área um pouco menos exposta do pátio, você se depara com pouca resistência. # # #
+PLAYER: Okay, respira fundo, vai ficar tudo bem. # # #
+CRAVO: Por algum motivo, eu duvido disso. # # #
+PLAYER: Hey, você está conseguindo me responder pelo menos. # # #
+CRAVO: Isso é bom? # # #
+	PLAYER: Melhor do que acabar não conseguindo falar. # # #
+	CRAVO: Se você diz… # # #
+	CRAVO: Então você viu a situação lá no RU. # # #
+	PLAYER: Ahn, sim… # # #
+	Ele esconde o rosto nas mãos, soltando um suspiro. # # #
+	CRAVO: Eu estou tão envergonhado. # # #
+	PLAYER: Não precisa ficar assim… # # #
+	CRAVO: Não é nem que eu tô com vergonha, é mais… Eu queria que não fosse tão público. # # #
+	PLAYER: O que exatamente? # # #
+	CRAVO: Eu e a Rosa… Eu… A gente sempre tenta dar nosso máximo para parecer bem em público. # # #
+	CRAVO: Não é legal ficar levando aspectos privados do nosso relacionamento a público. # # #
+	CRAVO: Ela odeia isso e eu também… # # #
+	CRAVO: E as coisas já não estavam indo bem há algum tempo. # # #
+	CRAVO: Essa situação toda só vai deixar tudo mais difícil. # # #
+	PLAYER: Como assim? # # #
+	CRAVO: É só… as nossas discussões também são meio brutais quando a gente está sozinho. # # #
+	CRAVO: Mas pelo o menos o nosso objetivo é sempre o mesmo. # # #
+	CRAVO: O nível da discussão que a gente acabou de ter não é o nosso normal. # # #
+	CRAVO: E se a gente estivesse sozinho, teria sido mais fácil, a gente teria conseguido se acalmar e se falar. # # #
+	PLAYER: Realmente é um ambiente de estresse maior, em frente a tanta gente. # # #
+	CRAVO: Com certeza. # # #
+	CRAVO: Mas é nesses momentos de maior estresse que a gente aprende mais, sabe? # # #
+	É difícil ver o Cravo com esse tipo de expressão de preocupação.  # # #
+	Ele geralmente é tão despreocupado e brincalhão. # # #
+	Como você acha que pode ajudar ele? # # #
+	Como você acha que pode ajudar ele?	
+-> Eu acho que vocês realmente precisam sentar pra conversar se você quiser resolver essa situação.
+		PLAYER: O que aconteceu lá no RU definitivamente não era só aquela situação. # # #
+		PLAYER: Ela deve estar passando por outras coisas também… # # #
+CRAVO: Eu sei! # # #
+CRAVO: E eu quero tentar, eu juro que quero, mas é tão difícil. # # #
+PLAYER: Eu não sou profissional quando se trata de relacionamentos. # # #
+PLAYER: Mas até onde eu sei, nenhum relacionamento é para ser fácil. # # #
+PLAYER: O que determina se um relacionamento é "bem sucedido" não é nunca ter nenhum conflito. # # #
+PLAYER: É como que vocês fazem pra lidar com esses conflitos. # # #
+PLAYER: É claro que no fim vai depender do que vocês dois querem. # # #
+PLAYER: E você tem que pensar no que você quer também. # # #
+CRAVO: Eu realmente amo ela, de verdade, PLAYER… # # #
+PLAYER: Ei, eu acredito em você. # # #
+PLAYER: E eu tenho certeza que ela quer muito saber tanto quanto eu sei. # # #
+-> Talvez seja hora de pensar se é isso mesmo que você quer pra você.
+		CRAVO: Essa é uma questão tão complicada… # # #
+		CRAVO: Se você estivesse me perguntando do nosso relacionamento nos melhores momentos, a resposta seria sim, com certeza. # # #
+		CRAVO: Mas a gente tem tão pouco desses melhores momentos... # # #
+		CRAVO: E eu amo ela, sabe? # # #
+		PLAYER: Mas até quando o amor sozinho aguenta? # # #
+		CRAVO: Não é assim que deveria ser? Vocês se amam e tudo dá certo? # # #
+		PLAYER: Não, não... O amor sozinho não sustenta uma vida. # # #
+		PLAYER: Amor é só o começo, depois do amor vem comunicação, companheirismo, compreensão e muitas outras coisas. # # #
+		PLAYER: Amor sozinho não sustenta o que é ser duas pessoas diferentes, você precisa de sabedoria também. # # #
+	CRAVO: Isso tudo é tão difícil. # # #
+	PLAYER: O que que faz isso ser tão mais complicado pra você? # # #
+	CRAVO: É porque eu entendo ela, sabe? # # #
+	CRAVO: Eu sei o quão ocupada ela é, eu sei o quanto ela sempre está se esforçando ao máximo pras coisas da faculdade. # # #
+	CRAVO: E parte de mim não consegue evitar sentir ciúmes. # # #
+	CRAVO: Por que ela dedica muito mais da atenção e tempo dela pra esses projetos. # # #
+	CRAVO: E eu me sinto deixado de lado, sabe? # # #
+	PLAYER: E você já falou isso pra ela? # # #
+CRAVO: Não… Eu não quero me tornar mais um peso pra ela, sabe? # # #
+CRAVO: Mais um problema na vida dela... # # #
+CRAVO: E chega até a ser patético. # # #
+CRAVO: Sabe o que é a gente estar juntinho vendo um filme... # # #
+CRAVO: Daí o telefone dela toca, e ela tem que se ausentar... # # #
+CRAVO: Pra ir resolver mais uma das trocentas coisas que precisa da atenção dela. # # #
+CRAVO: E eu sentir ciúmes do que quer que ela esteja lidando? # # #
+CRAVO: Esses projetos quase matam ela, e eu sinto ciúmes de algo que faz ela se sentir mal! # # #
+PLAYER: Ou, ou, vai com calma, eu tenho certeza que zero parte de você realmente quer fazer ela se sentir mal. # # #
+CRAVO: Do que importa minhas intenções se eu machuco ela de qualquer forma? # # #
+PLAYER: Mas você não está machucando ela... # # #
+PLAYER: Você só quer ser o que ocupa a atenção dela, isso não é nenhum crime. # # #
+PLAYER: E você precisa perceber que alguns desses sentimentos são menos sobre a Rosa e mais sobre você. # # #
+CRAVO: Oh, eu não tinha pensado dessa forma… # # #
+CRAVO: Putz, você fez eu ter que refletir algumas coisas agora. # # #
+PLAYER: Bom, espero pelo menos ter ajudado um pouco. # # #
+CRAVO: Você foi incrivel, PLAYER. # # #
+CRAVO: Eu não tenho ideia do que estaria fazendo se não estivesse falando contigo. # # #
+CRAVO: *suspiro* Isso tudo me deixou mega cansado. # # #
+PLAYER: Eu entendo, e eu nem estava <envolvido>. # # #
+CRAVO: Qual a chance de eu te convencer a matar aula comigo? # # #
+PLAYER: Zero, meu próximo horário é Nanne Ipê. # # #
+CRAVO: Oof, melhor você não faltar. # # #
+CRAVO: Eu acho que vou pra casa mesmo… # # #
+PLAYER: Aproveita e descansa. # # #
+Cravo vai embora melhor do que quando saiu do RU, mas ainda cabisbaixo. # # #
+Quando você se dá conta do horário, percebe que é bom já começar a se mexer. # # #
+Você não quer descobrir o que Nanne Ipê faz com alunos que chegam atrasados na aula dela. # # #
+
+<<save()>>
+===
+
+
+title: Night
+---
+===

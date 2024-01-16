@@ -1,0 +1,100 @@
+title: Morning
+---
+
+<<chara(“void”)>>
+Já que o Professor Mamba liberou vocês mais cedo hoje, você resolveu passear um pouco pela escola. # # #
+Você nunca tinha parado pra realmente observar o local antes. # # #
+Mas é realmente bonito. # # #
+Você anda um pouco até ver uma figura reconhecível sentada em um banco. # # #
+<<chara(“rose”)>>
+É a Rosa, ela está com os cotovelos apoiados nas pernas e o rosto escondido entre as mãos. # # #
+-> Acho melhor eu não interromper…
+	PLAYER: (O que quer que seja, ela veio para cá para ficar longe de outras pessoas.) # # #
+PLAYER: (É melhor dar privacidade a ela.) # # #
+Você caminha pra direção do gazebo em que ela não está.	 # # #
+-> Ela provavelmente precisa de algum tipo de apoio no momento.
+	Seus passos são lentos enquanto você se aproxima dela. # # #
+	Ela levanta a cabeça ao perceber alguém por perto. # # #
+	Rosa: Ah… Oi, PLAYER. # # #
+	O rosto dela tem vestígios de choro e ela tenta forçar um sorriso e falha. # # #
+	PLAYER: Desculpa se eu estiver invadindo ou algo assim. # # #
+	ROSA: Ah, não, não, está tudo bem. # # #
+	PLAYER: Claramente não está tudo bem.  # # #
+	PLAYER: E tudo bem se não estiver tudo bem. # # #
+	ROSA: *suspiro* Não está tudo bem. # # #
+	PLAYER: E esse é o primeiro passo pra resolver o problema. # # #
+	PLAYER: É pra isso que eu vim aqui, pra tentar ajudar. # # #
+	Você se senta do lado dela, mantendo sua distância, mas colocando uma mão no ombro dela de apoio. # # #
+	PLAYER: O que está acontecendo? # # #
+	ROSA: Muitas coisas, o tempo todo. # # #
+	ROSA: A gente acabou de voltar de férias, mas eu sinto como se eu não tivesse descansado nenhum pouco. # # #
+	ROSA: É foda porque durante os semestre eu me entupo de coisa pra fazer. # # #
+	ROSA: Atlética, Centro Acadêmico, Empresa Júnior, Monitoria, eu saio de um e pego outro e o trabalho nunca acaba. # # #
+	ROSA: E como eu passo tanto tempo ocupada durante o semestre, o Cravo sempre quer muito da minha atenção durante as férias. # # #
+	ROSA: A gente sempre está saindo ou estamos juntos na casa de um ou do outro. # # #
+	ROSA: E começo a sentir que o meu relacionamento acaba sendo mais uma responsabilidade. # # #
+	ROSA: E ele sempre é tão claro com o fato de que eu estou falhando com essa responsabilidade. # # #
+	ROSA: Mas eu não posso simplesmente falar pra ele me deixar em paz pra eu ter um pouco de tempo livre. # # #
+	ROSA: E eu não posso abandonar os projetos de extensão. # # #
+	ROSA: E ele não entende, sabe? # # #
+	ROSA: Esse tipo de coisa é o que vai fazer diferença quando a gente sair daqui e for pro mundo real. # # #
+	ROSA: Eu preciso sair daqui com um emprego engatado, eu preciso de dinheiro. # # #
+	ROSA: E ele não entende! # # #
+	Ela respira fundo, tentando ao máximo não chorar. # # #
+	Você passa um dos braços pelos ombros dela, em um abraço de lado. # # #
+	Não é legal ver a Rosa assim, o que você quer fazer? # # #
+	Não é legal ver a Rosa assim, o que você quer fazer?
+	-> Consolar ela.
+		PLAYER: Olha, eu não vou falar que eu entendo… # # #
+		PLAYER: Porque a única pessoa que sabe exatamente o que você está passando é você. # # #
+		PLAYER: Mas pelo que eu percebo tem muitos sentimentos relacionados a várias coisas diferentes ai. # # #
+		PLAYER: E eles estão misturados em meio a vários sentimentos negativos. # # #
+		PLAYER: Eu não consigo decidir por você… # # #
+		PLAYER: Mas é importante que você pare um pouco e pense no que realmente é importante pra você. # # #
+		PLAYER: E deixar de lado aquilo que está causando mais estresse do que retorno. # # #
+		ROSA: Você provavelmente tem razão. # # #
+		PLAYER: Sobre você e o Cravo…. # # #
+		ROSA: Foi mal, eu sei que vocês dois são amigos, é injusto eu jogar tudo isso em você… # # #
+		PLAYER: Não! Tudo bem! O que eu ia falar é que eu não faço parte do relacionamento de vocês. # # #
+		PLAYER: Mas acho que seria importante vocês dois conversarem sobre o que cada um de vocês quer. # # #
+		ROSA: Não é fácil…  # # #
+		PLAYER: Eu imagino que não, mas é importante. # # #
+		ROSA: Eu só não quero desapontar ninguém. # # #
+		PLAYER: Bom… Eu não sei se isso vale de alguma coisa, mas eu te garanto que você não me desapontou. # # #
+
+	-> Animá-la.
+		PLAYER: Eu mal posso imaginar o quão difícil isso está sendo pra você, mas é importante pra mim que você entenda que não é isso que te define. # # #
+		PLAYER: Agora está complicado com tudo isso, mas nada disso apaga o quanto você é incrível. # # #
+		PLAYER: Sério, eu juro que eu não tenho ideia de como você faz tudo que você faz. # # #
+		PLAYER; Não só por que é muita coisa, mas por que tudo que você faz fica incrível. # # #
+		PLAYER: Você é incrível, você é esforçada e dá pra ver o quanto você se doa para as coisas que você é apaixonada. # # #
+		PLAYER: Eu nunca conheci ninguém tão capaz quanto você, de verdade. # # #
+		Ela te direciona um pequeno sorriso. # # #
+		
+	ROSA: Você é uma boa pessoa, PLAYER… # # #
+	PLAYER: Ah, que isso, é o mínimo. # # #
+	ROSA: Não é não. Obrigada, de verdade. # # #
+	ROSA: Acho que agora só me resta pensar bastante e tentar resolver essas situações. # # #
+	PLAYER: Hey, se precisar de alguém pra conversar, estou sempre aqui. # # #
+	Ela te dá um abraço apertado antes de se levantar. # # #
+	ROSA: Preciso limpar o rosto e comer alguma coisa. # # #
+	ROSA: A gente se vê por aí! # # #
+	Ela vai embora, parecendo pelo menos um pouco melhor do que quando você encontrou ela. # # #
+	Você sorri meio triste para si mesmo, feliz que conseguiu ajudar e triste por toda essa situação. # # #
+Você fica pensativo enquanto sai do gazebo. # # #
+Mas seu estômago ronca e você entende isso como um sinal do universo para não pensar demais de barriga vazia. # # #
+<<save()>>
+===
+
+title: Noon
+---
+===
+
+title: Afternoon
+---
+===
+
+
+title: Night
+---
+===
