@@ -42,7 +42,16 @@ function CharacterOnScreen(_name) {
 	else if (_name) == "caru" {
 		sprite = spr_caru;
 	}
-	else if (_name) == "mamba" {
+	else if (_name) == "rose" {
+		sprite = spr_rose;
+	}
+	else if (_name) == "clove" {
+		sprite = spr_clove;
+	}
+	else if (_name) == "hydra" {
+		sprite = spr_hydra;
+	}
+	else if (_name) == "fern" {
 		sprite = spr_fern;
 	}
 	else if (_name) == "orange" {
@@ -66,7 +75,8 @@ function CharacterOnScreen(_name) {
 
 // Function to choose the character's expression to be displayed (needs improvements!!)
 function CharacterExpressionOnScreen(_num) {
-	array_push(obj_characters.characterExpression, _num);
+	obj_characters.characterExpression = _num;
+	//array_push(obj_characters.characterExpression, _num);
 }
 
 // PLAYER STATS
@@ -170,7 +180,7 @@ function FlagSet(_name, _value = true) {
 function FlagGet(_name) {
     // Check if the flag exists before attempting to retrieve its value
     if (struct_exists(global.flags, _name)) {
-        return global.flags[_name];
+        return global.flags[$ _name];
     } else {
         // Flag doesn't exist
         return undefined;

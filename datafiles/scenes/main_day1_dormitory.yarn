@@ -27,7 +27,7 @@ You only have to wait... What do you do now? # # # #line:83d7e5
     <<addAction()>>
     (YOU JUST EARNED A BONUS ACTION![spr_action])[snd_click1] #line:416827
     You have to wait anyway; it's better to talk to someone to pass the time. # # # #line:bae562
-    PLAYER: Not to be <intrusive>, but it's quite a coincidence that your name is the same as the dormitory. # # # #line:c20819
+    PLAYER: Not to be intrusive, but it's quite a coincidence that your name is the same as the dormitory. # # # #line:c20819
     MR. ORANGE: Haha! That's not a coincidence, young one! I've been the supervisor of this dormitory since it was built. # # # #line:3ffdcf
     PLAYER: But that was, like, a long time ago, right? # # # #line:14c3e7
     PLAYER: (Oh my god, I called him old). # # # #line:72266d
@@ -43,6 +43,7 @@ You only have to wait... What do you do now? # # # #line:83d7e5
     PLAYER: See you later, Mr. Orange! # # # #line:01b874
     You wave to him as you leave the dormitory, heading towards the boat. # # # #line:06f5f5
 -> Wait for the boat outside. #line:5b1185
+    <<chara("void")>>
     It's better to make sure you don't miss the third boat. # # # #line:00912c
     You go outside the building, sitting on one of the waiting benches for the boat. # # # #line:ccca5b
     There's a girl drawing on one of the other benches. # # # #line:65794c
@@ -62,7 +63,7 @@ You only have to wait... What do you do now? # # # #line:83d7e5
         (YOU JUST EARNED A BONUS ACTION![spr_action])[snd_click1] #line:5092f9
         You can't take your eyes off the drawing. # # # #line:72e405
         To the point that the girl gives you a quick look with raised eyebrows. # # # #line:df7bd3
-        You look away, feeling your face heat up for getting <caught>. # # # #line:2b1dd7
+        You look away, feeling your face heat up for getting caught. # # # #line:2b1dd7
         Soon, the third boat starts to approach. # # # #line:52962f
 PLAYER: (Thank goodness everything worked out...) # # # #line:c83b07
 You board the boat. # # # #line:dc01da

@@ -15,9 +15,10 @@ O garoto sentado do seu lado fala alto o bastante para toda a sala ouvir. # # #
 MAMBA: Professor Mamba, obrigado, Cravo. # # #
 MAMBA: Eu vou ser o professor de Introdução à Ecologia de vocês. # # #
 MAMBA: A minha matéria vai ser fundamental para vocês nos próximos semestres. # # #
+<<chara("void")>>
 O Professor Mamba continua a explicação sobre como a matéria dele vai funcionar. # # #
 Do seu lado, Cravo estava ignorando completamente o que o professor dizia. # # #
-E um olhar rápido pra trás, você vê Ipê anotando cada palavra que o professor falava. # # #
+Em um olhar rápido pra trás, você vê Ipê anotando cada palavra que o professor falava. # # #
 Enquanto escreve, você consegue ouvir um murmúrio. # # #
 <<chara("clove")>>
 CRAVO: E vocês serão atribuídos parceiros que já foram escolhidos previamente. # # #
@@ -31,33 +32,40 @@ MAMBA: E lista de presença como referência, mas devem ter desistências até o
 CRAVO: ... levantem a mão... # # #
 <<chara("fern")>>
 MAMBA: Quando eu chamar seu nome e o de sua dupla, levantem a mão, # # #
-<<chara("cravo")>>
+<<chara("clove")>>
 Você se inclina para sussurrar para o Cravo sem atrapalhar a aula. # # #
 PLAYER: (Como que você sabia exatamente o que ele ia falar?) # # #
 CRAVO: Ele falou exatamente a mesma coisa nos últimos dois semestres. # # #
 PLAYER: E como você sabe disso? # # #
+<<emotion(1)>>
 CRAVO: É a terceira vez que eu estou pegando essa matéria... # # #
 PLAYER: Essa matéria é tão pesada assim? # # #
 CRAVO: É a pior de todas, o Mamba é um dos maiores carrascos do departamento. # # #
+<<emotion(0)>>
 <<chara("fern") >>
 Você volta a olhar pro professor, tentando tirar suas próprias conclusões. # # #
 Você volta a olhar pro professor, tentando tirar suas próprias conclusões. # # #
 -> Para mim ele só parece um velhinho indefeso. # # #
 	<<chara("clove")>>
+	<<emotion(1)>>
 	PLAYER: Ele pode só ser um pouco rabugento. # # #
+	<<emotion(0)>>
 	CRAVO: Bom, isso eu até entendo. Se eu fosse brega assim eu também seria infeliz. #1 # #
 	PLAYER: Wow, você realmente não gosta do velho. # # #
     PLAYER: Chega a ser um nível de ódio que realmente só alguém que passou por duas reprovações entenderia. # # #
+	<<emotion(1)>>
 	CRAVO: Vamos ver como você vai estar no final do semestre. #1 # #
 	PLAYER: Hey, dizem que a terceira vez dá sorte. # # #
+	<<emotion(0)>>
 -> Eu consigo ver o que você diz. # # #
     <<addBlossom("cravo")>>
-    <<if hidratacao() == 10>>
 	PLAYER: Ainda mais depois do jeito que ele falou comigo agora a pouco. #1 # #
+	<<emotion(1)>>
 	CRAVO: Ele não tem a menor sensibilidade, mesmo que a maioria da turma seja caloura. # # #
 	PLAYER: É por causa de pessoas como ele que tem gente que odeia biologia. # # #
 	CRAVO: Err, Ecologia não é lá a matéria mais legal. # # #
 	PLAYER: Você tá brincando! É uma das matérias que eu mais estava <ansioso> pra ter. # # #
+	<<emotion(0)>>
 	CRAVO: Entomologia é muito mais massa, espera seu próximo semestre. # # #
 <<chara("fern")>>
 MAMBA: PLAYER e Ipê! # # #
@@ -69,6 +77,66 @@ MAMBA: Vocês vão ficar com o tema de "Animais do mundo Plantae". # # #
 	CRAVO: Você pegou o melhor tema! # # #
 	CRAVO: Faz eu desejar que a gente tivesse sido parceiro. # # #
 	Você sorri de leve pro Cravo antes de ir atrás de Ipê. # # #
-<<else>>
-    <<chara("ype")>>
+<<endif>>
+<<chara("ype")>>
+Eu me viro pre Ipê, me sentindo <aliviade> por pelo menos ser alguém que eu mais ou menos conheço. # # #
+Eu aceno na direção delu e elu acena de volta, parecendo nervose. # # #
+<<chara("fern")>>
+Professor Mamba termina de anunciar as duplas. # # #
+MAMBA: Por hoje vai ser isso! # # #
+O professor olha em direção ao relógio. # # #
+MAMBA: Ótimo, vou conseguir chegar pro almoço do departamento! # # #
+<<chara("void")>>
+PLAYER: (Todo meu desespero hoje de manhã pra menos de uma hora de aula.) # # #
+<<chara("clove")>>
+Cravo já estava com tudo guardado, pronto pra sair. # # #
+PLAYER: Eita! Peraí, como você guardou seu material tão rápido? # # #
+CRAVO: Material? Que material? # # #
+PLAYER: Ha ha. Não vai nem se encontrar com sue parceire de grupo? # # #
+<<emotion(1)>>
+CRAVO: Naum, ele aparentemente não veio hoje... # # #
+CRAVO: É o segundo semestre que meu parceiro de grupo não aparece... # # #
+CRAVO: O velho tá totalmente me marcando... # # #
+PLAYER: Não é pra tanto, vai. # # #
+PLAYER: Por sinal, você tem alguma dica pra calouro de primeira viagem? # # #
+CRAVO: Não deixe acumular e reza pro seu parceiro aparecer. # # #
+CRAVO: Agora, se você me der licença, eu tenho que ir reclamar dessa aula pra outra pessoa. # # #
+PLAYER: Ah, é? E quem terá o prazer de te ouvir pela terceira vez? # # #
+<<emotion(0)>>
+CRAVO: Minha incrível namorada. # # #
+CRAVO: Ela até fez a matéria semestre passado pra ver o quão ruim realmente era. # # #
+PLAYER: E pra ela não estar aqui esse semestre... Ela desistiu ou passou? # # #
+<<emotion(1)>>
+CRAVO: Ela passou... # # # 
+CRAVO: Não que ela me deixe esquecer que ela passou e eu não. # # #
+PLAYER: Haha, pelo menos ela vai te entender melhor que ninguém. # # #
+<<emotion(0)>>
+CRAVO: Até, PLAYER! # # #
+PLAYER: A gente se vê por aí. # # #
+<<chara("void")>>
+Cravo vai embora de vez e eu me levanto pra ir atrás de Ipê. # # #
+Apenas para encontrá-le bem do lado da minha cadeira. # # #
+<<chara("ype")>>
+IPÊ: Perdão, eu não queria interromper... # # #
+PLAYER: Relaxa! Eu só tava tentando conseguir algumas dicas. # # #
+PLAYER: Ele já fez essa matéria outras vezes. # # #
+IPÊ: Oh... Descobriu algo útil?
+PLAYER: Nada demais, não procrastinar e tals... # # #
+PLAYER: Ter une parceire que ajude... # # #
+IPÊ: Ah... # # #
+Juntes vocês caminham pra saída da sala. # # #
+<<save()>>
+<<backTitle()>>
+===
+
+title: Noon
+---
+===
+
+title: Afternoon
+---
+===
+
+title: Night
+---
 ===

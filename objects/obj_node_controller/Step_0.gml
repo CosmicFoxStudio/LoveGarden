@@ -6,6 +6,13 @@ var count = ChatterboxGetOptionCount(chatterbox);
 // Typist flow control
 TypistCheckPause();
 
+// Fast-forwarding
+/*
+if (global.inputMode == e_input.MOUSE && InputCheck(e_input.MOUSE, "confirm", "held")) {
+	ChatterboxFastForward(chatterbox);
+}
+*/
+
 if (global.state != e_gameStates.PAUSED && global.state != e_gameStates.MENU && global.hoveringButton == false) {
 	// Waiting for user input or waiting for the user to choose an option
 	if ChatterboxIsWaiting(chatterbox) {

@@ -15,8 +15,17 @@ if (audio_group_is_loaded(audiogroup_music)) {
 	    break;
 
 		case "rm_dormitory":
+	        JukeboxPlayMusic(snd_ecopark);
+		break;
+		
+		case "rm_school":
+	        JukeboxPlayMusic(snd_unicorridor);
+		break;
+		
+		case "rm_classroom":
 	        JukeboxPlayMusic(snd_dormroom);
 		break;
+		
 	    default:
 	        // Stop the music if no specific case matches
 	        JukeboxStopMusic();
