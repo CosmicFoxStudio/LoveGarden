@@ -126,7 +126,7 @@ PLAYER: Ter une parceire que ajude... # # #
 IPÊ: Ah... # # #
 Juntes vocês caminham pra saída da sala. # # #
 <<save()>>
-<<backTitle()>>
+<<nextRoom("rm_school")>>
 ===
 
 title: Noon

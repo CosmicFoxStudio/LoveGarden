@@ -25,6 +25,8 @@ global.actions[4] = 4;	// DAY 4
 global.maxActions = [0, 4, 4, 4, 4];
 global.flags = { 
 	met_solanum: 0,
+	dormitory_morning_saw: false,
+	orange_photo_book_talk: false,
 	met_hydra: false,
 	finished_fern_intro: false,
 	sat_with_ype: false,

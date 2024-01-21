@@ -1,87 +1,161 @@
 title: Morning
 ---
 <<chara("void")>>
-... # # # #line:361a6b
-The rule says you can't run in the hallways... # # # #line:af98ad
-So you quicken your pace until you reach the entrance. # # # #line:ddf6ae
-In the distance, you can see the boat that just left. # # # #line:bb92f9
-You sigh to yourself and meekly walk down the stairs to the dorm's main floor in a gesture of acceptance. # # #
-<<bg(1)>> 
-As you reach the dorm's reception, you're met with a short old man with oranges stuck in his beard. # # #
-<<chara("orange")>>
-MR. ORANGE: Hey. Are you a morning student? # # # #line:36b3dd
-PLAYER: Yes, I am! # # # #line:9df643
-MR. ORANGE: The second boat has already left, but a third one is coming shortly. # # # #line:2ad4fa
-PLAYER: Oh, thank goodness there's a third one. I thought I was lost! # # # #line:1832df
-MR. ORANGE: Haha! Don't worry, young one! # # # #line:42c368
-MR. ORANGE: In addition to the third, there's also a fourth, a fifth... and so on. # # # #line:095ff8
-MR. ORANGE: The next one is coming in 5 minutes! # # # #line:39766b
-As he says this, some other students are arriving at the spot, realizing they also missed the boat. # # # #line:3f282d
-PLAYER: At least I'm not the only one. # # # #line:80e45e
-PLAYER: You saved me here, Mr...? # # # #line:795881
-MR. ORANGE: They call me Orange, young one. # # # #line:fc76c4
-PLAYER: I'm PLAYER. # # # #line:a7a29f
-You only have to wait... What do you do now? # # # #line:e18a27
-You only have to wait... What do you do now? # # # #line:83d7e5
--> Talk to Mr. Orange. # # # #line:1ecdd9
-    <<addAction()>>
-    (YOU JUST EARNED A BONUS ACTION![spr_action])[snd_click1] #line:416827
-    You have to wait anyway; it's better to talk to someone to pass the time. # # # #line:bae562
-    PLAYER: Not to be intrusive, but it's quite a coincidence that your name is the same as the dormitory. # # # #line:c20819
-    MR. ORANGE: Haha! That's not a coincidence, young one! I've been the supervisor of this dormitory since it was built. # # # #line:3ffdcf
-    PLAYER: But that was, like, a long time ago, right? # # # #line:14c3e7
-    PLAYER: (Oh my god, I called him old). # # # #line:72266d
-    MR. ORANGE: HAHA! It's only been 25 years! # # # #line:9485a0
-    PLAYER: That means you've met all the famous plants, right? # # # #line:d77901
-    PLAYER: Even Tony Ramos, who graduated a few years ago? # # # #line:58fd6b
-    MR. ORANGE: Each one of them! I have a collection of photos with the students who became famous from the college. # # # #line:b7124f
-    MR. ORANGE: I can show you the collection one day if you want! # # # #line:5c3359
-    PLAYER: I'd love that! # # # #line:7d9936
-    MR. ORANGE: I like your enthusiasm, young one! # # # #line:5d8af0
-    MR. ORANGE: But you better start going. The boat is arriving. # # # #line:82b546
-    Mr. Orange points to the boat approaching outside. # # # #line:f42612
-    PLAYER: See you later, Mr. Orange! # # # #line:01b874
-    You wave to him as you leave the dormitory, heading towards the boat. # # # #line:06f5f5
--> Wait for the boat outside. #line:5b1185
-    <<chara("void")>>
-    It's better to make sure you don't miss the third boat. # # # #line:00912c
-    You go outside the building, sitting on one of the waiting benches for the boat. # # # #line:ccca5b
-    There's a girl drawing on one of the other benches. # # # #line:65794c
-    <<chara("hydra")>>
-    <<setFlag("met_hydra", true)>>
-    You try to see what she's drawing and ends up impressed with the replica of the lake she was creating. # # # #line:c51c4b
-    What do you do? # # #
-    What do you do? # # #
-    -> Try to talk to her. # # # #line:32cbd1
-        PLAYER: Wow, your drawing is beautiful! # # # #line:370ddb
-        ???: ... # # # #line:69998f
-        She doesn't even blink, continuing to focus on the notebook. # # # #line:22357e
-        It's as if she didn't hear you from being so concentrated... # # # #line:769faf
-        You decide to appreciate the lake alongside her, even if in silence. # # # #line:0c8428
-    -> Just admire the drawing she's doing. # # # #line:1012d5
+<<if !getFlag("dormitory_morning_saw")>>
+    ... # # # #line:361a6b
+    The rule says you can't run in the hallways... # # # #line:af98ad
+    So you quicken your pace until you reach the entrance. # # # #line:ddf6ae
+    In the distance, you can see the boat that just left. # # # #line:bb92f9
+    You sigh to yourself and meekly walk down the stairs to the dorm's main floor in a gesture of acceptance. # # #
+    <<bg(1)>> 
+    As you reach the dorm's reception, you're met with a short old man with oranges stuck in his beard. # # #
+    <<chara("orange")>>
+    MR. ORANGE: Hey. Are you a morning student? # # # #line:36b3dd
+    PLAYER: Yes, I am! # # # #line:9df643
+    MR. ORANGE: The second boat has already left, but a third one is coming shortly. # # # #line:2ad4fa
+    PLAYER: Oh, thank goodness there's a third one. I thought I was lost! # # # #line:1832df
+    MR. ORANGE: Haha! Don't worry, young one! # # # #line:42c368
+    MR. ORANGE: In addition to the third, there's also a fourth, a fifth... and so on. # # # #line:095ff8
+    MR. ORANGE: The next one is coming in 5 minutes! # # # #line:39766b
+    As he says this, some other students are arriving at the spot, realizing they also missed the boat. # # # #line:3f282d
+    PLAYER: At least I'm not the only one. # # # #line:80e45e
+    PLAYER: You saved me here, Mr...? # # # #line:795881
+    MR. ORANGE: They call me Orange, young one. # # # #line:fc76c4
+    PLAYER: I'm PLAYER. # # # #line:a7a29f
+    You only have to wait... What do you do now? # # # #line:e18a27
+    You only have to wait... What do you do now? # # # #line:83d7e5
+    -> Talk to Mr. Orange. # # # #line:1ecdd9
         <<addAction()>>
-        (YOU JUST EARNED A BONUS ACTION![spr_action])[snd_click1] #line:5092f9
-        You can't take your eyes off the drawing. # # # #line:72e405
-        To the point that the girl gives you a quick look with raised eyebrows. # # # #line:df7bd3
-        You look away, feeling your face heat up for getting caught. # # # #line:2b1dd7
-        Soon, the third boat starts to approach. # # # #line:52962f
-PLAYER: (Thank goodness everything worked out...) # # # #line:c83b07
-You board the boat. # # # #line:dc01da
-<<save()>>
-<<nextRoom("rm_boat")>>
+        (YOU JUST EARNED A BONUS ACTION![spr_action])[snd_click1] #line:416827
+        You have to wait anyway; it's better to talk to someone to pass the time. # # # #line:bae562
+        PLAYER: Not to be intrusive, but it's quite a coincidence that your name is the same as the dormitory. # # # #line:c20819
+        MR. ORANGE: Haha! That's not a coincidence, young one! I've been the supervisor of this dormitory since it was built. # # # #line:3ffdcf
+        PLAYER: But that was, like, a long time ago, right? # # # #line:14c3e7
+        PLAYER: (Oh my god, I called him old). # # # #line:72266d
+        MR. ORANGE: HAHA! It's only been 25 years! # # # #line:9485a0
+        PLAYER: That means you've met all the famous plants, right? # # # #line:d77901
+        PLAYER: Even Tony Ramos, who graduated a few years ago? # # # #line:58fd6b
+        MR. ORANGE: Each one of them! I have a collection of photos with the students who became famous from the college. # # # #line:b7124f
+        MR. ORANGE: I can show you the collection one day if you want! # # # #line:5c3359
+        <<setFlag("orange_photo_book_talk")>>
+        PLAYER: I'd love that! # # # #line:7d9936
+        MR. ORANGE: I like your enthusiasm, young one! # # # #line:5d8af0
+        MR. ORANGE: But you better start going. The boat is arriving. # # # #line:82b546
+        Mr. Orange points to the boat approaching outside. # # # #line:f42612
+        PLAYER: See you later, Mr. Orange! # # # #line:01b874
+        You wave to him as you leave the dormitory, heading towards the boat. # # # #line:06f5f5
+    -> Wait for the boat outside. #line:5b1185
+        <<chara("void")>>
+        It's better to make sure you don't miss the third boat. # # # #line:00912c
+        You go outside the building, sitting on one of the waiting benches for the boat. # # # #line:ccca5b
+        There's a girl drawing on one of the other benches. # # # #line:65794c
+        <<chara("hydra")>>
+        <<setFlag("met_hydra", true)>>
+        You try to see what she's drawing and ends up impressed with the replica of the lake she was creating. # # # #line:c51c4b
+        What do you do? # # #
+        What do you do? # # #
+        -> Try to talk to her. # # # #line:32cbd1
+            PLAYER: Wow, your drawing is beautiful! # # # #line:370ddb
+            ???: ... # # # #line:69998f
+            She doesn't even blink, continuing to focus on the notebook. # # # #line:22357e
+            It's as if she didn't hear you from being so concentrated... # # # #line:769faf
+            You decide to appreciate the lake alongside her, even if in silence. # # # #line:0c8428
+        -> Just admire the drawing she's doing. # # # #line:1012d5
+            <<addAction()>>
+            (YOU JUST EARNED A BONUS ACTION! [spr_action])[snd_click1] #line:5092f9
+            You can't take your eyes off the drawing. # # # #line:72e405
+            To the point that the girl gives you a quick look with raised eyebrows. # # # #line:df7bd3
+            You look away, feeling your face heat up for getting caught. # # # #line:2b1dd7
+            Soon, the third boat starts to approach. # # # #line:52962f
+    PLAYER: (Thank goodness everything worked out...) # # # #line:c83b07
+    You board the boat. # # # #line:dc01da
+    <<setFlag("dormitory_morning_saw")>>
+    <<save()>>
+    <<nextRoom("rm_boat")>>
+<<else>>
+    <<jump Afternoon>>
+<<endif>>
 ===
 
 title: Noon
 ---
-Noon #line:d0ab94
 ===
 
 title: Afternoon
 ---
-LOREM IPSUM #line:069bb3
+<<bg(1)>>
+Você entra no dormitório, <recebido> por um pôr do sol encantador que pinta o céu em tonalidades quentes, combinando com as árvores alaranjadas na paisagem. 
+O Sr. Laranjeira, ansioso pela sua volta, dá as boas-vindas calorosas.
+LARANJEIRA: Olá, jovem. Feliz em vê-lo novamente.
+LARANJEIRA: Como foi seu primeiro dia na escola?
+PLAYER: Escola você quer dizer faculdade, né?
+LARANJEIRA: "Isso, isso!
+PLAYER: 
+-> Foi ótimo.
+    LARANJEIRA: Que beleza.
+-> Poderia ter sido melhor.
+    LARANJEIRA: Ah, entendo. É uma pena.
+    LARANJEIRA: Mas não se preocupe, ainda está no começo. Muitas experiências aguardam por você.
+Observando um pouco a frente, você percebe que Caru está jogando algum video game com um colega. Mas parece estar bastante concentrado.
+O que você quer fazer?
+O que você quer fazer?
+<<if getFlag("orange_photo_book_talk")>>
+    -> Perguntar sobre o álbum de fotos. 
+        O Sr. Laranja entusiasticamente lhe apresenta uma variedade de famosos do campus, incluindo o tal do "Tony Ramos".
+        Além dele, vários outros famosos como "Dalva Oliveira", "Mônica Carvalho"...
+        A maioria você não conhece apesar, que um ou outro você lembra de ver pelos noticiários.
+        Até que você nota um bastante peculiar... "João-Pé-de-Feijão".
+        PLAYER: Huh? Esse daqui me é familiar.
+        LARANJEIRA: Oh, sim. Esse é o nosso primeiro reitor da Lótus. Existem várias lendas sobre ele.
+        LARANJEIRA: Dizem que ele alcançou o céu ao escalar um imenso pé-de-feijão, algo que nunca ninguém havia conseguido fazer.
+        PLAYER:  Um pé-de-feijão gigante...?
+        LARANJEIRA: Justamente. Reza a lenda que há muito tempo atrás, Lótus era conhecida por um pé-de-feijão que chegava aos céus. 
+        LARANJEIRA: Posso lhe contar a lenda desde o início... Se você estiver com tempo.
+        LARANJEIRA: Posso lhe contar a lenda desde o início... Se você estiver com tempo.
+        -> Claro, você atiçou minha curiosidade.
+            <<bg(1)>>
+            LARANJEIRA: Era uma vez, um estudante notável chamado João, conhecido por sua curiosidade e amor pela agricultura. 
+            LARANJEIRA: Ele habitava o antigo feudo de Lótus, muito antes dessa universidade existir.
+            LARANJEIRA: Um dia, enquanto explorava os arredores da faculdade, ele descobriu uma semente peculiar que parecia irradiar uma aura mágica.
+            LARANJEIRA: Intrigado, João decidiu plantar a semente em um solo especial que ele mesmo preparou. 
+            LARANJEIRA: Para sua surpresa, a semente germinou em um pé-de-feijão extraordinário que se erguia em direção aos céus. 
+            LARANJEIRA: Este não era um pé-de-feijão comum, pois ele emanava magia e mistério.
+            LARANJEIRA: À medida que o pé-de-feijão crescia, uma escadaria mágica se formava ao longo de seu caule, conectando o topo ao mundo das nuvens. 
+            LARANJEIRA: No entanto, pela altura, ninguém se atrevia a escalá-lo. Nem mesmo os maiores alpinistas.
+            LARANJEIRA: Corajosamente, João decidiu subir essa escada para explorar o que estava além das nuvens.
+            LARANJEIRA: Ao atingir o topo, João descobriu uma terra celestial, povoada por criaturas mágicas e seres extraordinários. 
+            LARANJEIRA: Por ser o único habitante da terra de baixo que chegou aos céus, um sábio o abrigou e resolveu ensiná-lo vários segredos ocultos.
+            LARANJEIRA: Ele contou a João sobre a importância de manter essa conexão, equilibrando a magia e a realidade.
+            LARANJEIRA: Graças ao que aprendeu com o mundo de cima, foi capaz de desenvolver inúmeras técnicas mágicas.
+            LARANJEIRA: Tanto é que hoje João é considerado o Pai da Herbologia Mágica Moderna.
+            LARANJEIRA: Ao longo dos anos, João, agora conhecido como João-Pé-de-Feijão, tornou-se o guardião da ligação entre os dois mundos. 
+            LARANJEIRA: Ele compartilhava seu conhecimento com os jovens da região, inspirando-os a explorar os limites da magia e da botânica.
+            LARANJEIRA: Se tornou tão popular que vários príncipes e princesas dos reinos vizinhos vinham estudar com ele.
+            LARANJEIRA: Quando já estava mais velho, resolveu criar uma universidade, que hoje é a Lótus. 
+            LARANJEIRA: Definitivamente, uma de nossas figuras mais notáveis.
+            LARANJEIRA: A universidade tem mais de 500 anos, então não se sabe mais a veracidade da lenda, e muito menos se sabe onde foi parar o pé de feijão.
+            LARANJEIRA: O fato é que essa lenda persistiu.
+            LARANJEIRA: E temos um álbum de fotos especial mantido para homenagear aqueles que seguiram os passos de João, explorando a Herbologia Mágica.
+            PLAYER: Há algum jeito de eu ver esse álbum?
+            LARANJEIRA: Ah, infelizmente, o álbum está guardado com muito cuidado. 
+            LARANJEIRA: Mas quem sabe, se você se destacar na Herbologia Mágica, talvez um dia seja <incluído> nele!
+            PLAYER: Interessante... Vou manter isso em mente. Obrigado pela história, Sr. Laranjeira.
+        -> Obrigado, mas talvez outra hora.
+        Você sobe as escadas de volta para o seu quarto.
+    -> Observar o que o Caru está fazendo.
+        Caru está profundamente envolvido no jogo. Agora vendo de perto, você percebe que é um jogo de ritmo.
+        Você também nota que ele não está jogando com alguém, e que na verdade a outra pessoa está apenas assistindo.
+        O Caru está mandando muito bem, é melhor não interromper o momento.
+        Ao olhar para trás, você percebe que o Sr. Laranjeira não está mais ali.
+        Dessa forma, somente lhe resta voltar para o seu quarto.
+        <<jump Night>>
+-> Subir para o quarto.
+    Você sobe as escadas de volta para o seu quarto.
+    <<jump Night>>
 ===
 
 title: Night
-LOREM IPSUM
 ---
+LOREM IPSUM
+<<backTitle()>>
 ===
