@@ -58,7 +58,11 @@ if (global.debug) {
 			"Current Room: " + global.rmCurrent,
 			"Location string: " + global.location,
 			"Resolution scale: " + string(global.res.scale),
-			"Fullscreen?: " + string(global.fullscreen)
+			"Fullscreen?: " + string(global.fullscreen),
+			"Transition Type Out:" + string(global.transitionTypeOut),
+			"Transition Type In:" + string(global.transitionTypeIn),
+			"Transition Room Target:" + string(global.roomTarget),
+			"Mid Transition?" + string(global.midTransition)
 		];
 		
 		DebugDrawBox(10, 10, "GAME DEBUG", gameDebugStrings);

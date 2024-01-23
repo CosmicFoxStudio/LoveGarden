@@ -7,6 +7,8 @@
 # PREVIOUS ROOM		------------------------------------------> PRESS PAGEDOWN
 # END GAME			------------------------------------------> PRESS END
 # FULLSCREEN		------------------------------------------> PRESS ESC
+# PAUSE GAME		------------------------------------------> PRESS P
+# TRANSITION 		------------------------------------------> PRESS T
 
 # Global Game Variables				------------------------->	PRESS 1
 # Language Variables				------------------------->	PRESS 2

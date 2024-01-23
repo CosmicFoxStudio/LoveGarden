@@ -72,7 +72,7 @@ if (twFadeOutState = e_fadeoutState.FINISHED && ended) {
 	obj_dream.finishedIntro = true;
 	
 	// Job done
-	// TransitionStart(sq_out_trans_fade_black, sq_in_trans_fade_black);
+	// TransitionSet(sq_out_trans_fade_black, sq_in_trans_fade_black);
 	instance_destroy();
 }
 

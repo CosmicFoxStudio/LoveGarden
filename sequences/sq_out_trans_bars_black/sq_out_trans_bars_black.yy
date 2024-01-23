@@ -23,8 +23,8 @@
     "resourceVersion": "1.0",
     "Keyframes": [
       {"resourceType":"Keyframe<MomentsEventKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"MomentsEventKeyframe","resourceVersion":"1.0","Events":[
-              "TransitionChangeRoom",
-            ],},},"Disabled":false,"id":"46489b2b-7a44-4a7f-8c7a-3d220bdaf3b9","IsCreationKey":false,"Key":59.9999,"Length":1.0,"Stretch":false,},
+              "TransitionAction",
+            ],},},"Disabled":false,"id":"4475f4bd-64f2-400f-bc84-7d4dfd808530","IsCreationKey":false,"Key":59.9999,"Length":1.0,"Stretch":false,},
     ],
   },
   "parent": {
@@ -32,7 +32,7 @@
     "path": "folders/Sequences.yy",
   },
   "playback": 0,
-  "playbackSpeed": 30.0,
+  "playbackSpeed": 60.0,
   "playbackSpeedType": 0,
   "showBackdrop": true,
   "showBackdropImage": false,

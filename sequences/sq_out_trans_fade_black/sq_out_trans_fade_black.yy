@@ -23,8 +23,8 @@
     "resourceVersion": "1.0",
     "Keyframes": [
       {"resourceType":"Keyframe<MomentsEventKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"MomentsEventKeyframe","resourceVersion":"1.0","Events":[
-              "TransitionChangeRoom",
-            ],},},"Disabled":false,"id":"cef608cd-2216-4913-9fff-ea2518b84160","IsCreationKey":false,"Key":59.9999,"Length":1.0,"Stretch":false,},
+              "TransitionAction",
+            ],},},"Disabled":false,"id":"5fb2dd6d-9afa-4475-9960-a6ab13c7323c","IsCreationKey":false,"Key":59.9999,"Length":1.0,"Stretch":false,},
     ],
   },
   "parent": {

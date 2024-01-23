@@ -8,6 +8,12 @@ else exit;
 
 if (global.debug) {
 	
+	// Debug Transition
+	DebugTransition();
+	
+	// Debug Pause State
+	DebugPauseState();
+	
 	//------------------- MOUSE ---------------------//
 	if mouse_check_button_pressed(mb_left) {
 		clickX = mouse_x;
@@ -24,20 +30,6 @@ if (global.debug) {
 	}
 
 	#region BOOLEANS
-	
-	// Debug Pause State
-	if (keyboard_check_pressed(ord("P"))) {
-		if (togglePause == false) {
-			togglePause = true;
-			GameChangeState(e_gameStates.PAUSED);
-			show_debug_message("Game was paused.");
-		}
-		else if (togglePause == true) {
-			togglePause = false;
-			GameChangeState(global.statePrevious);
-			show_debug_message("Game was resumed.");
-		}
-	}
 
 	for (var i = 0; i < array_length(debugBooleans); i++) {
 	    if (keyboard_check_pressed(ord(string(i + 1)))) {
@@ -69,19 +61,19 @@ if (global.debug) {
 		// PRESS Home - Restart current room
 		if (keyboard_check_pressed(vk_home) && !global.midTransition) { 
 			var target = room;
-			TransitionStart(sq_out_trans_fade_black, sq_in_trans_fade_black, target);
+			TransitionSet(sq_out_trans_fade_black, sq_in_trans_fade_black, "CHANGE_ROOM", target);
 		}
 	
 		// PRESS PageUp - Going to next room
 		if (keyboard_check_pressed(vk_pageup) && !global.midTransition) { 
 			var target = room_next(room);
-			TransitionStart(sq_out_trans_fade_black, sq_in_trans_fade_black, target);
+			TransitionSet(sq_out_trans_fade_black, sq_in_trans_fade_black, "CHANGE_ROOM", target);
 		}
 	
 		// PRESS PageDown - Going to previous room
 		if (keyboard_check_pressed(vk_pagedown) && !global.midTransition) {
 			var target = room_previous(room);
-			TransitionStart(sq_out_trans_fade_black, sq_in_trans_fade_black, target);
+			TransitionSet(sq_out_trans_fade_black, sq_in_trans_fade_black, "CHANGE_ROOM", target);
 		}
 	
 	#endregion MISC DEBUG
@@ -126,9 +118,9 @@ if (global.debug) {
 					var target;
 					if (room != roomIndex){
 						target = roomIndex; 
-						TransitionStart(sq_out_trans_fade_black, sq_in_trans_fade_black, target);
+						TransitionSet(sq_out_trans_fade_black, sq_in_trans_fade_black, "CHANGE_ROOM", target);
 						// The diagonal transition is looking weird, idk why yet
-						//TransitionStart(sq_out_trans_diag_slide, sq_in_trans_diag_slide, target);
+						//TransitionSet(sq_out_trans_diag_slide, sq_in_trans_diag_slide, target);
 						show_debug_message(global.roomTarget);
 					}
 					else {

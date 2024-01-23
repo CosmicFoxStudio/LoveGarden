@@ -59,3 +59,24 @@ function DebugDrawBox(_xx, _yy, _title, _lines, _font = fnt_dialogue, _bgColor =
 function IsRoomRestricted(_roomName) {
     return (_roomName == "rm_init" || _roomName == "rm_template");
 }
+
+function DebugPauseState() {
+	if (keyboard_check_pressed(ord("P"))) {
+		if (togglePause == false) {
+			togglePause = true;
+			GameChangeState(e_gameStates.PAUSED);
+			show_debug_message("Game was paused.");
+		}
+		else if (togglePause == true) {
+			togglePause = false;
+			GameChangeState(global.statePrevious);
+			show_debug_message("Game was resumed.");
+		}
+	}
+}
+
+function DebugTransition() {
+	if (global.debug && keyboard_check_pressed(ord("T"))) {
+		TransitionSet(sq_out_trans_fade_white, sq_in_trans_fade_white);	
+	}
+}

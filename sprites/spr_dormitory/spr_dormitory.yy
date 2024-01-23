@@ -15,6 +15,7 @@
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"19a32999-ceb0-4fcd-9ad0-5818e4f1f28a",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d6e40951-ffe8-4d76-8788-a97d19454bf6",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0b89da02-3b58-4521-aa3e-0c8389a8df1d",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -44,7 +45,7 @@
     "events": {"resourceType":"KeyframeStore<MessageEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "eventStubScript": null,
     "eventToFunction": {},
-    "length": 2.0,
+    "length": 3.0,
     "lockOrigin": false,
     "moments": {"resourceType":"KeyframeStore<MomentsEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "playback": 1,
@@ -57,6 +58,7 @@
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"19a32999-ceb0-4fcd-9ad0-5818e4f1f28a","path":"sprites/spr_dormitory/spr_dormitory.yy",},},},"Disabled":false,"id":"6b013409-25ba-4358-af4f-3da1e73227d4","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"d6e40951-ffe8-4d76-8788-a97d19454bf6","path":"sprites/spr_dormitory/spr_dormitory.yy",},},},"Disabled":false,"id":"d1f34638-204f-40e5-a3a8-3a249e870283","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0b89da02-3b58-4521-aa3e-0c8389a8df1d","path":"sprites/spr_dormitory/spr_dormitory.yy",},},},"Disabled":false,"id":"390d5200-0763-4942-a717-40ce32b3280e","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

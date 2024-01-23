@@ -7,6 +7,7 @@ title: Morning
     So you quicken your pace until you reach the entrance. # # # #line:ddf6ae
     In the distance, you can see the boat that just left. # # # #line:bb92f9
     You sigh to yourself and meekly walk down the stairs to the dorm's main floor in a gesture of acceptance. # # #
+    <<transition()>>
     <<bg(1)>> 
     As you reach the dorm's reception, you're met with a short old man with oranges stuck in his beard. # # #
     <<chara("orange")>>
@@ -113,8 +114,8 @@ O que você quer fazer?
     LARANJEIRA: Posso lhe contar a lenda desde o início... Se você estiver com tempo.
     LARANJEIRA: Posso lhe contar a lenda desde o início... Se você estiver com tempo.
     -> Claro, você atiçou minha curiosidade.
-        <<bg(1)>>
         <<transition()>>
+        <<bg(2)>>
         LARANJEIRA: Era uma vez, um estudante notável chamado João, conhecido por sua curiosidade e amor pela agricultura. 
         LARANJEIRA: Ele habitava o antigo feudo de Lótus, muito antes dessa universidade existir.
         LARANJEIRA: Um dia, enquanto explorava os arredores da faculdade, ele descobriu uma semente peculiar que parecia irradiar uma aura mágica.

@@ -129,6 +129,6 @@ if (selectedButton == "CONFIRM") {
 	// Call a screen transition
 	if (!global.midTransition) {
 		var target = room_next(room);
-		TransitionStart(sq_out_trans_fade_black, sq_in_trans_fade_black, target);
+		TransitionSet(sq_out_trans_fade_black, sq_in_trans_fade_black, "CHANGE_ROOM", target);
 	}
 }
