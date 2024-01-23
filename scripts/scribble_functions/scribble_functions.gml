@@ -9,11 +9,12 @@ function scribble_event_rumble(_parameter_array) {
     gamepad_set_vibration(global.current_gamepad, amount, amount);
 }
 
-// Typist flow control
+// Typist flow control (pause the text if any of these conditions)
 function TypistCheckPause() {
 	if (global.state == e_gameStates.PAUSED || 
 		global.state == e_gameStates.MENU || 
-		global.state == e_gameStates.LEAVE) {
+		global.state == e_gameStates.LEAVE || 
+		global.midTransition) {
 		typist.pause();
 	}
 	else typist.unpause();

@@ -58,7 +58,7 @@ if IsChatterbox(chatterbox) and text != undefined {
 		var width = 450;
 		var height = 32;
 		
-		// Logic to always have 3 options (?)
+		// Logic to skip the options that are conditioned to an IF statement if they return false
 		for (var i = 0; i < ChatterboxGetOptionCount(chatterbox); i++) {
 			if ChatterboxGetOptionConditionBool(chatterbox, i) {
 				xx = room_width/2;

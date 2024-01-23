@@ -64,5 +64,5 @@
   "visibleRange": null,
   "volume": 1.0,
   "xorigin": -320,
-  "yorigin": -240,
+  "yorigin": -180,
 }

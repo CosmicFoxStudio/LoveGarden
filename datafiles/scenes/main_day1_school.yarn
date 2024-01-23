@@ -4,6 +4,7 @@ title: Morning
     <<jump AfterClass>>
 <<else>> 
     <<jump IpeIntro>>
+<<endif>>
 ===
 
 title: IpeIntro

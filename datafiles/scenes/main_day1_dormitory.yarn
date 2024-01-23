@@ -86,11 +86,12 @@ title: Afternoon
 <<bg(1)>>
 Você entra no dormitório, <recebido> por um pôr do sol encantador que pinta o céu em tonalidades quentes, combinando com as árvores alaranjadas na paisagem. 
 O Sr. Laranjeira, ansioso pela sua volta, dá as boas-vindas calorosas.
-LARANJEIRA: Olá, jovem. Feliz em vê-lo novamente.
+<<chara("orange")>>
+LARANJEIRA: Olá, jovem. Feliz em <vê-lo> novamente.
 LARANJEIRA: Como foi seu primeiro dia na escola?
 PLAYER: Escola você quer dizer faculdade, né?
-LARANJEIRA: "Isso, isso!
-PLAYER: 
+LARANJEIRA: Isso, isso!
+LARANJEIRA: Isso, isso!
 -> Foi ótimo.
     LARANJEIRA: Que beleza.
 -> Poderia ter sido melhor.
@@ -99,57 +100,64 @@ PLAYER:
 Observando um pouco a frente, você percebe que Caru está jogando algum video game com um colega. Mas parece estar bastante concentrado.
 O que você quer fazer?
 O que você quer fazer?
-<<if getFlag("orange_photo_book_talk")>>
-    -> Perguntar sobre o álbum de fotos. 
-        O Sr. Laranja entusiasticamente lhe apresenta uma variedade de famosos do campus, incluindo o tal do "Tony Ramos".
-        Além dele, vários outros famosos como "Dalva Oliveira", "Mônica Carvalho"...
-        A maioria você não conhece apesar, que um ou outro você lembra de ver pelos noticiários.
-        Até que você nota um bastante peculiar... "João-Pé-de-Feijão".
-        PLAYER: Huh? Esse daqui me é familiar.
-        LARANJEIRA: Oh, sim. Esse é o nosso primeiro reitor da Lótus. Existem várias lendas sobre ele.
-        LARANJEIRA: Dizem que ele alcançou o céu ao escalar um imenso pé-de-feijão, algo que nunca ninguém havia conseguido fazer.
-        PLAYER:  Um pé-de-feijão gigante...?
-        LARANJEIRA: Justamente. Reza a lenda que há muito tempo atrás, Lótus era conhecida por um pé-de-feijão que chegava aos céus. 
-        LARANJEIRA: Posso lhe contar a lenda desde o início... Se você estiver com tempo.
-        LARANJEIRA: Posso lhe contar a lenda desde o início... Se você estiver com tempo.
-        -> Claro, você atiçou minha curiosidade.
-            <<bg(1)>>
-            LARANJEIRA: Era uma vez, um estudante notável chamado João, conhecido por sua curiosidade e amor pela agricultura. 
-            LARANJEIRA: Ele habitava o antigo feudo de Lótus, muito antes dessa universidade existir.
-            LARANJEIRA: Um dia, enquanto explorava os arredores da faculdade, ele descobriu uma semente peculiar que parecia irradiar uma aura mágica.
-            LARANJEIRA: Intrigado, João decidiu plantar a semente em um solo especial que ele mesmo preparou. 
-            LARANJEIRA: Para sua surpresa, a semente germinou em um pé-de-feijão extraordinário que se erguia em direção aos céus. 
-            LARANJEIRA: Este não era um pé-de-feijão comum, pois ele emanava magia e mistério.
-            LARANJEIRA: À medida que o pé-de-feijão crescia, uma escadaria mágica se formava ao longo de seu caule, conectando o topo ao mundo das nuvens. 
-            LARANJEIRA: No entanto, pela altura, ninguém se atrevia a escalá-lo. Nem mesmo os maiores alpinistas.
-            LARANJEIRA: Corajosamente, João decidiu subir essa escada para explorar o que estava além das nuvens.
-            LARANJEIRA: Ao atingir o topo, João descobriu uma terra celestial, povoada por criaturas mágicas e seres extraordinários. 
-            LARANJEIRA: Por ser o único habitante da terra de baixo que chegou aos céus, um sábio o abrigou e resolveu ensiná-lo vários segredos ocultos.
-            LARANJEIRA: Ele contou a João sobre a importância de manter essa conexão, equilibrando a magia e a realidade.
-            LARANJEIRA: Graças ao que aprendeu com o mundo de cima, foi capaz de desenvolver inúmeras técnicas mágicas.
-            LARANJEIRA: Tanto é que hoje João é considerado o Pai da Herbologia Mágica Moderna.
-            LARANJEIRA: Ao longo dos anos, João, agora conhecido como João-Pé-de-Feijão, tornou-se o guardião da ligação entre os dois mundos. 
-            LARANJEIRA: Ele compartilhava seu conhecimento com os jovens da região, inspirando-os a explorar os limites da magia e da botânica.
-            LARANJEIRA: Se tornou tão popular que vários príncipes e princesas dos reinos vizinhos vinham estudar com ele.
-            LARANJEIRA: Quando já estava mais velho, resolveu criar uma universidade, que hoje é a Lótus. 
-            LARANJEIRA: Definitivamente, uma de nossas figuras mais notáveis.
-            LARANJEIRA: A universidade tem mais de 500 anos, então não se sabe mais a veracidade da lenda, e muito menos se sabe onde foi parar o pé de feijão.
-            LARANJEIRA: O fato é que essa lenda persistiu.
-            LARANJEIRA: E temos um álbum de fotos especial mantido para homenagear aqueles que seguiram os passos de João, explorando a Herbologia Mágica.
-            PLAYER: Há algum jeito de eu ver esse álbum?
-            LARANJEIRA: Ah, infelizmente, o álbum está guardado com muito cuidado. 
-            LARANJEIRA: Mas quem sabe, se você se destacar na Herbologia Mágica, talvez um dia seja <incluído> nele!
-            PLAYER: Interessante... Vou manter isso em mente. Obrigado pela história, Sr. Laranjeira.
-        -> Obrigado, mas talvez outra hora.
+-> Perguntar sobre o álbum de fotos. <<if getFlag("orange_photo_book_talk")>>
+    O Sr. Laranja entusiasticamente lhe apresenta uma variedade de famosos do campus, incluindo o tal do "Tony Ramos".
+    Além dele, vários outros famosos como "Dalva Oliveira", "Mônica Carvalho"...
+    A maioria você não conhece apesar, que um ou outro você lembra de ver pelos noticiários.
+    Até que você nota um bastante peculiar... "João-Pé-de-Feijão".
+    PLAYER: Huh? Esse daqui me é familiar.
+    LARANJEIRA: Oh, sim. Esse é o nosso primeiro reitor da Lótus. Existem várias lendas sobre ele.
+    LARANJEIRA: Dizem que ele alcançou o céu ao escalar um imenso pé-de-feijão, algo que nunca ninguém havia conseguido fazer.
+    PLAYER:  Um pé-de-feijão gigante...?
+    LARANJEIRA: Justamente. Reza a lenda que há muito tempo atrás, Lótus era conhecida por um pé-de-feijão que chegava aos céus. 
+    LARANJEIRA: Posso lhe contar a lenda desde o início... Se você estiver com tempo.
+    LARANJEIRA: Posso lhe contar a lenda desde o início... Se você estiver com tempo.
+    -> Claro, você atiçou minha curiosidade.
+        <<bg(1)>>
+        <<transition()>>
+        LARANJEIRA: Era uma vez, um estudante notável chamado João, conhecido por sua curiosidade e amor pela agricultura. 
+        LARANJEIRA: Ele habitava o antigo feudo de Lótus, muito antes dessa universidade existir.
+        LARANJEIRA: Um dia, enquanto explorava os arredores da faculdade, ele descobriu uma semente peculiar que parecia irradiar uma aura mágica.
+        LARANJEIRA: Intrigado, João decidiu plantar a semente em um solo especial que ele mesmo preparou. 
+        LARANJEIRA: Para sua surpresa, a semente germinou em um pé-de-feijão extraordinário que se erguia em direção aos céus. 
+        LARANJEIRA: Este não era um pé-de-feijão comum, pois ele emanava magia e mistério.
+        LARANJEIRA: À medida que o pé-de-feijão crescia, uma escadaria mágica se formava ao longo de seu caule, conectando o topo ao mundo das nuvens. 
+        LARANJEIRA: No entanto, pela altura, ninguém se atrevia a escalá-lo. Nem mesmo os maiores alpinistas.
+        LARANJEIRA: Corajosamente, João decidiu subir essa escada para explorar o que estava além das nuvens.
+        LARANJEIRA: Ao atingir o topo, João descobriu uma terra celestial, povoada por criaturas mágicas e seres extraordinários. 
+        LARANJEIRA: Por ser o único habitante da terra de baixo que chegou aos céus, um sábio o abrigou e resolveu ensiná-lo vários segredos ocultos.
+        LARANJEIRA: Ele contou a João sobre a importância de manter essa conexão, equilibrando a magia e a realidade.
+        LARANJEIRA: Graças ao que aprendeu com o mundo de cima, foi capaz de desenvolver inúmeras técnicas mágicas.
+        LARANJEIRA: Tanto é que hoje João é considerado o Pai da Herbologia Mágica Moderna.
+        LARANJEIRA: Ao longo dos anos, João, agora conhecido como João-Pé-de-Feijão, tornou-se o guardião da ligação entre os dois mundos. 
+        LARANJEIRA: Ele compartilhava seu conhecimento com os jovens da região, inspirando-os a explorar os limites da magia e da botânica.
+        LARANJEIRA: Se tornou tão popular que vários príncipes e princesas dos reinos vizinhos vinham estudar com ele.
+        LARANJEIRA: Quando já estava mais velho, resolveu criar uma universidade, que hoje é a Lótus. 
+        LARANJEIRA: Definitivamente, uma de nossas figuras mais notáveis.
+        LARANJEIRA: A universidade tem mais de 500 anos, então não se sabe mais a veracidade da lenda, e muito menos se sabe onde foi parar o pé de feijão.
+        LARANJEIRA: O fato é que essa lenda persistiu.
+        LARANJEIRA: E temos um álbum de fotos especial mantido para homenagear aqueles que seguiram os passos de João, explorando a Herbologia Mágica.
+        PLAYER: Há algum jeito de eu ver esse álbum?
+        LARANJEIRA: Ah, infelizmente, o álbum está guardado com muito cuidado. 
+        LARANJEIRA: Mas quem sabe, se você se destacar na Herbologia Mágica, talvez um dia seja <incluído> nele!
+        PLAYER: Interessante... Vou manter isso em mente. Obrigado pela história, Sr. Laranjeira.
+    -> Obrigado, mas talvez outra hora.
+        LARANJEIRA: Oh, sim. Tudo bem. Você deve estar <ocupado>. Perdão por atrapalhar.
+        <<chara("void")>>
         Você sobe as escadas de volta para o seu quarto.
-    -> Observar o que o Caru está fazendo.
-        Caru está profundamente envolvido no jogo. Agora vendo de perto, você percebe que é um jogo de ritmo.
-        Você também nota que ele não está jogando com alguém, e que na verdade a outra pessoa está apenas assistindo.
-        O Caru está mandando muito bem, é melhor não interromper o momento.
-        Ao olhar para trás, você percebe que o Sr. Laranjeira não está mais ali.
-        Dessa forma, somente lhe resta voltar para o seu quarto.
         <<jump Night>>
+-> Observar o que o Caru está fazendo.
+    <<chara("void")>>
+    Caru está profundamente envolvido no jogo. Agora vendo de perto, você percebe que é um jogo de ritmo.
+    Você também nota que ele não está jogando com alguém, e que na verdade a outra pessoa está apenas assistindo.
+    O Caru está mandando muito bem, é melhor não interromper o momento.
+    Ao olhar para trás, você percebe que o Sr. Laranjeira não está mais ali.
+    Dessa forma, somente lhe resta voltar para o seu quarto.
+    <<jump Night>>
 -> Subir para o quarto.
+    PLAYER: Perdão, eu preciso ir fazer uma coisa.
+    LARANJEIRA: Oh, sim. Tudo bem. Você deve estar <ocupado>. Perdão por atrapalhar.
+    <<chara("void")>>
     Você sobe as escadas de volta para o seu quarto.
     <<jump Night>>
 ===

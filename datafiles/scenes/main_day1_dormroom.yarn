@@ -35,18 +35,19 @@ Part of you curses your last night's self, who confidently claimed there would b
 Being ready to go, you head downstairs to the dormitory. # # # #line:d53c5c
 <<save()>>
 <<nextRoom("rm_dormitory")>>
+===
 
-title: Noon #line:fb9c05
---- #line:748dd5
-Noon #line:240371
+title: Noon 
+---
+
 ===
 
 title: Afternoon
 ---
-Afternoon #line:41be83
+
 ===
 
 title: Night
 ---
-Night #line:66d263
+
 ===

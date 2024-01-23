@@ -16,6 +16,8 @@ ChatterboxAddFunction("assignRoute", RouteAssign);					// Assign a character rou
 ChatterboxAddFunction("nextDay", NextDay);							// Increments by 1 global.day. Set global.currentDaytime to morning
 ChatterboxAddFunction("nextDaytime", NextDaytime);					// Increments by 1 global.currentDaytime
 ChatterboxAddFunction("setMap", SetMap);
+ChatterboxAddFunction("transition", DialogueTransition);			// Transition VFX
+
 // Custom Chatterbox Variables
 // ChatterboxVariableDefault("player", global.playerName);			// (UNUSED) Variable to store the player's name
 

@@ -67,6 +67,7 @@ function ConvertDate(_date) {
 	// date_datetime_string(date_current_datetime()) returns datetime and hour based on user system
 }
 
+// To display on save slot and file
 function DecideRoomName() {
 	switch (global.rmCurrent) {
 	    case "rm_dormroom":

@@ -14,6 +14,10 @@ function BackgroundSetIndex(_index) {
 	layer_background_index(back_id, _index);
 }
 
+function DialogueTransition() {
+	TransitionStart(sq_out_trans_fade_black, sq_in_trans_fade_black);
+}
+
 // Chatterbox function to change rooms
 function NextRoom(_room) {
 	//show_debug_message(_room);
