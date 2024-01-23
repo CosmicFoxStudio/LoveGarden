@@ -34,7 +34,7 @@ function TransitionPlaceSequence(_type) {
 	else {
 		_layer = layer_create(-9999,"Transition");
 	}
-	layer_sequence_create(_layer, 0, 0, _type);	
+	layer_sequence_create(_layer, ORIGIN_X, ORIGIN_Y, _type);	
 }
 
 // Called as a moment at the end of an "Out" transition sequence

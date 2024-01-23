@@ -5,7 +5,7 @@ function ToggleContextMenu(_condition = true) {
 	if (_condition) {
 		// ACTIVATION - Menu doesn't exist, create it
 		if ((!instance_exists(global.configMenu))) {
-			global.configMenu = instance_create_layer(0, 0, "Special", obj_config_menu);
+			global.configMenu = instance_create_layer(ORIGIN_X, ORIGIN_Y, "Special", obj_config_menu);
 			//TransitionSetRoom(sq_out_trans_fade_black, sq_in_trans_fade_black);
 			GameChangeState(e_gameStates.MENU);
 			global.inputMode = e_input.KEYBOARD; 

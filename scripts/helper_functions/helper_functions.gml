@@ -35,7 +35,7 @@ function DrawRectangleCenter(_xx, _yy, _width, _height, _outline, _color, _alpha
 
 function MakeAnnouncement(_msg) {
 	if instance_exists(obj_announcement) instance_destroy(obj_announcement);
-	var announcement = instance_create_layer(0, 0, "Special", obj_announcement);
+	var announcement = instance_create_layer(ORIGIN_X, ORIGIN_Y, "Special", obj_announcement);
 	announcement.text = _msg;
 }
 
@@ -74,7 +74,7 @@ function ScriptExecuteAlt(_func, _argx) {
 /// @param _func {function}		The function to be executed
 /// @param _args {array}		The amount of args to be executed in the passed function
 function ExecuteTimedAction(_duration, _func, _args = undefined) {
-	instance_create_layer(0, 0, "Special", obj_timer);
+	instance_create_layer(ORIGIN_X, ORIGIN_Y, "Special", obj_timer);
 	obj_timer.func = _func;
 	obj_timer.args = _args;
 	obj_timer.seconds = _duration;

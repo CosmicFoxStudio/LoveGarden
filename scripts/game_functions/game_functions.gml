@@ -13,7 +13,7 @@ function GameCreateUI() {
 	if (global.state == e_gameStates.CONTINUE_GAME) {
 		// Create the obj_ui_controller if it doesn't already exist
 		if (!instance_exists(obj_ui_controller)) {
-			instance_create_layer(0, 0, "Instances_Above", obj_ui_controller);	
+			instance_create_layer(ORIGIN_X, ORIGIN_Y, "Instances_Above", obj_ui_controller);	
 		}
 	}
 }

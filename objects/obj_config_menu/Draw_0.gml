@@ -19,13 +19,13 @@ var startY = (gheight/2) - (((pagesLength - 1)/2) * yBUFFER);
 // Draw black overlay
 var c = c_black;
 draw_set_alpha(0.8);
-draw_rectangle_color(0, 0, gwidth, gheight, c, c, c, c, false);
+draw_rectangle_color(ORIGIN_X, ORIGIN_Y, gwidth, gheight, c, c, c, c, false);
 draw_set_alpha(1);
 
 // Draw Config Menu BG
-draw_sprite(spr_leaf_bg, 0, 0, 0,);
-draw_sprite(spr_ui_box_config, 0, 0, 0,);
-//draw_sprite(spr_config_title, 0, 0, 0);
+draw_sprite(spr_leaf_bg, 0, ORIGIN_X, ORIGIN_Y);
+draw_sprite(spr_ui_box_config, 0, ORIGIN_X, ORIGIN_Y);
+//draw_sprite(spr_config_title, 0, ORIGIN_X, ORIGIN_Y);
 
 //// --------------------------- Draw cursor and sprites ------------------------------ //
 //// Cursor

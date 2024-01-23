@@ -2,7 +2,7 @@
 	// How to use (can be called from anywhere):
 	if instance_exists(obj_announcement) instance_destroy(obj_announcement);
 
-	announcement = instance_create_layer(0, 0, "Special", obj_announcement);
+	announcement = instance_create_layer(ORIGIN_X, ORIGIN_Y, "Special", obj_announcement);
 	announcement.text = "Your text...";
 	
 	Update: Just use MakeAnnouncement()

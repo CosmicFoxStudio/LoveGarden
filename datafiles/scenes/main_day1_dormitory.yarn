@@ -115,6 +115,7 @@ O que você quer fazer?
     LARANJEIRA: Posso lhe contar a lenda desde o início... Se você estiver com tempo.
     -> Claro, você atiçou minha curiosidade.
         <<transition()>>
+        <<chara("void")>>
         <<bg(2)>>
         LARANJEIRA: Era uma vez, um estudante notável chamado João, conhecido por sua curiosidade e amor pela agricultura. 
         LARANJEIRA: Ele habitava o antigo feudo de Lótus, muito antes dessa universidade existir.
@@ -134,8 +135,13 @@ O que você quer fazer?
         LARANJEIRA: Ele compartilhava seu conhecimento com os jovens da região, inspirando-os a explorar os limites da magia e da botânica.
         LARANJEIRA: Se tornou tão popular que vários príncipes e princesas dos reinos vizinhos vinham estudar com ele.
         LARANJEIRA: Quando já estava mais velho, resolveu criar uma universidade, que hoje é a Lótus. 
+        <<transition()>>
+        <<bg(2)>>
+        <<chara("orange")>>
         LARANJEIRA: Definitivamente, uma de nossas figuras mais notáveis.
-        LARANJEIRA: A universidade tem mais de 500 anos, então não se sabe mais a veracidade da lenda, e muito menos se sabe onde foi parar o pé de feijão.
+        PLAYER: Carambolas. Há quanto tempo que foi isso?
+        LARANJEIRA: A universidade tem mais de 500 anos.
+        LARANJEIRA: Por isso também que não se sabe mais a veracidade da lenda, e muito menos se sabe onde foi parar o pé de feijão.
         LARANJEIRA: O fato é que essa lenda persistiu.
         LARANJEIRA: E temos um álbum de fotos especial mantido para homenagear aqueles que seguiram os passos de João, explorando a Herbologia Mágica.
         PLAYER: Há algum jeito de eu ver esse álbum?
