@@ -76,7 +76,7 @@ function DebugPauseState() {
 }
 
 function DebugTransition() {
-	if (global.debug && keyboard_check_pressed(ord("T"))) {
-		TransitionSet(sq_out_trans_fade_white, sq_in_trans_fade_white);	
+	if (global.debug && keyboard_check_pressed(ord("T"))) {	
+		TransitionSet(sq_trans_fade_white);
 	}
 }

@@ -61,19 +61,19 @@ if (global.debug) {
 		// PRESS Home - Restart current room
 		if (keyboard_check_pressed(vk_home) && !global.midTransition) { 
 			var target = room;
-			TransitionSet(sq_out_trans_fade_black, sq_in_trans_fade_black, "CHANGE_ROOM", target);
+			TransitionSetRoom(sq_out_trans_fade_black, sq_in_trans_fade_black, target);
 		}
 	
 		// PRESS PageUp - Going to next room
 		if (keyboard_check_pressed(vk_pageup) && !global.midTransition) { 
 			var target = room_next(room);
-			TransitionSet(sq_out_trans_fade_black, sq_in_trans_fade_black, "CHANGE_ROOM", target);
+			TransitionSetRoom(sq_out_trans_fade_black, sq_in_trans_fade_black, target);
 		}
 	
 		// PRESS PageDown - Going to previous room
 		if (keyboard_check_pressed(vk_pagedown) && !global.midTransition) {
 			var target = room_previous(room);
-			TransitionSet(sq_out_trans_fade_black, sq_in_trans_fade_black, "CHANGE_ROOM", target);
+			TransitionSetRoom(sq_out_trans_fade_black, sq_in_trans_fade_black, target);
 		}
 	
 	#endregion MISC DEBUG
@@ -118,9 +118,9 @@ if (global.debug) {
 					var target;
 					if (room != roomIndex){
 						target = roomIndex; 
-						TransitionSet(sq_out_trans_fade_black, sq_in_trans_fade_black, "CHANGE_ROOM", target);
+						TransitionSetRoom(sq_out_trans_fade_black, sq_in_trans_fade_black, target);
 						// The diagonal transition is looking weird, idk why yet
-						//TransitionSet(sq_out_trans_diag_slide, sq_in_trans_diag_slide, target);
+						//TransitionSetRoom(sq_out_trans_diag_slide, sq_in_trans_diag_slide, target);
 						show_debug_message(global.roomTarget);
 					}
 					else {

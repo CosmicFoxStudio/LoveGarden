@@ -3,7 +3,7 @@
 if (InputCheck(e_input.MOUSE, "confirm") && hovering) {
 	show_debug_message("Going to Dormroom");
 	
-	TransitionSet(sq_out_trans_fade_black, sq_in_trans_fade_black, "CHANGE_ROOM", rm_dormroom);
+	TransitionSetRoom(sq_out_trans_fade_black, sq_in_trans_fade_black, rm_dormroom);
 }
 
 if (hovering && global.hoveringPlace != PlaceLocalization("Dormroom")) {

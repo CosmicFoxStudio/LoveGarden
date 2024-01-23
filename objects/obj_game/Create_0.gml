@@ -116,9 +116,6 @@ global.rmNameSorted = noone;
 // Room Transitions
 global.roomTarget = -1;
 global.midTransition = false;
-global.transitionTypeOut = noone;
-global.transitionTypeIn = noone;
-global.transitionLayer = noone;
 #endregion ROOMS & NAVIGATION
 
 #region CAMERA

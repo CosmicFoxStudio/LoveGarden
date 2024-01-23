@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSequence",
   "resourceVersion": "1.4",
-  "name": "sq_out_trans_bars_black",
+  "name": "sq_out_trans_bars",
   "autoRecord": true,
   "backdropHeight": 360,
   "backdropImageOpacity": 0.5,
@@ -23,13 +23,13 @@
     "resourceVersion": "1.0",
     "Keyframes": [
       {"resourceType":"Keyframe<MomentsEventKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"MomentsEventKeyframe","resourceVersion":"1.0","Events":[
-              "TransitionAction",
-            ],},},"Disabled":false,"id":"4475f4bd-64f2-400f-bc84-7d4dfd808530","IsCreationKey":false,"Key":59.9999,"Length":1.0,"Stretch":false,},
+              "TransitionChangeRoom",
+            ],},},"Disabled":false,"id":"ab00198d-2679-43d2-9b7d-a9148eb92f78","IsCreationKey":false,"Key":59.9999,"Length":1.0,"Stretch":false,},
     ],
   },
   "parent": {
-    "name": "Sequences",
-    "path": "folders/Sequences.yy",
+    "name": "Change Room Transitions",
+    "path": "folders/Sequences/Change Room Transitions.yy",
   },
   "playback": 0,
   "playbackSpeed": 60.0,

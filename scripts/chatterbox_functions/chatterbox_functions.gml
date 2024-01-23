@@ -15,14 +15,14 @@ function BackgroundSetIndex(_index) {
 }
 
 function DialogueTransition() {
-	TransitionSet(sq_out_trans_bars_black, sq_in_trans_bars_black);
+	TransitionSet(sq_trans_bars);
 }
 
 // Chatterbox function to change rooms
 function NextRoom(_room) {
 	//show_debug_message(_room);
 	if (asset_get_type(_room) == asset_room) {
-		TransitionSet(sq_out_trans_fade_black, sq_in_trans_fade_black, "CHANGE_ROOM" ,asset_get_index(_room)); 
+		TransitionSetRoom(sq_out_trans_fade_black, sq_in_trans_fade_black, asset_get_index(_room)); 
 	}
 	else {
 		show_debug_message("(ERROR) Wrong asset name.")

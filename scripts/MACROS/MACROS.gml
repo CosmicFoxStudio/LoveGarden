@@ -4,6 +4,7 @@
 #macro TEXT_WIDTH 400
 #macro ORIGIN_X 0
 #macro ORIGIN_Y 0
+#macro DT 60 // Delta Time - equivalent to 60 FPS or the room_speed
 
 // Colors
 #macro RED			0xFF0000FF	// same as c_red

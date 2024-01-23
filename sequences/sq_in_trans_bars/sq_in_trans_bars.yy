@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSequence",
   "resourceVersion": "1.4",
-  "name": "sq_in_trans_bars_black",
+  "name": "sq_in_trans_bars",
   "autoRecord": true,
   "backdropHeight": 360,
   "backdropImageOpacity": 0.5,
@@ -28,8 +28,8 @@
     ],
   },
   "parent": {
-    "name": "Sequences",
-    "path": "folders/Sequences.yy",
+    "name": "Change Room Transitions",
+    "path": "folders/Sequences/Change Room Transitions.yy",
   },
   "playback": 0,
   "playbackSpeed": 60.0,

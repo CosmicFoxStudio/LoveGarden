@@ -28,8 +28,8 @@
     ],
   },
   "parent": {
-    "name": "Sequences",
-    "path": "folders/Sequences.yy",
+    "name": "Change Room Transitions",
+    "path": "folders/Sequences/Change Room Transitions.yy",
   },
   "playback": 0,
   "playbackSpeed": 60.0,

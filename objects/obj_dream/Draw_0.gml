@@ -37,13 +37,13 @@ if (finishedIntro) {
 */
 	#endregion (TO-DO)
 	
-	// TransitionSet(sq_out_trans_fade_white, sq_in_trans_fade_white, "CHANGE_ROOM", rm_test);
+	// TransitionSetRoom(sq_out_trans_fade_white, sq_in_trans_fade_white, rm_test);
 }
 
 // Create player
 
 if (finishedIntro && !createdPlayer) {
-	//TransitionSet(sq_out_trans_fade_black, sq_in_trans_fade_black);
+	//TransitionSet(sq_trans_fade_black);
 	instance_create_layer(0, 0, "Instances_Above", obj_player_creator);	
 	createdPlayer = true;
 }
@@ -59,7 +59,7 @@ if (finishedPlayer) {
 	DrawReset();
 	
 	// Transition to next scene
-	TransitionSet(sq_out_trans_fade_white, sq_in_trans_fade_white, "CHANGE_ROOM", rm_dormroom);
+	TransitionSetRoom(sq_out_trans_fade_white, sq_in_trans_fade_white, rm_dormroom);
 		
 	// Job done
 	instance_destroy();

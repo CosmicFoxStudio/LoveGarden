@@ -23,13 +23,13 @@
     "resourceVersion": "1.0",
     "Keyframes": [
       {"resourceType":"Keyframe<MomentsEventKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"MomentsEventKeyframe","resourceVersion":"1.0","Events":[
-              "TransitionAction",
-            ],},},"Disabled":false,"id":"5fb2dd6d-9afa-4475-9960-a6ab13c7323c","IsCreationKey":false,"Key":59.9999,"Length":1.0,"Stretch":false,},
+              "TransitionChangeRoom",
+            ],},},"Disabled":false,"id":"7b354f8e-66f9-456f-b4ed-a3231020fc9d","IsCreationKey":false,"Key":59.9999,"Length":1.0,"Stretch":false,},
     ],
   },
   "parent": {
-    "name": "Sequences",
-    "path": "folders/Sequences.yy",
+    "name": "Change Room Transitions",
+    "path": "folders/Sequences/Change Room Transitions.yy",
   },
   "playback": 0,
   "playbackSpeed": 60.0,
