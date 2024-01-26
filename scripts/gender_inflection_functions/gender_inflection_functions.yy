@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_string_substitutions",
+  "name": "gender_inflection_functions",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

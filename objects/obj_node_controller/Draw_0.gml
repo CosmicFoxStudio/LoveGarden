@@ -26,7 +26,7 @@ if IsChatterbox(chatterbox) and text != undefined {
 	// ------------------------- APPLY STRING SUBSTITUTIONS ------------------------- //
 	
 	// Portuguese gender inflection
-	speechText = HandleGenderInflection(speechText, global.pronouns);
+	speechText = GenderInflection(speechText, global.pronouns);
 	
 	// Check if "PLAYER" exists in the string and replace it with the value in global.playerName
 	if (string_pos("PLAYER", speechText) > 0) { // > 0 means a string was found

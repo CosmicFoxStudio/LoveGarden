@@ -309,7 +309,7 @@
     {"id":{"name":"__ChatterboxConfig","path":"scripts/__ChatterboxConfig/__ChatterboxConfig.yy",},},
     {"id":{"name":"__scribble_class_element","path":"scripts/__scribble_class_element/__scribble_class_element.yy",},},
     {"id":{"name":"snd_config_test_music","path":"sounds/snd_config_test_music/snd_config_test_music.yy",},},
-    {"id":{"name":"scr_string_substitutions","path":"scripts/scr_string_substitutions/scr_string_substitutions.yy",},},
+    {"id":{"name":"gender_inflection_functions","path":"scripts/gender_inflection_functions/gender_inflection_functions.yy",},},
     {"id":{"name":"snd_unicorridor","path":"sounds/snd_unicorridor/snd_unicorridor.yy",},},
     {"id":{"name":"__ChatterboxBufferBatch","path":"scripts/__ChatterboxBufferBatch/__ChatterboxBufferBatch.yy",},},
     {"id":{"name":"spr_growth_bar","path":"sprites/spr_growth_bar/spr_growth_bar.yy",},},

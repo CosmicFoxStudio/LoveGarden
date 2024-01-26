@@ -1,54 +1,47 @@
-function HandleGenderInflection(_str, _gender) {
+
+/// Main function to handle gender inflection
+function GenderInflection(_str, _gender) {
     var openTag = "<";
     var closeTag = ">";
-	var word = "";
-    // Find the position of the opening tag
-    var openPos = string_pos(openTag, _str);
+    
+	// Iterate through the string until no more < > tags are found (string_pos returns 0 to "<")
+    while (string_pos(openTag, _str) > 0) {
+        var word = GenderInflectionExtractWord(_str, openTag, closeTag);
+        _str = ReplaceWord(_str, GenderInflectionHandleWord(word, _gender));
+    }
 
-    // Iterate through the string until no more < > tags are found (string_pos returns 0 to "<")
-	while (openPos > 0) {
-
-        // Find the position of the closing tag
-        var closePos = string_pos(closeTag, _str);
-		
-        // Check if both tags are found
-        if (closePos > openPos) {
-	        // Extract the word between the tags
-	        var word = string_copy(_str, openPos + 1, closePos - openPos - 1);
-		
-		    // Check if the word ends with "co" to replace it to "que" in neutral gender
-		    var isQue = (string_copy(word, string_length(word) - 1, 2) == "co");
-			// Check if the word ends with "go" to replace it to "gue" in neutral gender
-			var isGue = (string_copy(word, string_length(word) - 1, 2) == "go");
-			
-			// Handle special case for words ending with "que"
-		    if (isQue) word = HandleQueGueInflection(word, _gender, "co");
-			else if (isGue) word = HandleQueGueInflection(word, _gender, "go");
-		    else if (word == "ele" || word == "dele" || word == "seu" || word == "meu") {
-		        // Handle special case for "delu"
-		        word = HandlePossessiveInflection(word, _gender);
-			}
-			else if (word == "o") {
-				word = HandleArticleInflection(_gender);
-			} else {
-		        // Handle default inflection (o/a/e/ê)
-		        word = ApplyDefaultInflection(word, _gender);
-		    }
-		
-			// Replace the original word in the string and return it
-			_str = ReplaceWord(_str, word);
-		}
-		
-        // Update to the next occurrence of the opening tag and loop again
-        openPos = string_pos(openTag, _str);
-		//if (openPos == 0) { show_debug_message("while loop condition break") }
-	}
 	// Once there's no more <> tags, the loop breaks and the new string with all substitutions is returned
     return _str;
 }
 
+/// Extract word between opening and closing tags
+function GenderInflectionExtractWord(_str, _openTag, _closeTag) {
+	// Find the position of the opening tag and closing tag
+    var openPos = string_pos(_openTag, _str);
+    var closePos = string_pos(_closeTag, _str);
+    
+	// Check if both tags are found
+    if (closePos > openPos) {
+        return string_copy(_str, openPos + 1, closePos - openPos - 1);
+    }
+
+    return "";
+}
+
+/// Handle inflection for a single word
+function GenderInflectionHandleWord(_word, _gender) {
+    switch (_word) {
+        case "o":
+            return GenderInflectionHandleArticle(_gender);
+        case "ele": case "dele": case "seu": case "meu":
+            return GenderInflectionHandlePossessive(_word, _gender);
+        default:
+            return GenderInflectionHandle(_word, _gender);
+    }
+}
+
 // Function to handle special case for the word "o"
-function HandleArticleInflection(_gender) {
+function GenderInflectionHandleArticle(_gender) {
     switch (_gender) {
         case e_pronouns.ELA:
             return "a";
@@ -61,7 +54,7 @@ function HandleArticleInflection(_gender) {
 }
 
 // For special cases in the neutral language (words that end with "que")
-function HandleQueGueInflection(_word, _gender, _queGue) {
+function GenderInflectionHandleQueGue(_word, _gender, _queGue) {
 	var replacement = "";
 	switch (_gender) {
 	    case e_pronouns.ELA:
@@ -98,8 +91,12 @@ function HandleQueGueInflection(_word, _gender, _queGue) {
 	return modifiedString;
 }
 
-// For words such as "seu"/"sua"/"sue", or "dele"/"dela"/"delu"
-function HandlePossessiveInflection(_word, _gender) {
+/* For words such as:
+	"yours"/"his"/"hers"/"theirs"
+	"tu"/"su"/"suyo"/"de ella"/"de él"
+	"seu"/"sua"/"sue"/"dele"/"dela"/"delu"
+*/
+function GenderInflectionHandlePossessive(_word, _gender) {
 	var replacement = "";
 	switch (_gender) {
 	    case e_pronouns.ELA:
@@ -108,6 +105,9 @@ function HandlePossessiveInflection(_word, _gender) {
 			}
 			else if (_word == "dele") {
 				replacement = "dela";
+			}
+			else if (_word == "esse") {
+		        replacement = "essa";
 			}
 			else if (_word == "seu") {
 				replacement = "sua";
@@ -123,6 +123,9 @@ function HandlePossessiveInflection(_word, _gender) {
 			}
 			else if (_word == "dele") {
 				replacement = "delu";
+			}
+			else if (_word == "esse") {
+		        replacement = "êssu";
 			}
 			else if (_word == "seu") {
 				replacement = "sue";
@@ -144,8 +147,25 @@ function HandlePossessiveInflection(_word, _gender) {
 	
 }
 
+/// Handle inflection for words ending with "o", as well as "que" or "gue" depending on chosen pronouns
+function GenderInflectionHandle(_word, _gender) {
+    // Check if the word ends with "co" to replace it to "que" in neutral gender
+    var isQue = (string_copy(_word, string_length(_word) - 1, 2) == "co");
+    // Check if the word ends with "go" to replace it to "gue" in neutral gender
+    var isGue = (string_copy(_word, string_length(_word) - 1, 2) == "go");
+
+    if (isQue) {
+        return GenderInflectionHandleQueGue(_word, _gender, "co");
+    } else if (isGue) {
+        return GenderInflectionHandleQueGue(_word, _gender, "go");
+    } else {
+		// Handle default inflection (o/a/e)
+        return GenderInflectionHandleDefault(_word, _gender);
+    }
+}
+
 /// On selected <words>, "o" becomes "a" or "e" depending on chosen pronouns
-function ApplyDefaultInflection(_word, _gender) {
+function GenderInflectionHandleDefault(_word, _gender) {
 
 	var replacement = "";
 	switch (_gender) {
@@ -161,19 +181,14 @@ function ApplyDefaultInflection(_word, _gender) {
 	        return _word; // Masculine pronouns - no change
 	}
 	
-
-	// This code doesn't work for words with repeated letters
-	//var substring = string_char_at(_word, string_length(_word));
-    //var modifiedWord = string_replace(_word, substring, replacement);
-	
 	// Modify the last character based on the gender
-	var modifiedWord = ReplaceLastChar(_word, "o", replacement);
+	var modifiedWord = ReplaceLastNChar(_word, 1, replacement);
 	
 	return modifiedWord;
 }
 
-// Replace the last occurrence of a character in a word
-function ReplaceLastChar(_word, _char, _replacement) {
+// Replace the last occurrence of a given character in a word
+function ReplaceSpecifiedLastChar(_word, _char, _replacement) { // e.g.: ReplaceSpecifiedLastChar(_word, "o", replacement);
     var lastIndex = string_length(_word);
     
     while (lastIndex > 0) {
@@ -187,6 +202,12 @@ function ReplaceLastChar(_word, _char, _replacement) {
     return _word;
 }
 
+// Function to replace the last n characters of a word
+function ReplaceLastNChar(_word, _n, _replacement) {
+    var lastIndex = string_length(_word);
+    return string_copy(_word, 1, lastIndex - _n) + _replacement;
+}
+
 function ReplaceWord(_str, _modifiedWord) {
 	var openTag = "<";
     var closeTag = ">";
@@ -196,7 +217,5 @@ function ReplaceWord(_str, _modifiedWord) {
 	var originalWord = string_copy(_str, openPos + 1, closePos - openPos - 1);
 	
 	// Replace the original word in the string
-    _str = string_replace(_str, openTag + originalWord + closeTag, _modifiedWord);
-
-    return _str;
+    return string_replace(_str, openTag + originalWord + closeTag, _modifiedWord);
 }
