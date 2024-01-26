@@ -36,45 +36,47 @@ function SetMap(_mapBool) {
 
 // Function to choose character on screen
 function CharacterOnScreen(_name) {
-	var sprite = noone;
-	if (_name) == "maple" {
-		sprite = spr_maple;
-	}
-	else if (_name) == "ype" {
-		sprite = spr_ype;
-	}
-	else if (_name) == "caru" {
-		sprite = spr_caru;
-	}
-	else if (_name) == "rose" {
-		sprite = spr_rose;
-	}
-	else if (_name) == "clove" {
-		sprite = spr_clove;
-	}
-	else if (_name) == "hydra" {
-		sprite = spr_hydra;
-	}
-	else if (_name) == "fern" {
-		sprite = spr_fern;
-	}
-	else if (_name) == "orange" {
-		sprite = spr_orange;
-	}
-	else if (_name) == "nanne" {
-		sprite = spr_nanne;
-	}
-	else if (_name) == "cali" {
-		sprite = spr_cali;
-	}
-	else if (_name) == "void" {
-		sprite = spr_noone;
-	}
-	//else {
-	//	sprite = spr_noone;
-	//}
-
-	obj_characters.chara = sprite;
+    var sprite = noone;    
+    switch (_name) {
+        case "maple":
+            sprite = spr_maple;
+            break;
+        case "ype":
+            sprite = spr_ype;
+            break;
+        case "caru":
+            sprite = spr_caru;
+            break;
+        case "rose":
+            sprite = spr_rose;
+            break;
+        case "clove":
+            sprite = spr_clove;
+            break;
+        case "hydra":
+            sprite = spr_hydra;
+            break;
+        case "fern":
+            sprite = spr_fern;
+            break;
+        case "orange":
+            sprite = spr_orange;
+            break;
+        case "nanne":
+            sprite = spr_nanne;
+            break;
+        case "cali":
+            sprite = spr_cali;
+            break;
+        case "void":
+            sprite = spr_noone;
+            break;
+        default:
+			sprite = spr_noone;
+            break;
+    }
+    
+    obj_characters.chara = sprite;
 }
 
 // Function to choose the character's expression to be displayed (needs improvements!!)

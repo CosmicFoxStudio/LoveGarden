@@ -24,10 +24,16 @@ if IsChatterbox(chatterbox) and text != undefined {
 	var speechText = ChatterboxGetContentSpeech(chatterbox, 0);
 	
 	// ------------------------- APPLY STRING SUBSTITUTIONS ------------------------- //
+	
+	// Portuguese gender inflection
+	speechText = HandleGenderInflection(speechText, global.pronouns);
+	textLength = scribble(speechText).get_glyph_count();
+	
 	// Check if "PLAYER" exists in the string
 	if string_pos("PLAYER", speechText) > 0 { // > 0 means a string was found
 	    // Replace "PLAYER" with the value in global.playerName
 	    speechText = string_replace(speechText, "PLAYER", global.playerName);
+		
 		textLength = scribble(speechText).get_glyph_count();
 	}
 	
@@ -48,6 +54,7 @@ if IsChatterbox(chatterbox) and text != undefined {
 		TEXT_GREEN, TEXT_GREEN, TEXT_GREEN, TEXT_GREEN, 1
 	);
 
+	// Remove nametag if narrator is speaking
 	if (speakerName != "")
 		layer_set_visible(layer_get_id("UI_Above"), true);
 	else
