@@ -61,7 +61,7 @@ function TransitionUnpause(_seq = self.elementID) {
 
 function TransitionAction(_seq = self.elementID) {
 	TransitionPause(_seq);
-	ExecuteTimedAction(0.5, TransitionUnpause, [_seq]);
+	ExecuteTimedAction(0.2, TransitionUnpause, [_seq]);
 	show_debug_message("Transition Action Ran.");
 }
 

@@ -1,3 +1,16 @@
+/// Define a struct for handling the idiomatic exceptions
+/// Left column is how you should write the word in the dialogue tags
+global.genderExceptionRules = {
+	"o"		: ["e", "a", "o"],
+	"x"		: ["ê", "a", "o"],
+	"ele"	: ["elu", "ela", "ele"],
+	"dele"	: ["delu", "dela", "dele"],
+    "co"	: ["que", "ca", "co"],
+	"go"	: ["gue", "ga", "go"],
+	"seu"	: ["sue", "sua", "seu"],
+	"meu"	: ["minhe", "minha", "meu"],
+	"esse"	: ["êssu", "essa", "esse"]
+};
 
 /// Main function to handle gender inflection
 function GenderInflection(_str, _gender) {
@@ -30,121 +43,13 @@ function GenderInflectionExtractWord(_str, _openTag, _closeTag) {
 
 /// Handle inflection for a single word
 function GenderInflectionHandleWord(_word, _gender) {
-    switch (_word) {
-        case "o":
-            return GenderInflectionHandleArticle(_gender);
-        case "ele": case "dele": case "seu": case "meu":
-            return GenderInflectionHandlePossessive(_word, _gender);
-        default:
-            return GenderInflectionHandle(_word, _gender);
-    }
-}
-
-// Function to handle special case for the word "o"
-function GenderInflectionHandleArticle(_gender) {
-    switch (_gender) {
-        case e_pronouns.ELA:
-            return "a";
-        case e_pronouns.ELU:
-            return "ê";
-		case e_pronouns.ELE:
-        default:
-            return "o"; // Masculine pronouns - no change
-    }
-}
-
-// For special cases in the neutral language (words that end with "que")
-function GenderInflectionHandleQueGue(_word, _gender, _queGue) {
-	var replacement = "";
-	switch (_gender) {
-	    case e_pronouns.ELA:
-			if (_queGue == "co") {
-		        replacement = "ca";
-			}
-			else if (_queGue == "go") {
-				replacement = "ga";	
-			}
-		break;
-	    case e_pronouns.ELU:
-			if (_queGue == "co") {
-		        replacement = "que";
-			}
-			else if (_queGue == "go") {
-				replacement = "gue";	
-			}
-		break;
-
-		case e_pronouns.ELE:
-	    default:
-	        return _word; // Masculine pronouns - no change
-	}
-		
-	// Get the length of the string
-	var strLength = string_length(_word);
-
-	// Replace the last three letters with something else
-	var slicedString = string_copy(_word, 1, strLength - 2);
-	
-	var modifiedString = slicedString + replacement;
-
-	// Return the modified string to original function
-	return modifiedString;
-}
-
-/* For words such as:
-	"yours"/"his"/"hers"/"theirs"
-	"tu"/"su"/"suyo"/"de ella"/"de él"
-	"seu"/"sua"/"sue"/"dele"/"dela"/"delu"
-*/
-function GenderInflectionHandlePossessive(_word, _gender) {
-	var replacement = "";
-	switch (_gender) {
-	    case e_pronouns.ELA:
-			if (_word == "ele") {
-		        replacement = "ela";
-			}
-			else if (_word == "dele") {
-				replacement = "dela";
-			}
-			else if (_word == "esse") {
-		        replacement = "essa";
-			}
-			else if (_word == "seu") {
-				replacement = "sua";
-			}
-			else if (_word == "meu") {
-				replacement = "minha";
-			}
-		break;
-		
-	    case e_pronouns.ELU:
-			if (_word == "ele") {
-		        replacement = "elu";
-			}
-			else if (_word == "dele") {
-				replacement = "delu";
-			}
-			else if (_word == "esse") {
-		        replacement = "êssu";
-			}
-			else if (_word == "seu") {
-				replacement = "sue";
-			}
-			else if (_word == "meu") {
-				replacement = "minhe";
-			}
-		break;
-		
-		case e_pronouns.ELE:
-	    default:      
-	        return _word; 
+	// Word is an exception - indexed on dictionary
+	if (struct_exists(global.genderExceptionRules, _word)) {
+		return global.genderExceptionRules[$ _word][_gender];
 	}
 	
-	var modifiedString = replacement;
-
-	// Return the modified string to original function
-	return modifiedString;
-	
+	// Regular words with gender inflection
+	return GenderInflectionHandle(_word, _gender);
 }
 
 /// Handle inflection for words ending with "o", as well as "que" or "gue" depending on chosen pronouns
@@ -166,40 +71,34 @@ function GenderInflectionHandle(_word, _gender) {
 
 /// On selected <words>, "o" becomes "a" or "e" depending on chosen pronouns
 function GenderInflectionHandleDefault(_word, _gender) {
-
 	var replacement = "";
-	switch (_gender) {
-	    case e_pronouns.ELA:
-	        replacement = "a";
-	        break;
-	    case e_pronouns.ELU:
-	        replacement = "e";
-	        break;
-			
-		case e_pronouns.ELE:
-	    default:
-	        return _word; // Masculine pronouns - no change
-	}
+	if (global.genderExceptionRules[$ "o"] != undefined && global.genderExceptionRules[$ "o"][_gender] != undefined) {
+        replacement = global.genderExceptionRules[$ "o"][_gender];
+    }
 	
-	// Modify the last character based on the gender
+	// Modify only the last character based on the gender
 	var modifiedWord = ReplaceLastNChar(_word, 1, replacement);
 	
 	return modifiedWord;
 }
 
-// Replace the last occurrence of a given character in a word
-function ReplaceSpecifiedLastChar(_word, _char, _replacement) { // e.g.: ReplaceSpecifiedLastChar(_word, "o", replacement);
-    var lastIndex = string_length(_word);
-    
-    while (lastIndex > 0) {
-        lastIndex--;
-
-        if (string_char_at(_word, lastIndex + 1) == _char) {
-            return string_copy(_word, 1, lastIndex) + _replacement + string_copy(_word, lastIndex + 2, string_length(_word) - lastIndex - 1);
-        }
+// For special cases in the neutral language (words that end with "que")
+function GenderInflectionHandleQueGue(_word, _gender, _queGue) {
+	var replacement = "";
+    if (global.genderExceptionRules[$ _queGue] != undefined && global.genderExceptionRules[$ _queGue][_gender] != undefined) {
+        replacement = global.genderExceptionRules[$ _queGue][_gender];
     }
 
-    return _word;
+	// Get the length of the string
+	var strLength = string_length(_word);
+
+	// Replace the last two letters with something else
+	var slicedString = string_copy(_word, 1, strLength - 2);
+	
+	var modifiedString = slicedString + replacement;
+
+	// Return the modified string to original function
+	return modifiedString;
 }
 
 // Function to replace the last n characters of a word

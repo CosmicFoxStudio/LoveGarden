@@ -15,7 +15,7 @@ function BackgroundSetIndex(_index) {
 }
 
 function DialogueTransition() {
-	TransitionSet(sq_trans_bars);
+	TransitionSet(sq_trans_fade_black);
 }
 
 // Chatterbox function to change rooms

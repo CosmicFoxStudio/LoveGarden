@@ -6,10 +6,12 @@ title: Morning
     The rule says you can't run in the hallways... # # # #line:af98ad
     So you quicken your pace until you reach the entrance. # # # #line:ddf6ae
     In the distance, you can see the boat that just left. # # # #line:bb92f9
-    You sigh to yourself and meekly walk down the stairs to the dorm's main floor in a gesture of acceptance. # # #
+    You sigh to yourself and meekly walk down the stairs to the dorm's main floor in a gesture of acceptance. # # # #line:5a3b7b
+    ... # # # #line:7f7969
     <<transition()>>
+    ... # # # #line:b9d47b
     <<bg(1)>> 
-    As you reach the dorm's reception, you're met with a short old man with oranges stuck in his beard. # # #
+    As you reach the dorm's reception, you're met with a short old man with oranges stuck in his beard. # # # #line:78acb8
     <<chara("orange")>>
     MR. ORANGE: Hey. Are you a morning student? # # # #line:36b3dd
     PLAYER: Yes, I am! # # # #line:9df643
@@ -35,7 +37,7 @@ title: Morning
         PLAYER: (Oh my god, I called him old). # # # #line:72266d
         MR. ORANGE: HAHA! It's only been 25 years! # # # #line:9485a0
         PLAYER: That means you've met all the famous plants, right? # # # #line:d77901
-        PLAYER: Even Tony Ramos, who graduated a few years ago? # # # #line:58fd6b
+        PLAYER: Even Willow Smith, who graduated a few years ago? # # # #line:58fd6b
         MR. ORANGE: Each one of them! I have a collection of photos with the students who became famous from the college. # # # #line:b7124f
         MR. ORANGE: I can show you the collection one day if you want! # # # #line:5c3359
         <<setFlag("orange_photo_book_talk")>>
@@ -53,8 +55,8 @@ title: Morning
         <<chara("hydra")>>
         <<setFlag("met_hydra", true)>>
         You try to see what she's drawing and ends up impressed with the replica of the lake she was creating. # # # #line:c51c4b
-        What do you do? # # #
-        What do you do? # # #
+        What do you do? # # # #line:3ec998
+        What do you do? # # # #line:e8332a
         -> Try to talk to her. # # # #line:32cbd1
             PLAYER: Wow, your drawing is beautiful! # # # #line:370ddb
             ???: ... # # # #line:69998f
@@ -67,7 +69,7 @@ title: Morning
             You can't take your eyes off the drawing. # # # #line:72e405
             To the point that the girl gives you a quick look with raised eyebrows. # # # #line:df7bd3
             You look away, feeling your face heat up for getting caught. # # # #line:2b1dd7
-            Soon, the third boat starts to approach. # # # #line:52962f
+            Soon, the third boat starts to approach and you stand up to get inside. # # # #line:52962f
     PLAYER: (Thank goodness everything worked out...) # # # #line:c83b07
     You board the boat. # # # #line:dc01da
     <<setFlag("dormitory_morning_saw")>>
@@ -84,93 +86,98 @@ title: Noon
 
 title: Afternoon
 ---
+<<nextDaytime()>>
 <<bg(1)>>
-Você entra no dormitório, <recebide> por um pôr do sol encantador que pinta o céu em tonalidades quentes, combinando com as árvores alaranjadas na paisagem. 
-O Sr. Laranjeira, ansioso pela sua volta, dá as boas-vindas calorosas.
+You enter the dormitory, greeted by a charming sunset painting the sky in warm hues, matching the orange trees in the landscape. Mr. Orange, eager for your return, gives you a warm welcome. #line:a7baa0
 <<chara("orange")>>
-LARANJEIRA: Olá, jovem. Feliz em <vê-lo> novamente.
-LARANJEIRA: Como foi seu primeiro dia na escola?
-PLAYER: Escola você quer dizer faculdade, né?
-LARANJEIRA: Isso, isso!
-LARANJEIRA: Isso, isso!
--> Foi ótimo.
-    LARANJEIRA: Que beleza.
--> Poderia ter sido melhor.
-    LARANJEIRA: Ah, entendo. É uma pena.
-    LARANJEIRA: Mas não se preocupe, ainda está no começo. Muitas experiências aguardam por você.
-Observando um pouco a frente, você percebe que Caru está jogando algum video game com um colega. Mas parece estar bastante concentrado.
-O que você quer fazer?
-O que você quer fazer?
--> Perguntar sobre o álbum de fotos. <<if getFlag("orange_photo_book_talk")>>
-    O Sr. Laranja entusiasticamente lhe apresenta uma variedade de famosos do campus, incluindo o tal do "Tony Ramos".
-    Além dele, vários outros famosos como "Dalva Oliveira", "Mônica Carvalho"...
-    A maioria você não conhece apesar, que um ou outro você lembra de ver pelos noticiários.
-    Até que você nota um bastante peculiar... "João-Pé-de-Feijão".
-    PLAYER: Huh? Esse daqui me é familiar.
-    LARANJEIRA: Oh, sim. Esse é o nosso primeiro reitor da Lótus. Existem várias lendas sobre ele.
-    LARANJEIRA: Dizem que ele alcançou o céu ao escalar um imenso pé-de-feijão, algo que nunca ninguém havia conseguido fazer.
-    PLAYER:  Um pé-de-feijão gigante...?
-    LARANJEIRA: Justamente. Reza a lenda que há muito tempo atrás, Lótus era conhecida por um pé-de-feijão que chegava aos céus. 
-    LARANJEIRA: Posso lhe contar a lenda desde o início... Se você estiver com tempo.
-    LARANJEIRA: Posso lhe contar a lenda desde o início... Se você estiver com tempo.
-    -> Claro, você atiçou minha curiosidade.
+MR. ORANGE: Hello, young one. Happy to see you again. #line:b23003
+MR. ORANGE: How was your first day at school? #line:01720d
+PLAYER: School, you mean college, right? #line:fa5339
+MR. ORANGE: Oh, right! #line:bfc1ee
+MR. ORANGE: Oh, right! #line:710df3
+-> It was great. #line:291831
+    MR. ORANGE: Fantastic. #line:e55343
+-> It could have been better. #line:e67b1a
+    MR. ORANGE: Ah, I see. That's a shame. #line:c3506d
+    MR. ORANGE: But don't worry, it's still early. Many experiences await you. #line:1503ec
+Looking ahead, you notice that Caru is playing some video game with a colleague. But he seems quite focused. #line:bb1b35
+What do you want to do? #line:ebfe35
+What do you want to do? #line:eb08d9
+-> Ask about the photo album. <<if getFlag("orange_photo_book_talk")>> #line:73e84d
+    Mr. Orange enthusiastically presents you with a variety of campus celebrities, including the so-called ''Willow Smith.'' #line:a1b07a
+    Besides her, many other famous figures like ''Daisy Lowe,'' ''Lily Allen''... #line:4c935d
+    Most you don't know, although one or two you vaguely remember from the news. #line:8ab0f5
+    Until you notice a quite peculiar one... ''Jack the Beanstalk''. #line:2878d3
+    PLAYER: Huh? This one looks familiar. #line:40f387
+    MR. ORANGE: Oh, yes. This is our first Lotus rector. There are several legends about him. #line:9a219a
+    MR. ORANGE: They say he reached the sky by climbing a massive beanstalk, something no one had ever accomplished. #line:f27b02
+    PLAYER: A giant beanstalk...? #line:4d6bb5
+    MR. ORANGE: Exactly. Legend has it that long ago, Lotus was known for a beanstalk that reached the heavens. #line:951982
+    MR. ORANGE: I can tell you the legend from the beginning... If you have the time. #line:681bb9
+    MR. ORANGE: I can tell you the legend from the beginning... If you have the time. #line:1419ef
+    -> Sure, you've caught my curiosity. #line:a6e132
+        ... Once upon a time, ... #line:4359f5
         <<transition()>>
+        ... #line:7a1e5e
         <<chara("void")>>
         <<bg(2)>>
-        LARANJEIRA: Era uma vez, um estudante notável chamado João, conhecido por sua curiosidade e amor pela agricultura. 
-        LARANJEIRA: Ele habitava o antigo feudo de Lótus, muito antes dessa universidade existir.
-        LARANJEIRA: Um dia, enquanto explorava os arredores da faculdade, ele descobriu uma semente peculiar que parecia irradiar uma aura mágica.
-        LARANJEIRA: Intrigado, João decidiu plantar a semente em um solo especial que ele mesmo preparou. 
-        LARANJEIRA: Para sua surpresa, a semente germinou em um pé-de-feijão extraordinário que se erguia em direção aos céus. 
-        LARANJEIRA: Este não era um pé-de-feijão comum, pois ele emanava magia e mistério.
-        LARANJEIRA: À medida que o pé-de-feijão crescia, uma escadaria mágica se formava ao longo de seu caule, conectando o topo ao mundo das nuvens. 
-        LARANJEIRA: No entanto, pela altura, ninguém se atrevia a escalá-lo. Nem mesmo os maiores alpinistas.
-        LARANJEIRA: Corajosamente, João decidiu subir essa escada para explorar o que estava além das nuvens.
-        LARANJEIRA: Ao atingir o topo, João descobriu uma terra celestial, povoada por criaturas mágicas e seres extraordinários. 
-        LARANJEIRA: Por ser o único habitante da terra de baixo que chegou aos céus, um sábio o abrigou e resolveu ensiná-lo vários segredos ocultos.
-        LARANJEIRA: Ele contou a João sobre a importância de manter essa conexão, equilibrando a magia e a realidade.
-        LARANJEIRA: Graças ao que aprendeu com o mundo de cima, foi capaz de desenvolver inúmeras técnicas mágicas.
-        LARANJEIRA: Tanto é que hoje João é considerado o Pai da Herbologia Mágica Moderna.
-        LARANJEIRA: Ao longo dos anos, João, agora conhecido como João-Pé-de-Feijão, tornou-se o guardião da ligação entre os dois mundos. 
-        LARANJEIRA: Ele compartilhava seu conhecimento com os jovens da região, inspirando-os a explorar os limites da magia e da botânica.
-        LARANJEIRA: Se tornou tão popular que vários príncipes e princesas dos reinos vizinhos vinham estudar com ele.
-        LARANJEIRA: Quando já estava mais velho, resolveu criar uma universidade, que hoje é a Lótus. 
+        MR. ORANGE: ... There was an outstanding student named Jack, known for his curiosity and love for agriculture. #line:0bf19f
+        MR. ORANGE: He lived in the ancient fiefdom of Lotus, long before this university existed. #line:c3f160
+        MR. ORANGE: One day, while exploring the surroundings of the college, he discovered a peculiar seed that seemed to radiate a magical aura. #line:4cd139
+        MR. ORANGE: Intrigued, Jack decided to plant the seed in special soil he prepared himself. #line:2c2d08
+        MR. ORANGE: To his surprise, the seed sprouted into an extraordinary beanstalk that rose toward the heavens. #line:10eb3c
+        MR. ORANGE: This was no ordinary beanstalk, as it emanated magic and mystery. #line:09a11d
+        MR. ORANGE: As the beanstalk grew, a magical staircase formed along its stem, connecting the top to the Realm of Clouds. #line:1a7183
+        MR. ORANGE: However, due to its height, no one dared to climb it. Not even the greatest climbers. #line:36532b
+        MR. ORANGE: In a courageous act, Jack decided to climb this staircase to explore what lay beyond the clouds. #line:7f09cc
+        MR. ORANGE: Upon reaching the top, he discovered a celestial land, populated by magical creatures and extraordinary beings. #line:05eb47
+        MR. ORANGE: As the only inhabitant from the land below who reached the heavens, a wise dweller sheltered him and taught him various hidden secrets. #line:415d24
+        MR. ORANGE: He told Jack about the importance of maintaining the balance between magic and reality. #line:7d6a16
+        MR. ORANGE: Thanks to what he learned from the world above, he developed numerous magical techniques. #line:227323
+        MR. ORANGE: So much so that today, Jack is considered the Father of Modern Magical Herbology. #line:d871c9
+        MR. ORANGE: Over the years, Jack, now known as Jack the Beanstalk, became the guardian of the connection between the two worlds. #line:cf19ce
+        MR. ORANGE: He shared his knowledge with the young people of the region, inspiring them to explore the limits of magic and botany. #line:56f54b
+        MR. ORANGE: He became so popular that several princes and princesses from neighboring kingdoms came to study with him. #line:dbcfb0
+        MR. ORANGE: When he was older, he decided to create a university, which is now Lotus. #line:4828ed
+        ... #line:d674dd
         <<transition()>>
+        ... #line:8f67ef
         <<bg(2)>>
         <<chara("orange")>>
-        LARANJEIRA: Definitivamente, uma de nossas figuras mais notáveis.
-        PLAYER: Carambolas. Há quanto tempo que foi isso?
-        LARANJEIRA: A universidade tem mais de 500 anos.
-        LARANJEIRA: Por isso também que não se sabe mais a veracidade da lenda, e muito menos se sabe onde foi parar o pé de feijão.
-        LARANJEIRA: O fato é que essa lenda persistiu.
-        LARANJEIRA: E temos um álbum de fotos especial mantido para homenagear aqueles que seguiram os passos de João, explorando a Herbologia Mágica.
-        PLAYER: Há algum jeito de eu ver esse álbum?
-        LARANJEIRA: Ah, infelizmente, o álbum está guardado com muito cuidado. 
-        LARANJEIRA: Mas quem sabe, se você se destacar na Herbologia Mágica, talvez um dia seja <incluído> nele!
-        PLAYER: Interessante... Vou manter isso em mente. Obrigado pela história, Sr. Laranjeira.
-    -> Obrigado, mas talvez outra hora.
-        LARANJEIRA: Oh, sim. Tudo bem. Você deve estar <ocupado>. Perdão por atrapalhar.
+        MR. ORANGE: Definitely one of our most notable figures. #line:0e9dc2
+        PLAYER: Wow. How long ago was that? #line:0598c6
+        MR. ORANGE: The university is over 500 years old now. #line:1b7924
+        MR. ORANGE: That's why the truth of the legend is no longer known, let alone where the beanstalk ended up. #line:ec47e4
+        MR. ORANGE: The fact is that this legend persisted. #line:c4c93b
+        MR. ORANGE: And we have a special photo album kept to honor those who followed Jack's footsteps by exploring Magical Herbology. #line:05f195
+        PLAYER: Is there any way I can see this album? #line:f043a2
+        MR. ORANGE: Oh, unfortunately, the album is carefully stored. #line:2fbc76
+        MR. ORANGE: But who knows, if you excel in Magical Herbology, maybe one day you'll be included in it! #line:e2cf42
+        PLAYER: Interesting... I'll keep that in mind. Thanks for the story, Mr. Orange. #line:e4bed3
+    -> Thanks, but maybe another time. #line:79e443
+        MR. ORANGE: Oh, sure. That's okay. You must be busy. Sorry for bothering you. #line:a335af
         <<chara("void")>>
-        Você sobe as escadas de volta para o seu quarto.
+        You climb the stairs back to your room. #line:89a4d6
         <<jump Night>>
--> Observar o que o Caru está fazendo.
+-> Check what Caru is doing.
     <<chara("void")>>
-    Caru está profundamente envolvido no jogo. Agora vendo de perto, você percebe que é um jogo de ritmo.
-    Você também nota que ele não está jogando com alguém, e que na verdade a outra pessoa está apenas assistindo.
-    O Caru está mandando muito bem, é melhor não interromper o momento.
-    Ao olhar para trás, você percebe que o Sr. Laranjeira não está mais ali.
-    Dessa forma, somente lhe resta voltar para o seu quarto.
+    Caru is deeply involved in the game. Now, looking closely, you realize it's a rhythm game.
+    You also notice he's not playing with anyone, the other person is just watching.
+    Caru is doing really well, so it's better not to interrupt the moment.
+    Looking back, you realize Mr. Orange is no longer there.
+    Thus, the only option left is to go back to your room.
     <<jump Night>>
--> Subir para o quarto.
-    PLAYER: Perdão, eu preciso ir fazer uma coisa.
-    LARANJEIRA: Oh, sim. Tudo bem. Você deve estar <ocupado>. Perdão por atrapalhar.
+-> Go upstairs.
+    PLAYER: Sorry, I need to go do something.
+    MR. ORANGE: Oh, that's fine. You must be busy. Sorry for bothering you.
     <<chara("void")>>
-    Você sobe as escadas de volta para o seu quarto.
+    You climb the stairs back to your room.
     <<jump Night>>
 ===
 
 title: Night
 ---
-LOREM IPSUM
+<<nextDaytime()>>
+LOREM IPSUM #line:da30df
 <<backTitle()>>
 ===
