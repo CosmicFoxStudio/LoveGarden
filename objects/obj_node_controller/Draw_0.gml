@@ -27,15 +27,17 @@ if IsChatterbox(chatterbox) and text != undefined {
 	
 	// Portuguese gender inflection
 	speechText = HandleGenderInflection(speechText, global.pronouns);
-	textLength = scribble(speechText).get_glyph_count();
 	
-	// Check if "PLAYER" exists in the string
-	if string_pos("PLAYER", speechText) > 0 { // > 0 means a string was found
-	    // Replace "PLAYER" with the value in global.playerName
-	    speechText = string_replace(speechText, "PLAYER", global.playerName);
-		
-		textLength = scribble(speechText).get_glyph_count();
+	// Check if "PLAYER" exists in the string and replace it with the value in global.playerName
+	if (string_pos("PLAYER", speechText) > 0) { // > 0 means a string was found
+	    // Replace "PLAYER" with global.playerName in Title Case
+		var playerNameInitial = string_copy(global.playerName, 1, 1);
+		var playerNameLowerRest = string_lower(string_copy(global.playerName, 2, string_length(global.playerName) - 1));
+	    var playerNameTitleCase = playerNameInitial + playerNameLowerRest;
+	    speechText = string_replace(speechText, "PLAYER", playerNameTitleCase);
 	}
+	// Update string length
+	textLength = scribble(speechText).get_glyph_count();
 	
 	// Use scribble light green color for the text (set in __scribble_config_colours)
 	scribble("[c_text_green]" + speechText).wrap(TEXT_WIDTH).draw(xx, yy, typist);
@@ -44,8 +46,6 @@ if IsChatterbox(chatterbox) and text != undefined {
 	var speakerName;
 	if ( (ChatterboxGetContentSpeaker(chatterbox, 0) == "PLAYER") ) speakerName = global.playerName;
 	else speakerName = ChatterboxGetContentSpeaker(chatterbox, 0);
-
-		
 	DrawFont(fnt_dialogue);
 	draw_text_color(
 		room_width/2 - 157, 
