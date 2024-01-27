@@ -38,7 +38,20 @@ global.routes[e_SO.CARU] = false
 global.routes[e_SO.ROSE] = false; 
 global.routes[e_SO.CLOVE] = false; 
 global.routes[e_SO.HYDRA] = false; 
-
+// Struct to map character names to sprites
+global.characterSprites = {
+    "maple": spr_maple,
+    "ype": spr_ype,
+    "caru": spr_caru,
+    "rose": spr_rose,
+    "clove": spr_clove,
+    "hydra": spr_hydra,
+    "fern": spr_fern,
+    "orange": spr_orange,
+    "nanne": spr_nanne,
+    "cali": spr_cali,
+    "void": spr_noone,
+};
 global.state = e_gameStates.TITLE_SCREEN;
 global.statePrevious = global.state;
 // Player Info

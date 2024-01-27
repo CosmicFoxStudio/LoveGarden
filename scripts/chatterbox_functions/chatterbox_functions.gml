@@ -36,47 +36,8 @@ function SetMap(_mapBool) {
 
 // Function to choose character on screen
 function CharacterOnScreen(_name) {
-    var sprite = noone;    
-    switch (_name) {
-        case "maple":
-            sprite = spr_maple;
-            break;
-        case "ype":
-            sprite = spr_ype;
-            break;
-        case "caru":
-            sprite = spr_caru;
-            break;
-        case "rose":
-            sprite = spr_rose;
-            break;
-        case "clove":
-            sprite = spr_clove;
-            break;
-        case "hydra":
-            sprite = spr_hydra;
-            break;
-        case "fern":
-            sprite = spr_fern;
-            break;
-        case "orange":
-            sprite = spr_orange;
-            break;
-        case "nanne":
-            sprite = spr_nanne;
-            break;
-        case "cali":
-            sprite = spr_cali;
-            break;
-        case "void":
-            sprite = spr_noone;
-            break;
-        default:
-			sprite = spr_noone;
-            break;
-    }
-    
-    obj_characters.chara = sprite;
+    // Set the character sprite based on the provided name
+    obj_characters.chara = global.characterSprites[$ _name];
 }
 
 // Function to choose the character's expression to be displayed (needs improvements!!)
@@ -120,7 +81,6 @@ function StatsGetBlossom(_SOName) {
 	
 	return -1;
 }
-
 
 // SO STATS
 function StatsAddBlossom(_SOName, _value) {
@@ -225,8 +185,25 @@ function NextDay() {
 	global.currentDaytime = e_daytime.MORNING;
 }
 
-function NextDaytime() {
-	global.currentDaytime += 1;
+function NextDaytime(_amount = 1) {
+	global.currentDaytime += _amount;
+}
+
+/// Use time sources to make the dialogue wait. 
+/// Useful when running an animation, a transition or showing a cutscene. 
+function DialogueWait(_seconds) {
+    // Convert seconds to frames
+    var frames = _seconds * DT; // 60 frames per second
+	
+    ChatterboxWait(CHATTERBOX_CURRENT);
+	
+    show_debug_message("Waiting chatterbox for " + string(frames) + " frames...");
+	
+    time_source_start(time_source_create(time_source_game, frames, time_source_units_frames, function(_chatterbox) {
+        show_debug_message("...continuing chatterbox!");
+        ChatterboxContinue(_chatterbox);
+    },
+    [CHATTERBOX_CURRENT]));
 }
 
 // Get filename dynamically

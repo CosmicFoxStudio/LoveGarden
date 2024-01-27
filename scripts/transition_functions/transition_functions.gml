@@ -74,8 +74,8 @@ function TransitionSet(_type = sq_trans_fade_white) {
 	}
 }
 
-// function CreateTransitionSequence() {} 
 
+// function CreateTransitionSequence() {} 
 
 
 /* 

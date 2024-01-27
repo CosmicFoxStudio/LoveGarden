@@ -12,6 +12,7 @@ ChatterboxAddFunction("growth", StatsGetGrowth);					// Returns growth stats
 ChatterboxAddFunction("nextDay", NextDay);							// Increments by 1 global.day. Set global.currentDaytime to morning
 ChatterboxAddFunction("nextDaytime", NextDaytime);					// Increments by 1 global.currentDaytime
 ChatterboxAddFunction("nextRoom", NextRoom);						// Function to change scene
+ChatterboxAddFunction("dialogueWait", DialogueWait);				// Makes the textbox wait for x seconds
 ChatterboxAddFunction("save", SaveGame);							// Calls the save script from inside a yarn file
 ChatterboxAddFunction("setFlag", FlagSet);							// Sets a value to a flag
 ChatterboxAddFunction("setMap", SetMap);

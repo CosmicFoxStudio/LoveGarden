@@ -9,8 +9,9 @@ title: Morning
     You sigh to yourself and meekly walk down the stairs to the dorm's main floor in a gesture of acceptance. # # # #line:5a3b7b
     ... # # # #line:7f7969
     <<transition()>>
-    ... # # # #line:b9d47b
+    <<dialogueWait(3)>>
     <<bg(1)>> 
+    ... # # # #line:b9d47b
     As you reach the dorm's reception, you're met with a short old man with oranges stuck in his beard. # # # #line:78acb8
     <<chara("orange")>>
     MR. ORANGE: Hey. Are you a morning student? # # # #line:36b3dd
@@ -29,8 +30,8 @@ title: Morning
     You only have to wait... What do you do now? # # # #line:83d7e5
     -> Talk to Mr. Orange. # # # #line:1ecdd9
         <<addAction()>>
-        (YOU JUST EARNED A BONUS ACTION![spr_action])[snd_click1] #line:416827
-        You have to wait anyway; it's better to talk to someone to pass the time. # # # #line:bae562
+        (YOU JUST EARNED A BONUS ACTION! [spr_action])[snd_click1] #line:416827
+        You have to wait anyway. It's better to talk to someone to pass the time. # # # #line:bae562
         PLAYER: Not to be intrusive, but it's quite a coincidence that your name is the same as the dormitory. # # # #line:c20819
         MR. ORANGE: Haha! That's not a coincidence, young one! I've been the supervisor of this dormitory since it was built. # # # #line:3ffdcf
         PLAYER: But that was, like, a long time ago, right? # # # #line:14c3e7
@@ -46,6 +47,7 @@ title: Morning
         MR. ORANGE: But you better start going. The boat is arriving. # # # #line:82b546
         Mr. Orange points to the boat approaching outside. # # # #line:f42612
         PLAYER: See you later, Mr. Orange! # # # #line:01b874
+        <<chara("void")>>
         You wave to him as you leave the dormitory, heading towards the boat. # # # #line:06f5f5
     -> Wait for the boat outside. #line:5b1185
         <<chara("void")>>
@@ -86,15 +88,16 @@ title: Noon
 
 title: Afternoon
 ---
-<<nextDaytime()>>
+<<nextDaytime(2)>>
 <<bg(1)>>
-You enter the dormitory, greeted by a charming sunset painting the sky in warm hues, matching the orange trees in the landscape. Mr. Orange, eager for your return, gives you a warm welcome. #line:a7baa0
+You enter the dormitory, greeted by a charming sunset painting the sky in warm hues, matching the orange trees in the landscape. #line:3884a8 
+Mr. Orange, eager for your return, gives you a warm welcome. #line:a7baa0
 <<chara("orange")>>
 MR. ORANGE: Hello, young one. Happy to see you again. #line:b23003
 MR. ORANGE: How was your first day at school? #line:01720d
 PLAYER: School, you mean college, right? #line:fa5339
-MR. ORANGE: Oh, right! #line:bfc1ee
-MR. ORANGE: Oh, right! #line:710df3
+MR. ORANGE: Oh, right! #line:7a85a2
+MR. ORANGE: Oh, right! #line:3e251c
 -> It was great. #line:291831
     MR. ORANGE: Fantastic. #line:e55343
 -> It could have been better. #line:e67b1a
@@ -104,7 +107,7 @@ Looking ahead, you notice that Caru is playing some video game with a colleague.
 What do you want to do? #line:ebfe35
 What do you want to do? #line:eb08d9
 -> Ask about the photo album. <<if getFlag("orange_photo_book_talk")>> #line:73e84d
-    Mr. Orange enthusiastically presents you with a variety of campus celebrities, including the so-called ''Willow Smith.'' #line:a1b07a
+    Mr. Orange enthusiastically presents you with a variety of campus celebrities, including the so-called ''Willow Smith''. #line:a1b07a
     Besides her, many other famous figures like ''Daisy Lowe,'' ''Lily Allen''... #line:4c935d
     Most you don't know, although one or two you vaguely remember from the news. #line:8ab0f5
     Until you notice a quite peculiar one... ''Jack the Beanstalk''. #line:2878d3
@@ -117,10 +120,12 @@ What do you want to do? #line:eb08d9
     MR. ORANGE: I can tell you the legend from the beginning... If you have the time. #line:1419ef
     -> Sure, you've caught my curiosity. #line:a6e132
         ... Once upon a time, ... #line:4359f5
-        <<transition()>>
-        ... #line:7a1e5e
+        ... # # # 
         <<chara("void")>>
+        <<transition()>>
+        <<dialogueWait(3)>>
         <<bg(2)>>
+        ... # # # 
         MR. ORANGE: ... There was an outstanding student named Jack, known for his curiosity and love for agriculture. #line:0bf19f
         MR. ORANGE: He lived in the ancient fiefdom of Lotus, long before this university existed. #line:c3f160
         MR. ORANGE: One day, while exploring the surroundings of the college, he discovered a peculiar seed that seemed to radiate a magical aura. #line:4cd139
@@ -141,9 +146,10 @@ What do you want to do? #line:eb08d9
         MR. ORANGE: When he was older, he decided to create a university, which is now Lotus. #line:4828ed
         ... #line:d674dd
         <<transition()>>
-        ... #line:8f67ef
-        <<bg(2)>>
+        <<dialogueWait(3)>>
         <<chara("orange")>>
+        <<bg(1)>>
+        ... #line:8f67ef
         MR. ORANGE: Definitely one of our most notable figures. #line:0e9dc2
         PLAYER: Wow. How long ago was that? #line:0598c6
         MR. ORANGE: The university is over 500 years old now. #line:1b7924
@@ -154,24 +160,31 @@ What do you want to do? #line:eb08d9
         MR. ORANGE: Oh, unfortunately, the album is carefully stored. #line:2fbc76
         MR. ORANGE: But who knows, if you excel in Magical Herbology, maybe one day you'll be included in it! #line:e2cf42
         PLAYER: Interesting... I'll keep that in mind. Thanks for the story, Mr. Orange. #line:e4bed3
+        MR. ORANGE: No problems. See you later, kid! #line:2ea539
+        <<save()>>
+        <<jump Night>>
+        You climb the stairs back to your room. #line:7613b6
     -> Thanks, but maybe another time. #line:79e443
         MR. ORANGE: Oh, sure. That's okay. You must be busy. Sorry for bothering you. #line:a335af
         <<chara("void")>>
         You climb the stairs back to your room. #line:89a4d6
+        <<save()>>
         <<jump Night>>
--> Check what Caru is doing.
+-> Check what Caru is doing. #line:e854fd
     <<chara("void")>>
-    Caru is deeply involved in the game. Now, looking closely, you realize it's a rhythm game.
-    You also notice he's not playing with anyone, the other person is just watching.
-    Caru is doing really well, so it's better not to interrupt the moment.
-    Looking back, you realize Mr. Orange is no longer there.
-    Thus, the only option left is to go back to your room.
+    Caru is deeply involved in the game. Now, looking closely, you realize it's a rhythm game. #line:afe309
+    You also notice he's not playing with anyone, the other person is just watching. #line:375c0d
+    Caru is doing really well, so it's better not to interrupt the moment. #line:b02672
+    Looking back, you realize Mr. Orange is no longer there. #line:b76c50
+    Thus, the only option left is to go back to your room. #line:28c980
+    <<save()>>
     <<jump Night>>
--> Go upstairs.
-    PLAYER: Sorry, I need to go do something.
-    MR. ORANGE: Oh, that's fine. You must be busy. Sorry for bothering you.
+-> Go upstairs. #line:37a127
+    PLAYER: Sorry, I need to go do something. #line:89a047
+    MR. ORANGE: Oh, that's fine. You must be busy. Sorry for bothering you. #line:87ee1a
     <<chara("void")>>
-    You climb the stairs back to your room.
+    You climb the stairs back to your room. #line:e0ff13
+    <<save()>>
     <<jump Night>>
 ===
 
@@ -181,3 +194,4 @@ title: Night
 LOREM IPSUM #line:da30df
 <<backTitle()>>
 ===
+    

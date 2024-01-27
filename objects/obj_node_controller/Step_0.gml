@@ -23,6 +23,9 @@ if (global.state != e_gameStates.PAUSED && global.state != e_gameStates.MENU && 
 			// If current line has metadata
 			ProcessMetadata(metadataArr);
 			
+			// Debug text
+			show_debug_message(text);
+			
 			//  ------------------- SKIP TEXT ------------------- //
 			// Means the page is fully typed out
 			if ((typist.get_position() - 1) == textLength) {
