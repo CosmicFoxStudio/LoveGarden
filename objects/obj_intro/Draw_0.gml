@@ -50,8 +50,8 @@ if (twFadeOutState == e_fadeoutState.FINISHED && (page < array_length(text) - 1)
 
 // Reached last page
 if (page >= array_length(text) - 1) {
-		twFadeOutState = e_fadeoutState.FADING_OUT;
-		ended = true;
+	twFadeOutState = e_fadeoutState.FADING_OUT;
+	ended = true;
 }
 
 DrawFont(fnt_dialogue);
@@ -59,7 +59,6 @@ DrawFont(fnt_dialogue);
 if (twFadeOutState == e_fadeoutState.FADING_OUT) {
 	// This fade out is not working :'(
 	draw_set_alpha(Wave(0.3,0.8,1,0));
-	//scribble(text[page]).wrap(340).align(fa_center, fa_top).draw(320, 150, typist);
 	draw_set_alpha(1);
 	twFadeOutState = e_fadeoutState.FINISHED;
 }
@@ -72,9 +71,9 @@ if (twFadeOutState = e_fadeoutState.FINISHED && ended) {
 	obj_dream.finishedIntro = true;
 	
 	// Job done
-	// TransitionSet(sq_trans_fade_black);
 	instance_destroy();
 }
+
 
 // Reset
 DrawReset();

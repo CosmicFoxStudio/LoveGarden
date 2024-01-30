@@ -15,14 +15,14 @@ function BackgroundSetIndex(_index) {
 }
 
 function DialogueTransition() {
-	TransitionSet(sq_trans_fade_black);
+	GameTransition(sq_trans_fade_black);
 }
 
 // Chatterbox function to change rooms
 function NextRoom(_room) {
 	//show_debug_message(_room);
 	if (asset_get_type(_room) == asset_room) {
-		TransitionSetRoom(sq_out_trans_fade_black, sq_in_trans_fade_black, asset_get_index(_room)); 
+		GameTransitionChangeRoom(asset_get_index(_room), sq_trans_fade_black);
 	}
 	else {
 		show_debug_message("(ERROR) Wrong asset name.")

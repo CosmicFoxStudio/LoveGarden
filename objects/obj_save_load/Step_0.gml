@@ -43,7 +43,7 @@ if (global.state == e_gameStates.FILE_SELECTION) {
 				global.state = e_gameStates.CONTINUE_GAME;
 			
 				// Go to last saved room
-				TransitionSetRoom(sq_out_trans_fade_white, sq_in_trans_fade_white, SetRoom(global.location));
+				GameTransitionChangeRoom(SetRoom(global.location), sq_trans_fade_white);
 			}	
 		
 			// NO existing save slot found
@@ -53,7 +53,7 @@ if (global.state == e_gameStates.FILE_SELECTION) {
 				GameChangeState(e_gameStates.NEW_GAME);
 			
 				// Go to first cutscene
-				TransitionSetRoom(sq_out_trans_fade_white, sq_in_trans_fade_white, rm_dream);
+				GameTransitionChangeRoom(rm_dream, sq_trans_fade_white);
 				// OBS: The room_goto() function only runs after the step event has finished
 			}
 		}

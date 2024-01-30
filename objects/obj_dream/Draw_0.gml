@@ -24,30 +24,14 @@ if (a == end_alpha && !createdIntro) {
 	createdIntro = true;
 }
 
-if (finishedIntro) {
-// ------------- /UNFINISHED
-	#region (TO-DO)
-/*
-	// Fade to white screen
-	fadeout = 1;
-
-	if (abs(a - 1) < 0.01 && fadeout == 1) {
-		room_goto_next();
-	}
-*/
-	#endregion (TO-DO)
-	
-	// TransitionSetRoom(sq_out_trans_fade_white, sq_in_trans_fade_white, rm_test);
-}
-
-// Create player
-
+// Player Creator
 if (finishedIntro && !createdPlayer) {
-	//TransitionSet(sq_trans_fade_black);
+	//GameTransition(sq_trans_fade_black);
 	instance_create_layer(ORIGIN_X, ORIGIN_Y, "Instances_Above", obj_player_creator);	
 	createdPlayer = true;
 }
 
+// Player has finished choosing name & pronouns
 if (finishedPlayer) {
 	global.state = e_gameStates.CONTINUE_GAME;
 	SaveGame();
@@ -58,7 +42,6 @@ if (finishedPlayer) {
 	// Reset
 	DrawReset();
 	
-	//room_goto(rm_dormroom);
 	// Transition to next scene
 	GameTransitionChangeRoom(rm_dormroom, sq_trans_fade_white);
 		

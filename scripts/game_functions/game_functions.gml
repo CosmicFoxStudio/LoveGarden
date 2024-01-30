@@ -9,18 +9,19 @@ function GameChangeState(_newState) {
 	global.state = _newState;
 }
 
-/*
+// For normal transition sequences (just the VFX with no room change)
 function GameTransition(_type = sq_trans_fade_black) {
 	obj_transition.type = _type;
 	obj_transition.Transition();
 }
-*/
 
+/// Makes a screen transition when going from one room to another
+/// Returns: Boolean, indicating whether the transition was successful or not
 function GameTransitionChangeRoom(_roomTarget = room_next(room), _type = sq_trans_fade_black) {
 	if (!global.midTransition) {
 		obj_transition.type = _type;
 		obj_transition.roomTarget = _roomTarget;
-		obj_transition.ChangeRoom();
+		return obj_transition.ChangeRoom();
 	}
 }
 

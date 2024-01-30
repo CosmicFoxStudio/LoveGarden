@@ -307,6 +307,7 @@
     {"name":"scr_enums","order":13,"path":"scripts/scr_enums/scr_enums.yy",},
     {"name":"lang_functions","order":7,"path":"scripts/lang_functions/lang_functions.yy",},
     {"name":"string_width_scribble","order":5,"path":"scripts/string_width_scribble/string_width_scribble.yy",},
+    {"name":"obj_timer_transition","order":3,"path":"objects/obj_timer_transition/obj_timer_transition.yy",},
     {"name":"__scribble_gen_3_devanagari","order":3,"path":"scripts/__scribble_gen_3_devanagari/__scribble_gen_3_devanagari.yy",},
     {"name":"spr_classroom3","order":7,"path":"sprites/spr_classroom3/spr_classroom3.yy",},
     {"name":"__scribble_gen_2_parser","order":2,"path":"scripts/__scribble_gen_2_parser/__scribble_gen_2_parser.yy",},

@@ -6,7 +6,7 @@ function ToggleContextMenu(_condition = true) {
 		// ACTIVATION - Menu doesn't exist, create it
 		if ((!instance_exists(global.configMenu))) {
 			global.configMenu = instance_create_layer(ORIGIN_X, ORIGIN_Y, "Special", obj_config_menu);
-			//TransitionSetRoom(sq_out_trans_fade_black, sq_in_trans_fade_black);
+			//GameTransition(sq_trans_fade_black);
 			GameChangeState(e_gameStates.MENU);
 			global.inputMode = e_input.KEYBOARD; 
 			return show_debug_message("Config menu activated.");
@@ -15,8 +15,7 @@ function ToggleContextMenu(_condition = true) {
 		else if (instance_exists(global.configMenu)) {
 			// Destroy the instance stored in the global. Menu is ready to be called again
 			instance_destroy(global.configMenu);
-			//TransitionSetRoom(sq_out_trans_fade_black, sq_in_trans_fade_black);
-			
+			//GameTransition(sq_trans_fade_black); 
 			GameChangeState(e_gameStates.CONTINUE_GAME);
 			global.inputMode = e_input.MOUSE; 
 			return show_debug_message("Config menu deactivated.");
@@ -35,10 +34,10 @@ function ExitGame() {
 	game_end();
 }
 
-function ChangeVolume(_new_volume){
+function ChangeVolume(_new_volume) {
 	var type = menuOption[page];
 
-	switch(type){
+	switch(type) {
 		case 0: audio_master_gain(_new_volume); break;
 		case 1: audio_group_set_gain(audiogroup_sfx, _new_volume, 0); break;
 		case 2: audio_group_set_gain(audiogroup_music, _new_volume, 0); break;

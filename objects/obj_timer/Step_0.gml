@@ -3,7 +3,7 @@
 if (timer > 0) {
 	timer--;
 	
-     var s = timer / DT;
+     var s = timer;
 
     show_debug_message("(TIMER) Seconds remaining: " + string(s));
 }

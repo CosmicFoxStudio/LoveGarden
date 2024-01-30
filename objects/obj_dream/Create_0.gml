@@ -5,7 +5,8 @@ createdIntro = false;
 finishedIntro = false;
 createdPlayer = false;
 finishedPlayer = false;
-
+startedTransition = false;
+finishedTransition = false;
 // ----------------------------- SCRIBBLE ----------------------------- //
 // Setup font
 scribble_font_set_default(font_get_name(fnt_menu));

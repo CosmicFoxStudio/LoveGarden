@@ -70,12 +70,13 @@ function ScriptExecuteAlt(_func, _argx) {
 /// Executes a given function after user defined amount of time
 
 /// Returns: Nothing
+/// @param _timer {asset}		The obj_timer or children of obj_timer to use
 /// @param _duration {real}		The time in seconds
 /// @param _func {function}		The function to be executed
 /// @param _args {array}		The amount of args to be executed in the passed function
-function ExecuteTimedAction(_duration, _func, _args = undefined) {
-	instance_create_layer(ORIGIN_X, ORIGIN_Y, "Special", obj_timer);
-	obj_timer.func = _func;
-	obj_timer.args = _args;
-	obj_timer.seconds = _duration;
+function ExecuteTimedAction(_timer = obj_timer, _duration = 1.0, _func = undefined, _args = undefined) {
+	instance_create_layer(ORIGIN_X, ORIGIN_Y, "Special", _timer);
+	if (_func != undefined) _timer.func = _func;
+	_timer.args = _args;
+	_timer.seconds = _duration;
 }

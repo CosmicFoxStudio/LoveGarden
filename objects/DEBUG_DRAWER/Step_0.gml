@@ -61,19 +61,19 @@ if (global.debug) {
 		// PRESS Home - Restart current room
 		if (keyboard_check_pressed(vk_home) && !global.midTransition) { 
 			var target = room;
-			TransitionSetRoom(sq_out_trans_fade_black, sq_in_trans_fade_black, target);
+			GameTransitionChangeRoom(target, sq_trans_fade_black);
 		}
 	
 		// PRESS PageUp - Going to next room
 		if (keyboard_check_pressed(vk_pageup) && !global.midTransition) { 
 			var target = room_next(room);
-			TransitionSetRoom(sq_out_trans_fade_black, sq_in_trans_fade_black, target);
+			GameTransitionChangeRoom(target, sq_trans_fade_black);
 		}
 	
 		// PRESS PageDown - Going to previous room
 		if (keyboard_check_pressed(vk_pagedown) && !global.midTransition) {
 			var target = room_previous(room);
-			TransitionSetRoom(sq_out_trans_fade_black, sq_in_trans_fade_black, target);
+			GameTransitionChangeRoom(target, sq_trans_fade_black);
 		}
 	
 	#endregion MISC DEBUG
@@ -118,10 +118,8 @@ if (global.debug) {
 					var target;
 					if (room != roomIndex){
 						target = roomIndex; 
-						TransitionSetRoom(sq_out_trans_fade_black, sq_in_trans_fade_black, target);
-						// The diagonal transition is looking weird, idk why yet
-						//TransitionSetRoom(sq_out_trans_diag_slide, sq_in_trans_diag_slide, target);
-						show_debug_message(global.roomTarget);
+						GameTransitionChangeRoom(target, sq_trans_fade_black);
+						//show_debug_message(global.roomTarget);
 					}
 					else {
 						// Prohibit access to the same room
