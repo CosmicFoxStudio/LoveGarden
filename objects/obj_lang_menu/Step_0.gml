@@ -126,7 +126,15 @@ if (selectedButton == "CONFIRM") {
 	phase = "SELECT";
 	selectedButton = "NONE";
 	
-	// Call a screen transition
-	var target = room_next(room);
-	GameTransitionChangeRoom(target, sq_trans_fade_w);
+	// Platform isn't a browser
+	if (os_browser == browser_not_a_browser) {
+		// Call a screen transition to rm_file_selection
+		var target = room_next(room);
+		GameTransitionChangeRoom(target, sq_trans_fade_w);
+	
+	}
+	// Platform is a browser
+	else {
+		GameTransitionChangeRoom(rm_dream, sq_trans_fade_w);
+	}
 }

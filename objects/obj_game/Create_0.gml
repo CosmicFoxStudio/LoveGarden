@@ -142,7 +142,7 @@ global.res = {
 	width: 640,
 	height: 360,
 	scale: 2 //1 ---> 640x360 | 2 ---> 1280x720 | 3 ---> 1920x1080
-}
+} // Use scale:1 for building to the web, scale:2 to the rest
 global.viewWidth = global.res.width * global.res.scale;
 global.viewHeight = global.res.height * global.res.scale;
 SetResolution();
@@ -187,6 +187,31 @@ global.roomYarnMap[? "rm_classroom"	]		= "scenes/main_day1_classroom.yarn";
 // ChatterboxLocalizationBuild(global.dialogueList, [("lang/" + global.lang + "_dialogues.csv")]);
 // OBS: LoadLocalization() is set at rm_title's creation code
 
+// -----------------------------------------------------------------------------  //
+#region CHATTERBOX INITIALIZE CUSTOMS
+// Custom Chatterbox Functions (alphabetical order)
+ChatterboxAddFunction("addAction", GameAddAction);					// Increments by 1 global.action 
+ChatterboxAddFunction("addBlossom", StatsAddBlossom);				// Increments specified SO's blossom stats
+ChatterboxAddFunction("assignRoute", RouteAssign);					// Assign a character route
+ChatterboxAddFunction("backTitle", GameBackToTitle);				// Goes back to the title screen and changes game state
+ChatterboxAddFunction("bg", BackgroundSetIndex);					// Function to change background
+ChatterboxAddFunction("chara", CharacterOnScreen);					// Function to draw character
+ChatterboxAddFunction("emotion", CharacterExpressionOnScreen);		// Function to change character expression
+ChatterboxAddFunction("getBlossom", StatsGetBlossom);				// Returns specified SO's blossom stats
+ChatterboxAddFunction("getFlag", FlagGet);							// Returns the value of a given flag
+ChatterboxAddFunction("growth", StatsGetGrowth);					// Returns growth stats
+ChatterboxAddFunction("nextDay", NextDay);							// Increments by 1 global.day. Set global.currentDaytime to morning
+ChatterboxAddFunction("nextDaytime", NextDaytime);					// Increments by 1 global.currentDaytime
+ChatterboxAddFunction("nextRoom", NextRoom);						// Function to change scene
+ChatterboxAddFunction("dialogueWait", DialogueWait);				// Makes the textbox wait for x seconds
+ChatterboxAddFunction("save", SaveGame);							// Calls the save script from inside a yarn file
+ChatterboxAddFunction("setFlag", FlagSet);							// Sets a value to a flag
+ChatterboxAddFunction("setMap", SetMap);
+ChatterboxAddFunction("transition", DialogueTransition);			// Transition VFX
+ChatterboxAddFunction("wilting", StatsGetWilting);					// Returns wilting stats
+// Custom Chatterbox Variables
+// ChatterboxVariableDefault("player", global.playerName);			// (UNUSED) Variable to store the player's name
+#endregion CHATTERBOX INITIALIZE CUSTOMS
 // ------------------------------ TESTING ZONE ------------------------------ //
 if (Debug()) instance_create_layer(ORIGIN_X, ORIGIN_Y, "Controllers", DEBUG_DRAWER);
 
