@@ -28,7 +28,7 @@
     "path": "folders/Sequences/Simple Transitions.yy",
   },
   "playback": 0,
-  "playbackSpeed": 60.0,
+  "playbackSpeed": 30.0,
   "playbackSpeedType": 0,
   "showBackdrop": true,
   "showBackdropImage": false,

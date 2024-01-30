@@ -59,8 +59,8 @@ if (global.debug) {
 			"Location string: " + global.location,
 			"Resolution scale: " + string(global.res.scale),
 			"Fullscreen?: " + string(global.fullscreen),
+			"Mid Transition?: " + string(global.midTransition),
 			"Transition Room Target: " + string(obj_transition.roomTarget),
-			"Mid Transition?: " + string(obj_transition.midTransition),
 			"Transition Sequence Inst: " + string(obj_transition.seqInst),
 		];
 		

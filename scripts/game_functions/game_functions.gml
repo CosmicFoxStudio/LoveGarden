@@ -9,10 +9,12 @@ function GameChangeState(_newState) {
 	global.state = _newState;
 }
 
+/*
 function GameTransition(_type = sq_trans_fade_black) {
 	obj_transition.type = _type;
 	obj_transition.Transition();
 }
+*/
 
 function GameTransitionChangeRoom(_roomTarget = room_next(room), _type = sq_trans_fade_black) {
 	if (!global.midTransition) {

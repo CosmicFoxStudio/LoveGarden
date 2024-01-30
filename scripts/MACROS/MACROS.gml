@@ -5,7 +5,7 @@
 #macro ORIGIN_X 0
 #macro ORIGIN_Y 0
 #macro DT 60 // Delta Time - equivalent to 60 FPS or the room_speed
-
+#macro SEQ_MIDDLE_FRAME 30
 // Colors
 #macro RED			0xFF0000FF	// same as c_red
 #macro GREEN		0xFF00FF00	// classic green from RGB, different than GM's c_green
