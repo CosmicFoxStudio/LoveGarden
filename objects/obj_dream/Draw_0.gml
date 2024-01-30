@@ -58,8 +58,9 @@ if (finishedPlayer) {
 	// Reset
 	DrawReset();
 	
+	//room_goto(rm_dormroom);
 	// Transition to next scene
-	TransitionSetRoom(sq_out_trans_fade_white, sq_in_trans_fade_white, rm_dormroom);
+	GameTransitionChangeRoom(rm_dormroom, sq_trans_fade_white);
 		
 	// Job done
 	instance_destroy();

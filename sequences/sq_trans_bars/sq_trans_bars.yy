@@ -21,14 +21,7 @@
   "moments": {
     "resourceType": "KeyframeStore<MomentsEventKeyframe>",
     "resourceVersion": "1.0",
-    "Keyframes": [
-      {"resourceType":"Keyframe<MomentsEventKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"MomentsEventKeyframe","resourceVersion":"1.0","Events":[
-              "TransitionAction",
-            ],},},"Disabled":false,"id":"c842480b-c7c7-47db-9c55-d380f723838d","IsCreationKey":false,"Key":29.0,"Length":1.0,"Stretch":false,},
-      {"resourceType":"Keyframe<MomentsEventKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"MomentsEventKeyframe","resourceVersion":"1.0","Events":[
-              "TransitionFinished",
-            ],},},"Disabled":false,"id":"27733ddb-796b-4da2-a2c7-a58d250b4b1c","IsCreationKey":false,"Key":59.9999,"Length":1.0,"Stretch":false,},
-    ],
+    "Keyframes": [],
   },
   "parent": {
     "name": "Simple Transitions",

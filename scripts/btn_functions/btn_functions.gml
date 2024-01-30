@@ -1,7 +1,7 @@
 function ExecuteButtonAction(_btnType) {
 	switch (_btnType) {
 		case e_btnTypes.PLAY : 
-			TransitionSetRoom(sq_out_trans_fade_black, sq_in_trans_fade_black, rm_file_selection);
+			GameTransitionChangeRoom(rm_file_selection, sq_trans_fade_black);
 		break;
 		
 		case e_btnTypes.HELP : 

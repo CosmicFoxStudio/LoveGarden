@@ -1,6 +1,7 @@
 /// @description Persistent Game Manager
 // Initializes globals & enumerators
 Enums();
+camera = -1;
 global.debug = false;
 global.hoveringButton = false;
 global.hoveringPlace = "";
@@ -162,7 +163,7 @@ else {
 	ChatterboxLoadFromFile("scenes/main_day1_dormitory.yarn");
 	ChatterboxLoadFromFile("scenes/main_day1_boat_departure.yarn");
 	ChatterboxLoadFromFile("scenes/main_day1_school.yarn");
-	//ChatterboxLoadFromFile("scenes/main_day1_classroom.yarn");
+	ChatterboxLoadFromFile("scenes/main_day1_classroom.yarn");
 }
 
 #endregion CHATTERBOX LOAD FILES

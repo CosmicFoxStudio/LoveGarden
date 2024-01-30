@@ -127,8 +127,6 @@ if (selectedButton == "CONFIRM") {
 	selectedButton = "NONE";
 	
 	// Call a screen transition
-	if (!global.midTransition) {
-		var target = room_next(room);
-		TransitionSetRoom(sq_out_trans_fade_black, sq_in_trans_fade_black, target);
-	}
+	var target = room_next(room);
+	GameTransitionChangeRoom(target, sq_trans_fade_w);
 }

@@ -83,7 +83,7 @@ function StatsGetBlossom(_SOName) {
 }
 
 // SO STATS
-function StatsAddBlossom(_SOName, _value) {
+function StatsAddBlossom(_SOName, _value = 1) {
 		switch (_SOName) {
 	    case "ype":
 			global.NPCs[e_SO.YPE].blossom += _value;

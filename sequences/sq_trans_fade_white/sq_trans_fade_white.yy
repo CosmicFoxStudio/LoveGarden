@@ -21,14 +21,7 @@
   "moments": {
     "resourceType": "KeyframeStore<MomentsEventKeyframe>",
     "resourceVersion": "1.0",
-    "Keyframes": [
-      {"resourceType":"Keyframe<MomentsEventKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"MomentsEventKeyframe","resourceVersion":"1.0","Events":[
-              "TransitionAction",
-            ],},},"Disabled":false,"id":"d30e9f4f-75a7-4fb8-ae68-ee1c768a4797","IsCreationKey":false,"Key":30.0,"Length":1.0,"Stretch":false,},
-      {"resourceType":"Keyframe<MomentsEventKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"MomentsEventKeyframe","resourceVersion":"1.0","Events":[
-              "TransitionFinished",
-            ],},},"Disabled":false,"id":"d61dca18-62d7-4956-8c2d-f65de5a51a9c","IsCreationKey":false,"Key":59.0,"Length":1.0,"Stretch":false,},
-    ],
+    "Keyframes": [],
   },
   "parent": {
     "name": "Simple Transitions",
@@ -64,10 +57,7 @@
             ],},"modifiers":[],"trackColour":4285548786,"tracks":[],"traits":0,},
       ],"traits":0,},
   ],
-  "visibleRange": {
-    "x": 0.0,
-    "y": 59.9999,
-  },
+  "visibleRange": null,
   "volume": 1.0,
   "xorigin": -320,
   "yorigin": -180,

@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "General Objects",
-    "path": "folders/General Objects.yy",
+    "name": "Utils Objects",
+    "path": "folders/Utils Objects.yy",
   },
   "parentObjectId": null,
   "persistent": false,

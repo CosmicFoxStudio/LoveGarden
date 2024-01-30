@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "transition_functions",
+  "name": "sequence_functions",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

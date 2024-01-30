@@ -12,8 +12,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "General Objects",
-    "path": "folders/General Objects.yy",
+    "name": "Persistent Objects",
+    "path": "folders/Persistent Objects.yy",
   },
   "parentObjectId": null,
   "persistent": true,
