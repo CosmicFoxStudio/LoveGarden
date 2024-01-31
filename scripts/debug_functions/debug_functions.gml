@@ -80,3 +80,14 @@ function DebugTransition() {
 		GameTransition(sq_trans_fade_white);
 	}
 }
+
+
+function DebugBgIndex() {
+	//var layerID = layer_get_id("Background");
+	var bgID = layer_background_get_id("Background");
+	var bgIndex = layer_background_get_index(bgID);
+	var index = bgIndex;
+	
+	layer_background_index(bgID, index + 1);
+	show_debug_message("Change BG");
+}

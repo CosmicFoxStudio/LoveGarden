@@ -12,6 +12,7 @@ function BackgroundSetIndex(_index) {
 	var back_id = layer_background_get_id(lay_id);
 	
 	layer_background_index(back_id, _index);
+	show_debug_message("Bg index should be: " + string(_index));
 }
 
 function DialogueTransition() {

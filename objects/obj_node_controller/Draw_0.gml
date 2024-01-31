@@ -42,7 +42,7 @@ if IsChatterbox(chatterbox) and text != undefined {
 	// Use scribble light green color for the text (set in __scribble_config_colours)
 	scribble("[c_text_green]" + speechText).wrap(TEXT_WIDTH).draw(xx, yy, typist);
 	
-	// Draw nametag
+	// Draw name tag text
 	var speakerName;
 	if ( (ChatterboxGetContentSpeaker(chatterbox, 0) == "PLAYER") ) speakerName = global.playerName;
 	else speakerName = ChatterboxGetContentSpeaker(chatterbox, 0);
@@ -54,7 +54,7 @@ if IsChatterbox(chatterbox) and text != undefined {
 		TEXT_GREEN, TEXT_GREEN, TEXT_GREEN, TEXT_GREEN, 1
 	);
 
-	// Remove nametag if narrator is speaking
+	// Remove name tag if narrator is speaking
 	if (speakerName != "")
 		layer_set_visible(layer_get_id("UI_Above"), true);
 	else

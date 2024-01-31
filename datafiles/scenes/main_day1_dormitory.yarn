@@ -120,12 +120,12 @@ What do you want to do? #line:eb08d9
     MR. ORANGE: I can tell you the legend from the beginning... If you have the time. #line:1419ef
     -> Sure, you've caught my curiosity. #line:a6e132
         ... Once upon a time, ... #line:4359f5
-        ... # # # 
+        ... # # # #line:9e0fa4 
         <<chara("void")>>
         <<transition()>>
         <<dialogueWait(3)>>
         <<bg(2)>>
-        ... # # # 
+        ... # # # #line:e25f70 
         MR. ORANGE: ... There was an outstanding student named Jack, known for his curiosity and love for agriculture. #line:0bf19f
         MR. ORANGE: He lived in the ancient fiefdom of Lotus, long before this university existed. #line:c3f160
         MR. ORANGE: One day, while exploring the surroundings of the college, he discovered a peculiar seed that seemed to radiate a magical aura. #line:4cd139
@@ -194,4 +194,4 @@ title: Night
 LOREM IPSUM #line:da30df
 <<backTitle()>>
 ===
-    
+      

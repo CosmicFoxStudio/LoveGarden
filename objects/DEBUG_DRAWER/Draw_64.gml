@@ -137,14 +137,19 @@ if (global.debug) {
 	#endregion CUTSCENES
 	
 	#region DIALOGUE --- Press 5
+	var layerID = layer_get_id("Background");
+	var bgID = layer_background_get_id(layerID);
+	var bgIndex = layer_background_get_index(bgID);
+		
 	if (debugBooleans[e_DebugOptions.DIALOGUE]) {
-		var dialogueDebugStrings = [];
+		var dialogueDebugStrings = ["Background Index: " + string(bgIndex)];
 		if (instance_exists(obj_node_controller)) {
 			array_push(dialogueDebugStrings, 
 				"Typist position: " + string(obj_node_controller.typist.get_position()),
 				"Text Length: " + string(obj_node_controller.textLength)
 			);
 		}
+
 		DebugDrawBox(10, 10, "DIALOGUE DEBUG", dialogueDebugStrings);
 	}
 	
