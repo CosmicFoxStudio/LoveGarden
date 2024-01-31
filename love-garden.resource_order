@@ -276,6 +276,7 @@
     {"name":"ChatterboxGetCurrent","order":1,"path":"scripts/ChatterboxGetCurrent/ChatterboxGetCurrent.yy",},
     {"name":"ChatterboxGetOptionConditionBool","order":3,"path":"scripts/ChatterboxGetOptionConditionBool/ChatterboxGetOptionConditionBool.yy",},
     {"name":"__scribble_gen_6_build_lines","order":6,"path":"scripts/__scribble_gen_6_build_lines/__scribble_gen_6_build_lines.yy",},
+    {"name":"spr_nametag","order":1,"path":"sprites/spr_nametag/spr_nametag.yy",},
     {"name":"obj_place_classroom","order":5,"path":"objects/obj_place_classroom/obj_place_classroom.yy",},
     {"name":"spr_dormroom","order":4,"path":"sprites/spr_dormroom/spr_dormroom.yy",},
     {"name":"__scribble_font_add_from_project","order":7,"path":"scripts/__scribble_font_add_from_project/__scribble_font_add_from_project.yy",},

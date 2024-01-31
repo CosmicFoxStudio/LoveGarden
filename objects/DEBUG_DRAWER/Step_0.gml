@@ -9,7 +9,7 @@ else exit;
 if (global.debug) {
 	
 	// Debug Background Index
-	if (global.debug && InputCheck(e_input.MOUSE, "confirm")) {
+	if (global.debug && keyboard_check_pressed(ord("B"))) {
 		DebugBgIndex();
 	}
 	// Debug Transition

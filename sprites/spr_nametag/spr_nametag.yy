@@ -1,10 +1,10 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "spr_dormroom",
-  "bbox_bottom": 359,
+  "name": "spr_nametag",
+  "bbox_bottom": 39,
   "bbox_left": 0,
-  "bbox_right": 639,
+  "bbox_right": 122,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,26 +13,26 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"17f659f4-f687-4c3a-958f-25624a2e01ad",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"31095acc-fd6e-4e29-aa4a-677591af01a4",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 360,
+  "height": 40,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"b1f8d17f-20cd-49eb-8776-7378d1ef226a","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"2a875331-f1f8-4a0a-8b96-fd889e77ad32","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Day1",
-    "path": "folders/Sprites/BGs/Day1.yy",
+    "name": "Dialogue",
+    "path": "folders/Sprites/UI/Dialogue.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "spr_dormroom",
+    "name": "spr_nametag",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"17f659f4-f687-4c3a-958f-25624a2e01ad","path":"sprites/spr_dormroom/spr_dormroom.yy",},},},"Disabled":false,"id":"c2bae548-85e0-43fb-99ab-fef29f7f362b","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"31095acc-fd6e-4e29-aa4a-677591af01a4","path":"sprites/spr_nametag/spr_nametag.yy",},},},"Disabled":false,"id":"41b73b9e-592e-4edf-abf0-8c55d17deab4","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 640,
+  "width": 123,
 }

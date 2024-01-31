@@ -81,7 +81,6 @@ function DebugTransition() {
 	}
 }
 
-
 function DebugBgIndex() {
 	//var layerID = layer_get_id("Background");
 	var bgID = layer_background_get_id("Background");
