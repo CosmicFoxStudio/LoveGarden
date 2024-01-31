@@ -8,7 +8,12 @@ var marginText = 64;
 textLength = scribble(ChatterboxGetContentSpeech(chatterbox, 0)).get_glyph_count();
 
 if IsChatterbox(chatterbox) and text != undefined {
+	var posX = SCREEN_WIDTH/8;
+	// Draw textbox
+	draw_sprite(spr_textbox, 0, posX, 260);
 
+	// Draw nametag box
+	draw_sprite(spr_nametag, 0, posX + 22, 238);
 	
 	// Draw text
 	var yy = room_height - (marginText/2) - 45;
@@ -42,7 +47,7 @@ if IsChatterbox(chatterbox) and text != undefined {
 	// Use scribble light green color for the text (set in __scribble_config_colours)
 	scribble("[c_text_green]" + speechText).wrap(TEXT_WIDTH).draw(xx, yy, typist);
 	
-	// Draw name tag text
+	// Draw nametag text
 	var speakerName;
 	if ( (ChatterboxGetContentSpeaker(chatterbox, 0) == "PLAYER") ) speakerName = global.playerName;
 	else speakerName = ChatterboxGetContentSpeaker(chatterbox, 0);
@@ -54,7 +59,7 @@ if IsChatterbox(chatterbox) and text != undefined {
 		TEXT_GREEN, TEXT_GREEN, TEXT_GREEN, TEXT_GREEN, 1
 	);
 
-	// Remove name tag if narrator is speaking
+	// Remove nametag if narrator is speaking
 	if (speakerName != "")
 		layer_set_visible(layer_get_id("UI_Above"), true);
 	else

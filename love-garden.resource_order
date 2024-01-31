@@ -196,6 +196,7 @@
     {"name":"__scribble_get_font_data_map","order":8,"path":"scripts/__scribble_get_font_data_map/__scribble_get_font_data_map.yy",},
     {"name":"rm_restaurant","order":13,"path":"rooms/rm_restaurant/rm_restaurant.yy",},
     {"name":"Select_1","order":15,"path":"sounds/Select_1/Select_1.yy",},
+    {"name":"spr_textbox","order":2,"path":"sprites/spr_textbox/spr_textbox.yy",},
     {"name":"scribble_kerning_pair_get","order":18,"path":"scripts/scribble_kerning_pair_get/scribble_kerning_pair_get.yy",},
     {"name":"spr_status_bar_framing","order":4,"path":"sprites/spr_status_bar_framing/spr_status_bar_framing.yy",},
     {"name":"ChatterboxGetContentSpeaker","order":5,"path":"scripts/ChatterboxGetContentSpeaker/ChatterboxGetContentSpeaker.yy",},
