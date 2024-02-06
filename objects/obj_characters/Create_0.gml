@@ -1,4 +1,4 @@
 /// @description Initialization
 
-chara = noone;
-characterExpression = 0;
+chara = noone; // make this an array
+characterExpression = 0; // make this an array
