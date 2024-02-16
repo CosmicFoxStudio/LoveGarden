@@ -188,35 +188,29 @@ global.roomYarnMap[? "rm_classroom"	]		= "scenes/main_day1_classroom.yarn";
 // OBS: LoadLocalization() is set at rm_title's creation code
 
 // -----------------------------------------------------------------------------  //
+
 #region CHATTERBOX INITIALIZE CUSTOMS
-// Custom Chatterbox Functions (alphabetical order)
-ChatterboxAddFunction("addAction", GameAddAction);					// Increments by 1 global.action 
-ChatterboxAddFunction("addBlossom", StatsAddBlossom);				// Increments specified SO's blossom stats
+// Custom Chatterbox Functions
+ChatterboxAddFunction("addAction", GameAddAction);					// Adds a certain number of actions
 ChatterboxAddFunction("assignRoute", RouteAssign);					// Assign a character route
 ChatterboxAddFunction("backTitle", GameBackToTitle);				// Goes back to the title screen and changes game state
 ChatterboxAddFunction("bg", BackgroundSetIndex);					// Function to change background
 ChatterboxAddFunction("chara", CharacterOnScreen);					// Function to draw character
+ChatterboxAddFunction("shadow", CharacterShadowOnScreen);			// Function to draw shadow character
 ChatterboxAddFunction("emotion", CharacterExpressionOnScreen);		// Function to change character expression
-ChatterboxAddFunction("getBlossom", StatsGetBlossom);				// Returns specified SO's blossom stats
-ChatterboxAddFunction("getFlag", FlagGet);							// Returns the value of a given flag
-ChatterboxAddFunction("growth", StatsGetGrowth);					// Returns growth stats
-ChatterboxAddFunction("nextDay", NextDay);							// Increments by 1 global.day. Set global.currentDaytime to morning
-ChatterboxAddFunction("nextDaytime", NextDaytime);					// Increments by 1 global.currentDaytime
-ChatterboxAddFunction("nextRoom", NextRoom);						// Function to change scene
 ChatterboxAddFunction("dialogueWait", DialogueWait);				// Makes the textbox wait for x seconds
 ChatterboxAddFunction("save", SaveGame);							// Calls the save script from inside a yarn file
+ChatterboxAddFunction("changeRelationship", ChangeRelationshipBar)  // Adds or removes hearts to romanceable characters relationship bars
+ChatterboxAddFunction("getRelationship", GetRelationshipBar)        // Checks relationship bars of romanceable characters
+ChatterboxAddFunction("nextDay", NextDay);							// Increments by 1 global.day and set global.currentDaytime to morning
+ChatterboxAddFunction("nextDaytime", NextDaytime);					// Increments by 1 global.currentDaytime
+ChatterboxAddFunction("nextRoom", NextRoom);						// Function to change scene
 ChatterboxAddFunction("setFlag", FlagSet);							// Sets a value to a flag
-ChatterboxAddFunction("setMap", SetMap);
-ChatterboxAddFunction("transition", DialogueTransition);			// Transition VFX
-ChatterboxAddFunction("wilting", StatsGetWilting);					// Returns wilting stats
-// Custom Chatterbox Variables
-// ChatterboxVariableDefault("player", global.playerName);			// (UNUSED) Variable to store the player's name
+ChatterboxAddFunction("getFlag", FlagGet);							// Returns the value of a given flag
 #endregion CHATTERBOX INITIALIZE CUSTOMS
-// ------------------------------ TESTING ZONE ------------------------------ //
+
+// ------------------------------ TESTING ZONE ---------------------------------- //
 if (Debug()) instance_create_layer(ORIGIN_X, ORIGIN_Y, "Controllers", DEBUG_DRAWER);
 
 // Add first room here
 room_goto(rm_lang);
-// room_goto(rm_dream);
-// room_goto(rm_file_selection);
-// room_goto(rm_title);

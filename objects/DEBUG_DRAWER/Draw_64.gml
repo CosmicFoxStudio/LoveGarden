@@ -8,6 +8,7 @@ if (global.debug) {
 	#region INFO
 	if (displayInfo) {
 		var info_debug_strings = [
+			"Fullscreen: Esc",
 			"Show Grid: G",
 			"Game Debug: 1",
 			"Language Debug: 2",

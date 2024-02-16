@@ -1,114 +1,21 @@
-// Feather disable all
-
-// Function to prevent repeating these lines
-function UpdateChatterbox() {
-	node = ChatterboxGetCurrent(chatterbox);
-	text = ChatterboxGetContent(chatterbox, 0);
-}
-
-// Searches for the background layer and changes to it
-function BackgroundSetIndex(_index) {
-	var lay_id = layer_get_id("Background");
-	var back_id = layer_background_get_id(lay_id);
+// Adds a certain number of actions
+function GameAddAction(_actionsToAdd) {
+    // Get the maximum actions for the current day
+    var maxActionsForDay = global.maxActions[global.day];
 	
-	layer_background_index(back_id, _index);
-	show_debug_message("Bg index should be: " + string(_index));
-}
+	// Add new actions
+	global.actions[global.day] += _actionsToAdd;
 
-function DialogueTransition() {
-	GameTransition(sq_trans_fade_black);
-}
-
-// Chatterbox function to change rooms
-function NextRoom(_room) {
-	//show_debug_message(_room);
-	if (asset_get_type(_room) == asset_room) {
-		GameTransitionChangeRoom(asset_get_index(_room), sq_trans_fade_black);
-	}
-	else {
-		show_debug_message("(ERROR) Wrong asset name.")
-		return false;
-	}
-}
-
-function SetMap(_mapBool) {
-	global.isMapOn = _mapBool;
-}
-
-// Function to choose character on screen
-function CharacterOnScreen(_name) {
-    // Set the character sprite based on the provided name
-    obj_characters.chara = global.characterSprites[$ _name];
-}
-
-// Function to choose the character's expression to be displayed (needs improvements!!)
-function CharacterExpressionOnScreen(_num) {
-	obj_characters.characterExpression = _num;
-	//array_push(obj_characters.characterExpression, _num);
-}
-
-// PLAYER STATS
-function StatsGetWilting() {
-	return global.playerStats.wilting;
-}
-
-// PLAYER STATS
-function StatsGetGrowth() {
-	return global.playerStats.growth;
-}
-
-// SO STATS
-function StatsGetBlossom(_SOName) {
-	switch (_SOName) {
-	    case "ype":
-			return global.NPCs[e_SO.YPE].blossom;
-	    break;
-	    case "caru":
-			return global.NPCs[e_SO.CARU].blossom;
-	    break;
-	    case "rose":
-			return global.NPCs[e_SO.ROSE].blossom;
-	    break;
-	    case "clove":
-			return global.NPCs[e_SO.CLOVE].blossom;
-	    break;
-	    case "hydra":
-			return global.NPCs[e_SO.HYDRA].blossom;
-	    break;
-	    default:
-			show_debug_message("(ERROR) Incorrect SO name.");
-	    break;
-	}
+    // If the player has reached the maximum actions for the day
+    if (global.actions[global.day] >= maxActionsForDay)
+        global.actions[global.day] = maxActionsForDay;
 	
-	return -1;
+	// Actions cannot be a negative number
+	if (global.actions[global.day] < 0)
+        global.actions[global.day] = 0;
 }
 
-// SO STATS
-function StatsAddBlossom(_SOName, _value = 1) {
-		switch (_SOName) {
-	    case "ype":
-			global.NPCs[e_SO.YPE].blossom += _value;
-	    break;
-	    case "caru":
-			global.NPCs[e_SO.CARU].blossom += _value;
-	    break;
-	    case "rose":
-			global.NPCs[e_SO.ROSE].blossom += _value;
-	    break;
-	    case "clove":
-			global.NPCs[e_SO.CLOVE].blossom += _value;
-	    break;
-	    case "hydra":
-			global.NPCs[e_SO.HYDRA].blossom += _value;
-	    break;
-	    default:
-			show_debug_message("(ERROR) Incorrect SO name.");
-	    break;
-	}
-	
-	return true;
-}
-
+// Assign a character route
 function RouteAssign(_SOName) {
 	switch (_SOName) {
 	    case "ype":
@@ -130,64 +37,38 @@ function RouteAssign(_SOName) {
 	       show_debug_message("(ERROR) Incorrect SO name.");
 	    break;
 	}
-	return true;
 }
 
-function FlagSet(_name, _value = true) {
-    // Check if _value is a boolean (true or false)
-    if (is_bool(_value)) {
-        // Assign the boolean value directly to the flag
-        global.flags[$ _name] = _value;
-    } else {
-        // Increment the numeric flag based on the sign of _value
-        global.flags[$ _name] += sign(_value);
-    }
+// Goes back to the title screen and changes game state
+function GameBackToTitle() {
+	room_goto(rm_title);
+	GameChangeState(e_gameStates.LEAVE);
 }
 
-function FlagGet(_name) {
-    // Check if the flag exists before attempting to retrieve its value
-    if (struct_exists(global.flags, _name)) {
-        return global.flags[$ _name];
-    } else {
-        // Flag doesn't exist
-        return undefined;
-    }
-}
-
-function ProcessMetadata(_metadata) {
-	var once = false;
+// Searches for the background layer and changes to it
+function BackgroundSetIndex(_index) {
+	var lay_id = layer_get_id("Background");
+	var back_id = layer_background_get_id(lay_id);
 	
-	if (once == false) {
-	    if (array_length(_metadata) > 0) {
-	        // WILTING - Adds/removes points from PLAYER'S "wilting" stats
-	        if (_metadata[0] != "") { 
-	            //global.playerStats.wilting = WrapInside(obj_wilting_bar.fillBar + real(_metadata[0]), 0, 10); 
-	            //obj_wilting_bar.fillBar = global.playerStats.wilting; 
-	            once = true;
-	        }
-	        // GROWTH - Add/remove points from PLAYER'S "growth" stats
-	        if (_metadata[1] != "") { 
-	            //global.playerStats.growth = WrapInside(obj_growth_bar.fillBar + real(_metadata[1]), 0, 10); 
-	            //obj_growth_bar.fillBar = global.playerStats.growth; 
-	            once = true;
-	        }
-	        // FLAG - Enter the name of the flag
-	        if (_metadata[2] != "") {
-				// Important: Flags are automatically set to true when used as metadata
-	            FlagSet(_metadata[2]);
-	            once = true;
-	        }
-	    }
-	}
+	layer_background_index(back_id, _index);
+	show_debug_message("Bg index should be: " + string(_index));
 }
 
-function NextDay() {
-	global.day += 1;
-	global.currentDaytime = e_daytime.MORNING;
+// Function to choose character on screen
+function CharacterOnScreen(_name) {
+    // Set the character sprite based on the provided name
+    obj_characters.chara = global.characterSprites[$ _name];
 }
 
-function NextDaytime(_amount = 1) {
-	global.currentDaytime += _amount;
+// Function to draw shadow character
+function CharacterShadowOnScreen(_name) {
+    // Set the character sprite based on the provided name
+    obj_characters.chara = global.characterSprites[$ _name];
+}
+
+// Function to choose the character's expression to be displayed
+function CharacterExpressionOnScreen(_num) {
+	obj_characters.characterExpression = _num;
 }
 
 /// Use time sources to make the dialogue wait. 
@@ -205,6 +86,75 @@ function DialogueWait(_seconds) {
         ChatterboxContinue(_chatterbox);
     },
     [CHATTERBOX_CURRENT]));
+}
+
+// Adds or removes hearts to romanceable characters relationship bars
+function ChangeRelationshipBar(_name, _value) {
+	// TO DO
+}
+
+// Checks relationship bars of romanceable characters
+function GetRelationshipBar(_name) {
+	// TO DO
+}
+
+// Increments by 1 global.day and set global.currentDaytime to morning
+function NextDay() {
+	global.day += 1;
+	global.currentDaytime = e_daytime.MORNING;
+}
+
+// Increments by 1 global.currentDaytime
+function NextDaytime() {
+	switch (global.currentDaytime) {
+		case e_daytime.MORNING: global.currentDaytime = e_daytime.NOON; break;
+		case e_daytime.NOON: global.currentDaytime = e_daytime.AFTERNOON; break;
+		case e_daytime.AFTERNOON: global.currentDaytime = e_daytime.NIGHT; break;
+		case e_daytime.NIGHT: break;
+		default: break;
+	}
+}
+
+// Chatterbox function to change rooms
+function NextRoom(_room) {
+	if (asset_get_type(_room) == asset_room) {
+		GameTransitionChangeRoom(asset_get_index(_room), sq_trans_fade_black);
+	}
+	else {
+		show_debug_message("(ERROR) Wrong asset name.")
+	}
+}
+
+// Sets a value to a flag
+function FlagSet(_name, _value = true) {
+    // Check if _value is a boolean (true or false)
+    if (is_bool(_value)) {
+        // Assign the boolean value directly to the flag
+        global.flags[$ _name] = _value;
+    } else {
+        // Increment the numeric flag based on the sign of _value
+        global.flags[$ _name] += sign(_value);
+    }
+}
+
+// Returns the value of a given flag
+function FlagGet(_name) {
+    // Check if the flag exists before attempting to retrieve its value
+    if (struct_exists(global.flags, _name)) {
+        return global.flags[$ _name];
+    } else {
+        // Flag doesn't exist
+        return undefined;
+    }
+}
+
+// -----------------------------------------------------------------------------  //
+// Useful functions that are not called in .yarn files
+
+// Function to prevent repeating these lines
+function UpdateChatterbox() {
+	node = ChatterboxGetCurrent(chatterbox);
+	text = ChatterboxGetContent(chatterbox, 0);
 }
 
 // Get filename dynamically

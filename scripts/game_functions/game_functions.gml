@@ -34,21 +34,6 @@ function GameCreateUI() {
 	}
 }
 
-function GameBackToTitle() {
-	room_goto(rm_title);
-	GameChangeState(e_gameStates.LEAVE);
-}
-
-function GameAddAction() {
-    // Get the maximum actions for the current day
-    var maxActionsForDay = global.maxActions[global.day];
-
-    // Add a new action, except if the player has reached the maximum actions for the day
-    if (global.actions[global.day] < maxActionsForDay) {
-        global.actions[global.day] += 1;
-    }
-}
-
 // Handles keyboard input for valid letters (A-Z, a-z)
 function ReceivePlayerInput(_stringToCheck) {
 	if (keyboard_lastkey != -1) {

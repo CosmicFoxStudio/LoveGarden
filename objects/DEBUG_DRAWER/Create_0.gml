@@ -1,10 +1,10 @@
 /// @description Initialization
 
 togglePause = false;
+
 //------------------- MOUSE ---------------------//
 clickX = 0;
 clickY = 0;
-
 clickGuiX = 0;
 clickGuiY = 0;
 
@@ -20,6 +20,7 @@ debugShowFPS = false;
 debugBooleans = array_create(e_DebugOptions.LAST, false);
 displayInfo = false;
 //--------------------------------------------------//
+
  #region ROOM SELECTOR
 // Creating Room Lists
 global.rmName = ds_list_create();			// Index sorted, values are strings
