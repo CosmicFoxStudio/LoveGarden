@@ -1,5 +1,5 @@
 // Adds a certain number of actions
-function GameAddAction(_actionsToAdd) {
+function AddAction(_actionsToAdd) {
     // Get the maximum actions for the current day
     var maxActionsForDay = global.maxActions[global.day];
 	
@@ -40,7 +40,7 @@ function RouteAssign(_SOName) {
 }
 
 // Goes back to the title screen and changes game state
-function GameBackToTitle() {
+function BackToTitle() {
 	room_goto(rm_title);
 	GameChangeState(e_gameStates.LEAVE);
 }
@@ -146,6 +146,11 @@ function FlagGet(_name) {
         // Flag doesn't exist
         return undefined;
     }
+}
+
+// Transition VFX
+function DialogueTransition() {
+	GameTransition(sq_trans_fade_black);
 }
 
 // -----------------------------------------------------------------------------  //

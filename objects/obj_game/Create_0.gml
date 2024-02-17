@@ -191,9 +191,9 @@ global.roomYarnMap[? "rm_classroom"	]		= "scenes/main_day1_classroom.yarn";
 
 #region CHATTERBOX INITIALIZE CUSTOMS
 // Custom Chatterbox Functions
-ChatterboxAddFunction("addAction", GameAddAction);					// Adds a certain number of actions
+ChatterboxAddFunction("addAction", AddAction);				    	// Adds a certain number of actions
 ChatterboxAddFunction("assignRoute", RouteAssign);					// Assign a character route
-ChatterboxAddFunction("backTitle", GameBackToTitle);				// Goes back to the title screen and changes game state
+ChatterboxAddFunction("backTitle", BackToTitle);			    	// Goes back to the title screen and changes game state
 ChatterboxAddFunction("bg", BackgroundSetIndex);					// Function to change background
 ChatterboxAddFunction("chara", CharacterOnScreen);					// Function to draw character
 ChatterboxAddFunction("shadow", CharacterShadowOnScreen);			// Function to draw shadow character
@@ -205,6 +205,7 @@ ChatterboxAddFunction("getRelationship", GetRelationshipBar)        // Checks re
 ChatterboxAddFunction("nextDay", NextDay);							// Increments by 1 global.day and set global.currentDaytime to morning
 ChatterboxAddFunction("nextDaytime", NextDaytime);					// Increments by 1 global.currentDaytime
 ChatterboxAddFunction("nextRoom", NextRoom);						// Function to change scene
+ChatterboxAddFunction("transition", DialogueTransition);			// Transition VFX
 ChatterboxAddFunction("setFlag", FlagSet);							// Sets a value to a flag
 ChatterboxAddFunction("getFlag", FlagGet);							// Returns the value of a given flag
 #endregion CHATTERBOX INITIALIZE CUSTOMS
