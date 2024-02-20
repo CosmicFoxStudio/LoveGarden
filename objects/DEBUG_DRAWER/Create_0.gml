@@ -19,6 +19,7 @@ numVerticalLines = room_width div gridSpacing;
 debugShowFPS = false;
 debugBooleans = array_create(e_DebugOptions.LAST, false);
 displayInfo = false;
+
 //--------------------------------------------------//
 
  #region ROOM SELECTOR

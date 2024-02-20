@@ -11,14 +11,6 @@ if (global.state != e_gameStates.MENU) {
 	}
 }
 
-// Context Config Menu Toggle Activation / Deactivation
-/* UNABLING THIS UNTIL CONFIG MENU IS FINISHED
-if ( InputCheck(e_input.KEYBOARD, "start") || InputCheck(e_input.MOUSE, "start") ) {
-	//	Can only be activated/deactivated if game state is CONTINUE_GAME or MENU
-	ToggleContextMenu(global.state == e_gameStates.CONTINUE_GAME || global.state == e_gameStates.MENU);
-}
-*/
-
 // LMAO
 if (global.day > 4 && global.state == e_gameStates.CONTINUE_GAME) {
 	show_error("BRO. 4 IS TOO MANY ALREADY.", true);	

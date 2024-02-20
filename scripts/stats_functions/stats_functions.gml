@@ -13,15 +13,9 @@ function WrapInside(_val, _min, _max) {
 }
 
 // Create stats struct for both the player character and the SOs
-function DefineStats(_player = undefined) {
-	if (_player != undefined) {
-		return 
+function DefineStats() {
+	return 
 		{
-			wilting : 0,
-			growth : 0
+			hearts: 0
 		}
-	}
-	else {
-		return { blossom : 0}
-	}
 }

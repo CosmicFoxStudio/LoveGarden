@@ -1,10 +1,6 @@
-/// @description
-
 if (global.state == e_gameStates.CONTINUE_GAME && global.roomType == e_roomTypes.SCENES) {
 	instance_create_layer(16, ORIGIN_Y, "Instances_Above", obj_ui_btn_calendar, {offsetX: 16});
-	//instance_create_layer(85, 60, "Instances_Above", obj_ui_btn_actions);
 	instance_create_layer(480, ORIGIN_Y, "Instances_Above", obj_ui_btn_config);
-	//instance_create_layer(480, ORIGIN_Y, "Instances_Above", obj_ui_btn_events);
 	if (global.isMapOn && mapButtonOn == false) {
 		instance_create_layer(560, ORIGIN_Y, "Instances_Above", obj_ui_btn_map);
 		mapButtonOn = true;

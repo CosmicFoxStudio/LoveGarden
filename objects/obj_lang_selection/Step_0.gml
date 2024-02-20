@@ -1,6 +1,6 @@
 if (canInitialize) {
 	if (!initialized) {
-		// Centralizar e equalizar posição com a do menu
+		// Center position with menu
 	    x = obj_lang_menu.x;
 	    targetY = obj_lang_menu.y;
 	    y = targetY;
@@ -18,5 +18,6 @@ if (selectedOption != previousSelectedOption) {
     // Save the current selected option for the next frame
     previousSelectedOption = selectedOption;
 }
-	// Apply tweening effect to the y-coordinate
-	y += (targetY - y) * tweenSpeed;
+
+// Apply tweening effect to the y-coordinate
+y += (targetY - y) * tweenSpeed;

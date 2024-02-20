@@ -8,7 +8,6 @@ function ToggleContextMenu(_condition = true) {
 			global.configMenu = instance_create_layer(ORIGIN_X, ORIGIN_Y, "Special", obj_config_menu);
 			//GameTransition(sq_trans_fade_black);
 			GameChangeState(e_gameStates.MENU);
-			global.inputMode = e_input.KEYBOARD; 
 			return show_debug_message("Config menu activated.");
 		}
 		// DEACTIVATION - Menu already exists, destroy it
@@ -17,7 +16,6 @@ function ToggleContextMenu(_condition = true) {
 			instance_destroy(global.configMenu);
 			//GameTransition(sq_trans_fade_black); 
 			GameChangeState(e_gameStates.CONTINUE_GAME);
-			global.inputMode = e_input.MOUSE; 
 			return show_debug_message("Config menu deactivated.");
 		}
 	}
@@ -43,7 +41,7 @@ function ChangeVolume(_new_volume) {
 		case 2: audio_group_set_gain(audiogroup_music, _new_volume, 0); break;
 	}
 
-show_debug_message("changed volume to " + string(_new_volume));
+	show_debug_message("changed volume to " + string(_new_volume));
 }
 
 function DecideResolutionBasedOnOption(_option) {
@@ -105,7 +103,6 @@ function ChangeResolution(_option) {
 }
 
 function Fullscreen(_fullscreen) {
-
 	switch(_fullscreen) {
 		case false: 
 			window_set_fullscreen(false);

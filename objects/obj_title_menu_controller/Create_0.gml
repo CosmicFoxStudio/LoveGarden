@@ -1,6 +1,6 @@
 /// @description Initialization
 
-//  -------------------- Create Buttons --------------------- //
+//  ----------------------------------- Create Buttons ------------------------------------ //
 // If the platform isn't a browser, create the "Play", "Help" and "Quit" buttons
 if (os_browser == browser_not_a_browser) {
 	playButton = instance_create_layer(500, 180, "Instances_Below", obj_title_button);
@@ -21,7 +21,7 @@ else {
 	helpButton.btnType = e_btnTypes.HELP;
 }
 
-// ------------------- Input ---------------------- //
+// -------------------------------------- Input ----------------------------------------- //
 pos = 0;
 
 // This array contains all existent instances of obj_title_button

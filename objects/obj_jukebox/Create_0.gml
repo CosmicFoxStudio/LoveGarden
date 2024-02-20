@@ -5,9 +5,9 @@ audio_group_load(audiogroup_music);
 audio_group_load(audiogroup_sfx);
 // audiogroup_default is the master
 
-// ----------------------------------------------------- //
 currentMusic = -1;
-// ---------------------- Methods ---------------------- //
+
+// --------------------------- Methods --------------------------- //
 JukeboxStopMusic = function() {
     // Check if there is currently playing music
     if (currentMusic != -1) {

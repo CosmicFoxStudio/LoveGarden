@@ -17,7 +17,7 @@ if !file_exists("file_" + string(slotIndex) + ".sav") {
 	draw_text(startX, yy, obj_save_load.saveText[0]);
 }
 
-// ----------------------------- FILE EXISTS ----------------------------- //
+// ---------------------------------- FILE EXISTS ----------------------------------- //
 else {
 	var plantX = (startX - (sprite_get_width(spr_saveslot_box) / 2) ) + 
 	(sprite_get_width(spr_sprout) + 15);
@@ -37,6 +37,7 @@ else {
 	DrawFont(fnt_menu);
 	draw_text(startX - 5, yy - 17, obj_save_load.saveSlotInfo[slotIndex, e_saveSlotStats.NAME]);
 	DrawFont(fnt_dialogue);
+			
 			
 	// DATE
 	dateX = startX - 5;
@@ -92,6 +93,7 @@ else {
 	DrawFont(fnt_menu);
 	draw_text(dayX, dayY, obj_save_load.saveText[6] + " " + string(obj_save_load.saveSlotInfo[slotIndex, e_saveSlotStats.DAY]));
 	DrawFont(fnt_dialogue);
+	
 	#endregion DRAW STATS
 }
 

@@ -6,7 +6,7 @@ hovering = false;
 selected = false;
 image_alpha = 0.5;
 
-// --------- VARIABLE DEFINITIONS --------- //
+// -------------------- VARIABLE DEFINITIONS -------------------- //
 // btnType = ""; // Currently possible options: "CANCEL", "CONFIRM"
 
 btnText[e_btnTypes.CONFIRM] = ["CONFIRM", "CONFIRMAR"];

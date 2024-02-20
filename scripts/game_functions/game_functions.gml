@@ -102,7 +102,6 @@ function DecideRoomName() {
 		case "rm_title":
 		case "rm_dream":
 		case "rm_file_selection":
-		case "rm_campus_map":
 	    default:
 			global.location = "Nowhere";
 			break;

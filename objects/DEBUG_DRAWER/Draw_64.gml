@@ -5,19 +5,21 @@ if (Debug() && global.debug == false) {
 }
 
 if (global.debug) {
+	
 	#region INFO
 	if (displayInfo) {
 		var info_debug_strings = [
 			"Fullscreen: Esc",
 			"Show Grid: G",
+			"Show FPS: F",
+			"Pause Game: P",
+			"Debug Transition: T",
+			"Room Selector: R",
 			"Game Debug: 1",
 			"Language Debug: 2",
 			"Character Debug: 3", 
 			"Cutscene Debug: 4",
 			"Dialogue Debug: 5",
-			"Show FPS: F",
-			"Room Selector: R",
-			"Pause Game: P",
 			"Restart Room: Home",
 			"Next Room: PageUp",
 			"Previous Room: PageDown",
@@ -153,7 +155,6 @@ if (global.debug) {
 
 		DebugDrawBox(10, 10, "DIALOGUE DEBUG", dialogueDebugStrings);
 	}
-	
 	#endregion DIALOGUE
 	
 	#region ROOM SELECTOR

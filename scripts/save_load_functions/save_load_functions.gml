@@ -4,18 +4,6 @@
 	Save directory path is inside %localappdata%\love-garden
 */
 
-/*
-	Stuff to be saved:
-	- Need to save all player data, such as name (global.playerName) [X], pronouns (global.pronouns) [X], stats (global.statsPlayer) [X])
-	- Last room (global.location) [X]
-	- Need to save daytime (global.currentDaytime) [X]
-	- Need to save day (global.day)[X]
-	- Need to save story state (global.progress) [X]
-	- Need to save all NPC data, including their stats (global.NPCs) [X]
-	- Need to save selected language (global.lang) [X]
-	- Need to save flags (global.flags) [X]
-*/
-
 function SaveGame() {
 	var saveStruct = {
 		playerName: global.playerName,
@@ -53,7 +41,6 @@ function SaveGame() {
 }
 
 function LoadGame() {
-	
 	if (file_exists("file_" + string(global.saveSlot) + ".sav")) {
 		var file = file_text_open_read("file_" + string(global.saveSlot) + ".sav");
 		var json = file_text_read_string(file);

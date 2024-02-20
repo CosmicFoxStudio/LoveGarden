@@ -11,5 +11,7 @@ function ExecuteButtonAction(_btnType) {
 		case e_btnTypes.QUIT : 
 			game_end();
 		break;
+		
+		default: break;
 	}
 }

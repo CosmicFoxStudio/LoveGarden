@@ -11,7 +11,7 @@ mouseSelected = false;
 saveStatString = "";
 entryString = "";
 saveSlotArray = [];
-saveSlotAmount = 0; // Don't think we need this? Since we already have the maxSlots variable
+saveSlotAmount = 0;
 
 // Adding translation to save and load buttons
 switch (global.lang) {
@@ -78,7 +78,7 @@ for (var slot = 0; slot < 3; slot++) {
 			}
 		}
 	}
-	 // else show_debug_message("No file found - " + string(slot));	
+	//else show_debug_message("No file found - " + string(slot));	
 }
 
 // -------------------------------- CREATE SLOTS -------------------------------- //

@@ -108,18 +108,17 @@ function Enums() {
 		DAY,
 		LAST
 	}
-}
 
-enum e_plantStage {
-	BLOOM,	// 0
-	BUD,	// 1
-	WITHER,	// 2
-	DEAD	// 3 ---> Only for testing purposes
-}
+	enum e_plantStage {
+		BLOOM,	// 0
+		BUD,	// 1
+		WITHER,	// 2
+		DEAD	// 3 ---> Only for testing purposes
+	}
 
-// Used in obj_player_creator
-enum e_phases {
-	PHASE_1,
-	PHASE_2,
-	//PHASE_3
+	// Used in obj_player_creator
+	enum e_phases {
+		PHASE_1,
+		PHASE_2,
+	}
 }

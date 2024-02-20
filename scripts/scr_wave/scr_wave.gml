@@ -1,6 +1,6 @@
 // Script by Shaun Spalding
 function Wave(argument0, argument1, argument2, argument3) {
-	//Wave(from, to, duration, offset)
+	   //Wave(from, to, duration, offset)
 
 	// Returns a value that will wave back and forth between [from-to] over [duration] seconds
 	// Examples

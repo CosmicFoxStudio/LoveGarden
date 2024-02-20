@@ -74,6 +74,4 @@ if (global.state == e_gameStates.FILE_SELECTION) {
 			}
 		}
 	} // End of: if (!global.midTransition) 
-	
-	
 }

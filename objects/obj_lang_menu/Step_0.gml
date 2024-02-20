@@ -2,6 +2,7 @@ if (global.state == e_gameStates.PAUSED) exit;
 
 // Select Phase
 if (phase == "SELECT") {
+	
 	// ----------------------------- KEYBOARD INPUT ----------------------------- //
 	pos += CheckVerticalInput();
 
@@ -9,9 +10,8 @@ if (phase == "SELECT") {
 	if (pos >= optionLength) pos = 0; // goes back to first pos
 	if (pos < 0) pos = optionLength - 1; // goes to last pos
 	
-	// ----------------------------- MOUSE INPUT ----------------------------- //
-
-
+	
+	// ---------------------- ------- MOUSE INPUT ------------------------------- //
 	// Mouse Input - Handle mouse hover
 	if (global.inputMode == e_input.MOUSE) {
 		var isMouseHoveringMenu = false;
@@ -31,7 +31,7 @@ if (phase == "SELECT") {
 		}
 	}
 	
-	// ------------------------------------------------------------------------ //
+	// -------------------------------------------------------------------------- //
 
 	// Choose a language
 	if	( InputCheck(e_input.MOUSE, "confirm") && isMouseHoveringMenu ) || 
@@ -59,12 +59,11 @@ if (phase == "CONFIRM") {
 	cancelButton.unavailable = false;
 	confirmButton.unavailable = false;
 	
-	// Mouse Input
+	// ---------------------- ------- MOUSE INPUT ------------------------------- //
 	if (global.inputMode == e_input.MOUSE) {
 
 		cancelButtonIsHovering = cancelButton.hovering;
 		confirmButtonIsHovering = confirmButton.hovering;
-	
 
 		// MOUSE ENTER LOGIC
 		if (cancelButtonIsHovering) { // Mouse entered left button area
@@ -75,8 +74,8 @@ if (phase == "CONFIRM") {
 		    // Player cancelled the selection
 		    if ( InputCheck(e_input.MOUSE, "confirm") ) {
 				selectedButton = "CANCEL";
-			
 			}
+			
 		} else if (confirmButtonIsHovering) { // Mouse entered right button area
 			// Change appearance when hovering
 			confirmButton.selected = true;
@@ -87,8 +86,9 @@ if (phase == "CONFIRM") {
 				selectedButton = "CONFIRM";
 			}
 		}
+		
 	} else {
-		// ----------------------------- KEYBOARD INPUT ----------------------------- //
+	// ----------------------------- KEYBOARD INPUT ----------------------------- //
 		posButtons += CheckHorizontalInput();
 	
 		// Wrap buttons
@@ -109,7 +109,7 @@ if (phase == "CONFIRM") {
 		}
 	
 		// Cancel
-		if ( InputCheck(e_input.KEYBOARD, "cancel")) {
+		if ( InputCheck(e_input.KEYBOARD, "cancel") ) {
 			selectedButton = "CANCEL";
 		}
 	}
@@ -121,7 +121,7 @@ if (selectedButton == "CANCEL") {
 	selectedButton = "NONE";
 }
 
-//  ------------------------ NEXT ROOM  ------------------------ //
+// ----------------------------- NEXT ROOM  ----------------------------- //
 if (selectedButton == "CONFIRM") {
 	phase = "SELECT";
 	selectedButton = "NONE";
@@ -130,11 +130,10 @@ if (selectedButton == "CONFIRM") {
 	if (os_browser == browser_not_a_browser) {
 		// Call a screen transition to rm_file_selection
 		var target = room_next(room);
-		GameTransitionChangeRoom(target, sq_trans_fade_w);
-	
+		GameTransitionChangeRoom(target, sq_trans_fade_white);
 	}
 	// Platform is a browser
 	else {
-		GameTransitionChangeRoom(rm_dream, sq_trans_fade_w);
+		GameTransitionChangeRoom(rm_dream, sq_trans_fade_white);
 	}
 }

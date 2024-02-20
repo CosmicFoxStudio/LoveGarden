@@ -19,5 +19,3 @@ function SequencePause(_seq = self.elementID) {
 function SequenceUnpause(_seq = self.elementID) {
 	layer_sequence_play(_seq);	
 }
-
-// function CreateTransitionSequence() {} 

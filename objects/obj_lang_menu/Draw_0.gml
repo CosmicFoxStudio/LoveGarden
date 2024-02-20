@@ -13,13 +13,12 @@ height = newHeight;
 x = camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0])/2 - width/2;
 y = camera_get_view_y(view_camera[0]) + camera_get_view_height(view_camera[0])/2 - height/2;
 
-obj_lang_selection.canInitialize = true; 
+obj_lang_selection.canInitialize = true;
 
 // Draw the menu box
 var scaleX = width*(1/sprite_width); // --> 1
 var scaleY = height*(1/sprite_height); // --> 1
 draw_sprite_ext(sprite_index, image_index, x, y, scaleX, scaleY, 0, c_white, 1);
-
 
 #region DESCRIPTION
 var offset = 100;
@@ -54,14 +53,12 @@ draw_sprite_ext(
 
 // Draw the description text inside the box
 draw_text_color(descriptionX, descriptionY, descriptionText, TEXT_GREEN, TEXT_GREEN, TEXT_GREEN, TEXT_GREEN, 1);
-
 #endregion DESCRIPTION
 
 DrawFont(fnt_dialogue);
 
 // Draw language options
 for (var i = 0; i < optionLength; i++) {
-
 	var c = TEXT_GREEN;
 	
 	// Option was selected

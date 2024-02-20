@@ -20,18 +20,6 @@ view_visible[0] = true;
 view_set_camera(0, camera); // That is, global.cameraID and view_camera[0] is equivalent
 #endregion camera setup for each room
 
-// Reset stats & flags
-if (room = rm_title) {
-	global.playerStats.wilting = 0;
-	global.playerStats.growth = 0;
-	global.playerStats.blossom = 0;
-}
-
-// Set location
-if global.roomType == e_roomTypes.SCENES {
-	global.location = global.rmCurrent;	
-}
-
 // YARN Dialogue Files
 if (global.debug) show_debug_message("All dialogue files: " + string(global.dialogueList));
 

@@ -42,6 +42,7 @@ if (global.debug) {
 			PRESS 2 - Language Debug
 			PRESS 3 - Character Debug
 			PRESS 4 - Cutscene Debug
+			PRESS 5 - Dialogue Debug
 		*/
 	        debugBooleans[i] = !debugBooleans[i];
 	    }

@@ -18,28 +18,28 @@ function DefineMenuElement(_text, _type, _action, _param1 = -1, _param2 = -1) co
 
 #region CREATE MENU ELEMENTS
 // MAIN PAGE [0]
-menu_page_main_elements[0]		= new DefineMenuElement(MenuLocalization("RESUME"),		e_menuElementType.SCRIPT_RUNNER,	ResumeGame);
+menu_page_main_elements[0]		= new DefineMenuElement(MenuLocalization("RESUME"),		    e_menuElementType.SCRIPT_RUNNER,	ResumeGame);
 menu_page_main_elements[1]		= new DefineMenuElement(MenuLocalization("SETTINGS"),		e_menuElementType.PAGE_CHANGE,		e_MenuPage.SETTINGS);
 menu_page_main_elements[2]		= new DefineMenuElement(MenuLocalization("EXIT"),			e_menuElementType.SCRIPT_RUNNER,	ExitGame);
 
 //SETTINGS PAGE [1]
-menu_page_settings_elements[0]	= new DefineMenuElement(MenuLocalization("AUDIO"),		e_menuElementType.PAGE_CHANGE,		e_MenuPage.AUDIO);
+menu_page_settings_elements[0]	= new DefineMenuElement(MenuLocalization("AUDIO"),		    e_menuElementType.PAGE_CHANGE,		e_MenuPage.AUDIO);
 menu_page_settings_elements[1]	= new DefineMenuElement(MenuLocalization("GRAPHICS"),		e_menuElementType.PAGE_CHANGE,		e_MenuPage.GRAPHICS);
 menu_page_settings_elements[2]	= new DefineMenuElement(MenuLocalization("BACK"),			e_menuElementType.PAGE_CHANGE,		e_MenuPage.MAIN);
-//menu_page_settings_elements[3]	= new DefineMenuElement("CONTROLS",		e_menuElementType.PAGE_CHANGE,		e_MenuPage.CONTROLS);
+//menu_page_settings_elements[3]	= new DefineMenuElement("CONTROLS",		                    e_menuElementType.PAGE_CHANGE,		e_MenuPage.CONTROLS);
 
 
 // AUDIO PAGE [2]
 menu_page_audio_elements[0]		= new DefineMenuElement(MenuLocalization("MASTER"),		e_menuElementType.SLIDER,			ChangeVolume,				1,	[0,1]);
 menu_page_audio_elements[1]		= new DefineMenuElement(MenuLocalization("SOUNDS"),		e_menuElementType.SLIDER,			ChangeVolume,				1,	[0,1]);
 menu_page_audio_elements[2]		= new DefineMenuElement(MenuLocalization("MUSIC"),		e_menuElementType.SLIDER,			ChangeVolume,				1,	[0,1]);
-menu_page_audio_elements[3]		= new DefineMenuElement(MenuLocalization("BACK"),			e_menuElementType.PAGE_CHANGE,		e_MenuPage.SETTINGS);
+menu_page_audio_elements[3]		= new DefineMenuElement(MenuLocalization("BACK"),		e_menuElementType.PAGE_CHANGE,		e_MenuPage.SETTINGS);
 
 // GRAPHICS PAGE [3]
 var resolutionValue = DecideOptionBasedOnResolution(global.res.scale);
 menu_page_graphics_elements[0]	= new DefineMenuElement(MenuLocalization("RESOLUTION"),	e_menuElementType.SHIFT,			ChangeResolution,			resolutionValue, ["640 x 480", "1280 x 720", "1920 x 1080"]);
 menu_page_graphics_elements[1]	= new DefineMenuElement(MenuLocalization("FULLSCREEN"),	e_menuElementType.TOGGLE,			Fullscreen,					global.fullscreen, ["FULLSCREEN", "WINDOWED"]);
-menu_page_graphics_elements[2]	= new DefineMenuElement(MenuLocalization("BACK"),			e_menuElementType.PAGE_CHANGE,		e_MenuPage.SETTINGS);
+menu_page_graphics_elements[2]	= new DefineMenuElement(MenuLocalization("BACK"),		e_menuElementType.PAGE_CHANGE,		e_MenuPage.SETTINGS);
 #endregion CREATE MENU ELEMENTS
 
 // Variable used to access different pages

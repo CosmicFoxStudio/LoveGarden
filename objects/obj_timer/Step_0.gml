@@ -3,11 +3,9 @@
 if (timer > 0) {
 	timer--;
 	
-     var s = timer;
-
+    var s = timer;
     show_debug_message("(TIMER) Seconds remaining: " + string(s));
-}
-else {
+} else {
 	// Execute function with args
 	if (is_array(args)) ScriptExecuteAlt(func, args);
 	

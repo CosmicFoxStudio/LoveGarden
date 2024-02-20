@@ -34,13 +34,11 @@ confirmButtonIsHovering = false;
 selectedButton = "NONE"; // "CONFIRM" || "CANCEL"  // ---------> Change name to "Chosen Button"
 posButtons = 0;
 
-
 // ENUMS USED: e_language & e_langMenuOptions
 
 // Array of selectable languages
 option[e_language.EN] = ["ENGLISH", "PORTUGUÊS"];
 option[e_language.PT] = ["ENGLISH", "PORTUGUÊS"];
-//option[2] = ["Spanish", "Espanhol"];
 
 // Other text
 titleText[e_language.EN] = "Choose a language";

@@ -1,4 +1,4 @@
-/// @description 
+/// @description
 
 #region Input lines animation
 if (!flash) {
@@ -35,6 +35,7 @@ if (phase == e_phases.PHASE_2) {
 	}	
 }
 
+// ---------------------------- KEYBOARD INPUT  -------------------------- //
 if (global.inputMode == e_input.KEYBOARD) {
 	// Keyboard Input - Move through options
 	pos += CheckHorizontalInput();

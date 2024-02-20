@@ -8,7 +8,6 @@ DrawFont(fnt_day_number);
 draw_text_color(32+offsetX, 26+offsetY, global.day, TEXT_BROWN, TEXT_BROWN, TEXT_BROWN, TEXT_BROWN, 1);
 
 // Current daytime
-
 switch (global.lang) {
 	case "pt":
 		switch (global.currentDaytime) {

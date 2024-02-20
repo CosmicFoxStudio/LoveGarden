@@ -7,7 +7,6 @@ function SetLanguage() {
 	        global.lang = "pt";
 	        break;
 
-	    case "en":
 	    default:
 	        global.lang = "en";
 	        break;
@@ -18,8 +17,9 @@ function SetLanguage() {
 }
 
 #region LOCALIZATION
+
 function LoadLocalization() {
-	// If "English" was selected, load new dialogue lines
+	// If "English" was not selected, load new dialogue lines
 	if (global.lang != "en") {
 		ChatterboxLocalizationLoad("lang/" + global.lang + "_dialogues.csv"); 
 		show_debug_message("Portuguese translation loaded.");
@@ -65,6 +65,8 @@ function PlaceLocalization(_savePlace) {
 	}
 }
 
+
+// Menu elements localization
 function MenuLocalization(_menuWord) {
 	switch (global.lang) {
 	case "en":
@@ -104,6 +106,7 @@ function DateLocalization(_saveDate) {
 	}
 }
 
+// Player creator elements localization
 function PlayerCreatorLocalization(_playerCreatorWord) {
 	switch (global.lang) {
 	case "en":
