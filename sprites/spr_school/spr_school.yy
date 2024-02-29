@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "BGs",
-    "path": "folders/Sprites/BGs.yy",
+    "name": "Old BGs",
+    "path": "folders/Sprites/BGs/Old BGs.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

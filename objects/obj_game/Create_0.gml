@@ -34,13 +34,12 @@ global.actions[4] = 3;	// DAY 4
 global.maxActions = [0, 3, 3, 3, 3];
 global.flags = { 
 	met_solanum: 0,
-	dormitory_morning_saw: false,
 	orange_photo_book_talk: false,
 	met_hydra: false,
-	finished_fern_intro: false,
 	sat_with_ype: false,
 	sat_with_hydra: false,
-	stood_ype_up: false
+	stood_ype_up: false,
+	sat_alone: false
 };
 
 // Player Info
