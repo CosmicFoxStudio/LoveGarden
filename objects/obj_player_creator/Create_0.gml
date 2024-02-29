@@ -67,7 +67,7 @@ rectBtnInstArray[e_phases.PHASE_2] = [];
 
 // Phase1 Options
 for ( var i = 0; i < array_length(phaseOptions[e_phases.PHASE_1]); i++ ) {
-	var inst = instance_create_layer(startX + i * (rectWidth + PLAYER_CREATOR_BTN_MARGIN_H), startY + PLAYER_CREATOR_MARGIN_V, "Instances_Mid", obj_rect);
+	var inst = instance_create_layer(startX - 2 + i * (rectWidth + PLAYER_CREATOR_BTN_MARGIN_H + 12), startY + PLAYER_CREATOR_MARGIN_V, "Instances_Mid", obj_rect);
 	inst.image_blend = c_aqua;
 	inst.image_alpha = 0; // 0.3 for debug
 	array_push(rectBtnInstArray[e_phases.PHASE_1], inst);
@@ -75,7 +75,7 @@ for ( var i = 0; i < array_length(phaseOptions[e_phases.PHASE_1]); i++ ) {
 
 // Phase2 Options
 for ( var j = 0; j < array_length(phaseOptions[e_phases.PHASE_2]); j++ ) {
-	var inst = instance_create_layer(startX + j * (rectWidth + PLAYER_CREATOR_BTN_MARGIN_H), startY + PLAYER_CREATOR_MARGIN_V + 25, "Instances_Mid", obj_rect);
+	var inst = instance_create_layer(startX + j * (rectWidth + PLAYER_CREATOR_BTN_MARGIN_H) + 5, startY + PLAYER_CREATOR_MARGIN_V + 25, "Instances_Mid", obj_rect);
 	inst.image_alpha = 0;
 	array_push(rectBtnInstArray[e_phases.PHASE_2], inst);
 }

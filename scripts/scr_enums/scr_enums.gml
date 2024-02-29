@@ -27,7 +27,8 @@ function Enums() {
 		CONTINUE_GAME, // If not first access (continue game)
 		PAUSED,
 		MENU,
-		LEAVE // Returns to title
+		LEAVE, // Returns to title
+		RESUME // Close menu and resume game
 	}
 	
 	enum e_SO {

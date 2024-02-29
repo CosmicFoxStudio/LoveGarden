@@ -15,7 +15,7 @@ function ToggleContextMenu(_condition = true) {
 			// Destroy the instance stored in the global. Menu is ready to be called again
 			instance_destroy(global.configMenu);
 			//GameTransition(sq_trans_fade_black); 
-			GameChangeState(e_gameStates.CONTINUE_GAME);
+			GameChangeState(e_gameStates.RESUME);
 			return show_debug_message("Config menu deactivated.");
 		}
 	}

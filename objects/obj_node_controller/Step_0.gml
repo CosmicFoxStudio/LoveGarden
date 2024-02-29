@@ -16,7 +16,7 @@ if (global.inputMode == e_input.MOUSE && InputCheck(e_input.MOUSE, "confirm", "h
 if (global.state != e_gameStates.PAUSED && global.state != e_gameStates.MENU && global.hoveringButton == false) {
 	// Waiting for user input or waiting for the user to choose an option
 	if (ChatterboxIsWaiting(chatterbox)) {
-	    if ( InputCheck(e_input.KEYBOARD, "confirm") || InputCheck(e_input.MOUSE, "confirm") ) {
+	    if ((InputCheck(e_input.KEYBOARD, "confirm") && global.keyboardIcons == false) || (InputCheck(e_input.MOUSE, "confirm") && global.hoveringTextbox == true)) {
 			// Debug text
 			//show_debug_message(text);
 			

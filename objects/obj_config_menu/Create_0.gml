@@ -54,6 +54,13 @@ menuPages = [
 //	menu_page_controls_elements		// 4 (for changing input between mouse and keyboard)
 ];
 
+// Create rectangle hitboxes
+rectBtnInstArray[0] = []; // Main Page
+rectBtnInstArray[1] = []; // Settingss Page
+rectBtnInstArray[2] = []; // Audio Page
+rectBtnInstArray[3] = []; // Graphics Page
+rectBtnInstArray[4] = []; // Controls Page
+
 /*
 How to access
 menuPages[0]		// MAIN PAGE ELEMENTS
@@ -75,4 +82,35 @@ repeat(array_len) {
 }
 
 // When inputting is true, it means the selection was made and we can start changing settings
-inputting = false; 
+inputting = false;
+mouseHovering = false;
+
+// Creating buttons for mouse input to register
+
+// Main Page Options
+for ( var i = 0; i < array_length(menuPages[0]); i++ ) {
+	var inst = instance_create_layer(SCREEN_WIDTH/2 - 130, (SCREEN_HEIGHT/2) - 47 + i * 24, "Controllers", obj_rect_config);
+	inst.image_alpha = 0; // 0.3 for debug
+	array_push(rectBtnInstArray[0], inst);
+}
+
+// Settings Page Options
+for ( var i = 0; i < array_length(menuPages[1]); i++ ) {
+	var inst = instance_create_layer(SCREEN_WIDTH/2 - 130, (SCREEN_HEIGHT/2) - 47 + i * 24, "Controllers", obj_rect_config);
+	inst.image_alpha = 0; // 0.3 for debug
+	array_push(rectBtnInstArray[1], inst);
+}
+
+// Audio Page Options
+for ( var i = 0; i < array_length(menuPages[2]); i++ ) {
+	var inst = instance_create_layer(SCREEN_WIDTH/2 - 130, (SCREEN_HEIGHT/2) - 47 + i * 24, "Controllers", obj_rect_config);
+	inst.image_alpha = 0; // 0.3 for debug
+	array_push(rectBtnInstArray[2], inst);
+}
+
+// Graphics Page Options
+for ( var i = 0; i < array_length(menuPages[3]); i++ ) {
+	var inst = instance_create_layer(SCREEN_WIDTH/2 - 130, (SCREEN_HEIGHT/2) - 47 + i * 24, "Controllers", obj_rect_config);
+	inst.image_alpha = 0; // 0.3 for debug
+	array_push(rectBtnInstArray[3], inst);
+}

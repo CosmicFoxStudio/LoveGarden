@@ -12,8 +12,11 @@ global.saveSlot = 0;
 global.state = e_gameStates.TITLE_SCREEN;
 global.statePrevious = global.state;
 global.hoveringButton = false;
+global.hoveringConfigButton = false;
+global.hoveringTextbox = false;
 global.hoveringPlace = "";
-global.isMapOn = false;
+global.isMapOn = true;
+global.keyboardIcons = false;
 
 // Localization Info
 global.lang = "en";     // "en", "pt"
@@ -102,7 +105,7 @@ function KeybindingCreate(_inputMode) {
 	}
 }
 
-global.inputMode = e_input.MOUSE; 
+global.inputMode = e_input.KEYBOARD;
 global.keybind = KeybindingCreate(global.inputMode);
 // To reference: global.keybind.confirm
 #endregion GAME CONTROLS

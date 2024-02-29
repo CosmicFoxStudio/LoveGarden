@@ -126,7 +126,7 @@ if (inputting) {
 // --------------------------------------------------------------------------------- //
 // MAKE THINGS HAPPEN (EXECUTING SCRIPTS)
 // Setting up scripts so they run and impact/change variables in the game 
-if ( InputCheck(e_input.KEYBOARD, "confirm2") ) {
+if ( InputCheck(e_input.KEYBOARD, "confirm") || (InputCheck(e_input.MOUSE, "confirm") && global.hoveringConfigButton) ) {
 	// Checks for the type
 	switch(currentPage[menuOption[page]].type) { 
 		
@@ -151,4 +151,23 @@ if ( InputCheck(e_input.KEYBOARD, "confirm2") ) {
 
 	// Play lil audio
 	audio_play_sound(snd_menu_beep, 1, false);
+}
+
+// ---------------------------- MOUSE INPUT  ---------------------------- //
+if (global.inputMode == e_input.MOUSE) {
+	// Checking the correct array
+	var arr = rectBtnInstArray[page];
+	var optionsLength = array_length(arr);
+	
+	// Loop to check if mouse is hovering any of the instances
+	var inst;
+	for (var i = 0; i < optionsLength; i++) {
+		inst = arr[i];
+		mouseHovering = instance_position(mouse_x, mouse_y, inst);
+		
+		// ------------ CHECKING MOUSE HOVERING ------------ //
+		if (mouseHovering) {
+			menuOption[page] = i;
+		}
+	}
 }

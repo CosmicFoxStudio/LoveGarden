@@ -25,7 +25,7 @@ switch (phase) {
 		                optionText = "[spr_cursor_keyboard] " + PlayerCreatorLocalization(optionText);
 		            }
 		        }
-		        draw_text_scribble(startX + 40 + (i * (rectWidth + PLAYER_CREATOR_BTN_MARGIN_H)), startY + PLAYER_CREATOR_MARGIN_V + 5, PlayerCreatorLocalization(optionText));
+		        draw_text_scribble(startX + 40 + (i * (rectWidth + PLAYER_CREATOR_BTN_MARGIN_H) - 5), startY + PLAYER_CREATOR_MARGIN_V + 5, PlayerCreatorLocalization(optionText));
 		        DrawAlign();
 		}	
 	break;

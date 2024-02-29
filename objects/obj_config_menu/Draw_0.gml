@@ -7,7 +7,7 @@ var gheight = SCREEN_HEIGHT;
 
 var currentPage = menuPages[page];
 var xBUFFER = 8; // Horizontal offset
-var yBUFFER = 16; // Vertical offset
+var yBUFFER = 24; // Vertical offset
 var pagesLength = array_length(menuPages);
 
 /* 

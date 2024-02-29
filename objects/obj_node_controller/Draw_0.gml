@@ -21,8 +21,6 @@ if IsChatterbox(chatterbox) and text != undefined {
 	DrawFont(fnt_dialogue);
 	
 	var posX = SCREEN_WIDTH/8;
-	// Draw textbox
-	draw_sprite(spr_textbox, 0, posX, 260);
 	
 	// ------------------------- APPLY STRING SUBSTITUTIONS ------------------------- //
 	// Portuguese gender inflection

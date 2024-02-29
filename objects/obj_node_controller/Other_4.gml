@@ -8,3 +8,9 @@ if (global.roomYarnMap[? roomName] != undefined) {
     ChatterboxJump(chatterbox, nodeName);
     UpdateChatterbox();
 }
+
+// Instantiate textbox
+if (global.roomType == e_roomTypes.SCENES) {
+	var posX = SCREEN_WIDTH/8;
+	instance_create_layer(posX, 260, "Instances_Above", obj_textbox);
+}

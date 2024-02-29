@@ -1,12 +1,6 @@
-/// @description Inserir descrição aqui
-// Você pode escrever seu código neste editor
+if (array_length(buttonsList) > 0) {
+	array_delete(buttonsList, 0, array_length(buttonsList));
+}
 
-
-
-
-
-
-
-
-
-
+mapButtonOn = false;
+global.keyboardIcons = false;
