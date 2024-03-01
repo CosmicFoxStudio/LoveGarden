@@ -11,3 +11,4 @@
 - Scene Pop Up
 - Dialogue System: Multiple characters on screen!
 - Chatterbox: new functions <<getPlace()>> and <<reward()>>
+- Make game start in order

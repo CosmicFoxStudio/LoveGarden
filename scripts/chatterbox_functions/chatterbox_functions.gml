@@ -209,6 +209,10 @@ function DialogueTransition() {
 	GameTransition(sq_trans_fade_black);
 }
 
+function BackgroundWaitTransition() {
+	// TO DO
+}
+
 // -----------------------------------------------------------------------------  //
 // Useful functions that are not called in .yarn files
 
