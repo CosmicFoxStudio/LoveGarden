@@ -1,11 +1,8 @@
 - Transition System: Check timing when using <<bg()>>
 - New function: <<bg()>> + <<dialogueWait()>> + <<transition()>>
-- Change .yarn files for day 1
-- Update .yarn code using new initial node based on daytime
 - Add functionalities to Dialogue System
 - Map
 - Finish Config Menu
-- Implement new Relationship and Action System (See on Wiki: 2 functions, rooms and map)
 - Audio System
 - Save System
 - Add tutorial
@@ -13,3 +10,4 @@
 - Cosmic Fox logo before starting the game
 - Scene Pop Up
 - Dialogue System: Multiple characters on screen!
+- Chatterbox: new functions <<getPlace()>> and <<reward()>>

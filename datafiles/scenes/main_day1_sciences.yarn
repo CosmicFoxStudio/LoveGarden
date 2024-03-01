@@ -1,0 +1,251 @@
+title: Morning
+---
+<<jump YpeIntro>>
+===
+
+title: Noon
+---
+<<jump AfterClass>>
+===
+
+title: Afternoon
+---
+===
+
+title: Night
+---
+===
+
+title: Reward
+---
+<<save()>>
+Congratulations! You finished this event!
+<<hopback>>
+===
+
+title: YpeIntro
+---
+<<chara("void")>>
+You arrive at the classroom building without any further issues. #line:402d35
+Now you have a new challenge - finding the Ecology classroom. #line:7e7c40
+PLAYER: (Good thing I wrote it down... I'm always forgetting these things.) #line:928025
+You know that if you hadn't noted it down, you'd be in hot water. #line:16deab
+Apparently, the only way to get such information these days is through the university's app. #line:3721d6
+The graphical interface is of questionable quality, making the task of finding any information a real challenge. #line:6b2484
+... #line:ccb896
+<<chara("ype")>>
+Right over there seems to be someone even more lost than you. #line:46b405
+They don't seem to realize that someone is approaching. #line:82985e
+???: Um... Where could it be...? #line:afa810
+PLAYER: Need help? #line:aa73b1
+YPE: [shake]Ah!![/] #line:b8da57
+PLAYER: Sorry! I didn't mean to scare you! #line:57f3e7
+YPE: Ah...! I'm fine. Don't worry. #line:b29cd1
+YPE: I just didn't expect someone to talk to me. #line:f77359
+PLAYER: Huh? Okay. So, are you looking for your classroom? #line:50e0f2
+YPE: Yes... But this place is huge. #line:24a91b
+PLAYER: Yeah, I'm a bit lost too. #line:efbc84
+PLAYER: I'm PLAYER, by the way! #line:7fa4b1
+PLAYER: And you? What's your name? #line:6055cd
+YPE: Oh, I'm Ype! Nice to meet you, PLAYER! #line:0c9661
+PLAYER: And which classroom are you looking for? #line:b1d41d
+YPE: I'm looking for the Introduction to Ecology class... #line:e2b06e
+YPE: But I can't figure out the app... # # # #line:36f1ed
+PLAYER: It's terrible indeed. #line:a9b920
+PLAYER: But you're in luck. I'm heading there too! #line:3d23a5
+PLAYER: What's your major again? #line:52157c
+YPE: Oh, I'm majoring in Botany... #line:afce24
+PLAYER: Cool! I'm in Biology. #line:a96df2
+You were about to suggest searching for the classroom together, but you're interrupted by a man with a long, leafy beard. #line:8b748c
+<<chara("fern")>>
+???: [snd_door]Are you two going to stand there or enter the classroom? #line:2bd3c0
+PLAYER: Uh, we're not sure if this is our- #line:c18e43
+???: Are you here for Introduction to Ecology? #line:05229d
+PLAYER: Ye- #line:3c79e8
+???: Then you better come in quickly. I'm about to start the class. #line:3434ad
+<<chara("ype")>>
+Every time you're interrupted, Ype seems to become more embarrassed. #line:880432
+<<chara("fern")>>
+???: What are you waiting for? You can enter before me. #line:23500b
+<<chara("ype")>>
+That was the cue for Ype to enter the classroom as quickly as possible. #line:fcc971
+<<chara("void")>>
+And you follow right behind, not wanting to be a victim of the professor's bad mood. #line:ac25b9
+<<save()>>
+<<jump CloveIntro>>
+===
+
+title: CloveIntro
+---
+<<chara("void")>>
+You barely have enough time to sit before the professor starts speaking. #line:c7bdca
+<<chara("ype")>>
+You look around, trying to find where Ype sat, seeing them a few chairs behind you. #line:7e4900
+They still seem nervous. You try to give them a smile to calm them down, but they're staring at their desk. #line:6b7bb3
+<<chara("fern")>>
+???: Now that we're all here. Good morning, students. #line:0c69d6
+???: I am Professor Neph, coming from my scientific name: Nephrolepis. #line:a4a3b5
+<<chara("clove")>>
+???: But you can call him Fern! #line:a0c9bb
+The boy sitting next to you speaks loud enough for the whole room to hear. #line:dcdedd
+<<chara("fern")>>
+FERN: Professor Fern, thank you, Clove. #line:a3ebe9
+FERN: I'll be your Ecology teacher. #line:5526bf
+FERN: My subject will be essential for you in the coming semesters. #line:fd6c3c
+<<chara("void")>>
+Professor Fern continues explaining how his subject will work. #line:c04c65
+On your side, Clove is completely ignoring what the professor is saying. #line:efe66d
+In a quick glance behind, you see Ype jotting down every word that comes out of Fern's mouth. #line:98b0c3
+While writing, you can hear a murmur. #line:4ee9b4
+<<chara("clove")>>
+CLOVE: ''And you'll be assigned partners who have already been chosen''. #line:b1deec
+<<chara("fern")>>
+FERN: And you'll be assigned partners who have already been chosen. #line:f1c057
+<<chara("clove")>>
+CLOVE: ... ''The attendance list''... ''there might be dropouts by the end''... #line:bf6045
+<<chara("fern")>>
+FERN: And use the attendance list as a reference, but there might be dropouts by the end. #line:390dea
+<<chara("clove")>>
+CLOVE: ... ''raise your hand''... #line:e984e4
+<<chara("fern")>>
+FERN: When I call your name and your partner's, raise your hand, #line:1446b5
+<<chara("clove")>>
+You lean to whisper to Clove without disturbing the class. #line:a75f64
+PLAYER: (How did you know exactly what he was going to say?) #line:b20101
+CLOVE: He said the exact same thing in the last two semesters. #line:50157e
+PLAYER: And how do you know that? #line:dd8156
+CLOVE: It's the third time I'm taking this subject... #line:19ae6d
+PLAYER: Is this subject really that tough? #line:60404c
+CLOVE: It's the worst of all. Fern is one of the toughest in the department. #line:e496b7
+<<chara("fern")>>
+You look back at the professor, trying to draw your own conclusions. #line:e18a21
+You look back at the professor, trying to draw your own conclusions. #line:8baee6
+-> To me, he just looks like a helpless old man. #line:d2c0a0
+	<<chara("clove")>>
+	PLAYER: He might just be a bit grumpy. #line:51984f
+	CLOVE: Well, I can understand that. If I were as outdated as him, I'd be unhappy too. #line:2f2379 
+	PLAYER: Wow, you really don't like the old dude. #line:f756c5
+    PLAYER: It's a level of hatred that only someone who has been through two failures would truly understand. #line:5563cf
+	CLOVE: Let's see how you'll be at the end of the semester. #line:4466f4
+	PLAYER: Hey, they say the third time's the charm. #line:026af4
+-> I can see what you mean. #line:74d80a
+	<<chara("clove")>>
+    <<changeRelationship("clove", +1)>>
+	PLAYER: Especially after the way he talked to me just now. #line:2bd5dd
+	CLOVE: He has no sensitivity, even though most of the class are freshmen. #line:12f630
+	PLAYER: It's because of people like him that some people hate Biology. #line:da122a
+	CLOVE: Well, Ecology isn't the coolest subject. #line:419d85
+	PLAYER: Are you kidding! It's one of the subjects I was most excited to take. #line:1d9384
+	
+	CLOVE: Entomology is much cooler! Wait for your next semester. #line:d1fdea
+<<chara("fern")>>
+FERN: PLAYER and Ype! #line:39545e
+You startle when Professor Fern's voice resonates through the room. #line:aaf287
+You immediately raise your hand. # # # #line:513941
+FERN: You'll be working on the theme ''Animals of the Plantae world''. #line:563f4f
+<<if (getRelationship("clove") >= 1)>>
+	<<chara("clove")>>
+	CLOVE: You got the best theme! #line:b4f7c7
+	CLOVE: Makes me wish we were partners. #line:b4fb31
+	You give Clove a slight smile before going to Ype. #line:5a809c
+<<endif>>
+<<chara("ype")>>
+You turn to Ype, feeling relieved to at least be with someone you know. #line:dcf068
+You wave in their direction, and they wave back, seeming nervous. #line:98ef72
+<<chara("fern")>>
+Professor Fern finishes announcing the pairs. #line:84b4af
+FERN: That's it for today! #line:38b535
+Then he looks at the clock. #line:2a1dad
+FERN: Great, I'll make it in time for the department lunch! #line:7a43f2
+<<chara("void")>>
+PLAYER: (All my panic this morning for less than an hour of class...) #line:d80923
+<<chara("clove")>>
+Clove was already packed up, ready to leave. #line:6add22
+PLAYER: Hold on! How did you pack up your stuff so quickly? #line:58ea44
+CLOVE: Stuff? What stuff? #line:64a43d
+PLAYER: Ha-ha! Aren't you even going to meet your group partner? #line:28fa7c
+CLOVE: Nah, they apparently didn't show up today... #line:edd42e
+CLOVE: It's the second semester my group partner hasn't shown up... #line:4ba2e5
+CLOVE: The old man is totally singling me out... #line:5a0cbd
+PLAYER: It's not that bad. #line:859809
+PLAYER: By the way, do you have any tips for a first-time freshman? #line:4485fa
+CLOVE: Don't let things pile up, and pray for your partner to show up. #line:21b32f
+CLOVE: Now, if you'll excuse me, I have to complain about this class to someone else. #line:0d5a58
+PLAYER: Oh, yeah? And who will have the pleasure of hearing you for the third time? #line:54d52d
+CLOVE: My incredible girlfriend. #line:250ef9
+CLOVE: She even took the subject last semester to see how bad it really was. #line:418ead
+PLAYER: And she's not here this semester... Did she drop out or pass? #line:1c2f46
+CLOVE: She passed... #line:02d535 
+CLOVE: Not that she lets me forget that she passed and I didn't. #line:ef8d9b
+PLAYER: Haha, at least she'll understand you better than anyone. #line:e0389e
+CLOVE: Later, PLAYER! #line:bfe57f
+PLAYER: See you around. #line:884246
+<<chara("void")>>
+Clove leaves, and you stand up to go after Ype. #line:41b967
+Only to find them right next to your chair. #line:8a8657
+<<chara("ype")>>
+YPE: Sorry, I didn't mean to interrupt... #line:f87108
+PLAYER: Relax! I was just trying to get some tips. #line:7aba10
+PLAYER: He has taken this subject before. #line:291e85
+YPE: Oh... Did you find out anything useful? #line:7635b6
+PLAYER: Nothing special, don't procrastinate, and stuff... #line:7f7c59
+PLAYER: Have a partner who helps... #line:ff6405
+YPE: Ah... right. #line:adaa22
+Together, you walk towards the exit of the room. #line:fdef2f
+<<hop Reward>>
+<<nextDaytime()>>
+<<jump Noon>>
+===
+
+title: AfterClass
+---
+<<chara("ype")>>
+PLAYER: So, how do you want to approach the project? #line:c8d7db
+YPE: I was going to ask you the same thing, he he... #line:5eceea
+PLAYER: Let's review what we need to do first... #line:5b212e
+PLAYER: He said we should find at least two different species of plantae animals on the campus that are in some kind of ecological relationship... #line:f3256c
+YPE: Yeah, and then we need to analyze the interactions between these organisms and the environment. #line:bdd447
+YPE: Oh! And we need to take photos too. #line:d40fec
+PLAYER: It doesn't seem too complex. Once we start, I think we can finish it in a day. #line:be964e
+YPE: Maybe finding the species part, but identifying them seems difficult... #line:6015c0
+YPE: Maybe finding the species part, but identifying them seems difficult... #line:d6d407 
+-> I trust in our potential. It will be easy. #line:2c9222 
+	<<changeRelationship("ype", +1)>>
+-> If you keep talking like that, it won't work out. #line:ae30d4 
+	<<changeRelationship("ype", -1)>>
+YPE: If you say so... #line:b29f3e
+PLAYER: When do you think we can meet up? #line:bc3207
+PLAYER: I know Botany, in general, is a heavier major than Biology, so if you tell me your schedule... #line:e99911
+YPE: At the beginning of the semester, I think both courses will still be manageable. #line:46bea5
+PLAYER: Você estaria livre amanhã depois do almoço? #line:bd6bfa
+YPE: Um... Can it be a little later? 
+PLAYER: No problem. About 4pm, then?
+YPE: Great for me! #line:d17583
+PLAYER: Nice! Now we just need to find a place on campus where we can see some species of animals. #line:7fc058
+YPE: Seria tão bom se a gente pudesse fazer no parque... #line:176fce
+PLAYER: Eu não sabia que tinha um parque dentro do campus! #line:8d9869
+YPE: Oh, there isn't... Ele fica aqui perto, mas não é aqui dentro.
+PLAYER: Aw... I see. The professor said it needs to be on campus, so that's a shame. #line:9fd63d
+IPÊ: Nesse caso, acho que a nossa melhor opção vai ser o lago. #line:b16a2c
+IPÊ: Nesse caso, acho que a nossa melhor opção vai ser o lago. 
+-> Pelo menos não vamos ter que ir muito longe... #line:a81535
+    YPE: Exactly! #line:c4d55a
+-> Yep. But I'd love to check out the park someday, though. #line:0ee4c3
+	<<changeRelationship("ype", +1)>>
+    YPE: It's beautiful there! You should totally take some time to visit it! #line:7ed498
+PLAYER: By the way, I've been thinking... This is probably his way of forcing us to explore the campus, right? #line:e39539
+YPE: I hadn't thought about that, but maybe it's something like that. #line:ad8031
+PLAYER: I got lucky. You seem to know the campus, despite being lost earlier, ha ha. #line:a26427
+<<emotion(2)>>
+YPE: Oh, I have relatives here, so I've visited a few times... #line:553160
+Ype is avoiding looking at you. #line:19f26c
+YPE: I need to go now. My second class starts soon! #line:350a5a
+Before you could argue that Professor Fern released you an hour early... #line:6cff75
+<<chara("void")>>
+Ype was already disappearing down the hallway... #line:ea0357
+... #line:b57a25
+PLAYER: (Did I say something wrong?) #line:def188
+<<hop Reward>>
+<<nextDaytime()>>
+<<nextRoom("rm_dormitory")>>
+===

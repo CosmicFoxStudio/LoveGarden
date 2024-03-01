@@ -31,7 +31,7 @@ global.actions[1] = 3;	// DAY 1
 global.actions[2] = 3;	// DAY 2
 global.actions[3] = 3;	// DAY 3
 global.actions[4] = 3;	// DAY 4
-global.maxActions = [0, 3, 3, 3, 3];
+global.maxActions = [0, 5, 5, 5, 5];
 global.flags = { 
 	met_solanum: 0,
 	orange_photo_book_talk: false,
@@ -147,11 +147,9 @@ if (os_browser == browser_not_a_browser) {
 else {
 	// In browser - load files manually
 	ChatterboxLoadFromFile("scenes/main_day0_test.yarn");
-	ChatterboxLoadFromFile("scenes/main_day1_dormroom.yarn");
 	ChatterboxLoadFromFile("scenes/main_day1_dormitory.yarn");
-	ChatterboxLoadFromFile("scenes/main_day1_boat_departure.yarn");
-	ChatterboxLoadFromFile("scenes/main_day1_school.yarn");
-	ChatterboxLoadFromFile("scenes/main_day1_classroom.yarn");
+	ChatterboxLoadFromFile("scenes/main_day1_boat.yarn");
+	ChatterboxLoadFromFile("scenes/main_day1_sciences.yarn");
 }
 
 #endregion CHATTERBOX LOAD FILES
@@ -161,11 +159,9 @@ else {
 // Room-to-yarn map
 global.roomYarnMap = ds_map_create();
 global.roomYarnMap[? "rm_test"	]			= "scenes/main_day0_test.yarn";
-global.roomYarnMap[? "rm_dormroom"	]		= "scenes/main_day1_dormroom.yarn";
 global.roomYarnMap[? "rm_dormitory"	]		= "scenes/main_day1_dormitory.yarn";
-global.roomYarnMap[? "rm_boat"	]			= "scenes/main_day1_boat_departure.yarn";
-global.roomYarnMap[? "rm_school"]			= "scenes/main_day1_school.yarn";
-global.roomYarnMap[? "rm_classroom"	]		= "scenes/main_day1_classroom.yarn";
+global.roomYarnMap[? "rm_boat"	]			= "scenes/main_day1_boat.yarn";
+global.roomYarnMap[? "rm_science"]			= "scenes/main_day1_sciences.yarn";
 // And so on...
 
 // ----------------------- Chatterbox Localization Build -----------------------  //
