@@ -13,7 +13,7 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"362ab10e-1d10-4420-8bdc-e72da9bc7f1b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d11b5ce4-c748-4ddd-9692-dcfc5d575a93",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"34687465-5dbf-4bf2-96ce-cc65133935fd",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1567af8c-447f-404d-a715-4f6a587ed166",},
   ],
@@ -56,7 +56,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"362ab10e-1d10-4420-8bdc-e72da9bc7f1b","path":"sprites/spr_science/spr_science.yy",},},},"Disabled":false,"id":"b3a8c2f3-6f3f-41a0-b862-a91fe90f5122","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"d11b5ce4-c748-4ddd-9692-dcfc5d575a93","path":"sprites/spr_science/spr_science.yy",},},},"Disabled":false,"id":"47a7c245-dd96-47ce-a9f1-b5c78eccd96c","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"34687465-5dbf-4bf2-96ce-cc65133935fd","path":"sprites/spr_science/spr_science.yy",},},},"Disabled":false,"id":"f7827108-d597-4a23-9e05-663ecb7a4970","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"1567af8c-447f-404d-a715-4f6a587ed166","path":"sprites/spr_science/spr_science.yy",},},},"Disabled":false,"id":"35216c5c-8024-4564-bdd3-a8fa5930553f","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},

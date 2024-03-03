@@ -64,13 +64,12 @@ function LoadGame() {
 
 function SetRoom(_location) {
 	switch (_location) {
-	    case "Dormroom":	return rm_dormroom; break;
-		case "Dormitory":	return rm_dormitory; break;
-		case "Courtyard":	return rm_courtyard; break;
-		case "Food Court":	return rm_restaurant; break;
-		case "School":		return rm_school; break;
-		case "Classroom":	return rm_classroom; break;
-		case "Gazebo":      return rm_gazebo; break;
-	    default:			return rm_test; break;
+		case "Dormitory":			return rm_dormitory; break;
+		case "Boat":				return rm_boat; break;
+		case "Science Dept.":		return rm_science; break;
+		case "Central Building":	return rm_central; break;
+		case "Lake":				return rm_lake; break;
+		case "Gazebo":				return rm_gazebo; break;
+	    default:					return rm_test; break;
 	}
 }

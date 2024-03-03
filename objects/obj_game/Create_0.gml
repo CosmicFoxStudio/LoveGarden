@@ -190,6 +190,7 @@ ChatterboxAddFunction("nextDay", NextDay);							// Increments by 1 global.day a
 ChatterboxAddFunction("nextDaytime", NextDaytime);					// Increments by 1 global.currentDaytime
 ChatterboxAddFunction("nextRoom", NextRoom);						// Function to change scene
 ChatterboxAddFunction("transition", DialogueTransition);			// Transition VFX
+ChatterboxAddFunction("bgTransition", BackgroundWaitTransition);	// Change background using transition
 ChatterboxAddFunction("setFlag", FlagSet);							// Sets a value to a flag
 ChatterboxAddFunction("getFlag", FlagGet);							// Returns the value of a given flag
 #endregion CHATTERBOX INITIALIZE CUSTOMS

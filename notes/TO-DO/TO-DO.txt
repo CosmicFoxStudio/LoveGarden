@@ -1,5 +1,3 @@
-- Transition System: Check timing when using <<bg()>>
-- New function: <<bg()>> + <<dialogueWait()>> + <<transition()>>
 - Add functionalities to Dialogue System
 - Map
 - Finish Config Menu
@@ -11,4 +9,3 @@
 - Scene Pop Up
 - Dialogue System: Multiple characters on screen!
 - Chatterbox: new functions <<getPlace()>> and <<reward()>>
-- Make game start in order

@@ -209,8 +209,26 @@ function DialogueTransition() {
 	GameTransition(sq_trans_fade_black);
 }
 
-function BackgroundWaitTransition() {
-	// TO DO
+// Change background using transition
+function BackgroundWaitTransition(_index) {
+	var frames = sq_trans_fade_black.length;
+	
+    ChatterboxWait(CHATTERBOX_CURRENT);
+	
+    show_debug_message("Waiting chatterbox for " + string(frames) + " frames...");
+	
+	GameTransition(sq_trans_fade_black);
+	
+    time_source_start(time_source_create(time_source_game, frames, time_source_units_frames, function(_chatterbox) {
+        show_debug_message("...continuing chatterbox!");
+        ChatterboxContinue(_chatterbox);
+    },
+    [CHATTERBOX_CURRENT]));
+	
+	time_source_start(time_source_create(time_source_game, frames/2, time_source_units_frames, function(_indexBG) {
+		BackgroundSetIndex(_indexBG);
+	},
+	[_index]));
 }
 
 // -----------------------------------------------------------------------------  //
