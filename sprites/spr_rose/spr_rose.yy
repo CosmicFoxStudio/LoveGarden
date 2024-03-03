@@ -14,6 +14,8 @@
   "For3D": false,
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c3a55e14-34eb-4abf-9224-df9769c5ebbd",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7d6c867b-067c-41ab-9d52-9fcf4c03f7cf",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"28bd7b0e-7d22-4378-8105-13240f87032f",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -43,7 +45,7 @@
     "events": {"resourceType":"KeyframeStore<MessageEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "eventStubScript": null,
     "eventToFunction": {},
-    "length": 1.0,
+    "length": 3.0,
     "lockOrigin": false,
     "moments": {"resourceType":"KeyframeStore<MomentsEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "playback": 1,
@@ -55,6 +57,8 @@
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c3a55e14-34eb-4abf-9224-df9769c5ebbd","path":"sprites/spr_rose/spr_rose.yy",},},},"Disabled":false,"id":"9d88915e-15d6-4f47-9e11-6574d20f9a60","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"7d6c867b-067c-41ab-9d52-9fcf4c03f7cf","path":"sprites/spr_rose/spr_rose.yy",},},},"Disabled":false,"id":"6b340abb-cde4-46de-80b0-2efc55cd370b","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"28bd7b0e-7d22-4378-8105-13240f87032f","path":"sprites/spr_rose/spr_rose.yy",},},},"Disabled":false,"id":"54fc1e0e-4350-447a-ba75-f53f3882c18b","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

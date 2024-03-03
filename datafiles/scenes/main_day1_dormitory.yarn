@@ -20,7 +20,7 @@ title: Night
 title: Reward
 ---
 <<save()>>
-Congratulations! You finished this event!
+Congratulations! You finished this event! #line:1052a4
 <<hopback>>
 ===
 
@@ -58,6 +58,7 @@ PLAYER: I've been questioning myself why would anyone decide on the 7:30 am sche
 Despite Mandacaru's warning, by the time you gather all the materials for classes, you see that time is still ticking away. #line:2b3bb1
 Part of you curses your last night's self, who confidently claimed there would be enough time to get organized in the morning. #line:8cf063
 Being ready to go, you head downstairs to the dormitory. #line:d53c5c
+<<save()>>
 <<jump LateArrival>>
 ===
 
@@ -70,9 +71,7 @@ So you quicken your pace until you reach the entrance. #line:ddf6ae
 In the distance, you can see the boat that just left. #line:bb92f9
 You sigh to yourself and meekly walk down the stairs to the dorm's main floor in a gesture of acceptance. #line:5a3b7b
 ... #line:7f7969
-<<transition()>>
-<<dialogueWait(3)>>
-<<bg(1)>> 
+<<bgTransition(1)>>
 ... #line:b9d47b
 As you reach the dorm's reception, you're met with a short old man with oranges stuck in his beard. #line:78acb8
 <<chara("orange")>>
@@ -80,8 +79,8 @@ MR. ORANGE: Hey. Are you a morning student? #line:36b3dd
 PLAYER: Yes, I am! #line:9df643
 MR. ORANGE: The second boat has already left, but a third one is coming shortly. #line:2ad4fa
 PLAYER: Oh, thank goodness. I thought I was lost! #line:1832df
-PLAYER: I have classes in 20 minutes... 
-PLAYER: Do you think it will take long to arrive?
+PLAYER: I have classes in 20 minutes... #line:5841e4 
+PLAYER: Do you think it will take long to arrive? #line:8a8868
 MR. ORANGE: Haha! Don't worry, young one! #line:42c368
 MR. ORANGE: The next one is coming in 5 minutes! #line:39766b
 As he says this, some other students are arriving at the spot, realizing they also missed the boat. #line:3f282d
@@ -175,9 +174,7 @@ What do you want to do? #line:eb08d9
         ... Once upon a time, ... #line:4359f5
         ... #line:9e0fa4 
         <<chara("void")>>
-        <<transition()>>
-        <<dialogueWait(3)>>
-        <<bg(2)>>
+        <<bgTransition(2)>>
         ... #line:e25f70 
         MR. ORANGE: ... There was an outstanding student named Jack, known for his curiosity and love for agriculture. #line:0bf19f
         MR. ORANGE: He lived in the ancient fiefdom of Lotus, long before this university existed. #line:c3f160
@@ -198,10 +195,8 @@ What do you want to do? #line:eb08d9
         MR. ORANGE: He became so popular that several princes and princesses from neighboring kingdoms came to study with him. #line:dbcfb0
         MR. ORANGE: When he was older, he decided to create a university, which is now Lotus. #line:4828ed
         ... #line:d674dd
-        <<transition()>>
-        <<dialogueWait(3)>>
+        <<bgTransition(1)>>
         <<chara("orange")>>
-        <<bg(1)>>
         ... #line:8f67ef
         MR. ORANGE: Definitely one of our most notable figures. #line:0e9dc2
         PLAYER: Wow. How long ago was that? #line:0598c6
@@ -247,52 +242,52 @@ What do you want to do? #line:eb08d9
 
 title: GoodNight
 ---
-You arrive in your room and look around.
-Although the beginning of the day was hectic, it was relatively calm in the end.
-You try to start organizing the things scattered around the room.
-PLAYER: (The least I can do is start tomorrow a little more organized than today!)
-You're in the middle of organizing your things when Caru enters the room.
+You arrive in your room and look around. #line:1bae14
+Although the beginning of the day was hectic, it was relatively calm in the end. #line:5546cc
+You try to start organizing the things scattered around the room. #line:2960cb
+PLAYER: (The least I can do is start tomorrow a little more organized than today!) #line:7d40d7
+You're in the middle of organizing your things when Caru enters the room. #line:a1a842
 <<chara("caru")>>
-His eyes are red, and he has a little smile on his lips.
-PLAYER: Hey, what's up!
-CARU: Trying to tidy up your stuff?
-PLAYER: The keyword is "trying."
-PLAYER: Every time I try to organize something in one place, I find something that should be somewhere else...
-PLAYER: It's an endless loop!
-CARU: I'm amazed you have the energy to do this after your first day.
-PLAYER: Well, it was surprisingly calm, actually?
-PLAYER:  There are a lot of people, a lot of places, and I'm still a little confused about everything that's happening.
-PLAYER: But it was okay, nothing really stressful happened...
-CARU: Ah, the joy of being a freshman, I miss it...
-PLAYER: You're close to graduating, right?
-CARU: Seventh semester, freedom is so close I can almost taste it.
-PLAYER: Your course can't be that bad, though.
-CARU: Statistics is like, hell on earth.
-PLAYER: I guess for someone like me it would be.
-PLAYER: It makes me think a lot about math in its pure form.
-CARU: Worse than pure math is kind of more philosophical, actually.
-CARU: Statistics is the cuckoldry of math. I regret choosing it everyday.
-CARU: And people only use it to spread lies.
-CARU: It's too complex for normal people to understand.
-CARU: But everyone minimally educated ends up applying it to their course without even needing to study as much as we do in undergrad.
-PLAYER: Wow, go ahead, speak your truth!
-CARU: I needed to get it out, my god.
-PLAYER: At least the people are nice?
-CARU: It could be worse.
-CARU: But it doesn't make up for how hellish the course is.
-PLAYER: Looks like I lucked out then. I'm in a good course with cool people.
-CARU: Part of me wants to warn you not to get too excited.
-CARU: But I'm glad you're enjoying it.
-PLAYER: I hope I don't end up like you in the seventh semester.
-CARU: I'm one in a million.
-PLAYER: For better and for worse.
-CARU: I hope my good sides make up for my faults.
-PLAYER: Considering how much you've helped me already, your approval ratings are through the roof!
-CARU: Great, I'll keep it that way, alright?
-PLAYER: Yes, sir!
-Caru continues to complain about the Statistics teachers to you.
-And you share a bit about how Professor Fern seems to be a peculiar professor.
-Soon, you both start feeling tired and prepare to sleep.
+His eyes are red, and he has a little smile on his lips. #line:912d08
+PLAYER: Hey, what's up! #line:354f1c
+CARU: Trying to tidy up your stuff? #line:18acf1
+PLAYER: The keyword is "trying." #line:f6e615
+PLAYER: Every time I try to organize something in one place, I find something that should be somewhere else... #line:e68dda
+PLAYER: It's an endless loop! #line:53bf3b
+CARU: I'm amazed you have the energy to do this after your first day. #line:c09492
+PLAYER: Well, it was surprisingly calm, actually? #line:77829f
+PLAYER: There are a lot of people, a lot of places, and I'm still a little confused about everything that's happening. #line:6326b2
+PLAYER: But it was okay, nothing really stressful happened... #line:a16d02
+CARU: Ah, the joy of being a freshman, I miss it... #line:23fa24
+PLAYER: You're close to graduating, right? #line:7cd0c8
+CARU: Seventh semester, freedom is so close I can almost taste it. #line:9d7714
+PLAYER: Your course can't be that bad, though. #line:dab9a2
+CARU: Statistics is like, hell on earth. #line:2112aa
+PLAYER: I guess for someone like me it would be. #line:f3cc45
+PLAYER: It makes me think a lot about math in its pure form. #line:a25e3a
+CARU: Worse than pure math is kind of more philosophical, actually. #line:1e3825
+CARU: Statistics is the cuckoldry of math. I regret choosing it everyday. #line:2744ec
+CARU: And people only use it to spread lies. #line:8d7e7e
+CARU: It's too complex for normal people to understand. #line:110ffe
+CARU: But everyone minimally educated ends up applying it to their course without even needing to study as much as we do in undergrad. #line:55c6cd
+PLAYER: Wow, go ahead, speak your truth! #line:727137
+CARU: I needed to get it out, my god. #line:37d313
+PLAYER: At least the people are nice? #line:b90898
+CARU: It could be worse. #line:b78db5
+CARU: But it doesn't make up for how hellish the course is. #line:b2e702
+PLAYER: Looks like I lucked out then. I'm in a good course with cool people. #line:848a0f
+CARU: Part of me wants to warn you not to get too excited. #line:aedd53
+CARU: But I'm glad you're enjoying it. #line:e29880
+PLAYER: I hope I don't end up like you in the seventh semester. #line:d16595
+CARU: I'm one in a million. #line:b336ff
+PLAYER: For better and for worse. #line:6dac98
+CARU: I hope my good sides make up for my faults. #line:642ce2
+PLAYER: Considering how much you've helped me already, your approval ratings are through the roof! #line:0840ac
+CARU: Great, I'll keep it that way, alright? #line:bbc53a
+PLAYER: Yes, sir! #line:a6f2ec
+Caru continues to complain about the Statistics teachers to you. #line:8b4c72
+And you share a bit about how Professor Fern seems to be a peculiar professor. #line:ff0c31
+Soon, you both start feeling tired and prepare to sleep. #line:8641ba
 <<hop Reward>>
 <<nextDay()>>
 <<backTitle()>>

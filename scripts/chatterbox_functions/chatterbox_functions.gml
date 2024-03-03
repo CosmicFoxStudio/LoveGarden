@@ -1,5 +1,5 @@
 // Adds a certain number of actions
-function AddAction(_actionsToAdd) {
+function AddAction(_actionsToAdd = 1) {
     // Get the maximum actions for the current day
     var maxActionsForDay = global.maxActions[global.day];
 	
@@ -211,7 +211,8 @@ function DialogueTransition() {
 
 // Change background using transition
 function BackgroundWaitTransition(_index) {
-	var frames = sq_trans_fade_black.length;
+	var seq = sequence_get(sq_trans_fade_black);
+	var frames = seq.length;
 	
     ChatterboxWait(CHATTERBOX_CURRENT);
 	
@@ -225,7 +226,7 @@ function BackgroundWaitTransition(_index) {
     },
     [CHATTERBOX_CURRENT]));
 	
-	time_source_start(time_source_create(time_source_game, frames/2, time_source_units_frames, function(_indexBG) {
+	time_source_start(time_source_create(time_source_game, frames, time_source_units_frames, function(_indexBG) {
 		BackgroundSetIndex(_indexBG);
 	},
 	[_index]));
