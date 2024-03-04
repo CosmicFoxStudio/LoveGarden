@@ -25,10 +25,10 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"0105dc23-4e30-4d0c-bf62-eb6cc0706a7f","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 7,
+  "origin": 9,
   "parent": {
-    "name": "Professors",
-    "path": "folders/Sprites/Characters/Professors.yy",
+    "name": "Other",
+    "path": "folders/Sprites/Characters/Other.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -64,7 +64,7 @@
     "visibleRange": null,
     "volume": 1.0,
     "xorigin": 186,
-    "yorigin": 392,
+    "yorigin": 360,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,

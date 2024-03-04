@@ -11,9 +11,11 @@ currentMusic = -1;
 JukeboxStopMusic = function() {
     // Check if there is currently playing music
     if (currentMusic != -1) {
-        // Stop the current music
-        audio_stop_sound(currentMusic);
-        // Reset the current music variable
+        // Fade out music
+		audio_sound_gain(currentMusic, 0, 500);
+		// Stop the current music
+		//audio_stop_sound(currentMusic);
+		// Reset the current music variable
         currentMusic = -1;
     }
 }
@@ -25,6 +27,9 @@ JukeboxPlayMusic = function(_music) {
         JukeboxStopMusic();
         // Play the new music
         audio_play_sound(_music, 0, true);
+		// Fade in the new music
+		audio_sound_gain(_music, 0, 0);
+		audio_sound_gain(_music, 1, 500);
         // Update the current music variable
         currentMusic = _music;
     }

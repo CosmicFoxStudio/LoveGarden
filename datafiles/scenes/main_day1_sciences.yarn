@@ -31,12 +31,12 @@ Right over there seems to be someone even more lost than you. #line:46b405
 They don't seem to realize that someone is approaching. #line:82985e
 ???: Um... Where could it be...? #line:afa810
 PLAYER: Need help? #line:aa73b1
-YPE: [shake]Ah!![/] #line:b8da57
+???: [shake]Ah!![/] #line:b8da57
 PLAYER: Sorry! I didn't mean to scare you! #line:57f3e7
-YPE: Ah...! I'm fine. Don't worry. #line:b29cd1
-YPE: I just didn't expect someone to talk to me. #line:f77359
+???: Ah...! I'm fine. Don't worry. #line:b29cd1
+???: I just didn't expect someone to talk to me. #line:f77359
 PLAYER: Huh? Okay. So, are you looking for your classroom? #line:50e0f2
-YPE: Yes... But this place is huge. #line:24a91b
+???: Yes... But this place is huge. #line:24a91b
 PLAYER: Yeah, I'm a bit lost too. #line:efbc84
 PLAYER: I'm PLAYER, by the way! #line:7fa4b1
 PLAYER: And you? What's your name? #line:6055cd
@@ -126,7 +126,7 @@ You look back at the professor, trying to draw your own conclusions. #line:8baee
 	PLAYER: Hey, they say the third time is the lucky one. #line:026af4
 -> I can see what you mean. #line:74d80a
 	<<chara("clove")>>
-    <<changeRelationship("clove", +1)>>
+    <<changeRelationship("clove", 1)>>
 	PLAYER: Especially after the way he talked to me just now. #line:2bd5dd
 	CLOVE: He has no sensitivity, even though most of the class are freshmen. #line:12f630
 	PLAYER: It's because of people like him that some people hate Biology. #line:da122a

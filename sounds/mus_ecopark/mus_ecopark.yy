@@ -19,5 +19,5 @@
   "sampleRate": 44100,
   "soundFile": "mus_ecopark.mp3",
   "type": 0,
-  "volume": 0.7,
+  "volume": 0.6,
 }
