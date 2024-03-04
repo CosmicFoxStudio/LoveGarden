@@ -424,6 +424,7 @@
     {"id":{"name":"scribble_typists_add_event","path":"scripts/scribble_typists_add_event/scribble_typists_add_event.yy",},},
     {"id":{"name":"input_functions","path":"scripts/input_functions/input_functions.yy",},},
     {"id":{"name":"spr_plant_stages","path":"sprites/spr_plant_stages/spr_plant_stages.yy",},},
+    {"id":{"name":"spr_leafs_tiled","path":"sprites/spr_leafs_tiled/spr_leafs_tiled.yy",},},
     {"id":{"name":"ChatterboxVariablesClearVisitedAll","path":"scripts/ChatterboxVariablesClearVisitedAll/ChatterboxVariablesClearVisitedAll.yy",},},
     {"id":{"name":"__scribble_gen_9_write_vbuffs","path":"scripts/__scribble_gen_9_write_vbuffs/__scribble_gen_9_write_vbuffs.yy",},},
     {"id":{"name":"ChatterboxContinue","path":"scripts/ChatterboxContinue/ChatterboxContinue.yy",},},

@@ -43,7 +43,7 @@ for (var i = 0; i < array_length(currentPage); i++) {
 
 	// Selecting
 	if (i == menuOption[page]) {
-		c = c_yellow;
+		c = TEXT_GREEN;
 		// For the selected option to start a bit more to the left compared to the other options	
 		optionXOffset = -(xBUFFER/2); 	
 	}

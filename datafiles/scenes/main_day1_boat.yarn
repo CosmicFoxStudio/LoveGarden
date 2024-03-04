@@ -5,11 +5,11 @@ title: Morning
 
 title: Noon
 ---
-<<jump Arrival>>
 ===
 
 title: Afternoon
 ---
+<<jump Arrival>>
 ===
 
 title: Night
@@ -41,7 +41,6 @@ PLAYER: (Not that school was bad for me, but it wasn't anything special either, 
 PLAYER: (...) #line:0d0623
 PLAYER: (Okay, that was quite emotional and it's still 7:10 in the morning.) #line:7dfa0a
 PLAYER: (This journey has just begun, let's try to think positive!) #line:6fb559
-<<save()>>
 <<nextRoom("rm_sciences")>>
 ===
 
@@ -60,7 +59,7 @@ PLAYER: And I can't give them that opening... #line:787203
 PLAYER: Things have just started. #line:1e1f56
 PLAYER: Things have just started. #line:bc5d49
 -> This is my fresh start. #line:b64bfa
-    <<changeRelationship("player", +1)>>
+    <<changeRelationship("player", 1)>>
     PLAYER: This is my fresh start. #line:8ecf06
     PLAYER: And I can't let them ruin it! #line:e627a7
 -> I know I can't run away forever. #line:124154
@@ -76,7 +75,5 @@ Your face flushes a bit, and you shrink with embarrassment. #line:e08cf1
     PLAYER: (sigh) #line:7829a0
     Inside, you feel like you've already lost this battle for your future. #line:399c43
 <<endif>>
-<<save()>>
-<<nextDaytime()>>
 <<nextRoom("rm_dormitory")>>
 ===

@@ -14,9 +14,7 @@ title: Afternoon
 
 title: Night
 ---
-... #line:022c79
-<<bgTransition(0)>>
-... #line:e2789c
+<<bg(4)>>
 <<jump GoodNight>>
 ===
 
@@ -54,7 +52,6 @@ PLAYER: I've been questioning myself why would anyone decide on the 7:30 am sche
 Despite Mandacaru's warning, by the time you gather all the materials for classes, you see that time is still ticking away. #line:2b3bb1
 Part of you curses your last night's self, who confidently claimed there would be enough time to get organized in the morning. #line:8cf063
 Being ready to go, you head downstairs to the dormitory. #line:d53c5c
-<<save()>>
 ... #line:eef0c0
 <<bgTransition(1)>>
 <<jump LateArrival>>
@@ -110,6 +107,7 @@ You only have to wait... What do you do now? #line:83d7e5
     <<chara("void")>>
     You wave to him as you leave the dormitory, heading towards the boat. #line:06f5f5
 -> Wait for the boat outside. #line:5b1185 
+    <<chara("void")>>
     It's better to make sure you don't miss the next boat. #line:00912c 
     You go outside the building, sitting on one of the waiting benches for the boat. #line:ccca5b
     There's a girl drawing on one of the other benches. #line:65794c 
@@ -208,16 +206,20 @@ What do you want to do? #line:eb08d9
         PLAYER: Interesting... I'll keep that in mind. Thanks for the story, Mr. Orange. #line:e4bed3
         MR. ORANGE: No problems. See you later, kid! #line:2ea539
         <<chara("void")>>
-        <<save()>>
-        <<nextDaytime()>>
-        <<jump Night>>
         You climb the stairs back to your room. #line:7613b6
+        <<nextDaytime()>>
+        ...
+        <<bgTransition(4)>>
+        ...
+        <<jump Night>>
     -> Thanks, but maybe another time. #line:79e443
         MR. ORANGE: Oh, sure. That's okay. You must be busy. Sorry for bothering you. #line:a335af
         <<chara("void")>>
         You climb the stairs back to your room. #line:89a4d6
-        <<save()>>
         <<nextDaytime()>>
+        ...
+        <<bgTransition(4)>>
+        ...
         <<jump Night>>
 -> Check what Caru is doing. #line:e854fd
     <<chara("void")>>
@@ -226,16 +228,20 @@ What do you want to do? #line:eb08d9
     Caru is doing really well, so it's better not to interrupt the moment. #line:b02672
     Looking back, you realize Mr. Orange is no longer there. #line:b76c50
     Thus, the only option left is to go back to your room. #line:28c980
-    <<save()>>
     <<nextDaytime()>>
+    ...
+    <<bgTransition(4)>>
+    ...
     <<jump Night>>
 -> Go upstairs. #line:37a127
     PLAYER: Sorry, I need to go do something. #line:89a047
     MR. ORANGE: Oh, that's fine. You must be busy. Sorry for bothering you. #line:87ee1a
     <<chara("void")>>
     You climb the stairs back to your room. #line:e0ff13
-    <<save()>>
     <<nextDaytime()>>
+    ...
+    <<bgTransition(4)>>
+    ...
     <<jump Night>>
 ===
 
@@ -288,6 +294,5 @@ PLAYER: Yes, sir! #line:a6f2ec
 Caru continues to complain about the Statistics teachers to you. #line:8b4c72
 And you share a bit about how Professor Fern seems to be a peculiar professor. #line:ff0c31
 Soon, you both start feeling tired and prepare to sleep. #line:8641ba
-<<save()>>
 <<backTitle()>>
 ===

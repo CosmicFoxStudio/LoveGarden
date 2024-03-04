@@ -14,7 +14,7 @@ JukeboxStopMusic = function() {
         // Fade out music
 		audio_sound_gain(currentMusic, 0, 500);
 		// Stop the current music
-		//audio_stop_sound(currentMusic);
+		audio_stop_sound(currentMusic);
 		// Reset the current music variable
         currentMusic = -1;
     }

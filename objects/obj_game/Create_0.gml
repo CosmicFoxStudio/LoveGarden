@@ -196,7 +196,9 @@ ChatterboxAddFunction("getFlag", FlagGet);							// Returns the value of a given
 #endregion CHATTERBOX INITIALIZE CUSTOMS
 
 // ------------------------------ TESTING ZONE ---------------------------------- //
-if (Debug()) instance_create_layer(ORIGIN_X, ORIGIN_Y, "Controllers", DEBUG_DRAWER);
+if (Debug()) {
+	instance_create_layer(ORIGIN_X, ORIGIN_Y, "Controllers", DEBUG_DRAWER);
+}
 
 // Add first room here
 room_goto(rm_lang);
