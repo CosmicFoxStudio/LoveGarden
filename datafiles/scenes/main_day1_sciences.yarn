@@ -208,7 +208,7 @@ PLAYER: It doesn't seem too complex. Once we start, I think we can finish it in 
 YPE: Maybe finding the species part, but identifying them seems difficult... #line:6015c0
 YPE: Maybe finding the species part, but identifying them seems difficult... #line:d6d407 
 -> I trust in our potential. It will be easy. #line:2c9222 
-	<<changeRelationship("ype", +1)>>
+	<<changeRelationship("ype", 1)>>
 	PLAYER: I trust in our potential. It will be easy. #line:2c9222
 -> If you keep talking like that, it won't work out. #line:ae30d4 
 	<<changeRelationship("ype", -1)>>
@@ -248,3 +248,4 @@ PLAYER: (Did I say something wrong?) #line:def188
 <<nextDaytime()>>
 <<nextRoom("rm_dormitory")>>
 ===
+  

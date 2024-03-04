@@ -14,6 +14,9 @@ title: Afternoon
 
 title: Night
 ---
+... #line:022c79
+<<bgTransition(0)>>
+... #line:e2789c
 <<jump GoodNight>>
 ===
 
@@ -52,7 +55,7 @@ Despite Mandacaru's warning, by the time you gather all the materials for classe
 Part of you curses your last night's self, who confidently claimed there would be enough time to get organized in the morning. #line:8cf063
 Being ready to go, you head downstairs to the dormitory. #line:d53c5c
 <<save()>>
-...
+... #line:eef0c0
 <<bgTransition(1)>>
 <<jump LateArrival>>
 ===
@@ -238,9 +241,6 @@ What do you want to do? #line:eb08d9
 
 title: GoodNight
 ---
-...
-<<bgTransition(0)>>
-...
 You arrive in your room and look around. #line:1bae14
 Although the beginning of the day was hectic, it was relatively calm in the end. #line:5546cc
 You try to start organizing the things scattered around the room. #line:2960cb
@@ -284,6 +284,7 @@ CARU: I hope my good sides make up for my faults. #line:642ce2
 PLAYER: Considering how much you've helped me already, your approval ratings are through the roof! #line:0840ac
 CARU: Great, I'll keep it that way, alright? #line:bbc53a
 PLAYER: Yes, sir! #line:a6f2ec
+<<chara("void")>>
 Caru continues to complain about the Statistics teachers to you. #line:8b4c72
 And you share a bit about how Professor Fern seems to be a peculiar professor. #line:ff0c31
 Soon, you both start feeling tired and prepare to sleep. #line:8641ba
@@ -291,3 +292,4 @@ Soon, you both start feeling tired and prepare to sleep. #line:8641ba
 <<nextDay()>>
 <<backTitle()>>
 ===
+  
