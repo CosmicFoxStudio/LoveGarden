@@ -77,7 +77,7 @@ function DecideRoomName() {
 		case "rm_boat":
 			global.location = "Boat";
 			break;
-		case "rm_science":
+		case "rm_sciences":
 			global.location = "Science Dept.";
 			break;
 		case "rm_central":

@@ -31,9 +31,12 @@ PLAYER: (I've been having these dreams since I got here.) #line:93e669
 PLAYER: (It feels like they're trying to tell me something.) #line:40d502
 PLAYER: (It feels like they're trying to tell me something.) #line:eb5c58
 -> ... (I feel anxious about the future.) #line:923d13
+    TEST1
     <<changeRelationship("player", -1)>>
 -> ... (I'm not sure how I feel about the future.) #line:0c09f9
+    TEST2
 -> ... (I feel excited about the future.) #line:718328
+    TEST3
     <<changeRelationship("player", +1)>>
 PLAYER: (To tell the truth, I don't know why I came here.) #line:946fec
 PLAYER: (Hmm, okay. Actually, I do know.) #line:c55ee5
@@ -49,7 +52,7 @@ PLAYER: (...) #line:0d0623
 PLAYER: (Okay, that was quite emotional and it's still 7:10 in the morning.) #line:7dfa0a
 PLAYER: (This journey has just begun, let's try to think positive!) #line:6fb559
 <<hop Reward>>
-<<nextRoom("rm_school")>>
+<<nextRoom("rm_sciences")>>
 ===
 
 title: Arrival

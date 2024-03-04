@@ -59,6 +59,8 @@ Despite Mandacaru's warning, by the time you gather all the materials for classe
 Part of you curses your last night's self, who confidently claimed there would be enough time to get organized in the morning. #line:8cf063
 Being ready to go, you head downstairs to the dormitory. #line:d53c5c
 <<save()>>
+...
+<<bgTransition(1)>>
 <<jump LateArrival>>
 ===
 
@@ -71,9 +73,9 @@ So you quicken your pace until you reach the entrance. #line:ddf6ae
 In the distance, you can see the boat that just left. #line:bb92f9
 You sigh to yourself and meekly walk down the stairs to the dorm's main floor in a gesture of acceptance. #line:5a3b7b
 ... #line:7f7969
-<<bgTransition(1)>>
+<<bgTransition(2)>>
 ... #line:b9d47b
-As you reach the dorm's reception, you're met with a short old man with oranges stuck in his beard. #line:78acb8
+As you reach the dorm's reception, you're met with an old man with oranges stuck in his beard. #line:78acb8
 <<chara("orange")>>
 MR. ORANGE: Hey. Are you a morning student? #line:36b3dd
 PLAYER: Yes, I am! #line:9df643
@@ -121,18 +123,18 @@ You only have to wait... What do you do now? #line:83d7e5
     What do you do? #line:3ec998
     What do you do? #line:e8332a
     -> Try to talk to her. #line:32cbd1
-    PLAYER: Wow, your drawing is beautiful! #line:370ddb 
-    ???: ... #line:69998f
-    She doesn't even blink, continuing to focus on the notebook. #line:22357e
-    It's as if she didn't hear you from being so concentrated... #line:769faf
-    You decide to appreciate the lake alongside her, even if in silence. #line:0c8428
+        PLAYER: Wow, your drawing is beautiful! #line:370ddb 
+        ???: ... #line:69998f
+        She doesn't even blink, continuing to focus on the notebook. #line:22357e
+        It's as if she didn't hear you from being so concentrated... #line:769faf
+        You decide to appreciate the lake alongside her, even if in silence. #line:0c8428
     -> Just admire the drawing she's doing. #line:1012d5 
-    <<addAction()>>
-    (YOU JUST EARNED A BONUS ACTION! [spr_action])[snd_click1] #line:5092f9
-    You can't take your eyes off the drawing. #line:72e405 
-    To the point that the girl gives you a quick look with raised eyebrows. #line:df7bd3
-    You look away, feeling your face heat up for getting caught. #line:2b1dd7
-    Soon, the next boat starts to approach and you stand up to get inside. #line:52962f
+        <<addAction()>>
+        (YOU JUST EARNED A BONUS ACTION! [spr_action])[snd_click1] #line:5092f9
+        You can't take your eyes off the drawing. #line:72e405 
+        To the point that the girl gives you a quick look with raised eyebrows. #line:df7bd3
+        You look away, feeling your face heat up for getting caught. #line:2b1dd7
+        Soon, the next boat starts to approach and you stand up to get inside. #line:52962f
 PLAYER: (Thank goodness everything worked out...) #line:c83b07
 You board the boat. #line:dc01da 
 <<hop Reward>>

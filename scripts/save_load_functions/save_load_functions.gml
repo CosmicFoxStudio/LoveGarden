@@ -66,7 +66,7 @@ function SetRoom(_location) {
 	switch (_location) {
 		case "Dormitory":			return rm_dormitory; break;
 		case "Boat":				return rm_boat; break;
-		case "Science Dept.":		return rm_science; break;
+		case "Science Dept.":		return rm_sciences; break;
 		case "Central Building":	return rm_central; break;
 		case "Lake":				return rm_lake; break;
 		case "Gazebo":				return rm_gazebo; break;

@@ -72,6 +72,9 @@ That was the cue for Ype to enter the classroom as quickly as possible. #line:fc
 <<chara("void")>>
 And you follow right behind, not wanting to be a victim of the professor's bad mood. #line:ac25b9
 <<save()>>
+... #line:7f7969
+<<bgTransition(1)>>
+... #line:b9d47b
 <<jump CloveIntro>>
 ===
 
@@ -125,7 +128,7 @@ You look back at the professor, trying to draw your own conclusions. #line:8baee
 	PLAYER: He might just be a bit grumpy. #line:51984f
 	CLOVE: Well, I can understand that. If I were as outdated as him, I'd be unhappy too. #line:2f2379 
 	PLAYER: Wow, you really don't like the old dude. #line:f756c5
-    PLAYER: It's a level of hatred that only someone who has been through two failures would truly understand. #line:5563cf
+    PLAYER: A level of frustration only someone who's failed the same grade twice could truly understand. #line:5563cf
 	CLOVE: Let's see how you'll be at the end of the semester. #line:4466f4
 	PLAYER: Hey, they say the third time is the lucky one. #line:026af4
 -> I can see what you mean. #line:74d80a
@@ -192,6 +195,9 @@ PLAYER: Have a partner who helps... #line:ff6405
 YPE: Ah... right. #line:adaa22
 Together, you walk towards the exit of the room. #line:fdef2f
 <<hop Reward>>
+... #line:7f7969
+<<bgTransition(0)>>
+... #line:b9d47b
 <<nextDaytime()>>
 <<jump Noon>>
 ===
@@ -209,8 +215,10 @@ PLAYER: It doesn't seem too complex. Once we start, I think we can finish it in 
 YPE: Maybe finding the species part, but identifying them seems difficult... #line:6015c0
 YPE: Maybe finding the species part, but identifying them seems difficult... #line:d6d407 
 -> I trust in our potential. It will be easy. #line:2c9222 
+	TEST1
 	<<changeRelationship("ype", +1)>>
 -> If you keep talking like that, it won't work out. #line:ae30d4 
+	TEST2
 	<<changeRelationship("ype", -1)>>
 YPE: If you say so... #line:b29f3e
 PLAYER: When do you think we can meet up? #line:bc3207
