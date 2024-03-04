@@ -6,8 +6,8 @@ if (os_browser == browser_not_a_browser) {
 	playButton = instance_create_layer(500, 180, "Instances_Below", obj_title_button);
 	playButton.btnType = e_btnTypes.PLAY;
 	
-	helpButton = instance_create_layer(500, 240, "Instances_Below", obj_title_button);
-	helpButton.btnType = e_btnTypes.HELP;
+	//helpButton = instance_create_layer(500, 240, "Instances_Below", obj_title_button);
+	//helpButton.btnType = e_btnTypes.HELP;
 
 	quitButton = instance_create_layer(500, 300, "Instances_Below", obj_title_button);
 	quitButton.btnType = e_btnTypes.QUIT;
@@ -17,8 +17,8 @@ else {
 	playButton = instance_create_layer(500, 180, "Instances_Below", obj_title_button);
 	playButton.btnType = e_btnTypes.PLAY;
 	
-	helpButton = instance_create_layer(500, 240, "Instances_Below", obj_title_button);
-	helpButton.btnType = e_btnTypes.HELP;
+	//helpButton = instance_create_layer(500, 240, "Instances_Below", obj_title_button);
+	//helpButton.btnType = e_btnTypes.HELP;
 }
 
 // -------------------------------------- Input ----------------------------------------- //
