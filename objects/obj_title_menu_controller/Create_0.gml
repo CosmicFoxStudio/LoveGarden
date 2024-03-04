@@ -9,8 +9,8 @@ if (os_browser == browser_not_a_browser) {
 	//helpButton = instance_create_layer(500, 240, "Instances_Below", obj_title_button);
 	//helpButton.btnType = e_btnTypes.HELP;
 
-	quitButton = instance_create_layer(500, 300, "Instances_Below", obj_title_button);
-	quitButton.btnType = e_btnTypes.QUIT;
+	quitButton = instance_create_layer(500, 240, "Instances_Below", obj_title_button);
+	quitButton.btnType = e_btnTypes.QUIT; // 300
 }
 // Platform is a browser, create only the "Play" and "Help" button
 else {

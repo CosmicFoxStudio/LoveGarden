@@ -229,7 +229,7 @@ IPÊ: In that case, I think our best option will be the lake. #line:15d9c5
 -> At least we won't have to go too far... #line:a81535
     YPE: Exactly! #line:c4d55a
 -> Yep. But I'd love to check out the park someday, though. #line:0ee4c3
-	<<changeRelationship("ype", +1)>>
+	<<changeRelationship("ype", 1)>>
     YPE: It's beautiful there! You should totally take some time to visit it! #line:7ed498
 PLAYER: By the way, I've been thinking... This is probably his way of forcing us to explore the campus, right? #line:e39539
 YPE: I hadn't thought about that, but maybe it's something like that. #line:ad8031
