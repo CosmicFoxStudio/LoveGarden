@@ -132,7 +132,6 @@
     {"name":"scribble_super_create","order":1,"path":"scripts/scribble_super_create/scribble_super_create.yy",},
     {"name":"__scribble_font_add_sprite","order":9,"path":"scripts/__scribble_font_add_sprite/__scribble_font_add_sprite.yy",},
     {"name":"__scribble_get_buffer_b","order":3,"path":"scripts/__scribble_get_buffer_b/__scribble_get_buffer_b.yy",},
-    {"name":"snd_title","order":5,"path":"sounds/snd_title/snd_title.yy",},
     {"name":"__scribble_font_add_all_from_project","order":6,"path":"scripts/__scribble_font_add_all_from_project/__scribble_font_add_all_from_project.yy",},
     {"name":"ChatterboxLoadFromString","order":5,"path":"scripts/ChatterboxLoadFromString/ChatterboxLoadFromString.yy",},
     {"name":"scribble_external_sound_remove","order":2,"path":"scripts/scribble_external_sound_remove/scribble_external_sound_remove.yy",},

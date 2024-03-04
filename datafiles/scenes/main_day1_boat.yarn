@@ -31,13 +31,13 @@ PLAYER: (I've been having these dreams since I got here.) #line:93e669
 PLAYER: (It feels like they're trying to tell me something.) #line:40d502
 PLAYER: (It feels like they're trying to tell me something.) #line:eb5c58
 -> ... (I feel anxious about the future.) #line:923d13
-    TEST1
     <<changeRelationship("player", -1)>>
+    ... (I feel anxious about the future.) #line:923d13
 -> ... (I'm not sure how I feel about the future.) #line:0c09f9
-    TEST2
+    ... (I'm not sure how I feel about the future.) #line:0c09f9
 -> ... (I feel excited about the future.) #line:718328
-    TEST3
     <<changeRelationship("player", +1)>>
+    ... (I feel excited about the future.) #line:718328
 PLAYER: (To tell the truth, I don't know why I came here.) #line:946fec
 PLAYER: (Hmm, okay. Actually, I do know.) #line:c55ee5
 PLAYER: (I was lost. Purposeless. Unwilling to accept that I need to choose something.) #line:fb09c6
