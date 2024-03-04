@@ -16,13 +16,6 @@ title: Night
 ---
 ===
 
-title: Reward
----
-<<save()>>
-Congratulations! You finished this event! #line:1dafdc
-<<hopback>>
-===
-
 title: YpeIntro
 ---
 <<chara("void")>>
@@ -194,7 +187,7 @@ PLAYER: Nothing special, don't procrastinate, and stuff... #line:7f7c59
 PLAYER: Have a partner who helps... #line:ff6405
 YPE: Ah... right. #line:adaa22
 Together, you walk towards the exit of the room. #line:fdef2f
-<<hop Reward>>
+<<save()>>
 ... #line:7f7969
 <<bgTransition(0)>>
 ... #line:b9d47b
@@ -224,14 +217,14 @@ YPE: If you say so... #line:b29f3e
 PLAYER: When do you think we can meet up? #line:bc3207
 PLAYER: I know Botany, in general, is a heavier major than Biology, so if you tell me your schedule... #line:e99911
 YPE: At the beginning of the semester, I think both courses will still be manageable. #line:46bea5
-PLAYER: Você estaria livre amanhã depois do almoço? #line:bd6bfa
+PLAYER: Would you be free tomorrow after lunch? #line:bd6bfa
 YPE: Um... Can it be a little later? #line:a595fc 
 PLAYER: No problem. About 4pm, then? #line:aea5c2
 YPE: Great for me! #line:d17583
 PLAYER: Nice! Now we just need to find a place on campus where we can see some species of animals. #line:7fc058
-YPE: Seria tão bom se a gente pudesse fazer no parque... #line:176fce
-PLAYER: Eu não sabia que tinha um parque dentro do campus! #line:8d9869
-YPE: Oh, there isn't... Ele fica aqui perto, mas não é aqui dentro. #line:d738c7
+YPE: Aw... It would be nice if we could do it in the EcoPark... #line:176fce
+PLAYER: I didn't know there was a park on the campus! #line:8d9869
+YPE: Oh, there isn't... It's close by, but it's not here. #line:d738c7
 PLAYER: Aw... I see. The professor said it needs to be on campus, so that's a shame. #line:9fd63d
 IPÊ: In that case, I think our best option will be the lake. #line:b16a2c
 IPÊ: In that case, I think our best option will be the lake. #line:15d9c5 
@@ -251,7 +244,7 @@ Before you could argue that Professor Fern released you an hour early... #line:6
 Ype was already disappearing down the hallway... #line:ea0357
 ... #line:b57a25
 PLAYER: (Did I say something wrong?) #line:def188
-<<hop Reward>>
+<<save()>>
 <<nextDaytime()>>
 <<nextRoom("rm_dormitory")>>
 ===

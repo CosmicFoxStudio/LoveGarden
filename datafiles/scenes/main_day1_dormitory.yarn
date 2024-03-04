@@ -17,13 +17,6 @@ title: Night
 <<jump GoodNight>>
 ===
 
-title: Reward
----
-<<save()>>
-Congratulations! You finished this event! #line:1052a4
-<<hopback>>
-===
-
 title: CaruIntro
 ---
 <<chara("void")>>
@@ -137,13 +130,13 @@ You only have to wait... What do you do now? #line:83d7e5
         Soon, the next boat starts to approach and you stand up to get inside. #line:52962f
 PLAYER: (Thank goodness everything worked out...) #line:c83b07
 You board the boat. #line:dc01da 
-<<hop Reward>>
+<<save()>>
 <<nextRoom("rm_boat")>>
 ===
 
 title: Chitchat
 ---
-<<bg(1)>>
+<<bg(2)>>
 The last rays of sunlight of the day paint a beautiful landscape across the sky, caressing your eyes as you arrive at the dormitory. #line:3884a8 
 Mr. Orange, eager for your return, welcomes you back. #line:a7baa0
 <<chara("orange")>>
@@ -167,7 +160,7 @@ What do you want to do? #line:eb08d9
     Until you notice a quite peculiar one... ''Jack the Beanstalk''. #line:2878d3
     PLAYER: Huh? This one looks familiar. #line:40f387
     MR. ORANGE: Oh, yes. This is our first Lotus rector. There are several legends about him. #line:9a219a
-    MR. ORANGE: They say he reached the sky by climbing a massive beanstalk, something no one had ever accomplished. #line:f27b02
+    MR. ORANGE: They say he reached the sky by climbing a giant beanstalk, something no one had ever accomplished. #line:f27b02
     PLAYER: A giant beanstalk...? #line:4d6bb5
     MR. ORANGE: Exactly. Legend has it that long ago, Lotus was known for a beanstalk that reached the heavens. #line:951982
     MR. ORANGE: I can tell you the legend from the beginning... If you have the time. #line:681bb9
@@ -176,7 +169,7 @@ What do you want to do? #line:eb08d9
         ... Once upon a time, ... #line:4359f5
         ... #line:9e0fa4 
         <<chara("void")>>
-        <<bgTransition(2)>>
+        <<bgTransition(3)>>
         ... #line:e25f70 
         MR. ORANGE: ... There was an outstanding student named Jack, known for his curiosity and love for agriculture. #line:0bf19f
         MR. ORANGE: He lived in the ancient fiefdom of Lotus, long before this university existed. #line:c3f160
@@ -197,7 +190,7 @@ What do you want to do? #line:eb08d9
         MR. ORANGE: He became so popular that several princes and princesses from neighboring kingdoms came to study with him. #line:dbcfb0
         MR. ORANGE: When he was older, he decided to create a university, which is now Lotus. #line:4828ed
         ... #line:d674dd
-        <<bgTransition(1)>>
+        <<bgTransition(2)>>
         <<chara("orange")>>
         ... #line:8f67ef
         MR. ORANGE: Definitely one of our most notable figures. #line:0e9dc2
@@ -211,7 +204,8 @@ What do you want to do? #line:eb08d9
         MR. ORANGE: But who knows, if you excel in Magical Herbology, maybe one day you'll be included in it! #line:e2cf42
         PLAYER: Interesting... I'll keep that in mind. Thanks for the story, Mr. Orange. #line:e4bed3
         MR. ORANGE: No problems. See you later, kid! #line:2ea539
-        <<hop Reward>>
+        <<chara("void")>>
+        <<save()>>
         <<nextDaytime()>>
         <<jump Night>>
         You climb the stairs back to your room. #line:7613b6
@@ -219,7 +213,7 @@ What do you want to do? #line:eb08d9
         MR. ORANGE: Oh, sure. That's okay. You must be busy. Sorry for bothering you. #line:a335af
         <<chara("void")>>
         You climb the stairs back to your room. #line:89a4d6
-        <<hop Reward>>
+        <<save()>>
         <<nextDaytime()>>
         <<jump Night>>
 -> Check what Caru is doing. #line:e854fd
@@ -229,7 +223,7 @@ What do you want to do? #line:eb08d9
     Caru is doing really well, so it's better not to interrupt the moment. #line:b02672
     Looking back, you realize Mr. Orange is no longer there. #line:b76c50
     Thus, the only option left is to go back to your room. #line:28c980
-    <<hop Reward>>
+    <<save()>>
     <<nextDaytime()>>
     <<jump Night>>
 -> Go upstairs. #line:37a127
@@ -237,13 +231,16 @@ What do you want to do? #line:eb08d9
     MR. ORANGE: Oh, that's fine. You must be busy. Sorry for bothering you. #line:87ee1a
     <<chara("void")>>
     You climb the stairs back to your room. #line:e0ff13
-    <<hop Reward>>
+    <<save()>>
     <<nextDaytime()>>
     <<jump Night>>
 ===
 
 title: GoodNight
 ---
+...
+<<bgTransition(0)>>
+...
 You arrive in your room and look around. #line:1bae14
 Although the beginning of the day was hectic, it was relatively calm in the end. #line:5546cc
 You try to start organizing the things scattered around the room. #line:2960cb
@@ -290,7 +287,7 @@ PLAYER: Yes, sir! #line:a6f2ec
 Caru continues to complain about the Statistics teachers to you. #line:8b4c72
 And you share a bit about how Professor Fern seems to be a peculiar professor. #line:ff0c31
 Soon, you both start feeling tired and prepare to sleep. #line:8641ba
-<<hop Reward>>
+<<save()>>
 <<nextDay()>>
 <<backTitle()>>
 ===
