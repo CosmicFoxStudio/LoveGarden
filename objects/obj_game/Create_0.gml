@@ -3,7 +3,7 @@
 // Initializes globals & enumerators
 Enums();
 camera = -1;
-global.debug = false;
+global.debug = true;
 global.lastFontUsed = -1;
 DrawFont(fnt_dialogue); // Run the first time
 global.configMenu = noone;
@@ -104,7 +104,7 @@ function KeybindingCreate(_inputMode) {
 	}
 }
 
-global.inputMode = e_input.KEYBOARD;
+global.inputMode = e_input.MOUSE;
 global.keybind = KeybindingCreate(global.inputMode);
 // To reference: global.keybind.confirm
 #endregion GAME CONTROLS
