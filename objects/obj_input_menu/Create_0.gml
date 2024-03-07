@@ -19,7 +19,13 @@ descriptionPaddingV = 8;
 optionMargin = 48;
 
 // Create Buttons
-keyboardButton = instance_create_layer(240, 280, "Instances_Below", obj_keyboard_btn); 
+keyboardButton = instance_create_layer(240, 150, "Instances_Below", obj_keyboard_btn); 
 keyboardButton.btnType = e_input.KEYBOARD;
-mouseButton = instance_create_layer(390, 280, "Instances_Below", obj_mouse_btn);
+keyboardButton.unavailable = false;
+mouseButton = instance_create_layer(390, 150, "Instances_Below", obj_mouse_btn);
 mouseButton.btnType = e_input.MOUSE;
+mouseButton.unavailable = false;
+
+menuOptions = [keyboardButton, mouseButton];
+optionLength = array_length(menuOptions);
+pos = 0;

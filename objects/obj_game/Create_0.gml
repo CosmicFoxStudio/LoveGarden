@@ -104,7 +104,7 @@ function KeybindingCreate(_inputMode) {
 	}
 }
 
-global.inputMode = e_input.MOUSE;
+global.inputMode = e_input.KEYBOARD;
 global.keybind = KeybindingCreate(global.inputMode);
 // To reference: global.keybind.confirm
 #endregion GAME CONTROLS
@@ -201,4 +201,4 @@ if (Debug()) {
 }
 
 // Add first room here
-room_goto(rm_lang);
+room_goto(rm_input_mode);

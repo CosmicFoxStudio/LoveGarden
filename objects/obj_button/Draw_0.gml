@@ -8,7 +8,7 @@ var textColor = TEXT_GREEN;
 
 if (!unavailable) {
     // Check if the button is hovering or selected to change the text color accordingly
-    if (hovering || selected) {
+    if (hovering || keyboardSelection || selected) {
         textColor = c_yellow;
     } 
 }
