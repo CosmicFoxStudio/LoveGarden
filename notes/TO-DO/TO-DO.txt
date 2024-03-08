@@ -8,3 +8,5 @@
 - Scene Pop Up
 - Dialogue System: Multiple characters on screen!
 - Chatterbox: new functions <<getPlace()>> and <<reward()>>
+- Implement new Relationship and Action System
+- Implement new Phone UI
