@@ -1,5 +1,5 @@
 // Adds a certain number of actions
-function AddAction(_actionsToAdd) {
+function AddAction(_actionsToAdd = 1) {
     // Get the maximum actions for the current day
     var maxActionsForDay = global.maxActions[global.day];
 	
@@ -41,7 +41,7 @@ function RouteAssign(_SOName) {
 
 // Goes back to the title screen and changes game state
 function BackToTitle() {
-	room_goto(rm_title);
+	GameTransitionChangeRoom(rm_title, sq_trans_fade_black);
 	GameChangeState(e_gameStates.LEAVE);
 }
 
@@ -88,14 +88,70 @@ function DialogueWait(_seconds) {
     [CHATTERBOX_CURRENT]));
 }
 
-// Adds or removes hearts to romanceable characters relationship bars
-function ChangeRelationshipBar(_name, _value) {
-	// TO DO
+// Adds or removes hearts to romanceable characters relationship bars (and player for now)
+function ChangeRelationshipBar(_name, _value = 1) {
+	switch (_name) {
+	    case "player":
+			global.playerStats.hearts += _value;
+			if (global.playerStats.hearts > 8) global.playerStats.hearts = 8;
+			if (global.playerStats.hearts < -8) global.playerStats.hearts = -8;
+	    break;
+	    case "ype":
+			global.NPCs[e_SO.YPE].hearts += _value;
+			if (global.NPCs[e_SO.YPE].hearts > 8) global.NPCs[e_SO.YPE].hearts = 8;
+			if (global.NPCs[e_SO.YPE].hearts < -8) global.NPCs[e_SO.YPE].hearts = -8;
+	    break;
+	    case "caru":
+			global.NPCs[e_SO.CARU].hearts += _value;
+			if (global.NPCs[e_SO.CARU].hearts > 8) global.NPCs[e_SO.CARU].hearts = 8;
+			if (global.NPCs[e_SO.CARU].hearts < -8) global.NPCs[e_SO.CARU].hearts = -8;
+	    break;
+	    case "rose":
+			global.NPCs[e_SO.ROSE].hearts += _value;
+			if (global.NPCs[e_SO.ROSE].hearts > 8) global.NPCs[e_SO.ROSE].hearts = 8;
+			if (global.NPCs[e_SO.ROSE].hearts < -8) global.NPCs[e_SO.ROSE].hearts = -8;
+	    break;
+	    case "clove":
+			global.NPCs[e_SO.CLOVE].hearts += _value;
+			if (global.NPCs[e_SO.CLOVE].hearts > 8) global.NPCs[e_SO.CLOVE].hearts = 8;
+			if (global.NPCs[e_SO.CLOVE].hearts < -8) global.NPCs[e_SO.CLOVE].hearts = -8;
+	    break;
+	    case "hydra":
+			global.NPCs[e_SO.HYDRA].hearts += _value;
+			if (global.NPCs[e_SO.HYDRA].hearts > 8) global.NPCs[e_SO.HYDRA].hearts = 8;
+			if (global.NPCs[e_SO.HYDRA].hearts < -8) global.NPCs[e_SO.HYDRA].hearts = -8;
+	    break;
+	    default:
+	       show_debug_message("(ERROR) Incorrect name.");
+	    break;
+	}
 }
 
-// Checks relationship bars of romanceable characters
+// Checks relationship bars of romanceable characters (and player for now)
 function GetRelationshipBar(_name) {
-	// TO DO
+	switch (_name) {
+	    case "player":
+			return global.playerStats.hearts;
+	    break;
+	    case "ype":
+			return global.NPCs[e_SO.YPE].hearts;
+	    break;
+	    case "caru":
+			return global.NPCs[e_SO.CARU].hearts;
+	    break;
+	    case "rose":
+			return global.NPCs[e_SO.ROSE].hearts;
+	    break;
+	    case "clove":
+			return global.NPCs[e_SO.CLOVE].hearts;
+	    break;
+	    case "hydra":
+			return global.NPCs[e_SO.HYDRA].hearts;
+	    break;
+	    default:
+	       show_debug_message("(ERROR) Incorrect name.");
+	    break;
+	}
 }
 
 // Increments by 1 global.day and set global.currentDaytime to morning
@@ -153,6 +209,29 @@ function DialogueTransition() {
 	GameTransition(sq_trans_fade_black);
 }
 
+// Change background using transition
+function BackgroundWaitTransition(_index) {
+	var seq = sequence_get(sq_trans_fade_black);
+	var frames = seq.length;
+	
+    ChatterboxWait(CHATTERBOX_CURRENT);
+	
+    show_debug_message("Waiting chatterbox for " + string(frames) + " frames...");
+	
+	GameTransition(sq_trans_fade_black);
+	
+    time_source_start(time_source_create(time_source_game, frames, time_source_units_frames, function(_chatterbox) {
+        show_debug_message("...continuing chatterbox!");
+        ChatterboxContinue(_chatterbox);
+    },
+    [CHATTERBOX_CURRENT]));
+	
+	time_source_start(time_source_create(time_source_game, frames, time_source_units_frames, function(_indexBG) {
+		BackgroundSetIndex(_indexBG);
+	},
+	[_index]));
+}
+
 // -----------------------------------------------------------------------------  //
 // Useful functions that are not called in .yarn files
 
@@ -179,4 +258,15 @@ function LoadDialogueFiles() {
 		fileCounter += 1;
 	}
 	file_find_close();
+}
+
+// Function to get initial node based on daytime
+function InitialNode() {
+	switch (global.currentDaytime) {
+		case e_daytime.MORNING: return "Morning"; break;
+		case e_daytime.NOON: return "Noon"; break;
+		case e_daytime.AFTERNOON: return "Afternoon"; break;
+		case e_daytime.NIGHT: return "Night"; break;
+		default: return "Dawn"; break;
+	}
 }

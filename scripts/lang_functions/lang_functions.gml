@@ -49,14 +49,13 @@ function PlaceLocalization(_savePlace) {
 		break;
 	case "pt":
 		switch (_savePlace) {
-			case "Dormroom": return "Quarto"; break;
 			case "Dormitory": return "Dormitório"; break;
-			case "Test Zone": return "Zona de Teste"; break;
-			case "Courtyard": return "Pátio Central"; break;
-			case "Food Court": return "Restaurante"; break;
-			case "School": return "Escola"; break;
-			case "Classroom": return "Sala de Aula"; break;
+			case "Boat": return "Barco"; break;
+			case "Science Dept.": return "Dept. Ciências"; break;
+			case "Central Building": return "Pátio Central"; break;
+			case "Lake": return "Lago"; break;
 			case "Gazebo": return "Gazebo"; break;
+			case "Test Zone": return "Zona de Teste"; break;
 			default: return "Nenhum Lugar"; break;
 		}
 		break;

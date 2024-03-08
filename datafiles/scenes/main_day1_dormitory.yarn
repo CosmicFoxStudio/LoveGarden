@@ -1,101 +1,149 @@
 title: Morning
 ---
-<<chara("void")>>
-<<if !getFlag("dormitory_morning_saw")>>
-    ... # # # #line:361a6b
-    The rule says you can't run in the hallways... # # # #line:af98ad
-    So you quicken your pace until you reach the entrance. # # # #line:ddf6ae
-    In the distance, you can see the boat that just left. # # # #line:bb92f9
-    You sigh to yourself and meekly walk down the stairs to the dorm's main floor in a gesture of acceptance. # # # #line:5a3b7b
-    ... # # # #line:7f7969
-    <<transition()>>
-    <<dialogueWait(3)>>
-    <<bg(1)>> 
-    ... # # # #line:b9d47b
-    As you reach the dorm's reception, you're met with a short old man with oranges stuck in his beard. # # # #line:78acb8
-    <<chara("orange")>>
-    MR. ORANGE: Hey. Are you a morning student? # # # #line:36b3dd
-    PLAYER: Yes, I am! # # # #line:9df643
-    MR. ORANGE: The second boat has already left, but a third one is coming shortly. # # # #line:2ad4fa
-    PLAYER: Oh, thank goodness there's a third one. I thought I was lost! # # # #line:1832df
-    MR. ORANGE: Haha! Don't worry, young one! # # # #line:42c368
-    MR. ORANGE: In addition to the third, there's also a fourth, a fifth... and so on. # # # #line:095ff8
-    MR. ORANGE: The next one is coming in 5 minutes! # # # #line:39766b
-    As he says this, some other students are arriving at the spot, realizing they also missed the boat. # # # #line:3f282d
-    PLAYER: At least I'm not the only one. # # # #line:80e45e
-    PLAYER: You saved me here, Mr...? # # # #line:795881
-    MR. ORANGE: They call me Orange, young one. # # # #line:fc76c4
-    PLAYER: I'm PLAYER. # # # #line:a7a29f
-    You only have to wait... What do you do now? # # # #line:e18a27
-    You only have to wait... What do you do now? # # # #line:83d7e5
-    -> Talk to Mr. Orange. # # # #line:1ecdd9
-        <<addAction()>>
-        (YOU JUST EARNED A BONUS ACTION! [spr_action])[snd_click1] #line:416827
-        You have to wait anyway. It's better to talk to someone to pass the time. # # # #line:bae562
-        PLAYER: Not to be intrusive, but it's quite a coincidence that your name is the same as the dormitory. # # # #line:c20819
-        MR. ORANGE: Haha! That's not a coincidence, young one! I've been the supervisor of this dormitory since it was built. # # # #line:3ffdcf
-        PLAYER: But that was, like, a long time ago, right? # # # #line:14c3e7
-        PLAYER: (Oh my god, I called him old). # # # #line:72266d
-        MR. ORANGE: HAHA! It's only been 25 years! # # # #line:9485a0
-        PLAYER: That means you've met all the famous plants, right? # # # #line:d77901
-        PLAYER: Even Willow Smith, who graduated a few years ago? # # # #line:58fd6b
-        MR. ORANGE: Each one of them! I have a collection of photos with the students who became famous from the college. # # # #line:b7124f
-        MR. ORANGE: I can show you the collection one day if you want! # # # #line:5c3359
-        <<setFlag("orange_photo_book_talk")>>
-        PLAYER: I'd love that! # # # #line:7d9936
-        MR. ORANGE: I like your enthusiasm, young one! # # # #line:5d8af0
-        MR. ORANGE: But you better start going. The boat is arriving. # # # #line:82b546
-        Mr. Orange points to the boat approaching outside. # # # #line:f42612
-        PLAYER: See you later, Mr. Orange! # # # #line:01b874
-        <<chara("void")>>
-        You wave to him as you leave the dormitory, heading towards the boat. # # # #line:06f5f5
-    -> Wait for the boat outside. #line:5b1185
-        <<chara("void")>>
-        It's better to make sure you don't miss the third boat. # # # #line:00912c
-        You go outside the building, sitting on one of the waiting benches for the boat. # # # #line:ccca5b
-        There's a girl drawing on one of the other benches. # # # #line:65794c
-        <<chara("hydra")>>
-        <<setFlag("met_hydra", true)>>
-        You try to see what she's drawing and ends up impressed with the replica of the lake she was creating. # # # #line:c51c4b
-        What do you do? # # # #line:3ec998
-        What do you do? # # # #line:e8332a
-        -> Try to talk to her. # # # #line:32cbd1
-            PLAYER: Wow, your drawing is beautiful! # # # #line:370ddb
-            ???: ... # # # #line:69998f
-            She doesn't even blink, continuing to focus on the notebook. # # # #line:22357e
-            It's as if she didn't hear you from being so concentrated... # # # #line:769faf
-            You decide to appreciate the lake alongside her, even if in silence. # # # #line:0c8428
-        -> Just admire the drawing she's doing. # # # #line:1012d5
-            <<addAction()>>
-            (YOU JUST EARNED A BONUS ACTION! [spr_action])[snd_click1] #line:5092f9
-            You can't take your eyes off the drawing. # # # #line:72e405
-            To the point that the girl gives you a quick look with raised eyebrows. # # # #line:df7bd3
-            You look away, feeling your face heat up for getting caught. # # # #line:2b1dd7
-            Soon, the third boat starts to approach and you stand up to get inside. # # # #line:52962f
-    PLAYER: (Thank goodness everything worked out...) # # # #line:c83b07
-    You board the boat. # # # #line:dc01da
-    <<setFlag("dormitory_morning_saw")>>
-    <<save()>>
-    <<nextRoom("rm_boat")>>
-<<else>>
-    <<jump Afternoon>>
-<<endif>>
+<<jump CaruIntro>>
 ===
 
 title: Noon
 ---
 ===
 
-title: Afternoon
+title: Afternoon 
 ---
-<<nextDaytime(2)>>
-<<bg(1)>>
-You enter the dormitory, greeted by a charming sunset painting the sky in warm hues, matching the orange trees in the landscape. #line:3884a8 
-Mr. Orange, eager for your return, gives you a warm welcome. #line:a7baa0
+<<jump Chitchat>>
+===
+
+title: Night
+---
+<<bg(4)>>
+<<jump GoodNight>>
+===
+
+title: CaruIntro
+---
+<<chara("void")>>
+???: Hey. #line:da1f8b
+???: Heeey! #line:23e124
+???: Are you listening? #line:28b531
+???: ... #line:f5b9a9
+???: Wake up! #line:5be548
+PLAYER: Ugh... #line:850375
+<<chara("caru")>>
+???: Time to get up, sleepyhead! #line:d58fe3
+???: It's a new day full of adventure, and... Oh, hold on, I think you're late! #line:3b26df
+You groan and rub your eyes, trying to understand the situation. #line:baf757
+It seems like your alarm didn't go off... #line:1f91d5
+The one waking you up is your roommate, Mandacaru.\nBut everyone calls him Caru, his nickname. #line:ca02fd
+PLAYER: What time is it? #line:adf0ed
+CARU: Let me tell you, you overslept, PLAYER. #line:2278c0
+CARU: The Sun is already high in the sky, and the birds are mocking you. #line:d433df
+CARU: And I was the universe's envoy to deliver you a sermon on punctuality. #line:ccd329
+PLAYER: Wait, what?? What does that mean? #line:74f4de
+You hurry with the choice of clothes, and in a clumsy manner, try to dress in record time. #line:2be4d7
+PLAYER: Tch. Thanks for the heads up, dungeon master. I just asked for the time! #line:774550 
+CARU: Oh, sorry. I was exaggerating, ha-ha! It's only 6:40... Your alarm hasn't gone off yet. #line:30b5af
+PLAYER: Ah! You rascal. #line:7959e9
+You were really getting desperate here. Caru and his limitless teasing... #line:753014
+CARU: Life is a race, and you've already started running! You'll thank me later, heh. #line:d06990
+CARU: But now, I'm serious. The first day is not one of those you want to be late for. #line:acdf43
+CARU: The earlier you leave, the better! #line:1dd87f
+CARU: Some of the Lotus professors can be real tyrants. #line:f2cb8c
+PLAYER: I've been questioning myself why would anyone decide on the 7:30 am schedule for morning classes... #line:a61151
+<<chara("void")>>
+Despite Mandacaru's warning, by the time you gather all the materials for classes, you see that time is still ticking away. #line:2b3bb1
+Part of you curses your last night's self, who confidently claimed there would be enough time to get organized in the morning. #line:8cf063
+Being ready to go, you head downstairs to the dormitory. #line:d53c5c
+... #line:eef0c0
+<<bgTransition(1)>>
+<<jump LateArrival>>
+===
+
+title: LateArrival
+---
+<<chara("void")>>
+... #line:361a6b
+The rule says you can't run in the hallways... #line:af98ad
+So you quicken your pace until you reach the entrance. #line:ddf6ae
+In the distance, you can see the boat that just left. #line:bb92f9
+You sigh to yourself and meekly walk down the stairs to the dorm's main floor in a gesture of acceptance. #line:5a3b7b
+... #line:7f7969
+<<bgTransition(2)>>
+... #line:b9d47b
+As you reach the dorm's reception, you're met with an old man with oranges stuck in his beard. #line:78acb8
+<<chara("orange")>>
+MR. ORANGE: Hey. Are you a morning student? #line:36b3dd
+PLAYER: Yes, I am! #line:9df643
+MR. ORANGE: The second boat has already left, but a third one is coming shortly. #line:2ad4fa
+PLAYER: Oh, thank goodness. I thought I was lost! #line:1832df
+PLAYER: I have classes in 20 minutes... #line:5841e4 
+PLAYER: Do you think it will take long to arrive? #line:8a8868
+MR. ORANGE: Haha! Don't worry, young one! #line:42c368
+MR. ORANGE: The next one is coming in 5 minutes! #line:39766b
+As he says this, some other students are arriving at the spot, realizing they also missed the boat. #line:3f282d
+PLAYER: At least I'm not the only one. #line:80e45e 
+PLAYER: You saved me here, Mr...? #line:795881
+MR. ORANGE: They call me Orange, young one. #line:fc76c4 
+PLAYER: I'm PLAYER. #line:a7a29f 
+You only have to wait... What do you do now? #line:e18a27 
+You only have to wait... What do you do now? #line:83d7e5
+-> Talk to Mr. Orange. #line:1ecdd9 
+    <<addAction()>>
+    (YOU JUST EARNED A BONUS ACTION! [spr_action])[snd_click1] #line:416827
+    You have to wait anyway. It's better to talk to someone to pass the time. #line:bae562 
+    PLAYER: Not to be intrusive, but it's quite a coincidence that your name is the same as the dormitory. #line:c20819
+    MR. ORANGE: Haha! That's not a coincidence, young one! I've been the supervisor of this dormitory since it was built. #line:3ffdcf
+    PLAYER: But that was, like, a long time ago, right? #line:14c3e7
+    PLAYER: (Oh my god, I called him old). #line:72266d
+    MR. ORANGE: HAHA! It's only been 25 years! #line:9485a0
+    PLAYER: That means you've met all the famous plantae people, right? #line:d77901
+    PLAYER: Even Willow Smith, who graduated a few years ago? #line:58fd6b 
+    MR. ORANGE: Each one of them! I have a collection of photos with the students who became famous from the college. #line:b7124f
+    MR. ORANGE: I can show you the collection one day if you want! #line:5c3359 
+    <<setFlag("orange_photo_book_talk")>> 
+    PLAYER: I'd love that! #line:7d9936
+    MR. ORANGE: I like your enthusiasm, young one! #line:5d8af0 
+    MR. ORANGE: But you better start going. The boat is arriving. #line:82b546 
+    Mr. Orange points to the boat approaching outside. #line:f42612 
+    PLAYER: See you later, Mr. Orange! #line:01b874
+    <<chara("void")>>
+    You wave to him as you leave the dormitory, heading towards the boat. #line:06f5f5
+-> Wait for the boat outside. #line:5b1185 
+    <<chara("void")>>
+    It's better to make sure you don't miss the next boat. #line:00912c 
+    You go outside the building, sitting on one of the waiting benches for the boat. #line:ccca5b
+    There's a girl drawing on one of the other benches. #line:65794c 
+    <<chara("hydra")>>
+    <<setFlag("met_hydra", true)>>
+    You try to see what she's drawing and ends up impressed with the replica of the lake she was creating. #line:c51c4b
+    What do you do? #line:3ec998
+    What do you do? #line:e8332a
+    -> Try to talk to her. #line:32cbd1
+        PLAYER: Wow, your drawing is beautiful! #line:370ddb 
+        ???: ... #line:69998f
+        She doesn't even blink, continuing to focus on the notebook. #line:22357e
+        It's as if she didn't hear you from being so concentrated... #line:769faf
+        You decide to appreciate the lake alongside her, even if in silence. #line:0c8428
+    -> Just admire the drawing she's doing. #line:1012d5 
+        <<addAction()>>
+        (YOU JUST EARNED A BONUS ACTION! [spr_action])[snd_click1] #line:5092f9
+        You can't take your eyes off the drawing. #line:72e405 
+        To the point that the girl gives you a quick look with raised eyebrows. #line:df7bd3
+        You look away, feeling your face heat up for getting caught. #line:2b1dd7
+        Soon, the next boat starts to approach and you stand up to get inside. #line:52962f
+PLAYER: (Thank goodness everything worked out...) #line:c83b07
+You board the boat. #line:dc01da 
+<<save()>>
+<<nextRoom("rm_boat")>>
+===
+
+title: Chitchat
+---
+<<bg(2)>>
+The last rays of sunlight of the day paint a beautiful landscape across the sky, caressing your eyes as you arrive at the dormitory. #line:3884a8 
+Mr. Orange, eager for your return, welcomes you back. #line:a7baa0
 <<chara("orange")>>
 MR. ORANGE: Hello, young one. Happy to see you again. #line:b23003
 MR. ORANGE: How was your first day at school? #line:01720d
-PLAYER: School, you mean college, right? #line:fa5339
+PLAYER: School... You mean college, right? #line:fa5339
 MR. ORANGE: Oh, right! #line:7a85a2
 MR. ORANGE: Oh, right! #line:3e251c
 -> It was great. #line:291831
@@ -113,19 +161,17 @@ What do you want to do? #line:eb08d9
     Until you notice a quite peculiar one... ''Jack the Beanstalk''. #line:2878d3
     PLAYER: Huh? This one looks familiar. #line:40f387
     MR. ORANGE: Oh, yes. This is our first Lotus rector. There are several legends about him. #line:9a219a
-    MR. ORANGE: They say he reached the sky by climbing a massive beanstalk, something no one had ever accomplished. #line:f27b02
+    MR. ORANGE: They say he reached the sky by climbing a giant beanstalk, something no one had ever accomplished. #line:f27b02
     PLAYER: A giant beanstalk...? #line:4d6bb5
     MR. ORANGE: Exactly. Legend has it that long ago, Lotus was known for a beanstalk that reached the heavens. #line:951982
     MR. ORANGE: I can tell you the legend from the beginning... If you have the time. #line:681bb9
     MR. ORANGE: I can tell you the legend from the beginning... If you have the time. #line:1419ef
     -> Sure, you've caught my curiosity. #line:a6e132
         ... Once upon a time, ... #line:4359f5
-        ... # # # #line:9e0fa4 
+        ... #line:9e0fa4 
         <<chara("void")>>
-        <<transition()>>
-        <<dialogueWait(3)>>
-        <<bg(2)>>
-        ... # # # #line:e25f70 
+        <<bgTransition(3)>>
+        ... #line:e25f70 
         MR. ORANGE: ... There was an outstanding student named Jack, known for his curiosity and love for agriculture. #line:0bf19f
         MR. ORANGE: He lived in the ancient fiefdom of Lotus, long before this university existed. #line:c3f160
         MR. ORANGE: One day, while exploring the surroundings of the college, he discovered a peculiar seed that seemed to radiate a magical aura. #line:4cd139
@@ -145,10 +191,8 @@ What do you want to do? #line:eb08d9
         MR. ORANGE: He became so popular that several princes and princesses from neighboring kingdoms came to study with him. #line:dbcfb0
         MR. ORANGE: When he was older, he decided to create a university, which is now Lotus. #line:4828ed
         ... #line:d674dd
-        <<transition()>>
-        <<dialogueWait(3)>>
+        <<bgTransition(2)>>
         <<chara("orange")>>
-        <<bg(1)>>
         ... #line:8f67ef
         MR. ORANGE: Definitely one of our most notable figures. #line:0e9dc2
         PLAYER: Wow. How long ago was that? #line:0598c6
@@ -161,14 +205,21 @@ What do you want to do? #line:eb08d9
         MR. ORANGE: But who knows, if you excel in Magical Herbology, maybe one day you'll be included in it! #line:e2cf42
         PLAYER: Interesting... I'll keep that in mind. Thanks for the story, Mr. Orange. #line:e4bed3
         MR. ORANGE: No problems. See you later, kid! #line:2ea539
-        <<save()>>
-        <<jump Night>>
+        <<chara("void")>>
         You climb the stairs back to your room. #line:7613b6
+        <<nextDaytime()>>
+        ...
+        <<bgTransition(4)>>
+        ...
+        <<jump Night>>
     -> Thanks, but maybe another time. #line:79e443
         MR. ORANGE: Oh, sure. That's okay. You must be busy. Sorry for bothering you. #line:a335af
         <<chara("void")>>
         You climb the stairs back to your room. #line:89a4d6
-        <<save()>>
+        <<nextDaytime()>>
+        ...
+        <<bgTransition(4)>>
+        ...
         <<jump Night>>
 -> Check what Caru is doing. #line:e854fd
     <<chara("void")>>
@@ -177,21 +228,71 @@ What do you want to do? #line:eb08d9
     Caru is doing really well, so it's better not to interrupt the moment. #line:b02672
     Looking back, you realize Mr. Orange is no longer there. #line:b76c50
     Thus, the only option left is to go back to your room. #line:28c980
-    <<save()>>
+    <<nextDaytime()>>
+    ...
+    <<bgTransition(4)>>
+    ...
     <<jump Night>>
 -> Go upstairs. #line:37a127
     PLAYER: Sorry, I need to go do something. #line:89a047
     MR. ORANGE: Oh, that's fine. You must be busy. Sorry for bothering you. #line:87ee1a
     <<chara("void")>>
     You climb the stairs back to your room. #line:e0ff13
-    <<save()>>
+    <<nextDaytime()>>
+    ...
+    <<bgTransition(4)>>
+    ...
     <<jump Night>>
 ===
 
-title: Night
+title: GoodNight
 ---
-<<nextDaytime()>>
-LOREM IPSUM #line:da30df
+You arrive in your room and look around. #line:1bae14
+Although the beginning of the day was hectic, it was relatively calm in the end. #line:5546cc
+You try to start organizing the things scattered around the room. #line:2960cb
+PLAYER: (The least I can do is start tomorrow a little more organized than today!) #line:7d40d7
+You're in the middle of organizing your things when Caru enters the room. #line:a1a842
+<<chara("caru")>>
+His eyes are red, and he has a little smile on his lips. #line:912d08
+PLAYER: Hey, what's up! #line:354f1c
+CARU: Trying to tidy up your stuff? #line:18acf1
+PLAYER: The keyword is "trying." #line:f6e615
+PLAYER: Every time I try to organize something in one place, I find something that should be somewhere else... #line:e68dda
+PLAYER: It's an endless loop! #line:53bf3b
+CARU: I'm amazed you have the energy to do this after your first day. #line:c09492
+PLAYER: Well, it was surprisingly calm, actually? #line:77829f
+PLAYER: There are a lot of people, a lot of places, and I'm still a little confused about everything that's happening. #line:6326b2
+PLAYER: But it was okay, nothing really stressful happened... #line:a16d02
+CARU: Ah, the joy of being a freshman, I miss it... #line:23fa24
+PLAYER: You're close to graduating, right? #line:7cd0c8
+CARU: Seventh semester, freedom is so close I can almost taste it. #line:9d7714
+PLAYER: Your course can't be that bad, though. #line:dab9a2
+CARU: Statistics is like, hell on earth. #line:2112aa
+PLAYER: I guess for someone like me it would be. #line:f3cc45
+PLAYER: It makes me think a lot about math in its pure form. #line:a25e3a
+CARU: Worse than pure math is kind of more philosophical, actually. #line:1e3825
+CARU: Statistics is the cuckoldry of math. I regret choosing it everyday. #line:2744ec
+CARU: And people only use it to spread lies. #line:8d7e7e
+CARU: It's too complex for normal people to understand. #line:110ffe
+CARU: But everyone minimally educated ends up applying it to their course without even needing to study as much as we do in undergrad. #line:55c6cd
+PLAYER: Wow, go ahead, speak your truth! #line:727137
+CARU: I needed to get it out, my god. #line:37d313
+PLAYER: At least the people are nice? #line:b90898
+CARU: It could be worse. #line:b78db5
+CARU: But it doesn't make up for how hellish the course is. #line:b2e702
+PLAYER: Looks like I lucked out then. I'm in a good course with cool people. #line:848a0f
+CARU: Part of me wants to warn you not to get too excited. #line:aedd53
+CARU: But I'm glad you're enjoying it. #line:e29880
+PLAYER: I hope I don't end up like you in the seventh semester. #line:d16595
+CARU: I'm one in a million. #line:b336ff
+PLAYER: For better and for worse. #line:6dac98
+CARU: I hope my good sides make up for my faults. #line:642ce2
+PLAYER: Considering how much you've helped me already, your approval ratings are through the roof! #line:0840ac
+CARU: Great, I'll keep it that way, alright? #line:bbc53a
+PLAYER: Yes, sir! #line:a6f2ec
+<<chara("void")>>
+Caru continues to complain about the Statistics teachers to you. #line:8b4c72
+And you share a bit about how Professor Fern seems to be a peculiar professor. #line:ff0c31
+Soon, you both start feeling tired and prepare to sleep. #line:8641ba
 <<backTitle()>>
 ===
-      

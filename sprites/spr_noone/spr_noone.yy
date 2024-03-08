@@ -14,6 +14,8 @@
   "For3D": false,
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2437b60f-3b4e-4b71-8231-9667810e852c",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d78963d4-9fce-4850-846e-84473dfd09bd",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"29280574-6f46-44a3-8e65-aedcf86b81ee",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -43,7 +45,7 @@
     "events": {"resourceType":"KeyframeStore<MessageEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "eventStubScript": null,
     "eventToFunction": {},
-    "length": 1.0,
+    "length": 3.0,
     "lockOrigin": false,
     "moments": {"resourceType":"KeyframeStore<MomentsEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "playback": 1,
@@ -55,6 +57,8 @@
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"2437b60f-3b4e-4b71-8231-9667810e852c","path":"sprites/spr_noone/spr_noone.yy",},},},"Disabled":false,"id":"f72b0ecf-860e-4672-b10e-8de78074677e","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"d78963d4-9fce-4850-846e-84473dfd09bd","path":"sprites/spr_noone/spr_noone.yy",},},},"Disabled":false,"id":"8a4ae1b1-3fae-4853-91d3-08d410aadcd6","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"29280574-6f46-44a3-8e65-aedcf86b81ee","path":"sprites/spr_noone/spr_noone.yy",},},},"Disabled":false,"id":"d64c6284-9351-4b7d-8c4b-a52fd206cc47","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

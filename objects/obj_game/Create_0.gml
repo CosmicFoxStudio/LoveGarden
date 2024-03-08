@@ -31,16 +31,15 @@ global.actions[1] = 3;	// DAY 1
 global.actions[2] = 3;	// DAY 2
 global.actions[3] = 3;	// DAY 3
 global.actions[4] = 3;	// DAY 4
-global.maxActions = [0, 3, 3, 3, 3];
+global.maxActions = [0, 5, 5, 5, 5];
 global.flags = { 
 	met_solanum: 0,
-	dormitory_morning_saw: false,
 	orange_photo_book_talk: false,
 	met_hydra: false,
-	finished_fern_intro: false,
 	sat_with_ype: false,
 	sat_with_hydra: false,
-	stood_ype_up: false
+	stood_ype_up: false,
+	sat_alone: false
 };
 
 // Player Info
@@ -148,11 +147,9 @@ if (os_browser == browser_not_a_browser) {
 else {
 	// In browser - load files manually
 	ChatterboxLoadFromFile("scenes/main_day0_test.yarn");
-	ChatterboxLoadFromFile("scenes/main_day1_dormroom.yarn");
 	ChatterboxLoadFromFile("scenes/main_day1_dormitory.yarn");
-	ChatterboxLoadFromFile("scenes/main_day1_boat_departure.yarn");
-	ChatterboxLoadFromFile("scenes/main_day1_school.yarn");
-	ChatterboxLoadFromFile("scenes/main_day1_classroom.yarn");
+	ChatterboxLoadFromFile("scenes/main_day1_boat.yarn");
+	ChatterboxLoadFromFile("scenes/main_day1_sciences.yarn");
 }
 
 #endregion CHATTERBOX LOAD FILES
@@ -162,11 +159,9 @@ else {
 // Room-to-yarn map
 global.roomYarnMap = ds_map_create();
 global.roomYarnMap[? "rm_test"	]			= "scenes/main_day0_test.yarn";
-global.roomYarnMap[? "rm_dormroom"	]		= "scenes/main_day1_dormroom.yarn";
 global.roomYarnMap[? "rm_dormitory"	]		= "scenes/main_day1_dormitory.yarn";
-global.roomYarnMap[? "rm_boat"	]			= "scenes/main_day1_boat_departure.yarn";
-global.roomYarnMap[? "rm_school"]			= "scenes/main_day1_school.yarn";
-global.roomYarnMap[? "rm_classroom"	]		= "scenes/main_day1_classroom.yarn";
+global.roomYarnMap[? "rm_boat"	]			= "scenes/main_day1_boat.yarn";
+global.roomYarnMap[? "rm_sciences"]			= "scenes/main_day1_sciences.yarn";
 // And so on...
 
 // ----------------------- Chatterbox Localization Build -----------------------  //
@@ -195,12 +190,15 @@ ChatterboxAddFunction("nextDay", NextDay);							// Increments by 1 global.day a
 ChatterboxAddFunction("nextDaytime", NextDaytime);					// Increments by 1 global.currentDaytime
 ChatterboxAddFunction("nextRoom", NextRoom);						// Function to change scene
 ChatterboxAddFunction("transition", DialogueTransition);			// Transition VFX
+ChatterboxAddFunction("bgTransition", BackgroundWaitTransition);	// Change background using transition
 ChatterboxAddFunction("setFlag", FlagSet);							// Sets a value to a flag
 ChatterboxAddFunction("getFlag", FlagGet);							// Returns the value of a given flag
 #endregion CHATTERBOX INITIALIZE CUSTOMS
 
 // ------------------------------ TESTING ZONE ---------------------------------- //
-if (Debug()) instance_create_layer(ORIGIN_X, ORIGIN_Y, "Controllers", DEBUG_DRAWER);
+if (Debug()) {
+	instance_create_layer(ORIGIN_X, ORIGIN_Y, "Controllers", DEBUG_DRAWER);
+}
 
 // Add first room here
 room_goto(rm_lang);

@@ -1,0 +1,79 @@
+title: Morning
+---
+<<jump Departure>>
+===
+
+title: Noon
+---
+===
+
+title: Afternoon
+---
+<<jump Arrival>>
+===
+
+title: Night
+---
+===
+
+title: Departure
+---
+(You sit on one of the benches of the boat and finally relax a bit.) #line:8e8e71
+(Your mind goes back to the dream you had before Caru woke you up.) #line:b95050
+PLAYER: (I've been having these dreams since I got here.) #line:93e669
+PLAYER: (It feels like they're trying to tell me something.) #line:40d502
+PLAYER: (It feels like they're trying to tell me something.) #line:eb5c58
+-> ... (I feel anxious about the future.) #line:923d13
+    <<changeRelationship("player", -1)>>
+-> ... (I'm not sure how I feel about the future.) #line:0c09f9
+-> ... (I feel excited about the future.) #line:718328
+    <<changeRelationship("player", 1)>>
+PLAYER: (To tell the truth, I don't know why I came here.) #line:946fec
+PLAYER: (Hmm, okay. Actually, I do know.) #line:c55ee5
+PLAYER: (I was lost. Purposeless. Unwilling to accept that I need to choose something.) #line:fb09c6
+PLAYER: (Adulthood has barely begun, and I already feel so tired.) #line:097d77
+PLAYER: (But escaping from my routine was all I wanted.) #line:7c3069
+PLAYER: (To bet on something new, different.) #line:bb0a3e
+PLAYER: (That's what they say university means for some, right?) #line:c7f467
+PLAYER: (Rediscovery.) #line:b65c62
+PLAYER: (I'm here for that. Or at least, to try.) #line:b0b658
+PLAYER: (Not that school was bad for me, but it wasn't anything special either, you know?) #line:e1df51
+PLAYER: (...) #line:0d0623
+PLAYER: (Okay, that was quite emotional and it's still 7:10 in the morning.) #line:7dfa0a
+PLAYER: (This journey has just begun, let's try to think positive!) #line:6fb559
+<<nextRoom("rm_sciences")>>
+===
+
+title: Arrival
+---
+PLAYER: It was actually quite calm after all, ha ha... #line:7a8242
+PLAYER: I thought the first day would be harder thanks to Caru's talk this morning. #line:3e00b9
+Your phone vibrates insistently in your pocket, and you silence it, wanting to appreciate the moment. #line:e6fad3
+Until... A feeling of guilt consumes you a bit... #line:a67dbc
+PLAYER: It's okay not to respond now... #line:343ce5
+PLAYER: I'm still adapting, right? #line:bdae94
+PLAYER: And it's not like I can always tell them the truth... #line:b187d2
+PLAYER: They never understand that I need to face these challenges. #line:b9cd51
+PLAYER: They'll beg me to come back home at the first opportunity they get. #line:5c3260
+PLAYER: And I can't give them that opening... #line:787203
+PLAYER: Things have just started. #line:1e1f56
+PLAYER: Things have just started. #line:bc5d49
+-> This is my fresh start. #line:b64bfa
+    <<changeRelationship("player", 1)>>
+    PLAYER: This is my fresh start. #line:8ecf06
+    PLAYER: And I can't let them ruin it! #line:e627a7
+-> I know I can't run away forever. #line:124154
+    <<changeRelationship("player", -1)>>
+    PLAYER: And here I am, talking about starting anew. #line:9e3f54
+    PLAYER: Don't they understand I just need some space? #line:f13bc6
+Some people look at you suspiciously. #line:285434
+You said that last phrase a bit louder than you should have. #line:e3c9ba
+Your face flushes a bit, and you shrink with embarrassment. #line:e08cf1
+<<if getRelationship("player") >= 1>>
+    But deep down, you feel determined. #line:fe2d4a
+<<else>>
+    PLAYER: (sigh) #line:7829a0
+    Inside, you feel like you've already lost this battle for your future. #line:399c43
+<<endif>>
+<<nextRoom("rm_dormitory")>>
+===

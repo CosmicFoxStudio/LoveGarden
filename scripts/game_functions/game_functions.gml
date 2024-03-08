@@ -71,23 +71,20 @@ function ConvertDate(_date) {
 // To display on save slot and file
 function DecideRoomName() {
 	switch (global.rmCurrent) {
-	    case "rm_dormroom":
-			global.location = "Dormroom";
-			break;
 		case "rm_dormitory":
 			global.location = "Dormitory";
 			break;
-		case "rm_restaurant":
-			global.location = "Food Court";
+		case "rm_boat":
+			global.location = "Boat";
 			break;
-		case "rm_courtyard":
-			global.location = "Courtyard";
+		case "rm_sciences":
+			global.location = "Science Dept.";
 			break;
-		case "rm_school":
-			global.location = "School";
+		case "rm_central":
+			global.location = "Central Building";
 			break;
-		case "rm_classroom":
-			global.location = "Classroom";
+		case "rm_lake":
+			global.location = "Lake";
 			break;
 		case "rm_gazebo":
 			global.location = "Gazebo";
@@ -95,7 +92,6 @@ function DecideRoomName() {
 		case "rm_test":
 			global.location = "Test Zone";
 			break;
-		case "rm_boat":
 		case "rm_init":
 		case "rm_lang":
 		case "rm_template":

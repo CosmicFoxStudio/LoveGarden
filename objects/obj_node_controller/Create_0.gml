@@ -2,7 +2,7 @@
 node = undefined;
 chatterbox = noone;
 text = "";
-nodeName = "Morning";
+nodeName = InitialNode();
 roomName = "";
 optionIndex = 0;                                
 optionHovered = -1; 
