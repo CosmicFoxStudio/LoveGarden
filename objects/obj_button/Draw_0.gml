@@ -16,7 +16,8 @@ if (!unavailable) {
 // Draw text with the calculated color
 var languageIndex = (global.lang == "en") ? e_language.EN : e_language.PT;
 var translatedText = btnText[btnType][languageIndex];
-draw_text_ext_color(x, y-7, translatedText, 0, btnWidth, textColor, textColor, textColor, textColor, image_alpha);
+var halfTextWidth = max(string_width(translatedText) / 2, sprite_width / 2);
+draw_text_ext_color(x + halfTextWidth, y + sprite_height, translatedText, 0, btnWidth, textColor, textColor, textColor, textColor, image_alpha);
 
 // When the button is unavailable, its alpha is halved
 if (unavailable) {

@@ -23,9 +23,13 @@ for(var i =0; i < optionLength; i++) {
 	}
 }
 
-if(_buttonSelected || InputCheck(e_input.KEYBOARD, "confirm")) {
-	menuOptions[pos].selected = true;
-	_buttonSelected = true;
-	show_debug_message("Input selected. Input mode: " + string(menuOptions[pos].btnType))
-	exit;
+if(_buttonSelected || 
+	InputCheck(e_input.KEYBOARD, "confirm") || 
+	InputCheck(e_input.KEYBOARD, "start")
+) {
+	menuOptions[pos].selected = false;
+	_buttonSelected = false;
+	global.inputMode = menuOptions[pos].btnType;
+	global.keybind = obj_game.KeybindingCreate(global.inputMode);
+	GameTransitionChangeRoom(rm_lang, sq_trans_fade_white);
 }
