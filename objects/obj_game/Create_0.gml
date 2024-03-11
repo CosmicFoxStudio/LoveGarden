@@ -3,7 +3,7 @@
 // Initializes globals & enumerators
 Enums();
 camera = -1;
-global.debug = true;
+global.debug = false;
 global.lastFontUsed = -1;
 DrawFont(fnt_dialogue); // Run the first time
 global.configMenu = noone;

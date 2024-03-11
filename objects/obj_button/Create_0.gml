@@ -8,5 +8,5 @@ keyboardSelection = false;
 selected = false;
 image_alpha = 0.5;
 
-btnText[e_input.KEYBOARD] = ["KEYBOARD", "TECLADO"];
-btnText[e_input.MOUSE] = ["MOUSE", "MOUSE"];
+btnText[e_input.KEYBOARD] = ["KEYBOARD/TECLADO", "TECLADO/KEYBOARD"];
+btnText[e_input.MOUSE] = ["  MOUSE", "  MOUSE"];

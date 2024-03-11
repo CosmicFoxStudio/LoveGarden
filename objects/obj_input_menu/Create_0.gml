@@ -10,10 +10,10 @@
 //optionMargin = 48;
 
 // Create Buttons
-keyboardButton = instance_create_layer(240, 140, "Instances_Below", obj_keyboard_btn);
+keyboardButton = instance_create_layer(235, 140, "Instances_Below", obj_keyboard_btn);
 keyboardButton.btnType = e_input.KEYBOARD;
 keyboardButton.unavailable = false;
-mouseButton = instance_create_layer(390, 140, "Instances_Below", obj_mouse_btn);
+mouseButton = instance_create_layer(385, 135, "Instances_Below", obj_mouse_btn);
 mouseButton.btnType = e_input.MOUSE;
 mouseButton.unavailable = false;
 
