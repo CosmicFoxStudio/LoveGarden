@@ -10,3 +10,5 @@
 - Chatterbox: new functions <<getPlace()>> and <<reward()>>
 - Implement new Relationship and Action System
 - Implement new Phone UI
+- Accessibility: Font size and different fonts to read
+- Input System: Multiple Inputs at the same time
