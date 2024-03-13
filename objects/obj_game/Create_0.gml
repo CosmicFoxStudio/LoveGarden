@@ -201,4 +201,4 @@ if (Debug()) {
 }
 
 // Add first room here
-room_goto(rm_lang);
+room_goto(rm_input_mode);
