@@ -1,14 +1,18 @@
-- Add functionalities to Dialogue System
-- Map
-- Finish Config Menu
-- Audio System
-- Save System
-- English Gender Inflection
-- Cosmic Fox logo before starting the game
-- Scene Pop Up
-- Dialogue System: Multiple characters on screen!
-- Chatterbox: new functions <<getPlace()>> and <<reward()>>
-- Implement new Relationship and Action System
-- Implement new Phone UI
-- Accessibility: Font size and different fonts to read
-- Input System: Multiple Inputs at the same time
+## UI e Configurações (Henrique)
+	- Implement new Phone UI
+	- Finish Menu Functionalities
+	- Cosmic Fox logo before starting the game
+	
+## Lógicas de Sistemas (Iuri)
+	- Map and Action System
+	- Audio System
+	- Input System: Multiple Inputs at the same time
+	- Save System
+	- English Gender Inflection
+	
+## Sistema de Diálogo (?)
+	- Scene Pop Up
+	- Add functionalities to Dialogue System
+	- Chatterbox: new functions <<getPlace()>> and <<reward()>>
+	- Dialogue System: Multiple characters on screen!
+	- Accessibility: Font size and different fonts to read
