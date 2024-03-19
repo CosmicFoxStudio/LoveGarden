@@ -5,29 +5,27 @@ if (global.state == e_gameStates.FILE_SELECTION) {
 	if (!global.midTransition) {
 		
 		// Logic for navigating the save slots
-		if (global.inputMode == e_input.KEYBOARD) { // ON KEYBOARD
-			if ( InputCheck("down", e_input.KEYBOARD) ) {
-				if (selectedOption + 1) < maxSlots selectedOption++;
-				else selectedOption = 0;
-			}
-			else if ( InputCheck("up", e_input.KEYBOARD) ) {
-				if (selectedOption - 1) >= 0 selectedOption--;	
-				else selectedOption = (maxSlots - 1);
-			}
+		if ( InputCheck("down", e_input.KEYBOARD) ) {
+			if (selectedOption + 1) < maxSlots selectedOption++;
+			else selectedOption = 0;
 		}
-		else if (global.inputMode == e_input.MOUSE) { // ON MOUSE
-			for (var slot = 0; slot < maxSlots; slot++) {
-				if (position_meeting(mouse_x, mouse_y, saveSlotArray[slot])) {
-					selectedOption = slot;
-					mouseSelected = true;
-					break;
-				}
-				else mouseSelected = false;
+		else if ( InputCheck("up", e_input.KEYBOARD) ) {
+			if (selectedOption - 1) >= 0 selectedOption--;	
+			else selectedOption = (maxSlots - 1);
+		}
+
+		for (var slot = 0; slot < maxSlots; slot++) {
+			if (position_meeting(mouse_x, mouse_y, saveSlotArray[slot])) {
+				selectedOption = slot;
+				mouseSelected = true;
+				break;
+			}
+			else mouseSelected = false;
 				
-				// Change subimage to match
-				subimage = position_meeting(mouse_x, mouse_y, obj_save_slot);
-			}
+			// Change subimage to match
+			subimage = position_meeting(mouse_x, mouse_y, obj_save_slot);
 		}
+
 		
 		// ---------------------------- CONFIRM SELECTION --------------------------- //
 

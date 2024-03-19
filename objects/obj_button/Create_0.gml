@@ -1,6 +1,5 @@
 /// @description Basic buttons functions
 
-btnType = e_input.KEYBOARD;
 btnWidth = 125;
 unavailable = true;
 hovering = false;
