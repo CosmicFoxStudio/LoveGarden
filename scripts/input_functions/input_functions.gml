@@ -57,8 +57,12 @@ function InputVerb(_verb, _func) {
 	            show_debug_message("Invalid input verb.");
 	            return false;
 	    }
+		
+		if(_checkInput) {
+			break;
+		}
 	}
-
+	
 	return _checkInput;
 }
 
@@ -73,11 +77,54 @@ function InputCheck(_verb, _inputMode = -1,  _pressType = "pressed") {
 	else if (_pressType == "released") func = InputCheckReleased;
 	else if (_pressType == "held") func =  InputCheckHeld;
 	
+	//var _returnValue = func(_inputMode, _verb);
+	//if(_returnValue) {
+	//	show_debug_message("InputCheck verb: " + string(_verb));
+	//	show_debug_message("InputCheck input mode: " + string(_inputMode));
+	//	show_debug_message("InputCheck press type: " + string(_pressType));
+	//}
+	
 	return func(_inputMode, _verb);
 }
 
 // Called by InputCheck()
 function InputCheckPressed(_inputMode, _verb) {
+	var func = array_create(3, function(_numb) {
+			return false;
+		}
+	);
+	if _inputMode == e_input.MOUSE func[e_input.MOUSE] = mouse_check_button_pressed;
+	else if _inputMode == e_input.KEYBOARD func[e_input.KEYBOARD] = keyboard_check_pressed;
+	else if _inputMode == e_input.GAMEPAD func[e_input.GAMEPAD] = gamepad_button_check_pressed;
+	else {
+		func[e_input.MOUSE] = mouse_check_button_pressed; 
+		func[e_input.KEYBOARD] = keyboard_check_pressed;
+		func[e_input.GAMEPAD] = gamepad_button_check_pressed;
+	}
+	
+	return InputVerb(_verb, func);
+}
+
+// Called by InputCheck()
+function InputCheckReleased(_inputMode, _verb) {
+	var func = array_create(3, function(_numb) {
+			return false;
+		}
+	);
+	if _inputMode == e_input.MOUSE func[e_input.MOUSE] = mouse_check_button_released;
+	else if _inputMode == e_input.KEYBOARD func[e_input.KEYBOARD] = keyboard_check_released;
+	else if _inputMode == e_input.GAMEPAD func[e_input.GAMEPAD] = gamepad_button_check_released;
+	else {
+		func[e_input.MOUSE] = mouse_check_button_released; 
+		func[e_input.KEYBOARD] = keyboard_check_released;
+		func[e_input.GAMEPAD] = gamepad_button_check_released;
+	}
+
+	return InputVerb(_verb, func);
+}
+
+// Called by InputCheck()
+function InputCheckHeld(_inputMode, _verb) {
 	var func = array_create(3, function(_numb) {
 			return false;
 		}
@@ -90,29 +137,7 @@ function InputCheckPressed(_inputMode, _verb) {
 		func[e_input.KEYBOARD] = keyboard_check;
 		func[e_input.GAMEPAD] = gamepad_button_check;
 	}
-	
-	return InputVerb(_verb, func);
-}
 
-// Called by InputCheck()
-function InputCheckReleased(_inputMode, _verb) {
-	var func;
-	if _inputMode == e_input.MOUSE func = [mouse_check_button];
-	else if _inputMode == e_input.KEYBOARD func = [keyboard_check];
-	else if _inputMode == e_input.GAMEPAD func = [gamepad_button_check];
-	else func = [mouse_check_button, keyboard_check, gamepad_button_check];
-	
-	return InputVerb(_verb, func);
-}
-
-// Called by InputCheck()
-function InputCheckHeld(_inputMode, _verb) {
-	var func;
-	if _inputMode == e_input.MOUSE func = [mouse_check_button];
-	else if _inputMode == e_input.KEYBOARD func = [keyboard_check];
-	else if _inputMode == e_input.GAMEPAD func = [gamepad_button_check];
-	else func = [mouse_check_button, keyboard_check, gamepad_button_check];
-	
 	return InputVerb(_verb, func);
 }
 
