@@ -6,50 +6,71 @@ function InputVerb(_verb, _func) {
 	    switch (_verb) {
 	        case "confirm":
 	            _checkInput = (_checkInput || 
-					(global.keybind[_i].confirm == -1 ?
-						false : _func[_i](global.keybind[_i].confirm)
+					(global.primaryKeybind[_i].confirm == -1 ?
+						false : _func[_i](global.primaryKeybind[_i].confirm)
+					) ||
+					(global.secondaryKeybind[_i].confirm == -1 ?
+						false : _func[_i](global.secondaryKeybind[_i].confirm)
 					)
 				);
 	            break;
 	        case "cancel":
 	            _checkInput = (_checkInput || 
-					(global.keybind[_i].cancel == -1 ? 
-						false : _func[_i](global.keybind[_i].cancel)
+					(global.primaryKeybind[_i].cancel == -1 ? 
+						false : _func[_i](global.primaryKeybind[_i].cancel)
+					) ||
+					(global.secondaryKeybind[_i].cancel == -1 ? 
+						false : _func[_i](global.secondaryKeybind[_i].cancel)
 					)
 				);
 	            break;
 	        case "start":
-	            _checkInput = (
-					_checkInput || (global.keybind[_i].start == -1 ? 
-						false : _func[_i](global.keybind[_i].start)
+	            _checkInput = (_checkInput || 
+					(global.primaryKeybind[_i].start == -1 ? 
+						false : _func[_i](global.primaryKeybind[_i].start)
+					) ||
+					(global.secondaryKeybind[_i].start == -1 ? 
+						false : _func[_i](global.secondaryKeybind[_i].start)
 					)
 				);
 	            break;
 	        case "up":
-	            _checkInput = (
-					_checkInput || (global.keybind[_i].up == -1 ? 
-						false : _func[_i](global.keybind[_i].up)
+	            _checkInput = (_checkInput || 
+					(global.primaryKeybind[_i].up == -1 ? 
+						false : _func[_i](global.primaryKeybind[_i].up)
+					) ||
+					(global.secondaryKeybind[_i].up == -1 ? 
+						false : _func[_i](global.secondaryKeybind[_i].up)
 					)
 				);
 	            break;
 	        case "down":
-	            _checkInput = (
-					_checkInput || (global.keybind[_i].down == -1 ? 
-						false : _func[_i](global.keybind[_i].down)
+	            _checkInput = (_checkInput || 
+					(global.primaryKeybind[_i].down == -1 ? 
+						false : _func[_i](global.primaryKeybind[_i].down)
+					) ||
+					(global.secondaryKeybind[_i].down == -1 ? 
+						false : _func[_i](global.secondaryKeybind[_i].down)
 					)
 				);
 	            break;
 	        case "left":
-	            _checkInput = (
-					_checkInput || (global.keybind[_i].left == -1 ? 
-						false : _func[_i](global.keybind[_i].left)
+	            _checkInput = (_checkInput || 
+					(global.primaryKeybind[_i].left == -1 ? 
+						false : _func[_i](global.primaryKeybind[_i].left)
+					) ||
+					(global.secondaryKeybind[_i].left == -1 ? 
+						false : _func[_i](global.secondaryKeybind[_i].left)
 					)
 				);
 	            break;
 	        case "right":
-	            _checkInput = (
-					_checkInput || (global.keybind[_i].right == -1 ? 
-						false : _func[_i](global.keybind[_i].right)
+	            _checkInput = (_checkInput || 
+					(global.primaryKeybind[_i].right == -1 ? 
+						false : _func[_i](global.primaryKeybind[_i].right)
+					) ||
+					(global.secondaryKeybind[_i].right == -1 ? 
+						false : _func[_i](global.secondaryKeybind[_i].right)
 					)
 				);
 	            break;

@@ -19,7 +19,7 @@ for(var _i =0; _i < optionLength; _i++) {
 }
 
 if((menuOptions[pos].hovering && InputCheck("confirm", e_input.MOUSE)) ||
-	InputCheck("confirm", e_input.KEYBOARD) || InputCheck("start", e_input.KEYBOARD)
+	InputCheck("confirm", e_input.KEYBOARD)
 ) {
 	global.inputMode = menuOptions[pos].btnType;
 	GameTransitionChangeRoom(rm_lang, sq_trans_fade_white);
