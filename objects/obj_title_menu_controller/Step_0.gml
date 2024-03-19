@@ -20,7 +20,7 @@ if (pos < 0) pos = optionLength - 1; // goes to the last pos
 
 // Keyboard Input
 if (global.inputMode == e_input.KEYBOARD) {
-	if ( InputCheck(e_input.KEYBOARD, "confirm") ) {
+	if ( InputCheck("confirm", e_input.KEYBOARD) ) {
 	    ExecuteButtonAction(pos);
 	}
 }
@@ -32,7 +32,7 @@ if (global.inputMode == e_input.MOUSE) {
 
 	    // Check if the mouse is hovering over the current button
 	    if (IsHovering(currentButton)) {
-	        if ( InputCheck(e_input.MOUSE, "confirm") ) {
+	        if ( InputCheck("confirm", e_input.MOUSE) ) {
 	            ExecuteButtonAction(currentButton.btnType);
 	        }
 	    }

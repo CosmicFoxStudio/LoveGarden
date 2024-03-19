@@ -8,7 +8,7 @@ TypistCheckPause();
 
 // Fast-forwarding
 /*
-if (global.inputMode == e_input.MOUSE && InputCheck(e_input.MOUSE, "confirm", "held")) {
+if (global.inputMode == e_input.MOUSE && InputCheck("confirm", e_input.MOUSE, "held")) {
 	ChatterboxFastForward(chatterbox);
 }
 */
@@ -16,7 +16,7 @@ if (global.inputMode == e_input.MOUSE && InputCheck(e_input.MOUSE, "confirm", "h
 if (global.state != e_gameStates.PAUSED && global.state != e_gameStates.MENU && global.hoveringButton == false) {
 	// Waiting for user input or waiting for the user to choose an option
 	if (ChatterboxIsWaiting(chatterbox)) {
-	    if ((InputCheck(e_input.KEYBOARD, "confirm") && global.keyboardIcons == false) || (InputCheck(e_input.MOUSE, "confirm") && global.hoveringTextbox == true)) {
+	    if ((InputCheck("confirm", e_input.KEYBOARD) && global.keyboardIcons == false) || (InputCheck("confirm", e_input.MOUSE) && global.hoveringTextbox == true)) {
 			// Debug text
 			//show_debug_message(text);
 			
@@ -68,8 +68,8 @@ if (global.state != e_gameStates.PAUSED && global.state != e_gameStates.MENU && 
 		}
 	
 	    // Option confirmation
-	    if  (InputCheck(e_input.MOUSE, "confirm") && optionHovered != -1) ||
-			( InputCheck(e_input.KEYBOARD, "confirm") ) {
+	    if  (InputCheck("confirm", e_input.MOUSE) && optionHovered != -1) ||
+			( InputCheck("confirm", e_input.KEYBOARD) ) {
 	        ChatterboxSelect(chatterbox, optionIndex);
 	        audio_play_sound(snd_option_beep, 0, false, 1, 0, random_range(0.8, 1.2));
 		

@@ -13,7 +13,7 @@ if (!global.isMapOn && mapButtonOn == true && global.roomType == e_roomTypes.SCE
 
 // Keyboard input to use the buttons
 if (global.roomType == e_roomTypes.SCENES && global.inputMode == e_input.KEYBOARD && global.state != e_gameStates.MENU) {
-	if (InputCheck(e_input.KEYBOARD, "start"))
+	if (InputCheck("start", e_input.KEYBOARD))
 		global.keyboardIcons = !global.keyboardIcons;
 		
 	// Move through options
@@ -33,7 +33,7 @@ if (global.roomType == e_roomTypes.SCENES && global.inputMode == e_input.KEYBOAR
 		}
 		
 		// Choose the button
-		if (InputCheck(e_input.KEYBOARD, "confirm") && global.state == e_gameStates.CONTINUE_GAME) {
+		if (InputCheck("confirm", e_input.KEYBOARD) && global.state == e_gameStates.CONTINUE_GAME) {
 			buttonsList[pos].doAction = true;
 		} else if (global.state == e_gameStates.RESUME) {
 			GameChangeState(e_gameStates.CONTINUE_GAME);

@@ -77,7 +77,7 @@ if (global.inputMode == e_input.MOUSE) {
 			pos = i;
 			
 			 // Confirm Input
-			if (InputCheck(e_input.MOUSE, "confirm")) {
+			if (InputCheck("confirm", e_input.MOUSE)) {
 				
 				if (phase == e_phases.PHASE_1) {
 				    // Assign selected option to global
@@ -117,7 +117,7 @@ switch(phase) {
 	case e_phases.PHASE_1 :
 	
 		// Keyboard Input
-		if ( InputCheck(e_input.KEYBOARD, "confirm") ) {
+		if ( InputCheck("confirm", e_input.KEYBOARD) ) {
 			// Assign selected option to global
 			global.pronouns = pos;
 			// Reset position
@@ -134,7 +134,7 @@ switch(phase) {
 			// Delete
 			case 0 :
 				// Keyboard delete
-                if (InputCheck(e_input.KEYBOARD, "confirm")) {
+                if (InputCheck("confirm", e_input.KEYBOARD)) {
                     show_debug_message("Deleting");
                     
                     // Checking if there's at least one char
@@ -145,7 +145,7 @@ switch(phase) {
                 }
                 
                 // Mouse delete
-                if (InputCheck(e_input.MOUSE, "confirm")) {
+                if (InputCheck("confirm", e_input.MOUSE)) {
                     show_debug_message("Deleting");
                     
                     // Checking if there's at least one char
@@ -159,7 +159,7 @@ switch(phase) {
 			// Delete All
 			case 1 :
 				// Keyboard delete
-                if (InputCheck(e_input.KEYBOARD, "confirm")) {
+                if (InputCheck("confirm", e_input.KEYBOARD)) {
                     show_debug_message("Deleting All");
                     
                     // Checking if there's at least one char
@@ -170,7 +170,7 @@ switch(phase) {
                 }
                 
                 // Mouse delete
-                if (InputCheck(e_input.MOUSE, "confirm")) {
+                if (InputCheck("confirm", e_input.MOUSE)) {
                     show_debug_message("Deleting All");
                     
                     // Checking if there's at least one char
@@ -183,7 +183,7 @@ switch(phase) {
 					
 			// Confirm
 			case 2: 		
-				if ( /*( InputCheck(e_input.MOUSE, "confirm") || */ InputCheck(e_input.KEYBOARD, "confirm") && string_length(currentString) > 0) {
+				if ( /*( InputCheck("confirm", e_input.MOUSE) || */ InputCheck("confirm", e_input.KEYBOARD) && string_length(currentString) > 0) {
 					// Assign to global
 					global.playerName = string_upper(currentString);
 			
@@ -212,7 +212,7 @@ optionLength = array_length(phaseOptions[phase]);
 
 // Delete with cancel input (keyboard only)
 if  ( (phase == e_phases.PHASE_2 && pos == 0 ) ) {
-	if (InputCheck(e_input.KEYBOARD, "cancel") ) {
+	if (InputCheck("cancel", e_input.KEYBOARD) ) {
 		if (letterCount >= 1) {
 			currentString = string_delete(currentString, letterCount, 1);
 			audio_play_sound(snd_cant, 1, false);

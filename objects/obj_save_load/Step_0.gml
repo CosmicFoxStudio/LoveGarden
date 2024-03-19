@@ -6,11 +6,11 @@ if (global.state == e_gameStates.FILE_SELECTION) {
 		
 		// Logic for navigating the save slots
 		if (global.inputMode == e_input.KEYBOARD) { // ON KEYBOARD
-			if ( InputCheck(e_input.KEYBOARD, "down") ) {
+			if ( InputCheck("down", e_input.KEYBOARD) ) {
 				if (selectedOption + 1) < maxSlots selectedOption++;
 				else selectedOption = 0;
 			}
-			else if ( InputCheck(e_input.KEYBOARD, "up") ) {
+			else if ( InputCheck("up", e_input.KEYBOARD) ) {
 				if (selectedOption - 1) >= 0 selectedOption--;	
 				else selectedOption = (maxSlots - 1);
 			}
@@ -31,8 +31,8 @@ if (global.state == e_gameStates.FILE_SELECTION) {
 		
 		// ---------------------------- CONFIRM SELECTION --------------------------- //
 
-		if	( InputCheck(e_input.KEYBOARD, "confirm") ) ||
-			(InputCheck(e_input.MOUSE, "confirm") && mouseSelected) {
+		if	( InputCheck("confirm", e_input.KEYBOARD) ) ||
+			(InputCheck("confirm", e_input.MOUSE) && mouseSelected) {
 				
 			// Check for existing save slot
 			global.saveSlot = selectedOption;
@@ -59,8 +59,8 @@ if (global.state == e_gameStates.FILE_SELECTION) {
 		}
 		// ---------------------------- DELETE SAVE FILE --------------------------- //
 		// Press cancel to delete the save file
-		else if ( InputCheck(e_input.KEYBOARD, "cancel") ) ||
-			(InputCheck(e_input.MOUSE, "cancel") && mouseSelected)  {
+		else if ( InputCheck("cancel", e_input.KEYBOARD) ) ||
+			(InputCheck("cancel", e_input.MOUSE) && mouseSelected)  {
 			global.saveSlot = selectedOption;
 		
 			// Delete the file

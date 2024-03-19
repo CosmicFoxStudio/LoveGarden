@@ -34,8 +34,8 @@ if (phase == "SELECT") {
 	// -------------------------------------------------------------------------- //
 
 	// Choose a language
-	if	( InputCheck(e_input.MOUSE, "confirm") && isMouseHoveringMenu ) || 
-		(InputCheck(e_input.KEYBOARD, "confirm") ) {
+	if	( InputCheck("confirm", e_input.MOUSE) && isMouseHoveringMenu ) || 
+		(InputCheck("confirm", e_input.KEYBOARD) ) {
 		switch(pos) {
 			case 0: 
 				phase = "CONFIRM";
@@ -72,7 +72,7 @@ if (phase == "CONFIRM") {
 			posButtons = 0;
 		
 		    // Player cancelled the selection
-		    if ( InputCheck(e_input.MOUSE, "confirm") ) {
+		    if ( InputCheck("confirm", e_input.MOUSE) ) {
 				selectedButton = "CANCEL";
 			}
 			
@@ -82,7 +82,7 @@ if (phase == "CONFIRM") {
 			posButtons = 1;
 	    
 			// Player confirmed the selection
-			if ( InputCheck(e_input.MOUSE, "confirm") ) {
+			if ( InputCheck("confirm", e_input.MOUSE) ) {
 				selectedButton = "CONFIRM";
 			}
 		}
@@ -97,7 +97,7 @@ if (phase == "CONFIRM") {
 		if (posButtons < 0) posButtons = numberOfButtons - 1; // goes to last pos
 	
 		// Confirm
-		if ( InputCheck(e_input.KEYBOARD, "confirm") ) {
+		if ( InputCheck("confirm", e_input.KEYBOARD) ) {
 			// Player cancelled the selection
 			if (posButtons == 0) {
 				selectedButton = "CANCEL";
@@ -109,7 +109,7 @@ if (phase == "CONFIRM") {
 		}
 	
 		// Cancel
-		if ( InputCheck(e_input.KEYBOARD, "cancel") ) {
+		if ( InputCheck("cancel", e_input.KEYBOARD) ) {
 			selectedButton = "CANCEL";
 		}
 	}
