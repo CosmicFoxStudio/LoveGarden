@@ -36,78 +36,74 @@ if (phase == e_phases.PHASE_2) {
 }
 
 // ---------------------------- KEYBOARD INPUT  -------------------------- //
-if (global.inputMode == e_input.KEYBOARD) {
-	// Keyboard Input - Move through options
-	pos += CheckHorizontalInput();
+// Keyboard Input - Move through options
+pos += CheckHorizontalInput();
 
-	// Wrap menu
-	if (pos >= optionLength) pos = 0; // goes back to first pos
-	if (pos < 0) pos = optionLength - 1; // goes to last pos
-}
+// Wrap menu
+if (pos >= optionLength) pos = 0; // goes back to first pos
+if (pos < 0) pos = optionLength - 1; // goes to last pos
 
 // ---------------------------- MOUSE INPUT  ---------------------------- //
-if (global.inputMode == e_input.MOUSE) {
-	var arr;
-	// Checking the correct array
-	if (phase == e_phases.PHASE_1) {
-		arr = rectBtnInstArray[e_phases.PHASE_1];
-	}
-	else {
-		arr = rectBtnInstArray[e_phases.PHASE_2];
-	}
-	
-	// Update option length 
-	optionLength = array_length(phaseOptions[phase]);
-	
-	var inst;
-	// Loop to check if mouse is hovering any of the instances
-	for (var i = 0; i < optionLength; i++) {
-		inst = arr[i];
-		
-		// Check if mouse is hovering
-		mouseHovering = instance_position(mouse_x, mouse_y, inst);
-		
-		// Visual effect when hovering
-		// inst.image_alpha = mouseHovering ? 0.5 : 0.3;
-
-		// ------------ CHECKING MOUSE HOVERING ------------ //
-		if (mouseHovering) {
-			// Assign position to mouse
-			lastHoveredOption = i;
-			pos = i;
-			
-			 // Confirm Input
-			if (InputCheck("confirm", e_input.MOUSE)) {
-				
-				if (phase == e_phases.PHASE_1) {
-				    // Assign selected option to global
-				    global.pronouns = pos;
-
-				    // Reset position
-				    pos = -1;
-					lastHoveredOption = -1;
-
-				    // Advance to next phase
-				    phase = e_phases.PHASE_2;
-				}
-				else if (phase == e_phases.PHASE_2 && pos == 2 && currentString != "") {
-					// Assign to global
-					global.playerName = string_upper(currentString);
-			
-					// Reset
-					//pos = 0;
-					//currentString = "";
-				
-					// End cutscene, advance to the next room
-					obj_dream.finishedPlayer = true;
-					instance_destroy();	
-				}
-			}
-            
-			break;
-		}
-	} // End of: For loop
+var arr;
+// Checking the correct array
+if (phase == e_phases.PHASE_1) {
+	arr = rectBtnInstArray[e_phases.PHASE_1];
 }
+else {
+	arr = rectBtnInstArray[e_phases.PHASE_2];
+}
+
+// Update option length 
+optionLength = array_length(phaseOptions[phase]);
+
+var inst;
+// Loop to check if mouse is hovering any of the instances
+for (var _i = 0; _i < optionLength; _i++) {
+	inst = arr[_i];
+	
+	// Check if mouse is hovering
+	mouseHovering = instance_position(mouse_x, mouse_y, inst);
+	
+	// Visual effect when hovering
+	// inst.image_alpha = mouseHovering ? 0.5 : 0.3;
+
+	// ------------ CHECKING MOUSE HOVERING ------------ //
+	if (mouseHovering) {
+		// Assign position to mouse
+		lastHoveredOption = _i;
+		pos = _i;
+		
+			// Confirm Input
+		if (InputCheck("confirm", e_input.MOUSE)) {
+			
+			if (phase == e_phases.PHASE_1) {
+				// Assign selected option to global
+				global.pronouns = pos;
+
+				// Reset position
+				pos = -1;
+				lastHoveredOption = -1;
+
+				// Advance to next phase
+				phase = e_phases.PHASE_2;
+			}
+			else if (phase == e_phases.PHASE_2 && pos == 2 && currentString != "") {
+				// Assign to global
+				global.playerName = string_upper(currentString);
+		
+				// Reset
+				//pos = 0;
+				//currentString = "";
+			
+				// End cutscene, advance to the next room
+				obj_dream.finishedPlayer = true;
+				instance_destroy();	
+			}
+		}
+		
+		break;
+	}
+} // End of: For loop
 
 
 // Action Loop

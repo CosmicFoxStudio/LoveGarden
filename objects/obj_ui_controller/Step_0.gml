@@ -12,9 +12,14 @@ if (!global.isMapOn && mapButtonOn == true && global.roomType == e_roomTypes.SCE
 }
 
 // Keyboard input to use the buttons
-if (global.roomType == e_roomTypes.SCENES && global.inputMode == e_input.KEYBOARD && global.state != e_gameStates.MENU) {
-	if (InputCheck("start", e_input.KEYBOARD))
+if (global.roomType == e_roomTypes.SCENES && global.state != e_gameStates.MENU) {
+	if (InputCheck("start", e_input.KEYBOARD)) {
 		global.keyboardIcons = !global.keyboardIcons;
+
+		for (var i = 0; i < array_length(buttonsList); ++i) {
+			buttonsList[i].image_index = 0;
+		}
+	}
 		
 	// Move through options
 	pos += CheckHorizontalInput();
@@ -39,14 +44,10 @@ if (global.roomType == e_roomTypes.SCENES && global.inputMode == e_input.KEYBOAR
 			GameChangeState(e_gameStates.CONTINUE_GAME);
 		}
 		
-	} else {
-		for (var i = 0; i < array_length(buttonsList); ++i) {
-			buttonsList[i].image_index = 0;
-		}
 	}
 }
 
 // Changing game state after closing menu when using mouse
-if (global.inputMode == e_input.MOUSE && global.state == e_gameStates.RESUME) {
+if (global.state == e_gameStates.RESUME) {
 	GameChangeState(e_gameStates.CONTINUE_GAME);
 }
