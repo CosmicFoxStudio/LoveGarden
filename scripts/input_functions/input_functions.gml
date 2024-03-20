@@ -88,11 +88,6 @@ function InputVerb(_verb, _func) {
 }
 
 function InputCheck(_verb, _inputMode = -1,  _pressType = "pressed") {
-	//if (_inputMode != global.inputMode) {
-	//	//show_debug_message("Trying to call input from a different mode.");	
-	//	return false;
-	//}
-	
 	var func;
 	if (_pressType == "pressed") func = InputCheckPressed;
 	else if (_pressType == "released") func = InputCheckReleased;

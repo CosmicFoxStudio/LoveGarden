@@ -108,7 +108,6 @@ function SecondaryKeybindingCreate() {
 	return _keybind;
 }
 
-global.inputMode = e_input.KEYBOARD;
 global.primaryKeybind = PrimaryKeybindingCreate();
 global.secondaryKeybind = SecondaryKeybindingCreate();
 // To reference: global.keybind.confirm
@@ -206,4 +205,4 @@ if (Debug()) {
 }
 
 // Add first room here
-room_goto(rm_input_mode);
+room_goto(rm_lang);

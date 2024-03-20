@@ -55,7 +55,6 @@ if (global.debug) {
 			"Toggle Pause: " + string(togglePause),
 			"Game State: " + string(global.state),
 			"Previous State: " + string(global.statePrevious),
-			"Current input: " + string(global.inputMode),
 			"Pressed Confirm (Mouse): " + string( InputCheck("confirm", e_input.MOUSE) ),
 			"Pressed Confirm (Keyboard): " + string( InputCheck("confirm", e_input.KEYBOARD) ),
 			"Current Room: " + global.rmCurrent,
