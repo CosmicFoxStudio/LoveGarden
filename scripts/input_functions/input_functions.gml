@@ -165,17 +165,3 @@ function InputCheckHeld(_inputMode, _verb) {
 function IsHovering(_inst) {
 	return instance_position(mouse_x, mouse_y, _inst);
 }
-
-/*
-function InputIsMouse() {
-	return (global.inputMode == e_input.MOUSE);
-}
-
-function InputIsKeyboard() {
-	return (global.inputMode == e_input.KEYBOARD);
-}
-
-function InputIsGamepad() {
-	return (global.inputMode == e_input.GAMEPAD);
-}
-*/

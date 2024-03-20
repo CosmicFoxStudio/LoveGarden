@@ -114,3 +114,5 @@ for ( var i = 0; i < array_length(menuPages[3]); i++ ) {
 	inst.image_alpha = 0; // 0.3 for debug
 	array_push(rectBtnInstArray[3], inst);
 }
+
+mouse_prev_x = 0;

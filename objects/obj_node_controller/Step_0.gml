@@ -8,7 +8,7 @@ TypistCheckPause();
 
 // Fast-forwarding
 /*
-if (global.inputMode == e_input.MOUSE && InputCheck("confirm", e_input.MOUSE, "held")) {
+if (InputCheck("confirm", e_input.MOUSE, "held")) {
 	ChatterboxFastForward(chatterbox);
 }
 */
@@ -41,24 +41,22 @@ if (global.state != e_gameStates.PAUSED && global.state != e_gameStates.MENU && 
 		optionHovered = -1;
 	
 	    // Mouse input
-		if (global.inputMode == e_input.MOUSE) {
-		    for (var i = 0; i < count; i++) {
-		        var xx = room_width / 2;
-		        var yy = (room_height / 6) * (i + 2) - 30;
-		        var width = 450;
-		        var height = 32;
+		for (var _i = 0; _i < count; _i++) {
+		    var xx = room_width / 2;
+		    var yy = (room_height / 6) * (_i + 2) - 30;
+		    var width = 450;
+		    var height = 32;
 
-		        if (point_in_rectangle(mouse_x, mouse_y, xx - width / 2, yy - height / 2, xx + width / 2, yy + height / 2)) {
-		            optionHovered = i; // Records the option when hovering
-					optionIndex = i; // Update optionIndex based on hovered option
+		    if (point_in_rectangle(mouse_x, mouse_y, xx - width / 2, yy - height / 2, xx + width / 2, yy + height / 2)) {
+		        optionHovered = _i; // Records the option when hovering
+				optionIndex = _i; // Update optionIndex based on hovered option
 			
-					// Found a selected option, exits the loop
-					break;
-		        }
-				else {
-					optionHovered = -1;	
-				}
+				// Found a selected option, exits the loop
+				break;
 		    }
+			else {
+				optionHovered = -1;	
+			}
 		}
 
 		// Keyboard input
