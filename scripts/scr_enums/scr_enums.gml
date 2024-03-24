@@ -122,4 +122,16 @@ function Enums() {
 		PHASE_1,
 		PHASE_2,
 	}
+	
+	// Used to determine font size
+	enum e_fontSize {
+		SMALL,
+		MEDIUM,
+		LARGE
+	}
+	
+	enum e_fontType {
+		PRIMARY,
+		SECONDARY
+	}
 }

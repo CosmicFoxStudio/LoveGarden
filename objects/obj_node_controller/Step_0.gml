@@ -1,3 +1,22 @@
+if(keyboard_check_pressed(ord("P"))) {
+	global._fontTest = e_fontType.PRIMARY;
+	show_debug_message("Font: " + string(global._fontTest));
+} else if(keyboard_check_pressed(ord("S"))) {
+	global._fontTest = e_fontType.SECONDARY;
+	show_debug_message("Font: " + string(global._fontTest));
+} else if(keyboard_check_pressed(ord("C"))) {
+	global._sizeTest = e_fontSize.SMALL;
+	show_debug_message("Size: " + string(global._sizeTest));
+} else if(keyboard_check_pressed(ord("M"))) {
+	global._sizeTest = e_fontSize.MEDIUM;
+	show_debug_message("Size: " + string(global._sizeTest));
+} else if(keyboard_check_pressed(ord("L"))) {
+	global._sizeTest = e_fontSize.LARGE;
+	show_debug_message("Size: " + string(global._sizeTest));
+}
+	
+
+
 /// @description Chatterbox
 
 // Number of options

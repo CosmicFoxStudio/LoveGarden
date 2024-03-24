@@ -1,3 +1,6 @@
+global._fontTest = e_fontType.PRIMARY;
+global._sizeTest = e_fontSize.MEDIUM;
+
 /// @description Persistent Game Manager
 
 // Initializes globals & enumerators
@@ -5,6 +8,11 @@ Enums();
 camera = -1;
 global.debug = false;
 global.lastFontUsed = -1;
+global.dialogFonts = [
+	[fnt_dialogue_s, fnt_dialogue, fnt_dialogue_l],
+	[fnt_dialogue2_s, fnt_dialogue2, fnt_dialogue2_l]
+];
+global.selectedDialogFont = fnt_dialogue2;
 DrawFont(fnt_dialogue); // Run the first time
 global.configMenu = noone;
 global.date = ConvertDate(date_current_datetime());
@@ -201,4 +209,4 @@ if (Debug()) {
 }
 
 // Add first room here
-room_goto(rm_input_mode);
+room_goto(rm_test);
