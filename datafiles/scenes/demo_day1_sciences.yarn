@@ -71,6 +71,7 @@ FERN: My subject will be essential for you in the coming semesters. #line:e5be47
 Professor Fern continues explaining how his subject will work. #line:1c237a
 On your side, Clove is completely ignoring what the professor is saying. #line:d9c348
 In a quick glance behind, you see Ype jotting down every word that comes out of Fern's mouth. #line:fbeb77
+While writing, you can hear some muttering. #line:fc2a33
 <<chara("clove")>>
 CLOVE: ''And you'll be assigned to partners previously chosen''. #line:fae869
 <<chara("fern")>>
@@ -132,8 +133,6 @@ You wave in their direction and they wave back, seeming nervous. #line:17f36e
 <<chara("fern")>>
 Professor Fern finishes announcing the pairs. #line:c37350 
 FERN: That's it for today! #line:532271 
-Then he looks towards the clock. #line:baeab6
-FERN: Great, I'll make it in time for the department lunch! #line:846587 
 <<chara("void")>>
 PLAYER: (All my panic this morning for less than an hour of class...) #line:38f76d
 <<chara("clove")>>
@@ -175,4 +174,4 @@ You say goodbye as you leave the room. #line:789b5e
 <<nextDaytime()>>
 <<nextRoom("rm_central")>>
 ===
- 
+     
