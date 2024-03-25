@@ -1,0 +1,177 @@
+title: Morning
+---
+<<jump YpeIntro>>
+===
+
+title: Noon
+---
+<<nextDaytime(0)>>
+<<jump YpeIntro>>
+===
+
+title: Afternoon
+---
+===
+
+title: Night
+---
+===
+
+title: YpeIntro
+---
+<<chara("void")>>
+You arrive at the classroom building without any problem. 
+Now you have a new challenge - Find the Ecology classroom.
+PLAYER: (Good thing I wrote it down... I'm always forgetting these things.) 
+You walk a little through the corridor until you reach the front of the class.
+<<chara("ype")>>
+Just ahead, someone looks like they could be a little lost. 
+They don't seem to realize you are approaching. 
+???: Hmm... Which one...? 
+PLAYER: Need help? 
+???: [shake]Ah!![/]
+PLAYER: Sorry! I didn't mean to scare you! 
+???: Ah...! I'm fine. Don't worry... 
+???: Just didn't expect someone to talk to me.
+PLAYER: Hum? Ok. Er... So. Are you looking for your class?
+???: Yes... But this place is... Huge...
+PLAYER: I know, right?
+PLAYER: By the way, my name is PLAYER. What about you?
+YPE: Oh... My name is Ype. N...nice to meet you!
+PLAYER: And which class are you looking for?
+YPE: Introduction to Ecology... 
+PLAYER: You got lucky, it's right there! 
+PLAYER: What is your course again? 
+YPE: Oh, I'm enrolled in Botany...
+PLAYER: Oh, cool! I'm majoring in Biology. 
+You walk together towards the class, entering it.
+<<jump CloveIntro>>
+===
+
+title: CloveIntro
+---
+<<chara("void")>>
+...
+<<bgTransition(1)>>
+...
+You almost have no time to sit before the teacher starts to speak. 
+<<chara("ype")>>
+You look around, trying to identify where Ype was seated, finding them a few chairs behind you. 
+They seem nervous so you try to direct them a smile to calm them down, but they are staring at their own table.
+<<chara("fern")>>
+???: Now that everyone is here. Good morning, students. 
+???: I'm professor Nephrolepis.
+<<chara("clove")>>
+???: But you can call him Fern! 
+The boy sitting next to you speaks loud enough for the entire class to hear.
+<<chara("fern")>>
+FERN: Thanks Clove, for revealing my not-so-scientific name. Either way, it's Professor Fern. 
+FERN: I will be your teacher in Introduction to Ecology.
+FERN: My subject will be essential for you in the coming semesters.
+Professor Fern continues explaining how his subject will work.
+On your side, Clove is completely ignoring what the professor is saying.
+In a quick glance behind, you see Ype jotting down every word that comes out of Fern's mouth.
+<<chara("clove")>>
+CLOVE: ''And you'll be assigned to partners previously chosen''.
+<<chara("fern")>>
+FERN: And you'll be assigned to partners previously chosen.
+<<chara("clove")>>
+CLOVE: ... ''The attendance list'' ... ''There might be dropouts by the end''... 
+<<chara("fern")>>
+FERN: I will use the attendance list as a reference, but there will probably be dropouts by the end.
+<<chara("clove")>>
+CLOVE: ... ''Raise your hands''... 
+<<chara("fern")>>
+FERN: When I call your name and your partner's, raise your hands.
+<<chara("clove")>>
+You lean towards Clove to whisper so as not to disturb the class.
+PLAYER: (How did you know exactly what he was going to say?) 
+CLOVE: He said the exact same thing for the last two semesters. 
+PLAYER: And how do you know that? 
+CLOVE: It's the third time I'm taking this subject... 
+PLAYER: Ohh... Is this subject really that tough? 
+CLOVE: It's the worst of all. Fern is one of the toughest in the department. 
+<<chara("fern")>>
+You look back at the professor, trying to draw your own conclusions. 
+You look back at the professor, trying to draw your own conclusions. 
+-> To me, he just looks like a helpless old man. 
+	<<changeRelationship("clove", -1)>>
+	<<chara("clove")>>
+	PLAYER: He might just be a bit grumpy. 
+	CLOVE: Well, this I can understand. If I was this tacky I would be unhappy too. 
+	PLAYER: Wow, you really don't like the old man.
+	PLAYER: That's a level of hate that only someone who has been through two failures would truly understand.
+	CLOVE: Let's see how you'll be at the end of the semester. 
+	PLAYER: Hey, they say the third time's the charm. 
+-> I think I can agree with you. 
+	<<changeRelationship("clove", 1)>>
+	<<addAction()>>
+	(YOU WON A BONUS ACTION! [spr_action])[snd_click1]
+	<<chara("void")>>
+	PLAYER: He has the face of someone who will turn my life into hell.
+	<<chara("clove")>>
+	CLOVE: He has no sensitivity, even though most of the class are freshmen.
+	PLAYER: I bet it's for teachers like him that some people hate Biology.
+	CLOVE: Um, Ecology isn't the coolest subject.
+	PLAYER: Are you kidding me! It's one of the subjects that I was most excited to have. 
+	CLOVE: Entomology is way cooler! Wait for your next semester.
+<<chara("fern")>>
+FERN: PLAYER and Ype! 
+You startle when Professor Fern's voice echoes through the classroom. 
+You immediately raise your hand.
+FERN: You two will be working on the theme ''Animals of the Plantae Kingdom".
+<<if (getRelationship("clove") >= 1)>>
+	<<chara("clove")>>
+	CLOVE: Wow! You took the best theme! 
+	CLOVE: Makes me wish we were partners. 
+	You faintly smile at Clove before going after Ype.
+<<endif>>
+<<chara("ype")>>
+You turn to Ype, feeling relieved to at least be with someone you know. 
+You wave in their direction and they wave back, seeming nervous. 
+<<chara("fern")>>
+Professor Fern finishes announcing the pairs. 
+FERN: That's it for today! 
+Then he looks towards the clock.
+FERN: Great, I'll make it in time for the department lunch! 
+<<chara("void")>>
+PLAYER: (All my panic this morning for less than an hour of class...)
+<<chara("clove")>>
+Clove was already ready to leave. 
+PLAYER: Hold on! How did you pack up your stuff so quickly? 
+CLOVE: Stuff? What stuff?
+PLAYER: Ha-ha! Aren't you even going to meet your group partner? 
+CLOVE: Nah... Seems like they didn't show up today... 
+CLOVE: It's the second semester my group partner hasn't shown up...
+CLOVE: The old man is totally singling me out... 
+PLAYER: C'mon, it's not like that. 
+PLAYER: By the way, do you have any tips for a first-time freshman? 
+CLOVE: Don't let things pile up, and pray for your partner to show up. 
+CLOVE: Now, if you'll excuse me, I have to complain about this class to someone else. 
+PLAYER: Oh, yeah? And who will have the pleasure of hearing you for the third time? 
+CLOVE: My incredible girlfriend. 
+CLOVE: She even took the subject last semester to see how bad it really is. 
+PLAYER: And she's not here this semester... Did she drop out or pass? 
+CLOVE: She passed... 
+CLOVE: Not that she lets me forget about it.
+PLAYER: Oh, jeez. 
+CLOVE: Well, now I'm really going. Later, PLAYER! 
+PLAYER: See you around.
+<<chara("void")>>
+Clove leaves and you stand up to go after Ype. 
+Only to find them right beside your chair.
+<<chara("ype")>>
+YPE: Sorry... I-I didn't want to interrupt... 
+PLAYER: Relax! I was just trying to get some tips. 
+PLAYER: He has taken this subject many times before. 
+YPE: Oh... Did you find anything useful?
+PLAYER: Nothing really, don't procrastinate...
+PLAYER: Have a partner who helps... 
+YPE: Oh... 
+PLAYER: Let's give it our best, okay?
+They nod in agreement, looking hesitant.
+<<chara("void")>>
+You say goodbye as you leave the room.
+<<nextDaytime()>>
+<<nextRoom("rm_central")>>
+===

@@ -4,6 +4,7 @@
 Enums();
 camera = -1;
 global.debug = false;
+global.gameMode = e_gameMode.DEMO;
 global.lastFontUsed = -1;
 DrawFont(fnt_dialogue); // Run the first time
 global.configMenu = noone;
@@ -150,10 +151,20 @@ if (os_browser == browser_not_a_browser) {
 }
 else {
 	// In browser - load files manually
-	ChatterboxLoadFromFile("scenes/main_day0_test.yarn");
-	ChatterboxLoadFromFile("scenes/main_day1_dormitory.yarn");
-	ChatterboxLoadFromFile("scenes/main_day1_boat.yarn");
-	ChatterboxLoadFromFile("scenes/main_day1_sciences.yarn");
+	if (global.gameMode == e_gameMode.DEMO) {
+		// DEMO MODE
+		ChatterboxLoadFromFile("scenes/demo_day1_dormitory.yarn");
+		ChatterboxLoadFromFile("scenes/demo_day1_boat.yarn");
+		ChatterboxLoadFromFile("scenes/demo_day1_sciences.yarn");
+		ChatterboxLoadFromFile("scenes/demo_day1_central.yarn");
+	}
+	else {
+		// RELEASE MODE
+		ChatterboxLoadFromFile("scenes/main_day0_test.yarn");
+		ChatterboxLoadFromFile("scenes/main_day1_dormitory.yarn");
+		ChatterboxLoadFromFile("scenes/main_day1_boat.yarn");
+		ChatterboxLoadFromFile("scenes/main_day1_sciences.yarn");
+	}
 }
 
 #endregion CHATTERBOX LOAD FILES
@@ -162,12 +173,22 @@ else {
 
 // Room-to-yarn map
 global.roomYarnMap = ds_map_create();
-global.roomYarnMap[? "rm_test"	]			= "scenes/main_day0_test.yarn";
-global.roomYarnMap[? "rm_dormitory"	]		= "scenes/main_day1_dormitory.yarn";
-global.roomYarnMap[? "rm_boat"	]			= "scenes/main_day1_boat.yarn";
-global.roomYarnMap[? "rm_sciences"]			= "scenes/main_day1_sciences.yarn";
-// And so on...
-
+// DEMO MODE
+if (global.gameMode == e_gameMode.DEMO) {
+	//global.roomYarnMap[? "rm_test"]			= "scenes/main_day0_test.yarn";
+	global.roomYarnMap[? "rm_dormitory"]		= "scenes/demo_day1_dormitory.yarn";
+	global.roomYarnMap[? "rm_boat"]				= "scenes/demo_day1_boat.yarn";
+	global.roomYarnMap[? "rm_sciences"]			= "scenes/demo_day1_sciences.yarn";
+	global.roomYarnMap[? "rm_central"]			= "scenes/demo_day1_central.yarn";
+}
+// RELEASE MODE
+else {
+	global.roomYarnMap[? "rm_test"]				= "scenes/main_day0_test.yarn";
+	global.roomYarnMap[? "rm_dormitory"]		= "scenes/main_day1_dormitory.yarn";
+	global.roomYarnMap[? "rm_boat"]				= "scenes/main_day1_boat.yarn";
+	global.roomYarnMap[? "rm_sciences"]			= "scenes/main_day1_sciences.yarn";
+	// And so on...
+}
 // ----------------------- Chatterbox Localization Build -----------------------  //
 
 // Only uncomment this next line when there are NEW dialogue lines to be generated!!

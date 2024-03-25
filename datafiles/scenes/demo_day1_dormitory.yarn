@@ -1,0 +1,99 @@
+title: Morning
+---
+<<jump CaruIntro>>
+===
+
+title: Noon
+---
+===
+
+title: Afternoon 
+---
+===
+
+title: Night
+---
+<<bg(4)>>
+<<jump GoodNight>>
+===
+
+title: CaruIntro
+---
+<<chara("void")>>
+???: Hey.
+???: Heey!
+???: Wake up! 
+PLAYER: Ugh... 
+<<chara("caru")>>
+???: Time to get up, sleepyhead! 
+???: It's a new day full of adventure and... Oh, hold on, I think you are late!
+You groan and rub your eyes, trying to understand the situation. 
+Maybe your alarm didn't go off this time?
+The one waking you up is your roommate, Mandacaru.\nBut everyone calls him Caru, his nickname. 
+PLAYER: What time is it?
+CARU: Let me tell you, you overslept, PLAYER.
+CARU: The Sun is already high in the sky, and the birds are mocking you.
+CARU: And I was the universe's envoy to deliver you a sermon on punctuality. 
+PLAYER: Wait, what?? What does this mean? 
+You hurry with the choice of clothes, and in a clumsy manner, try to dress in record time. 
+PLAYER: Tch. Thanks for the heads up, dungeon master.. I just asked for the time! 
+CARU: I'm exaggerating my bad. It's only 6:40... Your alarm didn't ring yet. 
+PLAYER: Oh! You prick...
+You were really getting desperate here. Caru and his limitless pranks...
+CARU: Life is a race and you started the day running! You're gonna thank me later, heh. 
+CARU: But being serious now. The first day is not one that you wanna be late. 
+CARU: The sooner you leave the better! 
+CARU: Some professors from Lotus can be real tyrants. 
+PLAYER: I've been questioning myself why would anyone decide on the 7:30 am schedule for morning classes...
+<<chara("void")>>
+Despite Caru's warning, until you find all your materials for the classes, 20 minutes have already passed. 
+Part of you curses your last night's self, who confidently claimed that surely you would have time to organize everything the next day...  
+Being ready to leave, you walk towards the ground level of the dormitory.
+<<jump LateArrival>>
+===
+
+title: LateArrival
+---
+<<chara("void")>>
+...
+<<bgTransition(1)>>
+...
+The rules say you can't run in the hallways... 
+So you quicken your pace and end up bumping into someone hard, almost knocking you down. 
+<<chara("hydra")>>
+PLAYER: Oops- 
+She is in a rush almost running to the end of the corridor. 
+PLAYER: ... Hey! 
+<<chara("void")>>
+You even question yourself for an instant if you are not late.
+In the hurry she didn't realize that she dropped a piece of paper. 
+You bend down and pick up the paper. 
+It's a really beautiful and detailed drawing of the facet of the university's main building. 
+It was made by pencil, so you take care not to blur it with your fingers while you hold it. 
+On the side of the page there is her signature "Hydrangea". 
+PLAYER: (Hydrangea... I guess I have to return this drawing to you...) 
+You put the drawing carefully in one of your folders in your bag. 
+You hear a sound that seems like a boat coming and hurry downstairs. 
+...
+<<bgTransition(2)>>
+...
+For a moment you thought you would lose the boat, but you manage to arrive in time.
+<<nextRoom("rm_boat")>>
+===
+
+title: GoodNight
+---
+You arrive at your room and look around.
+Seems like Caru hasn't come back yet...
+The day was so full that you barely had time to change clothes before throwing yourself in the bed.
+What did you think of your first day?
+What did you think of your first day?
+-> It was really exhaustive.
+	PLAYER: Really heavy and exhaustive, but university is like that, right?
+	PLAYER: I wonder what's gonna come up next...
+-> I was able to meet a lot of new people!
+	PLAYER: I always knew that universities were full of people.
+	PLAYER: But I didn't imagine that it would be like that...
+	PLAYER: I can't wait to see what it will be from now on.
+<<backTitle()>>
+===

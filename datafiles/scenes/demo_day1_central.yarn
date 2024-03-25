@@ -1,0 +1,141 @@
+title: Morning
+---
+===
+
+title: Noon
+---
+<<jump RoseIntro>>
+===
+
+title: Afternoon
+---
+===
+
+title: Night
+---
+<<nextDaytime(1)>>
+<<jump RoseIntro>>
+===
+
+title: RoseIntro
+---
+You take the opportunity of an early class release to go visit the university's canteen while it's not crowded.
+You enter the central campus building towards the canteen.
+...
+<<bgTransition(1)>>
+...
+When you arrive at the queue you see a familiar figure.
+<<chara("clove")>>
+PLAYER: Hey again, Clove. Came to eat as well?
+CLOVE: Freshman! Taking the risk at the canteen on your first week? Courageous!
+PLAYER: I need to know if I will have to live from the instant sprout of the dorm or not, haha.
+CLOVE: The canteen is ten times better than pre-made food, even if it's just to keep on date with the gossip of the uni!
+<<chara("void")>>
+You both continue to talk throughout the line.
+Clove talks a lot about the university.
+And gives you updates on huge events from last semester.
+<<chara("clove")>>
+CLOVE: ... And this is why they don't allow more parties of athletics on campus, we have to keep looking in other places. 
+CLOVE: Rose gets crazy with this, cause all public places have the security question, you know? 
+PLAYER: Who is Rose again? 
+<<chara("rose")>>
+ROSE: I heard my name? 
+A tall girl, light green skin and short pink hair with a top and a jacket approaches with a smile. 
+<<chara("clove")>>
+CLOVE: Speaking of the devil... I mean, my angel. 
+CLOVE: PLAYER, This is my girlfriend, Rose. 
+PLAYER: So you are the famous girlfriend! Really nice to meet you! 
+<<chara("rose")>>
+ROSE: And you would be?
+PLAYER: Oh, my name is PLAYER, I'm a freshman.
+ROSE: You guys are already done with Fern's class?
+PLAYER: Yeah, he released us early. And I couldn't lose the chance to get some tips from someone who knows the professor so well. 
+ROSE: Not that you will get much from him...
+<<chara("clove")>>
+CLOVE: Hey! Don't spread defamation to the freshman! 
+<<chara("rose")>>
+ROSE: Me, on the other hand, can give you effective tips on how to pass on his subject. 
+<<chara("clove")>>
+CLOVE: Oh, not that again! 
+<<chara("rose")>>
+ROSE:  I know, I know. For the relationship to work we have to avoid talking about the one who cannot be mentioned. 
+ROSE: But you are so cute when you get angry that I can't resist. 
+<<chara("void")>>
+She hugs his neck with one arm and a big smile. 
+They seem comfortable touching each other.
+You can't stop yourself from looking. 
+Even though none of you seems uncomfortable.
+You continue walking down the line until you enter the canteen, passing through the self-service.
+You all sit on the long tables of the canteen. They are side by side and you are in front of both. 
+<<chara("rose")>>
+ROSE: What were you guys talking about before? When I heard my name?
+<<chara("clove")>>
+CLOVE: I was telling PLAYER about last semester, when the people from bio athletics decided to bring that smoke machine.
+<<chara("rose")>>
+ROSE: (sigh) Oh, dude... That ruined all my plans for the Architecture party! 
+ROSE: I had everything ready and those dorks simply ruined everything.
+<<chara("clove")>>
+CLOVE: Hey, I wasn't even involved! 
+<<chara("rose")>>
+ROSE: And there's a reason I don't have anyone from Biology in the Freshers Week organization. 
+What do you think about this decision? 
+What do you think about this decision? 
+-> Isn't this discrimination? 
+	<<chara("clove")>>
+	CLOVE: That's what I said!	
+	<<chara("rose")>>
+	ROSE: Discrimination is a strong word...
+-> I have no means to stand for my course.
+	<<chara("clove")>>
+	CLOVE: Hey! 
+	<<chara("rose")>>
+	ROSE: See, even the favorite freshman agrees with me. 
+	<<chara("clove")>>
+	CLOVE: PLAYER is the only freshman I talked to directly until now! 
+<<chara("rose")>>
+ROSE: It wasn't totally my decision, but the rectory's...
+ROSE: We managed to make all freshmen be able to go to the courtyard, as long as no one involved with the incident from last semester would be part of the committee. 
+PLAYER: And when will the Freshers Party be held? 
+ROSE: The day after tomorrow, during the whole afternoon! 
+ROSE: You must go!
+<<chara("clove")>>
+CLOVE: Yes! The semester doesn't truly start until the freshmen's party, this is the best moment to meet new people! 
+CLOVE: And to find the love of your life...
+<<chara("rose")>>
+ROSE: We're the proof. 
+<<chara("void")>>
+They look at each other passionately.
+They look at each other passionately.
+-> They are a really beautiful couple.
+	They're fun to be with. 
+	You can't even be bothered.
+-> You wish you were Rose in this situation.
+	She is lucky to have someone so cool like Clove as a boyfriend. 
+-> You wish you were Clove in this situation.
+	He is lucky to have such a competent girlfriend like Rose.
+<<chara("rose")>>
+ROSE: So, PLAYER. What's gonna be?
+ROSE: You're going to the Freshers Party, right? 
+ROSE: You're going to the Freshers Party, right?
+-> I guess I have to, right? 
+	<<chara("clove")>>
+	CLOVE: Hell yeah!
+-> I wouldn't lose this for nothing. 
+	<<chara("rose")>>
+	ROSE: Great! 
+<<chara("rose")>>
+Rose's phone rings an alarm. 
+ROSE: Damn! I have to go. Junior Enterprise meeting...
+<<chara("clove")>>
+CLOVE: I don't know how you can handle so many things all at once...
+<<chara("rose")>>
+ROSE: Kisses, babe. 
+They give a quick kiss.
+ROSE: It was nice to meet you, PLAYER.
+Rose stands up and rushes out. 
+<<chara("void")>>
+You and Clove chat for a little longer before leaving to give space for other students to have lunch. 
+<<nextDaytime()>>
+<<nextDaytime()>>
+<<nextRoom("rm_dormitory")>>
+===

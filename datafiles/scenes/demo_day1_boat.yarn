@@ -1,0 +1,54 @@
+title: Morning
+---
+<<jump Departure>>
+===
+
+title: Noon
+---
+===
+
+title: Afternoon
+---
+===
+
+title: Night
+---
+===
+
+title: Departure
+---
+<<chara("void")>>
+You sit in one of the benches of the boat, thankful for arriving in time.
+<<chara("hydra")>>
+You raise your head and see that a few seats away is the girl you just bumped.
+She looks focused drawing on her notebook.
+She looks focused drawing on her notebook.
+-> Just admire the drawing she is doing.
+	<<addAction()>>
+	(YOU WON A BONUS ACTION! [spr_action])[snd_click1]
+	You can't take your eyes away from the drawing. 
+	To the point the girl gives you a side glance. 
+	You turn away, feeling your face getting flushed by being caught.
+-> Return the drawing to her.
+	You lean towards her and clean your throat.
+	PLAYER: Ahem, hi, excuse me?
+	She raises her head, suspiciously.
+	HYDRANGEA: What is it?
+	PLAYER: We bumped with each other a little while ago.
+	PLAYER: And you dropped this.
+	You extend the drawing to her.
+	<<emotion(3)>>
+	Her suspicion turns into an expression of genuine surprise.
+	And quickly turns into embarrassment, realizing how she treated you just instants before.
+	HYDRANGEA: Oh, thank you very much... I didn't realize I had dropped it.
+	PLAYER: You were in a rush so...
+	PLAYER: You got lucky that I saw and picked it up... And we ended up in the same boat.
+	She finally takes her drawing back, putting it back inside her notebook.
+	HYDRANGEA: Hey, I'm gonna remember that, alright? See ya around freshman.
+	She gets up to exit the boat.
+	<<chara("void")>>
+	PLAYER: (How does she know I'm a freshman?)
+The boat whistles, warning that soonly it will undock again. 
+You hurry up to leave the boat and make your way to the sciences building.
+<<nextRoom("rm_sciences")>>
+===
