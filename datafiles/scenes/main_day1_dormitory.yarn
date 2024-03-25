@@ -208,18 +208,18 @@ What do you want to do? #line:eb08d9
         <<chara("void")>>
         You climb the stairs back to your room. #line:7613b6
         <<nextDaytime()>>
-        ...
+        ... #line:6b3cec
         <<bgTransition(4)>>
-        ...
+        ... #line:37205d
         <<jump Night>>
     -> Thanks, but maybe another time. #line:79e443
         MR. ORANGE: Oh, sure. That's okay. You must be busy. Sorry for bothering you. #line:a335af
         <<chara("void")>>
         You climb the stairs back to your room. #line:89a4d6
         <<nextDaytime()>>
-        ...
+        ... #line:910f6e
         <<bgTransition(4)>>
-        ...
+        ... #line:655162
         <<jump Night>>
 -> Check what Caru is doing. #line:e854fd
     <<chara("void")>>
@@ -229,9 +229,9 @@ What do you want to do? #line:eb08d9
     Looking back, you realize Mr. Orange is no longer there. #line:b76c50
     Thus, the only option left is to go back to your room. #line:28c980
     <<nextDaytime()>>
-    ...
+    ... #line:02cf94
     <<bgTransition(4)>>
-    ...
+    ... #line:ff6d18
     <<jump Night>>
 -> Go upstairs. #line:37a127
     PLAYER: Sorry, I need to go do something. #line:89a047
@@ -239,9 +239,9 @@ What do you want to do? #line:eb08d9
     <<chara("void")>>
     You climb the stairs back to your room. #line:e0ff13
     <<nextDaytime()>>
-    ...
+    ... #line:d2b6d1
     <<bgTransition(4)>>
-    ...
+    ... #line:31a5e0
     <<jump Night>>
 ===
 
@@ -296,3 +296,4 @@ And you share a bit about how Professor Fern seems to be a peculiar professor. #
 Soon, you both start feeling tired and prepare to sleep. #line:8641ba
 <<backTitle()>>
 ===
+ 
