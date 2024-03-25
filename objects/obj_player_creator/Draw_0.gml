@@ -19,12 +19,11 @@ switch (phase) {
 		for (var i = 0; i < optionLength; i++) {
 				optionText = phaseOptions[phase][i];
 				
-				if (global.inputMode == e_input.KEYBOARD || (global.inputMode == e_input.MOUSE && lastHoveredOption == i) ) {
-					// Draw cursor based on the last hovered option
-		            if (pos == i || (mouseHovering && i == lastHoveredOption)) {
-		                optionText = "[spr_cursor_keyboard] " + PlayerCreatorLocalization(optionText);
-		            }
-		        }
+				// Draw cursor based on the last hovered option
+				if (pos == i || (mouseHovering && i == lastHoveredOption)) {
+					optionText = "[spr_cursor_keyboard] " + PlayerCreatorLocalization(optionText);
+				}
+
 		        draw_text_scribble(startX + 40 + (i * (rectWidth + PLAYER_CREATOR_BTN_MARGIN_H) - 5), startY + PLAYER_CREATOR_MARGIN_V + 5, PlayerCreatorLocalization(optionText));
 		        DrawAlign();
 		}	

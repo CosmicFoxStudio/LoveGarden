@@ -67,11 +67,28 @@ if (inputting) {
 		//			}
 		//		break;
 		//	}
+			// Check mouse slide direction
+			var mouseHorizontalInput = 0;
+			if(InputCheck("confirm", e_input.MOUSE)) {
+				mouse_prev_x = mouse_x
+			}
+			
+			if(InputCheck("confirm", e_input.MOUSE, "held")) {
+				if(mouse_x - mouse_prev_x > 0)
+					mouseHorizontalInput = 1;
+				else if(mouse_x - mouse_prev_x < 0)
+					mouseHorizontalInput = -1;
+				else 
+					mouseHorizontalInput = 0;
+				mouse_prev_x = mouse_x
+			}
+		
 			// Held input instead of pressed here for smooth gameplay
-			var horizontalInput = InputCheck(e_input.KEYBOARD, "right", "held") - InputCheck(e_input.KEYBOARD, "left", "held");
-			if(horizontalInput != 0) {
+			var horizontalSlideInput = InputCheck("right", e_input.KEYBOARD, "held") - InputCheck("left", e_input.KEYBOARD, "held");
+			if(horizontalSlideInput != 0 || mouseHorizontalInput != 0) {
 				// Makes the value a floating value between 0-1 (same as 0% to 100%)
-				currentPage[menuOption[page]].param1 += horizontalInput*0.01; 
+				currentPage[menuOption[page]].param1 +=
+					(horizontalSlideInput == 0? mouseHorizontalInput * 0.025 : horizontalSlideInput * 0.01);
 				
 				// Clamping the value between 0 and 1
 				currentPage[menuOption[page]].param1 = clamp(currentPage[menuOption[page]].param1, 0, 1);
@@ -123,10 +140,28 @@ if (inputting) {
 		}
 	}
 }
+
+// ---------------------------- MOUSE INPUT  ---------------------------- //
+// Checking the correct array
+var arr = rectBtnInstArray[page];
+var optionsLength = array_length(arr);
+	
+// Loop to check if mouse is hovering any of the instances
+var inst;
+for (var i = 0; i < optionsLength; i++) {
+	inst = arr[i];
+	mouseHovering = instance_position(mouse_x, mouse_y, inst);
+		
+	// ------------ CHECKING MOUSE HOVERING ------------ //
+	if (mouseHovering) {
+		menuOption[page] = i;
+	}
+}
+
 // --------------------------------------------------------------------------------- //
 // MAKE THINGS HAPPEN (EXECUTING SCRIPTS)
 // Setting up scripts so they run and impact/change variables in the game 
-if ( InputCheck(e_input.KEYBOARD, "confirm") || (InputCheck(e_input.MOUSE, "confirm") && global.hoveringConfigButton) ) {
+if ( InputCheck("confirm", e_input.KEYBOARD) || (InputCheck("confirm", e_input.MOUSE) && global.hoveringConfigButton) ) {
 	// Checks for the type
 	switch(currentPage[menuOption[page]].type) { 
 		
@@ -151,23 +186,4 @@ if ( InputCheck(e_input.KEYBOARD, "confirm") || (InputCheck(e_input.MOUSE, "conf
 
 	// Play lil audio
 	audio_play_sound(snd_menu_beep, 1, false);
-}
-
-// ---------------------------- MOUSE INPUT  ---------------------------- //
-if (global.inputMode == e_input.MOUSE) {
-	// Checking the correct array
-	var arr = rectBtnInstArray[page];
-	var optionsLength = array_length(arr);
-	
-	// Loop to check if mouse is hovering any of the instances
-	var inst;
-	for (var i = 0; i < optionsLength; i++) {
-		inst = arr[i];
-		mouseHovering = instance_position(mouse_x, mouse_y, inst);
-		
-		// ------------ CHECKING MOUSE HOVERING ------------ //
-		if (mouseHovering) {
-			menuOption[page] = i;
-		}
-	}
 }

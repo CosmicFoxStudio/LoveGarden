@@ -1,6 +1,6 @@
 // Doesn't make the hover effect if game is paused
-if (global.state == e_gameStates.PAUSED) || (global.inputMode != e_input.MOUSE) || (global.state == e_gameStates.MENU) exit;
-
+if (global.state == e_gameStates.PAUSED) || (global.state == e_gameStates.MENU) exit;
+show_debug_message("Enter button")
 image_index = 1;
 hovering = true;
 global.hoveringButton = true;

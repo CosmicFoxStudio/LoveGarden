@@ -1,6 +1,6 @@
 /// @description Button Action
 
-if (InputCheck(e_input.MOUSE, "confirm") && hovering) {
+if (InputCheck("confirm", e_input.MOUSE) && hovering) {
 	show_debug_message("Going to Dormroom");
 	
 	GameTransitionChangeRoom(rm_dormroom, sq_trans_fade_black);
