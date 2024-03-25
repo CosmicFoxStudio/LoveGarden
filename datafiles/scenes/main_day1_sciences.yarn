@@ -244,4 +244,4 @@ PLAYER: (Did I say something wrong?) #line:def188
 <<nextDaytime()>>
 <<nextRoom("rm_boat")>>
 ===
-     
+      

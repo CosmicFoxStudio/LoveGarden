@@ -146,8 +146,10 @@ SetResolution();
 global.dialogueList = [];
 	
 if (os_browser == browser_not_a_browser) {
-	// Not in browser - Load the files dynamically
+	// Not in browser - Load the canon files dynamically
 	LoadDialogueFiles();
+	// Load Bonus Events
+	ChatterboxLoadFromFile("scenes/demo_day1_bonus.yarn");
 }
 else {
 	// In browser - load files manually

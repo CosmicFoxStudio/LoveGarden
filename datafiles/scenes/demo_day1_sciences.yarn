@@ -174,4 +174,4 @@ You say goodbye as you leave the room. #line:789b5e
 <<nextDaytime()>>
 <<nextRoom("rm_central")>>
 ===
-     
+      
