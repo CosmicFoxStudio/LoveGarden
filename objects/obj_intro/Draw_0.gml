@@ -15,7 +15,7 @@ For this reason, string_length() wouldn't work here.
 textLength = scribble(text[page]).get_glyph_count();
 
 // Checking input
-if ( ( InputCheck(e_input.KEYBOARD, "confirm") || InputCheck(e_input.MOUSE, "confirm") )
+if ( ( InputCheck("confirm", e_input.KEYBOARD) || InputCheck("confirm", e_input.MOUSE) )
 	&& twFadeOutState != e_fadeoutState.FADING_OUT ) {
 	// Means the page is fully typed out
 	if ((typist.get_position() - 1) == textLength) {

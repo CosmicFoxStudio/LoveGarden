@@ -90,22 +90,26 @@ function KeybindingDefinition(_confirm=-1, _cancel=-1, _start=-1, _up=-1, _down=
 }
 
 // Config keybindings
-function KeybindingCreate(_inputMode) {
-	if (global.inputMode == e_input.MOUSE) {
-		return new KeybindingDefinition(mb_left, mb_right, mb_middle);
-	}	
+function PrimaryKeybindingCreate() {
+	var _keybind = array_create(3);
+	_keybind[e_input.MOUSE] = new KeybindingDefinition(mb_left, mb_right, mb_middle);
+	_keybind[e_input.KEYBOARD] = new KeybindingDefinition(vk_space, vk_backspace, vk_enter, vk_up, vk_down, vk_left, vk_right);
+	_keybind[e_input.GAMEPAD] = new KeybindingDefinition(gp_face1, gp_face2, gp_start, gp_padu, gp_padd, gp_padl, gp_padr);
 	
-	if (global.inputMode == e_input.KEYBOARD) {
-		return new KeybindingDefinition(vk_space, vk_backspace, vk_enter, vk_up, vk_down, vk_left, vk_right);
-	}
-	
-	if (global.inputMode == e_input.GAMEPAD) {
-		return new KeybindingDefinition(gp_face1, gp_face2, gp_start, gp_padu, gp_padd, gp_padl, gp_padr);
-	}
+	return _keybind;
 }
 
-global.inputMode = e_input.KEYBOARD;
-global.keybind = KeybindingCreate(global.inputMode);
+function SecondaryKeybindingCreate() {
+	var _keybind = array_create(3);
+	_keybind[e_input.MOUSE] = new KeybindingDefinition();
+	_keybind[e_input.KEYBOARD] = new KeybindingDefinition(, , , ord("W"), ord("S"), ord("A"), ord("D"));
+	_keybind[e_input.GAMEPAD] = new KeybindingDefinition();
+	
+	return _keybind;
+}
+
+global.primaryKeybind = PrimaryKeybindingCreate();
+global.secondaryKeybind = SecondaryKeybindingCreate();
 // To reference: global.keybind.confirm
 #endregion GAME CONTROLS
 
@@ -201,4 +205,4 @@ if (Debug()) {
 }
 
 // Add first room here
-room_goto(rm_input_mode);
+room_goto(rm_lang);

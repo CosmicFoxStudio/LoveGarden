@@ -12,7 +12,7 @@ draw_set_valign(fa_middle);
 // Draw the text
 var _c = TEXT_GREEN;
 if (!hovering) image_index = 1;
-if (obj_title_menu_controller.pos == btnType) {
+if (hovering || keyboardSelection) {
 	image_index = 0.9;
 }
 	

@@ -1,6 +1,6 @@
 /// @description Button Action
 
-if (InputCheck(e_input.MOUSE, "confirm") && hovering) {
+if (InputCheck("confirm", e_input.MOUSE) && hovering) {
 	show_debug_message("Going to Gazebo");
 	
 	GameTransitionChangeRoom(rm_gazebo, sq_trans_fade_black);

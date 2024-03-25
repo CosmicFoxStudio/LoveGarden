@@ -3,8 +3,11 @@
 	-1 if the up key is pressed, 
 	0 if both or neither are pressed.
 */
-function CheckVerticalInput() {	
-	return InputCheck(e_input.KEYBOARD, "down") - InputCheck(e_input.KEYBOARD, "up");
+function CheckVerticalInput() {
+	var _returnValue = InputCheck("down") - InputCheck("up");
+	//if(_returnValue != 0)
+	//	show_debug_message("CheckVerticalInput: " + string(_returnValue));
+	return _returnValue;
 }
 
 /*	Returns:
@@ -13,7 +16,10 @@ function CheckVerticalInput() {
 	0 if both or neither are pressed.
 */
 function CheckHorizontalInput() {
-	return InputCheck(e_input.KEYBOARD, "right") - InputCheck(e_input.KEYBOARD, "left");	
+	var _returnValue = InputCheck("right") - InputCheck("left");
+	//if(_returnValue != 0)
+	//	show_debug_message("CheckHorizontalInput: " + string(_returnValue));
+	return _returnValue;
 }
 
 // Draws a rectangle starting from center, colors are changed and then reset
