@@ -227,5 +227,7 @@ if (Debug()) {
 	instance_create_layer(ORIGIN_X, ORIGIN_Y, "Controllers", DEBUG_DRAWER);
 }
 
-// Add first room here
-room_goto(rm_lang);
+time_source_start(time_source_create(time_source_game, 120, time_source_units_frames, function() {
+    // Add first room here
+	GameTransitionChangeRoom(rm_lang, sq_trans_fade_black);
+}));
