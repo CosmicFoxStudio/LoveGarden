@@ -122,7 +122,7 @@ if (selectedButton == "CONFIRM") {
 	
 	// Platform isn't a browser
 	if (os_browser == browser_not_a_browser) {
-		// Call a screen transition to rm_file_selection
+		// Call a screen transition
 		var target = room_next(room);
 		GameTransitionChangeRoom(target, sq_trans_fade_white);
 	}
