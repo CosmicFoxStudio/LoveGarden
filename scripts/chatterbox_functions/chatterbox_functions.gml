@@ -41,7 +41,9 @@ function RouteAssign(_SOName) {
 
 // Goes back to the title screen and changes game state
 function BackToTitle() {
-	GameTransitionChangeRoom(rm_title, sq_trans_fade_black);
+	// GameTransitionChangeRoom(rm_title, sq_trans_fade_black); // ---> Old title
+	GameTransitionChangeRoom(rm_phoneTitle, sq_trans_fade_black);
+	
 	GameChangeState(e_gameStates.LEAVE);
 }
 

@@ -120,10 +120,8 @@ You wave to him as you leave the entrance of the dormitory. #line:afa188
 
 title: FragranceOnTheMist
 ---
-While you walk down the courtyard, impressed by the local illumination during the night. #line:f86ee1
-You realize that you are not alone in your nocturnal walk... #line:5e1bf5
-You choose the courtyard for your nighttime walk, and are impressed by the lighting of the place. #line:72f2b5
-As you walk, you realize you are not alone... #line:1803d5
+While you walk through the courtyard, you notice how well-lit it is. #line:a85ccf
+You realize you are not alone in your nocturnal walk... #line:49d07c
 <<chara("caru")>>
 It's Caru! #line:8312b3 
 He is seated in one of the benches with the cigarettes in his lips. #line:690ddb
@@ -361,4 +359,4 @@ Better head back to the dorm and sleep. #line:2ed747
 <<save()>>
 <<reward()>>
 ===
- 
+         

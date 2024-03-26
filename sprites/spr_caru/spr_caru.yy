@@ -25,7 +25,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"0fa578d5-7edd-4b65-b8e8-1d8780a4692e","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 7,
+  "origin": 9,
   "parent": {
     "name": "Caru",
     "path": "folders/Sprites/Characters/Caru.yy",
@@ -64,7 +64,7 @@
     "visibleRange": null,
     "volume": 1.0,
     "xorigin": 176,
-    "yorigin": 370,
+    "yorigin": 350,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,
