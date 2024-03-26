@@ -1,7 +1,7 @@
 {
   "resourceType": "GMFont",
   "resourceVersion": "1.0",
-  "name": "fnt_dialogue2_s",
+  "name": "fnt_dialogue2",
   "AntiAlias": 1,
   "applyKerning": 0,
   "ascender": 9,

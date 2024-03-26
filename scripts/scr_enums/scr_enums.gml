@@ -127,11 +127,13 @@ function Enums() {
 	enum e_fontSize {
 		SMALL,
 		MEDIUM,
-		LARGE
+		LARGE,
+		COUNT
 	}
 	
 	enum e_fontType {
 		PRIMARY,
-		SECONDARY
+		SECONDARY,
+		COUNT
 	}
 }

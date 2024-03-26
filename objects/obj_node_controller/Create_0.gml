@@ -11,10 +11,8 @@ optionHovered = -1;
 //depth = -100;
 
 // ----------------------------- SCRIBBLE ----------------------------- //
-// Setup font
-SelectDialogFont(global._fontTest, global._sizeTest);
-scribble_font_set_default(font_get_name(global.selectedDialogFont));
-scribble_font_scale(font_get_name(global.selectedDialogFont), 1);
+// Setup scribble font
+SelectScribbleDialogFont(global.fontType, global.fontSize);
 
 // Typist
 textSpd = 0.5;
