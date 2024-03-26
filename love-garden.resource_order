@@ -209,6 +209,7 @@
     {"name":"spr_button_small","order":4,"path":"sprites/spr_button_small/spr_button_small.yy",},
     {"name":"__scribble_get_glyph_data","order":10,"path":"scripts/__scribble_get_glyph_data/__scribble_get_glyph_data.yy",},
     {"name":"scribble_markdown_set_styles","order":4,"path":"scripts/scribble_markdown_set_styles/scribble_markdown_set_styles.yy",},
+    {"name":"mus_neutral","order":9,"path":"sounds/mus_neutral/mus_neutral.yy",},
     {"name":"__ChatterboxSplitBody","order":14,"path":"scripts/__ChatterboxSplitBody/__ChatterboxSplitBody.yy",},
     {"name":"__scribble_get_effects_slash_map","order":6,"path":"scripts/__scribble_get_effects_slash_map/__scribble_get_effects_slash_map.yy",},
     {"name":"stats_functions","order":9,"path":"scripts/stats_functions/stats_functions.yy",},

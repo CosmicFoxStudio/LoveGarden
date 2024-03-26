@@ -41,6 +41,7 @@ function __scribble_config_colours()
 		
 		// Love Garden colors:
 		c_text_green : scribble_rgb_to_bgr(TEXT_GREEN),
+		c_text_cyan  : scribble_rgb_to_bgr(CYAN)
 
     };
     

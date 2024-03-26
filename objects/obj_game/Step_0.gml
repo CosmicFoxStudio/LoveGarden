@@ -16,3 +16,10 @@ if (global.day > 4 && global.state == e_gameStates.CONTINUE_GAME) {
 	show_error("BRO. 4 IS TOO MANY ALREADY.", true);	
 	game_end();
 }
+
+// Quickly restart game (to make our lives easier)
+if (global.gameMode == e_gameMode.DEMO) {
+	if (keyboard_check_released(vk_f4)) {
+		game_restart();	
+	}
+}

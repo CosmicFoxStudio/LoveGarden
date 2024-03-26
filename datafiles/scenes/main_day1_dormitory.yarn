@@ -35,7 +35,7 @@ It seems like your alarm didn't go off... #line:1f91d5
 The one waking you up is your roommate, Mandacaru.\nBut everyone calls him Caru, his nickname. #line:ca02fd
 PLAYER: What time is it? #line:adf0ed
 CARU: Let me tell you, you overslept, PLAYER. #line:2278c0
-CARU: The Sun is already high in the sky, and the birds are mocking you. #line:d433df
+CARU: The sun is already high in the sky, and the birds are mocking you. #line:d433df
 CARU: And I was the universe's envoy to deliver you a sermon on punctuality. #line:ccd329
 PLAYER: Wait, what?? What does that mean? #line:74f4de
 You hurry with the choice of clothes, and in a clumsy manner, try to dress in record time. #line:2be4d7
@@ -296,4 +296,4 @@ And you share a bit about how Professor Fern seems to be a peculiar professor. #
 Soon, you both start feeling tired and prepare to sleep. #line:8641ba
 <<backTitle()>>
 ===
-              
+                 

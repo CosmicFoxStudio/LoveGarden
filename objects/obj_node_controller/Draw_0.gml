@@ -38,7 +38,7 @@ if IsChatterbox(chatterbox) and text != undefined {
 	textLength = scribble(speechText).get_glyph_count();
 	
 	// Use scribble light green color for the text (set in __scribble_config_colours)
-	scribble("[c_text_green]" + speechText).wrap(TEXT_WIDTH).draw(xx, yy, typist);
+	scribble("[c_text_cyan]" + speechText).wrap(TEXT_WIDTH).draw(xx, yy, typist);
 	
 	// Get speaker name
 	var speakerName = ChatterboxGetContentSpeaker(chatterbox, 0);

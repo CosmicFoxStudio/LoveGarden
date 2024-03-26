@@ -270,6 +270,7 @@
     {"id":{"name":"__scribble_get_glyph_data","path":"scripts/__scribble_get_glyph_data/__scribble_get_glyph_data.yy",},},
     {"id":{"name":"ChatterboxVariableDefault","path":"scripts/ChatterboxVariableDefault/ChatterboxVariableDefault.yy",},},
     {"id":{"name":"scribble_markdown_set_styles","path":"scripts/scribble_markdown_set_styles/scribble_markdown_set_styles.yy",},},
+    {"id":{"name":"mus_neutral","path":"sounds/mus_neutral/mus_neutral.yy",},},
     {"id":{"name":"__ChatterboxSplitBody","path":"scripts/__ChatterboxSplitBody/__ChatterboxSplitBody.yy",},},
     {"id":{"name":"__scribble_get_effects_slash_map","path":"scripts/__scribble_get_effects_slash_map/__scribble_get_effects_slash_map.yy",},},
     {"id":{"name":"stats_functions","path":"scripts/stats_functions/stats_functions.yy",},},
