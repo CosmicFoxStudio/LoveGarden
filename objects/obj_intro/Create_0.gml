@@ -4,6 +4,17 @@ textSpd = 0.25;
 page = 0;
 switch (global.lang) {
 	case "en":
+	if (global.gameMode == e_gameMode.DEMO) {
+		text[0]	= ". . .";
+		text[1]	= "Looks like it's the first time.";
+		text[2]	= "It's the season for fresh starts.[delay,200]\nNew reflections await.";
+		text[3]	= "Soon, you'll wake up into a new universe, a setting completely different from the usual.";
+		text[4] = "So, enjoy the journey, but with a sprinkle of wisdom.";
+		text[5] = "Now, onto the good stuff.";
+		text[6] = "";
+		break;
+	}
+	else {
 		text[0]	= ". . .";
 		text[1]	= "Looks like it's the first time.";
 		text[2]	= "This is fantastic because everything is a novelty.";
@@ -18,7 +29,19 @@ switch (global.lang) {
 		text[11] = "Now, onto the good stuff.";
 		text[12] = "";
 		break;
+	}
 	case "pt":
+	if (global.gameMode == e_gameMode.DEMO) {
+		text[0]	= ". . .";
+		text[1]	= "Parece que é a primeira vez.";
+		text[2]	= "É temporada de novos recomeços.[delay,200]\nDe novas reflexões.";
+		text[3]	= "Em breve, você vai acordar em um novo universo, um cenário bem diferente do habitual.";
+		text[4] = "Portanto, desfrute da jornada. Mas com sabedoria.";
+		text[5] = "Agora, ao que interessa.";
+		text[6] = "";
+		break;
+	}
+	else {
 		text[0]	= ". . .";
 		text[1]	= "Parece que é a primeira vez.";
 		text[2]	= "Isso é fantástico, pois tudo é uma revelação.";
@@ -33,6 +56,7 @@ switch (global.lang) {
 		text[11] = "Agora, ao que interessa.";
 		text[12] = "";
 		break;
+	}
 	default:
 		text[0]	= "NO LANGUAGE SELECTED.";
 		text[1] = "";
@@ -57,7 +81,7 @@ skipCounter = 0;
 typist.character_delay_add(".", 50);
 typist.character_delay_add("!", 800);
 typist.character_delay_add("?", 800);
-typist.character_delay_add(",", 800);
+typist.character_delay_add(",", 400);
 
 twFadeOutState = e_fadeoutState.IDLE;
 

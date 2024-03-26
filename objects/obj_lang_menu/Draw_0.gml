@@ -46,7 +46,7 @@ draw_sprite_ext(
 		sprite_index, image_index, 
 		descriptionX - boxWidth/2, 
 		descriptionY - boxHeight/2,
-		4*(textWidth/textWidthPT),
+		3.4*(textWidth/textWidthPT),
 		1*(textHeight/textHeightPT),
 		0, c_white, 1
 	);

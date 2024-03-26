@@ -1,0 +1,364 @@
+title: Morning
+---
+<<jump ArtMeeting>>
+===
+
+title: Noon
+---
+===
+
+title: Afternoon
+---
+===
+
+title: Night
+---
+===
+
+title: ArtMeeting
+---
+You imagined that most of the students would be spread across the campus, but there are a lot of them around the local area. #line:39d85f
+<<chara("hydra")>>
+The girl from earlier seems frustrated while erasing something furiously on the paper. #line:e1d7e1
+PLAYER: If you keep like that you will tear the paper apart. #line:346eae
+HYDRANGEA: Ugh! It deserves to be teared up! #line:e8379e 
+PLAYER: Oh damn, what did the paper do to you? #line:8e92a2
+HYDRANGEA: This one did nothing, but this is my revenge for all the cuts its siblings, parents and cousins made on my fingers for the past 20 years. #line:1c8337
+PLAYER: But is it up to the children to pay for the parents' sins? #line:dd408f
+HYDRANGEA: Okay, the conversation reached a level of religiosity that I do not compact anymore. #line:6b7604
+PLAYER: Haha, but seriously, what is making you so frustrated? #line:36dd3d
+HYDRANGEA: I just can't reproduce the courtyard vibe, you know? #line:1f1102
+PLAYER: So that's what you were drawing. #line:b0e494
+HYDRANGEA: Yeah... #line:ee28db
+PLAYER: You like the campus that much? #line:ffe866
+HYDRANGEA: I like my loan, that's it. #line:c2cf91
+PLAYER: So you receive a loan to draw places on the campus? #line:238447
+HYDRANGEA: Hmm, kinda. #line:dc99bf
+She doesn't seem interested in explaining more than that. #line:12476a
+PLAYER: You're not a freshman then, I guess. #line:371c91
+HYDRANGEA: Ha, far from it, I'm here long enough to know this whole place like the back of my hand! #line:fe42b6
+PLAYER: Did you get opportunities to visit places outside of the campus? #line:287eb7
+HYDRANGEA: Sure! Do you think that everyone is a nerd that only stays studying all day? #line:9fcb1c
+HYDRANGEA: To really enjoy here you need to explore the whole city. #line:060b9e
+PLAYER: Do you have any recommendations on where I should go? #line:c0fe7f
+HYDRANGEA: Hm? Well, depending on what you like, I really like the At Green Book. #line:6bef93
+PLAYER: Is it a bookstore? #line:cc5561
+HYDRANGEA: (She confirms with her head). It's a cafeteria too, a cozy place to take breakfast while you have time. #line:c48645
+PLAYER: But what about the classes in the morning? #line:23222f
+HYDRANGEA: Oh true, freshmen can't choose their own schedules. #line:b27783
+HYDRANGEA: Take this as a tip. Avoid taking subjects in the first time schedule, it's just torture. #line:66763c
+PLAYER: I'll leave a note so I don't forget next semester. #line:1a2054
+PLAYER: But actually if all first classes are like Fern's, then I'll be fine. #line:460c4d
+HYDRANGEA: Oh, Fern... Got it. #line:764055
+PLAYER: Did you have classes with him? #line:1cbd0f
+HYDRANGEA: Not exactly. But I just have a friend who won't shut up about him. #line:6ccb26
+Her phone rings and she quickly takes it, reading the messages and fastly directing you a little smile while getting up. #line:6f88f9
+HYDRANGEA: Damn, I have to go. Cool chat, freshman. #line:43d054
+PLAYER: Hey, would it be possible for you to stop calling me- #line:c468bb
+<<chara("void")>>
+PLAYER: Freshman? #line:414960
+<<save()>>
+<<reward()>>
+===
+
+title: IntrospectionI
+---
+You take the boat to the lake. #line:79ab07
+There are some groups spread around there, but no one that you know is around. #line:e5e2c5
+After the rush that it was this beginning of day you start to enjoy this moment to relax for a bit. #line:a25da4
+You take a seat and gaze at the water. #line:4b8fb5
+PLAYER: It seems like I've begun a new journey. #line:1c902f
+PLAYER: Who should I become in this new chapter of my life? #line:2ff262
+PLAYER: Who should I become in this new chapter of my life? #line:1ec9b1
+-> I want to be better than I was before. #line:09dca6
+	PLAYER: This is my chance to prove that I can do stuff. #line:61ed31
+	PLAYER: I won't let anyone down. #line:1fcaa7
+	PLAYER: No more delays PLAYER, you are now a new person. #line:cdb215
+-> I want to be able to have fun with these people I'm meeting. #line:c488b1
+	PLAYER: Not being limited by the same people I knew since I was a kid is a relief. #line:35aa23
+	PLAYER: I can finally explore who I really am. #line:092765
+	PLAYER: And meet new people really different from those who I already knew. #line:86f4ec
+-> I want to have a peaceful life... #line:2c771d
+	PLAYER: High school was not easy. #line:7a433f
+	PLAYER: But I was really good at Biology... #line:0b3de1
+	PLAYER: I hope it continues like that... #line:6052bc
+You arrive at your destination. #line:aa3e5e 
+The lake feels strangely lonely today. #line:fd9abd
+PLAYER: Why did I come in here again...? #line:48fe05  
+PLAYER: (sighs) I guess there isn't anything to do here... #line:a54fdf
+<<save()>>
+<<reward()>>
+===
+
+title: CitrusMeeting
+---
+Arriving at the reception of the dormitory you come across an elderly man with oranges stuck on his beard. #line:bf3ad6
+<<chara("orange")>>
+MR ORANGE: Hey. Welcome back to the dormitory, young one! #line:0d9ba6 
+PLAYER: Who are you, Sir...? #line:7789ff
+ORANGE: My name is Orange, young one. #line:d21156 
+PLAYER: I'm PLAYER. #line:2628f7 
+PLAYER: Not wanting to sound nosy but it's a lot of a coincidence that your name is the same as the dormitory. #line:f39079 
+MR ORANGE: Haha! This is not a coincidence, young one! I've been the supervisor of this dorm since it was built. #line:28d33b
+PLAYER: But that wasn't like, a long time ago? #line:1653ed 
+PLAYER: (Oh my god I just called him old). #line:d9105a 
+MR ORANGE: HAHA! It's been only 25 years! #line:35fa1d 
+PLAYER: This means that you have met all the famous plants, right? #line:bdd7c2 
+PLAYER: Even Tony Ramos that graduated years ago? #line:c3249a 
+MR ORANGE: Each and all of them! I have an album of photos with the students that became famous in this university. #line:fadbea 
+MR ORANGE: I can show you the album one day if you want! #line:8746bb
+PLAYER: I would love to! #line:249ff0 
+MR ORANGE: I liked your enthusiasm, young one! #line:f7ee64 
+You were going to ask to see right away, like all good immediatist young ones, but are interrupted by many other students arriving at the dormitory. #line:abd656
+He greets all students, some of them stop to talk to him. #line:96b188
+You probably won't be able to get more attention from him for now. #line:62ff3d
+PLAYER: See you around, Mr. Orange. #line:74fee6 
+You wave to him as you leave the entrance of the dormitory. #line:afa188
+<<save()>>
+<<reward()>>
+===
+
+title: FragranceOnTheMist
+---
+While you walk down the courtyard, impressed by the local illumination during the night. #line:f86ee1
+You realize that you are not alone in your nocturnal walk... #line:5e1bf5
+You choose the courtyard for your nighttime walk, and are impressed by the lighting of the place. #line:72f2b5
+As you walk, you realize you are not alone... #line:1803d5
+<<chara("caru")>>
+It's Caru! #line:8312b3 
+He is seated in one of the benches with the cigarettes in his lips. #line:690ddb
+CARU: Oh! PLAYER! #line:f0d260
+PLAYER: Ah, I thought you were already in the dorm. #line:935344
+CARU: Nah, I need to relax after class... #line:8a7be3
+CARU: And I needed a little privacy. #line:581cfc
+He moves his hand in a way to highlight the cigarette. #line:3b860e
+PLAYER: I didn't even know you smoke! #line:1d7a2d
+CARU: Hm, I don't tend to share it a lot, there are people who don't like it. #line:068905
+PLAYER: Hm, well... #line:52bda2
+-> I don't care, you can smoke freely. #line:b00757
+	CARU:  Woah, I have another one left here if you want. #line:03dd9a
+	PLAYER: Uh- #line:4867df 
+	CARU: Just kidding dumbass, you know it haha. #line:68eca0
+CARU: I'm already a little altered. #line:a6e4ba
+-> I can understand someone being bothered. #line:f18004
+CARU: That's why I put myself away when I smoke. #line:1e8c1f
+PLAYER: That's really good indeed. #line:fb5ac7
+CARU: Don't worry, I won't bring anything to the bedroom. #line:bd2994
+	PLAYER: I know! I trust you, damn! #line:27e2c4
+	CARU: Haha, Just to reinforce. #line:b56d8d
+CARU: It's a way for me to relax, you know? #line:7d9bf9
+PLAYER: The semester didn't even start, and you already need to relax? #line:daec3b
+Caru: It's exactly because the semester started that I need to relax. #line:08baa1
+PLAYER: And I was here thinking that you liked to share the bedroom with me. #line:a264ef
+CARU: Hey, no, it's not your fault! #line:62e497
+CARU: You are the first roommate that I have that is actually cool. #line:291952
+PLAYER: Hum, got it. And what about the girl from last semester? #line:50341c
+CARU: I swear to you I never had so little sleep like last semester. #line:1e80d0
+CARU: She would arrive in the middle of the night, turn on the bathroom light and the lampshade and would stay up until 5 am. #line:8fda7f
+PLAYER: This sounds like hell itself. #line:2f2a30
+PLAYER: I already have a troubled sleep schedule. #line:1368c7
+PLAYER: Imagine if I followed her exemples. #line:d78b3d
+CARU: We both got lucky to have one another for this year. #line:f09f09
+He blinks at you and you both start laughing together. #line:e21894
+PLAYER: Well, I'll let you enjoy your moment in peace. #line:1853d3
+PLAYER: We see each other soon? #line:93f540 
+CARU: Of course, as soon as I finish here I will go back to the bedroom! #line:8e116f
+It's possible to observe the smoke almost form a fog towards the moon. #line:90365a
+You direct yourself back to the dormitory. #line:5712aa
+<<save()>>
+<<reward()>>
+===
+
+title: SocialAnxiety
+---
+The patio really seems like the ideal place to rest a little before starting Mamba’s assignment. #line:8bd98d
+You take a deep breath and look around. #line:4c5114
+You recognize a familiar figure nearby. #line:a75bf8
+<<chara("ype")>>
+Ype is seated alone under the tree. #line:140247
+You realize that they are putting a bowl inside the thermal lunch bag. #line:8b571d
+Apparently they preferred to eat outside, among the forest. #line:f84bf4
+PLAYER: Hey, Ype! #line:942cf5
+YPE: Ah! #line:c011b1
+YPE: I didn't see you approaching! #line:ff739b
+PLAYER: Whoops... Once again, sorry I didn't want to startle you. #line:2ce7e6
+While talking, you sit beside them. #line:6335b1
+PLAYER: But I found it curious that you are eating here outside. #line:14a8ae
+YPE: Ah... The common spaces are always full of people... #line:a58d71
+YPE: I prefer to eat by myself... #line:c90fa3
+YPE: I prefer to eat by myself... #line:e14bed
+-> It feels so lonely... #line:8947f5  
+<<changeRelationship("ype", -1)>>
+	YPE: Ah... haha. Being alone is not necessarily bad... #line:ba7963
+	PLAYER: Whoops, this wasn't what I meant to say! #line:ab5328
+	PLAYER: You don't have to be alone all the time, you know? #line:d2032a
+	YPE: I... I don't care much about it. #line:5cd40e
+	YPE: But having some pleasant company is really great. #line:87b74a
+-> After seeing the restaurant I understand you. #line:f0f950
+<<changeRelationship("ype", 1)>>
+	<<emotion(4)>>
+	YPE: It's kinda chaotic there, isn't it? #line:b42c17
+	PLAYER: Yeah! Like, I like having time to speak with my friends. #line:8e9858
+	PLAYER: But it is so noisy and full of people. #line:bceb9a
+	YPE: Well, you are invited to spend your lunches with me if you want... #line:f0c5aa
+	PLAYER: Thank you! #line:a1f251
+PLAYER: Anyways, I'm happy that I found you. #line:d24845
+Ipê: Oh yeah? Why? #line:9c52a0
+PLAYER: Ah, nothing specific, I'm happy to be able to meet new people, you know. #line:56f7fb
+PLAYER: You were like, the second plantae that I directly talked to around here. #line:d12c10
+PLAYER: It was remarcable! #line:008358
+YPE: Hm, this is not something I hear much... #line:ca30fa
+PLAYER: It's just that you sit here alone under the trees. #line:2690a5
+PLAYER: Who would want to interrupt. #line:37fce8
+YPE: And you interrupted anyway? #line:3c4cc2
+PLAYER: Well, above all I'm courageous. #line:e5b532
+YPE: Haha... You're funny. #line:e653b5
+PLAYER: Heh, I try. #line:180733
+PLAYER: But hey, you heard that the freshman party will come on the day after tomorrow? #line:8b89ff
+YPE: Oh, yes. I heard. #line:c0c839
+YPE: I gotta admit that I'm not so excited about going... #line:063893
+PLAYER: But you don't have anywhere to escape, right?\nLiving on the campus and all that? #line:42e884
+YPE: Yeah, the noise will be there either way... #line:f92c97
+YPE: But I'm not sure I'm really going... #line:25b530
+PLAYER: I think it might be worth going the semester you were a freshman just to say you've experienced it. #line:ece52e
+YPE: Hum... Why do you think that? #line:123879
+PLAYER: We live just one time! #line:aad5b6
+YPE: Well, I...I... will think about it... #line:b21df4
+PLAYER: You pondering it is already a victory to me...! #line:0e28bc
+PLAYER: I'd be by your side. #line:fcd326
+You two keep talking for a little longer and when you realize it's getting late. #line:566e82
+You need to take advantage of the fact that the Sun is still in the sky to do Mamba's assignment. #line:9be968
+PLAYER: We should start doing the assignment! #line:9a8167
+YPE: Ah, I need to take my material in the Science building first... #line:59620a
+YPE: I will stop by there and you can go on to the lake! #line:89d8bd
+PLAYER: Ok. See you there then! #line:2b1eb3
+Ype leaves in a rush, after gathering their stuff. #line:70c182
+You start moving too. #line:0dde8a
+<<save()>>
+<<reward()>>
+===
+
+title: EventManagement
+---
+You decide that the best spot to take a rest is the gazebo. #line:862077
+The times that you passed by it catched your attention. #line:d10332
+The seats look comfortable and the light seems enough to give you some energy and not hurt your eyes. #line:2312b7
+The place shouldn't be crowded at this time, at least that's what you hope. #line:8298b3
+<<chara("rose")>>
+When you enter the gazebo, you are surprised to see another person there. #line:7cea05
+<<chara("rose")>>
+Rose didn't seem to realize that you entered the gazebo. #line:d8a9bc
+She looks quite concentrated in the computer on her lap, typing furiously. #line:79cf1f
+You approach her and then type on her shoulder, startling her. #line:500b48
+ROSE: Fucking shi-!! #line:9ce28a
+She interrupts herself while she recovers for a second, but you can still see a faint redness on her cheeks. #line:ead421
+ROSE: Oh, PLAYER! It's so good that it's you. #line:962169
+ROSE: Imagine if it was a professor that scared the hell out of me like that! #line:e57d19
+PLAYER: They would probably be surprised by your choice of words, haha! #line:6f69f8
+ROSE: For what reason did you come to me? #line:e3f10a
+PLAYER: Actually no... I was going to rest here and I saw you. #line:886900
+PLAYER: I thought you had a meeting right now, is everything all right? #line:50f569
+ROSE: Oh yes, the client canceled the meeting at the last minute. #line:7a2cc3
+PLAYER: Oh damn, that sucks, I hope it doesn't cause you any kind of loss. #line:c52cc5
+PLAYER: I confess I have no idea how this junior enterprise thing works. #line:2ad758
+ROSE: Um... We don't have any loss, except for our time... #line:0e58a2
+ROSE: I'm not even angry about the meeting getting canceled. #line:48bbca
+ROSE: This gives me time to go back to focus on the organization of the freshman party. #line:5bedfc
+PLAYER: You're really busy with all that, huh? #line:72072d
+ROSE: It's the price to pay for an event that is remarkable. #line:cbce5b
+ROSE: You are new here so you can't even get what I mean. #line:62eade
+ROSE: But like, all events from the years before would be so horribly bad. #line:33e24d
+ROSE: From the last year to now the students started to take more lead, especially with the rectory kinda leaving the unofficial mega event aside. #line:a9b855
+PLAYER: So it went from a rectory that did a terrible event to one that doesn’t even do anymore? #line:04dc6d
+ROSE: More. The old rectory made shitty events and the new one just threw everything into the student's hands to make it. #line:99f2b7
+PLAYER: And with students you mean? #line:a5a979
+ROSE: Theoretically it should be a lot of people, but no one was willing to manage the events. #line:13d5c1
+ROSE: So it ended up in my hands. #line:68cf35
+ROSE: So it ended up in my hands. #line:63ae53
+-> Have you ever thought about doing less stuff? #line:4dbc36
+	PLAYER: You will end up depleting yourself easily if you continue like that. #line:fd308a
+	ROSE: Don't you think that you are assuming things about me? #line:adae3d
+	ROSE: We don't even know each other that much for you to draw your own conclusions. #line:67a5ce
+-> Really cool that you are able to do all of these! #line:7e2b2d
+	PLAYER: I would definitely get lost if I were to organize something. #line:183c5a
+	ROSE: Haha, thanks. #line:f86619
+	ROSE: And who knows. Maybe I can convince you to try out one of the events? #line:70db34
+ROSE: Anyways, I found a way to organize my life so as to make everything work. #line:3b5d7d
+ROSE: And all events till now were a success. #line:a49d9c
+ROSE: Then... It's all fine! #line:256b40
+Before you could reply, a notification echoed from Rose's computer. #line:8d4cde
+ROSE: Ugh, my bad. I have to cut the talk here. Apparently someone locked a person inside the monitoring room. #line:10b86a
+She closes her laptop, and puts it in her bag. #line:ebeb2c
+PLAYER: I feel honored that you had some time to talk with me at least a bit. #line:e2091b
+ROSE: Good to see you, PLAYER! #line:2ee41c
+She left in a hurry. #line:f8c5cc
+<<chara("void")>>
+You spend some more time admiring the gazebo's scenery before realizing that the time you arranged to meet Ype is approaching. #line:4a1eec
+<<save()>>
+<<reward()>>
+===
+
+title: ThornyRelationship
+---
+The gazebo is definitely a beautiful place during the night. #line:7cc207
+You hoped to finally enjoy the place with no one around. #line:03e52d
+But as you approach more and more you can notice two figures. #line:8fa5f8
+<<chara("clove")>>
+???: I just really find it hard to trust you with these things! #line:daf406
+???: We didn't even enjoy our vacation because you were working. #line:899c45
+???: And since we got back, there hasn't been a single date we arranged where you showed up on time! #line:605fb4
+One male voice, clearly agitated, is speaking loud enough for you to hear even from outside the gazebo. #line:cff61c
+The voice is really familiar to you... #line:edd405
+<<chara("rose")>>
+???: If it's going to be like this, I really would have preferred not to come at all. #line:f39b19
+???: You know I hate to argue! #line:c81300
+???: And I won't stay here listening to it! #line:204d54
+The female voice exclaims from the gazebo, and you realize she's coming toward you, heading for the entrance. #line:45b16d
+What do you do? #line:3b2e51
+What do you do? #line:2dae56
+-> I want to take a peek to understand what's going on. #line:29e295
+	PLAYER: (Since I'm here already, if I try to sneak out it will look even worse.) #line:92e34a
+	PLAYER: (And we never know when this kind of situation can escalate, right?) #line:9969f7
+	You wait until the girl walks away. Until you can't see more than her silhouette. #line:009757
+	You enter the gazebo and it's not a surprise that one side of the discussion was... #line:78c607
+	<<chara("clove")>>
+	It was Clove. He was seated in one of the seats, his head supported by his hands. #line:0c182f
+	PLAYER: Hey... Is everything alright? #line:25640a
+	A feeling of secondhand embarrassment runs briefly through you while he raises his head in surprise. #line:bdd3a4
+	PLAYER: I mean I know it's not but are you okay? #line:207b39
+	CLOVE: PLAYER... I didn't expect to see you here. #line:9e56f0
+	PLAYER: Me neither... I mean, I didn't expect to be here in the first place. #line:e4c7dc
+	PLAYER: But it seems like you need a friendly shoulder. #line:bc6a80
+	CLOVE: I don't want to talk about what just happened. #line:5b3d93
+	PLAYER: Hey, the offer is a friendly shoulder, not a friendly ear. #line:f02e86
+	You sit besides him. #line:b125a6
+	CLOVE: Hm, I think I will accept your offer. #line:eb4617
+	He leans his head on your shoulder. #line:c04db7
+	You two stay in silence for some minutes until Clove recovers himself. #line:26b0ca
+	CLOVE: Thanks. #line:91cdc7
+	PLAYER: It was nothing. #line:bb7e68
+	CLOVE: Now I have to sort things out around here... #line:15dd04
+	PLAYER: Need a hand? #line:0553f9
+	CLOVE: Nah, you've already helped enough. It's getting late and you need to get back to the dorm before your time goes away. #line:ae2422
+	CLOVE: We will see each other tomorrow, sounds good? #line:fc635d
+	You agree, leaving the gazebo. #line:08b0e6
+-> It's better not to get involved in this type of couple fights. #line:8426e3
+	PLAYER: (I already heard more than I should, I better just get out of here.) #line:af570f
+	You turn away to leave, wanting to avoid the person who seemed like they were about to storm out. #line:2c7d9e
+	However, before you could escape the scene, someone bumps into you. #line:cb96bf
+	The person who left the gazebo was definitely running. #line:032bd6
+	<<chara("rose")>> 
+	And it's Rose... #line:3f62db
+	You can see in her face a mix of shame and anger. #line:99d226
+	PLAYER: I-I'm... Sorry, I swear I didn't want to see anything. #line:b83148
+	She ponders your words for a few moments. #line:703d3b
+	ROSE: So you're not telling this to anybody? #line:5f489f
+	PLAYER: Of course not. #line:6cb8c9
+	She stares at you sternly, probably assessing the truthfulness of your words. #line:14e63c
+	She gives a slight nod, then continues on her way. #line:dab626
+Who would've thought a nighttime stroll would land you in this situation... #line:6e2244 
+Better head back to the dorm and sleep. #line:2ed747
+<<save()>>
+<<reward()>>
+===
+ 

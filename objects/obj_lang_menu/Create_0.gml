@@ -42,6 +42,6 @@ option[e_language.PT] = ["ENGLISH", "PORTUGUÊS"];
 
 // Other text
 titleText[e_language.EN] = "Choose a language";
-titleText[e_language.PT] = "Escolha a linguagem";
+titleText[e_language.PT] = "Escolha o idioma";
 
 optionLength = array_length(option);

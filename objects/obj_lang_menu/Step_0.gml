@@ -13,29 +13,27 @@ if (phase == "SELECT") {
 	
 	// ---------------------- ------- MOUSE INPUT ------------------------------- //
 	// Mouse Input - Handle mouse hover
-	if (global.inputMode == e_input.MOUSE) {
-		var isMouseHoveringMenu = false;
-		for (var i = 0; i < optionLength; i++) {
-		    var button_y = y + optionMargin * i;
+	var isMouseHoveringMenu = false;
+	for (var i = 0; i < optionLength; i++) {
+		var button_y = y + optionMargin * i;
 
-			// Checking if mouse cursor is inside boundaries of lang menu
-		    if (mouse_x >= x && mouse_x <= x + width &&
-		        mouse_y >= button_y && mouse_y <= button_y + optionMargin) {
-				isMouseHoveringMenu = true;
-		        pos = i;
-				break; // Exit the loop once it finds a hovered option
-		    }
-			else {
-				isMouseHoveringMenu = false;
-			}	
+		// Checking if mouse cursor is inside boundaries of lang menu
+		if (mouse_x >= x && mouse_x <= x + width &&
+		    mouse_y >= button_y && mouse_y <= button_y + optionMargin) {
+			isMouseHoveringMenu = true;
+		    pos = i;
+			break; // Exit the loop once it finds a hovered option
 		}
+		else {
+			isMouseHoveringMenu = false;
+		}	
 	}
 	
 	// -------------------------------------------------------------------------- //
 
 	// Choose a language
-	if	( InputCheck(e_input.MOUSE, "confirm") && isMouseHoveringMenu ) || 
-		(InputCheck(e_input.KEYBOARD, "confirm") ) {
+	if	( InputCheck("confirm", e_input.MOUSE) && isMouseHoveringMenu ) || 
+		(InputCheck("confirm", e_input.KEYBOARD) ) {
 		switch(pos) {
 			case 0: 
 				phase = "CONFIRM";
@@ -60,58 +58,54 @@ if (phase == "CONFIRM") {
 	confirmButton.unavailable = false;
 	
 	// ---------------------- ------- MOUSE INPUT ------------------------------- //
-	if (global.inputMode == e_input.MOUSE) {
+	cancelButtonIsHovering = cancelButton.hovering;
+	confirmButtonIsHovering = confirmButton.hovering;
 
-		cancelButtonIsHovering = cancelButton.hovering;
-		confirmButtonIsHovering = confirmButton.hovering;
-
-		// MOUSE ENTER LOGIC
-		if (cancelButtonIsHovering) { // Mouse entered left button area
-			// Change appearance when hovering
-			cancelButton.selected = true; 
-			posButtons = 0;
+	// MOUSE ENTER LOGIC
+	if (cancelButtonIsHovering) { // Mouse entered left button area
+		// Change appearance when hovering
+		cancelButton.selected = true; 
+		posButtons = 0;
 		
-		    // Player cancelled the selection
-		    if ( InputCheck(e_input.MOUSE, "confirm") ) {
-				selectedButton = "CANCEL";
-			}
-			
-		} else if (confirmButtonIsHovering) { // Mouse entered right button area
-			// Change appearance when hovering
-			confirmButton.selected = true;
-			posButtons = 1;
-	    
-			// Player confirmed the selection
-			if ( InputCheck(e_input.MOUSE, "confirm") ) {
-				selectedButton = "CONFIRM";
-			}
-		}
-		
-	} else {
-	// ----------------------------- KEYBOARD INPUT ----------------------------- //
-		posButtons += CheckHorizontalInput();
-	
-		// Wrap buttons
-		var numberOfButtons = 2;
-		if (posButtons >= numberOfButtons) posButtons = 0; // goes back to first pos
-		if (posButtons < 0) posButtons = numberOfButtons - 1; // goes to last pos
-	
-		// Confirm
-		if ( InputCheck(e_input.KEYBOARD, "confirm") ) {
-			// Player cancelled the selection
-			if (posButtons == 0) {
-				selectedButton = "CANCEL";
-			}
-			// Player confirmed the selection
-			else if (posButtons == 1) {
-				selectedButton = "CONFIRM";
-		    }
-		}
-	
-		// Cancel
-		if ( InputCheck(e_input.KEYBOARD, "cancel") ) {
+		// Player cancelled the selection
+		if ( InputCheck("confirm", e_input.MOUSE) ) {
 			selectedButton = "CANCEL";
 		}
+			
+	} else if (confirmButtonIsHovering) { // Mouse entered right button area
+		// Change appearance when hovering
+		confirmButton.selected = true;
+		posButtons = 1;
+	    
+		// Player confirmed the selection
+		if ( InputCheck("confirm", e_input.MOUSE) ) {
+			selectedButton = "CONFIRM";
+		}
+	}
+		
+	// ----------------------------- KEYBOARD INPUT ----------------------------- //
+	posButtons += CheckHorizontalInput();
+	
+	// Wrap buttons
+	var numberOfButtons = 2;
+	if (posButtons >= numberOfButtons) posButtons = 0; // goes back to first pos
+	if (posButtons < 0) posButtons = numberOfButtons - 1; // goes to last pos
+	
+	// Confirm
+	if ( InputCheck("confirm", e_input.KEYBOARD) ) {
+		// Player cancelled the selection
+		if (posButtons == 0) {
+			selectedButton = "CANCEL";
+		}
+		// Player confirmed the selection
+		else if (posButtons == 1) {
+			selectedButton = "CONFIRM";
+		}
+	}
+	
+	// Cancel
+	if ( InputCheck("cancel", e_input.KEYBOARD) ) {
+		selectedButton = "CANCEL";
 	}
 }
 
@@ -128,7 +122,7 @@ if (selectedButton == "CONFIRM") {
 	
 	// Platform isn't a browser
 	if (os_browser == browser_not_a_browser) {
-		// Call a screen transition to rm_file_selection
+		// Call a screen transition
 		var target = room_next(room);
 		GameTransitionChangeRoom(target, sq_trans_fade_white);
 	}

@@ -11,6 +11,5 @@ if (global.roomYarnMap[? roomName] != undefined) {
 
 // Instantiate textbox
 if (global.roomType == e_roomTypes.SCENES) {
-	var posX = SCREEN_WIDTH/8;
-	instance_create_layer(posX, 260, "Instances_Above", obj_textbox);
+	instance_create_layer(65, 245, "Instances_Above", obj_textbox);
 }

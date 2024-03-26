@@ -4,6 +4,7 @@
 Enums();
 camera = -1;
 global.debug = false;
+global.gameMode = e_gameMode.DEMO;
 global.lastFontUsed = -1;
 global.dialogFonts = [
 	[fnt_dialogue_s, fnt_dialogue, fnt_dialogue_l],
@@ -96,22 +97,26 @@ function KeybindingDefinition(_confirm=-1, _cancel=-1, _start=-1, _up=-1, _down=
 }
 
 // Config keybindings
-function KeybindingCreate(_inputMode) {
-	if (global.inputMode == e_input.MOUSE) {
-		return new KeybindingDefinition(mb_left, mb_right, mb_middle);
-	}	
+function PrimaryKeybindingCreate() {
+	var _keybind = array_create(3);
+	_keybind[e_input.MOUSE] = new KeybindingDefinition(mb_left, mb_right, mb_middle);
+	_keybind[e_input.KEYBOARD] = new KeybindingDefinition(vk_space, vk_backspace, vk_enter, vk_up, vk_down, vk_left, vk_right);
+	_keybind[e_input.GAMEPAD] = new KeybindingDefinition(gp_face1, gp_face2, gp_start, gp_padu, gp_padd, gp_padl, gp_padr);
 	
-	if (global.inputMode == e_input.KEYBOARD) {
-		return new KeybindingDefinition(vk_space, vk_backspace, vk_enter, vk_up, vk_down, vk_left, vk_right);
-	}
-	
-	if (global.inputMode == e_input.GAMEPAD) {
-		return new KeybindingDefinition(gp_face1, gp_face2, gp_start, gp_padu, gp_padd, gp_padl, gp_padr);
-	}
+	return _keybind;
 }
 
-global.inputMode = e_input.KEYBOARD;
-global.keybind = KeybindingCreate(global.inputMode);
+function SecondaryKeybindingCreate() {
+	var _keybind = array_create(3);
+	_keybind[e_input.MOUSE] = new KeybindingDefinition();
+	_keybind[e_input.KEYBOARD] = new KeybindingDefinition(, , , ord("W"), ord("S"), ord("A"), ord("D"));
+	_keybind[e_input.GAMEPAD] = new KeybindingDefinition();
+	
+	return _keybind;
+}
+
+global.primaryKeybind = PrimaryKeybindingCreate();
+global.secondaryKeybind = SecondaryKeybindingCreate();
 // To reference: global.keybind.confirm
 #endregion GAME CONTROLS
 
@@ -147,15 +152,27 @@ SetResolution();
 global.dialogueList = [];
 	
 if (os_browser == browser_not_a_browser) {
-	// Not in browser - Load the files dynamically
+	// Not in browser - Load the canon files dynamically
 	LoadDialogueFiles();
+	// Load Bonus Events
+	ChatterboxLoadFromFile("scenes/demo_day1_bonus.yarn");
 }
 else {
 	// In browser - load files manually
-	ChatterboxLoadFromFile("scenes/main_day0_test.yarn");
-	ChatterboxLoadFromFile("scenes/main_day1_dormitory.yarn");
-	ChatterboxLoadFromFile("scenes/main_day1_boat.yarn");
-	ChatterboxLoadFromFile("scenes/main_day1_sciences.yarn");
+	if (global.gameMode == e_gameMode.DEMO) {
+		// DEMO MODE
+		ChatterboxLoadFromFile("scenes/demo_day1_dormitory.yarn");
+		ChatterboxLoadFromFile("scenes/demo_day1_boat.yarn");
+		ChatterboxLoadFromFile("scenes/demo_day1_sciences.yarn");
+		ChatterboxLoadFromFile("scenes/demo_day1_central.yarn");
+	}
+	else {
+		// RELEASE MODE
+		ChatterboxLoadFromFile("scenes/main_day0_test.yarn");
+		ChatterboxLoadFromFile("scenes/main_day1_dormitory.yarn");
+		ChatterboxLoadFromFile("scenes/main_day1_boat.yarn");
+		ChatterboxLoadFromFile("scenes/main_day1_sciences.yarn");
+	}
 }
 
 #endregion CHATTERBOX LOAD FILES
@@ -164,12 +181,22 @@ else {
 
 // Room-to-yarn map
 global.roomYarnMap = ds_map_create();
-global.roomYarnMap[? "rm_test"	]			= "scenes/main_day0_test.yarn";
-global.roomYarnMap[? "rm_dormitory"	]		= "scenes/main_day1_dormitory.yarn";
-global.roomYarnMap[? "rm_boat"	]			= "scenes/main_day1_boat.yarn";
-global.roomYarnMap[? "rm_sciences"]			= "scenes/main_day1_sciences.yarn";
-// And so on...
-
+// DEMO MODE
+if (global.gameMode == e_gameMode.DEMO) {
+	//global.roomYarnMap[? "rm_test"]			= "scenes/main_day0_test.yarn";
+	global.roomYarnMap[? "rm_dormitory"]		= "scenes/demo_day1_dormitory.yarn";
+	global.roomYarnMap[? "rm_boat"]				= "scenes/demo_day1_boat.yarn";
+	global.roomYarnMap[? "rm_sciences"]			= "scenes/demo_day1_sciences.yarn";
+	global.roomYarnMap[? "rm_central"]			= "scenes/demo_day1_central.yarn";
+}
+// RELEASE MODE
+else {
+	global.roomYarnMap[? "rm_test"]				= "scenes/main_day0_test.yarn";
+	global.roomYarnMap[? "rm_dormitory"]		= "scenes/main_day1_dormitory.yarn";
+	global.roomYarnMap[? "rm_boat"]				= "scenes/main_day1_boat.yarn";
+	global.roomYarnMap[? "rm_sciences"]			= "scenes/main_day1_sciences.yarn";
+	// And so on...
+}
 // ----------------------- Chatterbox Localization Build -----------------------  //
 
 // Only uncomment this next line when there are NEW dialogue lines to be generated!!
@@ -206,5 +233,7 @@ if (Debug()) {
 	instance_create_layer(ORIGIN_X, ORIGIN_Y, "Controllers", DEBUG_DRAWER);
 }
 
-// Add first room here
-room_goto(rm_input_mode);
+time_source_start(time_source_create(time_source_game, 120, time_source_units_frames, function() {
+    // Add first room here
+	GameTransitionChangeRoom(rm_lang, sq_trans_fade_black);
+}));

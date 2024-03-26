@@ -3,6 +3,7 @@
 // Currently possible options: "PLAY", "QUIT", "HELP"
 btnType =  e_btnTypes.HELP;
 hovering = false;
+keyboardSelection = false;
 
 // ENUMS USED: e_language & e_btnTypes
 

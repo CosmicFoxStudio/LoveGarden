@@ -161,13 +161,20 @@ function NextDay() {
 }
 
 // Increments by 1 global.currentDaytime
-function NextDaytime() {
-	switch (global.currentDaytime) {
-		case e_daytime.MORNING: global.currentDaytime = e_daytime.NOON; break;
-		case e_daytime.NOON: global.currentDaytime = e_daytime.AFTERNOON; break;
-		case e_daytime.AFTERNOON: global.currentDaytime = e_daytime.NIGHT; break;
-		case e_daytime.NIGHT: break;
-		default: break;
+function NextDaytime(_manual = 0) {
+	if (_manual == 0) {
+		// Automatic daytime
+		switch (global.currentDaytime) {
+			case e_daytime.MORNING: global.currentDaytime = e_daytime.NOON; break;
+			case e_daytime.NOON: global.currentDaytime = e_daytime.AFTERNOON; break;
+			case e_daytime.AFTERNOON: global.currentDaytime = e_daytime.NIGHT; break;
+			case e_daytime.NIGHT: break;
+			default: break;
+		}
+	}
+	else {
+		// Manually assign daytime
+		global.currentDaytime = _manual;
 	}
 }
 
