@@ -7,7 +7,47 @@ audio_group_load(audiogroup_sfx);
 
 currentMusic = -1;
 
+themes = ds_map_create()
+sfx = ds_map_create()
+
 // --------------------------- Methods --------------------------- //
+JukeboxMapMusic = function(_group_id) {
+	var _musics = audio_group_get_assets(_group_id);
+	var _size = array_length(_musics);
+	for(var _i=0; _i < _size; _i++) {
+		switch(_group_id) {
+			case audiogroup_music:
+				themes[? audio_get_name(_musics[_i])] = _musics[_i];
+				break;
+			case audiogroup_sfx:
+				sfx[? audio_get_name(_musics[_i])] = _musics[_i];
+				break;
+			default:
+				break;
+		}
+	}
+	
+	if(_group_id == audiogroup_music){
+		var k = ds_map_find_first(themes);
+	    var maptext = "Themes";
+		while (!is_undefined(k)) {
+		  maptext += k + ": " + audio_get_name(themes[? k]) + "#";
+		  k = ds_map_find_next(themes, k);
+		}
+		show_debug_message(maptext);
+	} else {
+		var k = ds_map_find_first(sfx);
+	    var maptext = "SFX";
+		while (!is_undefined(k)) {
+		  maptext += k + ": " + audio_get_name(sfx[? k]) + "#";
+		  k = ds_map_find_next(sfx, k);
+		}
+		show_debug_message(maptext);
+	}
+}
+
+//JukeboxMapMusic();
+
 JukeboxStopMusic = function() {
     // Check if there is currently playing music
     if (currentMusic != -1) {
