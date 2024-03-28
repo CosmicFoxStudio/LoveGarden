@@ -1,5 +1,9 @@
 /// @description Persistent Game Manager
 
+// Audio load variables
+total_audio_groups = 2;
+total_audio_groups_loaded = 0;
+
 // Initializes globals & enumerators
 Enums();
 camera = -1;
@@ -226,8 +230,3 @@ ChatterboxAddFunction("getFlag", FlagGet);							// Returns the value of a given
 if (Debug()) {
 	instance_create_layer(ORIGIN_X, ORIGIN_Y, "Controllers", DEBUG_DRAWER);
 }
-
-time_source_start(time_source_create(time_source_game, 120, time_source_units_frames, function() {
-    // Add first room here
-	GameTransitionChangeRoom(rm_lang, sq_trans_fade_black);
-}));

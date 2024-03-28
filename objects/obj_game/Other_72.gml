@@ -6,5 +6,9 @@ _type = async_load[? "type"];
 _group_id = async_load[? "group_id"]
 
 if(_type = "audiogroup_load") {
-	JukeboxMapMusic(_group_id);	
+	total_audio_groups_loaded++;
+}
+
+if(total_audio_groups == total_audio_groups_loaded) {
+	event_user(0);
 }

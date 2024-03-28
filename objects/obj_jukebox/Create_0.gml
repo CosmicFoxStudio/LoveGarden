@@ -3,12 +3,13 @@
 // Initialize audiogroups
 audio_group_load(audiogroup_music);
 audio_group_load(audiogroup_sfx);
+
 // audiogroup_default is the master
 
 currentMusic = -1;
 
-themes = ds_map_create()
-sfx = ds_map_create()
+music_map = ds_map_create()
+sfx_map = ds_map_create()
 
 // --------------------------- Methods --------------------------- //
 JukeboxMapMusic = function(_group_id) {
@@ -17,10 +18,10 @@ JukeboxMapMusic = function(_group_id) {
 	for(var _i=0; _i < _size; _i++) {
 		switch(_group_id) {
 			case audiogroup_music:
-				themes[? audio_get_name(_musics[_i])] = _musics[_i];
+				music_map[? audio_get_name(_musics[_i])] = _musics[_i];
 				break;
 			case audiogroup_sfx:
-				sfx[? audio_get_name(_musics[_i])] = _musics[_i];
+				sfx_map[? audio_get_name(_musics[_i])] = _musics[_i];
 				break;
 			default:
 				break;
@@ -28,19 +29,19 @@ JukeboxMapMusic = function(_group_id) {
 	}
 	
 	if(_group_id == audiogroup_music){
-		var k = ds_map_find_first(themes);
-	    var maptext = "Themes";
+		var k = ds_map_find_first(music_map);
+	    var maptext = "Music_map";
 		while (!is_undefined(k)) {
-		  maptext += k + ": " + audio_get_name(themes[? k]) + "#";
-		  k = ds_map_find_next(themes, k);
+		  maptext += k + ": " + audio_get_name(music_map[? k]) + "#";
+		  k = ds_map_find_next(music_map, k);
 		}
 		show_debug_message(maptext);
 	} else {
-		var k = ds_map_find_first(sfx);
-	    var maptext = "SFX";
+		var k = ds_map_find_first(sfx_map);
+	    var maptext = "SFX map";
 		while (!is_undefined(k)) {
-		  maptext += k + ": " + audio_get_name(sfx[? k]) + "#";
-		  k = ds_map_find_next(sfx, k);
+		  maptext += k + ": " + audio_get_name(sfx_map[? k]) + "#";
+		  k = ds_map_find_next(sfx_map, k);
 		}
 		show_debug_message(maptext);
 	}
@@ -73,4 +74,13 @@ JukeboxPlayMusic = function(_music) {
         // Update the current music variable
         currentMusic = _music;
     }
+}
+
+JukeboxPlayMusicFromString = function(_music_name) {
+	
+}
+
+Audiogroups_loaded = function() {
+	return (audio_group_is_loaded(audiogroup_music) &&
+		audio_group_is_loaded(audiogroup_sfx));
 }
