@@ -63,7 +63,7 @@ JukeboxStopMusic = function() {
 
 JukeboxPlayMusic = function(_music) {
     // Check if the current music is different from the new one
-    if (currentMusic != _music) {
+   if (currentMusic != _music) {
         // Stop the current music (if there's one)
         JukeboxStopMusic();
         // Play the new music
@@ -76,9 +76,31 @@ JukeboxPlayMusic = function(_music) {
     }
 }
 
-JukeboxPlayMusicFromString = function(_music_name) {
-	
+JukeboxPlaySFX = function(
+	_sfx, _priority = 1, _loop = false, 
+	_gain = 1, _offset = 0, _pitch = 1, 
+	_listener_mask = 1
+) {
+	audio_play_sound(
+		_sfx, _priority, _loop, _gain, 
+		_offset, _pitch, _listener_mask
+	);
 }
+
+// Can be called using inst_jukebox.JukeboxPlayMusicFromString()
+JukeboxPlayMusicFromString = function(_music_name) {
+	if(music_map[? _music_name] != undefined) {
+		JukeboxPlayMusic(music_map[? _music_name]);
+	}
+}
+
+// Can be called using inst_jukebox.JukeboxPlaySFXFromString()
+JukeboxPlaySFXFromString = function(_sfx_name) {
+	if(sfx_map[? _sfx_name] != undefined) {
+		JukeboxPlaySFX(sfx_map[? _sfx_name]);
+	}
+}
+
 
 Audiogroups_loaded = function() {
 	return (audio_group_is_loaded(audiogroup_music) &&
