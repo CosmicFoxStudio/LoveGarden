@@ -10,6 +10,12 @@ camera = -1;
 global.debug = false;
 global.gameMode = e_gameMode.DEMO;
 global.lastFontUsed = -1;
+global.dialogFonts = [
+	[fnt_dialogue_s, fnt_dialogue, fnt_dialogue_l],
+	[fnt_dialogue2_s, fnt_dialogue2, fnt_dialogue2_l]
+];
+global.fontType = e_fontType.PRIMARY;
+global.fontSize = e_fontSize.MEDIUM;
 DrawFont(fnt_dialogue); // Run the first time
 global.configMenu = noone;
 global.date = ConvertDate(date_current_datetime());
