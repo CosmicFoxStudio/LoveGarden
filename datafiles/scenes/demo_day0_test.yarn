@@ -1,0 +1,25 @@
+title: Morning
+---
+<<chara("void")>>
+Você está dormindo tranquilamente quando alguém entra pela porta.
+<<chara("caru")>>
+CARU: BOM DIA, FLOR DO DIA! ACORDA QUE HOJE O DIA VAI SER CHEIO DE FOFOCA!
+Você não tava entendendo nada. Enquanto esfregava os olhos, uma outra figura surgiu no seu quarto.
+<<chara("clove", 1)>>
+CRAVO: Tá achando que aqui é a Disney, bb? Bora que a gente tem aula daqui a pouco.
+No desespero, você começa a se levantar apressadamente. Porém, uma outra figura aparece ocupando praticamente a porta inteira.
+<<chara("orange", 2)>>
+LARANJEIRA: Gente do céu, hoje é DOMINGO. Vão dormir, por favor. Obrigado.
+<<chara("void", 2)>>
+...
+CRAVO: ...
+CARU: ...
+CRAVO: Vlw, flw.
+<<chara("void", 1)>>
+...
+CARU: Foi mal, aí.
+<<chara("void", 0)>>
+...
+E foi por causa disso que você comprou um calendário do tamanho de um poster para colocar na parede do seu quarto.
+<<backTitle()>>
+===

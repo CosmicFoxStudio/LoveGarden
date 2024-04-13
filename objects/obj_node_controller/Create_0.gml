@@ -2,6 +2,7 @@
 node = undefined;
 chatterbox = noone;
 text = "";
+speaker = "";
 nodeName = InitialNode();
 roomName = "";
 optionIndex = 0;                                

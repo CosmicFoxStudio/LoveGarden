@@ -8,7 +8,7 @@ if (os_browser == browser_not_a_browser) {
 	newButton.baseImageIndex = 0;
 	
 	continueButton = instance_create_layer(410, 200, "Instances_Mid", obj_phone_title_button);
-	continueButton.btnType = e_btnTypes.PLAY;
+	continueButton.btnType = e_btnTypes.CONTINUEPLAY;
 	continueButton.baseImageIndex = 2;
 
 	helpButton = instance_create_layer(410, 250, "Instances_Mid", obj_phone_title_button);
@@ -26,7 +26,7 @@ else {
 	newButton.baseImageIndex = 0;
 	
 	continueButton = instance_create_layer(410, 200, "Instances_Mid", obj_phone_title_button);
-	continueButton.btnType = e_btnTypes.PLAY;
+	continueButton.btnType = e_btnTypes.CONTINUEPLAY;
 	continueButton.baseImageIndex = 2;
 
 	helpButton = instance_create_layer(410, 250, "Instances_Mid", obj_phone_title_button);

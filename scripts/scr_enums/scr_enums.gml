@@ -46,8 +46,9 @@ function Enums() {
 
 	enum e_btnTypes {
 		PLAY,
-		QUIT,
+		CONTINUEPLAY,
 		HELP,
+		QUIT,
 		CONFIRM,
 		CANCEL
 	}

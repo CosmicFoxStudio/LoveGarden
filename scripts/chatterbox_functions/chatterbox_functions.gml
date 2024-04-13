@@ -56,21 +56,20 @@ function BackgroundSetIndex(_index) {
 	show_debug_message("Bg index should be: " + string(_index));
 }
 
-// Function to choose character on screen
-function CharacterOnScreen(_name) {
-    // Set the character sprite based on the provided name
-    obj_characters.chara = global.characterSprites[$ _name];
+// Function to put character on screen
+function CharacterOnScreen(_name, _position = 0) {
+    // Set the character sprite based on the provided name and position
+	switch (_position) {
+		case 0: obj_characters.chara0 = global.characterSprites[$ _name]; break;
+		case 1: obj_characters.chara1 = global.characterSprites[$ _name]; break;
+		case 2: obj_characters.chara2 = global.characterSprites[$ _name]; break;
+		default: break;
+	}
 }
 
-// Function to draw shadow character
-function CharacterShadowOnScreen(_name) {
-    // Set the character sprite based on the provided name
-    obj_characters.chara = global.characterSprites[$ _name];
-}
-
-// Function to choose the character's expression to be displayed
-function CharacterExpressionOnScreen(_num) {
-	obj_characters.characterExpression = _num;
+// Function to choose a character's expression to be displayed
+function CharacterExpressionOnScreen(_num, _position = 0) {
+	obj_characters.charactersExpression[_position] = _num;
 }
 
 /// Use time sources to make the dialogue wait. 
@@ -241,6 +240,11 @@ function BackgroundWaitTransition(_index) {
 	[_index]));
 }
 
+// Get current place
+function GetCurrentPlace() {
+	return global.location;
+}
+
 // -----------------------------------------------------------------------------  //
 // Useful functions that are not called in .yarn files
 
@@ -248,6 +252,8 @@ function BackgroundWaitTransition(_index) {
 function UpdateChatterbox() {
 	node = ChatterboxGetCurrent(chatterbox);
 	text = ChatterboxGetContent(chatterbox, 0);
+	obj_characters.currentSpeaker = ChatterboxGetContentSpeaker(chatterbox, 0);
+	speaker = ChatterboxGetContentSpeaker(chatterbox, 0);
 }
 
 // Get filename dynamically
@@ -278,4 +284,32 @@ function InitialNode() {
 		case e_daytime.NIGHT: return "Night"; break;
 		default: return "Dawn"; break;
 	}
+}
+
+function GetCharacterColor(_sprite, _speaker) {
+	if (_speaker == "" || _speaker == "PLAYER" || _speaker == "???") return c_white;
+	else if ((_sprite == spr_ype) && (_speaker == "YPE" || _speaker == "IPÊ")) return c_white;
+	else if ((_sprite == spr_caru) && (_speaker == "CARU" || _speaker == "CARU")) return c_white;
+	else if ((_sprite == spr_rose) && (_speaker == "ROSE" || _speaker == "ROSA")) return c_white;
+	else if ((_sprite == spr_clove) && (_speaker == "CLOVE" || _speaker == "CRAVO")) return c_white;
+	else if ((_sprite == spr_hydra) && (_speaker == "HYDRANGEA" || _speaker == "HORTÊNSIA")) return c_white;
+	else if ((_sprite == spr_fern) && (_speaker == "FERN" || _speaker == "MAMBA")) return c_white;
+	else if ((_sprite == spr_orange) && (_speaker == "MR. ORANGE" || _speaker == "LARANJEIRA")) return c_white;
+	else if ((_sprite == spr_maple) && (_speaker == "MAPLE" || _speaker == "MAPLE")) return c_white;
+	else if ((_sprite == spr_noone) && (_speaker == "" || _speaker == "")) return c_white;
+	else return #808080;
+}
+
+function GetCharacterTextColor(_currentSpeaker) {
+	if (_currentSpeaker == "PLAYER" || _currentSpeaker == "PLAYER") return "[c_text_player]";
+	if (_currentSpeaker == "YPE" || _currentSpeaker == "IPÊ") return "[c_text_ype]";
+	else if (_currentSpeaker == "CARU" || _currentSpeaker == "CARU") return "[c_text_caru]";
+	else if (_currentSpeaker == "ROSE" || _currentSpeaker == "ROSA") return "[c_text_rose]";
+	else if (_currentSpeaker == "CLOVE" || _currentSpeaker == "CRAVO") return "[c_text_clove]";
+	else if (_currentSpeaker == "HYDRANGEA" || _currentSpeaker == "HORTÊNSIA") return "[c_text_hydra]";
+	else if (_currentSpeaker == "FERN" || _currentSpeaker == "MAMBA") return "[c_text_fern]";
+	else if (_currentSpeaker == "MR. ORANGE" || _currentSpeaker == "LARANJEIRA") return "[c_text_orange]";
+	else if (_currentSpeaker == "MAPLE" || _currentSpeaker == "MAPLE") return "[c_text_cyan]";
+	else if (_currentSpeaker == "" || _currentSpeaker == "") return "[c_text_cyan]";
+	else return "[c_text_cyan]";
 }

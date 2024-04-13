@@ -40,8 +40,16 @@ function __scribble_config_colours()
         // c_amaranth:   scribble_rgb_to_bgr(0xe52b50),
 		
 		// Love Garden colors:
-		c_text_green : scribble_rgb_to_bgr(TEXT_GREEN),
-		c_text_cyan  : scribble_rgb_to_bgr(CYAN)
+		c_text_green	: scribble_rgb_to_bgr(TEXT_GREEN),
+		c_text_cyan		: scribble_rgb_to_bgr(CYAN),
+		c_text_ype		: scribble_rgb_to_bgr(0xffd88f),
+		c_text_rose	    : scribble_rgb_to_bgr(0xffab91),
+		c_text_clove	: scribble_rgb_to_bgr(0xa8c3ff),
+		c_text_hydra	: scribble_rgb_to_bgr(0xc3ace8),
+		c_text_caru		: scribble_rgb_to_bgr(0xc9a695),
+		c_text_fern		: scribble_rgb_to_bgr(0xe0fc68),
+		c_text_orange	: scribble_rgb_to_bgr(0xff9254),
+		c_text_player	: scribble_rgb_to_bgr(0xffffff),
 
     };
     

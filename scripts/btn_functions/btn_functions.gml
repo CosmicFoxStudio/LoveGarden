@@ -4,6 +4,10 @@ function ExecuteButtonAction(_btnType) {
 			GameTransitionChangeRoom(rm_file_selection, sq_trans_fade_black);
 		break;
 		
+		case e_btnTypes.CONTINUEPLAY : 
+			GameTransitionChangeRoom(rm_file_selection, sq_trans_fade_black);
+		break;
+		
 		case e_btnTypes.HELP : 
 			//Add Tutorial
 		break;

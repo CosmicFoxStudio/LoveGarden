@@ -104,7 +104,7 @@ function KeybindingDefinition(_confirm=-1, _cancel=-1, _start=-1, _up=-1, _down=
 function PrimaryKeybindingCreate() {
 	var _keybind = array_create(3);
 	_keybind[e_input.MOUSE] = new KeybindingDefinition(mb_left, mb_right, mb_middle);
-	_keybind[e_input.KEYBOARD] = new KeybindingDefinition(vk_space, vk_backspace, vk_enter, vk_up, vk_down, vk_left, vk_right);
+	_keybind[e_input.KEYBOARD] = new KeybindingDefinition(vk_enter, vk_backspace, vk_space, vk_up, vk_down, vk_left, vk_right);
 	_keybind[e_input.GAMEPAD] = new KeybindingDefinition(gp_face1, gp_face2, gp_start, gp_padu, gp_padd, gp_padl, gp_padr);
 	
 	return _keybind;
@@ -165,6 +165,7 @@ else {
 	// In browser - load files manually
 	if (global.gameMode == e_gameMode.DEMO) {
 		// DEMO MODE
+		ChatterboxLoadFromFile("scenes/demo_day0_test.yarn");
 		ChatterboxLoadFromFile("scenes/demo_day1_dormitory.yarn");
 		ChatterboxLoadFromFile("scenes/demo_day1_boat.yarn");
 		ChatterboxLoadFromFile("scenes/demo_day1_sciences.yarn");
@@ -187,7 +188,7 @@ else {
 global.roomYarnMap = ds_map_create();
 // DEMO MODE
 if (global.gameMode == e_gameMode.DEMO) {
-	//global.roomYarnMap[? "rm_test"]			= "scenes/main_day0_test.yarn";
+	global.roomYarnMap[? "rm_test"]				= "scenes/demo_day0_test.yarn";
 	global.roomYarnMap[? "rm_dormitory"]		= "scenes/demo_day1_dormitory.yarn";
 	global.roomYarnMap[? "rm_boat"]				= "scenes/demo_day1_boat.yarn";
 	global.roomYarnMap[? "rm_sciences"]			= "scenes/demo_day1_sciences.yarn";
@@ -217,7 +218,6 @@ ChatterboxAddFunction("assignRoute", RouteAssign);					// Assign a character rou
 ChatterboxAddFunction("backTitle", BackToTitle);			    	// Goes back to the title screen and changes game state
 ChatterboxAddFunction("bg", BackgroundSetIndex);					// Function to change background
 ChatterboxAddFunction("chara", CharacterOnScreen);					// Function to draw character
-ChatterboxAddFunction("shadow", CharacterShadowOnScreen);			// Function to draw shadow character
 ChatterboxAddFunction("emotion", CharacterExpressionOnScreen);		// Function to change character expression
 ChatterboxAddFunction("dialogueWait", DialogueWait);				// Makes the textbox wait for x seconds
 ChatterboxAddFunction("save", SaveGame);							// Calls the save script from inside a yarn file
@@ -228,6 +228,7 @@ ChatterboxAddFunction("nextDaytime", NextDaytime);					// Increments by 1 global
 ChatterboxAddFunction("nextRoom", NextRoom);						// Function to change scene
 ChatterboxAddFunction("transition", DialogueTransition);			// Transition VFX
 ChatterboxAddFunction("bgTransition", BackgroundWaitTransition);	// Change background using transition
+ChatterboxAddFunction("getPlace", GetCurrentPlace);					// Get current place
 ChatterboxAddFunction("setFlag", FlagSet);							// Sets a value to a flag
 ChatterboxAddFunction("getFlag", FlagGet);							// Returns the value of a given flag
 #endregion CHATTERBOX INITIALIZE CUSTOMS
