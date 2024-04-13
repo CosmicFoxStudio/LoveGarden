@@ -1,9 +1,3 @@
-/// @description Inserir descrição aqui
-// Você pode escrever seu código neste editor
-
+/// @description Free structures
 ds_map_destroy(music_map);
 ds_map_destroy(sfx_map);
-
-
-
-

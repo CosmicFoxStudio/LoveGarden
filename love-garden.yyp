@@ -112,6 +112,7 @@
     {"id":{"name":"spr_icon4","path":"sprites/spr_icon4/spr_icon4.yy",},},
     {"id":{"name":"game_functions","path":"scripts/game_functions/game_functions.yy",},},
     {"id":{"name":"scribble_super_glyph_copy_all","path":"scripts/scribble_super_glyph_copy_all/scribble_super_glyph_copy_all.yy",},},
+    {"id":{"name":"GAME_DATA","path":"scripts/GAME_DATA/GAME_DATA.yy",},},
     {"id":{"name":"rm_gazebo","path":"rooms/rm_gazebo/rm_gazebo.yy",},},
     {"id":{"name":"spr_rose","path":"sprites/spr_rose/spr_rose.yy",},},
     {"id":{"name":"scribble_fallback_bulletpoint","path":"sprites/scribble_fallback_bulletpoint/scribble_fallback_bulletpoint.yy",},},
