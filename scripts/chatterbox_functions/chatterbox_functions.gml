@@ -41,11 +41,29 @@ function RouteAssign(_SOName) {
 
 // Searches for the background layer and changes to it
 function BackgroundSetIndex(_index) {
-	var lay_id = layer_get_id("Background");
-	var back_id = layer_background_get_id(lay_id);
+	var lay_id = layer_get_id("Bg");
+	var arr = layer_get_all_elements(lay_id);
 	
-	layer_background_index(back_id, _index);
-	show_debug_message("Bg index should be: " + string(_index));
+	// Debug1
+	var sprite;
+	for (var i = 0; i < array_length(arr); i++;) {
+		sprite = arr[i];
+		if (layer_get_element_type(sprite) == layerelementtype_sprite) {
+			var name = sprite_get_name(sprite);
+			show_debug_message("Last BG was: " + name);
+		}
+	}
+	
+	// Change sprite BG
+	layer_sprite_change(sprite, global.roomBGMap[? global.rmCurrent][_index]);
+	
+	// Debug2
+	for (var i = 0; i < array_length(arr); i++;) {
+		if (layer_get_element_type(sprite) == layerelementtype_sprite) {
+			var name = sprite_get_name(sprite);
+			show_debug_message("Current BG is: " + name);
+		}
+	}
 }
 
 // Function to put character on screen

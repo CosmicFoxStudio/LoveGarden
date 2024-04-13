@@ -65,13 +65,8 @@ switch (global.gameMode) {
 #endregion DECIDE ROOM SCENE
 
 	#region DECIDE ROOM BG
-	//if layer_exists("Bg") 
-	var layerID = layer_get_id("Bg");
-	var arr = layer_get_all_elements(layerID);
-	show_debug_message("Layer Elements: ");
-	show_debug_message(arr);
 	global.roomBGMap = ds_map_create();
-	global.roomBGMap[? "rm_dormitory"]		= [spr_dormitory];
+	global.roomBGMap[? "rm_dormitory"]		= [spr_dormitory_0, spr_dormitory_1, spr_dormitory_2, spr_dormitory_3, spr_dormitory_4];
 	global.roomBGMap[? "rm_boat"]			= [spr_boat];
 	global.roomBGMap[? "rm_sciences"]		= [spr_sciences];
 	global.roomBGMap[? "rm_central"]		= [spr_central];

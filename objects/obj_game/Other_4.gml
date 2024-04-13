@@ -1,5 +1,14 @@
 /// @description Reset stuff when new room
 
+// Check current room BG
+var layerID;
+if layer_exists("Bg") { 
+	layerID = layer_get_id("Bg");
+	var arr = layer_get_all_elements(layerID);
+	show_debug_message("Layer Elements: ");
+	show_debug_message(arr);
+}
+
 #region camera setup for each room
 // Create camera
 var _x = ORIGIN_X;
