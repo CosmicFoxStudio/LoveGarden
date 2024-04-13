@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "mus_title",
   "audioGroupId": {
-    "name": "audiogroup_music",
-    "path": "audiogroups/audiogroup_music",
+    "name": "audiogroup_default",
+    "path": "audiogroups/audiogroup_default",
   },
   "bitDepth": 1,
   "bitRate": 128,
@@ -19,5 +19,5 @@
   "sampleRate": 44100,
   "soundFile": "mus_title.ogg",
   "type": 0,
-  "volume": 0.8,
+  "volume": 1.0,
 }

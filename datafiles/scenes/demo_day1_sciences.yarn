@@ -25,14 +25,20 @@ Now you have a new challenge - Find the Ecology classroom. #line:01abe4
 PLAYER: (Good thing I wrote it down... I'm always forgetting these things.) #line:e92a93 
 You walk a little through the corridor until you reach the front of the class. #line:da58f5
 <<chara("ype")>>
+<<emotion(0, 0)>>
 Just ahead, someone looks like they could be a little lost. #line:f1ce0f 
 They don't seem to realize you are approaching. #line:732a9c 
 ???: Hmm... Which one...? #line:0be79d 
 PLAYER: Need help? #line:5f0316 
+<<emotion(6, 0)>>
 ???: [shake]Ah!![/] #line:acc227
+<<emotion(1, 0)>>
 PLAYER: Sorry! I didn't mean to scare you! #line:c102eb 
+<<emotion(5, 0)>>
 ???: Ah...! I'm fine. Don't worry... #line:70a261 
+<<emotion(1, 0)>>
 ???: Just didn't expect someone to talk to me. #line:54bca3
+<<emotion(0, 0)>>
 PLAYER: Hum? Ok. Er... So. Are you looking for your class? #line:e52624
 ???: Yes... But this place is... Huge... #line:ba29bf
 PLAYER: I know, right? #line:7a74e1

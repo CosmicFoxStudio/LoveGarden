@@ -6,6 +6,7 @@ if (chara0 != spr_noone) charactersOnScreen += 1;
 if (chara1 != spr_noone) charactersOnScreen += 1;
 if (chara2 != spr_noone) charactersOnScreen += 1;
 
+// One character
 if (chara0 != spr_noone && charactersOnScreen > 0) {
 	draw_sprite_ext(
 		chara0, 
@@ -16,6 +17,7 @@ if (chara0 != spr_noone && charactersOnScreen > 0) {
 	);
 }
 
+// Two characters
 if (chara1 != spr_noone && charactersOnScreen > 1) {
 	draw_sprite_ext(
 		chara1, 
@@ -26,6 +28,7 @@ if (chara1 != spr_noone && charactersOnScreen > 1) {
 	);
 }
 
+// Three characters
 if (chara2 != spr_noone && charactersOnScreen > 2) {
 	draw_sprite_ext(
 		chara2, 

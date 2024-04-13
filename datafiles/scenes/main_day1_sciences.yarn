@@ -28,11 +28,14 @@ Apparently, the only way to get such information these days is through the unive
 The graphical interface is of questionable quality, making the task of finding any information a real challenge. #line:6b2484
 ... #line:ccb896
 <<chara("ype")>>
+<<emotion(2, 0)>>
 Right over there seems to be someone even more lost than you. #line:46b405
 They don't seem to realize that someone is approaching. #line:82985e
 ???: Um... Where could it be...? #line:afa810
 PLAYER: Need help? #line:aa73b1
+<<emotion(6, 0)>>
 ???: [shake]Ah!![/] #line:b8da57
+<<emotion(2, 0)>>
 PLAYER: Sorry! I didn't mean to scare you! #line:57f3e7
 ???: Ah...! I'm fine. Don't worry. #line:b29cd1
 ???: I just didn't expect someone to talk to me. #line:f77359
