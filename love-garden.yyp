@@ -348,6 +348,7 @@
     {"id":{"name":"scr_progress","path":"scripts/scr_progress/scr_progress.yy",},},
     {"id":{"name":"ChatterboxGetContentSpeakerData","path":"scripts/ChatterboxGetContentSpeakerData/ChatterboxGetContentSpeakerData.yy",},},
     {"id":{"name":"spr_ype","path":"sprites/spr_ype/spr_ype.yy",},},
+    {"id":{"name":"mus_peaceful","path":"sounds/mus_peaceful/mus_peaceful.yy",},},
     {"id":{"name":"snd_config_test_master","path":"sounds/snd_config_test_master/snd_config_test_master.yy",},},
     {"id":{"name":"ChatterboxUnload","path":"scripts/ChatterboxUnload/ChatterboxUnload.yy",},},
     {"id":{"name":"scribble_color_set","path":"scripts/scribble_color_set/scribble_color_set.yy",},},
