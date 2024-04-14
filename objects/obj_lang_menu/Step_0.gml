@@ -128,6 +128,7 @@ if (selectedButton == "CONFIRM") {
 	}
 	// Platform is a browser
 	else {
-		GameTransitionChangeRoom(rm_dream, sq_trans_fade_white);
+		// use rm_dream instead of target to skip file selection directly to the first cutscene
+		GameTransitionChangeRoom(target, sq_trans_fade_white);
 	}
 }
