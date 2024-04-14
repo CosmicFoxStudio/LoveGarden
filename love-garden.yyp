@@ -543,6 +543,7 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"rm_init","path":"rooms/rm_init/rm_init.yy",},},
+    {"roomId":{"name":"rm_logo","path":"rooms/rm_logo/rm_logo.yy",},},
     {"roomId":{"name":"rm_lang","path":"rooms/rm_lang/rm_lang.yy",},},
     {"roomId":{"name":"rm_title","path":"rooms/rm_title/rm_title.yy",},},
     {"roomId":{"name":"rm_file_selection","path":"rooms/rm_file_selection/rm_file_selection.yy",},},
