@@ -24,8 +24,8 @@
     "Keyframes": [],
   },
   "parent": {
-    "name": "Simple Transitions",
-    "path": "folders/Sequences/Simple Transitions.yy",
+    "name": "Screen Transitions",
+    "path": "folders/Sequences/Screen Transitions.yy",
   },
   "playback": 0,
   "playbackSpeed": 30.0,

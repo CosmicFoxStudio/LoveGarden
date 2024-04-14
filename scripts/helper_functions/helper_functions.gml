@@ -4,9 +4,16 @@
 	0 if both or neither are pressed.
 */
 function CheckVerticalInput() {
-	var _returnValue = InputCheck("down") - InputCheck("up");
-	//if(_returnValue != 0)
-	//	show_debug_message("CheckVerticalInput: " + string(_returnValue));
+	var down, up;
+	
+	down = InputCheck("down", e_input.KEYBOARD);
+	up = InputCheck("up", e_input.KEYBOARD);
+	
+	var _returnValue = down - up;
+	
+	// if (_returnValue != 0) show_debug_message("CheckVerticalInput: " + string(_returnValue));
+	
+	show_debug_message("RAN 1");
 	return _returnValue;
 }
 
@@ -16,9 +23,16 @@ function CheckVerticalInput() {
 	0 if both or neither are pressed.
 */
 function CheckHorizontalInput() {
-	var _returnValue = InputCheck("right") - InputCheck("left");
-	//if(_returnValue != 0)
-	//	show_debug_message("CheckHorizontalInput: " + string(_returnValue));
+	var right, left;
+	
+	right = InputCheck("right", e_input.KEYBOARD);
+	left = InputCheck("left", e_input.KEYBOARD);
+
+	var _returnValue = right - left;
+	
+	// if (_returnValue != 0) show_debug_message("CheckHorizontalInput: " + string(_returnValue));
+	
+	show_debug_message("RAN 2");
 	return _returnValue;
 }
 
