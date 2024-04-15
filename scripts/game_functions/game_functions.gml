@@ -38,6 +38,7 @@ function GameCreateUI() {
 function ReceivePlayerInput(_stringToCheck) {
 	if (keyboard_lastkey != -1) {
 	    var pressedChar = keyboard_lastchar;
+		audio_play_sound(snd_cant, 1, false);
 
 	    // Check if the pressed key's character is a valid letter (A-Z, counting uppercase and lowercase)
 	    // string(ord()) returns the ASCII value of the char

@@ -17,6 +17,15 @@
 // Colors
 #macro LIGHT_BLUE	#11ccff		// light blue color 
 #macro LIGHT_GREEN	#afff50	    // light green color
-#macro CYAN			0x11f2f6	// cyan color
+#macro CYAN			#11f2f6		// cyan color
 #macro TEXT_GREEN	#b6db89		// light green color used in dialogue text
 #macro TEXT_BROWN   #5c4033     // alternate brown color value used in text
+
+#macro TEXT_YPE		#ffd88f
+#macro TEXT_ROSE	#ffab91
+#macro TEXT_CLOVE	#a8c3ff
+#macro TEXT_HYDRA	#c3ace8
+#macro TEXT_CARU	#c9a695
+#macro TEXT_FERN	#e0fc68
+#macro TEXT_ORANGE	#ff9254
+#macro TEXT_PLAYER	#ffffff

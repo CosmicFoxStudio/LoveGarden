@@ -1,7 +1,4 @@
 /// @description Reset stuff when new room
-global.rmCurrent = room_get_name(room);
-show_debug_message("Room: " + global.rmCurrent);
-DecideRoomName(); // Rename global.location
 
 #region camera setup for each room
 // Create camera

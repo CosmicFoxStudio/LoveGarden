@@ -28,6 +28,8 @@ global.hoveringTextbox = false;
 global.hoveringPlace = "";
 global.isMapOn = true;
 global.keyboardIcons = false;
+global.textComplete = false;
+global.changeCalendarDaytime = true;
 
 // Localization Info
 global.lang = "en";     // "en", "pt"

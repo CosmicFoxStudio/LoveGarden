@@ -55,7 +55,8 @@ if IsChatterbox(chatterbox) and text != undefined {
 		room_width/2 - 157, 
 		room_height - (marginText/2) - 71, 
 		speakerName,
-		TEXT_GREEN, TEXT_GREEN, TEXT_GREEN, TEXT_GREEN, 1
+		GetCharacterTextColorRGB(speaker), GetCharacterTextColorRGB(speaker),
+		GetCharacterTextColorRGB(speaker), GetCharacterTextColorRGB(speaker), 1
 	);
 
 

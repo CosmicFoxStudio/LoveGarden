@@ -75,7 +75,7 @@ function MenuLocalization(_menuWord) {
 		switch (_menuWord) {
 			case "RESUME": return "CONTINUAR"; break;
 			case "SETTINGS": return "CONFIGURAÇÕES"; break;
-			case "EXIT": return "SAIR"; break;
+			case "MENU": return "MENU"; break;
 			case "AUDIO": return "ÁUDIO"; break;
 			case "GRAPHICS": return "GRÁFICOS"; break;
 			case "BACK": return "VOLTAR"; break;

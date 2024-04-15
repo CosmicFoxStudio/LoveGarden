@@ -236,6 +236,7 @@ function BackgroundWaitTransition(_index) {
 	
 	time_source_start(time_source_create(time_source_game, frames, time_source_units_frames, function(_indexBG) {
 		BackgroundSetIndex(_indexBG);
+		global.changeCalendarDaytime = true;
 	},
 	[_index]));
 }
@@ -254,6 +255,7 @@ function UpdateChatterbox() {
 	text = ChatterboxGetContent(chatterbox, 0);
 	obj_characters.currentSpeaker = ChatterboxGetContentSpeaker(chatterbox, 0);
 	speaker = ChatterboxGetContentSpeaker(chatterbox, 0);
+	global.textComplete = false;
 }
 
 // Get filename dynamically
@@ -312,4 +314,18 @@ function GetCharacterTextColor(_currentSpeaker) {
 	else if (_currentSpeaker == "MAPLE" || _currentSpeaker == "MAPLE") return "[c_text_cyan]";
 	else if (_currentSpeaker == "" || _currentSpeaker == "") return "[c_text_cyan]";
 	else return "[c_text_cyan]";
+}
+
+function GetCharacterTextColorRGB(_currentSpeaker) {
+	if (_currentSpeaker == "PLAYER" || _currentSpeaker == "PLAYER") return TEXT_PLAYER;
+	if (_currentSpeaker == "YPE" || _currentSpeaker == "IPÊ") return TEXT_YPE;
+	else if (_currentSpeaker == "CARU" || _currentSpeaker == "CARU") return TEXT_CARU;
+	else if (_currentSpeaker == "ROSE" || _currentSpeaker == "ROSA") return TEXT_ROSE;
+	else if (_currentSpeaker == "CLOVE" || _currentSpeaker == "CRAVO") return TEXT_CLOVE;
+	else if (_currentSpeaker == "HYDRANGEA" || _currentSpeaker == "HORTÊNSIA") return TEXT_HYDRA;
+	else if (_currentSpeaker == "FERN" || _currentSpeaker == "MAMBA") return TEXT_FERN;
+	else if (_currentSpeaker == "MR. ORANGE" || _currentSpeaker == "LARANJEIRA") return TEXT_ORANGE;
+	else if (_currentSpeaker == "MAPLE" || _currentSpeaker == "MAPLE") return CYAN;
+	else if (_currentSpeaker == "" || _currentSpeaker == "") return CYAN;
+	else return CYAN;
 }

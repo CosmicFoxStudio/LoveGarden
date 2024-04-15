@@ -32,6 +32,10 @@ function ExitGame() {
 	game_end();
 }
 
+function MenuGame() {
+	room_goto(rm_phoneTitle);
+}
+
 function ChangeVolume(_new_volume) {
 	var type = menuOption[page];
 

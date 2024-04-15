@@ -8,9 +8,14 @@ DrawFont(fnt_day_number);
 draw_text_color(32+offsetX, 26+offsetY, global.day, TEXT_BROWN, TEXT_BROWN, TEXT_BROWN, TEXT_BROWN, 1);
 
 // Current daytime
+if (global.changeCalendarDaytime) {
+	daytimeToShow = global.currentDaytime;
+	global.changeCalendarDaytime = false;
+}
+
 switch (global.lang) {
 	case "pt":
-		switch (global.currentDaytime) {
+		switch (daytimeToShow) {
 			case e_daytime.MORNING: calendarDaytime = "Manhã"; break;
 			case e_daytime.NOON: calendarDaytime = "Meio-dia"; break;
 			case e_daytime.AFTERNOON: calendarDaytime = "Tarde"; break;
@@ -19,7 +24,7 @@ switch (global.lang) {
 		}
 		break;
 	default:
-		switch (global.currentDaytime) {
+		switch (daytimeToShow) {
 			case e_daytime.MORNING: calendarDaytime = "Morning"; break;
 			case e_daytime.NOON: calendarDaytime = "Noon"; break;
 			case e_daytime.AFTERNOON: calendarDaytime = "Afternoon"; break;

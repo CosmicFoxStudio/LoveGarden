@@ -1,12 +1,4 @@
-/// @description Inserir descrição aqui
-// Você pode escrever seu código neste editor
+draw_self();
 
-
-
-
-
-
-
-
-
-
+if (global.textComplete)
+	draw_sprite(spr_cursor_keyboard, 0, 515, 315);

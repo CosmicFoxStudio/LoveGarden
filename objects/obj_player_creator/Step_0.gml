@@ -207,7 +207,7 @@ optionLength = array_length(phaseOptions[phase]);
 	
 
 // Delete with cancel input (keyboard only)
-if  ( (phase == e_phases.PHASE_2 && pos == 0 ) ) {
+if  ( phase == e_phases.PHASE_2 ) {
 	if (InputCheck("cancel", e_input.KEYBOARD) ) {
 		if (letterCount >= 1) {
 			currentString = string_delete(currentString, letterCount, 1);
