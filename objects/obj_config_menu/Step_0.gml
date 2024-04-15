@@ -32,11 +32,15 @@ if (inputting) {
 		
 		case e_menuElementType.SHIFT : // ( << >> )
 			var horizontalInput = CheckHorizontalInput();
+			if (InputCheck("confirm", e_input.MOUSE) && !global.hoveringConfigButton) horizontalInput = 1;
+			
 			if(horizontalInput != 0) {
 				// Play audio
 				audio_play_sound(snd_menu_beep, 1, false);
 
 				currentPage[menuOption[page]].param1 += horizontalInput;
+				if (currentPage[menuOption[page]].param1 >= array_length(currentPage[menuOption[page]].param2)) currentPage[menuOption[page]].param1 = 0;
+				if (currentPage[menuOption[page]].param1 < 0) currentPage[menuOption[page]].param1 = array_length(currentPage[menuOption[page]].param2) - 1;
 				
 				// To clamp the value between the lenght of the options property 
 				// The -1 at the end is to make it equal to the resulting value of var horizontalInput
@@ -100,11 +104,15 @@ if (inputting) {
 
 		case e_menuElementType.TOGGLE :
 			var horizontalInput = CheckHorizontalInput();
+			if (InputCheck("confirm", e_input.MOUSE) && !global.hoveringConfigButton) horizontalInput = 1;
+			
 			if(horizontalInput != 0) {
 				// Play audio
 				audio_play_sound(snd_menu_beep, 1, false);
 				
 				currentPage[menuOption[page]].param1 += horizontalInput;
+				if (currentPage[menuOption[page]].param1 >= array_length(currentPage[menuOption[page]].param2)) currentPage[menuOption[page]].param1 = 0;
+				if (currentPage[menuOption[page]].param1 < 0) currentPage[menuOption[page]].param1 = array_length(currentPage[menuOption[page]].param2) - 1;
 				
 				// To check whether the value is between index0, index1 and index2
 				// And the "-1" at the end is to make it equal to the resulting value of var horizontalInput

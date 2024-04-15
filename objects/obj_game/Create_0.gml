@@ -30,6 +30,7 @@ global.isMapOn = true;
 global.keyboardIcons = false;
 global.textComplete = false;
 global.changeCalendarDaytime = true;
+global.newGame = false;
 
 // Localization Info
 global.lang = "en";     // "en", "pt"

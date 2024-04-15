@@ -23,6 +23,7 @@ switch (global.lang) {
 		saveText[4] = "Night";
 		saveText[5] = "Dawn";
 		saveText[6] = "DAY";
+		saveText[7] = "NEW GAME";
 		break;
 	case "pt":
 		saveText[0] = "VAZIO";
@@ -32,6 +33,7 @@ switch (global.lang) {
 		saveText[4] = "Noite";
 		saveText[5] = "Alvorada";
 		saveText[6] = "DIA";
+		saveText[7] = "NOVO JOGO";
 		break;
 }
 

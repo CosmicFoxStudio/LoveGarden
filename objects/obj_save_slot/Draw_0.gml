@@ -13,8 +13,9 @@ if !file_exists("file_" + string(slotIndex) + ".sav") {
 	DrawSet(TEXT_GREEN);
 	DrawAlign(fa_center, fa_middle);
 			
-	// Draws only "EMPTY"
-	draw_text(startX, yy, obj_save_load.saveText[0]);
+	// Draws only "EMPTY" or "NEW GAME"
+	if(global.newGame) draw_text(startX, yy, obj_save_load.saveText[7]);
+	else draw_text(startX, yy, obj_save_load.saveText[0]);
 }
 
 // ---------------------------------- FILE EXISTS ----------------------------------- //
