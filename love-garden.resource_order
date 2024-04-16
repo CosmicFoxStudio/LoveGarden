@@ -187,7 +187,7 @@
     {"name":"Select_1","order":15,"path":"sounds/Select_1/Select_1.yy",},
     {"name":"spr_textbox","order":2,"path":"sprites/spr_textbox/spr_textbox.yy",},
     {"name":"scribble_kerning_pair_get","order":18,"path":"scripts/scribble_kerning_pair_get/scribble_kerning_pair_get.yy",},
-    {"name":"rm_phoneTitle","order":17,"path":"rooms/rm_phoneTitle/rm_phoneTitle.yy",},
+    {"name":"rm_title","order":17,"path":"rooms/rm_title/rm_title.yy",},
     {"name":"ChatterboxGetContentSpeaker","order":5,"path":"scripts/ChatterboxGetContentSpeaker/ChatterboxGetContentSpeaker.yy",},
     {"name":"__scribble_gen_4_build_words","order":4,"path":"scripts/__scribble_gen_4_build_words/__scribble_gen_4_build_words.yy",},
     {"name":"draw_functions","order":6,"path":"scripts/draw_functions/draw_functions.yy",},

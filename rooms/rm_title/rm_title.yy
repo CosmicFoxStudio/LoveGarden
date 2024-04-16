@@ -1,13 +1,13 @@
 {
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
-  "name": "rm_phoneTitle",
-  "creationCodeFile": "rooms/rm_phoneTitle/RoomCreationCode.gml",
+  "name": "rm_title",
+  "creationCodeFile": "rooms/rm_title/RoomCreationCode.gml",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,
   "instanceCreationOrder": [
-    {"name":"inst_18014035","path":"rooms/rm_phoneTitle/rm_phoneTitle.yy",},
+    {"name":"inst_18014035","path":"rooms/rm_title/rm_title.yy",},
   ],
   "isDnd": false,
   "layers": [

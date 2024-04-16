@@ -39,14 +39,6 @@ function RouteAssign(_SOName) {
 	}
 }
 
-// Goes back to the title screen and changes game state
-function BackToTitle() {
-	// GameTransitionChangeRoom(rm_title, sq_trans_fade_black); // ---> Old title
-	GameTransitionChangeRoom(rm_phoneTitle, sq_trans_fade_black);
-	
-	GameChangeState(e_gameStates.LEAVE);
-}
-
 // Searches for the background layer and changes to it
 function BackgroundSetIndex(_index) {
 	var lay_id = layer_get_id("Background");

@@ -246,7 +246,7 @@
     {"id":{"name":"Select_1","path":"sounds/Select_1/Select_1.yy",},},
     {"id":{"name":"spr_textbox","path":"sprites/spr_textbox/spr_textbox.yy",},},
     {"id":{"name":"scribble_kerning_pair_get","path":"scripts/scribble_kerning_pair_get/scribble_kerning_pair_get.yy",},},
-    {"id":{"name":"rm_phoneTitle","path":"rooms/rm_phoneTitle/rm_phoneTitle.yy",},},
+    {"id":{"name":"rm_title","path":"rooms/rm_title/rm_title.yy",},},
     {"id":{"name":"ChatterboxGetContentSpeaker","path":"scripts/ChatterboxGetContentSpeaker/ChatterboxGetContentSpeaker.yy",},},
     {"id":{"name":"__scribble_gen_4_build_words","path":"scripts/__scribble_gen_4_build_words/__scribble_gen_4_build_words.yy",},},
     {"id":{"name":"draw_functions","path":"scripts/draw_functions/draw_functions.yy",},},
@@ -498,7 +498,7 @@
   "RoomOrderNodes": [
     {"roomId":{"name":"rm_init","path":"rooms/rm_init/rm_init.yy",},},
     {"roomId":{"name":"rm_lang","path":"rooms/rm_lang/rm_lang.yy",},},
-    {"roomId":{"name":"rm_phoneTitle","path":"rooms/rm_phoneTitle/rm_phoneTitle.yy",},},
+    {"roomId":{"name":"rm_title","path":"rooms/rm_title/rm_title.yy",},},
     {"roomId":{"name":"rm_file_selection","path":"rooms/rm_file_selection/rm_file_selection.yy",},},
     {"roomId":{"name":"rm_dream","path":"rooms/rm_dream/rm_dream.yy",},},
     {"roomId":{"name":"rm_dormitory","path":"rooms/rm_dormitory/rm_dormitory.yy",},},

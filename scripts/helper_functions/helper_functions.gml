@@ -22,6 +22,13 @@ function CheckHorizontalInput() {
 	return _returnValue;
 }
 
+// Goes back to the title screen and changes game state
+function BackToTitle() {
+	GameTransitionChangeRoom(rm_title, sq_trans_fade_black);
+	
+	GameChangeState(e_gameStates.LEAVE);
+}
+
 // Draws a rectangle starting from center, colors are changed and then reset
 // Useful for creating textboxes
 function DrawRectangleCenter(_xx, _yy, _width, _height, _outline, _color, _alpha) {

@@ -28,13 +28,7 @@ function ResumeGame() {
 	ToggleContextMenu();
 }
 
-function ExitGame() {
-	game_end();
-}
-
-function MenuGame() {
-	room_goto(rm_phoneTitle);
-}
+// function ExitGame() { game_end() };
 
 function ChangeVolume(_new_volume) {
 	var type = menuOption[page];
