@@ -36,8 +36,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Screen Transitions",
+    "path": "folders/Sprites/Screen Transitions.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

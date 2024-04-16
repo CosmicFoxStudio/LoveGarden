@@ -32,8 +32,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Phone UI",
-    "path": "folders/Sprites/Phone UI.yy",
+    "name": "Title Screen",
+    "path": "folders/Sprites/UI/Title Screen.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

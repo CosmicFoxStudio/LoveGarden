@@ -30,10 +30,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_title_btn",
-    "path": "sprites/spr_title_btn/spr_title_btn.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

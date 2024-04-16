@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Game UI",
-    "path": "folders/Sprites/UI/Game UI.yy",
+    "name": "Old UI",
+    "path": "folders/Sprites/UI/Old UI.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

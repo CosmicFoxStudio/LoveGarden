@@ -31,10 +31,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_button_small",
-    "path": "sprites/spr_button_small/spr_button_small.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

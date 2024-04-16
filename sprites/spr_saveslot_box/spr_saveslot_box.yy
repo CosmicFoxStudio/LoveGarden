@@ -26,8 +26,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "File Selection",
-    "path": "folders/Sprites/UI/File Selection.yy",
+    "name": "Old UI",
+    "path": "folders/Sprites/UI/Old UI.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
