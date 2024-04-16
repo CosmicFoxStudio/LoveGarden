@@ -57,7 +57,7 @@ switch (phase) {
 			// --------------------------- Draw the text  --------------------------- //
 			var nameInputText = string_upper(string_char_at(currentString, xx+1));
 			
-			/* if (pos == i) */ draw_text(startX + 56 + 23*xx, startY + 45, nameInputText);
+			/* if (pos == i) */ draw_text(startX + 58 + 23*xx, startY + 45, nameInputText);
 			xx++;
 		}
 		
