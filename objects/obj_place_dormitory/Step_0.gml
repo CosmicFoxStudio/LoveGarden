@@ -1,7 +1,7 @@
 /// @description Button Action
 
 if (InputCheck("confirm", e_input.MOUSE) && hovering) {
-	show_debug_message("Going to Dormitory");
+	MakeAnnouncement("Going to Dormitory");
 	
 	GameTransitionChangeRoom(rm_dormitory, sq_trans_fade_black);
 }

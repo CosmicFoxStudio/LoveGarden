@@ -31,7 +31,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_mini_gazebo",
+    "path": "sprites/spr_mini_gazebo/spr_mini_gazebo.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

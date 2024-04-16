@@ -31,7 +31,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_mini_dormitory",
+    "path": "sprites/spr_mini_dormitory/spr_mini_dormitory.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }
