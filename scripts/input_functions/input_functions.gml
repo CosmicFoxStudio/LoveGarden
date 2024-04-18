@@ -5,7 +5,7 @@ function InputVerb(_verb, _func) {
 	for (var _i = 0; _i < _funcLenght; _i++) {
 	    switch (_verb) {
 	        case "confirm":
-				show_debug_message("Entered Confirm Verb Case.");
+				//show_debug_message("Entered Confirm Verb Case.");
 				_checkInput = _checkInput || false;
 
 				// Primary Keybind
@@ -22,11 +22,12 @@ function InputVerb(_verb, _func) {
 					_checkInput = _checkInput || _func[_i](global.secondaryKeybind[_i].confirm);
 				}
 				
+				// break; ----> causes the bug
 				return _checkInput;
 				
 	        case "cancel":
 			
-				show_debug_message("Entered Cancel Verb Case.");
+				//show_debug_message("Entered Cancel Verb Case.");
 				_checkInput = _checkInput || false;
 
 				// Primary Keybind
@@ -47,7 +48,7 @@ function InputVerb(_verb, _func) {
 				
 	        case "start":
 
-				show_debug_message("Entered Start Verb Case.");
+				//show_debug_message("Entered Start Verb Case.");
 				_checkInput = _checkInput || false;
 
 				// Primary Keybind
@@ -67,7 +68,7 @@ function InputVerb(_verb, _func) {
 				return _checkInput;
 
 	        case "up":
-				show_debug_message("Entered Up Verb Case.");
+				//show_debug_message("Entered Up Verb Case.");
 				_checkInput = _checkInput || false;
 
 				// Primary Keybind
@@ -87,7 +88,7 @@ function InputVerb(_verb, _func) {
 				return _checkInput;
 				
 	        case "down":
-				show_debug_message("Entered Down Verb Case.");
+				//show_debug_message("Entered Down Verb Case.");
 				_checkInput = _checkInput || false;
 
 				// Primary Keybind
@@ -107,7 +108,7 @@ function InputVerb(_verb, _func) {
 				return _checkInput;
 				
 	        case "left":
-				show_debug_message("Entered Left Verb Case.");
+				//show_debug_message("Entered Left Verb Case.");
 				_checkInput = _checkInput || false;
 
 				// Primary Keybind
@@ -127,7 +128,7 @@ function InputVerb(_verb, _func) {
 				return _checkInput;
 				
 	        case "right":
-				show_debug_message("Entered Right Verb Case.");
+				//show_debug_message("Entered Right Verb Case.");
 				
 				_checkInput = _checkInput || false;
 
