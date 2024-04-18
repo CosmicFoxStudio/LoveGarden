@@ -90,7 +90,7 @@ function PrimaryKeybindingCreate() {
 
 function SecondaryKeybindingCreate() {
 	var _keybind = array_create(3);
-	_keybind[e_input.MOUSE] = new KeybindingDefinition();
+	_keybind[e_input.MOUSE] = new KeybindingDefinition(mb_left, mb_right, mb_middle);
 	_keybind[e_input.KEYBOARD] = new KeybindingDefinition(ord("Z"), ord("X"), ord("C"), ord("W"), ord("S"), ord("A"), ord("D"));
 	//_keybind[e_input.GAMEPAD] = new KeybindingDefinition();
 	

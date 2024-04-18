@@ -73,6 +73,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Icons","folderPath":"folders/Sprites/Icons.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Map","folderPath":"folders/Sprites/Map.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Icons","folderPath":"folders/Sprites/Map/Icons.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Object Icons","folderPath":"folders/Sprites/Object Icons.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Phone UI","folderPath":"folders/Sprites/Phone UI.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Screen Transitions","folderPath":"folders/Sprites/Screen Transitions.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"UI","folderPath":"folders/Sprites/UI.yy",},
@@ -89,7 +90,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Phone Title Menu","folderPath":"folders/UI/Phone Title Menu.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Title Menu","folderPath":"folders/UI/Title Menu.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Utils Objects","folderPath":"folders/Utils Objects.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Object Icons","folderPath":"folders/Sprites/Object Icons.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"pt_dialogues.csv","CopyToMask":-1,"filePath":"datafiles/lang",},
@@ -251,6 +251,7 @@
     {"id":{"name":"scribble_typist","path":"scripts/scribble_typist/scribble_typist.yy",},},
     {"id":{"name":"ChatterboxGetOptionMetadata","path":"scripts/ChatterboxGetOptionMetadata/ChatterboxGetOptionMetadata.yy",},},
     {"id":{"name":"scribble_anim_pulse","path":"scripts/scribble_anim_pulse/scribble_anim_pulse.yy",},},
+    {"id":{"name":"obj_parallax","path":"objects/obj_parallax/obj_parallax.yy",},},
     {"id":{"name":"ChatterboxGetOptionCount","path":"scripts/ChatterboxGetOptionCount/ChatterboxGetOptionCount.yy",},},
     {"id":{"name":"spr_config_btn_resume","path":"sprites/spr_config_btn_resume/spr_config_btn_resume.yy",},},
     {"id":{"name":"__scribble_get_font_data_map","path":"scripts/__scribble_get_font_data_map/__scribble_get_font_data_map.yy",},},

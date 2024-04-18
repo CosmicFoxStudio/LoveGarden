@@ -56,6 +56,7 @@
     {"name":"Icons","order":9,"path":"folders/Sprites/Icons.yy",},
     {"name":"Map","order":8,"path":"folders/Sprites/Map.yy",},
     {"name":"Icons","order":7,"path":"folders/Sprites/Map/Icons.yy",},
+    {"name":"Object Icons","order":14,"path":"folders/Sprites/Object Icons.yy",},
     {"name":"Phone UI","order":10,"path":"folders/Sprites/Phone UI.yy",},
     {"name":"Screen Transitions","order":7,"path":"folders/Sprites/Screen Transitions.yy",},
     {"name":"UI","order":4,"path":"folders/Sprites/UI.yy",},
@@ -71,7 +72,6 @@
     {"name":"Lang Menu","order":1,"path":"folders/UI/Lang Menu.yy",},
     {"name":"Phone Title Menu","order":4,"path":"folders/UI/Phone Title Menu.yy",},
     {"name":"Utils Objects","order":9,"path":"folders/Utils Objects.yy",},
-    {"name":"Object Icons","order":14,"path":"folders/Sprites/Object Icons.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"obj_intro","order":1,"path":"objects/obj_intro/obj_intro.yy",},
@@ -192,6 +192,7 @@
     {"name":"scribble_typist","order":11,"path":"scripts/scribble_typist/scribble_typist.yy",},
     {"name":"ChatterboxGetOptionMetadata","order":5,"path":"scripts/ChatterboxGetOptionMetadata/ChatterboxGetOptionMetadata.yy",},
     {"name":"scribble_anim_pulse","order":3,"path":"scripts/scribble_anim_pulse/scribble_anim_pulse.yy",},
+    {"name":"obj_parallax","order":5,"path":"objects/obj_parallax/obj_parallax.yy",},
     {"name":"ChatterboxGetOptionCount","order":4,"path":"scripts/ChatterboxGetOptionCount/ChatterboxGetOptionCount.yy",},
     {"name":"spr_config_btn_resume","order":4,"path":"sprites/spr_config_btn_resume/spr_config_btn_resume.yy",},
     {"name":"__scribble_get_font_data_map","order":8,"path":"scripts/__scribble_get_font_data_map/__scribble_get_font_data_map.yy",},
