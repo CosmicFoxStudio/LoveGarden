@@ -7,8 +7,8 @@
   "inheritCreationOrder": false,
   "inheritLayers": false,
   "instanceCreationOrder": [
-    {"name":"inst_E292472","path":"rooms/rm_init/rm_init.yy",},
     {"name":"inst_jukebox","path":"rooms/rm_init/rm_init.yy",},
+    {"name":"inst_E292472","path":"rooms/rm_init/rm_init.yy",},
     {"name":"inst_33BDD90C","path":"rooms/rm_init/rm_init.yy",},
   ],
   "isDnd": false,

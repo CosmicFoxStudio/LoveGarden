@@ -84,6 +84,13 @@ function MenuLocalization(_menuWord) {
 			case "MUSIC": return "MÚSICA"; break;
 			case "RESOLUTION": return "RESOLUÇÃO"; break;
 			case "FULLSCREEN": return "TELA CHEIA"; break;
+			case "FONT SIZE": return "TAMANHO DA FONTE"; break;
+			case "SMALL": return "PEQUENA"; break;
+			case "MEDIUM": return "MÉDIA"; break;
+			case "LARGE": return "GRANDE"; break;
+			case "FONT TYPE": return "TIPO DA FONTE"; break;
+			case "TYPE 1": return "TIPO 1"; break;
+			case "TYPE 2": return "TIPO 2"; break;
 			default: return ""; break;
 		}
 		break;

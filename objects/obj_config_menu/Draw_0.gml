@@ -78,7 +78,7 @@ repeat(array_length(menuPages[page])) {
 			var current_val		= currentPage[yy].param1;
 			var current_array	= currentPage[yy].param2;
 			var left_shift		= "<< ";
-			var right_shift		= ">> ";
+			var right_shift		= " >>";
 			c = c_white;
 			
 			if(current_val == 0) left_shift = ""; // Empty string

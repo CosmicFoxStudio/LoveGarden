@@ -69,3 +69,44 @@ function PrevFontSize() {
 	if(_size < 0) _size = e_fontSize.COUNT - 1;
 	SelectScribbleDialogFont(global.fontType, _size);
 }
+
+function SelectFontSize(_size) {
+	switch(_size) {
+		case e_fontSize.SMALL:
+			global.fontSize = 0;
+			break;
+		case e_fontSize.MEDIUM:
+			global.fontSize = 1;
+			break;
+		case e_fontSize.LARGE:
+			global.fontSize = 2;
+			break;
+		default:
+			global.fontSize = 1;
+			break;
+	}
+	
+	var _selectedDialogFont = global.dialogFonts[global.fontType][global.fontSize];
+	scribble_font_set_default(font_get_name(_selectedDialogFont));
+	scribble_font_scale(font_get_name(_selectedDialogFont), 1);
+	show_debug_message("Selected Font: " + font_get_name(_selectedDialogFont))
+}
+
+function SelectFontType(_font) {
+	switch(_font) {
+		case e_fontType.PRIMARY:
+			global.fontType = 0;
+			break;
+		case e_fontType.SECONDARY:
+			global.fontType = 1;
+			break;
+		default:
+			global.fontType = 0;
+			break;
+	}
+	
+	var _selectedDialogFont = global.dialogFonts[global.fontType][global.fontSize];
+	scribble_font_set_default(font_get_name(_selectedDialogFont));
+	scribble_font_scale(font_get_name(_selectedDialogFont), 1);
+	show_debug_message("Selected Font: " + font_get_name(_selectedDialogFont))
+}

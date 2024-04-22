@@ -37,9 +37,11 @@ menu_page_audio_elements[3]		= new DefineMenuElement(MenuLocalization("BACK"),		
 
 // GRAPHICS PAGE [3]
 var resolutionValue = DecideOptionBasedOnResolution(global.res.scale);
-menu_page_graphics_elements[0]	= new DefineMenuElement(MenuLocalization("RESOLUTION"),	e_menuElementType.SHIFT,			ChangeResolution,			resolutionValue, ["640 x 480", "1280 x 720", "1920 x 1080"]);
-menu_page_graphics_elements[1]	= new DefineMenuElement(MenuLocalization("FULLSCREEN"),	e_menuElementType.TOGGLE,			Fullscreen,					global.fullscreen, ["FULLSCREEN", "WINDOWED"]);
-menu_page_graphics_elements[2]	= new DefineMenuElement(MenuLocalization("BACK"),		e_menuElementType.PAGE_CHANGE,		e_MenuPage.SETTINGS);
+menu_page_graphics_elements[0]	= new DefineMenuElement(MenuLocalization("RESOLUTION"),	e_menuElementType.SHIFT,			ChangeResolution,			resolutionValue,	["640 x 480", "1280 x 720", "1920 x 1080"]);
+menu_page_graphics_elements[1]	= new DefineMenuElement(MenuLocalization("FULLSCREEN"),	e_menuElementType.TOGGLE,			Fullscreen,					global.fullscreen,	["FULLSCREEN", "WINDOWED"]);
+menu_page_graphics_elements[2]	= new DefineMenuElement(MenuLocalization("FONT SIZE"),	e_menuElementType.SHIFT,			SelectFontSize,				global.fontSize,	[MenuLocalization("SMALL"), MenuLocalization("MEDIUM"), MenuLocalization("LARGE")]);
+menu_page_graphics_elements[3]	= new DefineMenuElement(MenuLocalization("FONT TYPE"),	e_menuElementType.SHIFT,			SelectFontType,				global.fontType,	[MenuLocalization("TYPE 1"), MenuLocalization("TYPE 2")]);
+menu_page_graphics_elements[4]	= new DefineMenuElement(MenuLocalization("BACK"),		e_menuElementType.PAGE_CHANGE,		e_MenuPage.SETTINGS);
 #endregion CREATE MENU ELEMENTS
 
 // Variable used to access different pages

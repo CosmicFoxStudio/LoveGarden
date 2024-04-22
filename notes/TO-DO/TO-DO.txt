@@ -1,18 +1,11 @@
-## UI e Configurações (Henrique)
+## UI e Configurações
 	- Implement new Phone UI
-	- Finish Menu Functionalities
-	- Cosmic Fox logo before starting the game
-	
-## Lógicas de Sistemas (Iuri)
+
+## Lógicas de Sistemas
 	- Map and Action System
-	- Audio System
-	- Input System: Multiple Inputs at the same time
 	- Save System
 	- English Gender Inflection
-	
-## Sistema de Diálogo (?)
-	- Scene Pop Up
-	- Add functionalities to Dialogue System
-	- Chatterbox: new functions <<getPlace()>> and <<reward()>>
-	- Dialogue System: Multiple characters on screen!
-	- Accessibility: Font size and different fonts to read
+
+## Bugs, Feedbacks e Builds
+	- Nova Build
+	- Correção de bugs e Feedbacks
