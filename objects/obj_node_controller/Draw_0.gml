@@ -11,7 +11,7 @@ if IsChatterbox(chatterbox) and text != undefined {
 	
 	// ------------------------- DRAW ------------------------- //
 	// Draw coordinates (text)
-	var yy = room_height - (marginText/2) - 45;
+	var yy = room_height - (marginText/2) - 50;
 	var xx = room_width/2 - 200;
 	
 	// Get speech text
@@ -44,7 +44,7 @@ if IsChatterbox(chatterbox) and text != undefined {
 	var speakerName = ChatterboxGetContentSpeaker(chatterbox, 0);
 	// Draw nametag box
 	if (speakerName != "") { // Remove nametag if narrator is speaking
-		draw_sprite(spr_nametag, 0, posX + 22, 238);
+		draw_sprite(spr_tooltip_box2, 1, posX + 22, 238);
 	}
 	
 	// Draw nametag text
@@ -53,7 +53,7 @@ if IsChatterbox(chatterbox) and text != undefined {
 	DrawFont(fnt_dialogue);
 	draw_text_color(
 		room_width/2 - 157, 
-		room_height - (marginText/2) - 71, 
+		room_height - (marginText/2) - 72, 
 		speakerName,
 		GetCharacterTextColorRGB(speaker), GetCharacterTextColorRGB(speaker),
 		GetCharacterTextColorRGB(speaker), GetCharacterTextColorRGB(speaker), 1
