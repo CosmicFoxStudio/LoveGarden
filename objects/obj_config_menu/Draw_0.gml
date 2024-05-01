@@ -24,9 +24,7 @@ draw_rectangle_color(ORIGIN_X, ORIGIN_Y, gwidth, gheight, c, c, c, c, false);
 draw_set_alpha(1);
 
 // Draw Config Menu BG
-draw_sprite(spr_leaf_bg, 0, ORIGIN_X, ORIGIN_Y);
 draw_sprite(spr_ui_box_config, 0, ORIGIN_X, ORIGIN_Y);
-//draw_sprite(spr_config_title, 0, ORIGIN_X, ORIGIN_Y);
 
 // ------------------------------- Draw Text on the Left Side ------------------------------- //
 DrawAlign(fa_right, fa_middle);
@@ -43,7 +41,7 @@ for (var i = 0; i < array_length(currentPage); i++) {
 
 	// Selecting
 	if (i == menuOption[page]) {
-		c = TEXT_GREEN;
+		c = CYAN;
 		// For the selected option to start a bit more to the left compared to the other options	
 		optionXOffset = -(xBUFFER/2); 	
 	}
@@ -114,7 +112,7 @@ repeat(array_length(menuPages[page])) {
 			// Changing selected circle and text to yellow and then back to white
 			if (inputting and yy == menuOption[page]) { c = c_yellow };
 
-			if(current_val == 0) { c1 = c; c2 = c_dkgray };
+			if(current_val == 0) { c1 = c; c2 = c_black };
 			else{ c1 = c_dkgray; c2 = c };
 			// rightTextX + 32 ---> offset
 			draw_text_color(rightTextX, rightTextY, "OFF ", c1, c1, c1, c1, 1);

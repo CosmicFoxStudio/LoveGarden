@@ -19,11 +19,11 @@ if (os_browser == browser_not_a_browser) {
 	continueButton.btnType = e_btnTypes.CONTINUEPLAY;
 	continueButton.baseImageIndex = 2;
 
-	helpButton = instance_create_layer(410, 250, "Instances_Mid", buttonToCreate);
-	helpButton.btnType = e_btnTypes.HELP;
-	helpButton.baseImageIndex = 4;
+	//helpButton = instance_create_layer(410, 250, "Instances_Mid", buttonToCreate);
+	//helpButton.btnType = e_btnTypes.HELP;
+	//helpButton.baseImageIndex = 4;
 	
-	quitButton = instance_create_layer(410, 300, "Instances_Mid", buttonToCreate);
+	quitButton = instance_create_layer(410, 250, "Instances_Mid", buttonToCreate);
 	quitButton.btnType = e_btnTypes.QUIT;
 	quitButton.baseImageIndex = 6;
 }
@@ -37,9 +37,9 @@ else {
 	continueButton.btnType = e_btnTypes.CONTINUEPLAY;
 	continueButton.baseImageIndex = 2;
 
-	helpButton = instance_create_layer(410, 250, "Instances_Mid", buttonToCreate);
-	helpButton.btnType = e_btnTypes.HELP;
-	helpButton.baseImageIndex = 4;
+	//helpButton = instance_create_layer(410, 250, "Instances_Mid", buttonToCreate);
+	//helpButton.btnType = e_btnTypes.HELP;
+	//helpButton.baseImageIndex = 4;
 }
 
 // -------------------------------------- Input ----------------------------------------- //

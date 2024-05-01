@@ -21,7 +21,7 @@ buttonArray[pos].keyboardSelection = true;
 
 // Keyboard Input
 if ( InputCheck("confirm", e_input.KEYBOARD) ) {
-	ExecuteButtonAction(pos);
+	ExecuteButtonAction(buttonArray[pos].btnType);
 }
 
 
