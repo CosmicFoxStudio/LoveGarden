@@ -4,31 +4,37 @@ draw_self();
 
 // To center on the screen	
 startX = (SCREEN_WIDTH/ 2);
-startY = (SCREEN_HEIGHT / 2) - (sprite_get_height(sprite_index) * 1.2);
-yy = startY + (slotIndex * (sprite_get_height(sprite_index) * 1.2));
+startY = (SCREEN_HEIGHT / 2) - (sprite_get_height(sprite_index) * 1.06);
+yy = startY + (slotIndex * (sprite_get_height(sprite_index) * 1.06));
 
 	// ----------------------------- FILE DOESN'T EXIST ----------------------------- //
 if !file_exists("file_" + string(slotIndex) + ".sav") {		
 	// Drawing the text data
-	DrawSet(TEXT_GREEN);
+	DrawSet(CYAN);
 	DrawAlign(fa_center, fa_middle);
 			
 	// Draws only "EMPTY" or "NEW GAME"
 	if(global.newGame) draw_text(startX, yy, obj_save_load.saveText[7]);
 	else draw_text(startX, yy, obj_save_load.saveText[0]);
+	
+	if (!global.newGame) image_alpha = 0.5;
+	else image_alpha = 1;
 }
 
 // ---------------------------------- FILE EXISTS ----------------------------------- //
 else {
+	if (global.newGame) image_alpha = 0.5;
+	else image_alpha = 1;
+	
 	var plantX = (startX - (sprite_get_width(spr_saveslot_box) / 2) ) + 
 	(sprite_get_width(spr_sprout) + 15);
 			
-	var plantY = yy + (sprite_get_height(spr_sprout) / 2) - 5;
+	var plantY = yy + (sprite_get_height(spr_sprout) / 2) - 11;
 	if (obj_save_load.selectedOption == slotIndex) {
-		draw_sprite_ext(spr_sprout, spriteImage, plantX, plantY, 1, 1, 0, c_white, 1);
+		draw_sprite_ext(spr_cursor_sprout, spriteImage, plantX, plantY, 1, 1, 0, c_white, 1);
 	}
 	else {
-		draw_sprite_ext(spr_sprout, 0, plantX, plantY, 1, 1, 0, c_grey, 1);
+		draw_sprite_ext(spr_cursor_sprout, 0, plantX, plantY, 1, 1, 0, c_grey, 1);
 	}
 			
 	#region DRAW STATS

@@ -20,7 +20,7 @@ if IsChatterbox(chatterbox) and text != undefined {
 	// Draw dialogue text
 	DrawFont(fnt_dialogue);
 	
-	var posX = SCREEN_WIDTH/8;
+	var posX = SCREEN_WIDTH/4;
 	
 	// ------------------------- APPLY STRING SUBSTITUTIONS ------------------------- //
 	// Portuguese gender inflection
@@ -44,7 +44,7 @@ if IsChatterbox(chatterbox) and text != undefined {
 	var speakerName = ChatterboxGetContentSpeaker(chatterbox, 0);
 	// Draw nametag box
 	if (speakerName != "") { // Remove nametag if narrator is speaking
-		draw_sprite(spr_tooltip_box2, 1, posX + 22, 238);
+		draw_sprite(spr_tooltip_box2, 1, posX + 4, 242);
 	}
 	
 	// Draw nametag text

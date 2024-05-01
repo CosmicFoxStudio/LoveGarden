@@ -50,7 +50,9 @@ function Enums() {
 		HELP,
 		QUIT,
 		CONFIRM,
-		CANCEL
+		CANCEL,
+		BACK,
+		LANG
 	}
 
 	// Used in obj_intro

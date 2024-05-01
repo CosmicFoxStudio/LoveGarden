@@ -46,20 +46,20 @@ draw_sprite_ext(
 		sprite_index, image_index, 
 		descriptionX - boxWidth/2, 
 		descriptionY - boxHeight/2,
-		3.4*(textWidth/textWidthPT),
+		3.375*(textWidth/textWidthPT),
 		1*(textHeight/textHeightPT),
 		0, c_white, 1
 	);
 
 // Draw the description text inside the box
-draw_text_color(descriptionX, descriptionY, descriptionText, TEXT_GREEN, TEXT_GREEN, TEXT_GREEN, TEXT_GREEN, 1);
+draw_text_color(descriptionX, descriptionY, descriptionText, CYAN, CYAN, CYAN, CYAN, 1);
 #endregion DESCRIPTION
 
 DrawFont(fnt_dialogue);
 
 // Draw language options
 for (var i = 0; i < optionLength; i++) {
-	var c = TEXT_GREEN;
+	var c = CYAN;
 	
 	// Option was selected
 	if (pos == i && phase == "CONFIRM") {

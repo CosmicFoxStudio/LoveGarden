@@ -87,11 +87,11 @@ for (var slot = 0; slot < 3; slot++) {
 
 // To center on the screen	
 var startX = (SCREEN_WIDTH/ 2);
-var startY = (SCREEN_HEIGHT / 2) - (sprite_get_height(spr_saveslot_box) * 1.2);
+var startY = (SCREEN_HEIGHT / 2) - (sprite_get_height(spr_saveslot_box) * 1.25);
 	
 // Create the three save slot boxes
 for (var slot = 0; slot < maxSlots; slot++) {
-	var yy = startY + (slot * (sprite_get_height(spr_saveslot_box) * 1.2));
+	var yy = startY + (slot * (sprite_get_height(spr_saveslot_box) * 1.25));
 		
 	// Checking if the slot is highlighted
 	if (selectedOption == slot) subimage = 1;

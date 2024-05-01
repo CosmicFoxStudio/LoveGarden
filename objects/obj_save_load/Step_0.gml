@@ -36,7 +36,7 @@ if (global.state == e_gameStates.FILE_SELECTION) {
 			global.saveSlot = selectedOption;
 		
 			// Existing save slot found
-			if file_exists("file_" + string(global.saveSlot) + ".sav") {
+			if (file_exists("file_" + string(global.saveSlot) + ".sav") && !global.newGame) {
 				LoadGame();	
 				global.state = e_gameStates.CONTINUE_GAME;
 			
@@ -45,7 +45,7 @@ if (global.state == e_gameStates.FILE_SELECTION) {
 			}	
 		
 			// NO existing save slot found
-			else {
+			else if (global.newGame && !file_exists("file_" + string(global.saveSlot) + ".sav")) {
 				
 				// Change Game State
 				GameChangeState(e_gameStates.NEW_GAME);
@@ -57,8 +57,8 @@ if (global.state == e_gameStates.FILE_SELECTION) {
 		}
 		// ---------------------------- DELETE SAVE FILE --------------------------- //
 		// Press cancel to delete the save file
-		else if ( InputCheck("cancel", e_input.KEYBOARD) ) ||
-			(InputCheck("cancel", e_input.MOUSE) && mouseSelected)  {
+		else if ( InputCheck("cancel", e_input.KEYBOARD) && global.newGame ) ||
+			(InputCheck("cancel", e_input.MOUSE) && mouseSelected && global.newGame )  {
 			global.saveSlot = selectedOption;
 		
 			// Delete the file

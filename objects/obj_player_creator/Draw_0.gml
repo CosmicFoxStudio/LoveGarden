@@ -21,7 +21,7 @@ switch (phase) {
 				
 				// Draw cursor based on the last hovered option
 				if (pos == i) {
-					optionText = "[spr_cursor_keyboard] " + PlayerCreatorLocalization(optionText);
+					optionText = "[spr_arrows2] " + PlayerCreatorLocalization(optionText);
 				}
 
 		        draw_text_scribble(startX + 40 + (i * (rectWidth + PLAYER_CREATOR_BTN_MARGIN_H) - 5), startY + PLAYER_CREATOR_MARGIN_V + 5, PlayerCreatorLocalization(optionText));
@@ -68,7 +68,7 @@ switch (phase) {
 				
 	        // Draw cursor based on the last hovered option
 	        if (pos == i) {
-	            nameString = "[spr_cursor_keyboard] " + PlayerCreatorLocalization(nameString);
+	            nameString = "[spr_arrows2] " + PlayerCreatorLocalization(nameString);
 	        }
 	        draw_text_scribble(startX + 45 + (i * (rectWidth + PLAYER_CREATOR_BTN_MARGIN_H)), startY + PLAYER_CREATOR_MARGIN_V + 25, PlayerCreatorLocalization(nameString));
 	    }   

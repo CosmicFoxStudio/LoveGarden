@@ -30,8 +30,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_saveslot_box",
-    "path": "sprites/spr_saveslot_box/spr_saveslot_box.yy",
+    "name": "spr_textbox2",
+    "path": "sprites/spr_textbox2/spr_textbox2.yy",
   },
   "spriteMaskId": null,
   "visible": true,

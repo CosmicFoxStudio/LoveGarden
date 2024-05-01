@@ -31,8 +31,8 @@
   ],
   "solid": false,
   "spriteId": {
-    "name": "spr_ui_calendar",
-    "path": "sprites/spr_ui_calendar/spr_ui_calendar.yy",
+    "name": "spr_tooltip_box3",
+    "path": "sprites/spr_tooltip_box3/spr_tooltip_box3.yy",
   },
   "spriteMaskId": null,
   "visible": true,

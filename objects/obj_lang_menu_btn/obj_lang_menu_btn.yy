@@ -33,8 +33,8 @@
   ],
   "solid": false,
   "spriteId": {
-    "name": "spr_lang_btn",
-    "path": "sprites/spr_lang_btn/spr_lang_btn.yy",
+    "name": "spr_tooltip_box2",
+    "path": "sprites/spr_tooltip_box2/spr_tooltip_box2.yy",
   },
   "spriteMaskId": null,
   "visible": true,
