@@ -1,11 +1,7 @@
 ## UI e Configurações
-	- Implement new Phone UI
+	- Config Menu Phone UI
 
 ## Lógicas de Sistemas
 	- Map and Action System
 	- Save System
 	- English Gender Inflection
-
-## Bugs, Feedbacks e Builds
-	- Nova Build
-	- Correção de bugs e Feedbacks
