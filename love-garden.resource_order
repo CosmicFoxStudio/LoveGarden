@@ -108,6 +108,7 @@
     {"name":"__shd_scribble_bake_outline_4dir","order":1,"path":"shaders/__shd_scribble_bake_outline_4dir/__shd_scribble_bake_outline_4dir.yy",},
     {"name":"ChatterboxLoadFromFile","order":4,"path":"scripts/ChatterboxLoadFromFile/ChatterboxLoadFromFile.yy",},
     {"name":"__ChatterboxEvaluate","order":9,"path":"scripts/__ChatterboxEvaluate/__ChatterboxEvaluate.yy",},
+    {"name":"spr_saveslot2","order":9,"path":"sprites/spr_saveslot2/spr_saveslot2.yy",},
     {"name":"snd_door","order":4,"path":"sounds/snd_door/snd_door.yy",},
     {"name":"__ChatterboxClassBodySubstring","order":1,"path":"scripts/__ChatterboxClassBodySubstring/__ChatterboxClassBodySubstring.yy",},
     {"name":"spr_app_sound","order":8,"path":"sprites/spr_app_sound/spr_app_sound.yy",},

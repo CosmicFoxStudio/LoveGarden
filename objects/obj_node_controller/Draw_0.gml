@@ -50,7 +50,7 @@ if IsChatterbox(chatterbox) and text != undefined {
 	// Draw nametag text
 	if ( (ChatterboxGetContentSpeaker(chatterbox, 0) == "PLAYER") ) speakerName = global.playerName;
 	else speakerName = ChatterboxGetContentSpeaker(chatterbox, 0);
-	DrawFont(fnt_dialogue);
+	DrawFont(global.dialogFonts[global.fontType][global.fontSize]);
 	draw_text_color(
 		room_width/2 - 157, 
 		room_height - (marginText/2) - 72, 
@@ -73,6 +73,7 @@ if IsChatterbox(chatterbox) and text != undefined {
 				yy = (room_height/6) * (i+2) - 30;
 				
 				DrawRectangleCenter(xx, yy, width, height, false, c_black, 0.5);
+				draw_sprite(spr_saveslot2, 1, xx-width/2, yy-height/2);
 				
 				var icon = "";
 				if (optionIndex == i) icon = "> ";
