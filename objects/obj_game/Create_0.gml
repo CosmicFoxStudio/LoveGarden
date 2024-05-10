@@ -31,6 +31,7 @@ global.keyboardIcons = false;
 global.textComplete = false;
 global.changeCalendarDaytime = true;
 global.newGame = false;
+global.lastPlace = rm_init;
 
 // Localization Info
 global.lang = "en";     // "en", "pt"

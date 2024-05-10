@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Places",
-    "path": "folders/Map/Places.yy",
+    "name": "Old Places",
+    "path": "folders/Map/Old Places.yy",
   },
   "parentObjectId": {
     "name": "obj_place_parent",

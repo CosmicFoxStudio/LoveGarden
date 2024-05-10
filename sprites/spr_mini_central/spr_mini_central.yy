@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "Miniatures",
-    "path": "folders/Sprites/Map/Miniatures.yy",
+    "path": "folders/Sprites/Map Old/Miniatures.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
