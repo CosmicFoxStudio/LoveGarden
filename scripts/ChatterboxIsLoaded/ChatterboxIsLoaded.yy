@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "ChatterboxIsLoaded",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Setup",
-    "path": "folders/Libraries/Chatterbox/Setup.yy",
+  "$GMScript":"",
+  "%Name":"ChatterboxIsLoaded",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ChatterboxIsLoaded",
+  "parent":{
+    "name":"Setup",
+    "path":"folders/Libraries/Chatterbox/Setup.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }
