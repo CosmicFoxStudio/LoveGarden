@@ -1,5 +1,5 @@
 {
-  "FolderOrderSettings": [
+  "FolderOrderSettings":[
     {"name":"Cutscenes","order":12,"path":"folders/Cutscenes.yy",},
     {"name":"Dream","order":1,"path":"folders/Cutscenes/Dream.yy",},
     {"name":"Dialogue System","order":11,"path":"folders/Dialogue System.yy",},
@@ -73,7 +73,7 @@
     {"name":"Phone Title Menu","order":4,"path":"folders/UI/Phone Title Menu.yy",},
     {"name":"Utils Objects","order":9,"path":"folders/Utils Objects.yy",},
   ],
-  "ResourceOrderSettings": [
+  "ResourceOrderSettings":[
     {"name":"obj_intro","order":1,"path":"objects/obj_intro/obj_intro.yy",},
     {"name":"game_functions","order":2,"path":"scripts/game_functions/game_functions.yy",},
     {"name":"scribble_super_glyph_copy_all","order":3,"path":"scripts/scribble_super_glyph_copy_all/scribble_super_glyph_copy_all.yy",},

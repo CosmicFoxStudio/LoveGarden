@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "ChatterboxLocalizationLoad",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Localisation",
-    "path": "folders/Libraries/Chatterbox/Localisation.yy",
+  "$GMScript":"",
+  "%Name":"ChatterboxLocalizationLoad",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ChatterboxLocalizationLoad",
+  "parent":{
+    "name":"Localisation",
+    "path":"folders/Libraries/Chatterbox/Localisation.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }
