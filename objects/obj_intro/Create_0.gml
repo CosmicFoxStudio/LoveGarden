@@ -4,7 +4,7 @@ textSpd = 0.25;
 page = 0;
 switch (global.lang) {
 	case "en":
-	if (global.gameMode == e_gameMode.DEMO) {
+	if (global.gameMode == e_gameMode.DEMO || global.gameMode == e_gameMode.TEASER) {
 		text[0]	= ". . .";
 		text[1]	= "Looks like it's the first time.";
 		text[2]	= "It's the season for fresh starts.[delay,200]\nNew reflections await.";

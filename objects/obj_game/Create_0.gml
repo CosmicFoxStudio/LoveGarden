@@ -175,6 +175,10 @@ else {
 		ChatterboxLoadFromFile("scenes/demo_day1_sciences.yarn");
 		ChatterboxLoadFromFile("scenes/demo_day1_central.yarn");
 	}
+	else if (global.gameMode == e_gameMode.TEASER) {
+		// TEASER MODE
+		ChatterboxLoadFromFile("scenes/teaser.yarn");
+	}
 	else {
 		// RELEASE MODE
 		ChatterboxLoadFromFile("scenes/main_day0_test.yarn");
@@ -198,6 +202,14 @@ if (global.gameMode == e_gameMode.DEMO) {
 	global.roomYarnMap[? "rm_sciences"]			= "scenes/demo_day1_sciences.yarn";
 	global.roomYarnMap[? "rm_central"]			= "scenes/demo_day1_central.yarn";
 }
+else if (global.gameMode == e_gameMode.TEASER) {
+	// TEASER MODE
+	global.roomYarnMap[? "rm_dormitory"]		= "scenes/teaser.yarn";
+	global.roomYarnMap[? "rm_boat"]				= "scenes/teaser.yarn";
+	global.roomYarnMap[? "rm_sciences"]			= "scenes/teaser.yarn";
+	global.roomYarnMap[? "rm_central"]			= "scenes/teaser.yarn";
+}
+
 // RELEASE MODE
 else {
 	global.roomYarnMap[? "rm_test"]				= "scenes/main_day0_test.yarn";
@@ -237,6 +249,7 @@ ChatterboxAddFunction("playMusic", inst_jukebox.JukeboxPlayMusicFromString);	// 
 ChatterboxAddFunction("playSFX", inst_jukebox.JukeboxPlaySFXFromString);		// Play SFX
 ChatterboxAddFunction("setFlag", FlagSet);										// Sets a value to a flag
 ChatterboxAddFunction("getFlag", FlagGet);										// Returns the value of a given flag
+ChatterboxAddFunction("endGame", EndGame);										// Closes the game
 #endregion CHATTERBOX INITIALIZE CUSTOMS
 
 // ------------------------------ TESTING ZONE ---------------------------------- //

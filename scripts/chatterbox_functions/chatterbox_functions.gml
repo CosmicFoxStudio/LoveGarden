@@ -321,3 +321,7 @@ function GetCharacterTextColorRGB(_currentSpeaker) {
 	else if (_currentSpeaker == "" || _currentSpeaker == "") return CYAN;
 	else return CYAN;
 }
+
+function EndGame() {
+	game_end();
+}

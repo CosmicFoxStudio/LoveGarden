@@ -1,0 +1,100 @@
+title: Morning
+---
+<<set $nextscene to 1>>
+<<jump Teaser1>>
+===
+
+title: Noon
+---
+<<if $nextscene == 2>>
+    <<jump Teaser2>>
+<<endif>>
+
+<<if $nextscene == 3>>
+    <<jump Teaser3>>
+<<endif>>
+===
+
+title: Afternoon 
+---
+<<if $nextscene == 4>>
+    <<jump Teaser4>>
+<<endif>>
+===
+
+title: Night
+---
+<<if $nextscene == 5>>
+    <<jump Teaser5>>
+<<endif>>
+===
+
+title: Teaser1
+---
+<<bg(0)>>
+<<chara("caru")>>
+CARU: Bom dia, flor do dia.
+<<set $nextscene to 2>>
+<<nextDaytime()>>
+<<nextRoom("rm_sciences")>>
+===
+
+title: Teaser2
+---
+<<bg(1)>>
+<<chara("clove")>>
+<<emotion(10)>>
+CRAVO: Eu não acredito que você conseguiu nota máxima no trabalho!
+<<set $nextscene to 3>>
+<<nextRoom("rm_boat")>>
+=== 
+
+title: Teaser3
+---
+<<chara("hydra")>>
+<<emotion(0)>>
+HORTÊNSIA: ...! 
+<<emotion(3)>>
+HORTÊNSIA: He he...! 
+<<set $nextscene to 4>>
+<<nextDaytime()>>
+<<nextRoom("rm_central")>>
+===
+
+title: Teaser4
+---
+<<bg(1)>>
+<<chara("clove", 0)>>
+<<chara("rose", 1)>>
+<<emotion(5, 1)>>
+ROSA: Você está dando em cima do meu namorado???
+<<emotion(10, 0)>>
+CRAVO: ???
+<<emotion(0, 1)>>
+ROSA: [wave]Haha~[/wave] Brincadeirinha.
+<<emotion(3, 0)>>
+CRAVO: ...
+<<set $nextscene to 5>>
+<<nextDaytime()>>
+<<nextRoom("rm_dormitory")>>
+===
+
+title: Teaser5
+---
+<<bg(2)>>
+<<chara("void", 1)>>
+<<chara("ype")>>
+<<emotion(0, 0)>>
+IPÊ: ... E-Eu gosto de você!
+IPÊ: ... E-Eu gosto de você!
+-> Beijar.
+-> Olha, somos apenas amigos...
+<<emotion(4, 0)>>
+...
+<<bgTransition(3)>>
+<<chara("void")>>
+...
+<<set $nextscene to 1>>
+FIM
+<<endGame()>>
+===

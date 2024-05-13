@@ -3,7 +3,8 @@
 function Enums() {
 	enum e_gameMode {
 		DEMO,
-		RELEASE
+		RELEASE,
+		TEASER
 	}
 	
 	enum e_language {
