@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_mini_central",
-    "path":"sprites/spr_mini_central/spr_mini_central.yy",
+    "name":"spr_iconCentral",
+    "path":"sprites/spr_iconCentral/spr_iconCentral.yy",
   },
   "spriteMaskId":null,
   "visible":true,
