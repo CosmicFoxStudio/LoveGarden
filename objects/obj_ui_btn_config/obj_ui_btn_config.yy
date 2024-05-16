@@ -32,10 +32,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_ui_light_btn_config",
-    "path":"sprites/spr_ui_light_btn_config/spr_ui_light_btn_config.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

@@ -74,22 +74,25 @@ if (inputting) {
 			// Check mouse slide direction
 			var mouseHorizontalInput = 0;
 			if(InputCheck("confirm", e_input.MOUSE)) {
-				mouse_prev_x = mouse_x
+				mouse_prev_x = mouse_x;
 			}
 			
 			if(InputCheck("confirm", e_input.MOUSE, "held")) {
-				if(mouse_x - mouse_prev_x > 0)
+				if (mouse_x - mouse_prev_x > 0) {
 					mouseHorizontalInput = 1;
-				else if(mouse_x - mouse_prev_x < 0)
+				} 
+				else if(mouse_x - mouse_prev_x < 0) {
 					mouseHorizontalInput = -1;
-				else 
+				}
+				else { 
 					mouseHorizontalInput = 0;
-				mouse_prev_x = mouse_x
+					mouse_prev_x = mouse_x;
+				}
 			}
 		
 			// Held input instead of pressed here for smooth gameplay
 			var horizontalSlideInput = InputCheck("right", e_input.KEYBOARD, "held") - InputCheck("left", e_input.KEYBOARD, "held");
-			if(horizontalSlideInput != 0 || mouseHorizontalInput != 0) {
+			if (horizontalSlideInput != 0 || mouseHorizontalInput != 0) {
 				// Makes the value a floating value between 0-1 (same as 0% to 100%)
 				currentPage[menuOption[page]].param1 +=
 					(horizontalSlideInput == 0? mouseHorizontalInput * 0.025 : horizontalSlideInput * 0.01);

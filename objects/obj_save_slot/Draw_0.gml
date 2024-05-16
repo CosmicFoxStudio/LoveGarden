@@ -3,33 +3,36 @@
 draw_self();
 
 // To center on the screen	
-startX = (SCREEN_WIDTH/ 2);
-startY = (SCREEN_HEIGHT / 2) - (sprite_get_height(sprite_index) * 1.06);
-yy = startY + (slotIndex * (sprite_get_height(sprite_index) * 1.06));
+startX = (SCREEN_WIDTH / 2);
+startY = (SCREEN_HEIGHT / 2) - (sprite_get_height(sprite_index));
+yy = startY + (slotIndex * (sprite_get_height(sprite_index)));
 
 	// ----------------------------- FILE DOESN'T EXIST ----------------------------- //
-if !file_exists("file_" + string(slotIndex) + ".sav") {		
+if (!file_exists("file_" + string(slotIndex) + ".sav")) {		
 	// Drawing the text data
 	DrawSet(CYAN);
 	DrawAlign(fa_center, fa_middle);
 			
 	// Draws only "EMPTY" or "NEW GAME"
-	if(global.newGame) draw_text(startX, yy, obj_save_load.saveText[7]);
+	if (global.newGame) draw_text(startX, yy, obj_save_load.saveText[7]);
 	else draw_text(startX, yy, obj_save_load.saveText[0]);
 	
-	if (!global.newGame) image_alpha = 0.5;
-	else image_alpha = 1;
+	//// Transparency effect
+	//if (!global.newGame) image_alpha = 0.5;
+	//else image_alpha = 1;
 }
 
 // ---------------------------------- FILE EXISTS ----------------------------------- //
 else {
-	if (global.newGame) image_alpha = 0.5;
-	else image_alpha = 1;
+	//// Transparency effect
+	//if (global.newGame) image_alpha = 0.5;
+	//else image_alpha = 1;
 	
+	// Setup positions
 	var plantX = (startX - (sprite_get_width(spr_saveslot_box) / 2) ) + 
-	(sprite_get_width(spr_sprout) + 15);
+	(sprite_get_width(spr_cursor_sprout) + 15);
 			
-	var plantY = yy + (sprite_get_height(spr_sprout) / 2) - 11;
+	var plantY = yy + (sprite_get_height(spr_cursor_sprout) / 2);
 	if (obj_save_load.selectedOption == slotIndex) {
 		draw_sprite_ext(spr_cursor_sprout, spriteImage, plantX, plantY, 1, 1, 0, c_white, 1);
 	}

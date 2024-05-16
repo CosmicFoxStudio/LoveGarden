@@ -34,7 +34,7 @@ function Enums() {
 		PAUSED,
 		MENU,
 		LEAVE, // Returns to title
-		RESUME // Close menu and resume game
+		// RESUME // Close menu and resume game
 	}
 	
 	enum e_SO {

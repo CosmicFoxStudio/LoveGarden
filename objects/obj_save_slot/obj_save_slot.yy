@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_textbox2",
-    "path":"sprites/spr_textbox2/spr_textbox2.yy",
+    "name":"spr_saveslot_box",
+    "path":"sprites/spr_saveslot_box/spr_saveslot_box.yy",
   },
   "spriteMaskId":null,
   "visible":true,
