@@ -40,11 +40,15 @@ PLAYER: Sorry! I didn't mean to scare you! #line:c102eb
 ???: Just didn't expect someone to talk to me. #line:54bca3
 <<emotion(0, 0)>>
 PLAYER: Hum? Ok. Er... So. Are you looking for your class? #line:e52624
+<<emotion(5, 0)>>
 ???: Yes... But this place is... Huge... #line:ba29bf
+<<emotion(1, 0)>>
 PLAYER: I know, right? #line:7a74e1
 PLAYER: By the way, my name is PLAYER. What about you? #line:91232a
+<<emotion(2, 0)>>
 YPE: Oh... My name is Ype. N...nice to meet you! #line:1d502a
 PLAYER: And which class are you looking for? #line:9e9022
+<<emotion(0, 0)>>
 YPE: Introduction to Ecology... #line:2851de 
 PLAYER: You got lucky, it's right there! #line:ffcb3d 
 PLAYER: What is your course again? #line:223848 
@@ -64,14 +68,19 @@ You almost have no time to sit before the teacher starts to speak. #line:7a34b2
 <<chara("ype")>>
 You look around, trying to identify where Ype was seated, finding them a few chairs behind you. #line:e56064 
 They seem nervous so you try to direct them a smile to calm them down, but they are staring at their own table. #line:3b3dfd
-<<chara("fern")>>
+<<chara("fern", 0)>>
+<<emotion(3, 0)>>
 ???: Now that everyone is here. Good morning, students. #line:db87a7 
 ???: I'm professor Nephrolepis. #line:fedc14
-<<chara("clove")>>
+<<chara("clove", 1)>>
+<<emotion(1, 1)>>
 ???: But you can call him Fern! #line:c337ac 
 The boy sitting next to you speaks loud enough for the entire class to hear. #line:d7795f
+<<chara("void", 1)>>
 <<chara("fern")>>
+<<emotion(2, 0)>>
 FERN: Thanks Clove, for revealing my not-so-scientific name. Either way, it's Professor Fern. #line:92b6d9 
+<<emotion(0, 0)>>
 FERN: I will be your teacher in Introduction to Ecology. #line:a113d3
 FERN: My subject will be essential for you in the coming semesters. #line:e5be47
 Professor Fern continues explaining how his subject will work. #line:1c237a
@@ -93,11 +102,15 @@ FERN: When I call your name and your partner's, raise your hands. #line:135330
 <<chara("clove")>>
 You lean towards Clove to whisper so as not to disturb the class. #line:a7f848
 PLAYER: (How did you know exactly what he was going to say?) #line:52fe5a 
+<<emotion(2)>>
 CLOVE: He said the exact same thing for the last two semesters. #line:0289cb 
 PLAYER: And how do you know that? #line:2377b5 
+<<emotion(5)>>
 CLOVE: It's the third time I'm taking this subject... #line:a1618d 
 PLAYER: Ohh... Is this subject really that tough? #line:e25963 
+<<emotion(12)>>
 CLOVE: It's the worst of all. Fern is one of the toughest in the department. #line:cc1c8f 
+<<emotion(0)>>
 <<chara("fern")>>
 You look back at the professor, trying to draw your own conclusions. #line:b039c9 
 You look back at the professor, trying to draw your own conclusions. #line:c99b2e 
@@ -105,11 +118,14 @@ You look back at the professor, trying to draw your own conclusions. #line:c99b2
 	<<changeRelationship("clove", -1)>>
 	<<chara("clove")>>
 	PLAYER: He might just be a bit grumpy. #line:39a376 
+	<<emotion(0)>>
 	CLOVE: Well, this I can understand. If I was this tacky I would be unhappy too. #line:776ff0 
 	PLAYER: Wow, you really don't like the old man. #line:6d3a22
 	PLAYER: That's a level of hate that only someone who has been through two failures would truly understand. #line:872832
+	<<emotion(1)>>
 	CLOVE: Let's see how you'll be at the end of the semester. #line:57e1ad 
 	PLAYER: Hey, they say the third time's the charm. #line:0f2d8b 
+	<<emotion(0)>>
 -> I think I can agree with you. #line:7d7b82 
 	<<changeRelationship("clove", 1)>>
 	<<addAction()>>
@@ -117,61 +133,82 @@ You look back at the professor, trying to draw your own conclusions. #line:c99b2
 	<<chara("void")>>
 	PLAYER: He has the face of someone who will turn my life into hell. #line:d69a2d
 	<<chara("clove")>>
+	<<emotion(12)>>
 	CLOVE: He has no sensitivity, even though most of the class are freshmen. #line:868f64
+	<<emotion(0)>>
 	PLAYER: I bet it's for teachers like him that some people hate Biology. #line:f2590a
+	<<emotion(2)>>
 	CLOVE: Um, Ecology isn't the coolest subject. #line:fea686
 	PLAYER: Are you kidding me! It's one of the subjects that I was most excited to have. #line:8bd16f 
 	CLOVE: Entomology is way cooler! Wait for your next semester. #line:130cc1
 <<chara("fern")>>
+<<emotion(0)>>
 FERN: PLAYER and Ype! #line:daff2f 
 You startle when Professor Fern's voice echoes through the classroom. #line:fc6dd7 
 You immediately raise your hand. #line:617639
 FERN: You two will be working on the theme ''Animals of the Plantae Kingdom". #line:824c59
 <<if (getRelationship("clove") >= 1)>>
 	<<chara("clove")>>
+	<<emotion(11)>>
 	CLOVE: Wow! You took the best theme! #line:a69dbf 
+	<<emotion(2)>>
 	CLOVE: Makes me wish we were partners. #line:7dc2e5 
 	You faintly smile at Clove before going after Ype. #line:cd0c97
 <<endif>>
 <<chara("ype")>>
+<<emotion(0)>>
 You turn to Ype, feeling relieved to at least be with someone you know. #line:247a53 
 You wave in their direction and they wave back, seeming nervous. #line:17f36e 
 <<chara("fern")>>
 Professor Fern finishes announcing the pairs. #line:c37350 
+<<emotion(3)>>
 FERN: That's it for today! #line:532271 
 <<chara("void")>>
 PLAYER: (All my panic this morning for less than an hour of class...) #line:38f76d
 <<chara("clove")>>
+<<emotion(0)>>
 Clove was already ready to leave. #line:aa68ea 
 PLAYER: Hold on! How did you pack up your stuff so quickly? #line:db1e3b 
+<<emotion(2)>>
 CLOVE: Stuff? What stuff? #line:6f8c0b
 PLAYER: Ha-ha! Aren't you even going to meet your group partner? #line:8ba265 
+<<emotion(0)>>
 CLOVE: Nah... Seems like they didn't show up today... #line:5e14cc 
+<<emotion(3)>>
 CLOVE: It's the second semester my group partner hasn't shown up... #line:9c2235
 CLOVE: The old man is totally singling me out... #line:928e21 
 PLAYER: C'mon, it's not like that. #line:ad5d08 
 PLAYER: By the way, do you have any tips for a first-time freshman? #line:af96fa 
+<<emotion(0)>>
 CLOVE: Don't let things pile up, and pray for your partner to show up. #line:31e349 
 CLOVE: Now, if you'll excuse me, I have to complain about this class to someone else. #line:43ed86 
 PLAYER: Oh, yeah? And who will have the pleasure of hearing you for the third time? #line:9e8c3e 
+<<emotion(2)>>
 CLOVE: My incredible girlfriend. #line:f43258 
+<<emotion(1)>>
 CLOVE: She even took the subject last semester to see how bad it really is. #line:0182ad 
 PLAYER: And she's not here this semester... Did she drop out or pass? #line:d56f7c 
+<<emotion(0)>>
 CLOVE: She passed... #line:1fe470 
+<<emotion(3)>>
 CLOVE: Not that she lets me forget about it. #line:7165bc
 PLAYER: Oh, jeez. #line:0d39ce 
+<<emotion(0)>>
 CLOVE: Well, now I'm really going. Later, PLAYER! #line:1ba55b 
 PLAYER: See you around. #line:37407a
 <<chara("void")>>
 Clove leaves and you stand up to go after Ype. #line:3541f1 
 Only to find them right beside your chair. #line:3d4920
 <<chara("ype")>>
+<<emotion(5)>>
 YPE: Sorry... I-I didn't want to interrupt... #line:46c28e 
 PLAYER: Relax! I was just trying to get some tips. #line:efa7de 
 PLAYER: He has taken this subject many times before. #line:328664 
+<<emotion(1)>>
 YPE: Oh... Did you find anything useful? #line:a88a41
 PLAYER: Nothing really, don't procrastinate... #line:0ca0b6
 PLAYER: Have a partner who helps... #line:d624ae 
+<<emotion(0)>>
 YPE: Oh... #line:cea110 
 PLAYER: Let's give it our best, okay? #line:0e14fb
 They nod in agreement, looking hesitant. #line:37234f
@@ -180,4 +217,3 @@ You say goodbye as you leave the room. #line:789b5e
 <<nextDaytime()>>
 <<nextRoom("rm_central")>>
 ===
-                 
