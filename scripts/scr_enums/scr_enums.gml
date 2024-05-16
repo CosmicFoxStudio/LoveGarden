@@ -26,15 +26,17 @@ function Enums() {
 
 	// GAME STATES
 	enum e_gameStates {
-		INTRO, // Studio logo
+		INTRO,			// Studio logo
 		TITLE_SCREEN,
 		FILE_SELECTION,
-		NEW_GAME, // First access
-		CONTINUE_GAME, // If not first access (continue game)
+		NEW_GAME,		// First access
+		CONTINUE_GAME,	// If not first access (continue game)
 		PAUSED,
 		MENU,
-		LEAVE, // Returns to title
-		// RESUME // Close menu and resume game
+		LEAVE,			// Returns to title
+		EVENT_END,		// When a mandatory event ends, call map
+		MAP
+		// RESUME		// Close menu and resume game
 	}
 	
 	enum e_SO {
@@ -53,6 +55,7 @@ function Enums() {
 		CONFIRM,
 		CANCEL,
 		BACK,
+		MAP,
 		LANG
 	}
 

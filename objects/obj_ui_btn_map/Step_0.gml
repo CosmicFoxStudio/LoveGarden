@@ -1,10 +1,4 @@
-/// @description Button Action
-
-if ((InputCheck("confirm", e_input.MOUSE) && hovering && global.state != e_gameStates.MENU) || (doAction && global.state != e_gameStates.MENU)) {
-	show_debug_message("Map");
-	//GameTransitionChangeRoom(rm_campus_map, sq_trans_fade_black);
-	image_index = 0;
-	hovering = false;
-	global.hoveringButton = false;
-	doAction = false;
+if ( InputCheck("confirm", e_input.MOUSE) && hovering ) {
+	global.lastPlace = room;
+	GameTransitionChangeRoom(rm_map, sq_trans_fade_black);
 }

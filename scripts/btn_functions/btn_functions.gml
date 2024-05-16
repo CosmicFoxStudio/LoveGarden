@@ -18,11 +18,11 @@ function ExecuteButtonAction(_btnType) {
 			game_end();
 		break;
 		
-		case e_btnTypes.BACK:
+		case e_btnTypes.BACK :
 			GameTransitionChangeRoom(rm_title, sq_trans_fade_black);
 		break;
 		
-		case e_btnTypes.LANG:
+		case e_btnTypes.LANG :
 			GameTransitionChangeRoom(rm_lang, sq_trans_fade_black);
 		break;
 		

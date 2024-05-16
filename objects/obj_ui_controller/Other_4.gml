@@ -6,6 +6,11 @@ if (global.state == e_gameStates.LEAVE) {
 
 // Check if you need to instantiate any Game UI in this scene
 if (global.state == e_gameStates.CONTINUE_GAME && global.roomType == e_roomTypes.SCENES) {
-	instance_create_layer(ORIGIN_X, ORIGIN_Y, "Instances_Above", obj_ui_btn_calendar, {offsetX: 0});
+	// Create Calendar
+	instance_create_layer(ORIGIN_X, ORIGIN_Y, "Instances_Above", obj_ui_btn_calendar);
+	
+	// Test map button
+	// instance_create_layer(ORIGIN_X + (sprite_get_width(spr_tooltip_box2)/2), ORIGIN_Y + 80, "Instances_Above", obj_ui_btn_map);
 	canDrawNow = true;
 }
+

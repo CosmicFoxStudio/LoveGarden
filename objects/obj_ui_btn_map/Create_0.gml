@@ -8,4 +8,5 @@ image_alpha = 0.5;
 
 // -------------------- VARIABLE DEFINITIONS -------------------- //
 
-btnText[e_btnTypes.BACK] = ["MAP", "MAPA"];
+btnText[e_btnTypes.MAP] = ["MAP", "MAPA"];
+btnText[e_btnTypes.BACK] = ["CLOSE MAP", "FECHAR MAPA"];

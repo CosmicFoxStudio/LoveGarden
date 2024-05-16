@@ -23,3 +23,7 @@ if (global.debug) show_debug_message("All dialogue files: " + string(global.dial
 for (var file = 0; file < array_length(global.dialogueList); file++) {
 	show_debug_message("Is " + string(global.dialogueList[file]) + " loaded?: " + string(ChatterboxIsLoaded(global.dialogueList[file])));
 }
+
+if (room == rm_map) {
+	global.map = true;	
+}
