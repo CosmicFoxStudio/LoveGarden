@@ -30,7 +30,7 @@ else {
 	
 	// Setup positions
 	var plantX = (startX - (sprite_get_width(spr_saveslot_box) / 2) ) + 
-	(sprite_get_width(spr_cursor_sprout) + 15);
+	(sprite_get_width(spr_cursor_sprout) + 35);
 			
 	var plantY = yy + (sprite_get_height(spr_cursor_sprout) / 2);
 	if (obj_save_load.selectedOption == slotIndex) {
