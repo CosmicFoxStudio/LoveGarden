@@ -172,65 +172,65 @@ title: SocialAnxiety
 The patio really seems like the ideal place to rest a little before starting Mamba’s assignment. #line:8bd98d
 You take a deep breath and look around. #line:4c5114
 You recognize a familiar figure nearby. #line:a75bf8
-<<chara("ype")>>
-Ype is seated alone under the tree. #line:140247
+<<chara("ipe")>>
+Ipe is seated alone under the tree. #line:140247
 You realize that they are putting a bowl inside the thermal lunch bag. #line:8b571d
 Apparently they preferred to eat outside, among the forest. #line:f84bf4
-PLAYER: Hey, Ype! #line:942cf5
-YPE: Ah! #line:c011b1
-YPE: I didn't see you approaching! #line:ff739b
+PLAYER: Hey, Ipe! #line:942cf5
+Ipe: Ah! #line:c011b1
+Ipe: I didn't see you approaching! #line:ff739b
 PLAYER: Whoops... Once again, sorry I didn't want to startle you. #line:2ce7e6
 While talking, you sit beside them. #line:6335b1
 PLAYER: But I found it curious that you are eating here outside. #line:14a8ae
-YPE: Ah... The common spaces are always full of people... #line:a58d71
-YPE: I prefer to eat by myself... #line:c90fa3
-YPE: I prefer to eat by myself... #line:e14bed
+Ipe: Ah... The common spaces are always full of people... #line:a58d71
+Ipe: I prefer to eat by myself... #line:c90fa3
+Ipe: I prefer to eat by myself... #line:e14bed
 -> It feels so lonely... #line:8947f5  
-<<changeRelationship("ype", -1)>>
-	YPE: Ah... haha. Being alone is not necessarily bad... #line:ba7963
+<<changeRelationship("ipe", -1)>>
+	Ipe: Ah... haha. Being alone is not necessarily bad... #line:ba7963
 	PLAYER: Whoops, this wasn't what I meant to say! #line:ab5328
 	PLAYER: You don't have to be alone all the time, you know? #line:d2032a
-	YPE: I... I don't care much about it. #line:5cd40e
-	YPE: But having some pleasant company is really great. #line:87b74a
+	Ipe: I... I don't care much about it. #line:5cd40e
+	Ipe: But having some pleasant company is really great. #line:87b74a
 -> After seeing the restaurant I understand you. #line:f0f950
-<<changeRelationship("ype", 1)>>
+<<changeRelationship("ipe", 1)>>
 	<<emotion(4)>>
-	YPE: It's kinda chaotic there, isn't it? #line:b42c17
+	Ipe: It's kinda chaotic there, isn't it? #line:b42c17
 	PLAYER: Yeah! Like, I like having time to speak with my friends. #line:8e9858
 	PLAYER: But it is so noisy and full of people. #line:bceb9a
-	YPE: Well, you are invited to spend your lunches with me if you want... #line:f0c5aa
+	Ipe: Well, you are invited to spend your lunches with me if you want... #line:f0c5aa
 	PLAYER: Thank you! #line:a1f251
 PLAYER: Anyways, I'm happy that I found you. #line:d24845
 Ipê: Oh yeah? Why? #line:9c52a0
 PLAYER: Ah, nothing specific, I'm happy to be able to meet new people, you know. #line:56f7fb
 PLAYER: You were like, the second plantae that I directly talked to around here. #line:d12c10
 PLAYER: It was remarcable! #line:008358
-YPE: Hm, this is not something I hear much... #line:ca30fa
+Ipe: Hm, this is not something I hear much... #line:ca30fa
 PLAYER: It's just that you sit here alone under the trees. #line:2690a5
 PLAYER: Who would want to interrupt. #line:37fce8
-YPE: And you interrupted anyway? #line:3c4cc2
+Ipe: And you interrupted anyway? #line:3c4cc2
 PLAYER: Well, above all I'm courageous. #line:e5b532
-YPE: Haha... You're funny. #line:e653b5
+Ipe: Haha... You're funny. #line:e653b5
 PLAYER: Heh, I try. #line:180733
 PLAYER: But hey, you heard that the freshman party will come on the day after tomorrow? #line:8b89ff
-YPE: Oh, yes. I heard. #line:c0c839
-YPE: I gotta admit that I'm not so excited about going... #line:063893
+Ipe: Oh, yes. I heard. #line:c0c839
+Ipe: I gotta admit that I'm not so excited about going... #line:063893
 PLAYER: But you don't have anywhere to escape, right?\nLiving on the campus and all that? #line:42e884
-YPE: Yeah, the noise will be there either way... #line:f92c97
-YPE: But I'm not sure I'm really going... #line:25b530
+Ipe: Yeah, the noise will be there either way... #line:f92c97
+Ipe: But I'm not sure I'm really going... #line:25b530
 PLAYER: I think it might be worth going the semester you were a freshman just to say you've experienced it. #line:ece52e
-YPE: Hum... Why do you think that? #line:123879
+Ipe: Hum... Why do you think that? #line:123879
 PLAYER: We live just one time! #line:aad5b6
-YPE: Well, I...I... will think about it... #line:b21df4
+Ipe: Well, I...I... will think about it... #line:b21df4
 PLAYER: You pondering it is already a victory to me...! #line:0e28bc
 PLAYER: I'd be by your side. #line:fcd326
 You two keep talking for a little longer and when you realize it's getting late. #line:566e82
 You need to take advantage of the fact that the Sun is still in the sky to do Mamba's assignment. #line:9be968
 PLAYER: We should start doing the assignment! #line:9a8167
-YPE: Ah, I need to take my material in the Science building first... #line:59620a
-YPE: I will stop by there and you can go on to the lake! #line:89d8bd
+Ipe: Ah, I need to take my material in the Science building first... #line:59620a
+Ipe: I will stop by there and you can go on to the lake! #line:89d8bd
 PLAYER: Ok. See you there then! #line:2b1eb3
-Ype leaves in a rush, after gathering their stuff. #line:70c182
+Ipe leaves in a rush, after gathering their stuff. #line:70c182
 You start moving too. #line:0dde8a
 <<save()>>
 <<reward()>>
