@@ -42,7 +42,7 @@ function __scribble_config_colours()
 		// Love Garden colors:
 		c_text_green	: TEXT_GREEN,
 		c_text_cyan		: CYAN,
-		c_text_ype		: TEXT_YPE,
+		c_text_ipe		: TEXT_IPE,
 		c_text_rose	    : TEXT_ROSE,
 		c_text_clove	: TEXT_CLOVE,
 		c_text_hydra	: TEXT_HYDRA,

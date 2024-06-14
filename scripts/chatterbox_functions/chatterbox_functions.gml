@@ -18,8 +18,8 @@ function AddAction(_actionsToAdd = 1) {
 // Assign a character route
 function RouteAssign(_SOName) {
 	switch (_SOName) {
-	    case "ype":
-			global.routes[e_SO.YPE] = true;
+	    case "ipe":
+			global.routes[e_SO.IPE] = true;
 	    break;
 	    case "caru":
 			global.routes[e_SO.CARU] = true;
@@ -89,10 +89,10 @@ function ChangeRelationshipBar(_name, _value = 1) {
 			if (global.playerStats.hearts > 8) global.playerStats.hearts = 8;
 			if (global.playerStats.hearts < -8) global.playerStats.hearts = -8;
 	    break;
-	    case "ype":
-			global.NPCs[e_SO.YPE].hearts += _value;
-			if (global.NPCs[e_SO.YPE].hearts > 8) global.NPCs[e_SO.YPE].hearts = 8;
-			if (global.NPCs[e_SO.YPE].hearts < -8) global.NPCs[e_SO.YPE].hearts = -8;
+	    case "ipe":
+			global.NPCs[e_SO.IPE].hearts += _value;
+			if (global.NPCs[e_SO.IPE].hearts > 8) global.NPCs[e_SO.IPE].hearts = 8;
+			if (global.NPCs[e_SO.IPE].hearts < -8) global.NPCs[e_SO.IPE].hearts = -8;
 	    break;
 	    case "caru":
 			global.NPCs[e_SO.CARU].hearts += _value;
@@ -126,8 +126,8 @@ function GetRelationshipBar(_name) {
 	    case "player":
 			return global.playerStats.hearts;
 	    break;
-	    case "ype":
-			return global.NPCs[e_SO.YPE].hearts;
+	    case "ipe":
+			return global.NPCs[e_SO.IPE].hearts;
 	    break;
 	    case "caru":
 			return global.NPCs[e_SO.CARU].hearts;
@@ -282,7 +282,7 @@ function InitialNode() {
 
 function GetCharacterColor(_sprite, _speaker) {
 	if (_speaker == "" || _speaker == "PLAYER" || _speaker == "???") return c_white;
-	else if ((_sprite == spr_ype) && (_speaker == "YPE" || _speaker == "IPÊ")) return c_white;
+	else if ((_sprite == spr_ipe) && (_speaker == "IPE" || _speaker == "IPÊ")) return c_white;
 	else if ((_sprite == spr_caru) && (_speaker == "CARU" || _speaker == "CARU")) return c_white;
 	else if ((_sprite == spr_rose) && (_speaker == "ROSE" || _speaker == "ROSA")) return c_white;
 	else if ((_sprite == spr_clove) && (_speaker == "CLOVE" || _speaker == "CRAVO")) return c_white;
@@ -296,7 +296,7 @@ function GetCharacterColor(_sprite, _speaker) {
 
 function GetCharacterTextColor(_currentSpeaker) {
 	if (_currentSpeaker == "PLAYER" || _currentSpeaker == "PLAYER") return "[c_text_player]";
-	if (_currentSpeaker == "YPE" || _currentSpeaker == "IPÊ") return "[c_text_ype]";
+	if (_currentSpeaker == "IPE" || _currentSpeaker == "IPÊ") return "[c_text_ipe]";
 	else if (_currentSpeaker == "CARU" || _currentSpeaker == "CARU") return "[c_text_caru]";
 	else if (_currentSpeaker == "ROSE" || _currentSpeaker == "ROSA") return "[c_text_rose]";
 	else if (_currentSpeaker == "CLOVE" || _currentSpeaker == "CRAVO") return "[c_text_clove]";
@@ -310,7 +310,7 @@ function GetCharacterTextColor(_currentSpeaker) {
 
 function GetCharacterTextColorRGB(_currentSpeaker) {
 	if (_currentSpeaker == "PLAYER" || _currentSpeaker == "PLAYER") return TEXT_PLAYER;
-	if (_currentSpeaker == "YPE" || _currentSpeaker == "IPÊ") return TEXT_YPE;
+	if (_currentSpeaker == "IPE" || _currentSpeaker == "IPÊ") return TEXT_IPE;
 	else if (_currentSpeaker == "CARU" || _currentSpeaker == "CARU") return TEXT_CARU;
 	else if (_currentSpeaker == "ROSE" || _currentSpeaker == "ROSA") return TEXT_ROSE;
 	else if (_currentSpeaker == "CLOVE" || _currentSpeaker == "CRAVO") return TEXT_CLOVE;
