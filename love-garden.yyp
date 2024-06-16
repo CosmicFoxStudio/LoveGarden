@@ -146,6 +146,7 @@
     {"id":{"name":"obj_lang_menu_btn","path":"objects/obj_lang_menu_btn/obj_lang_menu_btn.yy",},},
     {"id":{"name":"obj_lang_menu","path":"objects/obj_lang_menu/obj_lang_menu.yy",},},
     {"id":{"name":"obj_lang_selection","path":"objects/obj_lang_selection/obj_lang_selection.yy",},},
+    {"id":{"name":"obj_logo","path":"objects/obj_logo/obj_logo.yy",},},
     {"id":{"name":"obj_node_controller","path":"objects/obj_node_controller/obj_node_controller.yy",},},
     {"id":{"name":"obj_phone_title_button","path":"objects/obj_phone_title_button/obj_phone_title_button.yy",},},
     {"id":{"name":"obj_phone_title_buttonEN","path":"objects/obj_phone_title_buttonEN/obj_phone_title_buttonEN.yy",},},

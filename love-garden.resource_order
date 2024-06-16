@@ -6,6 +6,7 @@
     {"name":"Sciences Building","order":11,"path":"folders/Sprites/BGs/Sciences Building.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"obj_logo","order":2,"path":"objects/obj_logo/obj_logo.yy",},
     {"name":"btn_functions","order":17,"path":"scripts/btn_functions/btn_functions.yy",},
     {"name":"chatterbox_functions","order":4,"path":"scripts/chatterbox_functions/chatterbox_functions.yy",},
     {"name":"debug_functions","order":10,"path":"scripts/debug_functions/debug_functions.yy",},
