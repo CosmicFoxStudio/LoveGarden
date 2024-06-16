@@ -71,10 +71,10 @@ And you follow right behind, not wanting to be a victim of the professor's bad m
 ... #line:7f7969
 <<bgTransition(1)>>
 ... #line:b9d47b
-<<jump CloveIntro>>
+<<jump CarnaIntro>>
 ===
 
-title: CloveIntro
+title: CarnaIntro
 ---
 <<chara("void")>>
 You barely have enough time to sit before the professor starts speaking. #line:c7bdca
@@ -84,68 +84,68 @@ They still seem nervous. You try to give them a smile to calm them down, but the
 <<chara("fern")>>
 ???: Now that we're all here. Good morning, students. #line:0c69d6
 ???: I am Professor Neph, coming from my scientific name - Nephrolepis. #line:a4a3b5
-<<chara("clove")>>
+<<chara("carna")>>
 ???: But you can call him Fern! #line:a0c9bb
 The boy sitting next to you speaks loud enough for the whole room to hear. #line:dcdedd
 <<chara("fern")>>
-FERN: Thank you, Clove, for sharing my common name. But for you guys, it's Professor Fern. #line:a3ebe9
+FERN: Thank you, Carna, for sharing my common name. But for you guys, it's Professor Fern. #line:a3ebe9
 FERN: I'll be your Ecology teacher. #line:5526bf
 FERN: My subject will be essential for you in the coming semesters. #line:fd6c3c
 <<chara("void")>>
 Professor Fern continues explaining how his subject will work. #line:c04c65
-By your side, Clove is completely ignoring what the professor is saying. #line:efe66d
+By your side, Carna is completely ignoring what the professor is saying. #line:efe66d
 In a quick glance behind, you see Ipe jotting down every word that comes out of Fern's mouth. #line:98b0c3
 While writing, you can hear a murmur. #line:4ee9b4
-<<chara("clove")>>
-CLOVE: ''And you'll be assigned partners who have already been chosen''. #line:b1deec
+<<chara("carna")>>
+CARNA: ''And you'll be assigned partners who have already been chosen''. #line:b1deec
 <<chara("fern")>>
 FERN: And you'll be assigned partners who have already been chosen. #line:f1c057
-<<chara("clove")>>
-CLOVE: ... ''The attendance list''... ''there might be dropouts by the end''... #line:bf6045
+<<chara("carna")>>
+CARNA: ... ''The attendance list''... ''there might be dropouts by the end''... #line:bf6045
 <<chara("fern")>>
 FERN: And use the attendance list as a reference, but there might be dropouts by the end. #line:390dea
-<<chara("clove")>>
-CLOVE: ... ''raise your hand''... #line:e984e4
+<<chara("carna")>>
+CARNA: ... ''raise your hand''... #line:e984e4
 <<chara("fern")>>
 FERN: When I call your name and your partner's, raise your hand. #line:1446b5
-<<chara("clove")>>
-You lean to whisper to Clove without disturbing the class. #line:a75f64
+<<chara("carna")>>
+You lean to whisper to Carna without disturbing the class. #line:a75f64
 PLAYER: (How did you know exactly what he was going to say?) #line:b20101
-CLOVE: He said the exact same thing in the last two semesters. #line:50157e
+CARNA: He said the exact same thing in the last two semesters. #line:50157e
 PLAYER: And how do you know that? #line:dd8156
-CLOVE: It's the third time I'm taking this subject... #line:19ae6d
+CARNA: It's the third time I'm taking this subject... #line:19ae6d
 PLAYER: Is this subject really that tough? #line:60404c
-CLOVE: It's the worst of all. Fern is one of the toughest in the department. #line:e496b7
+CARNA: It's the worst of all. Fern is one of the toughest in the department. #line:e496b7
 <<chara("fern")>>
 You look back at the professor, trying to draw your own conclusions. #line:e18a21
 You look back at the professor, trying to draw your own conclusions. #line:8baee6
 -> To me, he just looks like a helpless old man. #line:d2c0a0
-	<<chara("clove")>>
+	<<chara("carna")>>
 	PLAYER: He might just be a bit grumpy. #line:51984f
-	CLOVE: Well, I can understand that. If I were as outdated as him, I'd be unhappy too. #line:2f2379 
+	CARNA: Well, I can understand that. If I were as outdated as him, I'd be unhappy too. #line:2f2379 
 	PLAYER: Wow, you really don't like the old dude. #line:f756c5
     PLAYER: A level of frustration only someone who's failed the same grade twice could truly understand. #line:5563cf
-	CLOVE: Let's see how you'll be at the end of the semester. #line:4466f4
+	CARNA: Let's see how you'll be at the end of the semester. #line:4466f4
 	PLAYER: Hey, they say the third time is the lucky one. #line:026af4
 -> I can see what you mean. #line:74d80a
-	<<chara("clove")>>
-    <<changeRelationship("clove", 1)>>
+	<<chara("carna")>>
+    <<changeRelationship("carna", 1)>>
 	PLAYER: Especially after the way he talked to me just now. #line:2bd5dd
-	CLOVE: He has no sensitivity, even though most of the class are freshmen. #line:12f630
+	CARNA: He has no sensitivity, even though most of the class are freshmen. #line:12f630
 	PLAYER: It's because of people like him that some people hate Biology. #line:da122a
-	CLOVE: Well, Ecology isn't the coolest subject. #line:419d85
+	CARNA: Well, Ecology isn't the coolest subject. #line:419d85
 	PLAYER: Are you kidding! It's one of the subjects I was most excited to take. #line:1d9384
-	CLOVE: Entomology is much cooler! Wait for your next semester. #line:d1fdea
+	CARNA: Entomology is much cooler! Wait for your next semester. #line:d1fdea
 <<chara("fern")>>
 FERN: PLAYER and Ipe! #line:39545e
 You startle when Professor Fern's voice resonates through the room. #line:aaf287
 You immediately raise your hand. # # # #line:513941
 FERN: You'll be working on the theme ''Animals of the Plantae world''. #line:563f4f
-<<if (getRelationship("clove") >= 1)>>
-	<<chara("clove")>>
-	CLOVE: You got the best theme! #line:b4f7c7
-	CLOVE: Makes me wish we were partners. #line:b4fb31
-	You give Clove a slight smile before going to Ipe. #line:5a809c
+<<if (getRelationship("carna") >= 1)>>
+	<<chara("carna")>>
+	CARNA: You got the best theme! #line:b4f7c7
+	CARNA: Makes me wish we were partners. #line:b4fb31
+	You give Carna a slight smile before going to Ipe. #line:5a809c
 <<endif>>
 <<chara("ipe")>>
 You turn to Ipe, feeling relieved to at least be with someone you know. #line:dcf068
@@ -157,29 +157,29 @@ Then he looks at the clock. #line:2a1dad
 FERN: Great, I'll make it in time for the department lunch! #line:7a43f2
 <<chara("void")>>
 PLAYER: (All my panic this morning for less than an hour of class...) #line:d80923
-<<chara("clove")>>
-Clove was already packed up, ready to leave. #line:6add22
+<<chara("carna")>>
+Carna was already packed up, ready to leave. #line:6add22
 PLAYER: Hold on! How did you pack up your stuff so quickly? #line:58ea44
-CLOVE: Stuff? What stuff? #line:64a43d
+CARNA: Stuff? What stuff? #line:64a43d
 PLAYER: Ha-ha! Aren't you even going to meet your group partner? #line:28fa7c
-CLOVE: Nah, they apparently didn't show up today... #line:edd42e
-CLOVE: It's the second semester my group partner hasn't shown up... #line:4ba2e5
-CLOVE: The old man is totally singling me out... #line:5a0cbd
+CARNA: Nah, they apparently didn't show up today... #line:edd42e
+CARNA: It's the second semester my group partner hasn't shown up... #line:4ba2e5
+CARNA: The old man is totally singling me out... #line:5a0cbd
 PLAYER: It's not that bad. #line:859809
 PLAYER: By the way, do you have any tips for a first-time freshman? #line:4485fa
-CLOVE: Don't let things pile up, and pray for your partner to show up. #line:21b32f
-CLOVE: Now, if you'll excuse me, I have to complain about this class to someone else. #line:0d5a58
+CARNA: Don't let things pile up, and pray for your partner to show up. #line:21b32f
+CARNA: Now, if you'll excuse me, I have to complain about this class to someone else. #line:0d5a58
 PLAYER: Oh, yeah? And who will have the pleasure of hearing you for the third time? #line:54d52d
-CLOVE: My incredible girlfriend. #line:250ef9
-CLOVE: She even took the subject last semester to see how bad it really was. #line:418ead
+CARNA: My incredible girlfriend. #line:250ef9
+CARNA: She even took the subject last semester to see how bad it really was. #line:418ead
 PLAYER: And she's not here this semester... Did she drop out or pass? #line:1c2f46
-CLOVE: She passed... #line:02d535 
-CLOVE: Not that she lets me forget that she passed and I didn't. #line:ef8d9b
+CARNA: She passed... #line:02d535 
+CARNA: Not that she lets me forget that she passed and I didn't. #line:ef8d9b
 PLAYER: Haha, at least she'll understand you better than anyone. #line:e0389e
-CLOVE: Later, PLAYER! #line:bfe57f
+CARNA: Later, PLAYER! #line:bfe57f
 PLAYER: See you around. #line:884246
 <<chara("void")>>
-Clove leaves, and you stand up to go after Ipe. #line:41b967
+Carna leaves, and you stand up to go after Ipe. #line:41b967
 Only to find them right next to your chair. #line:8a8657
 <<chara("ipe")>>
 IPE: Sorry, I didn't mean to interrupt... #line:f87108
@@ -247,4 +247,4 @@ PLAYER: (Did I say something wrong?) #line:def188
 <<nextDaytime()>>
 <<nextRoom("rm_boat")>>
 ===
-                  
+  

@@ -60,12 +60,12 @@ global.NPCs = [];
 global.NPCs[e_SO.IPE] = DefineStats();
 global.NPCs[e_SO.CARU] = DefineStats();
 global.NPCs[e_SO.ROSE] = DefineStats();
-global.NPCs[e_SO.CLOVE] = DefineStats();
+global.NPCs[e_SO.CARNA] = DefineStats();
 global.NPCs[e_SO.HYDRA] = DefineStats();
 global.routes[e_SO.IPE] = false;
 global.routes[e_SO.CARU] = false 
 global.routes[e_SO.ROSE] = false; 
-global.routes[e_SO.CLOVE] = false; 
+global.routes[e_SO.CARNA] = false; 
 global.routes[e_SO.HYDRA] = false; 
 
 #region GAME CONTROLS
@@ -86,7 +86,7 @@ function KeybindingDefinition(_confirm=-1, _cancel=-1, _start=-1, _up=-1, _down=
 function PrimaryKeybindingCreate() {
 	var _keybind = array_create(3);
 	_keybind[e_input.MOUSE] = new KeybindingDefinition(mb_left, mb_right, mb_middle);
-	_keybind[e_input.KEYBOARD] = new KeybindingDefinition(vk_enter, vk_backspace, vk_space, vk_up, vk_down, vk_left, vk_right);
+	_keybind[e_input.KEYBOARD] = new KeybindingDefinition(vk_space, vk_backspace, vk_enter, vk_up, vk_down, vk_left, vk_right);
 	_keybind[e_input.GAMEPAD] = new KeybindingDefinition(gp_face1, gp_face2, gp_start, gp_padu, gp_padd, gp_padl, gp_padr);
 	
 	return _keybind;
@@ -172,7 +172,7 @@ else {
 
 // Only uncomment this next line when there are NEW dialogue lines to be generated!!
 // (You will also need do disable sandboxing temporarily)
-ChatterboxLocalizationBuild(global.dialogueList, [("lang/" + global.lang + "_dialogues.csv")]);
+// ChatterboxLocalizationBuild(global.dialogueList, [("lang/" + global.lang + "_dialogues.csv")]);
 // OBS: LoadLocalization() is set at rm_title's creation code
 
 // -----------------------------------------------------------------------------  //

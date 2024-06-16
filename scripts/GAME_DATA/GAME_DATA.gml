@@ -15,7 +15,7 @@ function LoadGameData() {
 	    "ipe": spr_ipe,
 	    "caru": spr_caru,
 	    "rose": spr_rose,
-	    "clove": spr_clove,
+	    "carna": spr_carna,
 	    "hydra": spr_hydra,
 	    "fern": spr_fern,
 	    "orange": spr_orange,

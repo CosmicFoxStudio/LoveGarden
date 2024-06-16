@@ -27,8 +27,8 @@ function RouteAssign(_SOName) {
 	    case "rose":
 			global.routes[e_SO.ROSE] = true;
 	    break;
-	    case "clove":
-			global.routes[e_SO.CLOVE] = true;
+	    case "carna":
+			global.routes[e_SO.CARNA] = true;
 	    break;
 	    case "hydra":
 			global.routes[e_SO.HYDRA] = true;
@@ -122,10 +122,10 @@ function ChangeRelationshipBar(_name, _value = 1) {
 			if (global.NPCs[e_SO.ROSE].hearts > 8) global.NPCs[e_SO.ROSE].hearts = 8;
 			if (global.NPCs[e_SO.ROSE].hearts < -8) global.NPCs[e_SO.ROSE].hearts = -8;
 	    break;
-	    case "clove":
-			global.NPCs[e_SO.CLOVE].hearts += _value;
-			if (global.NPCs[e_SO.CLOVE].hearts > 8) global.NPCs[e_SO.CLOVE].hearts = 8;
-			if (global.NPCs[e_SO.CLOVE].hearts < -8) global.NPCs[e_SO.CLOVE].hearts = -8;
+	    case "carna":
+			global.NPCs[e_SO.CARNA].hearts += _value;
+			if (global.NPCs[e_SO.CARNA].hearts > 8) global.NPCs[e_SO.CARNA].hearts = 8;
+			if (global.NPCs[e_SO.CARNA].hearts < -8) global.NPCs[e_SO.CARNA].hearts = -8;
 	    break;
 	    case "hydra":
 			global.NPCs[e_SO.HYDRA].hearts += _value;
@@ -153,8 +153,8 @@ function GetRelationshipBar(_name) {
 	    case "rose":
 			return global.NPCs[e_SO.ROSE].hearts;
 	    break;
-	    case "clove":
-			return global.NPCs[e_SO.CLOVE].hearts;
+	    case "carna":
+			return global.NPCs[e_SO.CARNA].hearts;
 	    break;
 	    case "hydra":
 			return global.NPCs[e_SO.HYDRA].hearts;
@@ -303,7 +303,7 @@ function GetCharacterColor(_sprite, _speaker) {
 	else if ((_sprite == spr_ipe) && (_speaker == "IPE" || _speaker == "IPÊ")) return c_white;
 	else if ((_sprite == spr_caru) && (_speaker == "CARU" || _speaker == "CARU")) return c_white;
 	else if ((_sprite == spr_rose) && (_speaker == "ROSE" || _speaker == "ROSA")) return c_white;
-	else if ((_sprite == spr_clove) && (_speaker == "CLOVE" || _speaker == "CRAVO")) return c_white;
+	else if ((_sprite == spr_carna) && (_speaker == "CARNA" || _speaker == "CRAVO")) return c_white;
 	else if ((_sprite == spr_hydra) && (_speaker == "HYDRANGEA" || _speaker == "HORTÊNSIA")) return c_white;
 	else if ((_sprite == spr_fern) && (_speaker == "FERN" || _speaker == "MAMBA")) return c_white;
 	else if ((_sprite == spr_orange) && (_speaker == "MR. ORANGE" || _speaker == "LARANJEIRA")) return c_white;
@@ -317,7 +317,7 @@ function GetCharacterTextColor(_currentSpeaker) {
 	if (_currentSpeaker == "IPE" || _currentSpeaker == "IPÊ") return "[c_text_ipe]";
 	else if (_currentSpeaker == "CARU" || _currentSpeaker == "CARU") return "[c_text_caru]";
 	else if (_currentSpeaker == "ROSE" || _currentSpeaker == "ROSA") return "[c_text_rose]";
-	else if (_currentSpeaker == "CLOVE" || _currentSpeaker == "CRAVO") return "[c_text_clove]";
+	else if (_currentSpeaker == "CARNA" || _currentSpeaker == "CRAVO") return "[c_text_carna]";
 	else if (_currentSpeaker == "HYDRANGEA" || _currentSpeaker == "HORTÊNSIA") return "[c_text_hydra]";
 	else if (_currentSpeaker == "FERN" || _currentSpeaker == "MAMBA") return "[c_text_fern]";
 	else if (_currentSpeaker == "MR. ORANGE" || _currentSpeaker == "LARANJEIRA") return "[c_text_orange]";
@@ -331,7 +331,7 @@ function GetCharacterTextColorRGB(_currentSpeaker) {
 	if (_currentSpeaker == "IPE" || _currentSpeaker == "IPÊ") return TEXT_IPE;
 	else if (_currentSpeaker == "CARU" || _currentSpeaker == "CARU") return TEXT_CARU;
 	else if (_currentSpeaker == "ROSE" || _currentSpeaker == "ROSA") return TEXT_ROSE;
-	else if (_currentSpeaker == "CLOVE" || _currentSpeaker == "CRAVO") return TEXT_CLOVE;
+	else if (_currentSpeaker == "CARNA" || _currentSpeaker == "CRAVO") return TEXT_CARNA;
 	else if (_currentSpeaker == "HYDRANGEA" || _currentSpeaker == "HORTÊNSIA") return TEXT_HYDRA;
 	else if (_currentSpeaker == "FERN" || _currentSpeaker == "MAMBA") return TEXT_FERN;
 	else if (_currentSpeaker == "MR. ORANGE" || _currentSpeaker == "LARANJEIRA") return TEXT_ORANGE;

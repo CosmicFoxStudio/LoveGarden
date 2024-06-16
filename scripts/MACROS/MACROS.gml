@@ -23,7 +23,7 @@
 
 #macro TEXT_IPE		#ffd88f
 #macro TEXT_ROSE	#ffab91
-#macro TEXT_CLOVE	#a8c3ff
+#macro TEXT_CARNA	#a8c3ff
 #macro TEXT_HYDRA	#c3ace8
 #macro TEXT_CARU	#c9a695
 #macro TEXT_FERN	#e0fc68

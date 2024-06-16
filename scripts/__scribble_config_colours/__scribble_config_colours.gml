@@ -44,7 +44,7 @@ function __scribble_config_colours()
 		c_text_cyan		: CYAN,
 		c_text_ipe		: TEXT_IPE,
 		c_text_rose	    : TEXT_ROSE,
-		c_text_clove	: TEXT_CLOVE,
+		c_text_carna	: TEXT_CARNA,
 		c_text_hydra	: TEXT_HYDRA,
 		c_text_caru		: TEXT_CARU,
 		c_text_fern		: TEXT_FERN,

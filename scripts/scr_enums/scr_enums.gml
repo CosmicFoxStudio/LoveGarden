@@ -43,7 +43,7 @@ function Enums() {
 		IPE,	// 0
 		CARU,	// 1
 		ROSE,	// 2
-		CLOVE,	// 3
+		CARNA,	// 3
 		HYDRA	// 4
 	}
 

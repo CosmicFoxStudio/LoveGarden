@@ -301,7 +301,7 @@ title: ThornyRelationship
 The gazebo is definitely a beautiful place during the night. #line:7cc207
 You hoped to finally enjoy the place with no one around. #line:03e52d
 But as you approach more and more you can notice two figures. #line:8fa5f8
-<<chara("clove")>>
+<<chara("carna")>>
 ???: I just really find it hard to trust you with these things! #line:daf406
 ???: We didn't even enjoy our vacation because you were working. #line:899c45
 ???: And since we got back, there hasn't been a single date we arranged where you showed up on time! #line:605fb4
@@ -319,26 +319,26 @@ What do you do? #line:2dae56
 	PLAYER: (And we never know when this kind of situation can escalate, right?) #line:9969f7
 	You wait until the girl walks away. Until you can't see more than her silhouette. #line:009757
 	You enter the gazebo and it's not a surprise that one side of the discussion was... #line:78c607
-	<<chara("clove")>>
-	It was Clove. He was seated in one of the seats, his head supported by his hands. #line:0c182f
+	<<chara("carna")>>
+	It was Carna. He was seated in one of the seats, his head supported by his hands. #line:0c182f
 	PLAYER: Hey... Is everything alright? #line:25640a
 	A feeling of secondhand embarrassment runs briefly through you while he raises his head in surprise. #line:bdd3a4
 	PLAYER: I mean I know it's not but are you okay? #line:207b39
-	CLOVE: PLAYER... I didn't expect to see you here. #line:9e56f0
+	CARNA: PLAYER... I didn't expect to see you here. #line:9e56f0
 	PLAYER: Me neither... I mean, I didn't expect to be here in the first place. #line:e4c7dc
 	PLAYER: But it seems like you need a friendly shoulder. #line:bc6a80
-	CLOVE: I don't want to talk about what just happened. #line:5b3d93
+	CARNA: I don't want to talk about what just happened. #line:5b3d93
 	PLAYER: Hey, the offer is a friendly shoulder, not a friendly ear. #line:f02e86
 	You sit besides him. #line:b125a6
-	CLOVE: Hm, I think I will accept your offer. #line:eb4617
+	CARNA: Hm, I think I will accept your offer. #line:eb4617
 	He leans his head on your shoulder. #line:c04db7
-	You two stay in silence for some minutes until Clove recovers himself. #line:26b0ca
-	CLOVE: Thanks. #line:91cdc7
+	You two stay in silence for some minutes until Carna recovers himself. #line:26b0ca
+	CARNA: Thanks. #line:91cdc7
 	PLAYER: It was nothing. #line:bb7e68
-	CLOVE: Now I have to sort things out around here... #line:15dd04
+	CARNA: Now I have to sort things out around here... #line:15dd04
 	PLAYER: Need a hand? #line:0553f9
-	CLOVE: Nah, you've already helped enough. It's getting late and you need to get back to the dorm before your time goes away. #line:ae2422
-	CLOVE: We will see each other tomorrow, sounds good? #line:fc635d
+	CARNA: Nah, you've already helped enough. It's getting late and you need to get back to the dorm before your time goes away. #line:ae2422
+	CARNA: We will see each other tomorrow, sounds good? #line:fc635d
 	You agree, leaving the gazebo. #line:08b0e6
 -> It's better not to get involved in this type of couple fights. #line:8426e3
 	PLAYER: (I already heard more than I should, I better just get out of here.) #line:af570f
@@ -359,3 +359,4 @@ Better head back to the dorm and sleep. #line:2ed747
 <<save()>>
 <<reward()>>
 ===
+   
