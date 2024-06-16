@@ -68,8 +68,8 @@ switch (global.gameMode) {
 	global.roomBGMap = ds_map_create();
 	global.roomBGMap[? "rm_dormitory"]		= [spr_dormitory_0, spr_dormitory_1, spr_dormitory_2, spr_dormitory_3, spr_dormitory_4];
 	global.roomBGMap[? "rm_boat"]			= [spr_boat];
-	global.roomBGMap[? "rm_sciences"]		= [spr_sciences];
-	global.roomBGMap[? "rm_central"]		= [spr_central];
+	global.roomBGMap[? "rm_sciences"]		= [spr_sciences_0, spr_sciences_1];
+	global.roomBGMap[? "rm_central"]		= [spr_central_0, spr_central_1];
 	global.roomBGMap[? "rm_lake"]			= [spr_lake];
 	global.roomBGMap[? "rm_gazebo"]			= [spr_gazebo];
 	
