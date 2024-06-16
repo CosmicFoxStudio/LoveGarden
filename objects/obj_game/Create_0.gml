@@ -66,19 +66,19 @@ Progress();
 
 // NPC Info
 global.NPCs = [];
-global.NPCs[e_SO.YPE] = DefineStats();
+global.NPCs[e_SO.IPE] = DefineStats();
 global.NPCs[e_SO.CARU] = DefineStats();
 global.NPCs[e_SO.ROSE] = DefineStats();
 global.NPCs[e_SO.CLOVE] = DefineStats();
 global.NPCs[e_SO.HYDRA] = DefineStats();
-global.routes[e_SO.YPE] = false;
+global.routes[e_SO.IPE] = false;
 global.routes[e_SO.CARU] = false 
 global.routes[e_SO.ROSE] = false; 
 global.routes[e_SO.CLOVE] = false; 
 global.routes[e_SO.HYDRA] = false; 
 global.characterSprites = {
     "maple": spr_maple,
-    "ype": spr_ype,
+    "ipe": spr_ipe,
     "caru": spr_caru,
     "rose": spr_rose,
     "clove": spr_clove,
