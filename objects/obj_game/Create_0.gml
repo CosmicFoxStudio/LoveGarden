@@ -168,34 +168,6 @@ else {
 
 #endregion CHATTERBOX LOAD FILES
 
-//  ---------------- Data structure to get node based on room  ------------------  //
-
-// Room-to-yarn map
-global.roomYarnMap = ds_map_create();
-// DEMO MODE
-if (global.gameMode == e_gameMode.DEMO) {
-	global.roomYarnMap[? "rm_test"]				= "scenes/demo_day0_test.yarn";
-	global.roomYarnMap[? "rm_dormitory"]		= "scenes/demo_day1_dormitory.yarn";
-	global.roomYarnMap[? "rm_boat"]				= "scenes/demo_day1_boat.yarn";
-	global.roomYarnMap[? "rm_sciences"]			= "scenes/demo_day1_sciences.yarn";
-	global.roomYarnMap[? "rm_central"]			= "scenes/demo_day1_central.yarn";
-}
-else if (global.gameMode == e_gameMode.TEASER) {
-	// TEASER MODE
-	global.roomYarnMap[? "rm_dormitory"]		= "scenes/teaser.yarn";
-	global.roomYarnMap[? "rm_boat"]				= "scenes/teaser.yarn";
-	global.roomYarnMap[? "rm_sciences"]			= "scenes/teaser.yarn";
-	global.roomYarnMap[? "rm_central"]			= "scenes/teaser.yarn";
-}
-
-// RELEASE MODE
-else {
-	global.roomYarnMap[? "rm_test"]				= "scenes/main_day0_test.yarn";
-	global.roomYarnMap[? "rm_dormitory"]		= "scenes/main_day1_dormitory.yarn";
-	global.roomYarnMap[? "rm_boat"]				= "scenes/main_day1_boat.yarn";
-	global.roomYarnMap[? "rm_sciences"]			= "scenes/main_day1_sciences.yarn";
-	// And so on...
-}
 // ----------------------- Chatterbox Localization Build -----------------------  //
 
 // Only uncomment this next line when there are NEW dialogue lines to be generated!!
