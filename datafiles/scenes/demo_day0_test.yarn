@@ -1,25 +1,25 @@
 title: Morning
 ---
 <<chara("void")>>
-Você está dormindo tranquilamente quando alguém entra pela porta.
+Você está dormindo tranquilamente quando alguém entra pela porta. #line:0edfcc
 <<chara("caru")>>
-CARU: BOM DIA, FLOR DO DIA! ACORDA QUE HOJE O DIA VAI SER CHEIO DE FOFOCA!
-Você não tava entendendo nada. Enquanto esfregava os olhos, uma outra figura surgiu no seu quarto.
+CARU: BOM DIA, FLOR DO DIA! ACORDA QUE HOJE O DIA VAI SER CHEIO DE FOFOCA! #line:31b6da
+Você não tava entendendo nada. Enquanto esfregava os olhos, uma outra figura surgiu no seu quarto. #line:e70845
 <<chara("clove", 1)>>
-CRAVO: Tá achando que aqui é a Disney, bb? Bora que a gente tem aula daqui a pouco.
-No desespero, você começa a se levantar apressadamente. Porém, uma outra figura aparece ocupando praticamente a porta inteira.
+CRAVO: Tá achando que aqui é a Disney, bb? Bora que a gente tem aula daqui a pouco. #line:907c3c
+No desespero, você começa a se levantar apressadamente. Porém, uma outra figura aparece ocupando praticamente a porta inteira. #line:18bf66
 <<chara("orange", 2)>>
-LARANJEIRA: Gente do céu, hoje é DOMINGO. Vão dormir, por favor. Obrigado.
+LARANJEIRA: Gente do céu, hoje é DOMINGO. Vão dormir, por favor. Obrigado. #line:3eae1c
 <<chara("void", 2)>>
-...
-CRAVO: ...
-CARU: ...
-CRAVO: Vlw, flw.
+... #line:fb43e2
+CRAVO: ... #line:c18028
+CARU: ... #line:9bd22d
+CRAVO: Vlw, flw. #line:923046
 <<chara("void", 1)>>
-...
-CARU: Foi mal, aí.
+... #line:2a066c
+CARU: Foi mal, aí. #line:e0c462
 <<chara("void", 0)>>
-...
-E foi por causa disso que você comprou um calendário do tamanho de um poster para colocar na parede do seu quarto.
+... #line:771bbe
+E foi por causa disso que você comprou um calendário do tamanho de um poster para colocar na parede do seu quarto. #line:8374b8
 <<backTitle()>>
 ===

@@ -51,7 +51,7 @@ PLAYER: And which class are you looking for? #line:9e9022
 <<emotion(0, 0)>>
 IPE: Introduction to Ecology... #line:2851de 
 PLAYER: You got lucky, it's right there! #line:ffcb3d 
-PLAYER: What is your course again? #line:223848 
+PLAYER: By the way, what is your major? #line:223848 
 IPE: Oh, I'm enrolled in Botany... #line:85fbf8
 PLAYER: Oh, cool! I'm majoring in Biology. #line:174bf0 
 You walk together towards the class, entering it. #line:e51982
@@ -209,7 +209,7 @@ IPE: Oh... Did you find anything useful? #line:a88a41
 PLAYER: Nothing really, don't procrastinate... #line:0ca0b6
 PLAYER: Have a partner who helps... #line:d624ae 
 <<emotion(0)>>
-IPE: Oh... #line:cea110 
+IPE: ... #line:cea110 
 PLAYER: Let's give it our best, okay? #line:0e14fb
 They nod in agreement, looking hesitant. #line:37234f
 <<chara("void")>>

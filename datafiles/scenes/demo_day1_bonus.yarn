@@ -227,7 +227,7 @@ PLAYER: I'd be by your side. #line:fcd326
 You two keep talking for a little longer and when you realize it's getting late. #line:566e82
 You need to take advantage of the fact that the Sun is still in the sky to do Mamba's assignment. #line:9be968
 PLAYER: We should start doing the assignment! #line:9a8167
-IPE: Ah, I need to take my material in the Science building first... #line:59620a
+IPE: Ah, I need to pick up my stuff in the Sciences building first... #line:59620a
 IPE: I will stop by there and you can go on to the lake! #line:89d8bd
 PLAYER: Ok. See you there then! #line:2b1eb3
 Ipe leaves in a rush, after gathering their stuff. #line:70c182
@@ -359,4 +359,3 @@ Better head back to the dorm and sleep. #line:2ed747
 <<save()>>
 <<reward()>>
 ===
-            

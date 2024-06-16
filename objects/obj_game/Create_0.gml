@@ -172,7 +172,7 @@ else {
 
 // Only uncomment this next line when there are NEW dialogue lines to be generated!!
 // (You will also need do disable sandboxing temporarily)
-// ChatterboxLocalizationBuild(global.dialogueList, [("lang/" + global.lang + "_dialogues.csv")]);
+ChatterboxLocalizationBuild(global.dialogueList, [("lang/" + global.lang + "_dialogues.csv")]);
 // OBS: LoadLocalization() is set at rm_title's creation code
 
 // -----------------------------------------------------------------------------  //
