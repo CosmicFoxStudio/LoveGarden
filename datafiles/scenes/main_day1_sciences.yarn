@@ -189,6 +189,9 @@ IPE: Oh... Did you find out anything useful? #line:7635b6
 PLAYER: Nothing special, don't procrastinate, and stuff... #line:7f7c59
 PLAYER: Have a partner who helps... #line:ff6405
 IPE: ... #line:adaa22
+PLAYER: Let's give it our best, okay? #line:0e14fb
+They nod in agreement, looking hesitant. #line:37234f
+<<chara("void")>>
 Together, you walk towards the exit of the room. #line:fdef2f
 ... #line:7f7969
 <<bgTransition(0)>>
@@ -247,4 +250,4 @@ PLAYER: (Did I say something wrong?) #line:def188
 <<nextDaytime()>>
 <<nextRoom("rm_boat")>>
 ===
-  
+    
