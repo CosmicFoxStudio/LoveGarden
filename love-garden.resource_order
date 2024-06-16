@@ -1,5 +1,8 @@
 {
-  "FolderOrderSettings":[],
+  "FolderOrderSettings":[
+    {"name":"Dream","order":6,"path":"folders/Sprites/BGs/Dream.yy",},
+    {"name":"Dormitory","order":7,"path":"folders/Sprites/BGs/Dormitory.yy",},
+  ],
   "ResourceOrderSettings":[
     {"name":"btn_functions","order":17,"path":"scripts/btn_functions/btn_functions.yy",},
     {"name":"chatterbox_functions","order":4,"path":"scripts/chatterbox_functions/chatterbox_functions.yy",},
@@ -21,5 +24,14 @@
     {"name":"scribble_functions","order":13,"path":"scripts/scribble_functions/scribble_functions.yy",},
     {"name":"sequence_functions","order":11,"path":"scripts/sequence_functions/sequence_functions.yy",},
     {"name":"stats_functions","order":16,"path":"scripts/stats_functions/stats_functions.yy",},
+    {"name":"spr_boat","order":4,"path":"sprites/spr_boat/spr_boat.yy",},
+    {"name":"spr_central","order":5,"path":"sprites/spr_central/spr_central.yy",},
+    {"name":"spr_dormitory_1","order":1,"path":"sprites/spr_dormitory_1/spr_dormitory_1.yy",},
+    {"name":"spr_dormitory_2","order":2,"path":"sprites/spr_dormitory_2/spr_dormitory_2.yy",},
+    {"name":"spr_dormitory_3","order":3,"path":"sprites/spr_dormitory_3/spr_dormitory_3.yy",},
+    {"name":"spr_dormitory_4","order":4,"path":"sprites/spr_dormitory_4/spr_dormitory_4.yy",},
+    {"name":"spr_gazebo","order":1,"path":"sprites/spr_gazebo/spr_gazebo.yy",},
+    {"name":"spr_phoneTitle","order":3,"path":"sprites/spr_phoneTitle/spr_phoneTitle.yy",},
+    {"name":"spr_sciences","order":2,"path":"sprites/spr_sciences/spr_sciences.yy",},
   ],
 }
