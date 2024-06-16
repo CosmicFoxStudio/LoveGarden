@@ -8,7 +8,8 @@ total_audio_groups_loaded = 0;
 Enums();
 camera = -1;
 global.debug = false;
-global.gameMode = e_gameMode.RELEASE;
+global.gameMode = e_gameMode.DEMO;
+global.saveFileName = ConvertGameModeToSaveFileString();
 global.lastFontUsed = -1;
 global.dialogFonts = [
 	[fnt_dialogue_s, fnt_dialogue, fnt_dialogue_l],

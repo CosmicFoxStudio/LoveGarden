@@ -1,3 +1,14 @@
+function ConvertGameModeToSaveFileString() {
+	var mode;
+	switch (global.gameMode) {
+		case e_gameMode.RELEASE: mode ="save"; break;	
+		case e_gameMode.DEMO: mode = "demo"; break;	
+		case e_gameMode.TEASER: mode = "teaser"; break;
+	}
+	
+	return mode;
+}
+
 /*	Returns:
 	1 if the down key is pressed, 
 	-1 if the up key is pressed, 

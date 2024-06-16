@@ -21,7 +21,7 @@ function SaveGame() {
 		actions: global.actions
 	}
 	var json = json_stringify(saveStruct); // 2nd argument 'true' to prettify
-	var file = file_text_open_write("file_" + string(global.saveSlot) + ".sav");
+	var file = file_text_open_write(global.saveFileName + "_" + string(global.saveSlot) + ".sav");
 	file_text_write_string(file, json);
 	file_text_close(file);
 
@@ -38,14 +38,14 @@ function SaveGame() {
 				string(global.day) + "_";
 	
 	var statsFile;
-	statsFile = file_text_open_write("save_stats_" + string(global.saveSlot) + ".sav");
+	statsFile = file_text_open_write("info_" + string(global.saveSlot) + ".sav");
 	file_text_write_string(statsFile, savedData);
 	file_text_close(statsFile);
 }
 
 function LoadGame() {
-	if (file_exists("file_" + string(global.saveSlot) + ".sav")) {
-		var file = file_text_open_read("file_" + string(global.saveSlot) + ".sav");
+	if (file_exists(global.saveFileName + "_" + string(global.saveSlot) + ".sav")) {
+		var file = file_text_open_read(global.saveFileName + "_" + string(global.saveSlot) + ".sav");
 		var json = file_text_read_string(file);
 		var struct = json_parse(json);
 		

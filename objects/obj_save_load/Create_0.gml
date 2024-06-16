@@ -49,8 +49,8 @@ for (var i = 0; i < 3; i++) {
 
 // Grab player info for save slots, if applicable
 for (var slot = 0; slot < 3; slot++) {
-	if file_exists("save_stats_" + string(slot) + ".sav") {
-		var file = file_text_open_read("save_stats_" + string(slot) + ".sav");
+	if file_exists("info_" + string(slot) + ".sav") {
+		var file = file_text_open_read("info_" + string(slot) + ".sav");
 		saveStatString = file_text_read_string(file);
 		
 		file_text_close(file);

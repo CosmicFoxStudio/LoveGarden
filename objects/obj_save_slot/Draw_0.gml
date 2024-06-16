@@ -8,7 +8,7 @@ startY = (SCREEN_HEIGHT / 2) - (sprite_get_height(sprite_index));
 yy = startY + (slotIndex * (sprite_get_height(sprite_index)));
 
 	// ----------------------------- FILE DOESN'T EXIST ----------------------------- //
-if (!file_exists("file_" + string(slotIndex) + ".sav")) {		
+if (!file_exists(global.saveFileName + "_" + string(slotIndex) + ".sav")) {		
 	// Drawing the text data
 	DrawSet(CYAN);
 	DrawAlign(fa_center, fa_middle);
