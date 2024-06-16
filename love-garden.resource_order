@@ -1,8 +1,8 @@
 {
   "FolderOrderSettings":[
+    {"name":"Central Building","order":12,"path":"folders/Sprites/BGs/Central Building.yy",},
     {"name":"Dormitory","order":7,"path":"folders/Sprites/BGs/Dormitory.yy",},
     {"name":"Dream","order":6,"path":"folders/Sprites/BGs/Dream.yy",},
-    {"name":"Central Building","order":12,"path":"folders/Sprites/BGs/Central Building.yy",},
     {"name":"Sciences Building","order":11,"path":"folders/Sprites/BGs/Sciences Building.yy",},
   ],
   "ResourceOrderSettings":[

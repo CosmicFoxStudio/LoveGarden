@@ -12,7 +12,7 @@ function LoadGameData() {
 
 	global.characterSprites = {
 	    "maple": spr_maple,
-	    "ype": spr_ype,
+	    "ipe": spr_ipe,
 	    "caru": spr_caru,
 	    "rose": spr_rose,
 	    "clove": spr_clove,
