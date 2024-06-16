@@ -8,7 +8,7 @@ total_audio_groups_loaded = 0;
 Enums();
 camera = -1;
 global.debug = false;
-global.gameMode = e_gameMode.DEMO;
+global.gameMode = e_gameMode.RELEASE;
 global.lastFontUsed = -1;
 global.dialogFonts = [
 	[fnt_dialogue_s, fnt_dialogue, fnt_dialogue_l],
@@ -57,12 +57,12 @@ Progress();
 
 // NPC
 global.NPCs = [];
-global.NPCs[e_SO.YPE] = DefineStats();
+global.NPCs[e_SO.IPE] = DefineStats();
 global.NPCs[e_SO.CARU] = DefineStats();
 global.NPCs[e_SO.ROSE] = DefineStats();
 global.NPCs[e_SO.CLOVE] = DefineStats();
 global.NPCs[e_SO.HYDRA] = DefineStats();
-global.routes[e_SO.YPE] = false;
+global.routes[e_SO.IPE] = false;
 global.routes[e_SO.CARU] = false 
 global.routes[e_SO.ROSE] = false; 
 global.routes[e_SO.CLOVE] = false; 

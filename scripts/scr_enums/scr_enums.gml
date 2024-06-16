@@ -40,7 +40,7 @@ function Enums() {
 	}
 	
 	enum e_SO {
-		YPE,	// 0
+		IPE,	// 0
 		CARU,	// 1
 		ROSE,	// 2
 		CLOVE,	// 3

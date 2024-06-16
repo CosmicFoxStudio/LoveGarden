@@ -21,7 +21,7 @@
 #macro TEXT_GREEN	#b6db89		// light green color used in dialogue text
 #macro TEXT_BROWN   #5c4033     // alternate brown color value used in text
 
-#macro TEXT_YPE		#ffd88f
+#macro TEXT_IPE		#ffd88f
 #macro TEXT_ROSE	#ffab91
 #macro TEXT_CLOVE	#a8c3ff
 #macro TEXT_HYDRA	#c3ace8
