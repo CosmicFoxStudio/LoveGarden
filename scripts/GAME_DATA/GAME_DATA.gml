@@ -71,7 +71,6 @@ switch (global.gameMode) {
 	show_debug_message("Layer Elements: ");
 	show_debug_message(arr);
 	global.roomBGMap = ds_map_create();
-	global.roomBGMap[? "rm_test"]			= [spr_room_title];
 	global.roomBGMap[? "rm_dormitory"]		= [spr_dormitory];
 	global.roomBGMap[? "rm_boat"]			= [spr_boat];
 	global.roomBGMap[? "rm_sciences"]		= [spr_sciences];

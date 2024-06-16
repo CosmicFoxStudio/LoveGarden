@@ -109,7 +109,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.4.0.137",
+    "IDEVersion":"2024.4.1.152",
   },
   "name":"love-garden",
   "resources":[
@@ -302,6 +302,7 @@
     {"id":{"name":"draw_text_scribble_ext","path":"scripts/draw_text_scribble_ext/draw_text_scribble_ext.yy",},},
     {"id":{"name":"draw_text_scribble","path":"scripts/draw_text_scribble/draw_text_scribble.yy",},},
     {"id":{"name":"font_functions","path":"scripts/font_functions/font_functions.yy",},},
+    {"id":{"name":"GAME_DATA","path":"scripts/GAME_DATA/GAME_DATA.yy",},},
     {"id":{"name":"game_functions","path":"scripts/game_functions/game_functions.yy",},},
     {"id":{"name":"gender_inflection_functions","path":"scripts/gender_inflection_functions/gender_inflection_functions.yy",},},
     {"id":{"name":"helper_functions","path":"scripts/helper_functions/helper_functions.yy",},},
