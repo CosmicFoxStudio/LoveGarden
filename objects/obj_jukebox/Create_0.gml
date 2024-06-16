@@ -8,8 +8,8 @@ audio_group_load(audiogroup_sfx);
 
 currentMusic = -1;
 
-music_map = ds_map_create()
-sfx_map = ds_map_create()
+music_map = ds_map_create();
+sfx_map = ds_map_create();
 
 // --------------------------- Methods --------------------------- //
 JukeboxMapMusic = function(_group_id) {

@@ -47,24 +47,15 @@ global.actions[2] = 3;	// DAY 2
 global.actions[3] = 3;	// DAY 3
 global.actions[4] = 3;	// DAY 4
 global.maxActions = [0, 5, 5, 5, 5];
-global.flags = { 
-	met_solanum: 0,
-	orange_photo_book_talk: false,
-	met_hydra: false,
-	sat_with_ype: false,
-	sat_with_hydra: false,
-	stood_ype_up: false,
-	sat_alone: false
-};
 
-// Player Info
+// Player
 global.playerName = "PLAYER";
 global.pronouns = e_pronouns.ELU;
 global.playerStats = DefineStats();
 global.progress = [];
 Progress();
 
-// NPC Info
+// NPC
 global.NPCs = [];
 global.NPCs[e_SO.YPE] = DefineStats();
 global.NPCs[e_SO.CARU] = DefineStats();
@@ -76,19 +67,6 @@ global.routes[e_SO.CARU] = false
 global.routes[e_SO.ROSE] = false; 
 global.routes[e_SO.CLOVE] = false; 
 global.routes[e_SO.HYDRA] = false; 
-global.characterSprites = {
-    "maple": spr_maple,
-    "ype": spr_ype,
-    "caru": spr_caru,
-    "rose": spr_rose,
-    "clove": spr_clove,
-    "hydra": spr_hydra,
-    "fern": spr_fern,
-    "orange": spr_orange,
-    "nanne": spr_nanne,
-    "cali": spr_cali,
-    "void": spr_noone,
-};
 
 #region GAME CONTROLS
 // The gamepad device (player 1)
@@ -252,6 +230,8 @@ ChatterboxAddFunction("getFlag", FlagGet);										// Returns the value of a gi
 ChatterboxAddFunction("endGame", EndGame);										// Closes the game
 #endregion CHATTERBOX INITIALIZE CUSTOMS
 
+//  ----------------------------- LOAD GAME DATA  ------------------------------  //
+LoadGameData();
 // ------------------------------ TESTING ZONE ---------------------------------- //
 if (Debug()) {
 	instance_create_layer(ORIGIN_X, ORIGIN_Y, "Controllers", DEBUG_DRAWER);
