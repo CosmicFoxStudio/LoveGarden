@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"Cosmic Fox",
-    "path":"folders/Sprites/Cosmic Fox.yy",
+    "path":"folders/Assets/Sprites/Cosmic Fox.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

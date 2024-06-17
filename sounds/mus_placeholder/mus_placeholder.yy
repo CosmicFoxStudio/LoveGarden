@@ -13,7 +13,7 @@
   "name":"mus_placeholder",
   "parent":{
     "name":"Themes",
-    "path":"folders/Sounds/Themes.yy",
+    "path":"folders/Assets/Sounds/Themes.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

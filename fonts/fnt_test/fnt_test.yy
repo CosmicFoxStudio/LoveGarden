@@ -310,7 +310,7 @@
   "name":"fnt_test",
   "parent":{
     "name":"Fonts",
-    "path":"folders/Fonts.yy",
+    "path":"folders/Assets/Fonts.yy",
   },
   "pointRounding":0,
   "ranges":[

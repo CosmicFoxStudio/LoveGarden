@@ -10,7 +10,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Phone Title Menu",
-    "path":"folders/UI/Phone Title Menu.yy",
+    "path":"folders/Systems/UI/Phone Title Menu.yy",
   },
   "parentObjectId":null,
   "persistent":false,

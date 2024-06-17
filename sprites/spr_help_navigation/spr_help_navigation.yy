@@ -27,7 +27,7 @@
   "origin":0,
   "parent":{
     "name":"Help Tab",
-    "path":"folders/Sprites/UI/Help Tab.yy",
+    "path":"folders/Assets/Sprites/UI/Help Tab.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

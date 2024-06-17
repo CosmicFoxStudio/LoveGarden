@@ -228,7 +228,7 @@
   "name":"fnt_dialogue2_s",
   "parent":{
     "name":"Dialogue Secondary",
-    "path":"folders/Fonts/Dialogue Secondary.yy",
+    "path":"folders/Assets/Fonts/Dialogue Secondary.yy",
   },
   "pointRounding":0,
   "ranges":[

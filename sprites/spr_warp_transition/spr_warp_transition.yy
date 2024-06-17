@@ -41,7 +41,7 @@
   "origin":0,
   "parent":{
     "name":"Screen Transitions",
-    "path":"folders/Sprites/Screen Transitions.yy",
+    "path":"folders/Assets/Sprites/Screen Transitions.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

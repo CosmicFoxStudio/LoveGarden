@@ -13,7 +13,7 @@
   "name":"snd_config_test_sfx",
   "parent":{
     "name":"Config Test",
-    "path":"folders/Sounds/Config Test.yy",
+    "path":"folders/Assets/Sounds/Config Test.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

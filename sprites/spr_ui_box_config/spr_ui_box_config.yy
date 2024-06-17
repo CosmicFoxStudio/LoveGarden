@@ -28,7 +28,7 @@
   "origin":0,
   "parent":{
     "name":"Config Menu",
-    "path":"folders/Sprites/UI/Config Menu.yy",
+    "path":"folders/Assets/Sprites/UI/Config Menu.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

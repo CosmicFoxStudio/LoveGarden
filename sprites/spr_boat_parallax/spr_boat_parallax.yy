@@ -31,7 +31,7 @@
   "origin":0,
   "parent":{
     "name":"BGs",
-    "path":"folders/Sprites/BGs.yy",
+    "path":"folders/Assets/Sprites/BGs.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

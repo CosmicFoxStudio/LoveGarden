@@ -27,7 +27,7 @@
   "name":"sq_trans_fade_black",
   "parent":{
     "name":"Screen Transitions",
-    "path":"folders/Sequences/Screen Transitions.yy",
+    "path":"folders/Assets/Sequences/Screen Transitions.yy",
   },
   "playback":0,
   "playbackSpeed":30.0,

@@ -215,7 +215,7 @@
   "name":"fnt_day_number",
   "parent":{
     "name":"Fonts",
-    "path":"folders/Fonts.yy",
+    "path":"folders/Assets/Fonts.yy",
   },
   "pointRounding":0,
   "ranges":[

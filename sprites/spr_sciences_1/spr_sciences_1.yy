@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"Sciences Building",
-    "path":"folders/Sprites/BGs/Sciences Building.yy",
+    "path":"folders/Assets/Sprites/BGs/Sciences Building.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -31,7 +31,7 @@
   "origin":9,
   "parent":{
     "name":"Rose",
-    "path":"folders/Sprites/Characters/Rose.yy",
+    "path":"folders/Assets/Sprites/Characters/Rose.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

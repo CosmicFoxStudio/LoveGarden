@@ -12,7 +12,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Title Menu",
-    "path":"folders/UI/Title Menu.yy",
+    "path":"folders/Systems/UI/Title Menu.yy",
   },
   "parentObjectId":null,
   "persistent":false,

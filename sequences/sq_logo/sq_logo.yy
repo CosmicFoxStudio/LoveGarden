@@ -33,7 +33,7 @@
   "name":"sq_logo",
   "parent":{
     "name":"Sequences",
-    "path":"folders/Sequences.yy",
+    "path":"folders/Assets/Sequences.yy",
   },
   "playback":0,
   "playbackSpeed":30.0,

@@ -33,7 +33,7 @@
   "origin":0,
   "parent":{
     "name":"Title Screen",
-    "path":"folders/Sprites/UI/Title Screen.yy",
+    "path":"folders/Assets/Sprites/UI/Title Screen.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

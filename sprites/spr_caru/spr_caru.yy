@@ -32,7 +32,7 @@
   "origin":9,
   "parent":{
     "name":"Caru",
-    "path":"folders/Sprites/Characters/Caru.yy",
+    "path":"folders/Assets/Sprites/Characters/Caru.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

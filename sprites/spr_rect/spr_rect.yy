@@ -45,7 +45,7 @@
   "origin":0,
   "parent":{
     "name":"Player Creator",
-    "path":"folders/Sprites/UI/Player Creator.yy",
+    "path":"folders/Assets/Sprites/UI/Player Creator.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

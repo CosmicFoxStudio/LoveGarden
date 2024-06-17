@@ -215,7 +215,7 @@
   "name":"fnt_dialogue",
   "parent":{
     "name":"Dialogue Primary",
-    "path":"folders/Fonts/Dialogue Primary.yy",
+    "path":"folders/Assets/Fonts/Dialogue Primary.yy",
   },
   "pointRounding":0,
   "ranges":[

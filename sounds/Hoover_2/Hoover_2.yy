@@ -13,7 +13,7 @@
   "name":"Hoover_2",
   "parent":{
     "name":"SFX",
-    "path":"folders/Sounds/SFX.yy",
+    "path":"folders/Assets/Sounds/SFX.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

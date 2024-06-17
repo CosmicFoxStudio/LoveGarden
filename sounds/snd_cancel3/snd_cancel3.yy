@@ -13,7 +13,7 @@
   "name":"snd_cancel3",
   "parent":{
     "name":"SFX",
-    "path":"folders/Sounds/SFX.yy",
+    "path":"folders/Assets/Sounds/SFX.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

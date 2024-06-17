@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"Central Building",
-    "path":"folders/Sprites/BGs/Central Building.yy",
+    "path":"folders/Assets/Sprites/BGs/Central Building.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

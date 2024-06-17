@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"Dormitory",
-    "path":"folders/Sprites/BGs/Dormitory.yy",
+    "path":"folders/Assets/Sprites/BGs/Dormitory.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

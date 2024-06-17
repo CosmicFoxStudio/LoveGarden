@@ -13,7 +13,7 @@
   "name":"Click_3",
   "parent":{
     "name":"SFX",
-    "path":"folders/Sounds/SFX.yy",
+    "path":"folders/Assets/Sounds/SFX.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

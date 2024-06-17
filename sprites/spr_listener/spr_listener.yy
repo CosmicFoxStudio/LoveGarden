@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"Object Icons",
-    "path":"folders/Sprites/Object Icons.yy",
+    "path":"folders/Assets/Sprites/Object Icons.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

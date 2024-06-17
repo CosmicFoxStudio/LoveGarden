@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"Chara Submenu2",
-    "path":"folders/Sprites/UI/Config Menu/Chara Submenu2.yy",
+    "path":"folders/Assets/Sprites/UI/Config Menu/Chara Submenu2.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

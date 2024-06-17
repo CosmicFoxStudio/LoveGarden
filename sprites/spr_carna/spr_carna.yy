@@ -39,7 +39,7 @@
   "origin":7,
   "parent":{
     "name":"Carna",
-    "path":"folders/Sprites/Characters/Carna.yy",
+    "path":"folders/Assets/Sprites/Characters/Carna.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

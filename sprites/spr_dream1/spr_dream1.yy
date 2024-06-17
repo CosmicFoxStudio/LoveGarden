@@ -49,7 +49,7 @@
   "origin":0,
   "parent":{
     "name":"Dream",
-    "path":"folders/Sprites/BGs/Dream.yy",
+    "path":"folders/Assets/Sprites/BGs/Dream.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

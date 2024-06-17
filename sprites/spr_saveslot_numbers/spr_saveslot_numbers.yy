@@ -28,7 +28,7 @@
   "origin":4,
   "parent":{
     "name":"SaveLoad",
-    "path":"folders/Sprites/UI/SaveLoad.yy",
+    "path":"folders/Assets/Sprites/UI/SaveLoad.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -13,7 +13,7 @@
   "name":"snd_option_beep",
   "parent":{
     "name":"SFX",
-    "path":"folders/Sounds/SFX.yy",
+    "path":"folders/Assets/Sounds/SFX.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

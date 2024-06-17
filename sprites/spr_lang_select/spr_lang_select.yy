@@ -45,7 +45,7 @@
   "origin":0,
   "parent":{
     "name":"Lang",
-    "path":"folders/Sprites/UI/Lang.yy",
+    "path":"folders/Assets/Sprites/UI/Lang.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

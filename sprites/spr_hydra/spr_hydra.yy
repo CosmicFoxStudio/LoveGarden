@@ -31,7 +31,7 @@
   "origin":7,
   "parent":{
     "name":"Hydra",
-    "path":"folders/Sprites/Characters/Hydra.yy",
+    "path":"folders/Assets/Sprites/Characters/Hydra.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

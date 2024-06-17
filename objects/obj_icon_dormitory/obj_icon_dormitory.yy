@@ -9,7 +9,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Places",
-    "path":"folders/Map/Places.yy",
+    "path":"folders/Systems/Map/Places.yy",
   },
   "parentObjectId":{
     "name":"obj_place_parent",

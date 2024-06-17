@@ -7,7 +7,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Dream",
-    "path":"folders/Cutscenes/Dream.yy",
+    "path":"folders/Systems/Cutscenes/Dream.yy",
   },
   "parentObjectId":null,
   "persistent":false,

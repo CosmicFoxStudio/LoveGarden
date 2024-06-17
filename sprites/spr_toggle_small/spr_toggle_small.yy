@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"Graphics Submenu",
-    "path":"folders/Sprites/UI/Config Menu/Graphics Submenu.yy",
+    "path":"folders/Assets/Sprites/UI/Config Menu/Graphics Submenu.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

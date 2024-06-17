@@ -28,7 +28,7 @@
   "origin":0,
   "parent":{
     "name":"Sound Submenu",
-    "path":"folders/Sprites/UI/Config Menu/Sound Submenu.yy",
+    "path":"folders/Assets/Sprites/UI/Config Menu/Sound Submenu.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -13,7 +13,7 @@
   "name":"snd_silence",
   "parent":{
     "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "path":"folders/Assets/Sounds.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

@@ -26,7 +26,7 @@
   "origin":7,
   "parent":{
     "name":"Cursors",
-    "path":"folders/Sprites/UI/Cursors.yy",
+    "path":"folders/Assets/Sprites/UI/Cursors.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

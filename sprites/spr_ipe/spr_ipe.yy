@@ -32,7 +32,7 @@
   "origin":7,
   "parent":{
     "name":"Ipe",
-    "path":"folders/Sprites/Characters/Ipe.yy",
+    "path":"folders/Assets/Sprites/Characters/Ipe.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

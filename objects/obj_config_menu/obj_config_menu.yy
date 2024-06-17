@@ -12,7 +12,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Config Menu",
-    "path":"folders/UI/Config Menu.yy",
+    "path":"folders/Systems/UI/Config Menu.yy",
   },
   "parentObjectId":null,
   "persistent":false,
