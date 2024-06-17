@@ -37,7 +37,7 @@ if IsChatterbox(chatterbox) and text != undefined {
 	// Update string length
 	textLength = scribble(speechText).get_glyph_count();
 	
-	// Use scribble light green color for the text (set in __scribble_config_colours)
+	// Use scribble colors for the text (set in __scribble_config_colours)
 	scribble(GetCharacterTextColor(speaker) + speechText).wrap(TEXT_WIDTH).draw(xx, yy, typist);
 	
 	// Get speaker name

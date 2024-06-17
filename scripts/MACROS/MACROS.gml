@@ -20,7 +20,9 @@
 #macro CYAN			#11f2f6		// cyan color
 #macro TEXT_GREEN	#b6db89		// light green color used in dialogue text
 #macro TEXT_BROWN   #5c4033     // alternate brown color value used in text
+#macro TEXT_SHADOW	#cccccc
 
+// Character Colors
 #macro TEXT_IPE		#ffd88f
 #macro TEXT_ROSE	#ffab91
 #macro TEXT_CARNA	#a8c3ff

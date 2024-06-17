@@ -20,7 +20,10 @@ function DefineMenuElement(_text, _type, _action, _param1 = -1, _param2 = -1) co
 // MAIN PAGE [0]
 menu_page_main_elements[0]		= new DefineMenuElement(MenuLocalization("RESUME"),		    e_menuElementType.SCRIPT_RUNNER,	ResumeGame);
 menu_page_main_elements[1]		= new DefineMenuElement(MenuLocalization("SETTINGS"),		e_menuElementType.PAGE_CHANGE,		e_MenuPage.SETTINGS);
-menu_page_main_elements[2]		= new DefineMenuElement(MenuLocalization("MENU"),			e_menuElementType.SCRIPT_RUNNER,	BackToTitle);
+
+if (os_browser == browser_not_a_browser) {
+	menu_page_main_elements[2]		= new DefineMenuElement(MenuLocalization("EXIT"),			e_menuElementType.SCRIPT_RUNNER,	BackToTitle);
+}
 
 //SETTINGS PAGE [1]
 menu_page_settings_elements[0]	= new DefineMenuElement(MenuLocalization("AUDIO"),		    e_menuElementType.PAGE_CHANGE,		e_MenuPage.AUDIO);

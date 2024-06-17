@@ -5,7 +5,9 @@ if (global.state == e_gameStates.LEAVE) {
 }
 
 // Check if you need to instantiate any Game UI in this scene
-if (global.state == e_gameStates.CONTINUE_GAME && global.roomType == e_roomTypes.SCENES) {
+// This is kinda broken atm, need to find out why the UI isn't drawn when the map is active
+if (global.state == e_gameStates.CONTINUE_GAME && (global.roomType == e_roomTypes.SCENES || global.roomType == e_roomTypes.MAP)) {
+	
 	// Create Calendar
 	instance_create_layer(ORIGIN_X, ORIGIN_Y, "Instances_Above", obj_ui_btn_calendar);
 	
@@ -16,4 +18,3 @@ if (global.state == e_gameStates.CONTINUE_GAME && global.roomType == e_roomTypes
 	// instance_create_layer(ORIGIN_X + (sprite_get_width(spr_tooltip_box2)/2), ORIGIN_Y + 80, "Instances_Above", obj_ui_btn_map);
 	canDrawNow = true;
 }
-

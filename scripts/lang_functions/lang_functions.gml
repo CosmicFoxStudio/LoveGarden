@@ -1,5 +1,8 @@
 // Set global.lang based on the OS language
 function SetLanguage() {
+	// Temporarily while I figure why Chatterbox localization isn't working in HTML5
+	if (os_browser != browser_not_a_browser) return false;
+	
 	var osLang = os_get_language();
 
 	switch (osLang) {
@@ -14,6 +17,8 @@ function SetLanguage() {
 
 	show_debug_message("OS Language: " + osLang);
 	show_debug_message("Game Language: " + global.lang);
+	
+	return true;
 }
 
 #region LOCALIZATION

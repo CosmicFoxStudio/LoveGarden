@@ -1,16 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_title_menu_controller",
+  "%Name":"obj_map_controller",
   "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_title_menu_controller",
+  "name":"obj_map_controller",
   "overriddenProperties":[],
   "parent":{
-    "name":"Title Menu",
-    "path":"folders/Systems/UI/Title Menu.yy",
+    "name":"Map",
+    "path":"folders/Systems/Map.yy",
   },
   "parentObjectId":null,
   "persistent":false,

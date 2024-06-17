@@ -11,6 +11,9 @@ switch (global.lang) {
 //  ----------------------------------- Create Buttons ------------------------------------ //
 // If the platform isn't a browser, create the "New Game", "Continue", "Help" and "Quit" buttons
 if (os_browser == browser_not_a_browser) {
+	// Lang button
+	instance_create_layer(64, 336, "Instances_Below", obj_backLang_menu_btn);
+	
 	newButton = instance_create_layer(410, 150, "Instances_Mid", buttonToCreate);
 	newButton.btnType = e_btnTypes.PLAY;
 	newButton.baseImageIndex = 0;
@@ -45,7 +48,7 @@ else {
 // -------------------------------------- Input ----------------------------------------- //
 pos = 0;
 
-// This array contains all existent instances of obj_title_button
+// This array contains all existent instances of phone title buttons
 buttonArray = [];
 
 // Get the total number of instances of obj_buttons

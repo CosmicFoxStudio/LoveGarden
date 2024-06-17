@@ -1,5 +1,6 @@
 /// @description Initialization
 
+btnType = e_btnTypes.LANG;
 btnWidth = 125;
 unavailable = false;
 hovering = false;

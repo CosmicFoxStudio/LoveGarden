@@ -35,7 +35,7 @@ global.newGame = false;
 global.lastPlace = rm_init;
 
 // Localization Info
-global.lang = "en";     // "en", "pt"
+global.lang = "en"; // "en", "pt"
 SetLanguage();
 ManageLocalization();
 
