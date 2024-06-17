@@ -71,7 +71,7 @@ global.routes[e_SO.HYDRA] = false;
 
 #region GAME CONTROLS
 // The gamepad device (player 1)
-// global.GAMEPAD = 0;  
+global.GAMEPAD = 0;  
 
 function KeybindingDefinition(_confirm=-1, _cancel=-1, _start=-1, _up=-1, _down=-1, _left=-1, _right=-1) constructor {
 	confirm = _confirm;
@@ -88,7 +88,7 @@ function PrimaryKeybindingCreate() {
 	var _keybind = array_create(3);
 	_keybind[e_input.MOUSE] = new KeybindingDefinition(mb_left, mb_right, mb_middle);
 	_keybind[e_input.KEYBOARD] = new KeybindingDefinition(vk_space, vk_backspace, vk_enter, vk_up, vk_down, vk_left, vk_right);
-	//_keybind[e_input.GAMEPAD] = new KeybindingDefinition(gp_face1, gp_face2, gp_start, gp_padu, gp_padd, gp_padl, gp_padr);
+	_keybind[e_input.GAMEPAD] = new KeybindingDefinition(gp_face1, gp_face2, gp_start, gp_padu, gp_padd, gp_padl, gp_padr);
 	
 	return _keybind;
 }
@@ -97,7 +97,7 @@ function SecondaryKeybindingCreate() {
 	var _keybind = array_create(3);
 	_keybind[e_input.MOUSE] = new KeybindingDefinition(mb_left, mb_right, mb_middle);
 	_keybind[e_input.KEYBOARD] = new KeybindingDefinition(ord("Z"), ord("X"), ord("C"), ord("W"), ord("S"), ord("A"), ord("D"));
-	//_keybind[e_input.GAMEPAD] = new KeybindingDefinition();
+	_keybind[e_input.GAMEPAD] = new KeybindingDefinition();
 	
 	return _keybind;
 }

@@ -38,7 +38,6 @@ function CheckVerticalInput() {
 	
 	// if (_returnValue != 0) show_debug_message("CheckVerticalInput: " + string(_returnValue));
 	
-	show_debug_message("RAN 1");
 	return _returnValue;
 }
 
@@ -57,7 +56,6 @@ function CheckHorizontalInput() {
 	
 	// if (_returnValue != 0) show_debug_message("CheckHorizontalInput: " + string(_returnValue));
 	
-	show_debug_message("RAN 2");
 	return _returnValue;
 }
 
