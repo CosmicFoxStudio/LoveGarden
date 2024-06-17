@@ -6,8 +6,8 @@
   "name":"obj_timer_transition",
   "overriddenProperties":[],
   "parent":{
-    "name":"Utils Objects",
-    "path":"folders/Utils Objects.yy",
+    "name":"General Objects",
+    "path":"folders/General Objects.yy",
   },
   "parentObjectId":{
     "name":"obj_timer",

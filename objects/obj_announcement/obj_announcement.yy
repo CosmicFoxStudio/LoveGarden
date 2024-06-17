@@ -10,8 +10,8 @@
   "name":"obj_announcement",
   "overriddenProperties":[],
   "parent":{
-    "name":"Utils Objects",
-    "path":"folders/Utils Objects.yy",
+    "name":"General Objects",
+    "path":"folders/General Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

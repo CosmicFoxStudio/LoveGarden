@@ -1,22 +1,24 @@
 {
-  "resourceType": "GMSequence",
-  "resourceVersion": "1.4",
-  "name": "sq_logo",
-  "autoRecord": true,
-  "backdropHeight": 768,
-  "backdropImageOpacity": 0.5,
-  "backdropImagePath": "",
-  "backdropWidth": 1366,
-  "backdropXOffset": 0.0,
-  "backdropYOffset": 0.0,
-  "events": {
-    "resourceType": "KeyframeStore<MessageEventKeyframe>",
-    "resourceVersion": "1.0",
-    "Keyframes": [
-      {"resourceType":"Keyframe<MessageEventKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"MessageEventKeyframe","resourceVersion":"1.0","Events":[
+  "$GMSequence":"",
+  "%Name":"sq_logo",
+  "autoRecord":true,
+  "backdropHeight":768,
+  "backdropImageOpacity":0.5,
+  "backdropImagePath":"",
+  "backdropWidth":1366,
+  "backdropXOffset":0.0,
+  "backdropYOffset":0.0,
+  "events":{
+    "$KeyframeStore<MessageEventKeyframe>":"",
+    "Keyframes":[
+      {"$Keyframe<MessageEventKeyframe>":"","Channels":{
+          "0":{"$MessageEventKeyframe":"","Events":[
               "OnFinished",
-            ],},},"Disabled":false,"id":"a39c3d4e-746b-4a64-a314-d5fad687ce70","IsCreationKey":false,"Key":59.9998,"Length":1.0,"Stretch":false,},
+            ],"resourceType":"MessageEventKeyframe","resourceVersion":"2.0",},
+        },"Disabled":false,"id":"a39c3d4e-746b-4a64-a314-d5fad687ce70","IsCreationKey":false,"Key":59.9998,"Length":1.0,"resourceType":"Keyframe<MessageEventKeyframe>","resourceVersion":"2.0","Stretch":false,},
     ],
+    "resourceType":"KeyframeStore<MessageEventKeyframe>",
+    "resourceVersion":"2.0",
   },
   "eventStubScript":null,
   "eventToFunction":{},
@@ -28,7 +30,7 @@
     "resourceType":"KeyframeStore<MomentsEventKeyframe>",
     "resourceVersion":"2.0",
   },
-  "name":"sq_logoCosmicFox",
+  "name":"sq_logo",
   "parent":{
     "name":"Sequences",
     "path":"folders/Sequences.yy",
@@ -114,8 +116,8 @@
                         {"$GMAnimCurveChannel":"","%Name":"x","colour":4290799884,"name":"x","points":[
                             {"th0":-0.24999958,"th1":0.0,"tv0":0.0,"tv1":0.0,"x":0.0,"y":0.8,},
                             {"th0":-0.99999833,"th1":0.24999958,"tv0":0.0,"tv1":0.0,"x":1.0,"y":0.9999999,},
-                          ],"visible":true,},
-                        {"resourceType":"GMAnimCurveChannel","resourceVersion":"1.0","name":"y","colour":4281083598,"points":[
+                          ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
+                        {"$GMAnimCurveChannel":"","%Name":"y","colour":4281083598,"name":"y","points":[
                             {"th0":-0.25,"th1":0.0,"tv0":0.0,"tv1":0.0,"x":0.0,"y":0.8,},
                             {"th0":-1.0,"th1":0.25,"tv0":0.0,"tv1":0.0,"x":1.0,"y":1.0,},
                           ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
@@ -124,8 +126,8 @@
                         {"$GMAnimCurveChannel":"","%Name":"x","colour":4290799884,"name":"x","points":[
                             {"th0":-0.24999958,"th1":0.0,"tv0":0.0,"tv1":0.0,"x":0.0,"y":0.8,},
                             {"th0":-0.99999833,"th1":0.24999958,"tv0":0.0,"tv1":0.0,"x":1.0,"y":0.9999999,},
-                          ],"visible":true,},
-                        {"resourceType":"GMAnimCurveChannel","resourceVersion":"1.0","name":"y","colour":4281083598,"points":[
+                          ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
+                        {"$GMAnimCurveChannel":"","%Name":"y","colour":4281083598,"name":"y","points":[
                             {"th0":-0.25,"th1":0.0,"tv0":0.0,"tv1":0.0,"x":0.0,"y":0.8,},
                             {"th0":-1.0,"th1":0.25,"tv0":0.0,"tv1":0.0,"x":1.0,"y":1.0,},
                           ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},

@@ -2,8 +2,8 @@
   "$GMSound":"",
   "%Name":"Select_2",
   "audioGroupId":{
-    "name":"audiogroup_sfx",
-    "path":"audiogroups/audiogroup_sfx",
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
   },
   "bitDepth":1,
   "bitRate":128,
