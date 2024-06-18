@@ -2,9 +2,10 @@
 
 // Number of options
 var count = ChatterboxGetOptionCount(chatterbox);
+textLength = scribble(ChatterboxGetContentSpeech(chatterbox, 0)).get_glyph_count();
 
 // Typist flow control
-TypistCheckPause();
+TypistCheckPause(typist);
 
 // Fast-forwarding
 /*
@@ -16,29 +17,32 @@ if (InputCheck("confirm", e_input.MOUSE, "held")) {
 if (global.state != e_gameStates.PAUSED && global.state != e_gameStates.MENU && global.hoveringButton == false) {
 	// Waiting for user input or waiting for the user to choose an option
 	if (ChatterboxIsWaiting(chatterbox)) {
-		if ((typist.get_position() - 1) == textLength) global.textComplete = true;
+		if (!global.midTransition) {
+			// Make textbox visible
+			obj_textbox.visible = true;
 		
-	    if ((InputCheck("confirm", e_input.KEYBOARD) && global.keyboardIcons == false) || (InputCheck("confirm", e_input.MOUSE) && global.hoveringTextbox == true)) {
-			// Debug text
-			//show_debug_message(text);
-			
-			//  ------------------- SKIP TEXT ------------------- //
-			// Means the page is fully typed out
-			if ((typist.get_position() - 1) == textLength) {
-				ChatterboxContinue(chatterbox);
-				// Advance to next dialogue line
-				UpdateChatterbox();
-			}
-			else {
-				// Typist auto-complete
-				if (typist.get_position() < textLength) {
-					typist.skip();
-				}				
-			}
-	    }
+		    if ( (InputCheck("confirm", e_input.KEYBOARD) && global.keyboardIcons == false) || 
+			(InputCheck("confirm", e_input.MOUSE) && global.hoveringTextbox == true) ) {			
+				//  ------------------- SKIP TEXT ------------------- //
+				// Means the page is fully typed out
+				if (typist.get_state() == 1) {
+					global.textComplete = true;
+					// Advance to next dialogue line
+					ChatterboxContinue(chatterbox);
+					UpdateChatterbox();
+				}
+				else {
+					// Typist auto-complete
+					if (typist.get_state() < 1) {
+						typist.skip();
+					}				
+				}
+		    }
+		}
+		else obj_textbox.visible = false; // Make textbox invisible
 	
 	// If there are options to choose
-	} else if count {	
+	} else if (count) {	
 		// This variable needs to be restarted on loop start (or else make it local?)
 		optionHovered = -1;
 	

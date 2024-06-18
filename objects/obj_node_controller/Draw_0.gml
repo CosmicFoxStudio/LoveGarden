@@ -2,27 +2,22 @@
 
 // Set halign to center and valign to the middle (center the text in the textbox)
 DrawAlign(fa_center, fa_middle); 
-
+//DrawFont(fnt_dialogue);
+DrawFont(global.dialogFonts[global.fontType][global.fontSize]);
+		
 // Horizontal text margin
-var marginText = 64;     
-textLength = scribble(ChatterboxGetContentSpeech(chatterbox, 0)).get_glyph_count();
-
-if IsChatterbox(chatterbox) and text != undefined {	
+var marginText = 64; // make this a macro later?
 	
-	// ------------------------- DRAW ------------------------- //
+if (IsChatterbox(chatterbox)) {	
+
 	// Draw coordinates (text)
 	var yy = room_height - (marginText/2) - 50;
 	var xx = room_width/2 - 200;
 	
 	// Get speech text
 	var speechText = ChatterboxGetContentSpeech(chatterbox, 0);
-
-	// Draw dialogue text
-	DrawFont(fnt_dialogue);
 	
-	var posX = SCREEN_WIDTH/4;
-	
-	// ------------------------- APPLY STRING SUBSTITUTIONS ------------------------- //
+	// ------------------------- APPLY STRING SUBSTITUTIONS TO SPEECH TEXT ------------------------- //
 	// Portuguese gender inflection
 	speechText = GenderInflection(speechText, global.pronouns);
 	
@@ -34,34 +29,30 @@ if IsChatterbox(chatterbox) and text != undefined {
 	    var playerNameTitleCase = playerNameInitial + playerNameLowerRest;
 	    speechText = string_replace(speechText, "PLAYER", playerNameTitleCase);
 	}
+	
 	// Update string length
-	textLength = scribble(speechText).get_glyph_count();
+	//textLength = scribble(speechText).get_glyph_count();
 	
-	// Use scribble colors for the text (set in __scribble_config_colours)
-	scribble(GetCharacterTextColor(speaker) + speechText).wrap(TEXT_WIDTH).draw(xx, yy, typist);
-	
-	// Get speaker name
-	var speakerName = ChatterboxGetContentSpeaker(chatterbox, 0);
-	// Draw nametag box
-	if (speakerName != "") { // Remove nametag if narrator is speaking
-		draw_sprite(spr_tooltip_box2, 1, posX + 4, 242);
+	// ----------------------------------- DRAW SPEECH TEXT ----------------------------------- // 
+	if (!global.midTransition) {
+		// Use scribble colors for the text (set in __scribble_config_colours)
+		scribble(GetCharacterTextColor(speaker) + speechText).wrap(TEXT_WIDTH).draw(xx, yy, typist);
 	}
-	
-	// Draw nametag text
+	// ----------------------------------- DRAW NAMETAG TEXT ----------------------------------- // 
+	// Get speaker name
+	var speakerName = ChatterboxGetContentSpeaker(chatterbox, 0);	
 	if ( (ChatterboxGetContentSpeaker(chatterbox, 0) == "PLAYER") ) speakerName = global.playerName;
 	else speakerName = ChatterboxGetContentSpeaker(chatterbox, 0);
-	DrawFont(global.dialogFonts[global.fontType][global.fontSize]);
-	draw_text_color(
-		room_width/2 - 157, 
-		room_height - (marginText/2) - 72, 
-		speakerName,
-		GetCharacterTextColorRGB(speaker), GetCharacterTextColorRGB(speaker),
-		GetCharacterTextColorRGB(speaker), GetCharacterTextColorRGB(speaker), 1
-	);
-
-
-	
-	// Adding options to the screen
+	if (!global.midTransition) {
+		draw_text_color(
+			room_width/2 - 157, 
+			room_height - (marginText/2) - 72, 
+			speakerName,
+			GetCharacterTextColorRGB(speaker), GetCharacterTextColorRGB(speaker),
+			GetCharacterTextColorRGB(speaker), GetCharacterTextColorRGB(speaker), 1
+		);
+	}
+	// ----------------------------------- ADDING OPTIONS TO THE SCREEN ----------------------------------- //
 	if ChatterboxGetOptionCount(chatterbox) {
 		var width = 450;
 		var height = 32;
@@ -92,6 +83,6 @@ if IsChatterbox(chatterbox) and text != undefined {
 		}
 	}
 }
-		
+
 // Reset
 DrawReset();

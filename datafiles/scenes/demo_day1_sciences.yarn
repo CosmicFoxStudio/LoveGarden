@@ -55,15 +55,13 @@ PLAYER: By the way, what is your major? #line:223848
 IPE: Oh, I'm enrolled in Botany... #line:85fbf8
 PLAYER: Oh, cool! I'm majoring in Biology. #line:174bf0 
 You walk together towards the class, entering it. #line:e51982
+<<bgTransition(1)>>
 <<jump CarnaIntro>>
 ===
 
 title: CarnaIntro
 ---
 <<chara("void")>>
-... #line:6d40ef
-<<bgTransition(1)>>
-... #line:7f3b9f
 You almost have no time to sit before the teacher starts to speak. #line:7a34b2 
 <<chara("ipe")>>
 You look around, trying to identify where Ipe was seated, finding them a few chairs behind you. #line:e56064 

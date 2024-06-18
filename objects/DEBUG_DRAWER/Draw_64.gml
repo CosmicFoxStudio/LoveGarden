@@ -148,7 +148,14 @@ if (global.debug) {
 		if (instance_exists(obj_node_controller)) {
 			array_push(dialogueDebugStrings, 
 				"Typist position: " + string(obj_node_controller.typist.get_position()),
-				"Text Length: " + string(obj_node_controller.textLength)
+				"Text Length: " + string(obj_node_controller.textLength),
+				"Typist State: " + string(obj_node_controller.typist.get_state()),
+				"Text: " + string(ChatterboxGetContentSpeech(obj_node_controller.chatterbox, 0))
+			);
+		}
+		if (instance_exists(obj_characters)) {
+			array_push(dialogueDebugStrings, 
+				"Speaker: " + obj_characters.currentSpeaker
 			);
 		}
 

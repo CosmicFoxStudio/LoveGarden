@@ -92,9 +92,9 @@ function DialogueWait(_seconds) {
 	
     show_debug_message("Waiting chatterbox for " + string(frames) + " frames...");
 	
-    time_source_start(time_source_create(time_source_game, frames, time_source_units_frames, function(_chatterbox) {
+    time_source_start(time_source_create(time_source_game, frames, time_source_units_frames, function() {
         show_debug_message("...continuing chatterbox!");
-        ChatterboxContinue(_chatterbox);
+        ChatterboxContinue(CHATTERBOX_CURRENT);
     },
     [CHATTERBOX_CURRENT]));
 }
@@ -241,6 +241,7 @@ function BackgroundWaitTransition(_index) {
     time_source_start(time_source_create(time_source_game, frames, time_source_units_frames, function(_chatterbox) {
         show_debug_message("...continuing chatterbox!");
         ChatterboxContinue(_chatterbox);
+		obj_node_controller.UpdateChatterbox();
     },
     [CHATTERBOX_CURRENT]));
 	
@@ -258,15 +259,6 @@ function GetCurrentPlace() {
 
 // -----------------------------------------------------------------------------  //
 // Useful functions that are not called in .yarn files
-
-// Function to prevent repeating these lines
-function UpdateChatterbox() {
-	node = ChatterboxGetCurrent(chatterbox);
-	text = ChatterboxGetContent(chatterbox, 0);
-	obj_characters.currentSpeaker = ChatterboxGetContentSpeaker(chatterbox, 0);
-	speaker = ChatterboxGetContentSpeaker(chatterbox, 0);
-	global.textComplete = false;
-}
 
 // Get filename dynamically
 function LoadDialogueFiles() {

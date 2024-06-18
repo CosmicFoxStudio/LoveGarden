@@ -1,7 +1,6 @@
 // Initialize variables
-node = undefined;
 chatterbox = noone;
-text = "";
+// text = "";
 speaker = "";
 nodeName = InitialNode();
 roomName = "";
@@ -10,6 +9,13 @@ optionHovered = -1;
 
 // Object depth
 //depth = -100;
+
+// This method updates a few variables (including a global and obj_character's currentSpeaker variable)
+UpdateChatterbox = function() {
+	obj_characters.currentSpeaker = ChatterboxGetContentSpeaker(chatterbox, 0);
+	speaker = ChatterboxGetContentSpeaker(chatterbox, 0);
+	global.textComplete = false;
+}
 
 // ----------------------------- SCRIBBLE ----------------------------- //
 // Setup scribble font
