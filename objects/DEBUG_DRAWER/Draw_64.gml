@@ -99,12 +99,22 @@ if (global.debug) {
 	
 	#region CHARACTERS --- Press 3
 	if (debugBooleans[e_DebugOptions.CHARA]) {
-		var charaDebugStrings = [];
-		
+		var charaDebugStrings = [
+			"Hearts (IPE): " + string(global.chara.ipe.hearts),
+			"Hearts (CARU): " + string(global.chara.caru.hearts),
+			"Hearts (CARNA): " + string(global.chara.carna.hearts),
+			"Hearts (ROSE): " + string(global.chara.rose.hearts),
+			"Hearts (HYDRA): " + string(global.chara.hydra.hearts)
+		];
+	
 		if (instance_exists(obj_characters)) {
 			array_push(charaDebugStrings, 
-				"Current sprite: " + sprite_get_name(obj_characters.chara),
-				"Current expression: " + string(obj_characters.characterExpression)
+				"Chara0: " + sprite_get_name(obj_characters.chara[0]),
+				"Chara1: " + sprite_get_name(obj_characters.chara[1]),
+				"Chara2: " + sprite_get_name(obj_characters.chara[2]),
+				"Chara0 expression: " + string(obj_characters.characterExpression[0]),
+				"Chara1 expression: " + string(obj_characters.characterExpression[1]),
+				"Chara2 expression: " + string(obj_characters.characterExpression[2])
 			);
 		}
 		

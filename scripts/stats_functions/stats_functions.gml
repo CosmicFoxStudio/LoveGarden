@@ -11,11 +11,3 @@ function WrapInside(_val, _min, _max) {
 	else if _val <_min return _min;
 	else return _val;
 }
-
-// Create stats struct for both the player character and the SOs
-function DefineStats() {
-	return 
-		{
-			hearts: 0
-		}
-}

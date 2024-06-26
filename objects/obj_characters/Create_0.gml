@@ -1,10 +1,6 @@
 /// @description Initialization
 
-chara0 = spr_noone;
-chara1 = spr_noone;
-chara2 = spr_noone;
-
-charactersOnScreen = 0;
+chara = [spr_noone, spr_noone, spr_noone];
 charactersExpression = [0, 0, 0];
-
+charactersOnScreen = 0;
 currentSpeaker = "";

@@ -3,12 +3,10 @@
 // Audio load variables
 total_audio_groups = 2;
 total_audio_groups_loaded = 0;
-
-// Initializes globals & enumerators
-Enums();
 camera = -1;
+
+// Initializes globals
 global.debug = false;
-global.gameMode = e_gameMode.DEMO;
 global.saveFileName = ConvertGameModeToSaveFileString();
 global.lastFontUsed = -1;
 global.dialogFonts = [
@@ -21,8 +19,6 @@ DrawFont(fnt_dialogue); // Run the first time
 global.configMenu = noone;
 global.date = ConvertDate(date_current_datetime());
 global.saveSlot = 0;
-global.state = e_gameStates.TITLE_SCREEN;
-global.statePrevious = global.state;
 global.hoveringButton = false;
 global.hoveringConfigButton = false;
 global.hoveringTextbox = false;
@@ -38,36 +34,6 @@ global.lastPlace = rm_init;
 global.lang = "en"; // "en", "pt"
 SetLanguage();
 ManageLocalization();
-
-// Day Info
-global.day = 1;
-global.currentDaytime = e_daytime.MORNING;
-global.actions[0] = 0;	// DAY 0 (for debug)
-global.actions[1] = 3;	// DAY 1
-global.actions[2] = 3;	// DAY 2
-global.actions[3] = 3;	// DAY 3
-global.actions[4] = 3;	// DAY 4
-global.maxActions = [0, 5, 5, 5, 5];
-
-// Player
-global.playerName = "PLAYER";
-global.pronouns = e_pronouns.ELU;
-global.playerStats = DefineStats();
-global.progress = [];
-Progress();
-
-// NPC
-global.NPCs = [];
-global.NPCs[e_SO.IPE] = DefineStats();
-global.NPCs[e_SO.CARU] = DefineStats();
-global.NPCs[e_SO.ROSE] = DefineStats();
-global.NPCs[e_SO.CARNA] = DefineStats();
-global.NPCs[e_SO.HYDRA] = DefineStats();
-global.routes[e_SO.IPE] = false;
-global.routes[e_SO.CARU] = false 
-global.routes[e_SO.ROSE] = false; 
-global.routes[e_SO.CARNA] = false; 
-global.routes[e_SO.HYDRA] = false; 
 
 #region GAME CONTROLS
 // The gamepad device (player 1)
@@ -188,8 +154,8 @@ ChatterboxAddFunction("chara", CharacterOnScreen);								// Function to draw ch
 ChatterboxAddFunction("emotion", CharacterExpressionOnScreen);					// Function to change character expression
 ChatterboxAddFunction("dialogueWait", DialogueWait);							// Makes the textbox wait for x seconds
 ChatterboxAddFunction("save", SaveGame);										// Calls the save script from inside a yarn file
-ChatterboxAddFunction("changeRelationship", ChangeRelationshipBar)				// Adds or removes hearts to romanceable characters relationship bars
-ChatterboxAddFunction("getRelationship", GetRelationshipBar)					// Checks relationship bars of romanceable characters
+ChatterboxAddFunction("changeRelationship", ChangeRelationship)					// Adds or removes hearts to romanceable characters relationship bars
+ChatterboxAddFunction("getRelationship", GetRelationship)						// Checks relationship bars of romanceable characters
 ChatterboxAddFunction("nextDay", NextDay);										// Increments by 1 global.day and set global.currentDaytime to morning
 ChatterboxAddFunction("nextDaytime", NextDaytime);								// Increments by 1 global.currentDaytime
 ChatterboxAddFunction("nextRoom", NextRoom);									// Function to change scene
@@ -203,8 +169,6 @@ ChatterboxAddFunction("getFlag", FlagGet);										// Returns the value of a gi
 ChatterboxAddFunction("endGame", EndGame);										// Closes the game
 #endregion CHATTERBOX INITIALIZE CUSTOMS
 
-//  ----------------------------- LOAD GAME DATA  ------------------------------  //
-LoadGameData();
 // ------------------------------ TESTING ZONE ---------------------------------- //
 if (Debug()) {
 	instance_create_layer(ORIGIN_X, ORIGIN_Y, "Controllers", DEBUG_DRAWER);
