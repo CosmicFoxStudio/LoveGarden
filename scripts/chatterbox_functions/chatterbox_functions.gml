@@ -76,8 +76,9 @@ function CharacterOnScreen(_position = 0, _name_or_expression = "", _name = "") 
 
     // Handle "void" case
     if (_name_or_expression == "void") {
-        obj_characters.charaExpression[_position] = spr_noone;
-        return true;
+		obj_characters.chara[_position] = noone;
+		obj_characters.charaExpression[_position] = spr_noone;
+		return true;
     }
 
     var character, expression;

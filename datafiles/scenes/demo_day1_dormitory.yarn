@@ -70,13 +70,11 @@ title: LateArrival
 <<chara(0, "void")>>
 The rules say you can't run in the hallways... #line:d815d3 
 So you quicken your pace and end up bumping into someone hard, almost knocking you down. #line:508baa 
-<<chara("hydra")>>
-<<emotion(3)>>
+<<chara(0, "neutral", "hydra")>>
 PLAYER: Oops- #line:a9b4b7 
-<<emotion(0)>>
-She is in a rush almost running to the end of the corridor. #line:0c26e5 
+She is in a rush running to the end of the corridor. #line:0c26e5 
 PLAYER: ... Hey! #line:08d36f 
-<<chara("void")>>
+<<chara(0, "void")>>
 You even question yourself for an instant if you are not late. #line:8f8f9a
 In the hurry she didn't realize that she dropped a piece of paper. #line:215731 
 You bend down and pick up the paper. #line:356335 
@@ -93,6 +91,7 @@ For a moment you thought you would lose the boat, but you manage to arrive in ti
 
 title: GoodNight
 ---
+<<chara(0, "void")>>
 You arrive at your room and look around. #line:39106c
 Seems like Caru hasn't come back yet... #line:f2baf7
 The day was so full that you barely had time to change clothes before throwing yourself in the bed. #line:3dfffa

@@ -26,6 +26,7 @@ global.routes[e_chara.ROSE] = false;
 global.routes[e_chara.HYDRA] = false; 
 
 // Emotions 2D Array
+global.emotions[e_chara.MAPLE] = ["neutral"];
 global.emotions[e_chara.IPE] = [
 "neutral", "surprise", "happy", "annoyed", "awkward", "sidelook", "scared"
 ];
@@ -34,7 +35,7 @@ global.emotions[e_chara.CARU] = [
 ]; 
 global.emotions[e_chara.CARNA] = [
 "neutral", "smug", "smile", "disappointed", "angry", "uncomfortable", 
-"sad1", "sad2", "sad3", "surprise", "surprise-left", "surprise-down", "upset", "cry"
+"sad", "sad-talking", "emotional", "surprise", "surprise-left", "surprise-down", "upset", "cry"
 ];
 global.emotions[e_chara.ROSE] = [
 "neutral", "serious", "surprise", "smug", "angry", "angry-talking"

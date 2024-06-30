@@ -20,14 +20,14 @@ title: Night
 
 title: CaruIntro
 ---
-<<chara("void")>>
+<<chara(0, "void")>>
 ???: Hey. #line:da1f8b
 ???: Heeey! #line:23e124
 ???: Are you listening? #line:28b531
 ???: ... #line:f5b9a9
 ???: Wake up! #line:5be548
 PLAYER: Ugh... #line:850375
-<<chara("caru")>>
+<<chara(0, "neutral", "caru")>>
 ???: Time to get up, sleepyhead! #line:d58fe3
 ???: It's a new day full of adventure, and... Oh, hold on, I think you're late! #line:3b26df
 You groan and rub your eyes, trying to understand the situation. #line:baf757
@@ -48,28 +48,24 @@ CARU: But now, I'm serious. The first day is not one of those you want to be lat
 CARU: The earlier you leave, the better! #line:1dd87f
 CARU: Some of the Lotus professors can be real tyrants. #line:f2cb8c
 PLAYER: I've been questioning myself why would anyone decide on the 7:30 am schedule for morning classes... #line:a61151
-<<chara("void")>>
+<<chara(0, "void")>>
 Despite Mandacaru's warning, by the time you gather all the materials for classes, you see that time is still ticking away. #line:2b3bb1
 Part of you curses your last night's self, who confidently claimed there would be enough time to get organized in the morning. #line:8cf063
 Being ready to go, you head downstairs to the dormitory. #line:d53c5c
-... #line:eef0c0
 <<bgTransition(1)>>
 <<jump LateArrival>>
 ===
 
 title: LateArrival
 ---
-<<chara("void")>>
-... #line:361a6b
+<<chara(0, "void")>>
 The rule says you can't run in the hallways... #line:af98ad
 So you quicken your pace until you reach the entrance. #line:ddf6ae
 In the distance, you can see the boat that just left. #line:bb92f9
 You sigh to yourself and meekly walk down the stairs to the dorm's main floor in a gesture of acceptance. #line:5a3b7b
-... #line:7f7969
 <<bgTransition(2)>>
-... #line:b9d47b
 As you reach the dorm's reception, you're met with an old man with oranges stuck in his beard. #line:78acb8
-<<chara("orange")>>
+<<chara(0, "neutral", "orange")>>
 MR. ORANGE: Hey. Are you a morning student? #line:36b3dd
 PLAYER: Yes, I am! #line:9df643
 MR. ORANGE: The second boat has already left, but a third one is coming shortly. #line:2ad4fa
@@ -104,14 +100,14 @@ You only have to wait... What do you do now? #line:83d7e5
     MR. ORANGE: But you better start going. The boat is arriving. #line:82b546 
     Mr. Orange points to the boat approaching outside. #line:f42612 
     PLAYER: See you later, Mr. Orange! #line:01b874
-    <<chara("void")>>
+    <<chara(0, "void")>>
     You wave to him as you leave the dormitory, heading towards the boat. #line:06f5f5
 -> Wait for the boat outside. #line:5b1185 
-    <<chara("void")>>
+    <<chara(0, "void")>>
     It's better to make sure you don't miss the next boat. #line:00912c 
     You go outside the building, sitting on one of the waiting benches for the boat. #line:ccca5b
     There's a girl drawing on one of the other benches. #line:65794c 
-    <<chara("hydra")>>
+    <<chara(0, "neutral", "hydra")>>
     <<setFlag("met_hydra", true)>>
     You try to see what she's drawing and ends up impressed with the replica of the lake she was creating. #line:c51c4b
     What do you do? #line:3ec998
@@ -140,7 +136,7 @@ title: Chitchat
 <<bg(2)>>
 The last rays of sunlight of the day paint a beautiful landscape across the sky, caressing your eyes as you arrive at the dormitory. #line:3884a8 
 Mr. Orange, eager for your return, welcomes you back. #line:a7baa0
-<<chara("orange")>>
+<<chara(0, "neutral", "orange")>>
 MR. ORANGE: Hello, young one. Happy to see you again. #line:b23003
 MR. ORANGE: How was your first day at school? #line:01720d
 PLAYER: School... You mean college, right? #line:fa5339
@@ -168,10 +164,8 @@ What do you want to do? #line:eb08d9
     MR. ORANGE: I can tell you the legend from the beginning... If you have the time. #line:1419ef
     -> Sure, you've caught my curiosity. #line:a6e132
         ... Once upon a time, ... #line:4359f5
-        ... #line:9e0fa4 
-        <<chara("void")>>
+        <<chara(0, "void")>>
         <<bgTransition(3)>>
-        ... #line:e25f70 
         MR. ORANGE: ... There was an outstanding student named Jack, known for his curiosity and love for agriculture. #line:0bf19f
         MR. ORANGE: He lived in the ancient fiefdom of Lotus, long before this university existed. #line:c3f160
         MR. ORANGE: One day, while exploring the surroundings of the college, he discovered a peculiar seed that seemed to radiate a magical aura. #line:4cd139
@@ -190,10 +184,8 @@ What do you want to do? #line:eb08d9
         MR. ORANGE: He shared his knowledge with the young people of the region, inspiring them to explore the limits of magic and botany. #line:56f54b
         MR. ORANGE: He became so popular that several princes and princesses from neighboring kingdoms came to study with him. #line:dbcfb0
         MR. ORANGE: When he was older, he decided to create a university, which is now Lotus. #line:4828ed
-        ... #line:d674dd
         <<bgTransition(2)>>
-        <<chara("orange")>>
-        ... #line:8f67ef
+        <<chara(0, "neutral", "orange")>>
         MR. ORANGE: Definitely one of our most notable figures. #line:0e9dc2
         PLAYER: Wow. How long ago was that? #line:0598c6
         MR. ORANGE: The university is over 500 years old now. #line:1b7924
@@ -205,43 +197,35 @@ What do you want to do? #line:eb08d9
         MR. ORANGE: But who knows, if you excel in Magical Herbology, maybe one day you'll be included in it! #line:e2cf42
         PLAYER: Interesting... I'll keep that in mind. Thanks for the story, Mr. Orange. #line:e4bed3
         MR. ORANGE: No problems. See you later, kid! #line:2ea539
-        <<chara("void")>>
+        <<chara(0, "void")>>
         You climb the stairs back to your room. #line:7613b6
         <<nextDaytime()>>
-        ... #line:6b3cec
         <<bgTransition(4)>>
-        ... #line:37205d
         <<jump Night>>
     -> Thanks, but maybe another time. #line:79e443
         MR. ORANGE: Oh, sure. That's okay. You must be busy. Sorry for bothering you. #line:a335af
-        <<chara("void")>>
+        <<chara(0, "void")>>
         You climb the stairs back to your room. #line:89a4d6
         <<nextDaytime()>>
-        ... #line:910f6e
         <<bgTransition(4)>>
-        ... #line:655162
         <<jump Night>>
 -> Check what Caru is doing. #line:e854fd
-    <<chara("void")>>
+    <<chara(0, "void")>>
     Caru is deeply involved in the game. Now, looking closely, you realize it's a rhythm game. #line:afe309
     You also notice he's not playing with anyone, the other person is just watching. #line:375c0d
     Caru is doing really well, so it's better not to interrupt the moment. #line:b02672
     Looking back, you realize Mr. Orange is no longer there. #line:b76c50
     Thus, the only option left is to go back to your room. #line:28c980
     <<nextDaytime()>>
-    ... #line:02cf94
     <<bgTransition(4)>>
-    ... #line:ff6d18
     <<jump Night>>
 -> Go upstairs. #line:37a127
     PLAYER: Sorry, I need to go do something. #line:89a047
     MR. ORANGE: Oh, that's fine. You must be busy. Sorry for bothering you. #line:87ee1a
-    <<chara("void")>>
+    <<chara(0, "void")>>
     You climb the stairs back to your room. #line:e0ff13
     <<nextDaytime()>>
-    ... #line:d2b6d1
     <<bgTransition(4)>>
-    ... #line:31a5e0
     <<jump Night>>
 ===
 
@@ -252,7 +236,7 @@ Although the beginning of the day was hectic, it was relatively calm in the end.
 You try to start organizing the things scattered around the room. #line:2960cb
 PLAYER: (The least I can do is start tomorrow a little more organized than today!) #line:7d40d7
 You're in the middle of organizing your things when Caru enters the room. #line:a1a842
-<<chara("caru")>>
+<<chara(0, "neutral", "caru")>>
 His eyes are red, and he has a little smile on his lips. #line:912d08
 PLAYER: Hey, what's up! #line:354f1c
 CARU: Trying to tidy up your stuff? #line:18acf1
@@ -290,10 +274,9 @@ CARU: I hope my good sides make up for my faults. #line:642ce2
 PLAYER: Considering how much you've helped me already, your approval ratings are through the roof! #line:0840ac
 CARU: Great, I'll keep it that way, alright? #line:bbc53a
 PLAYER: Yes, sir! #line:a6f2ec
-<<chara("void")>>
+<<chara(0, "void")>>
 Caru continues to complain about the Statistics teachers to you. #line:8b4c72
 And you share a bit about how Professor Fern seems to be a peculiar professor. #line:ff0c31
 Soon, you both start feeling tired and prepare to sleep. #line:8641ba
 <<backTitle()>>
 ===
-                       
