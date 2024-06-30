@@ -66,35 +66,54 @@ function BackgroundSetIndex(_index) {
 	}
 }
 
-// Function to put character on screen
-function CharacterOnScreen(_name, _position = 0) {
-    // Ensure the position is valid (0, 1, or 2)
-    if (_position >= 0 && _position < array_length(obj_characters.chara)) {
-        // Set the character sprite based on the provided name and position
-		if (_name == "void") {
-			obj_characters.chara[_position] = spr_noone;
-		}
-		else {
-			// Default character sprite
-			obj_characters.chara[_position] = global.chara[$ _name].expressions.neutral;
-		}
-    } else {
-        show_debug_message("Invalid position: " + string(_position));
+// Function to manage the characters on the screen
+function CharacterOnScreen(_position = 0, _name_or_expression = "", _name = "") {
+    // Validate position
+    if (_position < 0 || _position > 2) {
+        show_debug_message("(ERROR) Invalid position: " + string(_position));
+        return false;
     }
+
+    // Handle "void" case
+    if (_name_or_expression == "void") {
+        obj_characters.charaExpression[_position] = spr_noone;
+        return true;
+    }
+
+    var character, expression;
+    
+    // Determine if the input is for clearing or setting character
+    if (_name == "") {
+        // If no _name is provided, last character is kept
+        character = obj_characters.chara[_position];
+        expression = _name_or_expression;
+    } else {
+        // If _name is provided, character is replaced
+        character = global.chara[$ _name];
+        expression = _name_or_expression; 
+    }
+
+    // Validate character
+    if (character == noone || character == undefined) {
+        show_debug_message("(ERROR) Character not defined: " + string(character));
+        return false;
+    }
+
+    // Get the sprite index for the given expression
+    var spriteAsset = character.expressions[$ expression];
+
+    // Validate sprite asset
+    if (spriteAsset == undefined) {
+        show_debug_message("(ERROR) Expression not found: " + expression);
+        return false;
+    }
+
+    // Set the character's sprite and expression at the given position
+    obj_characters.chara[_position] = character;
+    obj_characters.charaExpression[_position] = spriteAsset;
+    return true;
 }
 
-// Function to choose a character's expression to be displayed
-function CharacterExpressionOnScreen(_num, _position = 0) {
-	// (TO-DO) Make switch case to convert numbers to character name strings to help the writers
-	/*
-	switch() {
-		case "neutral":
-	
-		break;
-	}
-	*/
-	obj_characters.charactersExpression[_position] = _num;
-}
 
 /// Use time sources to make the dialogue wait. 
 /// Useful when running an animation, a transition or showing a cutscene. 

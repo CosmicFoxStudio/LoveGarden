@@ -150,8 +150,7 @@ ChatterboxAddFunction("addAction", AddAction);				    				// Adds a certain numb
 ChatterboxAddFunction("assignRoute", RouteAssign);								// Assign a character route
 ChatterboxAddFunction("backTitle", BackToTitle);			    				// Goes back to the title screen and changes game state
 ChatterboxAddFunction("bg", BackgroundSetIndex);								// Function to change background
-ChatterboxAddFunction("chara", CharacterOnScreen);								// Function to draw character
-ChatterboxAddFunction("emotion", CharacterExpressionOnScreen);					// Function to change character expression
+ChatterboxAddFunction("chara", CharacterOnScreen);								// Function to draw a character
 ChatterboxAddFunction("dialogueWait", DialogueWait);							// Makes the textbox wait for x seconds
 ChatterboxAddFunction("save", SaveGame);										// Calls the save script from inside a yarn file
 ChatterboxAddFunction("changeRelationship", ChangeRelationship)					// Adds or removes hearts to romanceable characters relationship bars

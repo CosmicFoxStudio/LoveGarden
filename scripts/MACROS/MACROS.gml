@@ -1,5 +1,5 @@
 // Debugging
-#macro DEBUGGING false
+#macro DEBUGGING true
 
 // Dimensions and Coordinates
 #macro SCREEN_WIDTH 640

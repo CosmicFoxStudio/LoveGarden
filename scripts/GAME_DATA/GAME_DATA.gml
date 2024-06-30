@@ -46,7 +46,7 @@ global.emotions[e_chara.FERN] = [
 "neutral", "confused", "disappointed", "happy", "surprise"
 ];
 global.emotions[e_chara.ORANGE] = [
-"neutral", "serious", "serious_talk", "up", "surprise"
+"neutral", "serious", "serious-talk", "up", "surprise"
 ];
 
 // Character Constructor

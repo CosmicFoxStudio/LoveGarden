@@ -9,15 +9,15 @@ function SaveGame() {
 	if (global.gameMode == e_gameMode.TEASER) return;
 	
 	var saveStruct = {
-		playerName: global.playerName,
-		playerPronouns: global.pronouns,
-		playerHearts: global.my_hearts,
+		name: global.playerName,
+		pronouns: global.pronouns,
 		place: global.location,
 		daytime: global.currentDaytime,
 		day: global.day,
-		gameFlags: global.flags, 
+		flags: global.flags, 
 		actions: global.actions,
 		hearts: {
+			mc: global.my_hearts,
 			ipe: global.chara.ipe.hearts, 
 			caru: global.chara.caru.hearts,
 			carna: global.chara.carna.hearts,
@@ -56,15 +56,16 @@ function LoadGame() {
 		var struct = json_parse(json);
 		
 		// Update saved data
-		global.playerName = struct.playerName; 
-		global.pronouns = struct.playerPronouns;
-		global.my_hearts = struct.playerHearts;
+		global.playerName = struct.name; 
+		global.pronouns = struct.pronouns;
+		global.my_hearts = struct.hearts;
 		global.location = struct.place;
 		global.currentDaytime = struct.daytime;
 		global.day = struct.day;
-		global.flags = struct.gameFlags;
+		global.flags = struct.flags;
 		global.actions = struct.actions;
 		// Update Hearts
+		global.my_hearts = struct.hearts.mc;
 		global.chara.ipe.hearts = struct.hearts.ipe;
 		global.chara.caru.hearts = struct.hearts.caru;
 		global.chara.carna.hearts = struct.hearts.carna;

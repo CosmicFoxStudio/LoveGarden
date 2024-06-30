@@ -39,14 +39,17 @@ enum e_gameStates {
 }
 	
 enum e_chara {
-	MAPLE,	// 0
-	IPE,	// 1
-	CARU,	// 2
-	CARNA,	// 3
-	ROSE,	// 4
-	HYDRA,	// 5
-	FERN,	// 6
-	ORANGE
+	MAPLE,		// 0
+	IPE,		// 1
+	CARU,		// 2
+	CARNA,		// 3
+	ROSE,		// 4
+	HYDRA,		// 5
+	FERN,		// 6
+	ORANGE,		// 7
+	// ELAN,	// 8
+	// CALI,	// 9
+	// LOBO,	// 10
 }
 
 enum e_btnTypes {

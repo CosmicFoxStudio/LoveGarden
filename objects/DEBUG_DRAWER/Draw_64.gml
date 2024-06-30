@@ -165,7 +165,10 @@ if (global.debug) {
 		}
 		if (instance_exists(obj_characters)) {
 			array_push(dialogueDebugStrings, 
-				"Speaker: " + obj_characters.currentSpeaker
+				"Speaker: " + obj_characters.currentSpeaker,
+				"Character0: " + string(obj_characters.chara[0]),
+				"Character1: " + string(obj_characters.chara[1]),
+				"Character2: " + string(obj_characters.chara[2])
 			);
 		}
 
