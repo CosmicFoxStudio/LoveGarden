@@ -1,4 +1,4 @@
-global.gameMode = e_gameMode.DEMO;
+global.gameMode = e_gameMode.RELEASE;
 global.state = e_gameStates.TITLE_SCREEN;
 global.statePrevious = global.state;
 global.chara = {};

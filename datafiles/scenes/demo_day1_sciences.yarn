@@ -40,7 +40,7 @@ PLAYER: Sorry! I didn't mean to scare you! #line:c102eb
 <<chara(0, "neutral")>>
 PLAYER: Hum? Ok. Er... So. Are you looking for your class? #line:e52624
 <<chara(0, "sidelook")>>
-???: Yes... But this place is ...Huge. #line:ba29bf
+???: Yes... But this place is huge. #line:ba29bf
 <<chara(0, "surprise")>>
 PLAYER: Yeah, I'm a bit lost too. #line:7a74e1
 PLAYER: By the way, my name is PLAYER. What about you? #line:91232a
@@ -137,7 +137,7 @@ You look back at the professor, trying to draw your own conclusions. #line:c99b2
 FERN: PLAYER and Ipe! #line:daff2f 
 You startle when Professor Fern's voice echoes through the classroom. #line:fc6dd7 
 You immediately raise your hand. #line:617639
-FERN: You two will be working on the theme ''Animals of the Plantae Kingdom''". #line:824c59
+FERN: You two will be working on the theme ''Animals of the Plantae Kingdom''. #line:824c59
 <<if (getRelationship("carna") >= 1)>>
 	<<chara(0, "surprise-down", "carna")>>
 	CARNA: Wow! You took the best theme! #line:a69dbf 
@@ -206,4 +206,4 @@ They nod in agreement, looking hesitant. #line:37234f
 You say goodbye as you leave the room. #line:789b5e
 <<nextDaytime()>>
 <<nextRoom("rm_central")>>
-===
+===    

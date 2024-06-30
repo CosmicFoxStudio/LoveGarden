@@ -43,7 +43,7 @@ PLAYER: Sorry! I didn't mean to scare you! #line:57f3e7
 <<chara(0, "neutral")>>
 PLAYER: Huh? Okay. So, are you looking for your classroom? #line:50e0f2
 <<chara(0, "sidelook")>>
-???: Yes... But this place is ...Huge. #line:24a91b
+???: Yes... But this place is huge. #line:24a91b
 <<chara(0, "surprise")>>
 PLAYER: Yeah, I'm a bit lost too. #line:efbc84
 PLAYER: I'm PLAYER, by the way! #line:7fa4b1
