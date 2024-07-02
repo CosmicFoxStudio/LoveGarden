@@ -1,0 +1,22 @@
+title: Morning
+---
+<<jump Test>>
+===
+
+title: Noon
+---
+===
+
+title: Afternoon
+---
+===
+
+title: Night
+---
+<<jump Test>>
+===
+
+title: Test
+---
+Hello world!
+===

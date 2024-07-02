@@ -5,7 +5,7 @@ draw_set_color(c_white);
 DrawAlign(fa_center, fa_top);
 
 // Typist flow control
-TypistCheckPause();
+TypistCheckPause(typist);
 
 /* 
 Find how many characters are on each page and store that number in the "textLength" variable.

@@ -294,6 +294,6 @@ PLAYER: Yes, sir! #line:a6f2ec
 Caru continues to complain about the Statistics teachers to you. #line:8b4c72
 And you share a bit about how Professor Fern seems to be a peculiar professor. #line:ff0c31
 Soon, you both start feeling tired and prepare to sleep. #line:8641ba
-<<backTitle()>>
+<<nextDay()>>
 ===
                        

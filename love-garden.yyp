@@ -110,6 +110,7 @@
     {"$GMIncludedFile":"","%Name":"main_day1_boat.yarn","CopyToMask":-1,"filePath":"datafiles/scenes","name":"main_day1_boat.yarn","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"main_day1_dormitory.yarn","CopyToMask":-1,"filePath":"datafiles/scenes","name":"main_day1_dormitory.yarn","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"main_day1_sciences.yarn","CopyToMask":-1,"filePath":"datafiles/scenes","name":"main_day1_sciences.yarn","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"main_day2_dormitory.yarn","CopyToMask":-1,"filePath":"datafiles/scenes","name":"main_day2_dormitory.yarn","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"teaser.yarn","CopyToMask":-1,"filePath":"datafiles/scenes","name":"teaser.yarn","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
   ],
   "isEcma":false,

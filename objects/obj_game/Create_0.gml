@@ -8,7 +8,7 @@ total_audio_groups_loaded = 0;
 Enums();
 camera = -1;
 global.debug = false;
-global.gameMode = e_gameMode.DEMO;
+global.gameMode = e_gameMode.RELEASE;
 global.saveFileName = ConvertGameModeToSaveFileString();
 global.lastFontUsed = -1;
 global.dialogFonts = [
@@ -162,6 +162,7 @@ else {
 		// RELEASE MODE
 		ChatterboxLoadFromFile("scenes/main_day0_test.yarn");
 		ChatterboxLoadFromFile("scenes/main_day1_dormitory.yarn");
+		ChatterboxLoadFromFile("scenes/main_day2_dormitory.yarn");
 		ChatterboxLoadFromFile("scenes/main_day1_boat.yarn");
 		ChatterboxLoadFromFile("scenes/main_day1_sciences.yarn");
 	}
