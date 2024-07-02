@@ -19,19 +19,19 @@ function AddAction(_actionsToAdd = 1) {
 function RouteAssign(_SOName) {
 	switch (_SOName) {
 	    case "ipe":
-			global.routes[e_SO.IPE] = true;
+			global.routes[e_chara.IPE] = true;
 	    break;
 	    case "caru":
-			global.routes[e_SO.CARU] = true;
+			global.routes[e_chara.CARU] = true;
+	    break;
+		case "carna":
+			global.routes[e_chara.CARNA] = true;
 	    break;
 	    case "rose":
-			global.routes[e_SO.ROSE] = true;
-	    break;
-	    case "carna":
-			global.routes[e_SO.CARNA] = true;
+			global.routes[e_chara.ROSE] = true;
 	    break;
 	    case "hydra":
-			global.routes[e_SO.HYDRA] = true;
+			global.routes[e_chara.HYDRA] = true;
 	    break;
 	    default:
 	       show_debug_message("(ERROR) Incorrect SO name.");
@@ -66,21 +66,55 @@ function BackgroundSetIndex(_index) {
 	}
 }
 
-// Function to put character on screen
-function CharacterOnScreen(_name, _position = 0) {
-    // Set the character sprite based on the provided name and position
-	switch (_position) {
-		case 0: obj_characters.chara0 = global.characterSprites[$ _name]; break;
-		case 1: obj_characters.chara1 = global.characterSprites[$ _name]; break;
-		case 2: obj_characters.chara2 = global.characterSprites[$ _name]; break;
-		default: break;
-	}
+// Function to manage the characters on the screen
+function CharacterOnScreen(_position = 0, _name_or_expression = "", _name = "") {
+    // Validate position
+    if (_position < 0 || _position > 2) {
+        show_debug_message("(ERROR) Invalid position: " + string(_position));
+        return false;
+    }
+
+    // Handle "void" case
+    if (_name_or_expression == "void") {
+		obj_characters.chara[_position] = noone;
+		obj_characters.charaExpression[_position] = spr_noone;
+		return true;
+    }
+
+    var character, expression;
+    
+    // Determine if the input is for clearing or setting character
+    if (_name == "") {
+        // If no _name is provided, last character is kept
+        character = obj_characters.chara[_position];
+        expression = _name_or_expression;
+    } else {
+        // If _name is provided, character is replaced
+        character = global.chara[$ _name];
+        expression = _name_or_expression; 
+    }
+
+    // Validate character
+    if (character == noone || character == undefined) {
+        show_debug_message("(ERROR) Character not defined: " + string(character));
+        return false;
+    }
+
+    // Get the sprite index for the given expression
+    var spriteAsset = character.expressions[$ expression];
+
+    // Validate sprite asset
+    if (spriteAsset == undefined) {
+        show_debug_message("(ERROR) Expression not found: " + expression);
+        return false;
+    }
+
+    // Set the character's sprite and expression at the given position
+    obj_characters.chara[_position] = character;
+    obj_characters.charaExpression[_position] = spriteAsset;
+    return true;
 }
 
-// Function to choose a character's expression to be displayed
-function CharacterExpressionOnScreen(_num, _position = 0) {
-	obj_characters.charactersExpression[_position] = _num;
-}
 
 /// Use time sources to make the dialogue wait. 
 /// Useful when running an animation, a transition or showing a cutscene. 
@@ -92,45 +126,45 @@ function DialogueWait(_seconds) {
 	
     show_debug_message("Waiting chatterbox for " + string(frames) + " frames...");
 	
-    time_source_start(time_source_create(time_source_game, frames, time_source_units_frames, function() {
+    time_source_start(time_source_create(time_source_game, frames, time_source_units_frames, function(_chatterbox) {
         show_debug_message("...continuing chatterbox!");
-        ChatterboxContinue(CHATTERBOX_CURRENT);
+        ChatterboxContinue(_chatterbox);
     },
     [CHATTERBOX_CURRENT]));
 }
 
 // Adds or removes hearts to romanceable characters relationship bars (and player for now)
-function ChangeRelationshipBar(_name, _value = 1) {
+function ChangeRelationship(_name, _value = 1) {
 	switch (_name) {
 	    case "player":
-			global.playerStats.hearts += _value;
-			if (global.playerStats.hearts > 8) global.playerStats.hearts = 8;
-			if (global.playerStats.hearts < -8) global.playerStats.hearts = -8;
+			global.my_hearts += _value;
+			if (global.my_hearts > 8) global.my_hearts = 8;
+			if (global.my_hearts < -8) global.my_hearts = -8;
 	    break;
 	    case "ipe":
-			global.NPCs[e_SO.IPE].hearts += _value;
-			if (global.NPCs[e_SO.IPE].hearts > 8) global.NPCs[e_SO.IPE].hearts = 8;
-			if (global.NPCs[e_SO.IPE].hearts < -8) global.NPCs[e_SO.IPE].hearts = -8;
+			global.chara.ipe.hearts += _value;
+			if (global.chara.ipe.hearts > 8) global.chara.ipe.hearts = 8;
+			if (global.chara.ipe.hearts < -8) global.chara.ipe.hearts = -8;
 	    break;
 	    case "caru":
-			global.NPCs[e_SO.CARU].hearts += _value;
-			if (global.NPCs[e_SO.CARU].hearts > 8) global.NPCs[e_SO.CARU].hearts = 8;
-			if (global.NPCs[e_SO.CARU].hearts < -8) global.NPCs[e_SO.CARU].hearts = -8;
-	    break;
-	    case "rose":
-			global.NPCs[e_SO.ROSE].hearts += _value;
-			if (global.NPCs[e_SO.ROSE].hearts > 8) global.NPCs[e_SO.ROSE].hearts = 8;
-			if (global.NPCs[e_SO.ROSE].hearts < -8) global.NPCs[e_SO.ROSE].hearts = -8;
+			global.chara.caru.hearts += _value;
+			if (global.chara.caru.hearts > 8) global.chara.caru.hearts = 8;
+			if (global.chara.caru.hearts < -8) global.chara.caru.hearts = -8;
 	    break;
 	    case "carna":
-			global.NPCs[e_SO.CARNA].hearts += _value;
-			if (global.NPCs[e_SO.CARNA].hearts > 8) global.NPCs[e_SO.CARNA].hearts = 8;
-			if (global.NPCs[e_SO.CARNA].hearts < -8) global.NPCs[e_SO.CARNA].hearts = -8;
+			global.chara.carna.hearts += _value;
+			if (global.chara.carna.hearts > 8) global.chara.carna.hearts = 8;
+			if (global.chara.carna.hearts < -8) global.chara.carna.hearts = -8;
+	    break;
+		case "rose":
+			global.chara.rose.hearts += _value;
+			if (global.chara.rose.hearts > 8) global.chara.rose.hearts = 8;
+			if (global.chara.rose.hearts < -8) global.chara.rose.hearts = -8;
 	    break;
 	    case "hydra":
-			global.NPCs[e_SO.HYDRA].hearts += _value;
-			if (global.NPCs[e_SO.HYDRA].hearts > 8) global.NPCs[e_SO.HYDRA].hearts = 8;
-			if (global.NPCs[e_SO.HYDRA].hearts < -8) global.NPCs[e_SO.HYDRA].hearts = -8;
+			global.chara.hydra.hearts += _value;
+			if (global.chara.hydra.hearts > 8) global.chara.hydra.hearts = 8;
+			if (global.chara.hydra.hearts < -8) global.chara.hydra.hearts = -8;
 	    break;
 	    default:
 	       show_debug_message("(ERROR) Incorrect name.");
@@ -139,25 +173,25 @@ function ChangeRelationshipBar(_name, _value = 1) {
 }
 
 // Checks relationship bars of romanceable characters (and player for now)
-function GetRelationshipBar(_name) {
+function GetRelationship(_name) {
 	switch (_name) {
 	    case "player":
-			return global.playerStats.hearts;
+			return global.my_hearts;
 	    break;
 	    case "ipe":
-			return global.NPCs[e_SO.IPE].hearts;
+			return global.chara.ipe.hearts;
 	    break;
 	    case "caru":
-			return global.NPCs[e_SO.CARU].hearts;
-	    break;
-	    case "rose":
-			return global.NPCs[e_SO.ROSE].hearts;
+			return global.chara.caru.hearts;
 	    break;
 	    case "carna":
-			return global.NPCs[e_SO.CARNA].hearts;
+			return global.chara.carna.hearts;
+	    break;		
+	    case "rose":
+			return global.chara.rose.hearts;
 	    break;
 	    case "hydra":
-			return global.NPCs[e_SO.HYDRA].hearts;
+			return global.chara.hydra.hearts;
 	    break;
 	    default:
 	       show_debug_message("(ERROR) Incorrect name.");
@@ -290,17 +324,18 @@ function InitialNode() {
 	}
 }
 
+// (TO-DO) The character who's not currently talking will be drawn with a grey overlay
 function GetCharacterColor(_sprite, _speaker) {
 	if (_speaker == "" || _speaker == "PLAYER" || _speaker == "???") return c_white;
-	else if ((_sprite == spr_ipe) && (_speaker == "IPE" || _speaker == "IPÊ")) return c_white;
-	else if ((_sprite == spr_caru) && (_speaker == "CARU" || _speaker == "CARU")) return c_white;
-	else if ((_sprite == spr_rose) && (_speaker == "ROSE" || _speaker == "ROSA")) return c_white;
-	else if ((_sprite == spr_carna) && (_speaker == "CARNA" || _speaker == "CRAVO")) return c_white;
-	else if ((_sprite == spr_hydra) && (_speaker == "HYDRANGEA" || _speaker == "HORTÊNSIA")) return c_white;
-	else if ((_sprite == spr_fern) && (_speaker == "FERN" || _speaker == "MAMBA")) return c_white;
-	else if ((_sprite == spr_orange) && (_speaker == "MR. ORANGE" || _speaker == "LARANJEIRA")) return c_white;
-	else if ((_sprite == spr_maple) && (_speaker == "MAPLE" || _speaker == "MAPLE")) return c_white;
-	else if ((_sprite == spr_noone) && (_speaker == "" || _speaker == "")) return c_white;
+	else if (_speaker == "IPE" || _speaker == "IPÊ") return c_white;
+	else if (_speaker == "CARU" || _speaker == "CARU") return c_white;
+	else if (_speaker == "ROSE" || _speaker == "ROSA") return c_white;
+	else if (_speaker == "CARNA" || _speaker == "CRAVO") return c_white;
+	else if (_speaker == "HYDRANGEA" || _speaker == "HORTÊNSIA") return c_white;
+	else if (_speaker == "FERN" || _speaker == "MAMBA") return c_white;
+	else if (_speaker == "MR. ORANGE" || _speaker == "LARANJEIRA") return c_white;
+	else if (_speaker == "MAPLE" || _speaker == "MAPLE") return c_white;
+	else if (_speaker == "" || _speaker == "") return c_white;
 	else return #808080;
 }
 

@@ -40,7 +40,7 @@ This repository hosts the game's alpha version **only**! For the old prototype, 
 ## Upcoming Updates
 Stay tuned for exciting updates and new content over the **next 3 months**, as our team is committed to refine Love Garden to version 1.0! 
 
-You can join our [Discord server](https://discord.gg/AJJX5Fvs) for more information and discussions about the game.
+You can join our [Discord server](https://discord.gg/ut62FCaeY6) for more information and discussions about the game.
 
 ---
 

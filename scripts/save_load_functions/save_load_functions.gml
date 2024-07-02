@@ -9,17 +9,23 @@ function SaveGame() {
 	if (global.gameMode == e_gameMode.TEASER) return;
 	
 	var saveStruct = {
-		playerName: global.playerName,
-		playerPronouns: global.pronouns,
-		playerStats: global.playerStats,
+		name: global.playerName,
+		pronouns: global.pronouns,
 		place: global.location,
 		daytime: global.currentDaytime,
-		story: global.progress,
 		day: global.day,
-		gameFlags: global.flags, 
-		npcs: global.NPCs,
-		actions: global.actions
+		flags: global.flags, 
+		actions: global.actions,
+		hearts: {
+			mc: global.my_hearts,
+			ipe: global.chara.ipe.hearts, 
+			caru: global.chara.caru.hearts,
+			carna: global.chara.carna.hearts,
+			rose: global.chara.rose.hearts,
+			hydra: global.chara.hydra.hearts
+		}
 	}
+	
 	var json = json_stringify(saveStruct); // 2nd argument 'true' to prettify
 	var file = file_text_open_write(global.saveFileName + "_" + string(global.saveSlot) + ".sav");
 	file_text_write_string(file, json);
@@ -50,16 +56,21 @@ function LoadGame() {
 		var struct = json_parse(json);
 		
 		// Update saved data
-		global.playerName = struct.playerName; 
-		global.pronouns = struct.playerPronouns;
-		global.playerStats = struct.playerStats;
+		global.playerName = struct.name; 
+		global.pronouns = struct.pronouns;
+		global.my_hearts = struct.hearts;
 		global.location = struct.place;
 		global.currentDaytime = struct.daytime;
-		global.progress = struct.story;
 		global.day = struct.day;
-		global.flags = struct.gameFlags;
-		global.NPCs = struct.npcs;
+		global.flags = struct.flags;
 		global.actions = struct.actions;
+		// Update Hearts
+		global.my_hearts = struct.hearts.mc;
+		global.chara.ipe.hearts = struct.hearts.ipe;
+		global.chara.caru.hearts = struct.hearts.caru;
+		global.chara.carna.hearts = struct.hearts.carna;
+		global.chara.rose.hearts = struct.hearts.rose;
+		global.chara.hydra.hearts = struct.hearts.hydra;
 		
 		file_text_close(file);
 	}
