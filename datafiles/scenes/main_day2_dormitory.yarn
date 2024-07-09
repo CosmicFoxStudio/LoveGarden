@@ -1,22 +1,290 @@
 title: Morning
+position: -456,-310
 ---
-<<jump Test>>
+<<jump WakeUpCall>>
 ===
 
 title: Noon
+position: -234,-310
 ---
 ===
 
 title: Afternoon
+position: -14,-312
 ---
+<<jump Intrusion>>
 ===
 
 title: Night
+position: 338,-304
 ---
-<<jump Test>>
+<<jump Roommates>>
 ===
 
-title: Test
+title: WakeUpCall
+position: -451,202
 ---
-Hello world!
+<<bg(0)>>
+<<chara(0, "void")>>
+Your eyes blink slowly, you feel the sun shining in your face.
+You turn your head and look at the clock on the side of your bed.
+You've woken up a few minutes before your alarm went off.
+It doesn't take long to pack your things, only checking if all your materials are in the bag and choosing what to wear.
+After several minutes of slow functioning typical of someone who just woke up, you realize something unusual.
+The silence and lack of a certain presence by the morning.
+You look at the bed on the other side of the room, noticing that your roommate is still in a deep sleep.
+You don't really know if he has classes in the morning...
+What do you want to do?
+What do you want to do?
+-> Try to wake Caru up.
+	It's better to make sure he doesn't need to be somewhere else. 
+	After all, if he doesn't have anything, he can go back to sleep.
+	You poke Caru a few times, he moves but doesn't wake up.
+	You push him a little and he finally opens his eyes, kinda groggy.
+	<<chara(0, "disappointed", "caru")>>
+	CARU: PLAYER? 
+	CARU: (yawning) What gives?
+	PLAYER: Hey, It's almost 7 o'clock. Don't you have class in the first shift?
+	<<chara(0, "neutral")>>
+	CARU: I won't fall for that, PLAYER
+	He turns in the bed, covering himself.
+	PLAYER: I'm not kidding! 
+	PLAYER: Seriously Caru, if you have classes it's better to prepare yourself now to guarantee that you won't miss it.
+	CARU: What's the day today again?
+	PLAYER: The second day of class?
+	<<chara(0, "surprised")>>
+	CARU: Daaaaaaamn... I have class in half an hour!
+	He throws the blanket away, almost jumping off the bed.
+	PLAYER: Wow, it doesn't even feel like you were dying two seconds ago.
+	<<chara(0, "happy")>>
+	CARU: I need to get up like that or else I just don't, haha!
+	<<chara(0, "void")>>
+	While Caru continues to prepare himself, you start walking out of the bedroom, giving him more space.
+-> Let Caru sleep.
+	(YOU WON A BONUS ACTION! [spr_action])[snd_click1]
+	If he needed to wake up early he would have set up an alarm.
+	It's better to let him rest, especially with how stressful his graduation is.
+<<jump WhatsUpGirl>>
+===
+
+title: WhatsUpGirl
+position: 182,-478
+---
+<<bg(1)>>
+<<chara(0, "void")>>
+You were just getting out of your room when suddenly someone bumped hard into you, almost knocking you down. 
+<<chara(0, "neutral-left", "hydra")>>
+<<if getFlag("met_hydra", true)>>
+	PLAYER: It's the girl from before...
+<<endif>>
+PLAYER: Whoa- 
+She seems in a rush, almost running to the end of the hallway. 
+PLAYER: ... Hey! 
+<<chara(0, "void")>>
+You question yourself for a second if you are not late. 
+In the middle of the rush she doesn't realize she let a paper fall. 
+You get down and grab the paper. 
+It's a really beautiful and detailed drawing of the side of the central building of the university. 
+It was made by pencil, so you take it carefully not to smudge it. 
+On the side of the paper is her signature - ''Hydrangea''. 
+PLAYER: (Hydrangea... I think I have to give you back your drawing...) 
+You store the drawing with caution in one of your folders in your backpack. 
+You hear the sound of the boat approaching in the distance and quickly hurry downstairs, determined not to miss the trip. 
+<<nextRoom("rm_sciences")>>
+===
+
+title: Intrusion
+position: -14,199
+---
+<<bg(2)>>
+<<chara(0, "neutral", "ipe")>>
+You and Ipe arrive together at the dormitory.
+<<chara(0, "neutral", "orange")>>
+You wave to Mr. Orange.
+<<bgTransition(1)>>
+<<chara(0, "neutral", "ipe")>>
+You walk through the corridor in awkward silence, but soon you both enter your room.
+<<bgTransition(0)>>
+Your side of the room is a little messy.
+You feel your face warm up a little, but you turn to Ipe with a smile.
+PLAYER: Okay, It's time to deal with your mother's assignment.
+You move some stuff to open space for both of you to fit at your desk, borrowing Caru's chair.
+PLAYER: Make yourself at home.
+Ipe sits on one of the chairs, clearly uncomfortable, keeping their hands on their lap.
+PLAYER: Okay, so your flower is an orchid, right? 
+You get your tablet to open the e-book from Elan's subject while Ipe carefully takes out their flower from the bag.
+You read through the book searching for the page about orchids while checking the flower on the table.
+PLAYER: Seems like orchids are really kinda complex...
+IPE: Ugh, what did I get myself into?
+PLAYER: Don't panic. The book has very detailed illustrations so if we can associate it with the real orchid it's gonna work, right?
+IPE: I... guess? She was not very clear on how she wanted us to do that...
+Before you could even progress much in your work, you hear the door opening.
+<<chara(0, "sidelook", "ipe")>>
+<<chara(1, "serious", "caru")>>
+It looks like Caru decided to get back earlier.
+Caru's eyes are slightly red and not the same way as last night.
+You feel Ipe tense up by your side while Caru stands by the door, looking at you.
+<<chara(1, "surprised")>>
+CARU: Da hell is this? 
+PLAYER: Oh, Caru? You arrived early!
+<<chara(1, "angry")>>
+CARU: I thought we had agreed on noticing each other before we brought someone here...
+PLAYER: I thought this was for like... dates and stuff?
+<<chara(0, "awkward")>>
+<<chara(1, "serious")>>
+Caru rubs his hair, a little embarrassed.
+Ipe is clearly nervous beside you, looking down to avoid making eye contact.
+IPE: I-I can leave. S...sorry for anything...
+<<chara(0, "neutral")>>
+Ipe started to get up, but stops when Caru raises his hand.
+<<chara(1, "neutral")>>
+CARU: No, relax, y'all stay here and sort yourselves out.
+He doesn't look so relaxed with the idea.
+He doesn't look so relaxed with the idea.
+-> Are you sure it's fine?
+	<<changeRelationship("caru", -1)>>
+	PLAYER: Are you sure it's fine?
+	PLAYER: It's your room too... and I was the one at fault.
+	<<chara(1, "smug")>>
+	CARU: At least you know that.
+	<<chara(1, "neutral-talking")>>
+	CARU: I'm gonna take a walk.
+	CARU: Until then, I hope you have finished that project of yours.
+-> Thanks, Caru! I swear I'm going to let you know next time!
+	PLAYER: Thanks, Caru! I promise I'm going to let you know next time!
+	PLAYER:  I swear I just misunderstood the deal.
+	<<chara(1, "smug")>>
+	CARU: I'm going to get even with you, hm.
+	PLAYER: Don't even think about it!
+	CARU: I'm gonna go for a walk and you can finish that project of yours.
+<<chara(1, "neutral")>>
+CARU: See ya later, PLAYER.
+<<chara(1, "void")>>
+<<chara(0, "neutral", "ipe")>>
+Caru turns and leaves the room. You then turn back to Ipe, who's very flustered.
+PLAYER: Sorry about the confusion.
+<<chara(0, "surprised", "ipe")>>
+IPE: I-it's alright...
+<<chara(0, "sidelook", "ipe")>>
+IPE: [wave]Actually[/wave]... I already know how to finish this assignment alone...
+PLAYER: You sure? We barely started!
+<<chara(0, "neutral", "ipe")>>
+IPE: Y-yes... My mother always said it's important to be independent.
+IPE: It wouldn't be fair to you to have you do my assignment...
+PLAYER: Oh, but it's not like that!
+IPE: You still need to do yours too, right?
+PLAYER: Yes, but daisies are way easier.
+IPE: I'd better stay out of the way then.
+They stand up, heading to the exit of the room.
+PLAYER: Huh? Ipe, wai- [snd_door]
+<<chara(0, "void")>>
+They leave before you could react properly.
+PLAYER: (sighs) Well, that's more complicated than I thought it would be...
+PLAYER: The only thing left is doing Professor Ipe's assignment then.
+<<setFlag("caru_upset", true)>>
+<<jump Roommates>>
+===
+
+title: Roommates
+position: 333,201
+---
+<<chara(0, "void")>>
+After spending several hours working hard on Professor Ipe's assignment, you finally finish it. 
+You start preparing your things for tomorrow, organizing the materials you'll need for the day. 
+After all the effort put into finishing this assignment, the last thing you would want is to forget it at home. 
+<<chara(0, "serious", "caru")>>
+As you're wrapping up, Caru enters the room. 
+PLAYER: Oh, you came back late! 
+CARU: Ah, yes, I was busy. 
+PLAYER: No problem! It's just uncommon. You usually get back before me.
+<<chara(0, "neutral-talking")>>
+CARU: Missing me that much, huh? You were feeling lonely without me around?
+He leans on you, making his weight felt.
+-> Maybe it was something like that.
+	<<changeRelationship("caru", 1)>>
+	PLAYER: Maybe a little... I was thinking a little about what happened this afternoon.
+-> Not exactly.
+	<<changeRelationship("caru", -1)>>
+	PLAYER: (rolling eyes) Not a bit! I actually enjoyed the silence while doing my assignment.
+	<<chara(0, "neutral talking")>>
+	CARU: Oh, c'mon, it's a fair trade! Especially after today's surprise.
+<<if getFlag("caru_upset")>>
+	<<chara(0, "neutral")>>
+PLAYER: I swear it wasn't on purpose.
+PLAYER: The Plant Anatomy teacher gave us an urgent assignment, and I thought it would be better if we worked on it together...
+Caru is much calmer than when he left earlier today.
+<<chara(0, "neutral-talking")>>
+CARU: A tough assignment on the second day? Sounds like my major.
+PLAYER: Yeah, exactly. But really, I'm sorry.
+PLAYER: You not only have to deal with my mess but also with surprises like that.
+<<chara(0, "serious")>>
+CARU: I won't say it wasn't a mistake... I can't go this easy on you.
+<<chara(0, "neutral")>>
+CARU: But as long as you don't do it again, it will be fine.
+PLAYER: But hey, what kept your so busy that you didn't even mind getting kicked out of your own room?
+<<else>>
+	<<chara("happy", 0)>>
+CARU: Oh, c'mon, it's a fair trade! you deal with my noise and I deal with your mess...
+PLAYER: I swear this is organized chaos. I know where everything is... 
+<<chara("neutral-talking", 0)>>
+CARU: So, if I asked you for scissors right now? 
+CARU: So, if I asked you for scissors right now?
+-> I know exactly where they are!
+	<<changeRelationship("caru", 1)>>
+PLAYER: Ha! They're in the case inside my bag!
+You pull out the case from your backpack, wanting to prove the scissors are there.
+... But they're not. 
+<<chara(0, "smug")>>
+CARU: HAHAHA! You should see your face!
+<<chara(0, "neutral-talking")>>
+CARU: I borrowed them last week, remember? 
+<<chara(0, "neutral")>>
+CARU: Here, put them away. 
+He hands you the scissors and you put them back on the case.
+-> I don't know where they are.
+PLAYER: Oh... This one is tough.
+<<chara(0, "smug")>>
+CARU: Oh, come on, don't play coy now. You always have something up your sleeve.
+PLAYER: No. I have no idea what you're talking about this time.
+<<chara(0, "surprised")>>
+CARU: Hmm... You sure you're not just messing with me for once?
+<<chara(0, "neutral")>>
+PLAYER: I really don't... In fact, I've been missing those scissors for a while...
+<<chara(0, "surprised")>>
+CARU: Well, yeah. Because I borrowed them last week! Don't you remember? 
+PLAYER: Oooh... That's right! Now I remembered!
+<<chara(0, "serious")>>
+CARU: Oh, dude. You and your forgetfulness...
+<<chara(0, "neutral")>>
+CARU: Here, put them away. 
+<<chara(0, "neutral-talking")>>
+PLAYER: You love to see me falling for these pranks, don't you? 
+<<chara(0, "smug")>>
+CARU: Obviously. It's not my fault your reactions are always funny. 
+<<chara(0, "neutral")>>
+PLAYER: But hey, what kept you for so long that you couldn't enlighten me with your presence?
+<<endif>>
+<<chara(0, "neutral-talking")>>
+CARU: Oh, I'm working on a certain project with my professor. It's quite demanding.
+PLAYER: Oh yeah? Who is it?
+<<chara(0, "neutral")>>
+CARU: Her name is Caliandra... 
+CARU: She's literally the most badass woman I've ever met. 
+<<chara(0, "surprised")>>
+CARU: I was so lucky she accepted me as her student... 
+<<if (getRelationship("caru") > 4) >>
+PLAYER: Hey, she's the lucky one to have you as a student! 
+<<chara("happy", 0)>>
+CARU: Thanks, PLAYER. I really appreciate that.
+<<endif>>
+<<chara(0, "neutral")>>
+PLAYER: You speak so badly about your major, so it's really good that you found something you like.
+PLAYER: Maybe she'll even help you with your final assignment. That would make your life easier, right?
+<<chara(0, "sad")>>
+CARU: Yeah. Something like that...
+PLAYER: Everything will be fine, Caru!
+<<chara(0, "neutral")>>
+You give him a thumbs up as he walks away to organize his things.
+Meanwhile, you take a look at your social media. It doesn't take long until you really fall asleep.
+<<backTitle()>>
 ===

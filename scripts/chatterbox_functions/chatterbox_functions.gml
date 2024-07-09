@@ -213,7 +213,7 @@ function NextDaytime(_manual = 0) {
 			case e_daytime.MORNING: global.currentDaytime = e_daytime.NOON; break;
 			case e_daytime.NOON: global.currentDaytime = e_daytime.AFTERNOON; break;
 			case e_daytime.AFTERNOON: global.currentDaytime = e_daytime.NIGHT; break;
-			case e_daytime.NIGHT: break;
+			case e_daytime.NIGHT: global.currentDaytime = e_daytime.MORNING; break;
 			default: break;
 		}
 	}
