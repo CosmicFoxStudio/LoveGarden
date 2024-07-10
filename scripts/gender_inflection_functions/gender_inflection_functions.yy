@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"gender_inflection_functions",
   "isCompatibility":false,
   "isDnD":false,

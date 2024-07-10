@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"ChatterboxVariablesClearVisitedAll",
   "isCompatibility":false,
   "isDnD":false,

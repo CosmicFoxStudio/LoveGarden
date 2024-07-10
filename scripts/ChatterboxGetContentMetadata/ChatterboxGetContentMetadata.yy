@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"ChatterboxGetContentMetadata",
   "isCompatibility":false,
   "isDnD":false,
