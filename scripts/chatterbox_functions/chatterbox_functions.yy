@@ -1,5 +1,5 @@
 {
-  "$GMScript":"v1",
+  "$GMScript":"",
   "%Name":"chatterbox_functions",
   "isCompatibility":false,
   "isDnD":false,

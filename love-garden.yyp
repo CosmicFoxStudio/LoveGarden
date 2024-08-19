@@ -118,7 +118,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.6.1.160",
+    "IDEVersion":"2024.4.1.152",
   },
   "name":"love-garden",
   "resources":[
@@ -188,6 +188,7 @@
     {"id":{"name":"rm_logo","path":"rooms/rm_logo/rm_logo.yy",},},
     {"id":{"name":"rm_map","path":"rooms/rm_map/rm_map.yy",},},
     {"id":{"name":"rm_sciences","path":"rooms/rm_sciences/rm_sciences.yy",},},
+    {"id":{"name":"rm_sleep","path":"rooms/rm_sleep/rm_sleep.yy",},},
     {"id":{"name":"rm_template","path":"rooms/rm_template/rm_template.yy",},},
     {"id":{"name":"rm_test","path":"rooms/rm_test/rm_test.yy",},},
     {"id":{"name":"rm_title","path":"rooms/rm_title/rm_title.yy",},},
@@ -608,6 +609,7 @@
     {"roomId":{"name":"rm_template","path":"rooms/rm_template/rm_template.yy",},},
     {"roomId":{"name":"rm_test","path":"rooms/rm_test/rm_test.yy",},},
     {"roomId":{"name":"rm_logo","path":"rooms/rm_logo/rm_logo.yy",},},
+    {"roomId":{"name":"rm_sleep","path":"rooms/rm_sleep/rm_sleep.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

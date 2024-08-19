@@ -203,6 +203,7 @@ function GetRelationship(_name) {
 function NextDay() {
 	global.day += 1;
 	global.currentDaytime = e_daytime.MORNING;
+	UpdateRoomYarnMap();
 }
 
 // Increments by 1 global.currentDaytime
@@ -311,6 +312,42 @@ function LoadDialogueFiles() {
 		fileCounter += 1;
 	}
 	file_find_close();
+}
+
+function UpdateRoomYarnMap() {
+	// Assign yarn files based on game mode
+	var yarnPrefix;
+	var dayPrefix = string(global.day);
+
+    // Initialize yarnPrefix based on game mode
+    switch (global.gameMode) {
+        case e_gameMode.DEMO:
+            yarnPrefix = "scenes/demo_";
+            global.roomYarnMap[? "rm_test"] = yarnPrefix + "day0_test.yarn";
+            global.roomYarnMap[? "rm_dormitory"] = yarnPrefix + "day1_dormitory.yarn";
+            global.roomYarnMap[? "rm_boat"] = yarnPrefix + "day1_boat.yarn";
+            global.roomYarnMap[? "rm_sciences"] = yarnPrefix + "day1_sciences.yarn";
+            global.roomYarnMap[? "rm_central"] = yarnPrefix + "day1_central.yarn";
+            break;
+
+        case e_gameMode.TEASER:
+            yarnPrefix = "scenes/teaser.yarn";
+            global.roomYarnMap[? "rm_dormitory"] = yarnPrefix;
+            global.roomYarnMap[? "rm_boat"] = yarnPrefix;
+            global.roomYarnMap[? "rm_sciences"] = yarnPrefix;
+            global.roomYarnMap[? "rm_central"] = yarnPrefix;
+            break;
+
+        case e_gameMode.RELEASE:
+        default:
+            yarnPrefix = "scenes/main_";
+            global.roomYarnMap[? "rm_test"] = yarnPrefix + "day0_test.yarn";
+            global.roomYarnMap[? "rm_dormitory"] = yarnPrefix + "day" + dayPrefix + "_dormitory.yarn";
+            global.roomYarnMap[? "rm_boat"] = yarnPrefix + "day" + dayPrefix + "_boat.yarn";
+            global.roomYarnMap[? "rm_sciences"] = yarnPrefix + "day" + dayPrefix + "_sciences.yarn";
+            global.roomYarnMap[? "rm_central"] = yarnPrefix + "day" + dayPrefix + "_central.yarn";
+            break;
+    }
 }
 
 // Function to get initial node based on daytime

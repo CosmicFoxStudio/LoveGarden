@@ -39,6 +39,7 @@
     {"name":"obj_map_controller","order":1,"path":"objects/obj_map_controller/obj_map_controller.yy",},
     {"name":"obj_parallax","order":1,"path":"objects/obj_parallax/obj_parallax.yy",},
     {"name":"rm_logo","order":1,"path":"rooms/rm_logo/rm_logo.yy",},
+    {"name":"rm_sleep","order":2,"path":"rooms/rm_sleep/rm_sleep.yy",},
     {"name":"btn_functions","order":17,"path":"scripts/btn_functions/btn_functions.yy",},
     {"name":"chatterbox_functions","order":4,"path":"scripts/chatterbox_functions/chatterbox_functions.yy",},
     {"name":"debug_functions","order":10,"path":"scripts/debug_functions/debug_functions.yy",},

@@ -101,6 +101,13 @@ global.viewHeight = global.res.height * global.res.scale;
 SetResolution();
 #endregion CAMERA
 
+// Creates the roomYarnMap data structure (to get node based on room)
+global.roomYarnMap = ds_map_create();
+
+// This DS needs to be updated everytime the day changes
+// For that, use: UpdateRoomYarnMap()
+UpdateRoomYarnMap();
+
 #region CHATTERBOX LOAD FILES
 global.dialogueList = [];
 	
@@ -108,13 +115,14 @@ if (os_browser == browser_not_a_browser) {
 	// Not in browser - Load the canon files dynamically
 	LoadDialogueFiles();
 	// Load Bonus Events
-	ChatterboxLoadFromFile("scenes/demo_day1_bonus.yarn");
+	
 }
 else {
 	// In browser - load files manually
 	if (global.gameMode == e_gameMode.DEMO) {
 		// DEMO MODE
 		ChatterboxLoadFromFile("scenes/demo_day0_test.yarn");
+		ChatterboxLoadFromFile("scenes/demo_day1_bonus.yarn");
 		ChatterboxLoadFromFile("scenes/demo_day1_dormitory.yarn");
 		ChatterboxLoadFromFile("scenes/demo_day1_boat.yarn");
 		ChatterboxLoadFromFile("scenes/demo_day1_sciences.yarn");
@@ -130,6 +138,7 @@ else {
 		ChatterboxLoadFromFile("scenes/main_day1_dormitory.yarn");
 		ChatterboxLoadFromFile("scenes/main_day1_boat.yarn");
 		ChatterboxLoadFromFile("scenes/main_day1_sciences.yarn");
+		ChatterboxLoadFromFile("scenes/main_day2_dormitory.yarn");
 	}
 }
 

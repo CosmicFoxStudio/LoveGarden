@@ -1,3 +1,4 @@
+// YOU CAN CHANGE THE VALUES IN THIS SCRIPT
 global.gameMode = e_gameMode.RELEASE;
 global.state = e_gameStates.TITLE_SCREEN;
 global.statePrevious = global.state;
@@ -91,45 +92,6 @@ struct_set(global.chara, "rose", new CharaDefinition(e_chara.ROSE, "rose", true)
 struct_set(global.chara, "hydra", new CharaDefinition(e_chara.HYDRA, "hydra", true));
 struct_set(global.chara, "fern", new CharaDefinition(e_chara.FERN, "fern"));
 struct_set(global.chara, "orange", new CharaDefinition(e_chara.ORANGE, "orange"));
-
-#region DECIDE ROOM SCENE
-
-// Data structure to get node based on room
-global.roomYarnMap = ds_map_create();
-
-// Assign yarn files based on game mode
-var yarnPrefix;
-var dayPrefix = string(global.day);
-
-switch (global.gameMode) {
-	case e_gameMode.DEMO:
-	    yarnPrefix = "scenes/demo_";
-	    global.roomYarnMap[? "rm_test"] = yarnPrefix + "day0_test.yarn";
-	    global.roomYarnMap[? "rm_dormitory"] = yarnPrefix + "day1_dormitory.yarn";
-	    global.roomYarnMap[? "rm_boat"] = yarnPrefix + "day1_boat.yarn";
-	    global.roomYarnMap[? "rm_sciences"] = yarnPrefix + "day1_sciences.yarn";
-	    global.roomYarnMap[? "rm_central"] = yarnPrefix + "day1_central.yarn";
-	    break;
-
-	case e_gameMode.TEASER:
-	    yarnPrefix = "scenes/teaser.yarn";
-	    global.roomYarnMap[? "rm_dormitory"] = yarnPrefix;
-	    global.roomYarnMap[? "rm_boat"] = yarnPrefix;
-	    global.roomYarnMap[? "rm_sciences"] = yarnPrefix;
-	    global.roomYarnMap[? "rm_central"] = yarnPrefix;
-	    break;
-
-	case e_gameMode.RELEASE:
-	default:
-	    yarnPrefix = "scenes/main_";
-	    global.roomYarnMap[? "rm_test"] = yarnPrefix + "day0_test.yarn";
-	    global.roomYarnMap[? "rm_dormitory"] = yarnPrefix + "day" + dayPrefix + "_dormitory.yarn";
-	    global.roomYarnMap[? "rm_boat"] = yarnPrefix + "day" + dayPrefix + "_boat.yarn";
-	    global.roomYarnMap[? "rm_sciences"] = yarnPrefix + "day" + dayPrefix + "_sciences.yarn";
-	    global.roomYarnMap[? "rm_central"] = yarnPrefix + "day" + dayPrefix + "_central.yarn";
-	    break;
-}
-#endregion DECIDE ROOM SCENE
 
 #region DECIDE ROOM BG
 global.roomBGMap = ds_map_create();

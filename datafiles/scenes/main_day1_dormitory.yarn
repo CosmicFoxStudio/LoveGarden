@@ -127,7 +127,6 @@ You only have to wait... What do you do now? #line:83d7e5
         Soon, the next boat starts to approach and you stand up to get inside. #line:52962f
 PLAYER: (Thank goodness everything worked out...) #line:c83b07
 You board the boat. #line:dc01da 
-<<save()>>
 <<nextRoom("rm_boat")>>
 ===
 
@@ -279,5 +278,6 @@ Caru continues to complain about the Statistics teachers to you. #line:8b4c72
 And you share a bit about how Professor Fern seems to be a peculiar professor. #line:ff0c31
 Soon, you both start feeling tired and prepare to sleep. #line:8641ba
 <<nextDay()>>
+<<nextRoom("rm_sleep")>>
 <<jump main_day2_dormitory.yarn:Morning>>
 ===
