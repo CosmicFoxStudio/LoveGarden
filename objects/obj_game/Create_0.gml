@@ -32,6 +32,7 @@ global.lastPlace = rm_init;
 
 // Localization Info
 global.lang = "en"; // "en", "pt"
+global.localization = {}; // See "LOCALI.gml"
 SetLanguage();
 ManageLocalization();
 

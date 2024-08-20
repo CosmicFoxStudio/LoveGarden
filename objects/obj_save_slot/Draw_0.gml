@@ -14,8 +14,13 @@ if (!file_exists(global.saveFileName + "_" + string(slotIndex) + ".sav")) {
 	DrawAlign(fa_center, fa_middle);
 			
 	// Draws only "EMPTY" or "NEW GAME"
-	if (global.newGame) draw_text(startX, yy, obj_save_load.saveText[e_saveSlotStats.LAST]);
-	else draw_text(startX, yy, obj_save_load.saveText[e_saveSlotStats.FIRST]);
+	var newgameText, continueText;
+	if (global.lang == "pt") newgameText = "NOVO JOGO";
+	else newgameText = "NEW GAME";
+	if (global.lang == "pt") continueText = "VAZIO";
+	else continueText = "EMPTY";
+	if (global.newGame) draw_text(startX, yy, newgameText);
+	else draw_text(startX, yy, continueText);
 	
 	//// Transparency effect
 	//if (!global.newGame) image_alpha = 0.5;
@@ -53,7 +58,7 @@ else {
 			
 			
 	// DATE
-	dateX = startX - 5;
+	dateX = startX + 20;
 	dateY = yy + 7;
 			
 	draw_set_halign(fa_center);
@@ -65,68 +70,59 @@ else {
 			
 			
 	// LOCATION
-	draw_set_halign(fa_right);
 	placeX = startX + 140;
 	placeY = yy + 11;
 			
 	draw_set_halign(fa_right);
 	draw_text(
 		placeX, placeY, 
-		PlaceLocalization(obj_save_load.saveSlotInfo[slotIndex, e_saveSlotStats.PLACE])
+		Localize("places", obj_save_load.saveSlotInfo[slotIndex, e_saveSlotStats.PLACE])
 	);
-			
 			
 	// DAYTIME
 	daytimeX = startX + 140;
 	daytimeY = yy - 3;
-			
-	draw_set_halign(fa_right);
-	DrawFont(fnt_dialogue);
-			
+
+	// Convert enumeration to string
 	switch (obj_save_load.saveSlotInfo[slotIndex, e_saveSlotStats.DAYTIME]) {
 		case e_daytime.MORNING:
-			draw_text(daytimeX, daytimeY, obj_save_load.saveText[1]);
+			
+			draw_text(daytimeX, daytimeY, Localize("daytime", "Morning"));
 		break;
 		case e_daytime.NOON:
-			draw_text(daytimeX, daytimeY, obj_save_load.saveText[2]);
+			draw_text(daytimeX, daytimeY, Localize("daytime", "Noon"));
 		break;
 		case e_daytime.AFTERNOON:
-			draw_text(daytimeX, daytimeY, obj_save_load.saveText[3]);
+			draw_text(daytimeX, daytimeY, Localize("daytime", "Afternoon"));
 		break;
 		case e_daytime.NIGHT:
-			draw_text(daytimeX, daytimeY, obj_save_load.saveText[4]);
-		break;
-		case e_daytime.DAWN:
-			draw_text(daytimeX, daytimeY, obj_save_load.saveText[5]);
+			draw_text(daytimeX, daytimeY, Localize("daytime", "Night"));
 		break;
 		default:
-			draw_text(daytimeX, daytimeY, obj_save_load.saveText[6]);
+			draw_text(daytimeX, daytimeY, Localize("daytime", "Dawn"));
 		break;
 	}
-			
+
 	// DAY
 	dayX = startX + 140;
 	dayY = yy - 23;
 			
-	draw_set_halign(fa_right);
 	DrawFont(fnt_menu);
 	draw_text(
 		dayX, dayY, 
-		obj_save_load.saveText[6] + " " + 
+		Localize("ui", "DAY") + " " + 
 		string(obj_save_load.saveSlotInfo[slotIndex, e_saveSlotStats.DAY])
 	);
-	DrawFont(fnt_dialogue);
 	
 	// LANG
-	langX = startX - 20;
+	langX = startX - 50;
 	langY = yy + 7;
 	
 	draw_set_halign(fa_center);
 	DrawFont(fnt_dialogue);
 	draw_text(
 		langX, langY,
-		obj_save_load.saveText[7] + " " + 
-		string(obj_save_load.saveSlotInfo[slotIndex, e_saveSlotStats.LANG])
+		"LANG:" + " " + string_upper(obj_save_load.saveSlotInfo[slotIndex, e_saveSlotStats.LANG])
 	);
 	
 	#endregion DRAW STATS

@@ -14,3 +14,5 @@ daytimeX = 0;
 daytimeY = 0;
 dayX = 0;
 dayY = 0;
+langX = 0;
+langY = 0;

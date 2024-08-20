@@ -25,8 +25,8 @@
   ],
   "name":"rm_dream",
   "parent":{
-    "name":"Scenes",
-    "path":"folders/Rooms/Scenes.yy",
+    "name":"Rooms",
+    "path":"folders/Rooms.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

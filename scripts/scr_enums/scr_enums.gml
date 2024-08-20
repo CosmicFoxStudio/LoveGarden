@@ -119,7 +119,6 @@ enum e_menuElementType {
 }
 
 enum e_saveSlotStats {
-	FIRST,
 	NAME,
 	DATE,
 	PLACE,

@@ -13,32 +13,6 @@ entryString = "";
 saveSlotArray = [];
 saveSlotAmount = 0;
 
-// Adding translation to save and load buttons
-switch (global.lang) {
-	case "en":
-		saveText[0] = "EMPTY";
-		saveText[1] = "Morning";
-		saveText[2] = "Noon";
-		saveText[3] = "Afternoon";
-		saveText[4] = "Night";
-		saveText[5] = "Dawn";
-		saveText[6] = "DAY";
-		saveText[7] = "EN";
-		saveText[8] = "EMPTY"; // "NEW GAME"
-		break;
-	case "pt":
-		saveText[0] = "VAZIO";
-		saveText[1] = "Manhã";
-		saveText[2] = "Meio-dia";
-		saveText[3] = "Tarde";
-		saveText[4] = "Noite";
-		saveText[5] = "Alvorada";
-		saveText[6] = "DIA";
-		saveText[7] = "PT";
-		saveText[8] = "VAZIO"; // "NOVO JOGO"
-		break;
-}
-
 // 3 slots
 for (var i = 0; i < 3; i++) {
 	// Default entries - Initializing the array

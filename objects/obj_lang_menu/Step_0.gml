@@ -123,14 +123,12 @@ if (selectedButton == "CONFIRM") {
 	// // Platform is a browser
 	if (os_browser != browser_not_a_browser || global.gameMode == e_gameMode.TEASER) {
 		
-		
 		// Skip file selection
 		GameTransitionChangeRoom(rm_dream, sq_trans_fade_white);
 	}
 	// Platform isn't a browser
 	else {
-		// Call a screen transition
-		var target = room_next(room);
-		GameTransitionChangeRoom(target, sq_trans_fade_white);
+		// Call a screen transition and goes to Title Screen
+		GameTransitionChangeRoom(rm_title, sq_trans_fade_white);
 	}
 }

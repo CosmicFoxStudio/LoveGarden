@@ -325,6 +325,7 @@
     {"id":{"name":"input_functions","path":"scripts/input_functions/input_functions.yy",},},
     {"id":{"name":"IsChatterbox","path":"scripts/IsChatterbox/IsChatterbox.yy",},},
     {"id":{"name":"lang_functions","path":"scripts/lang_functions/lang_functions.yy",},},
+    {"id":{"name":"LOCALI","path":"scripts/LOCALI/LOCALI.yy",},},
     {"id":{"name":"MACROS","path":"scripts/MACROS/MACROS.yy",},},
     {"id":{"name":"menu_functions","path":"scripts/menu_functions/menu_functions.yy",},},
     {"id":{"name":"save_load_functions","path":"scripts/save_load_functions/save_load_functions.yy",},},
@@ -600,6 +601,7 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"rm_init","path":"rooms/rm_init/rm_init.yy",},},
+    {"roomId":{"name":"rm_logo","path":"rooms/rm_logo/rm_logo.yy",},},
     {"roomId":{"name":"rm_lang","path":"rooms/rm_lang/rm_lang.yy",},},
     {"roomId":{"name":"rm_title","path":"rooms/rm_title/rm_title.yy",},},
     {"roomId":{"name":"rm_file_selection","path":"rooms/rm_file_selection/rm_file_selection.yy",},},
@@ -613,7 +615,6 @@
     {"roomId":{"name":"rm_map","path":"rooms/rm_map/rm_map.yy",},},
     {"roomId":{"name":"rm_template","path":"rooms/rm_template/rm_template.yy",},},
     {"roomId":{"name":"rm_test","path":"rooms/rm_test/rm_test.yy",},},
-    {"roomId":{"name":"rm_logo","path":"rooms/rm_logo/rm_logo.yy",},},
     {"roomId":{"name":"rm_sleep","path":"rooms/rm_sleep/rm_sleep.yy",},},
   ],
   "templateType":"game",

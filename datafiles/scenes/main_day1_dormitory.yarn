@@ -279,5 +279,4 @@ And you share a bit about how Professor Fern seems to be a peculiar professor. #
 Soon, you both start feeling tired and prepare to sleep. #line:8641ba
 <<nextDay()>>
 <<nextRoom("rm_sleep")>>
-<<jump main_day2_dormitory.yarn:Morning>>
 ===

@@ -46,30 +46,6 @@ function ManageLocalization() {
     }
 }
 
-// Switch place name on save based on language
-function PlaceLocalization(_savePlace) {
-	switch (global.lang) {
-	case "en":
-		return _savePlace;
-		break;
-	case "pt":
-		switch (_savePlace) {
-			case "Dormitory": return "Dormitório"; break;
-			case "Boat": return "Barco"; break;
-			case "Science Dept.": return "Dept. Ciências"; break;
-			case "Central Building": return "Pátio Central"; break;
-			case "Lake": return "Lago"; break;
-			case "Gazebo": return "Gazebo"; break;
-			case "Test Zone": return "Zona de Teste"; break;
-			default: return "Nenhum Lugar"; break;
-		}
-		break;
-	default:
-		return _savePlace;
-	}
-}
-
-
 // Menu elements localization
 function MenuLocalization(_menuWord) {
 	switch (global.lang) {
@@ -115,6 +91,21 @@ function DateLocalization(_saveDate) {
 	default:
 		return _saveDate;
 	}
+}
+
+// Switch place name on save based on global.localization data structure
+function Localize(category, key) {
+    var lang = global.lang;
+    var localizationData = global.localization[$ lang];
+    
+    if (localizationData && localizationData[$ category]) {
+        var localizedText = localizationData[$ category][$ key];
+        if (localizedText) {
+            return localizedText;
+        }
+    }
+    // Fallback if no translation is found
+    return key;
 }
 
 // Player creator elements localization
