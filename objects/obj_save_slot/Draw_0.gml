@@ -14,8 +14,8 @@ if (!file_exists(global.saveFileName + "_" + string(slotIndex) + ".sav")) {
 	DrawAlign(fa_center, fa_middle);
 			
 	// Draws only "EMPTY" or "NEW GAME"
-	if (global.newGame) draw_text(startX, yy, obj_save_load.saveText[7]);
-	else draw_text(startX, yy, obj_save_load.saveText[0]);
+	if (global.newGame) draw_text(startX, yy, obj_save_load.saveText[e_saveSlotStats.LAST]);
+	else draw_text(startX, yy, obj_save_load.saveText[e_saveSlotStats.FIRST]);
 	
 	//// Transparency effect
 	//if (!global.newGame) image_alpha = 0.5;
@@ -45,7 +45,10 @@ else {
 	// NAME
 	draw_set_halign(fa_center);
 	DrawFont(fnt_menu);
-	draw_text(startX - 5, yy - 17, obj_save_load.saveSlotInfo[slotIndex, e_saveSlotStats.NAME]);
+	draw_text(
+		startX - 5, yy - 17, 
+		obj_save_load.saveSlotInfo[slotIndex, e_saveSlotStats.NAME]
+	);
 	DrawFont(fnt_dialogue);
 			
 			
@@ -55,7 +58,10 @@ else {
 			
 	draw_set_halign(fa_center);
 	DrawFont(fnt_dialogue);
-	draw_text(dateX, dateY, DateLocalization(obj_save_load.saveSlotInfo[slotIndex, e_saveSlotStats.DATE]));
+	draw_text(
+		dateX, dateY, 
+		DateLocalization(obj_save_load.saveSlotInfo[slotIndex, e_saveSlotStats.DATE])
+	);
 			
 			
 	// LOCATION
@@ -64,7 +70,10 @@ else {
 	placeY = yy + 11;
 			
 	draw_set_halign(fa_right);
-	draw_text(placeX, placeY, PlaceLocalization(obj_save_load.saveSlotInfo[slotIndex, e_saveSlotStats.PLACE]));
+	draw_text(
+		placeX, placeY, 
+		PlaceLocalization(obj_save_load.saveSlotInfo[slotIndex, e_saveSlotStats.PLACE])
+	);
 			
 			
 	// DAYTIME
@@ -101,10 +110,27 @@ else {
 			
 	draw_set_halign(fa_right);
 	DrawFont(fnt_menu);
-	draw_text(dayX, dayY, obj_save_load.saveText[6] + " " + string(obj_save_load.saveSlotInfo[slotIndex, e_saveSlotStats.DAY]));
+	draw_text(
+		dayX, dayY, 
+		obj_save_load.saveText[6] + " " + 
+		string(obj_save_load.saveSlotInfo[slotIndex, e_saveSlotStats.DAY])
+	);
 	DrawFont(fnt_dialogue);
 	
+	// LANG
+	langX = startX - 20;
+	langY = yy + 7;
+	
+	draw_set_halign(fa_center);
+	DrawFont(fnt_dialogue);
+	draw_text(
+		langX, langY,
+		obj_save_load.saveText[7] + " " + 
+		string(obj_save_load.saveSlotInfo[slotIndex, e_saveSlotStats.LANG])
+	);
+	
 	#endregion DRAW STATS
+	
 }
 
 // Reset

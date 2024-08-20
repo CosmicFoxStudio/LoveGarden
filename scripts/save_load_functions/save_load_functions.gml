@@ -23,7 +23,8 @@ function SaveGame() {
 			carna: global.chara.carna.hearts,
 			rose: global.chara.rose.hearts,
 			hydra: global.chara.hydra.hearts
-		}
+		},
+		lang: global.lang,
 	}
 	
 	var json = json_stringify(saveStruct); // 2nd argument 'true' to prettify
@@ -32,7 +33,7 @@ function SaveGame() {
 	file_text_close(file);
 
 	/*
-		player_data format: "[slot]_[name]_[date]_[location]_[daytime]_[day]_" 
+		player_data format: "[slot]_[name]_[date]_[location]_[daytime]_[day]_[lang]_" 
 		This is just for displaying these values on the save slot
 		Since they're not recorded before the player loads the save
 	*/
@@ -41,12 +42,13 @@ function SaveGame() {
 				string(global.date) + "_" + 
 				string(global.location) + "_" + 
 				string(global.currentDaytime) + "_" + 
-				string(global.day) + "_";
+				string(global.day) + "_" +
+				string(global.lang) + "_"; 
 	
-	var statsFile;
-	statsFile = file_text_open_write("info_" + string(global.saveSlot) + ".sav");
-	file_text_write_string(statsFile, savedData);
-	file_text_close(statsFile);
+	var infoFile;
+	infoFile = file_text_open_write("info_" + string(global.saveSlot) + ".sav");
+	file_text_write_string(infoFile, savedData);
+	file_text_close(infoFile);
 }
 
 function LoadGame() {
@@ -64,6 +66,7 @@ function LoadGame() {
 		global.day = struct.day;
 		global.flags = struct.flags;
 		global.actions = struct.actions;
+		global.lang = struct.lang;
 		// Update Hearts
 		global.my_hearts = struct.hearts.mc;
 		global.chara.ipe.hearts = struct.hearts.ipe;

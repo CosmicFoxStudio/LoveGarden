@@ -23,7 +23,8 @@ switch (global.lang) {
 		saveText[4] = "Night";
 		saveText[5] = "Dawn";
 		saveText[6] = "DAY";
-		saveText[7] = "EMPTY"; // "NEW GAME"
+		saveText[7] = "EN";
+		saveText[8] = "EMPTY"; // "NEW GAME"
 		break;
 	case "pt":
 		saveText[0] = "VAZIO";
@@ -33,7 +34,8 @@ switch (global.lang) {
 		saveText[4] = "Noite";
 		saveText[5] = "Alvorada";
 		saveText[6] = "DIA";
-		saveText[7] = "VAZIO"; // "NOVO JOGO"
+		saveText[7] = "PT";
+		saveText[8] = "VAZIO"; // "NOVO JOGO"
 		break;
 }
 
@@ -45,6 +47,7 @@ for (var i = 0; i < 3; i++) {
 	//saveSlotInfo[i, e_saveSlotStats.PLACE] = "Nowhere";
 	saveSlotInfo[i, e_saveSlotStats.DAYTIME] = "Dawn";
 	saveSlotInfo[i, e_saveSlotStats.DAY] = 0;
+	saveSlotInfo[i, e_saveSlotStats.LANG] = "No Lang";
 }
 
 // Grab player info for save slots, if applicable
