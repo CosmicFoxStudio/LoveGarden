@@ -1,5 +1,8 @@
 /// @description Draw the menu
 
+// Draw Leafs BG
+draw_sprite_tiled(spr_leafs_tiled, 0, 0, 0);
+
 DrawFont(fnt_menu);
 DrawAlign(fa_center, fa_middle);
 

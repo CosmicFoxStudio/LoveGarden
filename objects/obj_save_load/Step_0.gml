@@ -50,9 +50,13 @@ if (global.state == e_gameStates.FILE_SELECTION) {
 				// Change Game State
 				GameChangeState(e_gameStates.NEW_GAME);
 			
-				// Go to first cutscene
-				GameTransitionChangeRoom(rm_dream, sq_trans_fade_white);
-				// OBS: The room_goto() function only runs after the step event has finished
+				// Start the game from first scene
+				GameTransitionChangeRoom(rm_dream, sq_trans_fade_black);
+			/*
+			// Go to Lang Selection
+			if (file_exists(global.saveFileName + "_" + string(global.saveSlot) + ".sav")) GameTransitionChangeRoom(rm_dream, sq_trans_fade_black);
+			else GameTransitionChangeRoom(rm_lang, sq_trans_fade_black);
+			*/
 			}
 		}
 		// ---------------------------- DELETE SAVE FILE --------------------------- //

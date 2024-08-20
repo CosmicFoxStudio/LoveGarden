@@ -23,7 +23,11 @@ function ExecuteButtonAction(_btnType) {
 		break;
 		
 		case e_btnTypes.LANG :
-			GameTransitionChangeRoom(rm_lang, sq_trans_fade_black);
+			// Create Lang Menu
+			global.langMenu = true;
+			instance_create_depth(SCREEN_WIDTH/2, SCREEN_HEIGHT/2, -9998, obj_lang_selection);
+			instance_create_depth(SCREEN_WIDTH/2, SCREEN_HEIGHT/2, -9998, obj_lang_menu);			
+			// GameTransitionChangeRoom(rm_lang, sq_trans_fade_black);
 		break;
 		
 		default: break;

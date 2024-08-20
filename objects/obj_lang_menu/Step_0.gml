@@ -120,6 +120,12 @@ if (selectedButton == "CONFIRM") {
 	phase = "SELECT";
 	selectedButton = "NONE";
 	
+	// Destroy itself
+	global.langMenu = false;
+	instance_destroy(obj_lang_selection);
+	instance_destroy(obj_lang_menu_btn);
+	instance_destroy();
+	/*
 	// // Platform is a browser
 	if (os_browser != browser_not_a_browser || global.gameMode == e_gameMode.TEASER) {
 		
@@ -131,4 +137,5 @@ if (selectedButton == "CONFIRM") {
 		// Call a screen transition and goes to Title Screen
 		GameTransitionChangeRoom(rm_title, sq_trans_fade_white);
 	}
+	*/
 }

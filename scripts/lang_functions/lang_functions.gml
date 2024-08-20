@@ -46,6 +46,19 @@ function ManageLocalization() {
     }
 }
 
+// Switch date order on save based on language
+function DateLocalization(_saveDate) {
+	switch (global.lang) {
+	case "en":
+		var splitDate = string_split(_saveDate, "/");
+		var saveNewDate = splitDate[1] + "/" + splitDate[0] + "/" + splitDate[2];
+		return saveNewDate;
+		break;
+	default:
+		return _saveDate;
+	}
+}
+
 // Menu elements localization
 function MenuLocalization(_menuWord) {
 	switch (global.lang) {
@@ -77,19 +90,6 @@ function MenuLocalization(_menuWord) {
 		break;
 	default:
 		return _menuWord;
-	}
-}
-
-// Switch date order on save based on language
-function DateLocalization(_saveDate) {
-	switch (global.lang) {
-	case "en":
-		var splitDate = string_split(_saveDate, "/");
-		var saveNewDate = splitDate[1] + "/" + splitDate[0] + "/" + splitDate[2];
-		return saveNewDate;
-		break;
-	default:
-		return _saveDate;
 	}
 }
 
