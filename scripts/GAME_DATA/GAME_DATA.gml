@@ -51,28 +51,6 @@ global.emotions[e_chara.ORANGE] = [
 "neutral", "serious", "serious-talk", "up", "surprise"
 ];
 
-// Character Constructor
-function CharaDefinition(_id, _name, _romanceable = false) constructor {
-	myid = _id;
-	name = _name;
-	expressions = {};
-	if (_romanceable) hearts = 0;
-	
-	// Loop through the emotions list and construct the sprite names
-	for (var i = 0; i < array_length(global.emotions[myid]); i++) {
-	    var emotion = global.emotions[myid][i];
-	    var spriteName = "spr_" + name + "_" + string(i); // + "_" + emotion
-	    var spriteAsset = asset_get_index(spriteName);
-
-	    if (spriteAsset != -1) {  // Check if the sprite exists
-			struct_set(expressions, emotion, spriteAsset);
-	        // expressions[$ emotion] = spriteAsset;
-	    } else {
-	        show_debug_message("Sprite " + spriteName + " not found.");
-	    }
-	}
-}
-
 global.flags = { 
 	met_solanum: 0,
 	orange_photo_book_talk: false,

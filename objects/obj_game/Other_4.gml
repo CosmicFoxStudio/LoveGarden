@@ -26,13 +26,6 @@ view_visible[0] = true;
 view_set_camera(0, camera); // That is, global.cameraID and view_camera[0] is equivalent
 #endregion camera setup for each room
 
-// YARN Dialogue Files
-if (global.debug) show_debug_message("All dialogue files: " + string(global.dialogueList));
-
-for (var file = 0; file < array_length(global.dialogueList); file++) {
-	show_debug_message("Is " + string(global.dialogueList[file]) + " loaded?: " + string(ChatterboxIsLoaded(global.dialogueList[file])));
-}
-
 if (room == rm_map) {
 	global.map = true;	
 }

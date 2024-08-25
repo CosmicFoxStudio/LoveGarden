@@ -302,7 +302,7 @@ function LoadDialogueFiles() {
 	var fileName = file_find_first(working_directory + "scenes/" + "*.yarn", fa_none);
 	show_debug_message("File found: " + string(fileName));
 	ChatterboxLoadFromFile("scenes/" + fileName);
-	array_push(global.dialogueList, "scenes/" + fileName);
+	array_push(global.dialogueList, "scenes/" + fileName); // Add to dialogueList array
 	while (fileName != "") {
 		fileName = file_find_next();
 		if (fileName == "") break;
