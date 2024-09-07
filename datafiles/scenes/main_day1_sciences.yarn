@@ -199,6 +199,7 @@ They nod in agreement, looking hesitant. #line:37234f
 Together, you walk towards the exit of the room. #line:fdef2f
 <<bgTransition(0)>>
 <<nextDaytime()>>
+<<progress()>>
 <<jump Noon>>
 ===
 
@@ -250,5 +251,6 @@ Ipe was already disappearing down the hallway... #line:ea0357
 ... #line:b57a25
 PLAYER: (Did I say something wrong?) #line:def188
 <<nextDaytime()>>
+<<progress()>>
 <<nextRoom("rm_boat")>>
 ===

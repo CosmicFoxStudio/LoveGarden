@@ -54,6 +54,7 @@ if (global.debug) {
 			"Last Font: " + string(global.lastFontUsed),
 			"Toggle Pause: " + string(togglePause),
 			"Game State: " + string(global.state),
+			"Day: " + string(global.day),
 			"Previous State: " + string(global.statePrevious),
 			"Pressed Confirm (Mouse): " + string( InputCheck("confirm", e_input.MOUSE) ),
 			"Pressed Confirm (Keyboard): " + string( InputCheck("confirm", e_input.KEYBOARD) ),

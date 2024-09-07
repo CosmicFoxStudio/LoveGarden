@@ -127,6 +127,7 @@ You only have to wait... What do you do now? #line:83d7e5
         Soon, the next boat starts to approach and you stand up to get inside. #line:52962f
 PLAYER: (Thank goodness everything worked out...) #line:c83b07
 You board the boat. #line:dc01da 
+<<progress()>>
 <<nextRoom("rm_boat")>>
 ===
 
@@ -198,15 +199,17 @@ What do you want to do? #line:eb08d9
         MR. ORANGE: No problems. See you later, kid! #line:2ea539
         <<chara(0, "void")>>
         You climb the stairs back to your room. #line:7613b6
-        <<nextDaytime()>>
+        <<progress()>>
         <<bgTransition(4)>>
+        <<nextDaytime()>>
         <<jump Night>>
     -> Thanks, but maybe another time. #line:79e443
         MR. ORANGE: Oh, sure. That's okay. You must be busy. Sorry for bothering you. #line:a335af
         <<chara(0, "void")>>
         You climb the stairs back to your room. #line:89a4d6
-        <<nextDaytime()>>
+        <<progress()>>
         <<bgTransition(4)>>
+        <<nextDaytime()>>
         <<jump Night>>
 -> Check what Caru is doing. #line:e854fd
     <<chara(0, "void")>>
@@ -215,16 +218,18 @@ What do you want to do? #line:eb08d9
     Caru is doing really well, so it's better not to interrupt the moment. #line:b02672
     Looking back, you realize Mr. Orange is no longer there. #line:b76c50
     Thus, the only option left is to go back to your room. #line:28c980
-    <<nextDaytime()>>
+    <<progress()>>
     <<bgTransition(4)>>
+    <<nextDaytime()>>
     <<jump Night>>
 -> Go upstairs. #line:37a127
     PLAYER: Sorry, I need to go do something. #line:89a047
     MR. ORANGE: Oh, that's fine. You must be busy. Sorry for bothering you. #line:87ee1a
     <<chara(0, "void")>>
     You climb the stairs back to your room. #line:e0ff13
-    <<nextDaytime()>>
+    <<progress()>>
     <<bgTransition(4)>>
+    <<nextDaytime()>>
     <<jump Night>>
 ===
 
@@ -277,6 +282,7 @@ PLAYER: Yes, sir! #line:a6f2ec
 Caru continues to complain about the Statistics teachers to you. #line:8b4c72
 And you share a bit about how Professor Fern seems to be a peculiar professor. #line:ff0c31
 Soon, you both start feeling tired and prepare to sleep. #line:8641ba
+<<progress()>>
 <<nextDay()>>
 <<nextRoom("rm_sleep")>>
 ===

@@ -46,7 +46,7 @@ What do you want to do?
 	CARU: (yawning) What gives?
 	PLAYER: Hey, It's almost 7 o'clock. Don't you have class in the first shift?
 	<<chara(0, "neutral")>>
-	CARU: I won't fall for that, PLAYER
+	CARU: I won't fall for that, PLAYER.
 	He turns in the bed, covering himself.
 	PLAYER: I'm not kidding! 
 	PLAYER: Seriously Caru, if you have classes it's better to prepare yourself now to guarantee that you won't miss it.

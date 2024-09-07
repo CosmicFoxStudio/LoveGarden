@@ -36,7 +36,6 @@
   ],
   "ResourceOrderSettings":[
     {"name":"obj_broadcast_listener","order":4,"path":"objects/obj_broadcast_listener/obj_broadcast_listener.yy",},
-    {"name":"obj_events","order":5,"path":"objects/obj_events/obj_events.yy",},
     {"name":"obj_game","order":3,"path":"objects/obj_game/obj_game.yy",},
     {"name":"obj_header","order":2,"path":"objects/obj_header/obj_header.yy",},
     {"name":"obj_jukebox","order":1,"path":"objects/obj_jukebox/obj_jukebox.yy",},

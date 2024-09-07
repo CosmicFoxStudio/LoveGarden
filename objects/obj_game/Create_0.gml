@@ -7,7 +7,6 @@ camera = -1;
 
 // Initializes globals
 global.debug = false;
-global.saveFileName = ConvertGameModeToString(true);
 global.lastFontUsed = -1;
 global.dialogFonts = [
 	[fnt_dialogue_s, fnt_dialogue, fnt_dialogue_l],
@@ -93,6 +92,8 @@ global.viewHeight = global.res.height * global.res.scale;
 SetResolution();
 #endregion CAMERA
 
+// Initialize GAME_DATA script
+GAME_DATA();
 // ------------------------------ TESTING ZONE ---------------------------------- //
 if (Debug()) {
 	instance_create_layer(ORIGIN_X, ORIGIN_Y, "Controllers", DEBUG_DRAWER);

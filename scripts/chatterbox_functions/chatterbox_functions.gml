@@ -204,6 +204,7 @@ function NextDay() {
 	global.day += 1;
 	global.currentDaytime = e_daytime.MORNING;
 	UpdateRoomYarnMap();
+	show_debug_message("Next Day");
 }
 
 // Increments by 1 global.currentDaytime
@@ -406,4 +407,11 @@ function GetCharacterTextColorRGB(_currentSpeaker) {
 
 function EndGame() {
 	game_end();
+}
+
+function EventProgress(_eventID = global.eventID) {
+	// Next event
+	_eventID = _eventID + 1;
+	global.event = global.events[_eventID];
+	global.eventID = _eventID;
 }

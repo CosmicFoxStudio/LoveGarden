@@ -1,24 +1,22 @@
 // Define the constructor function
-function EventDefinition(_yarnPath, _location, _scenesArray, _eventType) {
+function EventDefinition(_eventID, _yarnPath, _type, _day, _daytime, _music, _location, _scenesArray) {
     // Create a new event object
     var newEvent = {
+		eventID: _eventID,
         yarn: _yarnPath,
-        location: _location,
+		type: _type,
+		day: _day,
+        daytime: _daytime,
+		music: _music,
+		location: _location, 
         scenes: _scenesArray,
-        visited: false
+        visited: 0
     };
-    
-    // Add the new event to the appropriate event type list
-    switch (_eventType) {
-        case "canon":
-            array_push(global.events.canon, newEvent);
-            break;
-        case "bonus":
-            array_push(global.events.bonus, newEvent);
-            break;
-        default:
-            show_error("Invalid event type: " + string(_eventType), true);
-    }
+	
+	// Add the new event to the event list
+	array_push(global.events, newEvent);
+        
+	// show_error("Invalid event type: " + string(_type), true);
 }
 
 // Character Constructor

@@ -25,6 +25,7 @@ function SaveGame() {
 			hydra: global.chara.hydra.hearts
 		},
 		lang: global.lang,
+		story: global.eventID
 	}
 	
 	var json = json_stringify(saveStruct); // 2nd argument 'true' to prettify
@@ -67,6 +68,7 @@ function LoadGame() {
 		global.flags = struct.flags;
 		global.actions = struct.actions;
 		global.lang = struct.lang;
+		global.eventID = struct.story;
 		// Update Hearts
 		global.my_hearts = struct.hearts.mc;
 		global.chara.ipe.hearts = struct.hearts.ipe;
