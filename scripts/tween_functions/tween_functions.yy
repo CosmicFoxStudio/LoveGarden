@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"tween_functions",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"tween_functions",
+  "parent":{
+    "name":"TweenTwerp",
+    "path":"folders/Scripts/TweenTwerp.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
