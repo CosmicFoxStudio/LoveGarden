@@ -18,7 +18,7 @@ title: Night
 title: ArtMeeting
 ---
 You imagined that most of the students would be spread across the campus, but there are a lot of them around the local area. #line:39d85f
-<<chara("hydra")>>
+<<chara(0, "neutral", "hydra")>>
 The girl from earlier seems frustrated while erasing something furiously on the paper. #line:e1d7e1
 PLAYER: If you keep like that you will tear the paper apart. #line:346eae
 HYDRANGEA: Ugh! It deserves to be teared up! #line:e8379e 
@@ -55,10 +55,8 @@ HYDRANGEA: Not exactly. But I just have a friend who won't shut up about him. #l
 Her phone rings and she quickly takes it, reading the messages and fastly directing you a little smile while getting up. #line:6f88f9
 HYDRANGEA: Damn, I have to go. Cool chat, freshman. #line:43d054
 PLAYER: Hey, would it be possible for you to stop calling me- #line:c468bb
-<<chara("void")>>
+<<chara(0, "void")>>
 PLAYER: Freshman? #line:414960
-<<save()>>
-<<reward()>>
 ===
 
 title: IntrospectionI
@@ -86,14 +84,12 @@ You arrive at your destination. #line:aa3e5e
 The lake feels strangely lonely today. #line:fd9abd
 PLAYER: Why did I come in here again...? #line:48fe05  
 PLAYER: (sighs) I guess there isn't anything to do here... #line:a54fdf
-<<save()>>
-<<reward()>>
 ===
 
 title: CitrusMeeting
 ---
 Arriving at the reception of the dormitory you come across an elderly man with oranges stuck on his beard. #line:bf3ad6
-<<chara("orange")>>
+<<chara(0, "neutral", "orange")>>
 MR ORANGE: Hey. Welcome back to the dormitory, young one! #line:0d9ba6 
 PLAYER: Who are you, Sir...? #line:7789ff
 ORANGE: My name is Orange, young one. #line:d21156 
@@ -114,15 +110,13 @@ He greets all students, some of them stop to talk to him. #line:96b188
 You probably won't be able to get more attention from him for now. #line:62ff3d
 PLAYER: See you around, Mr. Orange. #line:74fee6 
 You wave to him as you leave the entrance of the dormitory. #line:afa188
-<<save()>>
-<<reward()>>
 ===
 
 title: FragranceOnTheMist
 ---
 While you walk through the courtyard, you notice how well-lit it is. #line:a85ccf
 You realize you are not alone in your nocturnal walk... #line:49d07c
-<<chara("caru")>>
+<<chara(0, "neutral", "caru")>>
 It's Caru! #line:8312b3 
 He is seated in one of the benches with the cigarettes in his lips. #line:690ddb
 CARU: Oh! PLAYER! #line:f0d260
@@ -163,8 +157,6 @@ PLAYER: We see each other soon? #line:93f540
 CARU: Of course, as soon as I finish here I will go back to the bedroom! #line:8e116f
 It's possible to observe the smoke almost form a fog towards the moon. #line:90365a
 You direct yourself back to the dormitory. #line:5712aa
-<<save()>>
-<<reward()>>
 ===
 
 title: SocialAnxiety
@@ -172,7 +164,7 @@ title: SocialAnxiety
 The patio really seems like the ideal place to rest a little before starting Mamba’s assignment. #line:8bd98d
 You take a deep breath and look around. #line:4c5114
 You recognize a familiar figure nearby. #line:a75bf8
-<<chara("ipe")>>
+<<chara(0, "neutral", "ipe")>>
 Ipe is seated alone under the tree. #line:140247
 You realize that they are putting a bowl inside the thermal lunch bag. #line:8b571d
 Apparently they preferred to eat outside, among the forest. #line:f84bf4
@@ -186,15 +178,14 @@ IPE: Ah... The common spaces are always full of people... #line:a58d71
 IPE: I prefer to eat by myself... #line:c90fa3
 IPE: I prefer to eat by myself... #line:e14bed
 -> It feels so lonely... #line:8947f5  
-<<changeRelationship("ipe", -1)>>
+	<<changeRelationship("ipe", -1)>>
 	IPE: Ah... haha. Being alone is not necessarily bad... #line:ba7963
 	PLAYER: Whoops, this wasn't what I meant to say! #line:ab5328
 	PLAYER: You don't have to be alone all the time, you know? #line:d2032a
 	IPE: I... I don't care much about it. #line:5cd40e
 	IPE: But having some pleasant company is really great. #line:87b74a
 -> After seeing the restaurant I understand you. #line:f0f950
-<<changeRelationship("ipe", 1)>>
-	<<emotion(4)>>
+	<<changeRelationship("ipe", 1)>>
 	IPE: It's kinda chaotic there, isn't it? #line:b42c17
 	PLAYER: Yeah! Like, I like having time to speak with my friends. #line:8e9858
 	PLAYER: But it is so noisy and full of people. #line:bceb9a
@@ -232,8 +223,6 @@ IPE: I will stop by there and you can go on to the lake! #line:89d8bd
 PLAYER: Ok. See you there then! #line:2b1eb3
 Ipe leaves in a rush, after gathering their stuff. #line:70c182
 You start moving too. #line:0dde8a
-<<save()>>
-<<reward()>>
 ===
 
 title: EventManagement
@@ -242,9 +231,9 @@ You decide that the best spot to take a rest is the gazebo. #line:862077
 The times that you passed by it catched your attention. #line:d10332
 The seats look comfortable and the light seems enough to give you some energy and not hurt your eyes. #line:2312b7
 The place shouldn't be crowded at this time, at least that's what you hope. #line:8298b3
-<<chara("rose")>>
+<<chara(0, "neutral", "rose")>>
 When you enter the gazebo, you are surprised to see another person there. #line:7cea05
-<<chara("rose")>>
+<<chara(0, "neutral", "rose")>>
 Rose didn't seem to realize that you entered the gazebo. #line:d8a9bc
 She looks quite concentrated in the computer on her lap, typing furiously. #line:79cf1f
 You approach her and then type on her shoulder, startling her. #line:500b48
@@ -290,10 +279,8 @@ She closes her laptop, and puts it in her bag. #line:ebeb2c
 PLAYER: I feel honored that you had some time to talk with me at least a bit. #line:e2091b
 ROSE: Good to see you, PLAYER! #line:2ee41c
 She left in a hurry. #line:f8c5cc
-<<chara("void")>>
+<<chara(0, "void")>>
 You spend some more time admiring the gazebo's scenery before realizing that the time you arranged to meet Ype is approaching. #line:4a1eec
-<<save()>>
-<<reward()>>
 ===
 
 title: ThornyRelationship
@@ -301,13 +288,13 @@ title: ThornyRelationship
 The gazebo is definitely a beautiful place during the night. #line:7cc207
 You hoped to finally enjoy the place with no one around. #line:03e52d
 But as you approach more and more you can notice two figures. #line:8fa5f8
-<<chara("carna")>>
+<<chara(0, "neutral", "carna")>>
 ???: I just really find it hard to trust you with these things! #line:daf406
 ???: We didn't even enjoy our vacation because you were working. #line:899c45
 ???: And since we got back, there hasn't been a single date we arranged where you showed up on time! #line:605fb4
 One male voice, clearly agitated, is speaking loud enough for you to hear even from outside the gazebo. #line:cff61c
 The voice is really familiar to you... #line:edd405
-<<chara("rose")>>
+<<chara(0, "neutral", "rose")>>
 ???: If it's going to be like this, I really would have preferred not to come at all. #line:f39b19
 ???: You know I hate to argue! #line:c81300
 ???: And I won't stay here listening to it! #line:204d54
@@ -319,7 +306,7 @@ What do you do? #line:2dae56
 	PLAYER: (And we never know when this kind of situation can escalate, right?) #line:9969f7
 	You wait until the girl walks away. Until you can't see more than her silhouette. #line:009757
 	You enter the gazebo and it's not a surprise that one side of the discussion was... #line:78c607
-	<<chara("carna")>>
+	<<chara(0, "neutral", "carna")>>
 	It was Carna. He was seated in one of the seats, his head supported by his hands. #line:0c182f
 	PLAYER: Hey... Is everything alright? #line:25640a
 	A feeling of secondhand embarrassment runs briefly through you while he raises his head in surprise. #line:bdd3a4
@@ -345,7 +332,7 @@ What do you do? #line:2dae56
 	You turn away to leave, wanting to avoid the person who seemed like they were about to storm out. #line:2c7d9e
 	However, before you could escape the scene, someone bumps into you. #line:cb96bf
 	The person who left the gazebo was definitely running. #line:032bd6
-	<<chara("rose")>> 
+	<<chara(0, "neutral", "rose")>> 
 	And it's Rose... #line:3f62db
 	You can see in her face a mix of shame and anger. #line:99d226
 	PLAYER: I-I'm... Sorry, I swear I didn't want to see anything. #line:b83148
@@ -356,7 +343,4 @@ What do you do? #line:2dae56
 	She gives a slight nod, then continues on her way. #line:dab626
 Who would've thought a nighttime stroll would land you in this situation... #line:6e2244 
 Better head back to the dorm and sleep. #line:2ed747
-<<save()>>
-<<reward()>>
 ===
-         

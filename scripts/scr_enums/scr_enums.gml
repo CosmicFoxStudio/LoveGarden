@@ -61,6 +61,7 @@ enum e_btnTypes {
 	CANCEL,
 	BACK,
 	MAP,
+	CONTINUE,
 	LANG
 }
 

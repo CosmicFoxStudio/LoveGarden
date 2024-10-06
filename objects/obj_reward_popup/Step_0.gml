@@ -1,5 +1,19 @@
 if (global.state == e_gameStates.PAUSED) exit;
 
+if (is_animating) {
+    // Animate the scale by increasing until it reaches 1
+    scale_x = lerp(scale_x, 1, animation_speed);
+    scale_y = lerp(scale_y, 1, animation_speed);
+    
+    // Stop animating once the scale reaches close to 1
+    if (scale_x > 0.99 && scale_y > 0.99) {
+        scale_x = 1;
+        scale_y = 1;
+        is_animating = false;
+    }
+}
+
+/*
 // Select Phase
 if (phase == "SELECT") {
 	
@@ -123,19 +137,7 @@ if (selectedButton == "CONFIRM") {
 	// Destroy itself
 	global.langMenu = false;
 	instance_destroy(obj_lang_selection);
-	instance_destroy(obj_btn);
+	instance_destroy(obj__btn);
 	instance_destroy();
-	/*
-	// // Platform is a browser
-	if (os_browser != browser_not_a_browser || global.gameMode == e_gameMode.TEASER) {
-		
-		// Skip file selection
-		GameTransitionChangeRoom(rm_dream, sq_trans_fade_white);
-	}
-	// Platform isn't a browser
-	else {
-		// Call a screen transition and goes to Title Screen
-		GameTransitionChangeRoom(rm_title, sq_trans_fade_white);
-	}
-	*/
 }
+*/

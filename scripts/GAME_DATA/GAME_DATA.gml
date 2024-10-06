@@ -99,8 +99,8 @@ EventDefinition(2, "scenes/main_day1_boat.yarn", "canon", 1, "Morning", mus_peac
 EventDefinition(3, "scenes/main_day1_sciences.yarn", "canon", 1, "Morning", mus_unicorridor, rm_sciences, ["IpeIntro", "CarnaIntro"]);
 // Canon Event 4
 EventDefinition(4, "scenes/main_day1_sciences.yarn", "canon", 1, "Noon", mus_unicorridor, rm_sciences, ["AfterClass"]);
-// Canon Event 5
-// EventDefinition(5, "scenes/main_day1_bonus.yarn", 1, "bonus", "Noon", snd_silence, rm_map, ["ArtMeeting", "IntrospectionI", "FragranceOnTheMist"]);
+// Canon Event 5 / Bonus Event 1
+EventDefinition(5, "scenes/main_day1_bonus.yarn", 1, "bonus", "Noon", snd_silence, rm_map, ["ArtMeeting", "IntrospectionI", "FragranceOnTheMist"]);
 // Canon Event 6
 EventDefinition(5, "scenes/main_day1_boat.yarn", 1, "canon", "Noon", mus_peaceful, rm_boat, ["Arrival"]);
 // Canon Event 7
@@ -194,5 +194,6 @@ ChatterboxAddFunction("setFlag", FlagSet);										// Sets a value to a flag
 ChatterboxAddFunction("getFlag", FlagGet);										// Returns the value of a given flag
 ChatterboxAddFunction("endGame", EndGame);										// Closes the game
 ChatterboxAddFunction("progress", EventProgress);								// Goes to next event -- updates game progress
+ChatterboxAddFunction("reward", EventFinished);									// Shows Reward Pop Up
 #endregion CHATTERBOX INITIALIZE CUSTOMS
 }

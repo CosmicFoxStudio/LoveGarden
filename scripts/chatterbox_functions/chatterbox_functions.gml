@@ -324,7 +324,7 @@ function UpdateRoomYarnMap() {
     switch (global.gameMode) {
         case e_gameMode.DEMO:
             yarnPrefix = "scenes/demo_";
-            global.roomYarnMap[? "rm_test"] = yarnPrefix + "day0_test.yarn";
+            global.roomYarnMap[? "rm_test_dialogue"] = yarnPrefix + "day0_test.yarn";
             global.roomYarnMap[? "rm_dormitory"] = yarnPrefix + "day1_dormitory.yarn";
             global.roomYarnMap[? "rm_boat"] = yarnPrefix + "day1_boat.yarn";
             global.roomYarnMap[? "rm_sciences"] = yarnPrefix + "day1_sciences.yarn";
@@ -342,7 +342,7 @@ function UpdateRoomYarnMap() {
         case e_gameMode.RELEASE:
         default:
             yarnPrefix = "scenes/main_";
-            global.roomYarnMap[? "rm_test"] = yarnPrefix + "day0_test.yarn";
+            global.roomYarnMap[? "rm_test_dialogue"] = yarnPrefix + "day0_test.yarn";
             global.roomYarnMap[? "rm_dormitory"] = yarnPrefix + "day" + dayPrefix + "_dormitory.yarn";
             global.roomYarnMap[? "rm_boat"] = yarnPrefix + "day" + dayPrefix + "_boat.yarn";
             global.roomYarnMap[? "rm_sciences"] = yarnPrefix + "day" + dayPrefix + "_sciences.yarn";
@@ -414,4 +414,8 @@ function EventProgress(_eventID = global.eventID) {
 	_eventID = _eventID + 1;
 	global.event = global.events[_eventID];
 	global.eventID = _eventID;
+}
+
+function EventFinished() {
+	
 }

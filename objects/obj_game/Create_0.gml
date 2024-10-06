@@ -100,4 +100,5 @@ if (Debug()) {
 }
 
 // Add first room here
-room_goto(rm_logo);
+// room_goto(rm_logo);
+room_goto(rm_test);

@@ -90,6 +90,7 @@ function DecideRoomName() {
 		case "rm_gazebo":
 			global.location = "Gazebo";
 			break;
+		case "rm_test_dialogue":
 		case "rm_test":
 			global.location = "Test Zone";
 			break;

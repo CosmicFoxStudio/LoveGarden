@@ -89,6 +89,6 @@ function SetRoom(_location) {
 		case "Central Building":	return rm_central; break;
 		case "Lake":				return rm_lake; break;
 		case "Gazebo":				return rm_gazebo; break;
-	    default:					return rm_test; break;
+	    default:					return rm_test_dialogue; break;
 	}
 }

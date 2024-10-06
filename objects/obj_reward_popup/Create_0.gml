@@ -9,18 +9,26 @@
 	the language selection.
 */
 
-// Lang Menu 
-width = 176;
-height = 97;
-optionPaddingH = 86;
-optionPaddingV = 24;
-descriptionPaddingH = 24;
-descriptionPaddingV = 8;
-optionMargin = 48;
+// Reward Pop Up
+// Initialize variables
+center_x = x;
+center_y = y;
+target_width = 300; // The popup final width
+target_height = 200; // The popup final height
+
+animation_speed = 0.1; // Speed of enlargement (can adjust this as needed)
+scale_x = 0; // Start at 0, scale from center
+scale_y = 0;
+
+popup_sprite = sprite_index;
+
+// Define a flag to check if the animation is playing
+is_animating = true;
 
 // Create Buttons (on top of everything)
-cancelButton = instance_create_depth(240, 280, -9999, obj_btn, {btnType: e_btnTypes.CANCEL}); 
-confirmButton = instance_create_depth(390, 280, -9999, obj_btn, {btnType: e_btnTypes.CONFIRM});
+// Position buttons relative to popup's position
+instance_create_depth(center_x - 60, center_y + target_height / 2 + 20, -9999, obj_btn, {btnType: e_btnTypes.CONTINUE}); 
+instance_create_depth(center_x + 60, center_y + target_height / 2 + 20, -9999, obj_btn, {btnType: e_btnTypes.MAP});
 
 // Option selection
 pos = 0;
@@ -32,7 +40,7 @@ confirmButtonIsHovering = false;
 selectedButton = "NONE"; // "CONFIRM" || "CANCEL"  // ---------> Change name to "Chosen Button"
 posButtons = 0;
 
-// ENUMS USED: e_language & e_langMenuOptions
+// ENUMS USED: e_btnTypes
 
 // Array of selectable languages
 option[e_language.EN] = ["ENGLISH", "PORTUGUÊS"];
