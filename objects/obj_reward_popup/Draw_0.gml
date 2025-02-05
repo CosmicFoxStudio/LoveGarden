@@ -43,119 +43,34 @@ var flower_x1 = center_x - flower_spacing;
 var flower_x2 = center_x;
 var flower_x3 = center_x + flower_spacing;
 
-// Animate and draw the flowers with the same scaling effect as the popup
+// Animate and draw the flowers with the giggle effect
 if (!is_animating || (scale_x > 0.5 && scale_y > 0.5)) { // Only draw once popup is sufficiently scaled
     var flower_scale_x = lerp(0, flower_scale, scale_x);
     var flower_scale_y = lerp(0, flower_scale, scale_y);
+    
+    // Calculate the giggle effect using sine wave
+    var giggle_offset = sin(giggle_timer) * giggle_amplitude;
 
-    // Draw the flowers
-    draw_sprite_ext(spr_action, 0, flower_x1, flower_y, flower_scale_x, flower_scale_y, 0, c_white, 1);
-    draw_sprite_ext(spr_action, 1, flower_x2, flower_y, flower_scale_x, flower_scale_y, 0, c_white, 1);
-    draw_sprite_ext(spr_action, 2, flower_x3, flower_y, flower_scale_x, flower_scale_y, 0, c_white, 1);
+    // Draw each flower sprite with appropriate scaling and the giggle effect applied to y-position
+    draw_sprite_ext(spr_action, 0, flower_x1, flower_y + giggle_offset, flower_scale_x, flower_scale_y, 0, c_white, 1);
+    draw_sprite_ext(spr_action, 1, flower_x2, flower_y + giggle_offset, flower_scale_x, flower_scale_y, 0, c_white, 1);
+    draw_sprite_ext(spr_action, 2, flower_x3, flower_y + giggle_offset, flower_scale_x, flower_scale_y, 0, c_white, 1);
+}
+			 
+// Draw buttons (Continue, Explore) and highlight based on selection
+if (selectedButton == "CONTINUE" || pos == 0) {
+    draw_text_color(center_x - 60, center_y + 50, "CONTINUE", c_yellow, c_yellow, c_yellow, c_yellow, 1);
+} else {
+    draw_text(center_x - 60, center_y + 50, "CONTINUE");
 }
 
-/*					 
-// Calculate menu height dynamically based on number of options
-var padding = optionPaddingV * 2;
-var verticalSpace = (optionLength - 1) * optionMargin;
-var newHeight = padding + verticalSpace;
-height = newHeight;
-
-// Center the menu
-x = camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0])/2 - width/2;
-y = camera_get_view_y(view_camera[0]) + camera_get_view_height(view_camera[0])/2 - height/2;
-
-obj_lang_selection.canInitialize = true;
-
-// Draw the menu box
-var scaleX = width*(1/sprite_width); // --> 1
-var scaleY = height*(1/sprite_height); // --> 1
-draw_sprite_ext(sprite_index, image_index, x, y, scaleX, scaleY, 0, c_white, 1);
-
-#region DESCRIPTION
-var offset = 100;
-var descriptionX = camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0])/2;
-var descriptionY = camera_get_view_y(view_camera[0]) + camera_get_view_height(view_camera[0])/2 - offset;
-if (global.lang == "en") {
-    var descriptionText = titleText[e_language.EN];
-}
-else if (global.lang == "pt") {
-    var descriptionText = titleText[e_language.PT];
+if (selectedButton == "MAP" || pos == 1) {
+    draw_text_color(center_x + 60, center_y + 50, "EXPLORE MAP", c_yellow, c_yellow, c_yellow, c_yellow, 1);
+} else {
+    draw_text(center_x + 60, center_y + 50, "EXPLORE MAP");
 }
 
-// Get the dimensions of the text
-var textWidth = string_width(descriptionText);
-var textHeight = string_height(descriptionText);
-var textWidthPT = string_width(titleText[e_language.PT]);
-var textHeightPT = string_height(titleText[e_language.PT]);
-
-// Set the box dimensions based on text dimensions
-var boxWidth = textWidth + 2 * descriptionPaddingH;
-var boxHeight = textHeight + 2 * descriptionPaddingV;
-
-// Draw the description box
-draw_sprite_ext(
-		sprite_index, image_index, 
-		descriptionX - boxWidth/2, 
-		descriptionY - boxHeight/2,
-		3.375*(textWidth/textWidthPT),
-		1*(textHeight/textHeightPT),
-		0, c_white, 1
-	);
-
-// Draw the description text inside the box
-draw_text_color(descriptionX, descriptionY, descriptionText, CYAN, CYAN, CYAN, CYAN, 1);
-#endregion DESCRIPTION
-
-DrawFont(fnt_dialogue);
-
-// Draw language options
-for (var i = 0; i < optionLength; i++) {
-	var c = CYAN;
-	
-	// Option was selected
-	if (pos == i && phase == "CONFIRM") {
-		// Color changes in current iteration
-		c = c_yellow;
-		
-	}
-	
-	if (global.lang == "en") {
-		draw_text_color(
-			x + optionPaddingH, y + optionPaddingV + optionMargin*i, 
-			option[e_language.EN][i], c, c, c, c, 1
-		);
-	}
-	else if (global.lang == "pt") {
-		draw_text_color(
-			x + optionPaddingH, y + optionPaddingV + optionMargin*i, 
-			option[e_language.PT][i], c, c, c, c, 1
-		);
-	}
-}
-
-#region Buttons (Confirm Phase)
-
-if (phase == "CONFIRM") { 
-	if (posButtons == 0) {
-		// Cancel button is the selected button
-		cancelButton.selected = true;
-		confirmButton.selected = false;
-	} 
-	else if (posButtons == 1) {
-		// Confirm button is the selected button
-		cancelButton.selected = false;
-		confirmButton.selected = true;
-	}
-}
-else {
-	// Both unavailable
-	cancelButton.unavailable = true; 	
-	confirmButton.unavailable = true; 
-}
-
-#endregion Buttons (Confirm Phase)
-*/
+// Additional decorative elements
 
 // Reset
 DrawReset();
