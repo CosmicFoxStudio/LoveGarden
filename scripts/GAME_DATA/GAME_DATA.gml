@@ -127,12 +127,8 @@ UpdateRoomYarnMap();
 #region CHATTERBOX LOAD FILES
 global.dialogueList = [];
 	
-if (os_browser == browser_not_a_browser) {
-	// Not in browser - Load the canon files dynamically
-	LoadDialogueFiles();
-	// Load Bonus Events
-	
-}
+// Not in browser - Load the canon files dynamically
+if (os_browser == browser_not_a_browser) { LoadDialogueFiles(); }
 else {
 	// In browser - load files manually
 	if (global.gameMode == e_gameMode.DEMO) {

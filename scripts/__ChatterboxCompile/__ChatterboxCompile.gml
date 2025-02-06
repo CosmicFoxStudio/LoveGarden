@@ -170,14 +170,19 @@ function __ChatterboxCompile(_in_substring_array, _root_instruction, _hash_prefi
                 
                 case "wait":
                 case "forcewait":
+                    var _instruction = new __ChatterboxClassInstruction(_first_word, _line, _indent);
+                    _instruction.waitName = __ChatterboxCompilerRemoveWhitespace(_remainder, all);
+                break;
+                
                 case "hopback":
+                case "jumpback":
                 case "fastforward":
                 case "fastmark":
                 case "stop":
                     _remainder = __ChatterboxCompilerRemoveWhitespace(_remainder, true);
                     if (_remainder != "")
                     {
-                        __ChatterboxError("Cannot use arguments with <<wait>>, <<forcewait>>, <<hopback>>, <<fastforward>>, or <<stop>>\n\Action was \"<<", _string, ">>\"");
+                        __ChatterboxError("Cannot use arguments with <<hopback>>, <<jumpback>>, <<fastforward>>, <<fastmark>>, or <<stop>>\n\Action was \"<<", _string, ">>\"");
                     }
                     else
                     {
@@ -186,8 +191,31 @@ function __ChatterboxCompile(_in_substring_array, _root_instruction, _hash_prefi
                 break;
                 
                 default:
-                    var _instruction = new __ChatterboxClassInstruction("action", _line, _indent);
-                    _instruction.text = new __ChatterboxClassText(_string);
+                    if ((_first_word == "random") && (_remainder == "option"))
+                    {
+                        var _q = _s+1;
+                        repeat(_substring_count - _q)
+                        {
+                            if (_in_substring_array[_q] != _line) break;
+                            ++_q;
+                        }
+                        
+                        if (_q >= _substring_count-1)
+                        {
+                            __ChatterboxError("Cannot use <<random option>> at the end of a node");
+                        }
+                        else if (_in_substring_array[_q].type != "option")
+                        {
+                            __ChatterboxError("Must use <<random option>> immediately before an option (type=", _in_substring_array[_q].type, ", string=\"", _in_substring_array[_q].text, "\")");
+                        }
+                        
+                        var _instruction = new __ChatterboxClassInstruction("random option", _line, _indent);
+                    }
+                    else
+                    {
+                        var _instruction = new __ChatterboxClassInstruction("action", _line, _indent);
+                        _instruction.text = new __ChatterboxClassText(_string);
+                    }
                 break;
             }
             
