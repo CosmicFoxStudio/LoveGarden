@@ -66,13 +66,13 @@ global.flags = {
 
 // Populate global.chara struct
 // if (global.debug) struct_set(global.chara, "maple", new CharaDefinition(e_chara.MAPLE, "maple", true));
-struct_set(global.chara, "ipe", new CharaDefinition(e_chara.IPE, "ipe", true));
-struct_set(global.chara, "caru", new CharaDefinition(e_chara.CARU, "caru", true));
-struct_set(global.chara, "carna", new CharaDefinition(e_chara.CARNA, "carna", true));
-struct_set(global.chara, "rose", new CharaDefinition(e_chara.ROSE, "rose", true));
-struct_set(global.chara, "hydra", new CharaDefinition(e_chara.HYDRA, "hydra", true));
-struct_set(global.chara, "fern", new CharaDefinition(e_chara.FERN, "fern"));
-struct_set(global.chara, "orange", new CharaDefinition(e_chara.ORANGE, "orange"));
+variable_struct_set(global.chara, "ipe", new CharaDefinition(e_chara.IPE, "ipe", true));
+variable_struct_set(global.chara, "caru", new CharaDefinition(e_chara.CARU, "caru", true));
+variable_struct_set(global.chara, "carna", new CharaDefinition(e_chara.CARNA, "carna", true));
+variable_struct_set(global.chara, "rose", new CharaDefinition(e_chara.ROSE, "rose", true));
+variable_struct_set(global.chara, "hydra", new CharaDefinition(e_chara.HYDRA, "hydra", true));
+variable_struct_set(global.chara, "fern", new CharaDefinition(e_chara.FERN, "fern"));
+variable_struct_set(global.chara, "orange", new CharaDefinition(e_chara.ORANGE, "orange"));
 
 #region DECIDE ROOM BG
 global.roomBGMap = ds_map_create();

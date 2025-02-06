@@ -33,7 +33,7 @@ function CharaDefinition(_id, _name, _romanceable = false) constructor {
 	    var spriteAsset = asset_get_index(spriteName);
 
 	    if (spriteAsset != -1) {  // Check if the sprite exists
-			struct_set(expressions, emotion, spriteAsset);
+			variable_struct_set(expressions, emotion, spriteAsset);
 	        // expressions[$ emotion] = spriteAsset;
 	    } else {
 	        show_debug_message("Sprite " + spriteName + " not found.");
