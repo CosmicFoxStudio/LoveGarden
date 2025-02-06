@@ -1,13 +1,11 @@
 {
-  "$GMScript":"v1",
-  "%Name":"debug_functions",
-  "isCompatibility":false,
-  "isDnD":false,
-  "name":"debug_functions",
-  "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "debug_functions",
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Scripts",
+    "path": "folders/Scripts.yy",
   },
-  "resourceType":"GMScript",
-  "resourceVersion":"2.0",
 }

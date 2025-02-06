@@ -1,13 +1,11 @@
 {
-  "$GMScript":"v1",
-  "%Name":"LOCALI",
-  "isCompatibility":false,
-  "isDnD":false,
-  "name":"LOCALI",
-  "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "LOCALI",
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Scripts",
+    "path": "folders/Scripts.yy",
   },
-  "resourceType":"GMScript",
-  "resourceVersion":"2.0",
 }

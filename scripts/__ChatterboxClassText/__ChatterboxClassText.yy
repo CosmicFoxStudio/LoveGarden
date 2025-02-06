@@ -1,13 +1,11 @@
 {
-  "$GMScript":"v1",
-  "%Name":"__ChatterboxClassText",
-  "isCompatibility":false,
-  "isDnD":false,
-  "name":"__ChatterboxClassText",
-  "parent":{
-    "name":"omg i can't believe you looked in here",
-    "path":"folders/Libraries/Chatterbox/(System) (Don't look in here)/omg i can't believe you looked in here.yy",
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "__ChatterboxClassText",
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "omg i can't believe you looked in here",
+    "path": "folders/Libraries/Chatterbox/(System) (Don't look in here)/omg i can't believe you looked in here.yy",
   },
-  "resourceType":"GMScript",
-  "resourceVersion":"2.0",
 }

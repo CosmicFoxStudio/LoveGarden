@@ -1,13 +1,11 @@
 {
-  "$GMScript":"v1",
-  "%Name":"scribble_is_text_element",
-  "isCompatibility":false,
-  "isDnD":false,
-  "name":"scribble_is_text_element",
-  "parent":{
-    "name":"Miscellaneous",
-    "path":"folders/Libraries/Scribble/Miscellaneous.yy",
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "scribble_is_text_element",
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Miscellaneous",
+    "path": "folders/Libraries/Scribble/Miscellaneous.yy",
   },
-  "resourceType":"GMScript",
-  "resourceVersion":"2.0",
 }

@@ -1,13 +1,11 @@
 {
-  "$GMScript":"v1",
-  "%Name":"GAME_DATA",
-  "isCompatibility":false,
-  "isDnD":false,
-  "name":"GAME_DATA",
-  "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "GAME_DATA",
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Scripts",
+    "path": "folders/Scripts.yy",
   },
-  "resourceType":"GMScript",
-  "resourceVersion":"2.0",
 }

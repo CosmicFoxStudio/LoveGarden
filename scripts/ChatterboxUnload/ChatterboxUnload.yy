@@ -1,13 +1,11 @@
 {
-  "$GMScript":"v1",
-  "%Name":"ChatterboxUnload",
-  "isCompatibility":false,
-  "isDnD":false,
-  "name":"ChatterboxUnload",
-  "parent":{
-    "name":"Setup",
-    "path":"folders/Libraries/Chatterbox/Setup.yy",
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "ChatterboxUnload",
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Setup",
+    "path": "folders/Libraries/Chatterbox/Setup.yy",
   },
-  "resourceType":"GMScript",
-  "resourceVersion":"2.0",
 }

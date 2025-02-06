@@ -1,13 +1,11 @@
 {
-  "$GMScript":"v1",
-  "%Name":"twerp",
-  "isCompatibility":false,
-  "isDnD":false,
-  "name":"twerp",
-  "parent":{
-    "name":"TweenTwerp",
-    "path":"folders/Scripts/TweenTwerp.yy",
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "twerp",
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "TweenTwerp",
+    "path": "folders/Scripts/TweenTwerp.yy",
   },
-  "resourceType":"GMScript",
-  "resourceVersion":"2.0",
 }

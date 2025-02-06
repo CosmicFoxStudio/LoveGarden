@@ -1,13 +1,11 @@
 {
-  "$GMScript":"v1",
-  "%Name":"ChatterboxCreate",
-  "isCompatibility":false,
-  "isDnD":false,
-  "name":"ChatterboxCreate",
-  "parent":{
-    "name":"Chatterboxes",
-    "path":"folders/Libraries/Chatterbox/Chatterboxes.yy",
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "ChatterboxCreate",
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Chatterboxes",
+    "path": "folders/Libraries/Chatterbox/Chatterboxes.yy",
   },
-  "resourceType":"GMScript",
-  "resourceVersion":"2.0",
 }

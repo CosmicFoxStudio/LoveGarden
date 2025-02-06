@@ -1,12 +1,10 @@
 {
-  "$GMShader":"",
-  "%Name":"__shd_scribble_bake_outline_4dir",
-  "name":"__shd_scribble_bake_outline_4dir",
-  "parent":{
-    "name":"Shaders",
-    "path":"folders/Libraries/Scribble/(System - don't call these functions)/Shaders.yy",
+  "resourceType": "GMShader",
+  "resourceVersion": "1.0",
+  "name": "__shd_scribble_bake_outline_4dir",
+  "type": 1,
+  "parent": {
+    "name": "Shaders",
+    "path": "folders/Libraries/Scribble/(System - don't call these functions)/Shaders.yy",
   },
-  "resourceType":"GMShader",
-  "resourceVersion":"2.0",
-  "type":1,
 }

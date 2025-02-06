@@ -1,13 +1,11 @@
 {
-  "$GMScript":"v1",
-  "%Name":"scribble_color_set",
-  "isCompatibility":false,
-  "isDnD":false,
-  "name":"scribble_color_set",
-  "parent":{
-    "name":"Colours",
-    "path":"folders/Libraries/Scribble/Colours.yy",
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "scribble_color_set",
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Colours",
+    "path": "folders/Libraries/Scribble/Colours.yy",
   },
-  "resourceType":"GMScript",
-  "resourceVersion":"2.0",
 }
