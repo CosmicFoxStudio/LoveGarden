@@ -250,7 +250,7 @@ function FlagSet(_name, _value = true) {
 // Returns the value of a given flag
 function FlagGet(_name) {
     // Check if the flag exists before attempting to retrieve its value
-    if (struct_exists(global.flags, _name)) {
+    if (variable_struct_exists(global.flags, _name)) {
         return global.flags[$ _name];
     } else {
         // Flag doesn't exist

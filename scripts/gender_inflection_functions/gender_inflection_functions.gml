@@ -44,7 +44,7 @@ function GenderInflectionExtractWord(_str, _openTag, _closeTag) {
 /// Handle inflection for a single word
 function GenderInflectionHandleWord(_word, _gender) {
 	// Word is an exception - indexed on dictionary
-	if (struct_exists(global.genderExceptionRules, _word)) {
+	if (variable_struct_exists(global.genderExceptionRules, _word)) {
 		return global.genderExceptionRules[$ _word][_gender];
 	}
 	

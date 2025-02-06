@@ -143,7 +143,7 @@ You look back at the professor, trying to draw your own conclusions. #line:8baee
 <<chara(0, "neutral", "fern")>>
 FERN: PLAYER and Ipe! #line:39545e
 You startle when Professor Fern's voice resonates through the room. #line:aaf287
-You immediately raise your hand. # # # #line:513941
+You immediately raise your hand. #line:513941
 FERN: You'll be working on the theme ''Animals of the Plantae world''. #line:563f4f
 <<if (getRelationship("carna") >= 1)>>
 	<<chara(0, "neutral", "carna")>>
