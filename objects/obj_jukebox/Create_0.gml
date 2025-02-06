@@ -12,40 +12,41 @@ music_map = ds_map_create();
 sfx_map = ds_map_create();
 
 // --------------------------- Methods --------------------------- //
-JukeboxMapMusic = function(_group_id) {
-	var _musics = audio_group_get_assets(_group_id);
-	var _size = array_length(_musics);
-	for(var _i=0; _i < _size; _i++) {
-		switch(_group_id) {
-			case audiogroup_music:
-				music_map[? audio_get_name(_musics[_i])] = _musics[_i];
-				break;
-			case audiogroup_sfx:
-				sfx_map[? audio_get_name(_musics[_i])] = _musics[_i];
-				break;
-			default:
-				break;
-		}
-	}
+///// Seems like audio_group_get_assets() is unavailable in the LTS version
+//JukeboxMapMusic = function(_group_id) {
+//	var _musics = audio_group_get_assets(_group_id);
+//	var _size = array_length(_musics);
+//	for(var _i=0; _i < _size; _i++) {
+//		switch(_group_id) {
+//			case audiogroup_music:
+//				music_map[? audio_get_name(_musics[_i])] = _musics[_i];
+//				break;
+//			case audiogroup_sfx:
+//				sfx_map[? audio_get_name(_musics[_i])] = _musics[_i];
+//				break;
+//			default:
+//				break;
+//		}
+//	}
 	
-	if(_group_id == audiogroup_music){
-		var k = ds_map_find_first(music_map);
-	    var maptext = "Music_map";
-		while (!is_undefined(k)) {
-		  maptext += k + ": " + audio_get_name(music_map[? k]) + "#";
-		  k = ds_map_find_next(music_map, k);
-		}
-		show_debug_message(maptext);
-	} else {
-		var k = ds_map_find_first(sfx_map);
-	    var maptext = "SFX map";
-		while (!is_undefined(k)) {
-		  maptext += k + ": " + audio_get_name(sfx_map[? k]) + "#";
-		  k = ds_map_find_next(sfx_map, k);
-		}
-		show_debug_message(maptext);
-	}
-}
+//	if(_group_id == audiogroup_music){
+//		var k = ds_map_find_first(music_map);
+//	    var maptext = "Music_map";
+//		while (!is_undefined(k)) {
+//		  maptext += k + ": " + audio_get_name(music_map[? k]) + "#";
+//		  k = ds_map_find_next(music_map, k);
+//		}
+//		show_debug_message(maptext);
+//	} else {
+//		var k = ds_map_find_first(sfx_map);
+//	    var maptext = "SFX map";
+//		while (!is_undefined(k)) {
+//		  maptext += k + ": " + audio_get_name(sfx_map[? k]) + "#";
+//		  k = ds_map_find_next(sfx_map, k);
+//		}
+//		show_debug_message(maptext);
+//	}
+//}
 
 //JukeboxMapMusic();
 
