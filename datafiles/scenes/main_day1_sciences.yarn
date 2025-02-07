@@ -10,7 +10,7 @@ title: Noon
 
 title: Afternoon
 ---
-<<nextRoom("rm_boat")>>
+<<nextRoom()>>
 ===
 
 title: Night

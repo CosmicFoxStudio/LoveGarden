@@ -128,7 +128,7 @@ You only have to wait... What do you do now? #line:83d7e5
 PLAYER: (Thank goodness everything worked out...) #line:c83b07
 You board the boat. #line:dc01da 
 <<progress()>>
-<<nextRoom("rm_boat")>>
+<<nextRoom()>>
 ===
 
 title: Chitchat

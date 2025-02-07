@@ -43,7 +43,7 @@ PLAYER: (...) #line:0d0623
 PLAYER: (Okay, that was quite emotional and it's still 7:10 in the morning.) #line:7dfa0a
 PLAYER: (This journey has just begun, let's try to think positive!) #line:6fb559
 <<progress()>>
-<<nextRoom("rm_sciences")>>
+<<nextRoom()>>
 ===
 
 title: Arrival
@@ -79,5 +79,5 @@ Your face flushes a bit, and you shrink with embarrassment. #line:e08cf1
     Inside, you feel like you've already lost this battle for your future. #line:399c43
 <<endif>>
 <<progress()>>
-<<nextRoom("rm_dormitory")>>
+<<nextRoom()>>
 ===

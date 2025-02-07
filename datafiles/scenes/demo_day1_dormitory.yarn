@@ -86,7 +86,7 @@ You put the drawing carefully in one of your folders in your bag. #line:fa1ee8
 You hear a sound that seems like a boat coming and hurry downstairs. #line:c35020 
 <<bgTransition(2)>>
 For a moment you thought you would lose the boat, but you manage to arrive in time. #line:2c89f6
-<<nextRoom("rm_boat")>>
+<<nextRoom()>>
 ===
 
 title: GoodNight

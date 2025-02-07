@@ -205,5 +205,5 @@ They nod in agreement, looking hesitant. #line:37234f
 <<chara(0, "void")>>
 You say goodbye as you leave the room. #line:789b5e
 <<nextDaytime()>>
-<<nextRoom("rm_central")>>
-===    
+<<nextRoom()>>
+===

@@ -90,7 +90,7 @@ On the side of the paper is her signature - ''Hydrangea''.
 PLAYER: (Hydrangea... I think I have to give you back your drawing...) 
 You store the drawing with caution in one of your folders in your backpack. 
 You hear the sound of the boat approaching in the distance and quickly hurry downstairs, determined not to miss the trip. 
-<<nextRoom("rm_sciences")>>
+<<nextRoom()>>
 ===
 
 title: Intrusion

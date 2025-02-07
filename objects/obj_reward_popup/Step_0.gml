@@ -48,6 +48,7 @@ if (phase == "SELECT") {
 if (selectedButton == "CONTINUE") {
     EventProgress(global.eventID + 1); // Skip Bonus Event
     show_debug_message("----------------NEXT SCENE----------------");
+	NextRoom();
 	instance_destroy();
 }
 else if (selectedButton == "MAP") {
