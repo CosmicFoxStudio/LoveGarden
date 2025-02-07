@@ -48,8 +48,23 @@ if (global.debug) {
 	    }
 	}
 
-	// Custom function to check if any element in the array is true
-	if (debugRmSelectorActive || array_any(debugBooleans, function (val) { return val; })) {
+	// (Not compatible with LTS) Custom function to check if any element in the array is true
+	//if (debugRmSelectorActive || array_any(debugBooleans, function (val) { return val; })) {
+	//    displayInfo = false;
+	//} else {
+	//    displayInfo = true;
+	//}
+	
+	// (Compatible with LTS)
+	var anyTrue = false;
+	for (var i = 0; i < array_length(debugBooleans); i++) {
+	    if (debugBooleans[i]) {
+	        anyTrue = true;
+	        break; // Exit loop early if a true value is found
+	    }
+	}
+
+	if (debugRmSelectorActive || anyTrue) {
 	    displayInfo = false;
 	} else {
 	    displayInfo = true;
