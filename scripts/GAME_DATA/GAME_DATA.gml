@@ -4,7 +4,7 @@ global.gameMode = e_gameMode.RELEASE;
 global.saveFileName = ConvertGameModeToString(true);
 global.state = e_gameStates.TITLE_SCREEN;
 global.statePrevious = global.state;
-global.eventID = 1;
+global.eventID = 1; // Rename to global.lastEvent?
 global.chara = {};
 global.emotions = [];
 // Day Info
@@ -90,28 +90,28 @@ global.events = [];
 // ----------------------------- ADD EVENTS -------------------------------- //
 /// DAY 1
 // Test Event 0
-EventDefinition(0, "scenes/main_day0_test.yarn", "test", 1, "Morning", mus_funny, rm_dormitory, ["Morning"]);
+EventDefinition(0, "scenes/main_day0_test.yarn", "test", 1, "Morning", mus_funny, "rm_dormitory", ["Morning"]);
 // Canon Event 1
-EventDefinition(1, "scenes/main_day1_dormitory.yarn", "canon", 1, "Morning", mus_funny, rm_dormitory, ["CaruIntro", "LateArrival"]);
+EventDefinition(1, "scenes/main_day1_dormitory.yarn", "canon", 1, "Morning", mus_funny, "rm_dormitory", ["CaruIntro", "LateArrival"]);
 // Canon Event 2
-EventDefinition(2, "scenes/main_day1_boat.yarn", "canon", 1, "Morning", mus_peaceful, rm_boat, ["Departure"]);
+EventDefinition(2, "scenes/main_day1_boat.yarn", "canon", 1, "Morning", mus_peaceful, "rm_boat", ["Departure"]);
 // Canon Event 3
-EventDefinition(3, "scenes/main_day1_sciences.yarn", "canon", 1, "Morning", mus_unicorridor, rm_sciences, ["IpeIntro", "CarnaIntro"]);
+EventDefinition(3, "scenes/main_day1_sciences.yarn", "canon", 1, "Morning", mus_unicorridor, "rm_sciences", ["IpeIntro", "CarnaIntro"]);
 // Canon Event 4
-EventDefinition(4, "scenes/main_day1_sciences.yarn", "canon", 1, "Noon", mus_unicorridor, rm_sciences, ["AfterClass"]);
+EventDefinition(4, "scenes/main_day1_sciences.yarn", "canon", 1, "Noon", mus_unicorridor, "rm_sciences", ["AfterClass"]);
 // Canon Event 5 / Bonus Event 1
-EventDefinition(5, "scenes/main_day1_bonus.yarn", 1, "bonus", "Noon", snd_silence, rm_map, ["ArtMeeting", "IntrospectionI", "FragranceOnTheMist"]);
+EventDefinition(5, "scenes/main_day1_bonus.yarn", "bonus", 1, "Noon", snd_silence, "rm_map", ["ArtMeeting", "IntrospectionI", "FragranceOnTheMist"]);
 // Canon Event 6
-EventDefinition(6, "scenes/main_day1_boat.yarn", 1, "canon", "Noon", mus_peaceful, rm_boat, ["Arrival"]);
+EventDefinition(6, "scenes/main_day1_boat.yarn", "canon", 1, "Noon", mus_peaceful, "rm_boat", ["Arrival"]);
 // Canon Event 7
-// EventDefinition(7, "scenes/main_day1_bonus.yarn", 1, "bonus", "Afternoon", snd_silence, rm_map, ["CitrusMeeting", "CampusPaper"]);
+// EventDefinition(7, "scenes/main_day1_bonus.yarn", 1, "bonus", "Afternoon", snd_silence, "rm_map", ["CitrusMeeting", "CampusPaper"]);
 // Canon Event 8
-EventDefinition(7, "scenes/main_day1_dormitory.yarn", "canon", 1, "Afternoon", mus_mysterious, rm_dormitory, ["Chitchat"]);
+EventDefinition(7, "scenes/main_day1_dormitory.yarn", "canon", 1, "Afternoon", mus_mysterious, "rm_dormitory", ["Chitchat"]);
 // Canon Event 9
-// EventDefinition(9, "scenes/main_day1_bonus.yarn", 1, "bonus", "Night", snd_silence, rm_map, ["FragranceOnTheMist", "IntrospectionII"]);
+// EventDefinition(9, "scenes/main_day1_bonus.yarn", 1, "bonus", "Night", snd_silence, "rm_map", ["FragranceOnTheMist", "IntrospectionII"]);
 // Canon Event 10
-EventDefinition(8, "scenes/main_day1_dormitory.yarn", "canon", 1, "Night", snd_silence, rm_dormitory, ["GoodNight"]);
-EventDefinition(9, "scenes/main_day2_dormitory.yarn", "canon", 2, "Morning", mus_peaceful, rm_dormitory, ["WakeUpCall, WhatsUpGirl"]);
+EventDefinition(8, "scenes/main_day1_dormitory.yarn", "canon", 1, "Night", snd_silence, "rm_dormitory", ["GoodNight"]);
+EventDefinition(9, "scenes/main_day2_dormitory.yarn", "canon", 2, "Morning", mus_peaceful, "rm_dormitory", ["WakeUpCall, WhatsUpGirl"]);
 // ------------------------------------------------------------------------- //
 global.event = global.events[0];
 #endregion EVENTS

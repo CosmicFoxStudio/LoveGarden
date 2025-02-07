@@ -8,6 +8,13 @@ else exit;
 
 if (global.debug) {
 	
+	// Chatterbox Fast Forward (Debug-only)
+	if (keyboard_check_pressed(ord("K"))) {
+		if instance_exists(obj_node_controller) {
+			ChatterboxFastForward(obj_node_controller.chatterbox);
+		}
+	}
+	
 	// Debug Background Index
 	if (global.debug && keyboard_check_pressed(ord("B"))) {
 		DebugBgIndex();

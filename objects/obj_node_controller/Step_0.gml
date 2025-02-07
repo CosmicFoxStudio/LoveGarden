@@ -17,7 +17,7 @@ if (InputCheck("confirm", e_input.MOUSE, "held")) {
 if (global.state != e_gameStates.PAUSED && global.state != e_gameStates.MENU && global.hoveringButton == false) {
 	// Waiting for user input or waiting for the user to choose an option
 	if (ChatterboxIsWaiting(chatterbox)) {
-		if (!global.midTransition) {
+		if (!global.midTransition && speechText != undefined) {
 			// Make textbox visible
 			obj_textbox.visible = true;
 		
@@ -85,5 +85,6 @@ if (global.state != e_gameStates.PAUSED && global.state != e_gameStates.MENU && 
 
 // End of chatterbox
 if ChatterboxIsStopped(chatterbox) {
+	instance_destroy(obj_textbox);
     instance_destroy();
 }

@@ -3,7 +3,7 @@
 // UPDATE CURRENT EVENT
 global.event = global.events[global.eventID];
 
-roomName = room_get_name(global.event.location);
+roomName = global.event.location;
 
 // Needs to be updated once the day changes
 UpdateRoomYarnMap();

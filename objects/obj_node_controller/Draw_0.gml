@@ -15,7 +15,7 @@ if (IsChatterbox(chatterbox)) {
 	var xx = room_width/2 - 200;
 	
 	// Get speech text
-	var speechText = ChatterboxGetContentSpeech(chatterbox, 0);
+	speechText = ChatterboxGetContentSpeech(chatterbox, 0);
 	
 	// ------------------------- APPLY STRING SUBSTITUTIONS TO SPEECH TEXT ------------------------- //
 	// Portuguese gender inflection

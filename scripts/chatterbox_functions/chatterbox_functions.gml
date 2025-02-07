@@ -226,12 +226,12 @@ function NextDaytime(_manual = 0) {
 }
 
 // Chatterbox function to change rooms
-function NextRoom(_room) {
+function NextRoom(_room = global.event.location) {	
 	if (asset_get_type(_room) == asset_room) {
 		GameTransitionChangeRoom(asset_get_index(_room), sq_trans_fade_black);
 	}
 	else {
-		show_debug_message("(ERROR) Wrong asset name.")
+		show_debug_message("(ERROR)" + string(_room) + " is a wrong asset name.")
 	}
 }
 
@@ -409,13 +409,13 @@ function EndGame() {
 	game_end();
 }
 
-function EventProgress(_eventID = global.eventID) {
+function EventProgress(_eventID = global.eventID + 1) {
 	// Next event
-	_eventID = _eventID + 1;
+	// if (global.event.type == "bonus") {}
 	global.event = global.events[_eventID];
 	global.eventID = _eventID;
 }
 
 function EventFinished() {
-	
+	instance_create_layer(320, 180, "Instances_Above", obj_reward_popup);
 }

@@ -12,6 +12,7 @@ if (global.debug) {
 			"Fullscreen: Esc",
 			"Show Grid: G",
 			"Show FPS: F",
+			"Fast Forward: K",
 			"Pause Game: P",
 			"Debug Transition: T",
 			"Room Selector: R",
@@ -65,6 +66,7 @@ if (global.debug) {
 			"Mid Transition?: " + string(global.midTransition),
 			"Transition Room Target: " + string(obj_transition.roomTarget),
 			"Transition Sequence Inst: " + string(obj_transition.seqInst),
+			"Event ID: " + string(global.eventID)
 		];
 		
 		DebugDrawBox(10, 10, "GAME DEBUG", gameDebugStrings);
@@ -161,7 +163,7 @@ if (global.debug) {
 				"Typist position: " + string(obj_node_controller.typist.get_position()),
 				"Text Length: " + string(obj_node_controller.textLength),
 				"Typist State: " + string(obj_node_controller.typist.get_state()),
-				"Text: " + string(ChatterboxGetContentSpeech(obj_node_controller.chatterbox, 0))
+				"Text: " + string(obj_node_controller.speechText)
 			);
 		}
 		if (instance_exists(obj_characters)) {

@@ -6,6 +6,7 @@ nodeName = InitialNode();
 roomName = "";
 optionIndex = 0;                                
 optionHovered = -1; 
+speechText = ChatterboxGetContentSpeech(chatterbox, 0);
 
 // Object depth
 //depth = -100;

@@ -46,7 +46,7 @@ if (phase == "SELECT") {
 
 // Process selected button
 if (selectedButton == "CONTINUE") {
-    // go_to_next_scene();
+    EventProgress(global.eventID + 1); // Skip Bonus Event
     show_debug_message("----------------NEXT SCENE----------------");
 	instance_destroy();
 }
