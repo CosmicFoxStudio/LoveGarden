@@ -91,8 +91,9 @@ They still seem nervous. You try to give them a smile to calm them down, but the
 <<chara(0, "neutral", "carna")>>
 ???: But you can call him Fern! #line:a0c9bb
 The boy sitting next to you speaks loud enough for the whole room to hear. #line:dcdedd
-<<chara(0, "neutral", "fern")>>
-FERN: Thank you, Carna, for sharing my common name. But for you guys, it's Professor Fern. #line:a3ebe9
+<<chara(1, "void")>>
+<<chara(0, "disappointed", "fern")>>
+FERN: Thank you, Carnation, for sharing my common name. But for you guys, it's Professor Fern. #line:a3ebe9
 FERN: I'll be your Ecology teacher. #line:5526bf
 FERN: My subject will be essential for you in the coming semesters. #line:fd6c3c
 <<chara(0, "void")>>

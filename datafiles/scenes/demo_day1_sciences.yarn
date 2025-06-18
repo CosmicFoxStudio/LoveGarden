@@ -74,7 +74,7 @@ They seem nervous so you try to direct them a smile to calm them down, but they 
 The boy sitting next to you speaks loud enough for the entire class to hear. #line:d7795f
 <<chara(1, "void")>>
 <<chara(0, "disappointed")>>
-FERN: Thanks Carna, for revealing my not-so-scientific name. Either way, it's Professor Fern. #line:92b6d9 
+FERN: Thanks Carnation, for revealing my not-so-scientific name. Either way, it's Professor Fern. #line:92b6d9 
 <<chara(0, "neutral")>>
 FERN: I will be your teacher in Introduction to Ecology. #line:a113d3
 FERN: My subject will be essential for you in the coming semesters. #line:e5be47
