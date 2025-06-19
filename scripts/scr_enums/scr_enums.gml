@@ -25,16 +25,15 @@ enum e_pronouns {
 
 // GAME STATES
 enum e_gameStates {
-	INTRO,			// Studio logo
-	TITLE_SCREEN,
-	FILE_SELECTION,
-	NEW_GAME,		// First access
-	CONTINUE_GAME,	// If not first access (continue game)
-	PAUSED,
-	MENU,
-	LEAVE,			// Returns to title
-	EVENT_END,		// When a mandatory event ends, call map
-	MAP
+	INTRO,			// (0) Studio logo
+	TITLE_SCREEN,	// (1)
+	FILE_SELECTION,	// (2)
+	FIRST_ACESS,	// (3) First access
+	CONTINUE_GAME,	// (4) The main gameplay state
+	PAUSED,			// (5)
+	MENU,			// (6)
+	LEAVE,			// (7) Returns to title
+	FREE_TIME,		// (8) When a mandatory event ends
 	// RESUME		// Close menu and resume game
 }
 	

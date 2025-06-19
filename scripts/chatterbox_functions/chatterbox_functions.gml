@@ -417,5 +417,6 @@ function EventProgress(_eventID = global.eventID + 1) {
 }
 
 function EventFinished() {
+	GameChangeState(e_gameStates.FREE_TIME);
 	instance_create_layer(320, 180, "Instances_Above", obj_reward_popup);
 }

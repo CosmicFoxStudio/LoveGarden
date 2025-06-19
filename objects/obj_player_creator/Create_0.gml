@@ -40,7 +40,7 @@ optionLength = array_length(phaseOptions[phase]);
 pos = 0;
 
 // String stuff
-maxLetters = 10; // If you want to increase this, need to change the alignment
+maxLetters = 12; // If you want to increase this, need to change the alignment
 maxLettersReached = false;
 switch (global.lang) {
 	case "pt": currentString = "TULIPA"; break;

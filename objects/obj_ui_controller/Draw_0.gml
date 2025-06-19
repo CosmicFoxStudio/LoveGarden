@@ -9,12 +9,4 @@ if (global.map) {
 	DrawReset();	
 }
 
-/*
-// End Event Pop Up
-if (global.state == e_gameStates.EVENT_END && global.roomType.SCENES) {
-	// Create End Event Pop Up (call to map)
-	instance_create_layer(ORIGIN_X + (sprite_get_width(spr_tooltip_box2)/2), ORIGIN_Y + 80, "Instances_Above", obj_ui_btn_map);
-}
-*/
-
 DrawReset();	

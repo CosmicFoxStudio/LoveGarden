@@ -7,4 +7,5 @@ show_debug_message("Room: " + global.rmCurrent);
 DecideRoomName();
 
 global.changeCalendarDaytime = true;
-SaveGame();
+
+if (global.roomType != e_roomTypes.MAP) SaveGame();

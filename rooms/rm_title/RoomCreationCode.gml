@@ -1,4 +1,7 @@
 global.roomType = e_roomTypes.SPECIAL;
+
+GameChangeState(e_gameStates.TITLE_SCREEN);
+
 // Manages the loading of translated files based on the game language
 ManageLocalization();
 

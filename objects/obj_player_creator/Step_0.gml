@@ -27,7 +27,7 @@ if (phase == e_phases.PHASE_2) {
 	letterCount = string_length(currentString);
 	
 	// Check for maximum letter count
-	if (letterCount >= 10) maxLettersReached = true else maxLettersReached = false;
+	if (letterCount >= maxLetters) maxLettersReached = true else maxLettersReached = false;
 						
 	// Keyboard input (only if "Write" option is selected)
 	if (!maxLettersReached) {

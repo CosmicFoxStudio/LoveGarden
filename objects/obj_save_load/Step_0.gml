@@ -48,7 +48,7 @@ if (global.state == e_gameStates.FILE_SELECTION) {
 			else if (global.newGame && !file_exists(global.saveFileName + "_" + string(global.saveSlot) + ".sav")) {
 				
 				// Change Game State
-				GameChangeState(e_gameStates.NEW_GAME);
+				GameChangeState(e_gameStates.FIRST_ACESS);
 			
 				// Start the game from first scene
 				GameTransitionChangeRoom(rm_dream, sq_trans_fade_black);

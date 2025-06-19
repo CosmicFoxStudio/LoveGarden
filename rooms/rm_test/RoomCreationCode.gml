@@ -7,4 +7,4 @@ show_debug_message("Room: " + global.rmCurrent);
 DecideRoomName();
 
 global.changeCalendarDaytime = true;
-SaveGame();
+//SaveGame();

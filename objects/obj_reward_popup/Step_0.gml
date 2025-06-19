@@ -47,6 +47,7 @@ if (phase == "SELECT") {
 // Process selected button
 if (selectedButton == "CONTINUE") {
     EventProgress(global.eventID + 1); // Skip Bonus Event
+	GameChangeState(e_gameStates.CONTINUE_GAME);
     show_debug_message("----------------NEXT SCENE----------------");
 	NextRoom();
 	instance_destroy();
