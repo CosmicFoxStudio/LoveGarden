@@ -11,10 +11,10 @@ Test Day - Test Locality #line:1f1acc
 PLAYER: Ugh... #line:ce807b
 You wake up in the middle of a bizarre dream about talking mushrooms. #line:d7b82c
 It seems your alarm didn't go off... #line:6e4123
-Your roommate, Maple, wakes you up. #0 #0 #0 #0 #line:3009e7
+Your roommate, Maple, wakes you up. #line:3009e7
 <<chara(0, "neutral", "maple")>>
 MAPLE: Wow, finally! How can you sleep so much?! #line:79ceda
-MAPLE: Not that I'm one to speak... #line:c31ed1 
+MAPLE: Not that I'm one to speak... #line:c31ed1
 MAPLE: Aren't you supposed to be in class? It's already 8:40... #line:966273
 PLAYER: Ahh...! Maple... I'm late! #line:d82166
 MAPLE: Well, it's your first day. Ouch. #line:38e002
@@ -23,7 +23,7 @@ MAPLE: You might as well just skip that class. #line:08cb14
 MAPLE: Let's eat some plants and vegetables instead. #line:4acc9c
 <<chara(0, "void")>>
 In a rush, you get ready to leave. #line:0ce9bb
-You feel dizzy. #line:3c677a 
+You feel dizzy. #line:3c677a
 You have no idea where you are, or who the hell is Maple... #line:12b01e
 I guess, instead of questioning the absurdity of it all, you just roll with that... #line:2a38ed
 <<backTitle()>>

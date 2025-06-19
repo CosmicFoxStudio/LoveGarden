@@ -177,7 +177,7 @@ PLAYER: Oh, yeah? And who will have the pleasure of hearing you for the third ti
 CARNA: My incredible girlfriend. #line:250ef9
 CARNA: She even took the subject last semester to see how bad it really was. #line:418ead
 PLAYER: And she's not here this semester... Did she drop out or pass? #line:1c2f46
-CARNA: She passed... #line:02d535 
+CARNA: She passed... #line:02d535
 CARNA: Not that she lets me forget that she passed and I didn't. #line:ef8d9b
 PLAYER: Haha, at least she'll understand you better than anyone. #line:e0389e
 CARNA: Later, PLAYER! #line:bfe57f
@@ -214,17 +214,17 @@ IPE: Yeah, and then we need to analyze the interactions between these organisms 
 IPE: Oh! And we need to take photos too. #line:d40fec
 PLAYER: It doesn't seem too complex. Once we start, I think we can finish it in a day. #line:be964e
 IPE: Maybe finding the species part, but identifying them seems difficult... #line:6015c0
-IPE: Maybe finding the species part, but identifying them seems difficult... #line:d6d407 
--> I trust in our potential. It will be easy. #line:2c9222 
+IPE: Maybe finding the species part, but identifying them seems difficult... #line:d6d407
+-> I trust in our potential. It will be easy. #line:2c9222
 	<<changeRelationship("ipe", 1)>>
--> If you keep talking like that, it won't work out. #line:ae30d4 
+-> If you keep talking like that, it won't work out. #line:ae30d4
 	<<changeRelationship("ipe", -1)>>
 IPE: If you say so... #line:b29f3e
 PLAYER: When do you think we can meet up? #line:bc3207
 PLAYER: I know Botany, in general, is a heavier major than Biology, so if you tell me your schedule... #line:e99911
 IPE: At the beginning of the semester, I think both majors are manageable. #line:46bea5
 PLAYER: Would you be free tomorrow after lunch? #line:bd6bfa
-IPE: Um... Can it be a little later? #line:a595fc 
+IPE: Um... Can it be a little later? #line:a595fc
 PLAYER: No problem. About 4PM, then? #line:aea5c2
 IPE: Great for me! #line:d17583
 PLAYER: Nice! Now we just need to find a place on campus where we can see some species of animals. #line:7fc058
@@ -233,7 +233,7 @@ PLAYER: I didn't know there was a park on the campus! #line:8d9869
 IPE: Oh, there isn't... It's close by, but it's not here. #line:d738c7
 PLAYER: Aw... I see. The professor said it needs to be on campus, so that's a shame. #line:9fd63d
 IPE: In that case, I think our best option will be the lake. #line:b16a2c
-IPE: In that case, I think our best option will be the lake. #line:15d9c5 
+IPE: In that case, I think our best option will be the lake. #line:15d9c5
 -> At least we won't have to go too far... #line:a81535
     IPE: Exactly! #line:c4d55a
 -> Yep. But I'd love to check out the park someday, though. #line:0ee4c3

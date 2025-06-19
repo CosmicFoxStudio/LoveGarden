@@ -21,7 +21,7 @@ You imagined that most of the students would be spread across the campus, but th
 <<chara(0, "neutral", "hydra")>>
 The girl from earlier seems frustrated while erasing something furiously on the paper. #line:e1d7e1
 PLAYER: If you keep like that you will tear the paper apart. #line:346eae
-HYDRANGEA: Ugh! It deserves to be teared up! #line:e8379e 
+HYDRANGEA: Ugh! It deserves to be teared up! #line:e8379e
 PLAYER: Oh damn, what did the paper do to you? #line:8e92a2
 HYDRANGEA: This one did nothing, but this is my revenge for all the cuts its siblings, parents and cousins made on my fingers for the past 20 years. #line:1c8337
 PLAYER: But is it up to the children to pay for the parents' sins? #line:dd408f
@@ -80,9 +80,9 @@ PLAYER: Who should I become in this new chapter of my life? #line:1ec9b1
 	PLAYER: High school was not easy. #line:7a433f
 	PLAYER: But I was really good at Biology... #line:0b3de1
 	PLAYER: I hope it continues like that... #line:6052bc
-You arrive at your destination. #line:aa3e5e 
+You arrive at your destination. #line:aa3e5e
 The lake feels strangely lonely today. #line:fd9abd
-PLAYER: Why did I come in here again...? #line:48fe05  
+PLAYER: Why did I come in here again...? #line:48fe05
 PLAYER: (sighs) I guess there isn't anything to do here... #line:a54fdf
 ===
 
@@ -90,25 +90,25 @@ title: CitrusMeeting
 ---
 Arriving at the reception of the dormitory you come across an elderly man with oranges stuck on his beard. #line:bf3ad6
 <<chara(0, "neutral", "orange")>>
-MR ORANGE: Hey. Welcome back to the dormitory, young one! #line:0d9ba6 
+MR ORANGE: Hey. Welcome back to the dormitory, young one! #line:0d9ba6
 PLAYER: Who are you, Sir...? #line:7789ff
-ORANGE: My name is Orange, young one. #line:d21156 
-PLAYER: I'm PLAYER. #line:2628f7 
-PLAYER: Not wanting to sound nosy but it's a lot of a coincidence that your name is the same as the dormitory. #line:f39079 
+ORANGE: My name is Orange, young one. #line:d21156
+PLAYER: I'm PLAYER. #line:2628f7
+PLAYER: Not wanting to sound nosy but it's a lot of a coincidence that your name is the same as the dormitory. #line:f39079
 MR ORANGE: Haha! This is not a coincidence, young one! I've been the supervisor of this dorm since it was built. #line:28d33b
-PLAYER: But that wasn't like, a long time ago? #line:1653ed 
-PLAYER: (Oh my god I just called him old). #line:d9105a 
-MR ORANGE: HAHA! It's been only 25 years! #line:35fa1d 
-PLAYER: This means that you have met all the famous plants, right? #line:bdd7c2 
-PLAYER: Even Tony Ramos that graduated years ago? #line:c3249a 
-MR ORANGE: Each and all of them! I have an album of photos with the students that became famous in this university. #line:fadbea 
+PLAYER: But that wasn't like, a long time ago? #line:1653ed
+PLAYER: (Oh my god I just called him old). #line:d9105a
+MR ORANGE: HAHA! It's been only 25 years! #line:35fa1d
+PLAYER: This means that you have met all the famous plants, right? #line:bdd7c2
+PLAYER: Even Tony Ramos that graduated years ago? #line:c3249a
+MR ORANGE: Each and all of them! I have an album of photos with the students that became famous in this university. #line:fadbea
 MR ORANGE: I can show you the album one day if you want! #line:8746bb
-PLAYER: I would love to! #line:249ff0 
-MR ORANGE: I liked your enthusiasm, young one! #line:f7ee64 
+PLAYER: I would love to! #line:249ff0
+MR ORANGE: I liked your enthusiasm, young one! #line:f7ee64
 You were going to ask to see right away, like all good immediatist young ones, but are interrupted by many other students arriving at the dormitory. #line:abd656
 He greets all students, some of them stop to talk to him. #line:96b188
 You probably won't be able to get more attention from him for now. #line:62ff3d
-PLAYER: See you around, Mr. Orange. #line:74fee6 
+PLAYER: See you around, Mr. Orange. #line:74fee6
 You wave to him as you leave the entrance of the dormitory. #line:afa188
 ===
 
@@ -117,7 +117,7 @@ title: FragranceOnTheMist
 While you walk through the courtyard, you notice how well-lit it is. #line:a85ccf
 You realize you are not alone in your nocturnal walk... #line:49d07c
 <<chara(0, "neutral", "caru")>>
-It's Caru! #line:8312b3 
+It's Caru! #line:8312b3
 He is seated in one of the benches with the cigarettes in his lips. #line:690ddb
 CARU: Oh! PLAYER! #line:f0d260
 PLAYER: Ah, I thought you were already in the dorm. #line:935344
@@ -129,7 +129,7 @@ CARU: Hm, I don't tend to share it a lot, there are people who don't like it. #l
 PLAYER: Hm, well... #line:52bda2
 -> I don't care, you can smoke freely. #line:b00757
 	CARU:  Woah, I have another one left here if you want. #line:03dd9a
-	PLAYER: Uh- #line:4867df 
+	PLAYER: Uh- #line:4867df
 	CARU: Just kidding dumbass, you know it haha. #line:68eca0
 CARU: I'm already a little altered. #line:a6e4ba
 -> I can understand someone being bothered. #line:f18004
@@ -153,7 +153,7 @@ PLAYER: Imagine if I followed her exemples. #line:d78b3d
 CARU: We both got lucky to have one another for this year. #line:f09f09
 He blinks at you and you both start laughing together. #line:e21894
 PLAYER: Well, I'll let you enjoy your moment in peace. #line:1853d3
-PLAYER: We see each other soon? #line:93f540 
+PLAYER: We see each other soon? #line:93f540
 CARU: Of course, as soon as I finish here I will go back to the bedroom! #line:8e116f
 It's possible to observe the smoke almost form a fog towards the moon. #line:90365a
 You direct yourself back to the dormitory. #line:5712aa
@@ -177,7 +177,7 @@ PLAYER: But I found it curious that you are eating here outside. #line:14a8ae
 IPE: Ah... The common spaces are always full of people... #line:a58d71
 IPE: I prefer to eat by myself... #line:c90fa3
 IPE: I prefer to eat by myself... #line:e14bed
--> It feels so lonely... #line:8947f5  
+-> It feels so lonely... #line:8947f5
 	<<changeRelationship("ipe", -1)>>
 	IPE: Ah... haha. Being alone is not necessarily bad... #line:ba7963
 	PLAYER: Whoops, this wasn't what I meant to say! #line:ab5328
@@ -332,7 +332,7 @@ What do you do? #line:2dae56
 	You turn away to leave, wanting to avoid the person who seemed like they were about to storm out. #line:2c7d9e
 	However, before you could escape the scene, someone bumps into you. #line:cb96bf
 	The person who left the gazebo was definitely running. #line:032bd6
-	<<chara(0, "neutral", "rose")>> 
+	<<chara(0, "neutral", "rose")>>
 	And it's Rose... #line:3f62db
 	You can see in her face a mix of shame and anger. #line:99d226
 	PLAYER: I-I'm... Sorry, I swear I didn't want to see anything. #line:b83148
@@ -341,6 +341,6 @@ What do you do? #line:2dae56
 	PLAYER: Of course not. #line:6cb8c9
 	She stares at you sternly, probably assessing the truthfulness of your words. #line:14e63c
 	She gives a slight nod, then continues on her way. #line:dab626
-Who would've thought a nighttime stroll would land you in this situation... #line:6e2244 
+Who would've thought a nighttime stroll would land you in this situation... #line:6e2244
 Better head back to the dorm and sleep. #line:2ed747
 ===

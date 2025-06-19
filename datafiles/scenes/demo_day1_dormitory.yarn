@@ -7,7 +7,7 @@ title: Noon
 ---
 ===
 
-title: Afternoon 
+title: Afternoon
 ---
 ===
 
@@ -22,44 +22,44 @@ title: CaruIntro
 <<chara(0, "void")>>
 ???: Hey. #line:a0e53f
 ???: Heey! #line:fe304f
-???: Wake up! #line:f16d80 
-PLAYER: Ugh... #line:ba234a 
+???: Wake up! #line:f16d80
+PLAYER: Ugh... #line:ba234a
 <<chara(0, "neutral-talking", "caru")>>
-???: Time to get up, sleepyhead! #line:5a9632 
+???: Time to get up, sleepyhead! #line:5a9632
 <<chara(0, "surprise")>>
 ???: It's a new day full of adventure and... Oh, hold on, I think you are late! #line:145dae
 <<chara(0, "neutral")>>
-You groan and rub your eyes, trying to understand the situation. #line:d97cec 
+You groan and rub your eyes, trying to understand the situation. #line:d97cec
 Maybe your alarm didn't go off this time? #line:961863
-The one waking you up is your roommate, Mandacaru.\nBut everyone calls him Caru, his nickname. #line:ce42e2 
+The one waking you up is your roommate, Mandacaru.\nBut everyone calls him Caru, his nickname. #line:ce42e2
 PLAYER: What time is it? #line:06d03e
 <<chara(0, "neutral-talking")>>
 CARU: Let me tell you, you overslept, PLAYER. #line:56a124
 <<chara(0, "happy")>>
 CARU: The sun is already high in the sky, and the birds are mocking you. #line:b2f2be
 <<chara(0, "neutral-talking")>>
-CARU: And I was the universe's envoy to deliver you a sermon on punctuality. #line:b7f2b5 
+CARU: And I was the universe's envoy to deliver you a sermon on punctuality. #line:b7f2b5
 <<chara(0, "neutral")>>
-PLAYER: Wait, what?? What does this mean? #line:47bb20 
-You hurry with the choice of clothes, and in a clumsy manner, try to dress in record time. #line:224a6d 
-PLAYER: Tch. Thanks for the heads up, dungeon master... I just asked for the time! #line:f2bdb2 
+PLAYER: Wait, what?? What does this mean? #line:47bb20
+You hurry with the choice of clothes, and in a clumsy manner, try to dress in record time. #line:224a6d
+PLAYER: Tch. Thanks for the heads up, dungeon master... I just asked for the time! #line:f2bdb2
 <<chara(0, "neutral-talking")>>
-CARU: I'm exaggerating my bad. It's only 6:40... Your alarm didn't ring yet. #line:f49f67 
+CARU: I'm exaggerating my bad. It's only 6:40... Your alarm didn't ring yet. #line:f49f67
 <<chara(0, "happy")>>
 PLAYER: Oh! You prick... #line:537e9f
 <<chara(0, "neutral-talking")>>
 You were really getting desperate there. Caru and his limitless pranks... #line:1164d7
 <<chara(0, "happy")>>
-CARU: Life is a race and you started the day running! You'll thank me later, heh. #line:d85b3c 
+CARU: Life is a race and you started the day running! You'll thank me later, heh. #line:d85b3c
 <<chara(0, "surprise")>>
-CARU: But seriously now, you don't want to be late on the first day. #line:599f31 
-CARU: The sooner you leave the better! #line:b16336 
+CARU: But seriously now, you don't want to be late on the first day. #line:599f31
+CARU: The sooner you leave the better! #line:b16336
 <<chara(0, "serious")>>
-CARU: Some professors from Lotus can be real tyrants. #line:eb765d 
+CARU: Some professors from Lotus can be real tyrants. #line:eb765d
 PLAYER: I've been questioning myself why would anyone decide on the 7:30 am schedule for morning classes... #line:0801c0
 <<chara(0, "void")>>
-Despite Caru's warning, until you find all your materials for the classes, 20 minutes have already passed. #line:40b930 
-Part of you curses your last night's self, who confidently claimed that surely you would have time to organize everything the next day... #line:3c926a  
+Despite Caru's warning, until you find all your materials for the classes, 20 minutes have already passed. #line:40b930
+Part of you curses your last night's self, who confidently claimed that surely you would have time to organize everything the next day... #line:3c926a
 Being ready to leave, you walk towards the ground level of the dormitory. #line:73cb8a
 <<bgTransition(1)>>
 <<jump LateArrival>>
@@ -68,22 +68,22 @@ Being ready to leave, you walk towards the ground level of the dormitory. #line:
 title: LateArrival
 ---
 <<chara(0, "void")>>
-The rules say you can't run in the hallways... #line:d815d3 
-So you quicken your pace and end up bumping into someone hard, almost knocking you down. #line:508baa 
+The rules say you can't run in the hallways... #line:d815d3
+So you quicken your pace and end up bumping into someone hard, almost knocking you down. #line:508baa
 <<chara(0, "neutral", "hydra")>>
-PLAYER: Oops- #line:a9b4b7 
-She is in a rush running to the end of the corridor. #line:0c26e5 
-PLAYER: ... Hey! #line:08d36f 
+PLAYER: Oops- #line:a9b4b7
+She is in a rush running to the end of the corridor. #line:0c26e5
+PLAYER: ... Hey! #line:08d36f
 <<chara(0, "void")>>
 You even question yourself for an instant if you are not late. #line:8f8f9a
-In the hurry she didn't realize that she dropped a piece of paper. #line:215731 
-You bend down and pick up the paper. #line:356335 
-It's a really beautiful and detailed drawing of the facet of the university's main building. #line:6505fd 
-It was made by pencil, so you take care not to blur it with your fingers while you hold it. #line:1edeec 
-On the side of the page there is her signature "Hydrangea". #line:39fdf0 
-PLAYER: (Hydrangea... I guess I have to return this drawing to you...) #line:6e8d82 
-You put the drawing carefully in one of your folders in your bag. #line:fa1ee8 
-You hear a sound that seems like a boat coming and hurry downstairs. #line:c35020 
+In the hurry she didn't realize that she dropped a piece of paper. #line:215731
+You bend down and pick up the paper. #line:356335
+It's a really beautiful and detailed drawing of the facet of the university's main building. #line:6505fd
+It was made by pencil, so you take care not to blur it with your fingers while you hold it. #line:1edeec
+On the side of the page there is her signature "Hydrangea". #line:39fdf0
+PLAYER: (Hydrangea... I guess I have to return this drawing to you...) #line:6e8d82
+You put the drawing carefully in one of your folders in your bag. #line:fa1ee8
+You hear a sound that seems like a boat coming and hurry downstairs. #line:c35020
 <<bgTransition(2)>>
 For a moment you thought you would lose the boat, but you manage to arrive in time. #line:2c89f6
 <<nextRoom()>>

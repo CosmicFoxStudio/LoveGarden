@@ -15,7 +15,7 @@ title: Noon
 <<endif>>
 ===
 
-title: Afternoon 
+title: Afternoon
 ---
 <<if $nextscene == 4>>
     <<jump Teaser4>>
@@ -47,15 +47,15 @@ title: Teaser2
 CRAVO: Eu não acredito que você conseguiu nota máxima no trabalho! #line:36ad74
 <<set $nextscene to 3>>
 <<nextRoom("rm_boat")>>
-=== 
+===
 
 title: Teaser3
 ---
 <<chara(0, "neutral", "hydra")>>
 <<emotion(0)>>
-HORTÊNSIA: ...! #line:687e65 
+HORTÊNSIA: ...! #line:687e65
 <<emotion(3)>>
-HORTÊNSIA: He he...! #line:949a2d 
+HORTÊNSIA: He he...! #line:949a2d
 <<set $nextscene to 4>>
 <<nextDaytime()>>
 <<nextRoom("rm_central")>>

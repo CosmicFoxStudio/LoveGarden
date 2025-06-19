@@ -123,7 +123,7 @@ title: FragranceOnTheMist
 While you walk through the courtyard, you notice how well-lit it is. #line:a85ccf
 You realize you are not alone in your nocturnal walk... #line:49d07c
 <<chara("caru")>>
-It's Caru! #line:8312b3 
+It's Caru! #line:8312b3
 He is seated in one of the benches with the cigarettes in his lips. #line:690ddb
 CARU: Oh! PLAYER! #line:f0d260
 PLAYER: Ah, I thought you were already in the dorm. #line:935344
@@ -135,7 +135,7 @@ CARU: Hm, I don't tend to share it a lot, there are people who don't like it. #l
 PLAYER: Hm, well... #line:52bda2
 -> I don't care, you can smoke freely. #line:b00757
 	CARU:  Woah, I have another one left here if you want. #line:03dd9a
-	PLAYER: Uh- #line:4867df 
+	PLAYER: Uh- #line:4867df
 	CARU: Just kidding dumbass, you know it haha. #line:68eca0
 CARU: I'm already a little altered. #line:a6e4ba
 -> I can understand someone being bothered. #line:f18004
@@ -159,7 +159,7 @@ PLAYER: Imagine if I followed her exemples. #line:d78b3d
 CARU: We both got lucky to have one another for this year. #line:f09f09
 He blinks at you and you both start laughing together. #line:e21894
 PLAYER: Well, I'll let you enjoy your moment in peace. #line:1853d3
-PLAYER: We see each other soon? #line:93f540 
+PLAYER: We see each other soon? #line:93f540
 CARU: Of course, as soon as I finish here I will go back to the bedroom! #line:8e116f
 It's possible to observe the smoke almost form a fog towards the moon. #line:90365a
 You direct yourself back to the dormitory. #line:5712aa
@@ -185,7 +185,7 @@ PLAYER: But I found it curious that you are eating here outside. #line:14a8ae
 IPE: Ah... The common spaces are always full of people... #line:a58d71
 IPE: I prefer to eat by myself... #line:c90fa3
 IPE: I prefer to eat by myself... #line:e14bed
--> It feels so lonely... #line:8947f5  
+-> It feels so lonely... #line:8947f5
 <<changeRelationship("ipe", -1)>>
 	IPE: Ah... haha. Being alone is not necessarily bad... #line:ba7963
 	PLAYER: Whoops, this wasn't what I meant to say! #line:ab5328
@@ -345,7 +345,7 @@ What do you do? #line:2dae56
 	You turn away to leave, wanting to avoid the person who seemed like they were about to storm out. #line:2c7d9e
 	However, before you could escape the scene, someone bumps into you. #line:cb96bf
 	The person who left the gazebo was definitely running. #line:032bd6
-	<<chara("rose")>> 
+	<<chara("rose")>>
 	And it's Rose... #line:3f62db
 	You can see in her face a mix of shame and anger. #line:99d226
 	PLAYER: I-I'm... Sorry, I swear I didn't want to see anything. #line:b83148
@@ -354,7 +354,7 @@ What do you do? #line:2dae56
 	PLAYER: Of course not. #line:6cb8c9
 	She stares at you sternly, probably assessing the truthfulness of your words. #line:14e63c
 	She gives a slight nod, then continues on her way. #line:dab626
-Who would've thought a nighttime stroll would land you in this situation... #line:6e2244 
+Who would've thought a nighttime stroll would land you in this situation... #line:6e2244
 Better head back to the dorm and sleep. #line:2ed747
 <<save()>>
 <<reward()>>

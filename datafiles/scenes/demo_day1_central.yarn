@@ -36,112 +36,112 @@ You both continue to talk throughout the line. #line:ffc787
 Carna talks a lot about the university. #line:d13af7
 And gives you updates on huge events from last semester. #line:6b9fff
 <<chara(0, "neutral", "carna")>>
-CARNA: ... And this is why they don't allow more parties of athletics on campus, we have to keep looking in other places. #line:61961a 
-CARNA: Rose gets crazy with this, cause all public places have the security question, you know? #line:496b90 
-PLAYER: Who is Rose again? #line:c7cc86 
+CARNA: ... And this is why they don't allow more parties of athletics on campus, we have to keep looking in other places. #line:61961a
+CARNA: Rose gets crazy with this, cause all public places have the security question, you know? #line:496b90
+PLAYER: Who is Rose again? #line:c7cc86
 <<chara(1, "neutral", "rose")>>
-ROSE: I heard my name? #line:8f9108 
-A tall girl, light green skin and short pink hair with a top and a jacket approaches with a smile. #line:a5fec9 
+ROSE: I heard my name? #line:8f9108
+A tall girl, light green skin and short pink hair with a top and a jacket approaches with a smile. #line:a5fec9
 <<chara(0, "smug")>>
-CARNA: Speaking of the devil... I mean, my angel. #line:c33881 
+CARNA: Speaking of the devil... I mean, my angel. #line:c33881
 <<chara(0, "smile")>>
-CARNA: PLAYER, This is my girlfriend, Rose. #line:b564a1 
-PLAYER: So you are the famous girlfriend! Really nice to meet you! #line:cd91bc 
+CARNA: PLAYER, This is my girlfriend, Rose. #line:b564a1
+PLAYER: So you are the famous girlfriend! Really nice to meet you! #line:cd91bc
 <<chara(1, "surprise")>>
 ROSE: And you would be? #line:a17925
 PLAYER: Oh, my name is PLAYER, I'm a freshman. #line:3df9d3
 ROSE: You guys are already done with Fern's class? #line:4e53cf
-PLAYER: Yeah, he released us early. And I couldn't lose the chance to get some tips from someone who knows the professor so well. #line:47e3fc 
+PLAYER: Yeah, he released us early. And I couldn't lose the chance to get some tips from someone who knows the professor so well. #line:47e3fc
 <<chara(1, "neutral")>>
 ROSE: Not that you will get much from him... #line:e3e555
 <<chara(0, "angry")>>
-CARNA: Hey! Don't spread defamation to the freshman! #line:7ffd55 
-ROSE: Me, on the other hand, can give you effective tips on how to pass on his subject. #line:fd008c 
+CARNA: Hey! Don't spread defamation to the freshman! #line:7ffd55
+ROSE: Me, on the other hand, can give you effective tips on how to pass on his subject. #line:fd008c
 <<chara(0, "disappointed")>>
-CARNA: Oh, not that again! #line:698bd0 
+CARNA: Oh, not that again! #line:698bd0
 <<chara(1, "smug")>>
-ROSE:  I know, I know. For the relationship to work we have to avoid talking about the one who cannot be mentioned. #line:d36e53 
+ROSE:  I know, I know. For the relationship to work we have to avoid talking about the one who cannot be mentioned. #line:d36e53
 <<chara(1, "neutral")>>
 <<chara(0, "smile")>>
-ROSE: But you are so cute when you get angry that I can't resist. #line:a0a0ac 
+ROSE: But you are so cute when you get angry that I can't resist. #line:a0a0ac
 <<chara(0, "void")>>
-She hugs his neck with one arm and a big smile. #line:f982ca 
+She hugs his neck with one arm and a big smile. #line:f982ca
 They seem comfortable touching each other. #line:9819af
-You can't stop yourself from looking. #line:e85375 
+You can't stop yourself from looking. #line:e85375
 Even though none of you seems uncomfortable. #line:3f74b4
 You continue walking down the line until you enter the canteen, passing through the self-service. #line:b3eaeb
-You all sit on the long tables of the canteen. They are side by side and you are in front of both. #line:7fa8db 
+You all sit on the long tables of the canteen. They are side by side and you are in front of both. #line:7fa8db
 <<chara(0, "void")>>
 <<chara(1, "neutral", "rose")>>
 ROSE: What were you guys talking about before? When I heard my name? #line:0b28d1
 <<chara(0, "smug", "carna")>>
 CARNA: I was telling PLAYER about last semester, when the people from bio athletics decided to bring that smoke machine. #line:9bf92a
 <<chara(1, "angry-talking")>>
-ROSE: (sigh) Oh, dude... That ruined all my plans for the Architecture party! #line:f5fd9b 
+ROSE: (sigh) Oh, dude... That ruined all my plans for the Architecture party! #line:f5fd9b
 <<chara(1, "angry")>>
 ROSE: I had everything ready and those dorks simply ruined everything. #line:e515bf
 <<chara(0, "disappointed")>>
-CARNA: Hey, I wasn't even involved! #line:749476 
+CARNA: Hey, I wasn't even involved! #line:749476
 <<chara(1, "serious")>>
-ROSE: And there's a reason I don't have anyone from Biology in the Freshers Week organization. #line:df5a3d 
-What do you think about this decision? #line:fc067b 
-What do you think about this decision? #line:da362e 
--> Isn't this discrimination? #line:c9a331 
+ROSE: And there's a reason I don't have anyone from Biology in the Freshers Week organization. #line:df5a3d
+What do you think about this decision? #line:fc067b
+What do you think about this decision? #line:da362e
+-> Isn't this discrimination? #line:c9a331
 	<<chara(0, "cry")>>
-	CARNA: That's what I said! #line:6330ed	
+	CARNA: That's what I said! #line:6330ed
 	<<chara(1, "surprise")>>
 	ROSE: Discrimination is a strong word... #line:5e0ac5
 -> I have no means to stand for my course. #line:1a1e86
 	<<chara(0, "angry")>>
-	CARNA: Hey! #line:7db6d3 
+	CARNA: Hey! #line:7db6d3
 	<<chara(0, "disappointed")>>
 	<<chara(1, "smug")>>
-	ROSE: See, even your favorite freshman agrees with me. #line:8ce76d 
+	ROSE: See, even your favorite freshman agrees with me. #line:8ce76d
 	<<chara(1, "neutral")>>
-	CARNA: PLAYER is the only freshman I've actually talked to so far! #line:da3f81 
+	CARNA: PLAYER is the only freshman I've actually talked to so far! #line:da3f81
 <<chara(1, "serious")>>
 ROSE: Either way. It wasn't totally my decision, but the rectory's... #line:c4c086
-ROSE: We managed to make all freshmen be able to go to the courtyard, as long as no one involved with the incident from last semester would be part of the committee. #line:7b4093 
-PLAYER: And when will the Freshers Party be held? #line:ee6f9e 
+ROSE: We managed to make all freshmen be able to go to the courtyard, as long as no one involved with the incident from last semester would be part of the committee. #line:7b4093
+PLAYER: And when will the Freshers Party be held? #line:ee6f9e
 <<chara(1, "neutral")>>
-ROSE: The day after tomorrow, during the whole afternoon! #line:d63c69 
+ROSE: The day after tomorrow, during the whole afternoon! #line:d63c69
 ROSE: You must go! #line:32bcbf
 <<chara(0, "smug")>>
-CARNA: Yes! The semester doesn't truly start until the freshmen's party, this is the best moment to meet new people! #line:a93ea6 
+CARNA: Yes! The semester doesn't truly start until the freshmen's party, this is the best moment to meet new people! #line:a93ea6
 <<chara(0, "smile")>>
 CARNA: And to find the love of your life... #line:7f5a62
-ROSE: We're the proof. #line:6bda47 
+ROSE: We're the proof. #line:6bda47
 They look at each other passionately. #line:d1b2e6
 They look at each other passionately. #line:1e79ae
 -> They are a really beautiful couple. #line:e7f373
-	They're fun to be with. #line:aadbd2 
+	They're fun to be with. #line:aadbd2
 	You can't even be bothered. #line:0019a9
 -> You wish you were Rose in this situation. #line:caa9bf
-	She is lucky to have someone so cool like Carna as a boyfriend. #line:12ff4f 
+	She is lucky to have someone so cool like Carna as a boyfriend. #line:12ff4f
 -> You wish you were Carna in this situation. #line:8468f9
 	He is lucky to have such a competent girlfriend like Rose. #line:58f159
 ROSE: So, PLAYER. What's gonna be? #line:16ba73
-ROSE: You're going to the Freshers Party, right? #line:f6c7c2 
+ROSE: You're going to the Freshers Party, right? #line:f6c7c2
 ROSE: You're going to the Freshers Party, right? #line:fdf2bb
--> I guess I have to, right? #line:b064dd 
+-> I guess I have to, right? #line:b064dd
 	<<chara(0, "smug")>>
 	CARNA: Hell yeah! #line:44315a
--> I wouldn't lose this for nothing. #line:d15802 
-	ROSE: Great! #line:ba4a6d 
+-> I wouldn't lose this for nothing. #line:d15802
+	ROSE: Great! #line:ba4a6d
 <<chara(1, "neutral")>>
-Rose's phone rings an alarm. #line:8dea2a 
+Rose's phone rings an alarm. #line:8dea2a
 <<chara(1, "surprise")>>
 ROSE: Damn! I have to go. Junior Enterprise meeting... #line:be1d40
 <<chara(0, "uncomfortable")>>
 CARNA: I don't know how you can handle so many things all at once... #line:acea54
 <<chara(1, "neutral")>>
-ROSE: Kisses, babe. #line:96b951 
+ROSE: Kisses, babe. #line:96b951
 <<chara(0, "smile")>>
 They give a quick kiss. #line:116e00
 ROSE: It was nice to meet you, PLAYER. #line:34bc5b
-Rose stands up and rushes out. #line:70efef 
+Rose stands up and rushes out. #line:70efef
 <<chara(0, "void")>>
-You and Carna chat for a little longer before leaving to give space for other students to have lunch. #line:a85ded 
+You and Carna chat for a little longer before leaving to give space for other students to have lunch. #line:a85ded
 <<nextDaytime()>>
 <<nextDaytime()>>
 <<nextRoom()>>

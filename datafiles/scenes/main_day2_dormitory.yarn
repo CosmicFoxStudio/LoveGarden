@@ -189,13 +189,13 @@ title: Roommates
 position: 333,201
 ---
 <<chara(0, "void")>>
-After spending several hours working hard on Professor Ipe's assignment, you finally finish it. 
-You start preparing your things for tomorrow, organizing the materials you'll need for the day. 
-After all the effort put into finishing this assignment, the last thing you would want is to forget it at home. 
+After spending several hours working hard on Professor Ipe's assignment, you finally finish it.
+You start preparing your things for tomorrow, organizing the materials you'll need for the day.
+After all the effort put into finishing this assignment, the last thing you would want is to forget it at home.
 <<chara(0, "serious", "caru")>>
-As you're wrapping up, Caru enters the room. 
-PLAYER: Oh, you came back late! 
-CARU: Ah, yes, I was busy. 
+As you're wrapping up, Caru enters the room.
+PLAYER: Oh, you came back late!
+CARU: Ah, yes, I was busy.
 PLAYER: No problem! It's just uncommon. You usually get back before me.
 <<chara(0, "neutral-talking")>>
 CARU: Missing me that much, huh? You were feeling lonely without me around?
@@ -225,21 +225,21 @@ PLAYER: But hey, what kept your so busy that you didn't even mind getting kicked
 <<else>>
 	<<chara("happy", 0)>>
 CARU: Oh, c'mon, it's a fair trade! you deal with my noise and I deal with your mess...
-PLAYER: I swear this is organized chaos. I know where everything is... 
+PLAYER: I swear this is organized chaos. I know where everything is...
 <<chara("neutral-talking", 0)>>
-CARU: So, if I asked you for scissors right now? 
+CARU: So, if I asked you for scissors right now?
 CARU: So, if I asked you for scissors right now?
 -> I know exactly where they are!
 	<<changeRelationship("caru", 1)>>
 PLAYER: Ha! They're in the case inside my bag!
 You pull out the case from your backpack, wanting to prove the scissors are there.
-... But they're not. 
+... But they're not.
 <<chara(0, "smug")>>
 CARU: HAHAHA! You should see your face!
 <<chara(0, "neutral-talking")>>
-CARU: I borrowed them last week, remember? 
+CARU: I borrowed them last week, remember?
 <<chara(0, "neutral")>>
-CARU: Here, put them away. 
+CARU: Here, put them away.
 He hands you the scissors and you put them back on the case.
 -> I don't know where they are.
 PLAYER: Oh... This one is tough.
@@ -251,16 +251,16 @@ CARU: Hmm... You sure you're not just messing with me for once?
 <<chara(0, "neutral")>>
 PLAYER: I really don't... In fact, I've been missing those scissors for a while...
 <<chara(0, "surprised")>>
-CARU: Well, yeah. Because I borrowed them last week! Don't you remember? 
+CARU: Well, yeah. Because I borrowed them last week! Don't you remember?
 PLAYER: Oooh... That's right! Now I remembered!
 <<chara(0, "serious")>>
 CARU: Oh, dude. You and your forgetfulness...
 <<chara(0, "neutral")>>
-CARU: Here, put them away. 
+CARU: Here, put them away.
 <<chara(0, "neutral-talking")>>
-PLAYER: You love to see me falling for these pranks, don't you? 
+PLAYER: You love to see me falling for these pranks, don't you?
 <<chara(0, "smug")>>
-CARU: Obviously. It's not my fault your reactions are always funny. 
+CARU: Obviously. It's not my fault your reactions are always funny.
 <<chara(0, "neutral")>>
 PLAYER: But hey, what kept you for so long that you couldn't enlighten me with your presence?
 <<endif>>
@@ -268,12 +268,12 @@ PLAYER: But hey, what kept you for so long that you couldn't enlighten me with y
 CARU: Oh, I'm working on a certain project with my professor. It's quite demanding.
 PLAYER: Oh yeah? Who is it?
 <<chara(0, "neutral")>>
-CARU: Her name is Caliandra... 
-CARU: She's literally the most badass woman I've ever met. 
+CARU: Her name is Caliandra...
+CARU: She's literally the most badass woman I've ever met.
 <<chara(0, "surprised")>>
-CARU: I was so lucky she accepted me as her student... 
+CARU: I was so lucky she accepted me as her student...
 <<if (getRelationship("caru") > 4) >>
-PLAYER: Hey, she's the lucky one to have you as a student! 
+PLAYER: Hey, she's the lucky one to have you as a student!
 <<chara("happy", 0)>>
 CARU: Thanks, PLAYER. I really appreciate that.
 <<endif>>

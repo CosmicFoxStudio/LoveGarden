@@ -26,9 +26,9 @@ She looks focused drawing on her notebook. #line:c0b584
 -> Just admire the drawing she is doing. #line:75f9c1
 	<<addAction()>>
 	(YOU WON A BONUS ACTION! [spr_action])[snd_click1] #line:b73e27
-	You can't take your eyes away from the drawing. #line:04c8ae 
+	You can't take your eyes away from the drawing. #line:04c8ae
 	<<chara(0, "neutral")>>
-	To the point the girl gives you a side glance. #line:2d8bcd 
+	To the point the girl gives you a side glance. #line:2d8bcd
 	You turn away, feeling your face getting flushed by being caught. #line:28b492
 	<<chara(0, "void")>>
 -> Return the drawing to her. #line:f449a6
@@ -55,7 +55,7 @@ She looks focused drawing on her notebook. #line:c0b584
 	She gets up to exit the boat. #line:76bdff
 	<<chara(0, "void")>>
 	PLAYER: (How does she know I'm a freshman?) #line:35cab4
-The boat whistles, warning that soonly it will undock again. #line:b12abd 
+The boat whistles, warning that soonly it will undock again. #line:b12abd
 You hurry up to leave the boat and make your way to the sciences building. #line:c6cb03
 <<nextRoom()>>
 ===

@@ -7,7 +7,7 @@ title: Noon
 ---
 ===
 
-title: Afternoon 
+title: Afternoon
 ---
 <<jump Chitchat>>
 ===
@@ -39,7 +39,7 @@ CARU: The sun is already high in the sky, and the birds are mocking you. #line:d
 CARU: And I was the universe's envoy to deliver you a sermon on punctuality. #line:ccd329
 PLAYER: Wait, what?? What does that mean? #line:74f4de
 You hurry with the choice of clothes, and in a clumsy manner, try to dress in record time. #line:2be4d7
-PLAYER: Tch. Thanks for the heads up, dungeon master. I just asked for the time! #line:774550 
+PLAYER: Tch. Thanks for the heads up, dungeon master. I just asked for the time! #line:774550
 CARU: Oh, sorry. I was exaggerating, ha-ha! It's only 6:40... Your alarm hasn't gone off yet. #line:30b5af
 PLAYER: Ah! You rascal. #line:7959e9
 You were really getting desperate here. Caru and his limitless teasing... #line:753014
@@ -70,63 +70,63 @@ MR. ORANGE: Hey. Are you a morning student? #line:36b3dd
 PLAYER: Yes, I am! #line:9df643
 MR. ORANGE: The second boat has already left, but a third one is coming shortly. #line:2ad4fa
 PLAYER: Oh, thank goodness. I thought I was lost! #line:1832df
-PLAYER: I have classes in 20 minutes... #line:5841e4 
+PLAYER: I have classes in 20 minutes... #line:5841e4
 PLAYER: Do you think it will take long to arrive? #line:8a8868
 MR. ORANGE: Haha! Don't worry, young one! #line:42c368
 MR. ORANGE: The next one is coming in 5 minutes! #line:39766b
 As he says this, some other students are arriving at the spot, realizing they also missed the boat. #line:3f282d
-PLAYER: At least I'm not the only one. #line:80e45e 
+PLAYER: At least I'm not the only one. #line:80e45e
 PLAYER: You saved me here, Mr...? #line:795881
-MR. ORANGE: They call me Orange, young one. #line:fc76c4 
-PLAYER: I'm PLAYER. #line:a7a29f 
-You only have to wait... What do you do now? #line:e18a27 
+MR. ORANGE: They call me Orange, young one. #line:fc76c4
+PLAYER: I'm PLAYER. #line:a7a29f
+You only have to wait... What do you do now? #line:e18a27
 You only have to wait... What do you do now? #line:83d7e5
--> Talk to Mr. Orange. #line:1ecdd9 
+-> Talk to Mr. Orange. #line:1ecdd9
     <<addAction()>>
     (YOU JUST EARNED A BONUS ACTION! [spr_action])[snd_click1] #line:416827
-    You have to wait anyway. It's better to talk to someone to pass the time. #line:bae562 
+    You have to wait anyway. It's better to talk to someone to pass the time. #line:bae562
     PLAYER: Not to be intrusive, but it's quite a coincidence that your name is the same as the dormitory. #line:c20819
     MR. ORANGE: Haha! That's not a coincidence, young one! I've been the supervisor of this dormitory since it was built. #line:3ffdcf
     PLAYER: But that was, like, a long time ago, right? #line:14c3e7
     PLAYER: (Oh my god, I called him old). #line:72266d
     MR. ORANGE: HAHA! It's only been 25 years! #line:9485a0
     PLAYER: That means you've met all the famous plantae people, right? #line:d77901
-    PLAYER: Even Willow Smith, who graduated a few years ago? #line:58fd6b 
+    PLAYER: Even Willow Smith, who graduated a few years ago? #line:58fd6b
     MR. ORANGE: Each one of them! I have a collection of photos with the students who became famous from the college. #line:b7124f
-    MR. ORANGE: I can show you the collection one day if you want! #line:5c3359 
-    <<setFlag("orange_photo_book_talk")>> 
+    MR. ORANGE: I can show you the collection one day if you want! #line:5c3359
+    <<setFlag("orange_photo_book_talk")>>
     PLAYER: I'd love that! #line:7d9936
-    MR. ORANGE: I like your enthusiasm, young one! #line:5d8af0 
-    MR. ORANGE: But you better start going. The boat is arriving. #line:82b546 
-    Mr. Orange points to the boat approaching outside. #line:f42612 
+    MR. ORANGE: I like your enthusiasm, young one! #line:5d8af0
+    MR. ORANGE: But you better start going. The boat is arriving. #line:82b546
+    Mr. Orange points to the boat approaching outside. #line:f42612
     PLAYER: See you later, Mr. Orange! #line:01b874
     <<chara(0, "void")>>
     You wave to him as you leave the dormitory, heading towards the boat. #line:06f5f5
--> Wait for the boat outside. #line:5b1185 
+-> Wait for the boat outside. #line:5b1185
     <<chara(0, "void")>>
-    It's better to make sure you don't miss the next boat. #line:00912c 
+    It's better to make sure you don't miss the next boat. #line:00912c
     You go outside the building, sitting on one of the waiting benches for the boat. #line:ccca5b
-    There's a girl drawing on one of the other benches. #line:65794c 
+    There's a girl drawing on one of the other benches. #line:65794c
     <<chara(0, "neutral", "hydra")>>
     <<setFlag("met_hydra", true)>>
     You try to see what she's drawing and ends up impressed with the replica of the lake she was creating. #line:c51c4b
     What do you do? #line:3ec998
     What do you do? #line:e8332a
     -> Try to talk to her. #line:32cbd1
-        PLAYER: Wow, your drawing is beautiful! #line:370ddb 
+        PLAYER: Wow, your drawing is beautiful! #line:370ddb
         ???: ... #line:69998f
         She doesn't even blink, continuing to focus on the notebook. #line:22357e
         It's as if she didn't hear you from being so concentrated... #line:769faf
         You decide to appreciate the lake alongside her, even if in silence. #line:0c8428
-    -> Just admire the drawing she's doing. #line:1012d5 
+    -> Just admire the drawing she's doing. #line:1012d5
         <<addAction()>>
         (YOU JUST EARNED A BONUS ACTION! [spr_action])[snd_click1] #line:5092f9
-        You can't take your eyes off the drawing. #line:72e405 
+        You can't take your eyes off the drawing. #line:72e405
         To the point that the girl gives you a quick look with raised eyebrows. #line:df7bd3
         You look away, feeling your face heat up for getting caught. #line:2b1dd7
         Soon, the next boat starts to approach and you stand up to get inside. #line:52962f
 PLAYER: (Thank goodness everything worked out...) #line:c83b07
-You board the boat. #line:dc01da 
+You board the boat. #line:dc01da
 <<progress()>>
 <<nextRoom()>>
 ===
@@ -134,7 +134,7 @@ You board the boat. #line:dc01da
 title: Chitchat
 ---
 <<bg(2)>>
-The last rays of sunlight of the day paint a beautiful landscape across the sky, caressing your eyes as you arrive at the dormitory. #line:3884a8 
+The last rays of sunlight of the day paint a beautiful landscape across the sky, caressing your eyes as you arrive at the dormitory. #line:3884a8 #DescriptiveMode
 Mr. Orange, eager for your return, welcomes you back. #line:a7baa0
 <<chara(0, "neutral", "orange")>>
 MR. ORANGE: Hello, young one. Happy to see you again. #line:b23003
