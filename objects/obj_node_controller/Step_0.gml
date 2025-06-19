@@ -8,11 +8,11 @@ textLength = scribble(ChatterboxGetContentSpeech(chatterbox, 0)).get_glyph_count
 TypistCheckPause(typist);
 
 // Fast-forwarding
-/*
-if (InputCheck("confirm", e_input.MOUSE, "held")) {
-	ChatterboxFastForward(chatterbox);
+if Debug() {
+	if (mouse_check_button_pressed(mb_right)) {
+		ChatterboxFastForward(chatterbox);
+	}
 }
-*/
 
 if (global.state != e_gameStates.PAUSED && global.state != e_gameStates.MENU && global.hoveringButton == false) {
 	// Waiting for user input or waiting for the user to choose an option
