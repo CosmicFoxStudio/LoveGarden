@@ -29,11 +29,12 @@ global.changeCalendarDaytime = true;
 global.newGame = false;
 global.lastPlace = rm_init;
 
-// Localization Info
+// Localization
 global.lang = "en"; // "en", "pt"
-global.localization = {}; // See "LOCALI.gml"
+global.localization = {}; 
 global.langMenu = false;
 SetLanguage();
+PopulateLocali(); // See "LOCALI.gml"
 ManageLocalization();
 
 #region GAME CONTROLS

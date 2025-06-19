@@ -100,7 +100,7 @@ function Localize(category, key) {
     
     if (localizationData && localizationData[$ category]) {
         var localizedText = localizationData[$ category][$ key];
-        if (localizedText) {
+        if (is_string(localizedText)) {
             return localizedText;
         }
     }
