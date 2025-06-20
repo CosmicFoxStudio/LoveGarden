@@ -4,15 +4,29 @@ title: Morning
 
 title: Noon
 ---
-<<jump ArtMeeting>>
+<<if getPlace() == "Central Building">>
+	<<jump ArtMeeting>>
+<<elseif getPlace() == "Boat">>
+	<<IntrospectionI>>
+<<endif>>
 ===
 
 title: Afternoon
 ---
+<<if getPlace() == "Dormitory">>
+	<<jump CitrusMeeting>>
+<<elseif getPlace() == "Gazebo">>
+	<<CampusPaper>>
+<<endif>>
 ===
 
 title: Night
 ---
+<<if getPlace() == "Boat">>
+	<<jump IntrospectionII>>
+<<elseif getPlace() == "Gazebo">>
+	<<FragranceOnTheMist>>
+<<endif>>
 ===
 
 title: ArtMeeting
@@ -25,8 +39,8 @@ HYDRANGEA: Ugh! It deserves to be teared up! #line:e8379e
 PLAYER: Oh damn, what did the paper do to you? #line:8e92a2
 HYDRANGEA: This one did nothing, but this is my revenge for all the cuts its siblings, parents and cousins made on my fingers for the past 20 years. #line:1c8337
 PLAYER: But is it up to the children to pay for the parents' sins? #line:dd408f
-HYDRANGEA: Okay, the conversation reached a level of religiosity that I do not compact anymore. #line:6b7604
-PLAYER: Haha, but seriously, what is making you so frustrated? #line:36dd3d
+HYDRANGEA: This conversation sure is going in a weird direction. #line:6b7604
+PLAYER: Ha ha... sorry. But seriously, what is making you so frustrated? #line:36dd3d
 HYDRANGEA: I just can't reproduce the courtyard vibe, you know? #line:1f1102
 PLAYER: So that's what you were drawing. #line:b0e494
 HYDRANGEA: Yeah... #line:ee28db
@@ -43,7 +57,8 @@ HYDRANGEA: To really enjoy here you need to explore the whole city. #line:060b9e
 PLAYER: Do you have any recommendations on where I should go? #line:c0fe7f
 HYDRANGEA: Hm? Well, depending on what you like, I really like the At Green Book. #line:6bef93
 PLAYER: Is it a bookstore? #line:cc5561
-HYDRANGEA: (She confirms with her head). It's a cafeteria too, a cozy place to take breakfast while you have time. #line:c48645
+She confirms with her head.
+HYDRANGEA: It's a cafeteria too, a cozy place to take breakfast while you have time. #line:c48645
 PLAYER: But what about the classes in the morning? #line:23222f
 HYDRANGEA: Oh true, freshmen can't choose their own schedules. #line:b27783
 HYDRANGEA: Take this as a tip. Avoid taking subjects in the first time schedule, it's just torture. #line:66763c
@@ -56,7 +71,10 @@ Her phone rings and she quickly takes it, reading the messages and fastly direct
 HYDRANGEA: Damn, I have to go. Cool chat, freshman. #line:43d054
 PLAYER: Hey, would it be possible for you to stop calling me- #line:c468bb
 <<chara(0, "void")>>
-PLAYER: Freshman? #line:414960
+PLAYER: ...Freshman? #line:414960
+<<nextDaytime()>>
+<<progress()>>
+<<nextRoom()>>
 ===
 
 title: IntrospectionI
@@ -88,6 +106,7 @@ PLAYER: (sighs) I guess there isn't anything to do here... #line:a54fdf
 
 title: CitrusMeeting
 ---
+<<bg(5)>>
 Arriving at the reception of the dormitory you come across an elderly man with oranges stuck on his beard. #line:bf3ad6
 <<chara(0, "neutral", "orange")>>
 MR ORANGE: Hey. Welcome back to the dormitory, young one! #line:0d9ba6

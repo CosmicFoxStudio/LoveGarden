@@ -79,5 +79,5 @@ Your face flushes a bit, and you shrink with embarrassment. #line:e08cf1
     Inside, you feel like you've already lost this battle for your future. #line:399c43
 <<endif>>
 <<progress()>>
-<<nextRoom()>>
+<<reward()>>
 ===

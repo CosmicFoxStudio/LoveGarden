@@ -8,11 +8,17 @@ roomName = global.event.location;
 // Needs to be updated once the day changes
 UpdateRoomYarnMap();
 
-// Create chatterbox
+// Create chatterbox based on YARN
 if (global.event.location != undefined) {
-    chatterbox = ChatterboxCreate(global.roomYarnMap[? roomName]);
-    ChatterboxJump(chatterbox, nodeName);
-    UpdateChatterbox();
+	if (global.event.type == "canon") {
+		chatterbox = ChatterboxCreate(global.roomYarnMap[? roomName]);
+	}
+	else if (global.event.type == "bonus") {
+		chatterbox = ChatterboxCreate(global.roomYarnMap[? "rm_map"]);
+	}
+	
+	ChatterboxJump(chatterbox, nodeName);
+	UpdateChatterbox();
 }
 
 // Instantiate textbox

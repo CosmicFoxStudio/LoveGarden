@@ -25,6 +25,25 @@ function CharaDefinition(_id, _name, _romanceable = false) constructor {
 	name = _name;
 	expressions = {};
 	if (_romanceable) hearts = 0;
+	/* [TO-DO]
+	sprite = undefined;
+	spriteName = "";
+	prevSprite = undefined;
+	prevSpriteName = "";
+	visible = false;
+	x = 0;
+	y = 0;
+	xscale = 1;
+	yscale = 1;
+	rot = 0;
+	col = c_white;
+	alpha = 0;
+	alphaIncrease = 0.1;
+	prevAlpha = 0;
+	data = _data;
+	expression = "";
+	pose = "";
+	*/
 	
 	// Loop through the emotions list and construct the sprite names
 	for (var i = 0; i < array_length(global.emotions[myid]); i++) {
@@ -32,7 +51,7 @@ function CharaDefinition(_id, _name, _romanceable = false) constructor {
 	    var spriteName = "spr_" + name + "_" + string(i); // + "_" + emotion
 	    var spriteAsset = asset_get_index(spriteName);
 
-	    if (spriteAsset != -1) {  // Check if the sprite exists
+	    if (spriteAsset != -1) {
 			variable_struct_set(expressions, emotion, spriteAsset);
 	        // expressions[$ emotion] = spriteAsset;
 	    } else {

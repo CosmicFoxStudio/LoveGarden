@@ -1,7 +1,7 @@
 /// @description Scaling VFX
 
-// Change the sprite if in demo version
-image_index = (global.gameMode == e_gameMode.DEMO) ? 1 : 0;
+// Change the sprite if in demo or mvp version
+image_index = (global.gameMode == e_gameMode.DEMO || global.gameMode == e_gameMode.MVP) ? 1 : 0;
 
 // Scaling parameters
 image_xscale = 1.5;

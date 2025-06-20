@@ -3,7 +3,8 @@
 enum e_gameMode {
 	DEMO,
 	RELEASE,
-	TEASER
+	MVP,
+	//TEASER
 }
 	
 enum e_language {

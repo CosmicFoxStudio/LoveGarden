@@ -12,8 +12,6 @@ if (global.state != e_gameStates.MENU) {
 }
 
 // Quickly restart game (to make our lives easier)
-if (global.gameMode == e_gameMode.DEMO) {
-	if (keyboard_check_released(vk_f4)) {
-		game_restart();	
-	}
+if (keyboard_check_released(vk_f4)) {
+	game_restart();	
 }

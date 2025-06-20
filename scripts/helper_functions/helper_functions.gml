@@ -2,8 +2,9 @@ function ConvertGameModeToString(_savefile = false) {
 	var mode;
 	switch (global.gameMode) {
 		case e_gameMode.RELEASE: mode = _savefile ? "save" : "main"; break;	
+		case e_gameMode.MVP: mode = "mvp"; break;	
 		case e_gameMode.DEMO: mode = "demo"; break;	
-		case e_gameMode.TEASER: mode = "teaser"; break;
+		//case e_gameMode.TEASER: mode = "teaser"; break;
 	}
 	
 	return mode;

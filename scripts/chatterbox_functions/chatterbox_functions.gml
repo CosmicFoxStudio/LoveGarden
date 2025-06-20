@@ -322,32 +322,39 @@ function UpdateRoomYarnMap() {
 
     // Initialize yarnPrefix based on game mode
     switch (global.gameMode) {
-        case e_gameMode.DEMO:
-            yarnPrefix = "scenes/demo_";
+        case e_gameMode.MVP:
+			// Main Events
+            yarnPrefix = "scenes/mvp_";
             global.roomYarnMap[? "rm_test_dialogue"] = yarnPrefix + "day0_test.yarn";
             global.roomYarnMap[? "rm_dormitory"] = yarnPrefix + "day1_dormitory.yarn";
             global.roomYarnMap[? "rm_boat"] = yarnPrefix + "day1_boat.yarn";
             global.roomYarnMap[? "rm_sciences"] = yarnPrefix + "day1_sciences.yarn";
             global.roomYarnMap[? "rm_central"] = yarnPrefix + "day1_central.yarn";
-            break;
+            
+			// Bonus Events
+			global.roomYarnMap[? "rm_map"] = yarnPrefix + "day" + dayPrefix + "_bonus.yarn";
+			break;
 
-        case e_gameMode.TEASER:
+		/*case e_gameMode.TEASER:
             yarnPrefix = "scenes/teaser.yarn";
             global.roomYarnMap[? "rm_dormitory"] = yarnPrefix;
             global.roomYarnMap[? "rm_boat"] = yarnPrefix;
             global.roomYarnMap[? "rm_sciences"] = yarnPrefix;
             global.roomYarnMap[? "rm_central"] = yarnPrefix;
-            break;
-
+            break;*/
         case e_gameMode.RELEASE:
         default:
+			// Main Events
             yarnPrefix = "scenes/main_";
             global.roomYarnMap[? "rm_test_dialogue"] = yarnPrefix + "day0_test.yarn";
             global.roomYarnMap[? "rm_dormitory"] = yarnPrefix + "day" + dayPrefix + "_dormitory.yarn";
             global.roomYarnMap[? "rm_boat"] = yarnPrefix + "day" + dayPrefix + "_boat.yarn";
             global.roomYarnMap[? "rm_sciences"] = yarnPrefix + "day" + dayPrefix + "_sciences.yarn";
             global.roomYarnMap[? "rm_central"] = yarnPrefix + "day" + dayPrefix + "_central.yarn";
-            break;
+            
+			// Bonus Events
+			global.roomYarnMap[? "rm_map"] = yarnPrefix + "day" + dayPrefix + "_bonus.yarn";
+			break;
     }
 }
 
@@ -411,7 +418,6 @@ function EndGame() {
 
 function EventProgress(_eventID = global.eventID + 1) {
 	// Next event
-	// if (global.event.type == "bonus") {}
 	global.event = global.events[_eventID];
 	global.eventID = _eventID;
 }

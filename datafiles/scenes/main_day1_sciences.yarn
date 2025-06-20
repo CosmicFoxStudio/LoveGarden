@@ -97,49 +97,49 @@ FERN: I'll be your Ecology teacher. #line:5526bf
 FERN: My subject will be essential for you in the coming semesters. #line:fd6c3c
 <<chara(0, "void")>>
 Professor Fern continues explaining how his subject will work. #line:c04c65
-By your side, Carna is completely ignoring what the professor is saying. #line:efe66d
+By your side, Carnation is completely ignoring what the professor is saying. #line:efe66d
 In a quick glance behind, you see Ipe jotting down every word that comes out of Fern's mouth. #line:98b0c3
 While writing, you can hear a murmur. #line:4ee9b4
 <<chara(0, "neutral", "carna")>>
-CARNA: ''And you'll be assigned partners who have already been chosen''. #line:b1deec
+CARNATION: ''And you'll be assigned partners who have already been chosen''. #line:b1deec
 <<chara(0, "neutral", "fern")>>
 FERN: And you'll be assigned partners who have already been chosen. #line:f1c057
 <<chara(0, "neutral", "carna")>>
-CARNA: ... ''The attendance list''... ''there might be dropouts by the end''... #line:bf6045
+CARNATION: ... ''The attendance list''... ''there might be dropouts by the end''... #line:bf6045
 <<chara(0, "neutral", "fern")>>
 FERN: And use the attendance list as a reference, but there might be dropouts by the end. #line:390dea
 <<chara(0, "neutral", "carna")>>
-CARNA: ... ''raise your hand''... #line:e984e4
+CARNATION: ... ''raise your hand''... #line:e984e4
 <<chara(0, "neutral", "fern")>>
 FERN: When I call your name and your partner's, raise your hand. #line:1446b5
 <<chara(0, "neutral", "carna")>>
-You lean to whisper to Carna without disturbing the class. #line:a75f64
+You lean to whisper to Carnation without disturbing the class. #line:a75f64
 PLAYER: (How did you know exactly what he was going to say?) #line:b20101
-CARNA: He said the exact same thing in the last two semesters. #line:50157e
+CARNATION: He said the exact same thing in the last two semesters. #line:50157e
 PLAYER: And how do you know that? #line:dd8156
-CARNA: It's the third time I'm taking this subject... #line:19ae6d
+CARNATION: It's the third time I'm taking this subject... #line:19ae6d
 PLAYER: Is this subject really that tough? #line:60404c
-CARNA: It's the worst of all. Fern is one of the toughest in the department. #line:e496b7
+CARNATION: It's the worst of all. Fern is one of the toughest in the department. #line:e496b7
 <<chara(0, "neutral", "fern")>>
 You look back at the professor, trying to draw your own conclusions. #line:e18a21
 You look back at the professor, trying to draw your own conclusions. #line:8baee6
 -> To me, he just looks like a helpless old man. #line:d2c0a0
 	<<chara(0, "neutral", "carna")>>
 	PLAYER: He might just be a bit grumpy. #line:51984f
-	CARNA: Well, I can understand that. If I were as outdated as him, I'd be unhappy too. #line:2f2379
+	CARNATION: Well, I can understand that. If I were as outdated as him, I'd be unhappy too. #line:2f2379
 	PLAYER: Wow, you really don't like the old dude. #line:f756c5
     PLAYER: A level of frustration only someone who's failed the same grade twice could truly understand. #line:5563cf
-	CARNA: Let's see how you'll be at the end of the semester. #line:4466f4
+	CARNATION: Let's see how you'll be at the end of the semester. #line:4466f4
 	PLAYER: Hey, they say the third time is the lucky one. #line:026af4
 -> I can see what you mean. #line:74d80a
 	<<chara(0, "neutral", "carna")>>
     <<changeRelationship("carna", 1)>>
 	PLAYER: Especially after the way he talked to me just now. #line:2bd5dd
-	CARNA: He has no sensitivity, even though most of the class are freshmen. #line:12f630
+	CARNATION: He has no sensitivity, even though most of the class are freshmen. #line:12f630
 	PLAYER: It's because of people like him that some people hate Biology. #line:da122a
-	CARNA: Well, Ecology isn't the coolest subject. #line:419d85
+	CARNATION: Well, Ecology isn't the coolest subject. #line:419d85
 	PLAYER: Are you kidding! It's one of the subjects I was most excited to take. #line:1d9384
-	CARNA: Entomology is much cooler! Wait for your next semester. #line:d1fdea
+	CARNATION: Entomology is much cooler! Wait for your next semester. #line:d1fdea
 <<chara(0, "neutral", "fern")>>
 FERN: PLAYER and Ipe! #line:39545e
 You startle when Professor Fern's voice resonates through the room. #line:aaf287
@@ -147,9 +147,9 @@ You immediately raise your hand. #line:513941
 FERN: You'll be working on the theme ''Animals of the Plantae world''. #line:563f4f
 <<if (getRelationship("carna") >= 1)>>
 	<<chara(0, "neutral", "carna")>>
-	CARNA: You got the best theme! #line:b4f7c7
-	CARNA: Makes me wish we were partners. #line:b4fb31
-	You give Carna a slight smile before going to Ipe. #line:5a809c
+	CARNATION: You got the best theme! #line:b4f7c7
+	CARNATION: Makes me wish we were partners. #line:b4fb31
+	You give Carnation a slight smile before going to Ipe. #line:5a809c
 <<endif>>
 <<chara(0, "neutral", "ipe")>>
 You turn to Ipe, feeling relieved to at least be with someone you know. #line:dcf068
@@ -162,28 +162,28 @@ FERN: Great, I'll make it in time for the department lunch! #line:7a43f2
 <<chara(0, "void")>>
 PLAYER: (All my panic this morning for less than an hour of class...) #line:d80923
 <<chara(0, "neutral", "carna")>>
-Carna was already packed up, ready to leave. #line:6add22
+Carnation was already packed up, ready to leave. #line:6add22
 PLAYER: Hold on! How did you pack up your stuff so quickly? #line:58ea44
-CARNA: Stuff? What stuff? #line:64a43d
+CARNATION: Stuff? What stuff? #line:64a43d
 PLAYER: Ha-ha! Aren't you even going to meet your group partner? #line:28fa7c
-CARNA: Nah, they apparently didn't show up today... #line:edd42e
-CARNA: It's the second semester my group partner hasn't shown up... #line:4ba2e5
-CARNA: The old man is totally singling me out... #line:5a0cbd
+CARNATION: Nah, they apparently didn't show up today... #line:edd42e
+CARNATION: It's the second semester my group partner hasn't shown up... #line:4ba2e5
+CARNATION: The old man is totally singling me out... #line:5a0cbd
 PLAYER: It's not that bad. #line:859809
 PLAYER: By the way, do you have any tips for a first-time freshman? #line:4485fa
-CARNA: Don't let things pile up, and pray for your partner to show up. #line:21b32f
-CARNA: Now, if you'll excuse me, I have to complain about this class to someone else. #line:0d5a58
+CARNATION: Don't let things pile up, and pray for your partner to show up. #line:21b32f
+CARNATION: Now, if you'll excuse me, I have to complain about this class to someone else. #line:0d5a58
 PLAYER: Oh, yeah? And who will have the pleasure of hearing you for the third time? #line:54d52d
-CARNA: My incredible girlfriend. #line:250ef9
-CARNA: She even took the subject last semester to see how bad it really was. #line:418ead
+CARNATION: My incredible girlfriend. #line:250ef9
+CARNATION: She even took the subject last semester to see how bad it really was. #line:418ead
 PLAYER: And she's not here this semester... Did she drop out or pass? #line:1c2f46
-CARNA: She passed... #line:02d535
-CARNA: Not that she lets me forget that she passed and I didn't. #line:ef8d9b
+CARNATION: She passed... #line:02d535
+CARNATION: Not that she lets me forget that she passed and I didn't. #line:ef8d9b
 PLAYER: Haha, at least she'll understand you better than anyone. #line:e0389e
-CARNA: Later, PLAYER! #line:bfe57f
+CARNATION: Later, PLAYER! #line:bfe57f
 PLAYER: See you around. #line:884246
 <<chara(0, "void")>>
-Carna leaves, and you stand up to go after Ipe. #line:41b967
+Carnation leaves, and you stand up to go after Ipe. #line:41b967
 Only to find them right next to your chair. #line:8a8657
 <<chara(0, "neutral", "ipe")>>
 IPE: Sorry, I didn't mean to interrupt... #line:f87108
@@ -250,7 +250,6 @@ Before you could argue that Professor Fern released you an hour early... #line:6
 Ipe was already disappearing down the hallway... #line:ea0357
 ... #line:b57a25
 PLAYER: (Did I say something wrong?) #line:def188
-<<nextDaytime()>>
 <<progress()>>
 <<reward()>>
 ===

@@ -6,7 +6,7 @@
 
 function SaveGame() {
 	// Do not save if in teaser mode
-	if (global.gameMode == e_gameMode.TEASER) return;
+	//if (global.gameMode == e_gameMode.TEASER) return;
 	
 	var saveStruct = {
 		name: global.playerName,

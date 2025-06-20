@@ -7,8 +7,8 @@ page = 0;
 langIndex = (global.lang == "en") ? 0 : 1;
 
 // Map game modes to numeric indices
-// Demo and Teaser (0). Release (1)
-modeIndex = (global.gameMode == e_gameMode.DEMO || global.gameMode == e_gameMode.TEASER) ? 0 : 1;
+// Demo and MVP (0). Release (1)
+modeIndex = (global.gameMode == e_gameMode.DEMO || global.gameMode == e_gameMode.MVP) ? 0 : 1;
 
 
 // Initialize the texts array

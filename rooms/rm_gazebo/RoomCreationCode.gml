@@ -8,4 +8,4 @@ DecideRoomName();
 
 global.changeCalendarDaytime = true;
 
-if (global.roomType != e_roomTypes.MAP) SaveGame();
+if (global.roomType != e_roomTypes.MAP && global.event.type != "bonus") { SaveGame() };
