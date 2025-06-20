@@ -126,7 +126,7 @@ You look back at the professor, trying to draw your own conclusions. #line:8baee
 -> To me, he just looks like a helpless old man. #line:d2c0a0
 	<<chara(0, "neutral", "carna")>>
 	PLAYER: He might just be a bit grumpy. #line:51984f
-	CARNA: Well, I can understand that. If I were as outdated as him, I'd be unhappy too. #line:2f2379 
+	CARNA: Well, I can understand that. If I were as outdated as him, I'd be unhappy too. #line:2f2379
 	PLAYER: Wow, you really don't like the old dude. #line:f756c5
     PLAYER: A level of frustration only someone who's failed the same grade twice could truly understand. #line:5563cf
 	CARNA: Let's see how you'll be at the end of the semester. #line:4466f4

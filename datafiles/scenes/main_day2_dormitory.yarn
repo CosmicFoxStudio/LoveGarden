@@ -72,24 +72,24 @@ position: 182,-478
 ---
 <<bg(1)>>
 <<chara(0, "void")>>
-You were just getting out of your room when suddenly someone bumped hard into you, almost knocking you down. 
+You were just getting out of your room when suddenly someone bumped hard into you, almost knocking you down.
 <<chara(0, "neutral-left", "hydra")>>
 <<if getFlag("met_hydra", true)>>
 	PLAYER: It's the girl from before...
 <<endif>>
-PLAYER: Whoa- 
-She seems in a rush, almost running to the end of the hallway. 
-PLAYER: ... Hey! 
+PLAYER: Whoa-
+She seems in a rush, almost running to the end of the hallway.
+PLAYER: ... Hey!
 <<chara(0, "void")>>
-You question yourself for a second if you are not late. 
-In the middle of the rush she doesn't realize she let a paper fall. 
-You get down and grab the paper. 
-It's a really beautiful and detailed drawing of the side of the central building of the university. 
-It was made by pencil, so you take it carefully not to smudge it. 
-On the side of the paper is her signature - ''Hydrangea''. 
-PLAYER: (Hydrangea... I think I have to give you back your drawing...) 
-You store the drawing with caution in one of your folders in your backpack. 
-You hear the sound of the boat approaching in the distance and quickly hurry downstairs, determined not to miss the trip. 
+You question yourself for a second if you are not late.
+In the middle of the rush she doesn't realize she let a paper fall.
+You get down and grab the paper.
+It's a really beautiful and detailed drawing of the side of the central building of the university.
+It was made by pencil, so you take it carefully not to smudge it.
+On the side of the paper is her signature - ''Hydrangea''.
+PLAYER: (Hydrangea... I think I have to give you back your drawing...)
+You store the drawing with caution in one of your folders in your backpack.
+You hear the sound of the boat approaching in the distance and quickly hurry downstairs, determined not to miss the trip.
 <<nextRoom()>>
 ===
 
@@ -111,7 +111,7 @@ PLAYER: Okay, It's time to deal with your mother's assignment.
 You move some stuff to open space for both of you to fit at your desk, borrowing Caru's chair.
 PLAYER: Make yourself at home.
 Ipe sits on one of the chairs, clearly uncomfortable, keeping their hands on their lap.
-PLAYER: Okay, so your flower is an orchid, right? 
+PLAYER: Okay, so your flower is an orchid, right?
 You get your tablet to open the e-book from Elan's subject while Ipe carefully takes out their flower from the bag.
 You read through the book searching for the page about orchids while checking the flower on the table.
 PLAYER: Seems like orchids are really kinda complex...
@@ -125,7 +125,7 @@ It looks like Caru decided to get back earlier.
 Caru's eyes are slightly red and not the same way as last night.
 You feel Ipe tense up by your side while Caru stands by the door, looking at you.
 <<chara(1, "surprised")>>
-CARU: Da hell is this? 
+CARU: Da hell is this?
 PLAYER: Oh, Caru? You arrived early!
 <<chara(1, "angry")>>
 CARU: I thought we had agreed on noticing each other before we brought someone here...
