@@ -66,14 +66,14 @@ You sigh to yourself and meekly walk down the stairs to the dorm's main floor in
 <<bgTransition(2)>>
 As you reach the dorm's reception, you're met with an old man with oranges stuck in his beard. #line:78acb8
 <<chara(0, "neutral", "orange")>>
-MR. ORANGE: Hey. Are you a morning student? #line:36b3dd
+MR. ORANGE: Hello. Are you a morning student? #line:36b3dd
 PLAYER: Yes, I am! #line:9df643
 MR. ORANGE: The second boat has already left, but a third one is coming shortly. #line:2ad4fa
 PLAYER: Oh, thank goodness. I thought I was lost! #line:1832df
 PLAYER: I have classes in 20 minutes... #line:5841e4
 PLAYER: Do you think it will take long to arrive? #line:8a8868
 MR. ORANGE: Haha! Don't worry, young one! #line:42c368
-MR. ORANGE: The next one is coming in 5 minutes! #line:39766b
+MR. ORANGE: The next one is coming in around 5 minutes! #line:39766b
 As he says this, some other students are arriving at the spot, realizing they also missed the boat. #line:3f282d
 PLAYER: At least I'm not the only one. #line:80e45e
 PLAYER: You saved me here, Mr...? #line:795881
@@ -88,9 +88,9 @@ You only have to wait... What do you do now? #line:83d7e5
     PLAYER: Not to be intrusive, but it's quite a coincidence that your name is the same as the dormitory. #line:c20819
     MR. ORANGE: Haha! That's not a coincidence, young one! I've been the supervisor of this dormitory since it was built. #line:3ffdcf
     PLAYER: But that was, like, a long time ago, right? #line:14c3e7
-    PLAYER: (Oh my god, I called him old). #line:72266d
+    PLAYER: (Oh damn it, I called him old). #line:72266d
     MR. ORANGE: HAHA! It's only been 25 years! #line:9485a0
-    PLAYER: That means you've met all the famous plantae people, right? #line:d77901
+    PLAYER: So that means you’ve already met all the famous people who studied here, right? #line:d77901
     PLAYER: Even Willow Smith, who graduated a few years ago? #line:58fd6b
     MR. ORANGE: Each one of them! I have a collection of photos with the students who became famous from the college. #line:b7124f
     MR. ORANGE: I can show you the collection one day if you want! #line:5c3359

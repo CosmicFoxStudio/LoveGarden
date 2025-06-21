@@ -87,7 +87,7 @@ They still seem nervous. You try to give them a smile to calm them down, but the
 <<chara(0, "neutral", "fern")>>
 ???: Now that we're all here. Good morning, students. #line:0c69d6
 ???: I am Professor Neph, coming from my scientific name - Nephrolepis. #line:a4a3b5
-<<chara(0, "neutral", "carna")>>
+<<chara(1, "neutral", "carna")>>
 ???: But you can call him Fern! #line:a0c9bb
 The boy sitting next to you speaks loud enough for the whole room to hear. #line:dcdedd
 <<chara(1, "void")>>
@@ -147,7 +147,7 @@ You immediately raise your hand. #line:513941
 FERN: You'll be working on the theme ''Animals of the Plantae world''. #line:563f4f
 <<if (getRelationship("carna") >= 1)>>
 	<<chara(0, "neutral", "carna")>>
-	CARNATION: You got the best theme! #line:b4f7c7
+	CARNATION: You got one of the best themes! #line:b4f7c7
 	CARNATION: Makes me wish we were partners. #line:b4fb31
 	You give Carnation a slight smile before going to Ipe. #line:5a809c
 <<endif>>
@@ -235,7 +235,7 @@ PLAYER: Aw... I see. The professor said it needs to be on campus, so that's a sh
 IPE: In that case, I think our best option will be the lake. #line:b16a2c
 IPE: In that case, I think our best option will be the lake. #line:15d9c5
 -> At least we won't have to go too far... #line:a81535
-    IPE: Exactly! #line:c4d55a
+    IPE: Yeah, I suppose... #line:c4d55a
 -> Yep. But I'd love to check out the park someday, though. #line:0ee4c3
 	<<changeRelationship("ipe", 1)>>
     IPE: It's beautiful there! You should totally take some time to visit it! #line:7ed498

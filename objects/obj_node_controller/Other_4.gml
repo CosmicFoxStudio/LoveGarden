@@ -14,7 +14,7 @@ if (global.event.location != undefined) {
 		chatterbox = ChatterboxCreate(global.roomYarnMap[? roomName]);
 	}
 	else if (global.event.type == "bonus") {
-		chatterbox = ChatterboxCreate(global.roomYarnMap[? "rm_map"]);
+		chatterbox = ChatterboxCreate(global.roomYarnMap[? "rm_map"]); // Lmao that's such a band-aid
 	}
 	
 	ChatterboxJump(chatterbox, nodeName);
