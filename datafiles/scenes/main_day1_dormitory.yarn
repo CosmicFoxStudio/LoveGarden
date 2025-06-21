@@ -285,4 +285,4 @@ Soon, you both start feeling tired and prepare to sleep. #line:8641ba
 <<progress()>>
 <<nextDay()>>
 <<nextRoom("rm_sleep")>>
-===
+===  

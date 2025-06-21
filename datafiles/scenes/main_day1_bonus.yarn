@@ -57,7 +57,7 @@ HYDRANGEA: To really enjoy here you need to explore the whole city. #line:060b9e
 PLAYER: Do you have any recommendations on where I should go? #line:c0fe7f
 HYDRANGEA: Hm? Well, depending on what you like, I really like the At Green Book. #line:6bef93
 PLAYER: Is it a bookstore? #line:cc5561
-She confirms with her head.
+She confirms with her head. #line:b61a89
 HYDRANGEA: It's a cafeteria too, a cozy place to take breakfast while you have time. #line:c48645
 PLAYER: But what about the classes in the morning? #line:23222f
 HYDRANGEA: Oh true, freshmen can't choose their own schedules. #line:b27783
@@ -363,3 +363,4 @@ What do you do? #line:2dae56
 Who would've thought a nighttime stroll would land you in this situation... #line:6e2244
 Better head back to the dorm and sleep. #line:2ed747
 ===
+  

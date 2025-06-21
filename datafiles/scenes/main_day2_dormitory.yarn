@@ -26,44 +26,44 @@ position: -451,202
 ---
 <<bg(0)>>
 <<chara(0, "void")>>
-Your eyes blink slowly, you feel the sun shining in your face.
-You turn your head and look at the clock on the side of your bed.
-You've woken up a few minutes before your alarm went off.
-It doesn't take long to pack your things, only checking if all your materials are in the bag and choosing what to wear.
-After several minutes of slow functioning typical of someone who just woke up, you realize something unusual.
-The silence and lack of a certain presence by the morning.
-You look at the bed on the other side of the room, noticing that your roommate is still in a deep sleep.
-You don't really know if he has classes in the morning...
-What do you want to do?
-What do you want to do?
--> Try to wake Caru up.
-	It's better to make sure he doesn't need to be somewhere else.
-	After all, if he doesn't have anything, he can go back to sleep.
-	You poke Caru a few times, he moves but doesn't wake up.
-	You push him a little and he finally opens his eyes, kinda groggy.
+Your eyes blink slowly, you feel the sun shining in your face. #line:d1db19
+You turn your head and look at the clock on the side of your bed. #line:df0560
+You've woken up a few minutes before your alarm went off. #line:d7b790
+It doesn't take long to pack your things, only checking if all your materials are in the bag and choosing what to wear. #line:6a9a44
+After several minutes of slow functioning typical of someone who just woke up, you realize something unusual. #line:72dcde
+The silence and lack of a certain presence by the morning. #line:8c2e09
+You look at the bed on the other side of the room, noticing that your roommate is still in a deep sleep. #line:b94e26
+You don't really know if he has classes in the morning... #line:49afd4
+What do you want to do? #line:a96a45
+What do you want to do? #line:d5a077
+-> Try to wake Caru up. #line:a661d7
+	It's better to make sure he doesn't need to be somewhere else. #line:22a0cb
+	After all, if he doesn't have anything, he can go back to sleep. #line:85f179
+	You poke Caru a few times, he moves but doesn't wake up. #line:04843f
+	You push him a little and he finally opens his eyes, kinda groggy. #line:c4225b
 	<<chara(0, "disappointed", "caru")>>
-	CARU: PLAYER?
-	CARU: (yawning) What gives?
-	PLAYER: Hey, It's almost 7 o'clock. Don't you have class in the first shift?
+	CARU: PLAYER? #line:bf1d4c
+	CARU: (yawning) What gives? #line:a2ff29
+	PLAYER: Hey, It's almost 7 o'clock. Don't you have class in the first shift? #line:48d8d4
 	<<chara(0, "neutral")>>
-	CARU: I won't fall for that, PLAYER.
-	He turns in the bed, covering himself.
-	PLAYER: I'm not kidding!
-	PLAYER: Seriously Caru, if you have classes it's better to prepare yourself now to guarantee that you won't miss it.
-	CARU: What's the day today again?
-	PLAYER: The second day of class?
+	CARU: I won't fall for that, PLAYER. #line:745032
+	He turns in the bed, covering himself. #line:6bdbdc
+	PLAYER: I'm not kidding! #line:294ba0
+	PLAYER: Seriously Caru, if you have classes it's better to prepare yourself now to guarantee that you won't miss it. #line:bf1f81
+	CARU: What's the day today again? #line:eff8b8
+	PLAYER: The second day of class? #line:0d0c8c
 	<<chara(0, "surprised")>>
-	CARU: Daaaaaaamn... I have class in half an hour!
-	He throws the blanket away, almost jumping off the bed.
-	PLAYER: Wow, it doesn't even feel like you were dying two seconds ago.
+	CARU: Daaaaaaamn... I have class in half an hour! #line:dfc33c
+	He throws the blanket away, almost jumping off the bed. #line:e9e9d5
+	PLAYER: Wow, it doesn't even feel like you were dying two seconds ago. #line:8fcb10
 	<<chara(0, "happy")>>
-	CARU: I need to get up like that or else I just don't, haha!
+	CARU: I need to get up like that or else I just don't, haha! #line:824f58
 	<<chara(0, "void")>>
-	While Caru continues to prepare himself, you start walking out of the bedroom, giving him more space.
--> Let Caru sleep.
-	(YOU WON A BONUS ACTION! [spr_action])[snd_click1]
-	If he needed to wake up early he would have set up an alarm.
-	It's better to let him rest, especially with how stressful his graduation is.
+	While Caru continues to prepare himself, you start walking out of the bedroom, giving him more space. #line:470cd4
+-> Let Caru sleep. #line:64de90
+	(YOU WON A BONUS ACTION! [spr_action])[snd_click1] #line:3ec389
+	If he needed to wake up early he would have set up an alarm. #line:92728b
+	It's better to let him rest, especially with how stressful his graduation is. #line:fc6659
 <<jump WhatsUpGirl>>
 ===
 
@@ -72,24 +72,24 @@ position: 182,-478
 ---
 <<bg(1)>>
 <<chara(0, "void")>>
-You were just getting out of your room when suddenly someone bumped hard into you, almost knocking you down.
+You were just getting out of your room when suddenly someone bumped hard into you, almost knocking you down. #line:78fc7d
 <<chara(0, "neutral-left", "hydra")>>
 <<if getFlag("met_hydra", true)>>
-	PLAYER: It's the girl from before...
+	PLAYER: It's the girl from before... #line:637056
 <<endif>>
-PLAYER: Whoa-
-She seems in a rush, almost running to the end of the hallway.
-PLAYER: ... Hey!
+PLAYER: Whoa- #line:4109a5
+She seems in a rush, almost running to the end of the hallway. #line:642848
+PLAYER: ... Hey! #line:5a2cd7
 <<chara(0, "void")>>
-You question yourself for a second if you are not late.
-In the middle of the rush she doesn't realize she let a paper fall.
-You get down and grab the paper.
-It's a really beautiful and detailed drawing of the side of the central building of the university.
-It was made by pencil, so you take it carefully not to smudge it.
-On the side of the paper is her signature - ''Hydrangea''.
-PLAYER: (Hydrangea... I think I have to give you back your drawing...)
-You store the drawing with caution in one of your folders in your backpack.
-You hear the sound of the boat approaching in the distance and quickly hurry downstairs, determined not to miss the trip.
+You question yourself for a second if you are not late. #line:13bbc6
+In the middle of the rush she doesn't realize she let a paper fall. #line:f65e99
+You get down and grab the paper. #line:fa511c
+It's a really beautiful and detailed drawing of the side of the central building of the university. #line:a644f7
+It was made by pencil, so you take it carefully not to smudge it. #line:15a713
+On the side of the paper is her signature - ''Hydrangea''. #line:154af5
+PLAYER: (Hydrangea... I think I have to give you back your drawing...) #line:04e92d
+You store the drawing with caution in one of your folders in your backpack. #line:62d6bf
+You hear the sound of the boat approaching in the distance and quickly hurry downstairs, determined not to miss the trip. #line:18d19d
 <<nextRoom()>>
 ===
 
@@ -98,89 +98,89 @@ position: -14,199
 ---
 <<bg(2)>>
 <<chara(0, "neutral", "ipe")>>
-You and Ipe arrive together at the dormitory.
+You and Ipe arrive together at the dormitory. #line:c0f892
 <<chara(0, "neutral", "orange")>>
-You wave to Mr. Orange.
+You wave to Mr. Orange. #line:c46de8
 <<bgTransition(1)>>
 <<chara(0, "neutral", "ipe")>>
-You walk through the corridor in awkward silence, but soon you both enter your room.
+You walk through the corridor in awkward silence, but soon you both enter your room. #line:db6589
 <<bgTransition(0)>>
-Your side of the room is a little messy.
-You feel your face warm up a little, but you turn to Ipe with a smile.
-PLAYER: Okay, It's time to deal with your mother's assignment.
-You move some stuff to open space for both of you to fit at your desk, borrowing Caru's chair.
-PLAYER: Make yourself at home.
-Ipe sits on one of the chairs, clearly uncomfortable, keeping their hands on their lap.
-PLAYER: Okay, so your flower is an orchid, right?
-You get your tablet to open the e-book from Elan's subject while Ipe carefully takes out their flower from the bag.
-You read through the book searching for the page about orchids while checking the flower on the table.
-PLAYER: Seems like orchids are really kinda complex...
-IPE: Ugh, what did I get myself into?
-PLAYER: Don't panic. The book has very detailed illustrations so if we can associate it with the real orchid it's gonna work, right?
-IPE: I... guess? She was not very clear on how she wanted us to do that...
-Before you could even progress much in your work, you hear the door opening.
+Your side of the room is a little messy. #line:0664a6
+You feel your face warm up a little, but you turn to Ipe with a smile. #line:dfc218
+PLAYER: Okay, It's time to deal with your mother's assignment. #line:c9f9c9
+You move some stuff to open space for both of you to fit at your desk, borrowing Caru's chair. #line:5bd886
+PLAYER: Make yourself at home. #line:14d90e
+Ipe sits on one of the chairs, clearly uncomfortable, keeping their hands on their lap. #line:22710b
+PLAYER: Okay, so your flower is an orchid, right? #line:d4d8e0
+You get your tablet to open the e-book from Elan's subject while Ipe carefully takes out their flower from the bag. #line:ae0366
+You read through the book searching for the page about orchids while checking the flower on the table. #line:1a25f4
+PLAYER: Seems like orchids are really kinda complex... #line:19ad73
+IPE: Ugh, what did I get myself into? #line:62053a
+PLAYER: Don't panic. The book has very detailed illustrations so if we can associate it with the real orchid it's gonna work, right? #line:93fe59
+IPE: I... guess? She was not very clear on how she wanted us to do that... #line:460089
+Before you could even progress much in your work, you hear the door opening. #line:5412ec
 <<chara(0, "sidelook", "ipe")>>
 <<chara(1, "serious", "caru")>>
-It looks like Caru decided to get back earlier.
-Caru's eyes are slightly red and not the same way as last night.
-You feel Ipe tense up by your side while Caru stands by the door, looking at you.
+It looks like Caru decided to get back earlier. #line:90b69d
+Caru's eyes are slightly red and not the same way as last night. #line:9092e7
+You feel Ipe tense up by your side while Caru stands by the door, looking at you. #line:163dad
 <<chara(1, "surprised")>>
-CARU: Da hell is this?
-PLAYER: Oh, Caru? You arrived early!
+CARU: Da hell is this? #line:5d8ccb
+PLAYER: Oh, Caru? You arrived early! #line:d2f90d
 <<chara(1, "angry")>>
-CARU: I thought we had agreed on noticing each other before we brought someone here...
-PLAYER: I thought this was for like... dates and stuff?
+CARU: I thought we had agreed on noticing each other before we brought someone here... #line:86618c
+PLAYER: I thought this was for like... dates and stuff? #line:25fd76
 <<chara(0, "awkward")>>
 <<chara(1, "serious")>>
-Caru rubs his hair, a little embarrassed.
-Ipe is clearly nervous beside you, looking down to avoid making eye contact.
-IPE: I-I can leave. S...sorry for anything...
+Caru rubs his hair, a little embarrassed. #line:df010b
+Ipe is clearly nervous beside you, looking down to avoid making eye contact. #line:5189cb
+IPE: I-I can leave. S...sorry for anything... #line:c7fe35
 <<chara(0, "neutral")>>
-Ipe started to get up, but stops when Caru raises his hand.
+Ipe started to get up, but stops when Caru raises his hand. #line:55ef2d
 <<chara(1, "neutral")>>
-CARU: No, relax, y'all stay here and sort yourselves out.
-He doesn't look so relaxed with the idea.
-He doesn't look so relaxed with the idea.
--> Are you sure it's fine?
+CARU: No, relax, y'all stay here and sort yourselves out. #line:c7ac35
+He doesn't look so relaxed with the idea. #line:159789
+He doesn't look so relaxed with the idea. #line:ae4adf
+-> Are you sure it's fine? #line:6ffcb8
 	<<changeRelationship("caru", -1)>>
-	PLAYER: Are you sure it's fine?
-	PLAYER: It's your room too... and I was the one at fault.
+	PLAYER: Are you sure it's fine? #line:d32d77
+	PLAYER: It's your room too... and I was the one at fault. #line:ef3908
 	<<chara(1, "smug")>>
-	CARU: At least you know that.
+	CARU: At least you know that. #line:542214
 	<<chara(1, "neutral-talking")>>
-	CARU: I'm gonna take a walk.
-	CARU: Until then, I hope you have finished that project of yours.
--> Thanks, Caru! I swear I'm going to let you know next time!
-	PLAYER: Thanks, Caru! I promise I'm going to let you know next time!
-	PLAYER:  I swear I just misunderstood the deal.
+	CARU: I'm gonna take a walk. #line:00197e
+	CARU: Until then, I hope you have finished that project of yours. #line:eb13d9
+-> Thanks, Caru! I swear I'm going to let you know next time! #line:b740da
+	PLAYER: Thanks, Caru! I promise I'm going to let you know next time! #line:7654b2
+	PLAYER:  I swear I just misunderstood the deal. #line:e1e359
 	<<chara(1, "smug")>>
-	CARU: I'm going to get even with you, hm.
-	PLAYER: Don't even think about it!
-	CARU: I'm gonna go for a walk and you can finish that project of yours.
+	CARU: I'm going to get even with you, hm. #line:5c0ab1
+	PLAYER: Don't even think about it! #line:c07667
+	CARU: I'm gonna go for a walk and you can finish that project of yours. #line:dae930
 <<chara(1, "neutral")>>
-CARU: See ya later, PLAYER.
+CARU: See ya later, PLAYER. #line:de0bc4
 <<chara(1, "void")>>
 <<chara(0, "neutral", "ipe")>>
-Caru turns and leaves the room. You then turn back to Ipe, who's very flustered.
-PLAYER: Sorry about the confusion.
+Caru turns and leaves the room. You then turn back to Ipe, who's very flustered. #line:5c5133
+PLAYER: Sorry about the confusion. #line:83a205
 <<chara(0, "surprised", "ipe")>>
-IPE: I-it's alright...
+IPE: I-it's alright... #line:8b4516
 <<chara(0, "sidelook", "ipe")>>
-IPE: [wave]Actually[/wave]... I already know how to finish this assignment alone...
-PLAYER: You sure? We barely started!
+IPE: [wave]Actually[/wave]... I already know how to finish this assignment alone... #line:b1a838
+PLAYER: You sure? We barely started! #line:4ebd9e
 <<chara(0, "neutral", "ipe")>>
-IPE: Y-yes... My mother always said it's important to be independent.
-IPE: It wouldn't be fair to you to have you do my assignment...
-PLAYER: Oh, but it's not like that!
-IPE: You still need to do yours too, right?
-PLAYER: Yes, but daisies are way easier.
-IPE: I'd better stay out of the way then.
-They stand up, heading to the exit of the room.
-PLAYER: Huh? Ipe, wai- [snd_door]
+IPE: Y-yes... My mother always said it's important to be independent. #line:ec67b7
+IPE: It wouldn't be fair to you to have you do my assignment... #line:ac019c
+PLAYER: Oh, but it's not like that! #line:410bb8
+IPE: You still need to do yours too, right? #line:dc500a
+PLAYER: Yes, but daisies are way easier. #line:7b4d22
+IPE: I'd better stay out of the way then. #line:5345f4
+They stand up, heading to the exit of the room. #line:03f8b7
+PLAYER: Huh? Ipe, wai- [snd_door] #line:4dd813
 <<chara(0, "void")>>
-They leave before you could react properly.
-PLAYER: (sighs) Well, that's more complicated than I thought it would be...
-PLAYER: The only thing left is doing Professor Ipe's assignment then.
+They leave before you could react properly. #line:7e9cc4
+PLAYER: (sighs) Well, that's more complicated than I thought it would be... #line:dcf931
+PLAYER: The only thing left is doing Professor Ipe's assignment then. #line:5234f9
 <<setFlag("caru_upset", true)>>
 <<jump Roommates>>
 ===
@@ -189,102 +189,103 @@ title: Roommates
 position: 333,201
 ---
 <<chara(0, "void")>>
-After spending several hours working hard on Professor Ipe's assignment, you finally finish it.
-You start preparing your things for tomorrow, organizing the materials you'll need for the day.
-After all the effort put into finishing this assignment, the last thing you would want is to forget it at home.
+After spending several hours working hard on Professor Ipe's assignment, you finally finish it. #line:32b054
+You start preparing your things for tomorrow, organizing the materials you'll need for the day. #line:cae37d
+After all the effort put into finishing this assignment, the last thing you would want is to forget it at home. #line:685ee4
 <<chara(0, "serious", "caru")>>
-As you're wrapping up, Caru enters the room.
-PLAYER: Oh, you came back late!
-CARU: Ah, yes, I was busy.
-PLAYER: No problem! It's just uncommon. You usually get back before me.
+As you're wrapping up, Caru enters the room. #line:16d9e7
+PLAYER: Oh, you came back late! #line:c091f8
+CARU: Ah, yes, I was busy. #line:248a4e
+PLAYER: No problem! It's just uncommon. You usually get back before me. #line:a2a9c5
 <<chara(0, "neutral-talking")>>
-CARU: Missing me that much, huh? You were feeling lonely without me around?
-He leans on you, making his weight felt.
--> Maybe it was something like that.
+CARU: Missing me that much, huh? You were feeling lonely without me around? #line:e9b953
+He leans on you, making his weight felt. #line:f69982
+-> Maybe it was something like that. #line:e64f65
 	<<changeRelationship("caru", 1)>>
-	PLAYER: Maybe a little... I was thinking a little about what happened this afternoon.
--> Not exactly.
+	PLAYER: Maybe a little... I was thinking a little about what happened this afternoon. #line:f33f04
+-> Not exactly. #line:5e5671
 	<<changeRelationship("caru", -1)>>
-	PLAYER: (rolling eyes) Not a bit! I actually enjoyed the silence while doing my assignment.
+	PLAYER: (rolling eyes) Not a bit! I actually enjoyed the silence while doing my assignment. #line:3e0c13
 	<<chara(0, "neutral talking")>>
-	CARU: Oh, c'mon, it's a fair trade! Especially after today's surprise.
+	CARU: Oh, c'mon, it's a fair trade! Especially after today's surprise. #line:6d6e72
 <<if getFlag("caru_upset")>>
 	<<chara(0, "neutral")>>
-PLAYER: I swear it wasn't on purpose.
-PLAYER: The Plant Anatomy teacher gave us an urgent assignment, and I thought it would be better if we worked on it together...
-Caru is much calmer than when he left earlier today.
+PLAYER: I swear it wasn't on purpose. #line:f0c62c
+PLAYER: The Plant Anatomy teacher gave us an urgent assignment, and I thought it would be better if we worked on it together... #line:fa4697
+Caru is much calmer than when he left earlier today. #line:e48330
 <<chara(0, "neutral-talking")>>
-CARU: A tough assignment on the second day? Sounds like my major.
-PLAYER: Yeah, exactly. But really, I'm sorry.
-PLAYER: You not only have to deal with my mess but also with surprises like that.
+CARU: A tough assignment on the second day? Sounds like my major. #line:61ce57
+PLAYER: Yeah, exactly. But really, I'm sorry. #line:ce7f86
+PLAYER: You not only have to deal with my mess but also with surprises like that. #line:f3d017
 <<chara(0, "serious")>>
-CARU: I won't say it wasn't a mistake... I can't go this easy on you.
+CARU: I won't say it wasn't a mistake... I can't go this easy on you. #line:39d879
 <<chara(0, "neutral")>>
-CARU: But as long as you don't do it again, it will be fine.
-PLAYER: But hey, what kept your so busy that you didn't even mind getting kicked out of your own room?
+CARU: But as long as you don't do it again, it will be fine. #line:4fa5e0
+PLAYER: But hey, what kept your so busy that you didn't even mind getting kicked out of your own room? #line:8e53bd
 <<else>>
 	<<chara("happy", 0)>>
-CARU: Oh, c'mon, it's a fair trade! you deal with my noise and I deal with your mess...
-PLAYER: I swear this is organized chaos. I know where everything is...
+CARU: Oh, c'mon, it's a fair trade! you deal with my noise and I deal with your mess... #line:db2a21
+PLAYER: I swear this is organized chaos. I know where everything is... #line:df050a
 <<chara("neutral-talking", 0)>>
-CARU: So, if I asked you for scissors right now?
-CARU: So, if I asked you for scissors right now?
--> I know exactly where they are!
+CARU: So, if I asked you for scissors right now? #line:b756c8
+CARU: So, if I asked you for scissors right now? #line:dbfcbf
+-> I know exactly where they are! #line:55c59c
 	<<changeRelationship("caru", 1)>>
-PLAYER: Ha! They're in the case inside my bag!
-You pull out the case from your backpack, wanting to prove the scissors are there.
-... But they're not.
+PLAYER: Ha! They're in the case inside my bag! #line:b2cc2d
+You pull out the case from your backpack, wanting to prove the scissors are there. #line:49e88a
+... But they're not. #line:d3e0b7
 <<chara(0, "smug")>>
-CARU: HAHAHA! You should see your face!
+CARU: HAHAHA! You should see your face! #line:486224
 <<chara(0, "neutral-talking")>>
-CARU: I borrowed them last week, remember?
+CARU: I borrowed them last week, remember? #line:deaf5e
 <<chara(0, "neutral")>>
-CARU: Here, put them away.
-He hands you the scissors and you put them back on the case.
--> I don't know where they are.
-PLAYER: Oh... This one is tough.
+CARU: Here, put them away. #line:eea164
+He hands you the scissors and you put them back on the case. #line:0fde26
+-> I don't know where they are. #line:ffda52
+PLAYER: Oh... This one is tough. #line:54e3e3
 <<chara(0, "smug")>>
-CARU: Oh, come on, don't play coy now. You always have something up your sleeve.
-PLAYER: No. I have no idea what you're talking about this time.
+CARU: Oh, come on, don't play coy now. You always have something up your sleeve. #line:73ded5
+PLAYER: No. I have no idea what you're talking about this time. #line:386400
 <<chara(0, "surprised")>>
-CARU: Hmm... You sure you're not just messing with me for once?
+CARU: Hmm... You sure you're not just messing with me for once? #line:179754
 <<chara(0, "neutral")>>
-PLAYER: I really don't... In fact, I've been missing those scissors for a while...
+PLAYER: I really don't... In fact, I've been missing those scissors for a while... #line:1c1daa
 <<chara(0, "surprised")>>
-CARU: Well, yeah. Because I borrowed them last week! Don't you remember?
-PLAYER: Oooh... That's right! Now I remembered!
+CARU: Well, yeah. Because I borrowed them last week! Don't you remember? #line:3ab241
+PLAYER: Oooh... That's right! Now I remembered! #line:e1c745
 <<chara(0, "serious")>>
-CARU: Oh, dude. You and your forgetfulness...
+CARU: Oh, dude. You and your forgetfulness... #line:78322f
 <<chara(0, "neutral")>>
-CARU: Here, put them away.
+CARU: Here, put them away. #line:60f3fe
 <<chara(0, "neutral-talking")>>
-PLAYER: You love to see me falling for these pranks, don't you?
+PLAYER: You love to see me falling for these pranks, don't you? #line:893bba
 <<chara(0, "smug")>>
-CARU: Obviously. It's not my fault your reactions are always funny.
+CARU: Obviously. It's not my fault your reactions are always funny. #line:6f5bed
 <<chara(0, "neutral")>>
-PLAYER: But hey, what kept you for so long that you couldn't enlighten me with your presence?
+PLAYER: But hey, what kept you for so long that you couldn't enlighten me with your presence? #line:03a3ca
 <<endif>>
 <<chara(0, "neutral-talking")>>
-CARU: Oh, I'm working on a certain project with my professor. It's quite demanding.
-PLAYER: Oh yeah? Who is it?
+CARU: Oh, I'm working on a certain project with my professor. It's quite demanding. #line:525d5d
+PLAYER: Oh yeah? Who is it? #line:acae38
 <<chara(0, "neutral")>>
-CARU: Her name is Caliandra...
-CARU: She's literally the most badass woman I've ever met.
+CARU: Her name is Caliandra... #line:c5aff6
+CARU: She's literally the most badass woman I've ever met. #line:b8d4dd
 <<chara(0, "surprised")>>
-CARU: I was so lucky she accepted me as her student...
+CARU: I was so lucky she accepted me as her student... #line:c1705d
 <<if (getRelationship("caru") > 4) >>
-PLAYER: Hey, she's the lucky one to have you as a student!
+PLAYER: Hey, she's the lucky one to have you as a student! #line:e1d7b8
 <<chara("happy", 0)>>
-CARU: Thanks, PLAYER. I really appreciate that.
+CARU: Thanks, PLAYER. I really appreciate that. #line:1ea6c1
 <<endif>>
 <<chara(0, "neutral")>>
-PLAYER: You speak so badly about your major, so it's really good that you found something you like.
-PLAYER: Maybe she'll even help you with your final assignment. That would make your life easier, right?
+PLAYER: You speak so badly about your major, so it's really good that you found something you like. #line:8daedf
+PLAYER: Maybe she'll even help you with your final assignment. That would make your life easier, right? #line:160b23
 <<chara(0, "sad")>>
-CARU: Yeah. Something like that...
-PLAYER: Everything will be fine, Caru!
+CARU: Yeah. Something like that... #line:5de737
+PLAYER: Everything will be fine, Caru! #line:6712d5
 <<chara(0, "neutral")>>
-You give him a thumbs up as he walks away to organize his things.
-Meanwhile, you take a look at your social media. It doesn't take long until you really fall asleep.
+You give him a thumbs up as he walks away to organize his things. #line:86fc9d
+Meanwhile, you take a look at your social media. It doesn't take long until you really fall asleep. #line:a12ff3
 <<backTitle()>>
 ===
+  
